@@ -1099,7 +1099,7 @@ group desc for stuff like metal siding
 		<property name="Shape" value="CubeCutoutBackFaces" />
 		<property name="Mesh" value="cutout" />
 		<property name="Texture" value="347" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="None" />
 		<property name="MaxDamage" value="20" />
 		<property name="Collide" value="movement,melee,rocket" />
 		<property name="FuelValue" value="40" />
@@ -1356,7 +1356,7 @@ group desc for stuff like metal siding
 		<property name="Shape" value="CubeCutoutBackFaces" />
 		<property name="Mesh" value="cutout" />
 		<property name="Texture" value="289,289,65,65,65,65" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="None" />
 		<property class="RepairItems">
 			<property name="plank" value="10" />
 		</property>
@@ -1409,7 +1409,7 @@ group desc for stuff like metal siding
 	<property name="MergeInto" value="flagstone" param1="46,46,46,46,46,46" />
 	-->
 		<!-- "169,169,169,169,169,169" -->
-		<property name="CreativeMode" value="Dev" />
+		<property name="CreativeMode" value="None" />
 		<property class="RepairItems">
 			<property name="crushedSand" value="7" />
 			<property name="clayLump" value="5" />
@@ -15950,7 +15950,7 @@ kind of free
 	<!-- free 17 -->
 	<block id="21" name="cntSteelGunSafe">
 		<property name="Extends" value="cntGunSafe" />
-		<property name="CustomIcon" value="ui_game_symbol_SteelGunSafe" />
+		<property name="CustomIcon" value="ui_game_symbol_steelGunSafe" />
 		<property name="DescriptionKey" value="cntSteelGunSafeDesc" />
 		<property name="Material" value="Msteel" />
 		<property name="Shape" value="ModelEntity" />
@@ -15983,7 +15983,7 @@ kind of free
 	<block id="67" name="secureStorageChest">
 		<property name="Extends" value="cntSecureStorageChest" />
 		<property name="LootList" value="10" />
-		<property name="CustomIcon" value="ui_game_symbol_SecureStorageChest" />
+		<property name="CustomIcon" value="ui_game_symbol_secureStorageChest" />
 		<property name="DowngradeBlock" value="storageChest" />
 		<property name="DescriptionKey" value="cntSecureStorageChestDesc" />
 	</block>
@@ -16047,6 +16047,7 @@ kind of free
 		<property name="Model" value="Entities/Gore/gore_block1_bonesPrefab" />
 		<property name="Collide" value="melee,bullet,rocket" />
 		<property name="IsTerrainDecoration" value="true" />
+		<property name="CreativeMode" value="Dev"/>
 		<drop event="Destroy" count="0" />
 		<drop event="Harvest" name="femur" count="5" tool_category="Butcher" />
 		<drop event="Harvest" name="rottingFlesh" count="3" tool_category="Butcher" />
@@ -16058,7 +16059,9 @@ kind of free
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
 		<property name="Model" value="Traps/trap_mine_tin" param1="main_mesh" />
+		<property name="CustomIcon" value="mineCandyTin" />
 		<property name="IsTerrainDecoration" value="true" />
+		<property name="CreativeMode" value="Dev"/>
 		<property name="CanPickup" value="false" />
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Tools/Traps" />
@@ -16068,7 +16071,9 @@ kind of free
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
 		<property name="Model" value="Traps/trap_mine_filter" param1="main_mesh" />
+		<property name="CustomIcon" value="mineAirFilter" />
 		<property name="IsTerrainDecoration" value="true" />
+		<property name="CreativeMode" value="Dev"/>
 		<property name="CanPickup" value="false" />
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Tools/Traps" />
@@ -16076,6 +16081,8 @@ kind of free
 	<block id="80" name="keystoneStone">
 		<property name="Extends" value="keystoneBlock" />
 		<property name="Material" value="stone" />
+		<property name="CustomIcon" value="keystoneBlock" />
+		<property name="CreativeMode" value="Dev"/>
 		<property class="RepairItems">
 			<property name="rockSmall" value="100" />
 		</property>
@@ -16844,7 +16851,7 @@ kind of free
 		<property name="Shape" value="ModelEntity" />
 		<property name="Mesh" value="models" />
 		<property name="Model" value="Entities/Gore/gore_block1_Prefab" />
-		<property name="CustomIcon" value="cntCorpseLoot02" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
 		<property name="Texture" value="22" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="Tag" value="Gore" />
@@ -17005,7 +17012,7 @@ kind of free
 	<block id="905" name="fermentationBarrel">
 		<property name="Material" value="wood" />
 		<property name="Place" value="TowardsPlacerInverted" />
-		<property name="CustomIcon" value="ui_game_symbol_Barrel" />
+		<property name="CustomIcon" value="ui_game_symbol_barrel" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#WoodenBarrels?WoodenBarrels" />
 		<property name="MultiBlockDim" value="1,2,1" />
@@ -18173,7 +18180,7 @@ kind of free
 		<property name="Extends" value="trapNail" />
 		<property name="DescriptionKey" value="trapbearDesc" />
 		<property name="Model" value="#traps?BearTrap" />
-		<property name="CustomIcon" value="ui_game_symbol_BearTrap" />
+		<property name="CustomIcon" value="ui_game_symbol_bearTrap" />
 		<!--sdx<property name="KillChance" value="90" />
 	<property name="SpawnChance" value="100" />
 	<property name="DamageDone" value="25" />
@@ -18238,7 +18245,7 @@ kind of free
 		<property name="FuelValue" value="36" />
 		<!-- until better solution this is just to allow interaction -->
 		<property name="CanPickup" value="true" />
-		<drop event="Destroy" name="VenomSack" count="2" prob="1" />
+		<drop event="Destroy" name="venomSack" count="2" prob="1" />
 		<property name="Group" value="Tools/Traps" />
 		<property name="debug" value="false" />
 		<property name="ModelOffset" value="0,0.3,0" />
@@ -18285,7 +18292,7 @@ kind of free
 		<property name="Shape" value="ModelEntity" />
 		<property name="Mesh" value="models" />
 		<property name="Model" value="#shockingTrap?shockingTrap" />
-		<property name="CustomIcon" value="ui_game_symbol_ShockTrap" />
+		<property name="CustomIcon" value="ui_game_symbol_shockTrap" />
 		<!--sdx<property name="powerType" value="Electric" />
 	<property name="DamageDone" value="1" />
 	<property name="Buffs" value="shocked" />-->
@@ -18294,7 +18301,7 @@ kind of free
 	<block id="1501" name="razorWire">
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#RazorWire?RazorWirePrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_RazorWire" />
+		<property name="CustomIcon" value="ui_game_symbol_razorWire" />
 		<property name="Class" value="Damage" />
 		<property name="Damage" value="4" />
 		<property name="Damage_received" value="1" />
@@ -18312,7 +18319,7 @@ kind of free
 	<block id="1502" name="razorWireOffSet">
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#RazorWire?RazorWireOffsetPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_RazorWire" />
+		<property name="CustomIcon" value="ui_game_symbol_razorWire" />
 		<property name="Class" value="Damage" />
 		<property name="Damage" value="4" />
 		<property name="Damage_received" value="1" />
@@ -18334,7 +18341,7 @@ kind of free
 		<property name="Shape" value="ModelEntity" />
 		<property name="Mesh" value="models" />
 		<property name="Model" value="#fireTrap?fireTrap" />
-		<property name="CustomIcon" value="ui_game_symbol_GasTankTrap" />
+		<property name="CustomIcon" value="ui_game_symbol_gasTankTrap" />
 		<property name="Weight" value="64" />
 		<property name="IsTerrainDecoration" value="true" />
 		<drop event="Destroy" count="0" />
@@ -18350,7 +18357,7 @@ kind of free
 		<property name="MultiBlockDim" value="1,2,1" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#oven?oven" />
-		<property name="CustomIcon" value="ui_game_symbol_Stove" />
+		<property name="CustomIcon" value="ui_game_symbol_stove" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="Stacknumber" value="1" />
@@ -18361,6 +18368,7 @@ kind of free
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#Meter?MeterPrefab" />
+		<property name="CustomIcon" value="ui_game_symbol_seedNursery" />
 		<property name="MultiBlockDim" value="1,2,1" />
 		<property name="Stacknumber" value="1" />
 		<property name="MaxDamage" value="100" />
@@ -18370,7 +18378,7 @@ kind of free
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#batteries?BatteryBlock" />
-		<property name="CustomIcon" value="ui_game_symbol_batteryPack" />
+		<property name="CustomIcon" value="ui_game_symbol_batteryBank" />
 		<property name="Stacknumber" value="1" />
 		<property name="MaxDamage" value="100" />
 		<property name="SellableToTrader" value="false" />
@@ -18492,7 +18500,7 @@ kind of free
 		<property name="Extends" value="cropsHarvestableMaster" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#sunflower?sunflower" />
-		<drop event="Harvest" name="SunflowerHead" count="1" />
+		<drop event="Harvest" name="sunflowerHead" count="1" />
 	</block>
 	<block id="1595" name="plantedWheat">
 		<property name="Extends" value="plantedTomato" />
@@ -18510,7 +18518,7 @@ kind of free
 		<property name="Extends" value="cropsHarvestableMaster" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#WheatPlant1?WheatPlant1Prefab" />
-		<drop event="Harvest" name="Wheat" count="1" />
+		<drop event="Harvest" name="wheat" count="1" />
 	</block>
 	<block id="1598" name="smallCannabisPlant">
 		<property name="Extends" value="plantedTomato" />
@@ -18522,13 +18530,13 @@ kind of free
 		<property name="Extends" value="cropsHarvestableMaster" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#CannabisMaturePlant1?CannabisMaturePlant1Prefab" />
-		<drop event="Harvest" name="CannabisBub" count="1" />
+		<drop event="Harvest" name="cannabisBub" count="1" />
 	</block>
 	<block id="1600" name="tobaccoPlant">
 		<property name="Extends" value="cropsHarvestableMaster" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#TobaccoPlant1?TobaccoPlant1Prefab" />
-		<drop event="Harvest" name="TobaccoLeaf" count="1" />
+		<drop event="Harvest" name="tobaccoLeaf" count="1" />
 	</block>
 	<block id="1601" name="plantedBamboo1">
 		<property name="Extends" value="plantedTomato" />
@@ -18565,7 +18573,7 @@ kind of free
 			<property name="ItemCount" value="5" />
 			<property name="UpgradeHitCount" value="20" />
 		</property>
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 		<drop event="Destroy" name="scrapSteel" count="5" />
 		<drop event="Fall" name="scrapSteelPile" count="2" prob="1" stick_chance=".75" />
 		<property name="DowngradeBlock" value="militaryTruckOpen" />
@@ -18584,7 +18592,7 @@ kind of free
 		<property name="MultiBlockDim" value="2,2,6" />
 		<property name="ShowModelOnFall" value="false" />
 		<property name="MaxDamage" value="800" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 		<!--<drop event="Harvest" name="gasCan" count="50" prob="0.5" tool_category="Disassemble" />
 	<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
 	<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
@@ -18703,7 +18711,7 @@ kind of free
 		<property name="Model" value="#lootcontainers?Container" />
 		<property name="Class" value="Loot" />
 		<property name="LootList" value="19" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 		<property name="DowngradeBlock" value="containerOpen" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="containerOpen" />
@@ -18722,7 +18730,7 @@ kind of free
 		<property name="Model" value="#lootcontainers?Container" />
 		<property name="Class" value="Loot" />
 		<property name="LootList" value="19" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 		<drop event="Harvest" name="scrapIron" count="25" tool_category="Disassemble" />
 		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="30,80" />
@@ -18731,24 +18739,24 @@ kind of free
 		<property name="Extends" value="cntCar03SedanDamage0" />
 		<property name="Model" value="#ambulancia?ambulanciaD0" />
 		<property name="DowngradeBlock" value="ambulanceDamaged" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
 	<block id="1626" name="ambulanceDamaged">
 		<property name="Extends" value="cntCar03SedanDamage1" param1="DowngradeBlock" />
 		<property name="Model" value="#ambulancia?ambulanciaD1" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
 	<block id="1627" name="policeSecure">
 		<property name="Extends" value="cntCar03SedanDamage0" />
 		<property name="Model" value="#police?policeD0" />
 		<property name="DowngradeBlock" value="policeDamaged" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
 	<block id="1629" name="policeDamaged">
 		<property name="Extends" value="cntCar03SedanDamage1" />
 		<property name="Model" value="#police?policeD1" />
 		<property name="LootList" value="47" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
 	<block id="1630" name="fireTruck">
 		<!--sdx<property name="Class" value="CarAlarmLoot, Mods" />
@@ -18764,7 +18772,7 @@ kind of free
 		<property name="MultiBlockDim" value="2,2,6" />
 		<property name="ShowModelOnFall" value="false" />
 		<property name="MaxDamage" value="1000" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 		<!--<drop event="Harvest" name="gasCan" count="50" prob="0.5" tool_category="Disassemble" />
 	<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
 	<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
@@ -18811,7 +18819,7 @@ kind of free
 		<property name="Model" value="#DecoVehiclesPrefabs?oldArmyTruck" />
 		<property name="LootList" value="19" />
 		<property name="MaxDamage" value="800" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 		<!--<drop event="Harvest" name="gasCan" count="50" prob="0.5" tool_category="Disassemble" />
 	<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
 	<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
@@ -18842,20 +18850,20 @@ kind of free
 	<block id="1632" name="oldArrmyTruckSide">
 		<property name="Extends" value="oldArmyTruck" />
 		<property name="Model" value="#truck?oldArmyTruckSide" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 		<property name="LootList" value="19" />
 	</block>
 	<block id="1633" name="schoolBus">
 		<property name="Extends" value="cntCar03SedanDamage0" />
 		<property name="Model" value="#schoolBus?schoolBusD0" />
 		<property name="DowngradeBlock" value="schoolBusDamaged" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 		<property name="MaxDamage" value="800" />
 	</block>
 	<block id="1634" name="schoolBusDamaged">
 		<property name="Extends" value="cntCar03SedanDamage1" param1="DowngradeBlock" />
 		<property name="Model" value="#schoolBus?schoolBusD1" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 		<property name="MaxDamage" value="800" />
 	</block>
 	<block id="1635" name="tractor">
@@ -18863,7 +18871,7 @@ kind of free
 		<property name="Model" value="#vehiclesdeco?Tractor2" />
 		<property name="DowngradeBlock" value="cntCar03SedanDamage2" />
 		<property name="LootList" value="172" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 		<property name="MaxDamage" value="800" />
 	</block>
 	<block id="1636" name="tractorG">
@@ -18871,80 +18879,80 @@ kind of free
 		<property name="Model" value="#vehiclesdeco?Tractor" />
 		<property name="DowngradeBlock" value="cntCar03SedanDamage2" />
 		<property name="LootList" value="172" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 		<property name="MaxDamage" value="800" />
 	</block>
 	<block id="1637" name="skylark">
 		<property name="Extends" value="oldArmyTruck" />
 		<property name="Model" value="#vehiclesdeco?Skylark" />
 		<property name="DowngradeBlock" value="cntCar03SedanDamage2" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
 	<block id="1638" name="126">
 		<property name="Extends" value="oldArmyTruck" />
 		<property name="Model" value="#vehiclesdeco?Fiat126" />
 		<property name="DowngradeBlock" value="scrapMetalPile" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
 	<block id="1638" name="fiat">
 		<property name="Extends" value="cntCar03SedanDamage0" />
 		<property name="Model" value="#vehiclesdeco?Fiat" />
 		<property name="DowngradeBlock" value="cntCar03SedanDamage1" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
 	<block id="1639" name="lanos">
 		<property name="Extends" value="cntCar03SedanDamage0" />
 		<property name="Model" value="#vehiclesdeco?Lanos" />
 		<property name="DowngradeBlock" value="cntCar03SedanDamage1" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
 	<block id="1641" name="charger">
 		<property name="Extends" value="cntCar03SedanDamage0" />
 		<property name="Model" value="#vehiclesdeco?Charger" />
 		<property name="DowngradeBlock" value="cntCar03SedanDamage1" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
 	<block id="1643" name="eclipse">
 		<property name="Extends" value="cntCar03SedanDamage0" />
 		<property name="Model" value="#vehiclesdeco?Eclipse" />
 		<property name="DowngradeBlock" value="cntCar03SedanDamage1" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
 	<block id="1644" name="bakkie">
 		<property name="Extends" value="cntCar03SedanDamage0" />
 		<property name="Model" value="#vehiclesdeco?Bakkie" />
 		<property name="DowngradeBlock" value="ruinedTruck" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
 	<block id="1646" name="l200">
 		<property name="Extends" value="cntCar03SedanDamage0" />
 		<property name="Model" value="#vehiclesdeco?L200" />
 		<property name="DowngradeBlock" value="ruinedTruck" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
 	<block id="1647" name="corolla">
 		<property name="Extends" value="cntCar03SedanDamage0" />
 		<property name="Model" value="#vehiclesdeco?ToyotaCorolla" />
 		<property name="DowngradeBlock" value="cntCar03SedanDamage1" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
 	<block id="1649" name="hirer">
 		<property name="Extends" value="cntCar03SedanDamage0" />
 		<property name="Model" value="#vehiclesdeco?ToyotaHirer" />
 		<property name="DowngradeBlock" value="cntCar03SedanDamage1" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
 	<block id="1650" name="147">
 		<property name="Extends" value="oldArmyTruck" />
 		<property name="Model" value="#vehiclesdeco?Fiat147" />
 		<property name="DowngradeBlock" value="scrapMetalPile" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
 	<block id="1651" name="ruinedTruck">
 		<property name="Extends" value="cntCar03SedanDamage1" />
 		<property name="Model" value="#RuinedCar?RuinedCarPrefab" />
 		<property name="DowngradeBlock" value="scrapMetalPile" />
-		<property name="CustomIcon" value="cntCar03Damage2" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
 	<!--JZMOD GENERATORS-->
 	<block id="1653" name="dieselGen">
@@ -18966,7 +18974,7 @@ kind of free
 	<block id="1655" name="sGenerator">
 		<property name="Extends" value="dieselGen" />
 		<property name="Model" value="#smallgenerator?smallGeneratorPrefab" />
-		<property name="CustomIcon" value="smallGenerator" />
+		<property name="CustomIcon" value="ui_game_symbol_smallGenerator" />
 		<property name="CanPickup" param1="smallGenerator" value="true" />
 	</block>
 	<!-- JZMOD DOORS/GATES/SHUTTERS/ELEVATORS -->
@@ -19152,7 +19160,7 @@ kind of free
 		<property name="Extends" value="wood_Gate_2x3" />
 		<property name="Material" value="metal" />
 		<property name="Model" value="#ScrIrGate2x3?ScrIrGate2x3" />
-		<property name="CustomIcon" value="ui_game_symbol_ironGate2x3" />
+		<property name="CustomIcon" value="ui_game_symbol_scrapGate3x2" />
 		<property name="OpenSound" value="UseActions/open_door_metal" />
 		<property name="CloseSound" value="UseActions/close_door_metal" />
 		<property class="RepairItems">
@@ -19249,6 +19257,7 @@ kind of free
 		<property name="Shape" value="ModelEntity" />
 		<property name="Tag" value="Door" />
 		<property name="Model" value="#Drawbridge1?Drawbridge1Prefab" />
+		<property name="CustomIcon" value="ui_game_symbol_drawBridge" />
 		<property name="PlaceEverywhere" value="true" />
 		<property name="Stacknumber" value="1" />
 		<property class="RepairItems">
@@ -19277,7 +19286,7 @@ kind of free
 		<property name="Stacknumber" value="1" />
 		<property name="Extends" value="wood_Gate_2x3" />
 		<property name="Model" value="#WoodBridge2x4?WoodBridge2x4" />
-		<property name="CustomIcon" value="ui_game_symbol_WoodBridge2c4" />
+		<property name="CustomIcon" value="ui_game_symbol_woodBridge2c4" />
 		<property name="MultiBlockDim" value="-2,1,1" />
 		<property class="RepairItems">
 			<property name="plank" value="15" />
