@@ -15638,4 +15638,109 @@ Mesh files no longer used:
 		<property name="FuelValue" value="100" />
 		<property name="CustomIcon" value="ui_game_symbol_charcoal" />
 	</item>
+    <!-- JZMOD UN USED MESHES
+     extra
+    <property name="Meshfile" value="#Crowbar?Crowbar" /><property name="HoldType" value="2" />
+    <property name="Meshfile" value="#bat?Bat" /> 
+    notused
+    <property name="Meshfile" value="#amr2?AMR3" /><property name="HoldType" value="11" />                   
+    <property name="Meshfile" value="#assaultrifles?ACWPrefab" /><property name="HoldType" value="6" />                    
+    <property name="Meshfile" value="#assaultrifles?AK12" />                    
+    <property name="Meshfile" value="#assaultrifles?Scar-H" />
+    <property name="Meshfile" value="#assaultrifles?M4A1" />                    
+    <property name="Meshfile" value="#assaultrifles?G36c" />
+    <property name="Meshfile" value="#axe1?AXE" /><property name="HoldType" value="17" />
+    <property name="Meshfile" value="#axe1?AXE3" />
+    <property name="Meshfile" value="#axe1?AXE1" /><property name="HoldType" value="2" />
+    <property name="Meshfile" value="#axe1?AXE2" />
+    <property name="Meshfile" value="#axe1?AXE4" />
+    <property name="Meshfile" value="#axe1?AXE6" />  
+    <property name="Meshfile" value="#bamboo?bambooPole" /><property name="HoldType" value="17" />
+    <property name="Meshfile" value="#bitaTPX?bitaTPX" /><property name="HoldType" value="17" />
+    <property name="Meshfile" value="#cbj?CbjPrefab" />     
+    <property name="Meshfile" value="#colt1911?colt1911" />
+    <property name="Meshfile" value="#crudeweapons?HuntingKnifeSpear" /><property name="HoldType" value="18" />
+    <property name="Meshfile" value="#crudeweapons?ChainNlocksPrefab" /><property name="HoldType" value="2" />
+    <property name="Meshfile" value="#crudeweapons?nailwood" /><property name="HoldType" value="2" />
+    <property name="Meshfile" value="#crudeweapons?Fork" /><property name="HoldType" value="36" />
+    <property name="Meshfile" value="#desertVII?desertVII" />
+    <property name="Meshfile" value="#doublebarrel?DoubleBarrel" /><property name="HoldType" value="5" />
+    <property name="Meshfile" value="#drill?Drill" /><property name="HoldType" value="37" />
+    <property name="Meshfile" value="#electric?Power_Spear" /><property name="HoldType" value="18" />
+    <property name="Meshfile" value="#fishes?hook" /><property name="HoldType" value="23" />
+    <property name="Meshfile" value="#fishes?bass" />
+    <property name="Meshfile" value="#fishes?bigFish" />
+    <property name="Meshfile" value="#fishes?fish" />
+    <property name="Meshfile" value="#fishes?rudFish" />
+    <property name="Meshfile" value="#fishes?salmon" />
+    <property name="Meshfile" value="#fishing1?cane" /><property name="HoldType" value="20" />                 
+    <property name="Meshfile" value="#fishing1?caneW" /><property name="HoldType" value="20" />
+    <property name="Meshfile" value="#goodNight?goodNight" />
+    <property name="Meshfile" value="#hflnew?Lightsword" /><property name="HoldType" value="17" />
+    <property name="Meshfile" value="#hflnew?Hooligan-Tool" />
+    <property name="Meshfile" value="#hflnew?AXE" />
+    <property name="Meshfile" value="#hflnew?SteakKnife" /><property name="HoldType" value="36" />
+    <property name="Meshfile" value="#hflnew?Pan" /><property name="HoldType" value="2" />
+    <property name="Meshfile" value="#hflnew?Spear" /><property name="HoldType" value="18" />
+    <property name="Meshfile" value="#hflnew?Hayfork" />
+    <property name="Meshfile" value="#hflnew?Halbert1" /><property name="HoldType" value="17" />
+    <property name="Meshfile" value="#hflnew?Bat" /><property name="HoldType" value="2" />
+    <property name="Meshfile" value="#hflnew?Crowbar" /><property name="HoldType" value="17" />
+    <property name="Meshfile" value="#hflnew?fork" /><property name="HoldType" value="36" />
+    <property name="Meshfile" value="#hflnew?knife 1" /><property name="HoldType" value="17" />
+    <property name="Meshfile" value="#hflnew?screwdriver 1" /><property name="HoldType" value="36" />
+    <property name="Meshfile" value="#hflnew?Katana" /><property name="HoldType" value="17" />
+    <property name="Meshfile" value="#hflnew?Drill" /><property name="HoldType" value="37" />
+    <property name="Meshfile" value="#hflnew?Saw" />   <property name="HoldType" value="19" />      
+    <property name="Meshfile" value="#hk?UMP45" /><property name="HoldType" value="6" />
+    <property name="Meshfile" value="#hk?HK416" />
+    <property name="Meshfile" value="#hk?MG4" />
+    <property name="Meshfile" value="#HKUSP?HKUSP" />
+    <property name="Meshfile" value="#IronShiv?IronShiv" /><property name="HoldType" value="36" />
+    <property name="Meshfile" value="#Jericho941F?Jericho941F" />
+    <property name="Meshfile" value="#jng90?JNG90" /><property name="HoldType" value="11" />		
+    <property name="Meshfile" value="#KABAR?KABAR" />
+    <property name="Meshfile" value="#Knife?Knife" />
+    <property name="Meshfile" value="#KnifeShark?KnifeShark" />
+    <property name="Meshfile" value="#launcher?GrenadeLauncher" /><property name="HoldType" value="3" />          
+    <property name="Meshfile" value="#launcher?RocketLauncher" /><property name="HoldType" value="10" />                    
+    <property name="Meshfile" value="#lmg?LSAT" /><property name="HoldType" value="6" />                    
+    <property name="Meshfile" value="#lmg?MG42" /> 
+    <property name="Meshfile" value="#lucille?lucille" />
+    <property name="Meshfile" value="#mace?Mace" /><property name="HoldType" value="2" />
+    <property name="Meshfile" value="#mace?Mace1" />
+    <property name="Meshfile" value="#mace?MaceChain" />
+    <property name="Meshfile" value="#mace?Hammer1" /><property name="HoldType" value="12" />
+    <property name="Meshfile" value="#minigun?MinigunPrefab" /><property name="HoldType" value="19" />
+    <property name="Meshfile" value="#minigun?minigun" /><property name="HoldType" value="19" />
+    <property name="Meshfile" value="#mtar?mtarPrefab" />
+    <property name="Meshfile" value="#nailGuns?ShotgunNailPrefab" />
+    <property name="Meshfile" value="#paprika?PaprikaFruits" />
+    <property name="Meshfile" value="#pistols?Beretta" /><property name="HoldType" value="1" />                    
+    <property name="Meshfile" value="#pistols?MK23" />                    
+    <property name="Meshfile" value="#pistols?MP-443" />                    
+    <property name="Meshfile" value="#pistols?DesertEagle" />                    
+    <property name="Meshfile" value="#pistols?Luger" />           
+    <property name="Meshfile" value="#psg-1?Psg-1" /><property name="HoldType" value="11" />
+    <property name="Meshfile" value="#RadSpider?SpiderVomit" />
+    <property name="Meshfile" value="#revolver?revolverPrefab" /><property name="HoldType" value="44" />
+    <property name="Meshfile" value="#sIGSauerP229?sIGSauerP229" />
+    <property name="Meshfile" value="#spearStone?spearStone" />
+    <property name="Meshfile" value="#steampunk?Revolver" /><property name="HoldType" value="44" />
+    <property name="Meshfile" value="#stoneKnife?stoneKnife" />
+    <property name="Meshfile" value="#strawberry?StrawberryFruit" />
+    <property name="Meshfile" value="#sword?Sword" /><property name="HoldType" value="2" />
+    <property name="Meshfile" value="#sword?Sword1" />
+    <property name="Meshfile" value="#sword?Sword2" />
+    <property name="Meshfile" value="#sword?Sword3" />
+    <property name="Meshfile" value="#sword?Sword5" />
+    <property name="Meshfile" value="#sword?Sword6" />
+    <property name="Meshfile" value="#sword?Saber" />
+    <property name="Meshfile" value="#sword?2HandedSword" /><property name="HoldType" value="17" />
+    <property name="Meshfile" value="#sword?2HandedSword1" />
+    <property name="Meshfile" value="#sword?2HandedSword2" />
+    <property name="Meshfile" value="#usas?USAS12" /><property name="HoldType" value="6" />
+    <property name="Meshfile" value="#uzi?UziPrefab" /> 
+    <property name="Meshfile" value="#ZdWeapons?Tomahawk" /><property name="HoldType" value="2" />
+    -->
 </items>
