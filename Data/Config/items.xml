@@ -601,7 +601,7 @@ Mesh files no longer used:
 	</item>
 	<!-- 40* * * * * * * * * * firearms * * * * * * * * * * -->
 	<item id="40" name="gunPistol">
-		<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab" />
+        <property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="weaponRepairKit" />
 		<property name="HoldType" value="1" />
@@ -982,7 +982,8 @@ Mesh files no longer used:
 		<property name="LightValue" value="0.45" />
 	</item>
 	<item id="48" name="gunAK47">
-		<property name="Meshfile" value="Items/Weapons/Ranged/ak47/ak47Prefab" />
+        <property name="Meshfile" value="#drill?DrillTool" />
+		<!--<property name="Meshfile" value="Items/Weapons/Ranged/ak47/ak47Prefab" />-->
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="weaponRepairKit" />
 		<property name="HoldType" value="48" />
@@ -10566,7 +10567,7 @@ Mesh files no longer used:
 	<item id="1515" name="carbonCrossbow">
 		<property name="Extends" value="crossbow" />
 		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
-		<!--sdx <property name="Meshfile" value="#crossbownew?CrossbowNew" /> -->
+		<property name="Meshfile" value="#crossbownew?CrossbowNew" /> 
 		<property name="CustomIcon" value="ui_game_symbol_carbonCrossbow" />
 		<property name="DescriptionKey" value="carbonCrossbowDesc" />
 		<property name="Material" value="metal" />
@@ -10631,9 +10632,8 @@ Mesh files no longer used:
 	</item>
 	<item id="1521" name="sniperRifle_scopeFrame">
 		<property name="Extends" value="silencer" />
-		<!--sdx <property name="Meshfile" value="#weaponAttach?AcogPrebab" /> 
-	<property name="DropMeshfile" value="#weaponAttach?AcogPrebab" /> -->
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
+		<property name="Meshfile" value="#weaponAttach?AcogPrebab" /> 
+        <property name="DropMeshfile" value="#weaponAttach?AcogPrebab" /> 
 		<property name="CustomIcon" value="ui_game_symbol_sniperRifleScopeframe" />
 		<property name="HoldType" value="36" />
 		<property class="Action1">
@@ -10656,10 +10656,10 @@ Mesh files no longer used:
 	</item>
 	<item id="1523" name="craftedRifle">
 		<property name="Extends" value="gunHuntingRifle" />
-		<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
+		
 		<property name="CustomIcon" value="ui_game_symbol_craftedRifle" />
-		<!--sdx<property name="HandMeshfile" value="#steampunk?buechse" />
-	<property name="DropMeshfile" value="#steampunk?buechse" /> -->
+		<property name="HandMeshfile" value="#steampunk?buechse" />
+        <property name="DropMeshfile" value="#steampunk?buechse" />
 		<property name="RepairTools" value="weaponRepairKit" />
 		<property name="HoldType" value="39" />
 		<property name="CrosshairOnAim" value="true" />
@@ -10722,8 +10722,7 @@ Mesh files no longer used:
 	</item>
 	<!--JZMOD HANDGUNS-->
 	<item id="1527" name="oldRevolver">
-		<!--sdx <property name="Meshfile" value="#revolver?revolverPrefab" /> -->
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
+		<property name="Meshfile" value="#revolver?revolverPrefab" /> 
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="44" />
 		<property name="Weight" value="10" />
@@ -10984,68 +10983,7 @@ Mesh files no longer used:
 		</property>
 		<property name="CraftingSkillGroup" value="gunSmithingCraft" />
 	</item>
-	<item id="1544" name="grenade">
-		<!--SDX <property name="Meshfile" value="#launcher?Grenade_launcher" /> -->
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
-		<property name="Material" value="metal" />
-		<property name="HoldType" value="3" />
-		<property name="CustomIcon" value="ui_game_symbol_grenade" />
-		<property class="Attributes">
-			<property name="GetQualityFromWeapon" value="true" />
-			<property name="EntityDamage" value="20,50" />
-			<property name="BlockDamage" value="5,20" />
-			<!-- this is not working yet, it uses damage from Action1 -->
-		</property>
-		<property class="Action1">
-			<!-- UseAction -->
-			<property name="Class" value="Projectile" />
-			<property name="Explosion.ParticleIndex" value="4" />
-			<!-- which prefab/particle is used -->
-			<property name="Explosion.RadiusBlocks" value="5" />
-			<!-- damage radius for blocks -->
-			<property name="Explosion.BlockDamage" value="50" />
-			<!-- damage for blocks in the center of the explosion -->
-			<property name="Explosion.RadiusEntities" value="5" />
-			<!-- damage radius for entities -->
-			<property name="Explosion.EntityDamage" value="50" />
-			<!-- damage for entities in the center of the explosion -->
-			<property name="Velocity" value="30" />
-			<property name="FlyTime" value="0.25" />
-			<property name="LifeTime" value="8" />
-		</property>
-		<property name="Group" value="Ammo/Weapons" />
-	</item>
-	<item id="1545" name="heGrenade">
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
-		<!--SDX 	<property name="Meshfile" value="#launcher?Grenade_launcher" /> -->
-		<property name="Material" value="metal" />
-		<property name="HoldType" value="3" />
-		<property name="CustomIcon" value="ui_game_symbol_heGrenade" />
-		<property class="Attributes">
-			<property name="GetQualityFromWeapon" value="true" />
-			<property name="EntityDamage" value="25,50" />
-			<property name="BlockDamage" value="45,90" />
-			<!-- this is not working yet, it uses damage from Action1 -->
-		</property>
-		<property class="Action1">
-			<!-- UseAction -->
-			<property name="Class" value="Projectile" />
-			<property name="Explosion.ParticleIndex" value="4" />
-			<!-- which prefab/particle is used -->
-			<property name="Explosion.RadiusBlocks" value="8" />
-			<!-- damage radius for blocks -->
-			<property name="Explosion.BlockDamage" value="150" />
-			<!-- damage for blocks in the center of the explosion -->
-			<property name="Explosion.RadiusEntities" value="10" />
-			<!-- damage radius for entities -->
-			<property name="Explosion.EntityDamage" value="150" />
-			<!-- damage for entities in the center of the explosion -->
-			<property name="Velocity" value="30" />
-			<property name="FlyTime" value="0.25" />
-			<property name="LifeTime" value="8" />
-		</property>
-		<property name="Group" value="Ammo/Weapons" />
-	</item>
+	
 	<item id="1546" name="demoRocket">
 		<property name="Extends" value="rocket" />
 		<property name="DescriptionKey" value="DemoRocketDesc" />
@@ -11082,10 +11020,9 @@ Mesh files no longer used:
 	</item>
 	<!--JZMOD MELEE WEAPONS -->
 	<item id="1549" name="woodSpear">
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
-		<!-- SDX	<property name="Meshfile" value="#crudeweapons?woddenSpear" /> 
-	<property name="HandMeshfile" value="#crudeweapons?woddenSpear" />
-	<property name="DropMeshfile" value="#crudeweapons?woddenSpear" /> -->
+		<property name="Meshfile" value="#crudeweapons?woddenSpear" /> 
+        <property name="HandMeshfile" value="#crudeweapons?woddenSpear" />
+        <property name="DropMeshfile" value="#crudeweapons?woddenSpear" /> 
 		<property name="CustomIcon" value="ui_game_symbol_woodSpear" />
 		<property name="Material" value="wood" />
 		<property name="HoldType" value="18" />
@@ -11149,10 +11086,9 @@ Mesh files no longer used:
 		<property name="CraftingSkillGroup" value="woodSpearCraft" />
 	</item>
 	<item id="1550" name="woodJavelin">
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
-		<!--SDX	<property name="Meshfile" value="#crudeweapons?woddenSpear" />
-	<property name="HandMeshfile" value="#crudeweapons?woddenSpear" />
-	<property name="DropMeshfile" value="#crudeweapons?woddenSpear" /> -->
+		<property name="Meshfile" value="#crudeweapons?woddenSpear" />
+        <property name="HandMeshfile" value="#crudeweapons?woddenSpear" />
+        <property name="DropMeshfile" value="#crudeweapons?woddenSpear" /> 
 		<property name="CustomIcon" value="ui_game_symbol_woodSpear" />
 		<property name="Material" value="wood" />
 		<property name="HoldType" value="18" />
@@ -11189,10 +11125,9 @@ Mesh files no longer used:
 	</item>
 	<item id="1551" name="ironSpear">
 		<property name="Extends" value="woodSpear" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
-		<!--SDX 	<property name="Meshfile" value="#spearBronze?spearBronze" />
-	<property name="HandMeshfile" value="#spearBronze?spearBronze" />
-	<property name="DropMeshfile" value="#spearBronze?spearBronze" /> -->
+		<property name="Meshfile" value="#spearBronze?spearBronze" />
+        <property name="HandMeshfile" value="#spearBronze?spearBronze" />
+        <property name="DropMeshfile" value="#spearBronze?spearBronze" /> 
 		<property name="Material" value="metal" />
 		<property name="Weight" value="10" />
 		<property name="RepairTools" value="scrapIron" />
@@ -11222,10 +11157,9 @@ Mesh files no longer used:
 	</item>
 	<item id="1552" name="ironJavelin">
 		<property name="Extends" value="woodJavelin" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
-		<!--SDX	<property name="Meshfile" value="#spearBronze?spearBronze" />
-	<property name="HandMeshfile" value="#spearBronze?spearBronze" />
-	<property name="DropMeshfile" value="#spearBronze?spearBronze" /> -->
+		<property name="Meshfile" value="#spearBronze?spearBronze" />
+        <property name="HandMeshfile" value="#spearBronze?spearBronze" />
+        <property name="DropMeshfile" value="#spearBronze?spearBronze" /> 
 		<property name="Material" value="metal" />
 		<property name="Weight" value="10" />
 		<property name="CustomIcon" value="ui_game_symbol_ironSpears" />
@@ -11243,8 +11177,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1553" name="oldAxe">
 		<property name="Extends" value="fireaxeIron" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
-		<!--SDX    <property name="Meshfile" value="#axe1?AXE5" /> -->
+		<property name="Meshfile" value="#axe1?AXE5" /> 
 		<property name="HoldType" value="2" />
 		<property name="RepairTools" value="NoRepair" />
 		<property name="CustomIcon" value="ui_game_symbol_axe02" />
@@ -11271,8 +11204,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1554" name="steakKnife">
 		<property name="Extends" value="huntingKnife" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
-		<!--SDX	<property name="Meshfile" value="#CookingKnife?CookingKnife" /> -->
+        <property name="Meshfile" value="#hflnew?SteakKnife" />
 		<property name="CustomIcon" value="ui_game_symbol_cookingKnife" />
 		<property name="Weight" value="5" />
 		<property class="Action0">
@@ -11298,8 +11230,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1555" name="oldKnife">
 		<property name="Extends" value="steakKnife" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
-		<!--SDX	<property name="Meshfile" value="#CombatKnife?CombatKnife" /> -->
+        <property name="Meshfile" value="#CookingKnife?CookingKnife" />
 		<property name="CustomIcon" value="ui_game_symbol_cookingKnife" />
 		<property class="Attributes">
 			<property name="DegradationMax" value="49,50" />
@@ -11309,8 +11240,7 @@ Mesh files no longer used:
 	<item id="1556" name="bat">
 		<property name="Extends" value="clubMaster" />
 		<property name="DescriptionKey" value="batDesc" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
-		<!--SDX	<property name="Meshfile" value="#bat?Bat" /> -->
+		<property name="Meshfile" value="#hflnew?Bat" />
 		<property name="FuelValue" value="60" />
 		<property name="RepairTools" value="NoRepair" />
 		<property class="Action0">
@@ -11340,7 +11270,7 @@ Mesh files no longer used:
 	<item id="1557" name="nailedBat">
 		<property name="Extends" value="clubMaster" />
 		<property name="DescriptionKey" value="nailedBatDesc" />
-		<!--SDX	<property name="Meshfile" value="#crudeweapons?nailedBat" /> -->
+		<property name="Meshfile" value="#crudeweapons?nailedBat" />
 		<property name="RepairTools" value="nail" />
 		<property class="Action0">
 			<property name="Delay" value="1.35" />
@@ -11376,7 +11306,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1558" name="lucille">
 		<property name="Extends" value="clubMaster" />
-		<!--SDX	<property name="Meshfile" value="#lucille?lucille" /> -->
+        <property name="Meshfile" value="#lucille?lucille" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="17" />
 		<property name="Weight" value="15" />
@@ -11418,7 +11348,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1559" name="nightStick">
 		<property name="Extends" value="clubMaster" />
-		<!--SDX	<property name="Meshfile" value="#Baton?Baton" /> -->
+		<property name="Meshfile" value="#Baton?Baton" /> 
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="shortMetalPipe" />
 		<property name="FuelValue" value="5" />
@@ -11447,7 +11377,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1560" name="shockStick">
 		<property name="Extends" value="clubMaster" />
-		<!--SDX <property name="Meshfile" value="#electric?BatElectric" /> -->
+		<property name="Meshfile" value="#electric?BatElectric" /> 
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="shortMetalPipe" />
 		<property name="FuelValue" value="5" />
@@ -11524,8 +11454,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1563" name="katana">
 		<property name="Extends" value="machete" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
-		<!--SDX	<property name="Meshfile" value="#michonnekatana?katana" /> -->
+		<property name="Meshfile" value="#michonnekatana?katana" /> 
 		<property name="Material" value="Msteel" />
 		<property name="RepairTools" value="shortSteelPipe" />
 		<property name="HoldType" value="17" />
@@ -11562,8 +11491,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1564" name="fryingPan">
 		<property name="CustomIcon" value="ui_game_symbol_fryingPan" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
-		<!--SDX	<property name="Meshfile" value="#Pan?Pan" /> -->
+		<property name="Meshfile" value="#hflnew?Pan" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="2" />
 		<property name="Stacknumber" value="1" />
@@ -11606,8 +11534,7 @@ Mesh files no longer used:
 	</item>
 	<!--JZMOD TOOLS -->
 	<item id="1565" name="cobblestoneHammer">
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
-		<!--SDX	<property name="Meshfile" value="#stoneHammer?stoneHammer" /> -->
+		<property name="Meshfile" value="#stoneHammer?stoneHammer" /> 
 		<property name="Material" value="stone" />
 		<property name="HoldType" value="32" />
 		<property name="RepairTools" value="rockSmall" />
@@ -11659,7 +11586,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1566" name="brickHammer">
 		<property name="Extends" value="cobblestoneHammer" />
-		<!--SDX	<property name="Meshfile" value="#stonePickaxe?stonePickaxe" /> -->
+		<property name="Meshfile" value="#stonePickaxe?stonePickaxe" /> 
 		<property class="Action0">
 			<property name="ToolCategory.BrickBlock" value="1" param1="10" />
 		</property>
@@ -11688,6 +11615,8 @@ Mesh files no longer used:
 	</item>
 	<item id="1568" name="rConcreteSledge">
 		<property name="Extends" value="concreteSledge" />
+        <property name="Meshfile" value="#hflnew?Crowbar" />
+        <property name="HoldType" value="17" />
 		<property class="Action0">
 			<property name="ToolCategory.rConcreteBlock" value="1" param1="10" />
 		</property>
@@ -11699,8 +11628,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1569" name="screwdriver">
 		<property name="CustomIcon" value="ui_game_symbol_screwdriver" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
-		<!--SDX	<property name="Meshfile" value="#screwdriver?screwdriver" /> -->
+		<property name="Meshfile" value="#hflnew?screwdriver 1" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="36" />
 		<property name="Stacknumber" value="1" />
@@ -11764,9 +11692,9 @@ Mesh files no longer used:
 		</property>
 	</item>
 	<item id="1571" name="welderTool">
-		<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
-		<!--SDX	<property name="DropMeshfile" value="#drill?DrillTool" />
-	<property name="HandMeshfile" value="#drill?DrillTool" /> -->
+		<property name="Meshfile" value="#drill?DrillTool" />
+		<property name="DropMeshfile" value="#drill?DrillTool" />
+        <property name="HandMeshfile" value="#drill?DrillTool" /> 
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="forgedSteel" />
 		<property name="HoldType" value="37" />
@@ -12133,6 +12061,7 @@ Mesh files no longer used:
 	<!--JZMOD SKILLBOOKS-->
 	<item id="1598" name="handSaw">
 		<property name="Extends" value="schematicMaster" />
+        <property name="Meshfile" value="#hflnew?Saw" />
 		<property class="Action1">
 			<property name="Skills_to_gain" value="plank" />
 		</property>
@@ -13008,8 +12937,8 @@ Mesh files no longer used:
 		<property name="Extends" value="foodMaster" />
 		<property name="Material" value="Mfruit" />
 		<property name="Weight" value="1" />
-		<!--SDX	<property name="Meshfile" value="#Apple1?Apple1Prefab" />
-	<property name="DropMeshfile" value="#Apple1?Apple1Prefab" /> -->
+		<property name="Meshfile" value="#Apple1?Apple1Prefab" />
+        <property name="DropMeshfile" value="#Apple1?Apple1Prefab" />
 		<property class="Action1">
 			<property name="Gain_food" value="1" />
 			<property name="Gain_water" value="1" />
@@ -13022,10 +12951,9 @@ Mesh files no longer used:
 		<property name="Extends" value="foodMaster" />
 		<property name="Material" value="Mveggie" />
 		<property name="Weight" value="1" />
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
 		<property name="Material" value="Mveggie" />
 		<property name="Weight" value="1" />
-		<!--SDX	<property name="Meshfile" value="#fruits?carrot" /> -->
+		<property name="Meshfile" value="#fruits?carrot" />
 		<property name="DescriptionKey" value="carrotDesc" />
 		<property class="Action1">
 			<property name="Gain_food" value="1" />
@@ -13039,8 +12967,8 @@ Mesh files no longer used:
 		<property name="Material" value="Mveggie" />
 		<property name="Weight" value="1" />
 		<property name="CustomIcon" value="ui_game_symbol_tomato" />
-		<!--SDX	<property name="Meshfile" value="#Tomato1?Tomato1Prefab" />
-	<property name="DropMeshfile" value="#Tomato1?Tomato1Prefab" /> -->
+        <property name="Meshfile" value="#Tomato1?Tomato1Prefab" />
+        <property name="DropMeshfile" value="#Tomato1?Tomato1Prefab" />
 		<property name="HoldType" value="23" />
 		<property class="Action1">
 			<property name="Gain_food" value="1" />
@@ -13229,8 +13157,8 @@ Mesh files no longer used:
 		<property name="Material" value="Mprotein" />
 		<property name="CustomIcon" value="ui_game_symbol_fishFillet" />
 		<property name="Weight" value="2" />
-		<!--SDX	<property name="Meshfile" value="#fishes?rawFish" />
-	<property name="DropMeshfile" value="#fishes?rawFish" /> -->
+		<property name="Meshfile" value="#fishes?rawFish" />
+        <property name="DropMeshfile" value="#fishes?rawFish" />
 		<property name="HoldType" value="3" />
 		<property class="Action1">
 			<property name="Gain_food" value="4" />
@@ -13636,6 +13564,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1772" name="strawberry">
 		<property name="Extends" value="foodMaster" />
+        <property name="Meshfile" value="#strawberry?StrawberryFruit" />
 		<property name="Material" value="Mfruit" />
 		<property name="Weight" value="1" />
 		<property name="CustomIcon" value="ui_game_symbol_strawberry" />
@@ -13726,6 +13655,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1777" name="fattyVomitProjectile">
 		<property name="Extends" value="projectileZombieVomit" />
+        <property name="Meshfile" value="#RadSpider?SpiderVomit" />
 		<property name="CreativeMode" value="None" />
 		<property class="Action1">
 			<property name="DamageEntity" value="10" />
@@ -14376,9 +14306,8 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="ui_game_symbol_wheat" />
 	</item>
 	<item id="1841" name="lockPickGun">
-		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BranchPrefab" />
 		<property name="CustomIcon" value="ui_game_symbol_lockPickGun" />
-		<!--SDX   <property name="Meshfile" value="#lockPick?lockPick" /> -->
+		<property name="Meshfile" value="#lockPick?lockPick" /> 
 		<property name="HoldType" value="1" />
 		<property name="Stacknumber" value="1" />
 		<property name="Material" value="metal" />
@@ -15455,6 +15384,8 @@ Mesh files no longer used:
 	</item>
 	<item id="1958" name="steelFork">
 		<property name="Extends" value="itemMaster" />
+        <property name="Meshfile" value="#hflnew?fork" />
+        <property name="HoldType" value="36" />
 		<property name="Material" value="Msteel" />
 		<property name="CustomIcon" value="ui_game_symbol_steelFork" />
 		<property name="Weight" value="1" />
@@ -15638,109 +15569,217 @@ Mesh files no longer used:
 		<property name="FuelValue" value="100" />
 		<property name="CustomIcon" value="ui_game_symbol_charcoal" />
 	</item>
+    <item id="1973" name="batGoodNight">
+		<property name="Extends" value="bat" />
+		<property name="DescriptionKey" value="batDesc" />
+		<property name="Meshfile" value="#goodNight?goodNight" />
+		<property name="FuelValue" value="60" />
+		<property name="RepairTools" value="NoRepair" />
+		<property class="Action0">
+			<property name="Delay" value="1.3" />
+			<property name="Stamina_usage" value="6" />
+			<property name="Buff" value="criticalBlunt" />
+			<property name="Buff_chance" value="0.35" />
+			<property name="DamageBonus.head" value="45" />
+			<property name="DamageBonus.stone" value="0.5" />
+		</property>
+		<property class="Action1">
+			<property name="Delay" value="3.95" />
+			<property name="Stamina_usage" value="9" />
+			<property name="Buff" value="criticalBlunt" />
+			<property name="Buff_chance" value="0.45" />
+			<property name="DamageBonus.head" value="68" />
+			<property name="DamageBonus.stone" value="0.75" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="10,20" />
+			<property name="BlockDamage" value="3,13" />
+			<property name="DegradationMax" value="300,600" />
+			<property name="DegradationRate" value="3,1" />
+		</property>
+		<property name="DescriptionKey" value="batDesc" />
+	</item>
+    <item id="1974" name="batTPX">
+		<property name="Extends" value="clubMaster" />
+		<property name="DescriptionKey" value="batDesc" />
+		<property name="Meshfile" value="#bitaTPX?bitaTPX" />
+		<property name="FuelValue" value="60" />
+		<property name="RepairTools" value="NoRepair" />
+		<property class="Action0">
+			<property name="Delay" value="1.3" />
+			<property name="Stamina_usage" value="6" />
+			<property name="Buff" value="criticalBlunt" />
+			<property name="Buff_chance" value="0.35" />
+			<property name="DamageBonus.head" value="45" />
+			<property name="DamageBonus.stone" value="0.5" />
+		</property>
+		<property class="Action1">
+			<property name="Delay" value="3.95" />
+			<property name="Stamina_usage" value="9" />
+			<property name="Buff" value="criticalBlunt" />
+			<property name="Buff_chance" value="0.45" />
+			<property name="DamageBonus.head" value="68" />
+			<property name="DamageBonus.stone" value="0.75" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="10,20" />
+			<property name="BlockDamage" value="3,13" />
+			<property name="DegradationMax" value="300,600" />
+			<property name="DegradationRate" value="3,1" />
+		</property>
+		<property name="DescriptionKey" value="batDesc" />
+	</item>
+    <item id="1975" name="drillTool">
+		<property name="Meshfile" value="#hflnew?Drill" />
+		<property name="DropMeshfile" value="#hflnew?Drill" />
+        <property name="HandMeshfile" value="#hflnew?Drill" /> 
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="forgedSteel" />
+		<property name="HoldType" value="37" />
+		<property name="Stacknumber" value="1" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="Weapons/weapon_jam" />
+		<property class="Parts">
+			<property name="Stock" value="partsNailgun_frame" />
+			<property name="Receiver" value="welder_receiver" />
+			<property name="Pump" value="welder_parts" />
+			<property name="Barrel" value="partsNailgun_battery" />
+		</property>
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="0.3" />
+			<property name="Range" value="2.2" />
+			<property name="Block_range" value="4" />
+			<property name="Sphere" value="0.1" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Sound_harvesting" value="UseActions/wrench_harvest" />
+			<property name="Stamina_usage" value="3" />
+			<property name="DamageBonus.head" value="20" />
+			<property name="DamageBonus.glass" value="5" />
+			<property name="DamageBonus.stone" value="0" />
+			<property name="DamageBonus.wood" value="0" />
+			<property name="DamageBonus.metal" value="5" />
+			<property name="DamageBonus.steel" value="5" />
+			<property name="DamageBonus.hardStone" value="0" />
+			<property name="DamageBonus.earth" value="0" />
+			<property name="ToolCategory.SteelBlock" value="1" param1="10" />
+			<property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="5" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Repair" />
+			<property name="Delay" value="0.4" />
+			<property name="Repair_amount" value="350" />
+			<property name="Sound_start" value="UseActions/repair_block" />
+			<property name="Allowed_upgrade_items" value="metalRivetSheet,scrapSteel,forgedSteel" />
+			<property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="1" />
+		</property>
+		<property name="Group" value="Tools/Traps" />
+		<property name="ActionSkillGroup" value="steelBuilding" />
+		<property name="CraftingSkillGroup" value="steelWelderCraft" />
+		<property name="DescriptionKey" value="compactDriverDesc" />
+		<property name="RepairExpMultiplier" value="2" />
+	</item>
+    <item id="7" name="clubIron">
+		<property name="Extends" value="clubMaster" />
+        <property name="Meshfile" value="#hflnew?Hooligan-Tool" />
+		<property name="RepairTools" value="scrapIron" />
+		<property name="Material" value="metal" />
+		<property name="EconomicValue" value="100" />
+		<property name="RepairTools" value="scrapIron" />
+		<property class="Action0">
+			<property name="Delay" value="1.6" />
+			<property name="Stamina_usage" value="8" />
+			<property name="DamageBonus.head" value="20" />
+			<property name="DamageBonus.glass" value="10" />
+			<property name="DamageBonus.organic" value="1" />
+			<property name="DamageBonus.cloth" value="0.5" />
+			<property name="DamageBonus.earth" value="0.5" />
+			<property name="DamageBonus.stone" value="1.5" />
+			<property name="DamageBonus.hardStone" value="0" />
+			<property name="DamageBonus.wood" value="2.5" />
+			<property name="DamageBonus.metal" value="1.5" />
+			<property name="DamageBonus.steel" value="0" />
+			<property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ToolCategory.Butcher" value="0" param1="5" />
+		</property>
+		<property class="Action1">
+			<property name="Delay" value="4" />
+			<property name="Stamina_usage" value="16" />
+			<property name="DamageBonus.head" value="40" />
+			<property name="DamageBonus.glass" value="10" />
+			<property name="DamageBonus.organic" value="1" />
+			<property name="DamageBonus.cloth" value="0.5" />
+			<property name="DamageBonus.earth" value="0.5" />
+			<property name="DamageBonus.stone" value="1.5" />
+			<property name="DamageBonus.hardStone" value="0" />
+			<property name="DamageBonus.wood" value="2.5" />
+			<property name="DamageBonus.metal" value="1.5" />
+			<property name="DamageBonus.steel" value="0" />
+			<property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ToolCategory.Butcher" value="0" param1="5" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="10,15" />
+		</property>
+		<property name="CritChance" value="0.1" />
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="DescriptionKey" value="clubIronDesc" />
+		<property name="ActionSkillGroup" value="bluntWeaponsAction" />
+		<property name="CraftingSkillGroup" value="ironClubCraft" />
+	</item>
     <!-- JZMOD UN USED MESHES
-     extra
-    <property name="Meshfile" value="#Crowbar?Crowbar" /><property name="HoldType" value="2" />
-    <property name="Meshfile" value="#bat?Bat" /> 
-    notused
-    <property name="Meshfile" value="#amr2?AMR3" /><property name="HoldType" value="11" />                   
-    <property name="Meshfile" value="#assaultrifles?ACWPrefab" /><property name="HoldType" value="6" />                    
-    <property name="Meshfile" value="#assaultrifles?AK12" />                    
-    <property name="Meshfile" value="#assaultrifles?Scar-H" />
-    <property name="Meshfile" value="#assaultrifles?M4A1" />                    
-    <property name="Meshfile" value="#assaultrifles?G36c" />
-    <property name="Meshfile" value="#axe1?AXE" /><property name="HoldType" value="17" />
-    <property name="Meshfile" value="#axe1?AXE3" />
-    <property name="Meshfile" value="#axe1?AXE1" /><property name="HoldType" value="2" />
-    <property name="Meshfile" value="#axe1?AXE2" />
-    <property name="Meshfile" value="#axe1?AXE4" />
-    <property name="Meshfile" value="#axe1?AXE6" />  
-    <property name="Meshfile" value="#bamboo?bambooPole" /><property name="HoldType" value="17" />
-    <property name="Meshfile" value="#bitaTPX?bitaTPX" /><property name="HoldType" value="17" />
-    <property name="Meshfile" value="#cbj?CbjPrefab" />     
-    <property name="Meshfile" value="#colt1911?colt1911" />
-    <property name="Meshfile" value="#crudeweapons?HuntingKnifeSpear" /><property name="HoldType" value="18" />
-    <property name="Meshfile" value="#crudeweapons?ChainNlocksPrefab" /><property name="HoldType" value="2" />
-    <property name="Meshfile" value="#crudeweapons?nailwood" /><property name="HoldType" value="2" />
-    <property name="Meshfile" value="#crudeweapons?Fork" /><property name="HoldType" value="36" />
-    <property name="Meshfile" value="#desertVII?desertVII" />
-    <property name="Meshfile" value="#doublebarrel?DoubleBarrel" /><property name="HoldType" value="5" />
-    <property name="Meshfile" value="#drill?Drill" /><property name="HoldType" value="37" />
-    <property name="Meshfile" value="#electric?Power_Spear" /><property name="HoldType" value="18" />
-    <property name="Meshfile" value="#fishes?hook" /><property name="HoldType" value="23" />
-    <property name="Meshfile" value="#fishes?bass" />
-    <property name="Meshfile" value="#fishes?bigFish" />
-    <property name="Meshfile" value="#fishes?fish" />
-    <property name="Meshfile" value="#fishes?rudFish" />
-    <property name="Meshfile" value="#fishes?salmon" />
-    <property name="Meshfile" value="#fishing1?cane" /><property name="HoldType" value="20" />                 
-    <property name="Meshfile" value="#fishing1?caneW" /><property name="HoldType" value="20" />
-    <property name="Meshfile" value="#goodNight?goodNight" />
-    <property name="Meshfile" value="#hflnew?Lightsword" /><property name="HoldType" value="17" />
-    <property name="Meshfile" value="#hflnew?Hooligan-Tool" />
-    <property name="Meshfile" value="#hflnew?AXE" />
-    <property name="Meshfile" value="#hflnew?SteakKnife" /><property name="HoldType" value="36" />
-    <property name="Meshfile" value="#hflnew?Pan" /><property name="HoldType" value="2" />
-    <property name="Meshfile" value="#hflnew?Spear" /><property name="HoldType" value="18" />
-    <property name="Meshfile" value="#hflnew?Hayfork" />
-    <property name="Meshfile" value="#hflnew?Halbert1" /><property name="HoldType" value="17" />
-    <property name="Meshfile" value="#hflnew?Bat" /><property name="HoldType" value="2" />
-    <property name="Meshfile" value="#hflnew?Crowbar" /><property name="HoldType" value="17" />
-    <property name="Meshfile" value="#hflnew?fork" /><property name="HoldType" value="36" />
-    <property name="Meshfile" value="#hflnew?knife 1" /><property name="HoldType" value="17" />
-    <property name="Meshfile" value="#hflnew?screwdriver 1" /><property name="HoldType" value="36" />
-    <property name="Meshfile" value="#hflnew?Katana" /><property name="HoldType" value="17" />
-    <property name="Meshfile" value="#hflnew?Drill" /><property name="HoldType" value="37" />
-    <property name="Meshfile" value="#hflnew?Saw" />   <property name="HoldType" value="19" />      
-    <property name="Meshfile" value="#hk?UMP45" /><property name="HoldType" value="6" />
-    <property name="Meshfile" value="#hk?HK416" />
-    <property name="Meshfile" value="#hk?MG4" />
-    <property name="Meshfile" value="#HKUSP?HKUSP" />
-    <property name="Meshfile" value="#IronShiv?IronShiv" /><property name="HoldType" value="36" />
-    <property name="Meshfile" value="#Jericho941F?Jericho941F" />
-    <property name="Meshfile" value="#jng90?JNG90" /><property name="HoldType" value="11" />		
-    <property name="Meshfile" value="#KABAR?KABAR" />
-    <property name="Meshfile" value="#Knife?Knife" />
-    <property name="Meshfile" value="#KnifeShark?KnifeShark" />
-    <property name="Meshfile" value="#launcher?GrenadeLauncher" /><property name="HoldType" value="3" />          
-    <property name="Meshfile" value="#launcher?RocketLauncher" /><property name="HoldType" value="10" />                    
-    <property name="Meshfile" value="#lmg?LSAT" /><property name="HoldType" value="6" />                    
-    <property name="Meshfile" value="#lmg?MG42" /> 
-    <property name="Meshfile" value="#lucille?lucille" />
-    <property name="Meshfile" value="#mace?Mace" /><property name="HoldType" value="2" />
-    <property name="Meshfile" value="#mace?Mace1" />
-    <property name="Meshfile" value="#mace?MaceChain" />
-    <property name="Meshfile" value="#mace?Hammer1" /><property name="HoldType" value="12" />
-    <property name="Meshfile" value="#minigun?MinigunPrefab" /><property name="HoldType" value="19" />
-    <property name="Meshfile" value="#minigun?minigun" /><property name="HoldType" value="19" />
-    <property name="Meshfile" value="#mtar?mtarPrefab" />
-    <property name="Meshfile" value="#nailGuns?ShotgunNailPrefab" />
-    <property name="Meshfile" value="#paprika?PaprikaFruits" />
-    <property name="Meshfile" value="#pistols?Beretta" /><property name="HoldType" value="1" />                    
-    <property name="Meshfile" value="#pistols?MK23" />                    
-    <property name="Meshfile" value="#pistols?MP-443" />                    
-    <property name="Meshfile" value="#pistols?DesertEagle" />                    
-    <property name="Meshfile" value="#pistols?Luger" />           
-    <property name="Meshfile" value="#psg-1?Psg-1" /><property name="HoldType" value="11" />
-    <property name="Meshfile" value="#RadSpider?SpiderVomit" />
-    <property name="Meshfile" value="#revolver?revolverPrefab" /><property name="HoldType" value="44" />
-    <property name="Meshfile" value="#sIGSauerP229?sIGSauerP229" />
-    <property name="Meshfile" value="#spearStone?spearStone" />
-    <property name="Meshfile" value="#steampunk?Revolver" /><property name="HoldType" value="44" />
-    <property name="Meshfile" value="#stoneKnife?stoneKnife" />
-    <property name="Meshfile" value="#strawberry?StrawberryFruit" />
-    <property name="Meshfile" value="#sword?Sword" /><property name="HoldType" value="2" />
-    <property name="Meshfile" value="#sword?Sword1" />
-    <property name="Meshfile" value="#sword?Sword2" />
-    <property name="Meshfile" value="#sword?Sword3" />
-    <property name="Meshfile" value="#sword?Sword5" />
-    <property name="Meshfile" value="#sword?Sword6" />
-    <property name="Meshfile" value="#sword?Saber" />
-    <property name="Meshfile" value="#sword?2HandedSword" /><property name="HoldType" value="17" />
-    <property name="Meshfile" value="#sword?2HandedSword1" />
-    <property name="Meshfile" value="#sword?2HandedSword2" />
-    <property name="Meshfile" value="#usas?USAS12" /><property name="HoldType" value="6" />
-    <property name="Meshfile" value="#uzi?UziPrefab" /> 
-    <property name="Meshfile" value="#ZdWeapons?Tomahawk" /><property name="HoldType" value="2" />
+    
+    
+   
+   
+fireamrs
+    XXX<property name="Meshfile" value="#assaultrifles?ACWPrefab" /><property name="HoldType" value="6" />WORKS USE                    
+    XXX<property name="Meshfile" value="#assaultrifles?AK12" />WORKS USE                    
+    XXX<property name="Meshfile" value="#assaultrifles?Scar-H" />WORKS USE
+    XXX<property name="Meshfile" value="#assaultrifles?M4A1" /> WORKS USE                   
+    XXX<property name="Meshfile" value="#assaultrifles?G36c" />WORKS USE
+    XXX<property name="Meshfile" value="#colt1911?colt1911" /><property name="HoldType" value="17" />WORKS USE
+    XXX<property name="Meshfile" value="#desertVII?desertVII" /><property name="HoldType" value="36" />WORKS USE
+    XXX<property name="Meshfile" value="#doublebarrel?DoubleBarrel" /><property name="HoldType" value="5" />works 
+    XXX<property name="Meshfile" value="#hk?UMP45" /><property name="HoldType" value="6" />WORKS USE
+    XXX<property name="Meshfile" value="#hk?HK416" />WORKS USE
+    XXX<property name="Meshfile" value="#hk?MG4" />WORKS USE
+    XXX<property name="Meshfile" value="#lmg?LSAT" /><property name="HoldType" value="6" />  WORKS                  
+    XXX<property name="Meshfile" value="#lmg?MG42" /> WORKS
+    XXX<property name="Meshfile" value="#steampunk?Revolver" /><property name="HoldType" value="44" />works
+melee 
+    XXX <property name="Meshfile" value="#crudeweapons?HuntingKnifeSpear" /><property name="HoldType" value="18" />works
+    XXX  <property name="Meshfile" value="#electric?Power_Spear" /><property name="HoldType" value="18" />works
+    XXX  <property name="Meshfile" value="#hflnew?AXE" />works high end fancy axe
+    XXX  <property name="Meshfile" value="#hflnew?Spear" /><property name="HoldType" value="18" />works larg iron or steel spear
+    XXX   <property name="Meshfile" value="#hflnew?Hayfork" />works
+    XXX  <property name="Meshfile" value="#hflnew?Halbert1" /><property name="HoldType" value="17" />works
+    XXX  <property name="Meshfile" value="#hflnew?knife 1" /><property name="HoldType" value="17" />works chef knife
+    XXX   <property name="Meshfile" value="#KABAR?KABAR" />works
+    XXX   <property name="Meshfile" value="#Knife?Knife" />works long survival knife
+    XXX  <property name="Meshfile" value="#spearStone?spearStone" />works wood w stone tip
+    XXX   <property name="Meshfile" value="#stoneKnife?stoneKnife" />works
+    xxx <property name="Meshfile" value="#ZdWeapons?Tomahawk" /><property name="HoldType" value="2" />works
+    XXX   <property name="Meshfile" value="#CombatKnife?CombatKnife" /> works military baonet
+ 
+  
+        <property name="Meshfile" value="#crudeweapons?ChainNlocksPrefab" /><property name="HoldType" value="2" />works not using
+        <property name="Meshfile" value="#crudeweapons?nailwood" /><property name="HoldType" value="2" />works nial shiv not using
+        <property name="Meshfile" value="#crudeweapons?Fork" /><property name="HoldType" value="36" />works brass knocklew fork not using
+        <property name="Meshfile" value="#bamboo?bambooPole" /><property name="HoldType" value="17" />works short bamboo section not using
+        <property name="Meshfile" value="#hflnew?Katana" /><property name="HoldType" value="17" />works 1 handed short sword not using
+   
+   
+  
+
+    
+    
+    
+    
+    
     -->
 </items>
