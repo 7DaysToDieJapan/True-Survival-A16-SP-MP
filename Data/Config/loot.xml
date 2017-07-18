@@ -2,172 +2,218 @@
 <!-- New items:
 	<item name="lockpick"/>
 -->
+
 <lootcontainers>
 	<lootplaceholders>
 		<!-- When unwrapping a prefab into the world, replace the lootForest block with one of the following -->
 		<placeholder name="lootForestHelper">
-			<block name="cntTrashPile01" prob="0.1" />
-			<block name="cntTrashPile02" prob="0.1" />
-			<block name="cntTrashPile03" prob="0.1" />
-			<block name="cntTrashPile04" prob="0.1" />
-			<block name="cntTrashPile05" prob="0.1" />
-			<block name="cntTrashPile06" prob="0.1" />
-			<block name="cntTrashPile07" prob="0.1" />
-			<block name="cntTrashPile08" prob="0.1" />
-			<block name="cntTrashPile09" prob="0.1" />
-			<block name="cntTreeStump" prob="0.1" />
-			<block name="cntBackpack01" prob="0.03" />
-			<block name="cntBackpack02" prob="0.03" />
-			<block name="cntBackpack03" prob="0.03" />
-			<block name="cntDuffle01" prob="0.03" />
-			<block name="cntSportsBag01" prob="0.03" />
-			<block name="cntSportsBag02" prob="0.03" />
-			<block name="cntPurse01" prob="0.03" />
+			<block name="cntTrashPile01" prob="8.3" />
+			<block name="cntTrashPile02" prob="8.3" />
+			<block name="cntTrashPile03" prob="8.3" />
+			<block name="cntTrashPile04" prob="8.3" />
+			<block name="cntTrashPile05" prob="8.3" />
+			<block name="cntTrashPile06" prob="8.3" />
+			<block name="cntTrashPile07" prob="8.3" />
+			<block name="cntTrashPile08" prob="8.3" />
+			<block name="cntTrashPile09" prob="8.3" />
+			<block name="cntTreeStump" prob="8.3" />
+			<block name="cntBackpack01" prob="2.5" />
+			<block name="cntBackpack02" prob="2.5" />
+			<block name="cntBackpack03" prob="2.5" />
+			<block name="cntDuffle01" prob="2.5" />
+			<block name="cntSportsBag01" prob="2.5" />
+			<block name="cntSportsBag02" prob="2.5" />
+			<block name="cntPurse01" prob="2.5" />
 		</placeholder>
 		<!-- Replace the Wasteland with one of the following -->
 		<placeholder name="lootWastelandHelper">
-			<block name="cntTrashPile01" prob="0.1" />
-			<block name="cntTrashPile02" prob="0.1" />
-			<block name="cntTrashPile03" prob="0.1" />
-			<block name="cntTrashPile04" prob="0.1" />
-			<block name="cntTrashPile05" prob="0.1" />
-			<block name="cntTrashPile06" prob="0.1" />
-			<block name="cntTrashPile07" prob="0.1" />
-			<block name="cntTrashPile08" prob="0.1" />
-			<block name="cntTrashPile09" prob="0.05" />
-			<block name="cntBackpack01" prob="0.03" />
-			<block name="cntBackpack02" prob="0.03" />
-			<block name="cntBackpack03" prob="0.03" />
-			<block name="cntDuffle01" prob="0.03" />
-			<block name="cntSportsBag01" prob="0.03" />
-			<block name="cntSportsBag02" prob="0.03" />
-			<block name="cntPurse01" prob="0.03" />
-			<block name="cntDeskSafe" prob="0.03" />
+			<block name="cntTrashPile01" prob="9.2" />
+			<block name="cntTrashPile02" prob="9.2" />
+			<block name="cntTrashPile03" prob="9.2" />
+			<block name="cntTrashPile04" prob="9.2" />
+			<block name="cntTrashPile05" prob="9.2" />
+			<block name="cntTrashPile06" prob="9.2" />
+			<block name="cntTrashPile07" prob="9.2" />
+			<block name="cntTrashPile08" prob="9.2" />
+			<block name="cntTrashPile09" prob="4.6" />
+			<block name="cntBackpack01" prob="2.8" />
+			<block name="cntBackpack02" prob="2.8" />
+			<block name="cntBackpack03" prob="2.8" />
+			<block name="cntDuffle01" prob="2.8" />
+			<block name="cntSportsBag01" prob="2.8" />
+			<block name="cntSportsBag02" prob="2.8" />
+			<block name="cntPurse01" prob="2.8" />
+			<block name="cntDeskSafe" prob="2.8" />		
 		</placeholder>
 		<!-- Replace the lootDesert with one of the following -->
 		<placeholder name="lootDesertHelper">
-			<block name="cntTrashPile01" prob="0.1" />
-			<block name="cntTrashPile02" prob="0.1" />
-			<block name="cntTrashPile03" prob="0.1" />
-			<block name="cntTrashPile04" prob="0.1" />
-			<block name="cntTrashPile05" prob="0.1" />
-			<block name="cntTrashPile06" prob="0.1" />
-			<block name="cntTrashPile07" prob="0.1" />
-			<block name="cntTrashPile08" prob="0.1" />
-			<block name="cntTrashPile09" prob="0.1" />
-			<block name="cntBackpack01" prob="0.03" />
-			<block name="cntBackpack02" prob="0.03" />
-			<block name="cntBackpack03" prob="0.03" />
-			<block name="cntDuffle01" prob="0.03" />
-			<block name="cntSportsBag01" prob="0.03" />
-			<block name="cntSportsBag02" prob="0.03" />
-			<block name="cntPurse01" prob="0.03" />
+			<block name="cntTrashPile01" prob="9.0" />
+			<block name="cntTrashPile02" prob="9.0" />
+			<block name="cntTrashPile03" prob="9.0" />
+			<block name="cntTrashPile04" prob="9.0" />
+			<block name="cntTrashPile05" prob="9.0" />
+			<block name="cntTrashPile06" prob="9.0" />
+			<block name="cntTrashPile07" prob="9.0" />
+			<block name="cntTrashPile08" prob="9.0" />
+			<block name="cntTrashPile09" prob="9.0" />
+			<block name="cntBackpack01" prob="2.7" />
+			<block name="cntBackpack02" prob="2.7" />
+			<block name="cntBackpack03" prob="2.7" />
+			<block name="cntDuffle01" prob="2.7" />
+			<block name="cntSportsBag01" prob="2.7" />
+			<block name="cntSportsBag02" prob="2.7" />
+			<block name="cntPurse01" prob="2.7" />
 		</placeholder>
 		<!-- Replace the lootBurntForest with one of the following -->
 		<placeholder name="lootBurntForestHelper">
-			<block name="cntTrashPile01" prob="0.1" />
-			<block name="cntTrashPile02" prob="0.1" />
-			<block name="cntTrashPile03" prob="0.1" />
-			<block name="cntTrashPile04" prob="0.1" />
-			<block name="cntTrashPile05" prob="0.1" />
-			<block name="cntTrashPile06" prob="0.1" />
-			<block name="cntTrashPile07" prob="0.1" />
-			<block name="cntTrashPile08" prob="0.1" />
-			<block name="cntTrashPile09" prob="0.1" />
+			<block name="cntTrashPile01" prob="11.1" />
+			<block name="cntTrashPile02" prob="11.1" />
+			<block name="cntTrashPile03" prob="11.1" />
+			<block name="cntTrashPile04" prob="11.1" />
+			<block name="cntTrashPile05" prob="11.1" />
+			<block name="cntTrashPile06" prob="11.1" />
+			<block name="cntTrashPile07" prob="11.1" />
+			<block name="cntTrashPile08" prob="11.1" />
+			<block name="cntTrashPile09" prob="11.1" />
 		</placeholder>
 		<!-- Replace the lootPlains with one of the following -->
 		<placeholder name="lootPlainsHelper">
-			<block name="cntTrashPile01" prob="0.1" />
-			<block name="cntTrashPile02" prob="0.1" />
-			<block name="cntTrashPile03" prob="0.1" />
-			<block name="cntTrashPile04" prob="0.1" />
-			<block name="cntTrashPile05" prob="0.1" />
-			<block name="cntTrashPile06" prob="0.1" />
-			<block name="cntTrashPile07" prob="0.1" />
-			<block name="cntTrashPile08" prob="0.1" />
-			<block name="cntTrashPile09" prob="0.1" />
-			<block name="cntBackpack01" prob="0.03" />
-			<block name="cntBackpack02" prob="0.03" />
-			<block name="cntBackpack03" prob="0.03" />
-			<block name="cntDuffle01" prob="0.03" />
-			<block name="cntSportsBag01" prob="0.03" />
-			<block name="cntSportsBag02" prob="0.03" />
-			<block name="cntPurse01" prob="0.03" />
+			<block name="cntTrashPile01" prob="9.0" />
+			<block name="cntTrashPile02" prob="9.0" />
+			<block name="cntTrashPile03" prob="9.0" />
+			<block name="cntTrashPile04" prob="9.0" />
+			<block name="cntTrashPile05" prob="9.0" />
+			<block name="cntTrashPile06" prob="9.0" />
+			<block name="cntTrashPile07" prob="9.0" />
+			<block name="cntTrashPile08" prob="9.0" />
+			<block name="cntTrashPile09" prob="9.0" />
+			<block name="cntBackpack01" prob="2.7" />
+			<block name="cntBackpack02" prob="2.7" />
+			<block name="cntBackpack03" prob="2.7" />
+			<block name="cntDuffle01" prob="2.7" />
+			<block name="cntSportsBag01" prob="2.7" />
+			<block name="cntSportsBag02" prob="2.7" />
+			<block name="cntPurse01" prob="2.7" />
 		</placeholder>
 		<!-- Replace the lootHouse with one of the following -->
 		<placeholder name="lootHouseHelper">
-			<block name="cntTrashPile01" />
-			<block name="cntTrashPile02" />
-			<block name="cntTrashPile03" />
-			<block name="cntTrashPile04" />
-			<block name="cntTrashPile05" />
-			<block name="cntTrashPile06" />
-			<block name="cntTrashPile07" />
-			<block name="cntTrashPile08" />
-			<block name="cntTrashPile09" />
-			<block name="cntChest01" />
-			<block name="cntCardboardBox" />
-			<block name="cntBin" />
-			<block name="cntSuitcase" />
-			<block name="cntBackpack01" />
-			<block name="cntBackpack02" />
-			<block name="cntBackpack03" />
-			<block name="cntDuffle01" />
-			<block name="cntSportsBag01" />
-			<block name="cntSportsBag02" />
-			<block name="cntPurse01" />
+			<block name="cntTrashPile01" prob="5.0" />
+			<block name="cntTrashPile02" prob="5.0" />
+			<block name="cntTrashPile03" prob="5.0" />
+			<block name="cntTrashPile04" prob="5.0" />
+			<block name="cntTrashPile05" prob="5.0" />
+			<block name="cntTrashPile06" prob="5.0" />
+			<block name="cntTrashPile07" prob="5.0" />
+			<block name="cntTrashPile08" prob="5.0" />
+			<block name="cntTrashPile09" prob="5.0" />
+			<block name="cntChest01" prob="5.0" />
+			<block name="cntCardboardBox" prob="5.0" />
+			<block name="cntBin" prob="5.0" />
+			<block name="cntSuitcase" prob="5.0" />
+			<block name="cntBackpack01" prob="5.0" />
+			<block name="cntBackpack02" prob="5.0" />
+			<block name="cntBackpack03" prob="5.0" />
+			<block name="cntDuffle01" prob="5.0" />
+			<block name="cntSportsBag01" prob="5.0" />
+			<block name="cntSportsBag02" prob="5.0" />
+			<block name="cntPurse01" prob="5.0" />		
 		</placeholder>
 		<!-- Replace the lootStreet with one of the following -->
 		<placeholder name="lootStreetHelper">
-			<block name="cntTrashPile01" />
-			<block name="cntTrashPile02" />
-			<block name="cntTrashPile03" />
-			<block name="cntTrashPile04" />
-			<block name="cntTrashPile05" />
-			<block name="cntTrashPile06" />
-			<block name="cntTrashPile07" />
-			<block name="cntTrashPile08" />
-			<block name="cntTrashPile09" />
-			<block name="cntShoppingCart" prob="0.05" />
-			<block name="shoppingCartEmpty" prob="0.05" />
-			<block name="cntBackpack01" prob="0.05" />
-			<block name="cntBackpack02" prob="0.05" />
-			<block name="cntBackpack03" prob="0.05" />
-			<block name="cntDuffle01" prob="0.05" />
-			<block name="cntSportsBag01" prob="0.05" />
-			<block name="cntSportsBag02" prob="0.05" />
-			<block name="cntPurse01" prob="0.05" />
+			<block name="cntTrashPile01" prob="10.6" />
+			<block name="cntTrashPile02" prob="10.6" />
+			<block name="cntTrashPile03" prob="10.6" />
+			<block name="cntTrashPile04" prob="10.6" />
+			<block name="cntTrashPile05" prob="10.6" />
+			<block name="cntTrashPile06" prob="10.6" />
+			<block name="cntTrashPile07" prob="10.6" />
+			<block name="cntTrashPile08" prob="10.6" />
+			<block name="cntTrashPile09" prob="10.6" />
+			<block name="cntShoppingCart" prob="0.5" />
+			<block name="shoppingCartEmpty" prob="0.5" />
+			<block name="cntBackpack01" prob="0.5" />
+			<block name="cntBackpack02" prob="0.5" />
+			<block name="cntBackpack03" prob="0.5" />
+			<block name="cntDuffle01" prob="0.5" />
+			<block name="cntSportsBag01" prob="0.5" />
+			<block name="cntSportsBag02" prob="0.5" />
+			<block name="cntPurse01" prob="0.5" />
 		</placeholder>
 		<!-- Replace the lootYard with one of the following -->
 		<placeholder name="lootYardHelper">
-			<block name="cntTrashPile07" prob="0.5" />
-			<block name="cntCardboardBox" prob="0.2" />
-			<block name="cntBackpack01" prob="0.03" />
-			<block name="cntBackpack02" prob="0.03" />
-			<block name="cntBackpack03" prob="0.03" />
-			<block name="cntDuffle01" prob="0.03" />
-			<block name="cntSportsBag01" prob="0.03" />
-			<block name="cntSportsBag02" prob="0.03" />
-			<block name="cntPurse01" prob="0.03" />
+			<block name="cntTrashPile07" prob="44.9" />
+			<block name="cntCardboardBox" prob="22.0" />
+			<block name="cntBackpack01" prob="3.3" />
+			<block name="cntBackpack02" prob="3.3" />
+			<block name="cntBackpack03" prob="3.3" />
+			<block name="cntDuffle01" prob="3.3" />
+			<block name="cntSportsBag01" prob="3.3" />
+			<block name="cntSportsBag02" prob="3.3" />
+			<block name="cntPurse01" prob="3.3" />
+		<!--	<block name="smallLimeTree" prob="0.1" />
+			<block name="smallPlainsTree" prob="0.2" /> -->
+			<block name="appleTree" prob="0.2" />
+			<block name="tomatoPlant" prob="0.2" />
+			<block name="strawberryPlant" prob="0.1" />
+			<block name="burningBarrel" prob="0.2" />
+            <block name="gasTank" prob="0.2" />   
+			<block name="gasTankEmpty" prob="5.2" /> 
 		</placeholder>
+		<!-- Replace the lootYard with one of the following -->
+	<!--	<placeholder name="militaryCarsHelper">
+			<block name="tankSecure" prob="14.3" />
+			<block name="militaryTruckSecure" prob="14.3" />
+			<block name="m1A1Secure" prob="14.3" />
+			<block name="t-90Secure" prob="14.3" />
+			<block name="guntruckSecure" prob="14.3" />
+			<block name="policeSecure" prob="14.3" />
+			<block name="gAZ33Secure" prob="14.3" />
+		</placeholder> -->
 		<!-- Replace the lootYard with one of the following -->
 		<placeholder name="randomCarsHelper">
-			<block name="cntCar03SedanDamage2" prob="0.5" />
-			<block name="cntCar03SedanDamage1" prob="0.1" />
-			<block name="cntCar03SedanDamage0" prob="0.05" />
+			<block name="cntCar03SedanDamage0" prob="30.0" />
+			<block name="cntCar03SedanDamage1" prob="30.0" />
+			<block name="containerSecure" prob="1.0" />
+			<block name="skylark" prob="4.2" />
+			<block name="lanos" prob="4.2" />
+			<block name="charger" prob="4.2" />
+			<block name="eclipse" prob="4.2" />
+			<block name="bakkie" prob="4.2" />
+			<block name="l200" prob="4.2" />
+			<block name="corolla" prob="4.2" />
+			<block name="hirer" prob="4.2" />
+			<block name="fireTruck" prob="3.1" />
+			<block name="tractorG" prob="5.2" />
+			<block name="tractor" prob="5.2" />
+			<block name="ambulanceSecure" prob="5.2" />
+			<block name="schoolBus" prob="5.2" />	
 		</placeholder>
 		<!-- Replace the lootYard with one of the following -->
+<!--		<placeholder name="brokenCarsHelper">
+			<block name="cntCar03SedanDamage2" prob="50.0" />
+			<block name="oldArrmyTruckSide" prob="1.5" />
+			<block name="126" prob="7.7" />
+			<block name="fiat" prob="7.7" />
+			<block name="147" prob="7.7" />
+			<block name="oldArmyTruck" prob="1.5" />
+			<block name="ruinedTruck" prob="7.7" />
+			<block name="ambulanceDamaged" prob="3.1" />
+			<block name="schoolBusDamaged" prob="1.5" />
+		</placeholder> -->
+		<!-- Replace the lootYard with one of the following -->
 		<placeholder name="lootGarageHelper">
-			<block name="cntGarageStorage" prob="0.2" />
-			<block name="cntTrashPile02" prob="0.5" />
-			<block name="cntCardboardBox" prob="0.2" />
-			<block name="cntBackpack01" prob="0.03" />
-			<block name="cntBackpack02" prob="0.03" />
-			<block name="cntBackpack03" prob="0.03" />
-			<block name="cntDuffle01" prob="0.03" />
-			<block name="cntSportsBag01" prob="0.03" />
-			<block name="cntSportsBag02" prob="0.03" />
-			<block name="cntPurse01" prob="0.03" />
+			<block name="cntGarageStorage" prob="18.0" />
+			<block name="cntTrashPile02" prob="45.0" />
+			<block name="cntCardboardBox" prob="18.0" />
+			<block name="cntBackpack01" prob="2.7" />
+			<block name="cntBackpack02" prob="2.7" />
+			<block name="cntBackpack03" prob="2.7" />
+			<block name="cntDuffle01" prob="2.7" />
+			<block name="cntSportsBag01" prob="2.7" />
+			<block name="cntSportsBag02" prob="2.7" />
+			<block name="cntPurse01" prob="2.4" />
+			<block name="generatorbank" prob="0.1" />
+			<block name="gasTank" prob="0.2" />
 		</placeholder>
 		<!-- Replaces the lootMP with one of the following -->
 		<placeholder name="lootMPHelper">
@@ -210,8 +256,8 @@
 	</placeholder> -->
 		<!-- Random stone/resource -->
 		<placeholder name="lootStoneHelper">
-			<block name="stone" prob="80" />
-			<block name="ironOre" prob="12" />
+			<block name="stone" prob="80.0" />
+			<block name="ironOre" prob="12.0" />
 			<block name="coalOre" prob="2.5" />
 			<block name="potassiumNitrate" prob="2.5" />
 			<block name="leadOre" prob="2.5" />
@@ -230,10 +276,24 @@
 			<block name="cntShippingCrateWorkingStiffs" prob="30" />
 		</placeholder>
 		<placeholder name="lootWorkstationsHelper">
-			<block name="forge" prob="30" />
-			<block name="workbench" prob="30" />
-			<block name="chemistryStation" prob="20" />
-			<block name="cementMixer" prob="20" />
+			<block name="forge" prob="10" />
+			<block name="workbench" prob="10" />
+			<block name="chemistryStation" prob="10" />
+			<block name="cementMixer" prob="10" />
+			<block name="prepTable" prob="10" />
+			<block name="stove" count="1" prob="7.4" />
+			<block name="metalWorkBench" count="1" prob="4.9" />
+			<block name="researchDesk" count="1" prob="7.4" />
+			<block name="armorTable" count="1" prob="7.4" />
+			<block name="seedNursery" count="1" prob="7.4" />
+			<block name="blastFurnace" count="1" prob="0.7" />
+			<block name="stoneMill" count="1" prob="7.4" />
+			<block name="mortarAndPestle" count="1" prob="7.4" />
+			<block name="oilRefinery" count="1" prob="7.4" />
+			<block name="bulletPress" count="1" prob="0.7" />
+			<block name="anvil" count="1" prob="7.4" />
+			<block name="batterybank" count="1" prob="7.4" />
+			<block name="chickenCoop" count="1" prob="7.4" />
 		</placeholder>
 		<placeholder name="lootWorkstationsBustedHelper">
 			<block name="forge" prob="1" />
@@ -424,6 +484,21 @@
 		<item name="tatteredPants" quality="1,100" />
 	</lootgroup>
 	<lootgroup name="questChallenge" count="1">
+	<!--	<item name="qc_Hen" count="1" />
+		<item name="qc_Vorpal" count="1" />
+		<item name="qc_AntiVenom" count="1" />
+		<item name="qc_PlantSeeds" count="1" />
+		<item name="qc_Boe" count="1" />
+		<item name="qc_Joe" count="1" />
+		<item name="qc_Arlene" count="1" />
+		<item name="qc_Darlene" count="1" />
+		<item name="qc_Marlene" count="1" />
+		<item name="qc_Yo" count="1" />
+		<item name="qc_spider" count="1" />
+		<item name="qc_burnt" count="1" />
+		<item name="qc_Nurse" count="1" />
+		<item name="qc_Steve" count="1" />
+		<item name="qc_Moe" count="1" /> -->
 		<item name="qc_silenceofthelambs" count="1" />
 		<item name="qc_drunkanddisorderly" count="1" />
 		<item name="qc_nurseyoubacktohealth" count="1" />
@@ -722,50 +797,59 @@
 	<lootgroup name="gasPumps">
 		<item name="gasCan" />
 	</lootgroup>
+		<!--  New Junk Item groups -->
 	<lootgroup name="paperJunk" count="1">
 		<item name="paper" count="1,6" prob="24.38" />
 		<item name="book" prob="18.3" />
 		<item name="paperPlayingCards" count="1,5" prob="7.32" />
 		<item name="paperNews" prob="18.3" />
-		<item name="paperToilet" prob="24.38" />
+		<item name="paperToilet"  prob="24.38" />
 		<item name="paperGoggles" prob="7.32" />
-		<item name="oldCash" count="1,6" prob="0.3" />
+		<item name="paperMatches" prob="7.32" />
 	</lootgroup>
 	<lootgroup name="leadJunk" count="1">
 		<item name="leadSoldier" prob="2" />
 		<item name="leadMusketBalls" count="1,6" prob="32.66" />
 		<item name="leadSolder" prob="32.66" />
-		<item name="trophy" prob="32.66" />
+        <item name="trophy" prob="32.66" />
 	</lootgroup>
 	<lootgroup name="glassJunk" count="1">
 		<item name="glassPerfume" prob="33.3" />
-		<item name="glassCompact" prob="33.3" />
-		<item name="glassFrame" prob="33.3" />
+		<item name="glassCompact"  prob="33.3" />
+		<item name="glassFrame"  prob="33.3" />
+		<item name="glassEye"  prob="33.3" />
+		<item name="glassBong"  prob="33.3" />
 	</lootgroup>
 	<lootgroup name="electronicJunk" count="1">
-		<item name="electronic3ds" prob="33.3" />
-		<item name="electronicCellPhone" prob="33.3" />
-		<item name="electronicClockRadio" prob="33.3" />
+		<item name="electronic3ds"  prob="33.3" />
+		<item name="electronicCellPhone"  prob="33.3" />
+		<item name="electronicClockRadio"  prob="33.3" />
+		<item name="electronicBrokenIPad"  prob="33.3" />
+		<item name="electronicBrokenIPod"  prob="33.3" />
+		<item name="electronicBrokenLapTop"  prob="33.3" />
 	</lootgroup>
 	<lootgroup name="ironJunk" count="1">
 		<item name="ironSoldier" prob="2" />
 		<item name="ironPaperClips" count="1,6" prob="24.5" />
 		<item name="ironWeight" prob="24.5" />
 		<item name="ironHinge" prob="24.5" />
-		<item name="trophy3" prob="24.5" />
+        <item name="trophy3" prob="24.5" />
+		<item name="ironHairSpray" prob="24.5" />
+		<item name="ironScissors" prob="20.0" />
 	</lootgroup>
 	<lootgroup name="brassJunk" count="1">
 		<item name="brassHinge" prob="16.66" />
 		<item name="brassMonkey" prob="16.66" />
 		<item name="brassCowBell" prob="16.66" />
 		<item name="brassKnuckles" prob="16.66" />
-		<item name="trophy" prob="16.66" />
-		<item name="candleStick" prob="16.66" />
+        <item name="trophy" prob="16.66" />
+        <item name="candleStick" prob="16.66" />
 	</lootgroup>
 	<lootgroup name="stoneJunk" count="1">
 		<item name="stonePlate" prob="33.3" />
 		<item name="stonePaperWeight" prob="33.3" />
 		<item name="stoneStatue" prob="33.3" />
+		<item name="stoneCrackedAshTray" prob="33.3" />
 	</lootgroup>
 	<lootgroup name="woodJunk" count="1">
 		<item name="woodSoldier" prob="1.3" />
@@ -776,16 +860,27 @@
 		<item name="clothTeddyBear" prob="33.3" />
 		<item name="clothRags" count="1,3" prob="33.3" />
 		<item name="clothRug" prob="33.3" />
+		<item name="clothOldShoe" prob="33.3" />
+		<item name="clothChewedDogCollar" prob="33.3" />
 	</lootgroup>
 	<lootgroup name="plasticJunk" count="1">
 		<item name="plasticCds" count="1,6" prob="45.3" />
 		<item name="plasticSoldier" prob="1.3" />
 		<item name="plasticLegos" count="1,6" prob="43.3" />
+		<item name="plasticKite" prob="43.3" />
+		<item name="plasticFrisbee" prob="43.3" />
+		<item name="plasticHairBrush" prob="43.3" />
+		<item name="plasticCondom" count="1,2" prob="43.3" />
+		<item name="plasticToothBrush" prob="43.3" />
+		<item name="plasticLighter" prob="43.3" />
+		<item name="plasticShoppingBag" prob="43.3" />
 	</lootgroup>
 	<lootgroup name="electricJunk" count="1">
 		<item name="electricShaver" prob="33.3" />
 		<item name="electricToyMotor" prob="33.3" />
 		<item name="electricToaster" prob="33.3" />
+		<item name="electricBlackVibrator" prob="33.3" />
+		<item name="electricBlender" prob="33.3" />
 	</lootgroup>
 	<lootgroup name="mechanicalJunk" count="1">
 		<item name="mechanicalKeyPad" prob="33.3" />
@@ -797,28 +892,34 @@
 		<item name="rubberDuck" prob="25.0" />
 		<item name="rubberChicken" prob="25.0" />
 		<item name="rubberBands" count="1,3" prob="25.0" />
+		<item name="rubberOldRainBoot" prob="25.0" />
 	</lootgroup>
 	<lootgroup name="steelJunk" count="1">
 		<item name="steelHinge" prob="33.3" />
 		<item name="steelSpoon" prob="33.3" />
 		<item name="steelBracelet" prob="33.3" />
-	</lootgroup>
+		<item name="steelDogBowl" prob="33.3" />
+		<item name="steelButterKnife" prob="33.3" />
+		<item name="steelSpoon" prob="33.3" />
+		<item name="steelFork" prob="33.3" />
+	</lootgroup>	
 	<lootgroup name="itemJunk" count="1">
 		<item group="paperJunk" prob="7.38" />
 		<item group="steelJunk" prob="4" />
 		<item group="rubberJunk" prob="7.38" />
-		<item group="mechanicalJunk" prob="7.38" />
-		<item group="electricJunk" prob="7.38" />
-		<item group="clothJunk" prob="7.38" />
-		<item group="plasticJunk" prob="7.38" />
-		<item group="woodJunk" prob="7.38" />
-		<item group="stoneJunk" prob="7.38" />
-		<item group="brassJunk" prob="7.38" />
-		<item group="ironJunk" prob="7.38" />
-		<item group="electronicJunk" prob="7.38" />
-		<item group="glassJunk" prob="7.38" />
-		<item group="leadJunk" prob="7.38" />
-	</lootgroup>
+        <item group="mechanicalJunk" prob="7.38" />
+        <item group="electricJunk" prob="7.38" />
+        <item group="clothJunk" prob="7.38" />
+        <item group="plasticJunk" prob="7.38" />
+        <item group="woodJunk" prob="7.38" />
+        <item group="stoneJunk" prob="7.38" />
+        <item group="brassJunk" prob="7.38" />
+        <item group="ironJunk" prob="7.38" />
+        <item group="electronicJunk" prob="7.38" />
+        <item group="glassJunk" prob="7.38" />
+        <item group="leadJunk" prob="7.38" />
+    </lootgroup>
+<!--  End of new Junk Groups -->
 	<lootgroup name="gunBooks" count="1">
 		<item name="pistolBook" prob="15" />
 		<item name="sawedoffPumpShotgunSchematic" prob="15" />
@@ -1101,6 +1202,7 @@
 		<item name="rawDiamond" count="1,2" prob="0.1" />
 		<!-- 1500 -->
 	</lootgroup>
+
 	<lootgroup name="junk" count="1">
 		<item name="candyTin" prob="1.4" />
 		<item name="emptyJar" count="1" prob="2.1" />
@@ -1244,7 +1346,7 @@
 		<item name="militaryVest" />
 		<item name="militaryFiber" count="1,5" prob="2" />
 	</lootgroup>
-	<lootgroup name="Armor">
+	<lootgroup name="armor">
 		<item group="clothes" />
 		<item group="heavyArmor" prob="0.05" />
 	</lootgroup>
@@ -1419,7 +1521,7 @@
 		<item group="skillBookChance" prob="1.4" />
 		<item group="sportingGoods" prob="2" />
 		<item group="weaponsMelee" prob="0.6" />
-		<item group="Armor" prob="0.5" />
+		<item group="armor" prob="0.5" />
 		<item name="flashlight02" prob="0.3" />
 	</lootgroup>
 	<lootgroup name="lumberjacks" count="1">

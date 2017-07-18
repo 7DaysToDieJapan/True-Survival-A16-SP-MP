@@ -15278,19 +15278,19 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="ui_game_symbol_clothOldBlanket" />
 		<property name="Weight" value="10" />
 	</item>
-	<item id="1941" name="electricBrokenIPod">
+	<item id="1941" name="electronicBrokenIPod">
 		<property name="Extends" value="itemMaster" />
 		<property name="Material" value="MelectricParts" />
 		<property name="CustomIcon" value="ui_game_symbol_electricBrokenIPod" />
 		<property name="Weight" value="1" />
 	</item>
-	<item id="1942" name="electricBrokenIPad">
+	<item id="1942" name="electronicBrokenIPad">
 		<property name="Extends" value="itemMaster" />
 		<property name="Material" value="MelectricParts" />
 		<property name="CustomIcon" value="ui_game_symbol_electricBrokenIPad" />
 		<property name="Weight" value="4" />
 	</item>
-	<item id="1943" name="electricBrokenLapTop">
+	<item id="1943" name="electronicBrokenLapTop">
 		<property name="Extends" value="itemMaster" />
 		<property name="Material" value="MelectricParts" />
 		<property name="CustomIcon" value="ui_game_symbol_electricBrokenLapTop" />
@@ -15326,7 +15326,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="ui_game_symbol_glassEye" />
 		<property name="Weight" value="1" />
 	</item>
-	<item id="1949" name="electronicBlackVibrator">
+	<item id="1949" name="electricBlackVibrator">
 		<property name="Extends" value="itemMaster" />
 		<property name="Material" value="MelectronicParts" />
 		<property name="CustomIcon" value="ui_game_symbol_electronicBlackVibrator" />
@@ -15344,7 +15344,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="ui_game_symbol_steelDogBowl" />
 		<property name="Weight" value="2" />
 	</item>
-	<item id="1952" name="glassWaterBong">
+	<item id="1952" name="glassBong">
 		<property name="Extends" value="itemMaster" />
 		<property name="Material" value="glass" />
 		<property name="CustomIcon" value="ui_game_symbol_glassWaterBong" />
