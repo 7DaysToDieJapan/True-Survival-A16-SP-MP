@@ -130,9 +130,10 @@
 		
 		<style_entry name="iconColor" 						value="255,255,255" />
 		<style_entry name="labelColor" 						value="255,255,255" />
-		<style_entry name="selectedColor" 					value="222,206,163" />
-		<style_entry name="hoverColor"						value="250,255,163" />
-		
+		<!-- <style_entry name="selectedColor" 					value="222,206,163" /> -->
+		<style_entry name="selectedColor" 					value="255,0,0" />
+		<!-- <style_entry name="hoverColor"						value="250,255,163" /> -->
+		<style_entry name="hoverColor"						value="255,0,0" />
 		<style_entry name="disabledLabelColor"				value="160,160,160" />
 		
 		<!--NAMED SPRITES-->
