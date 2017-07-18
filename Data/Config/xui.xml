@@ -30,7 +30,7 @@
 			<window name="windowToolsForge" />
 			<window name="windowFuel" />
 			<window name="windowForgeInput" />
-			<window name="windowOutput" />
+			<window name="windowForgeOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
 		
@@ -308,7 +308,7 @@
 			<window name="windowCraftingQueue" />
 			<window name="windowFuel" />
 			<window name="windowBlastInput" />
-			<window name="windowOutput" />
+			<window name="windowForgeOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
 		<window_group name="workstation_dryingRack" controller="XUiC_WorkstationWindowGroup">
@@ -398,7 +398,7 @@
             <window name="windowToolsPrepTable" />
 			<window name="windowFuel" />
 			<window name="windowPrepTableInput" />
-			<window name="windowOutput" />
+			<window name="windowForgeOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
 		<window_group name="workstation_stoneMill" controller="XUiC_WorkstationWindowGroup">
