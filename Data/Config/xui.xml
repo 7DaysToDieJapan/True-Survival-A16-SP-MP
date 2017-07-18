@@ -1,6 +1,6 @@
 <xui>
-	<ruleset name="default" scale="1.255" stackpanel_scale="1.05">
-	
+	<!-- <ruleset name="default" scale="1.255" stackpanel_scale="1.05"> -->
+	<ruleset name="default" scale="1.255" stackpanel_scale="1.03">
 		<window_group name="crafting" controller="XUiC_CraftingWindowGroup">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
