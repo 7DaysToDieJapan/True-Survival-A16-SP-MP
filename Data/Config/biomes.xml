@@ -1484,7 +1484,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="treeTallGrassDiagonal" prob="0.50" />
                     <decoration type="block" blockname="smallSugarcanePlant" prob="0.02" rotatemax="3" />
 					<decoration type="block" blockname="plantedBamboo3Harvest" prob="0.6" rotatemax="3" />
-					<decoration type="block" blockname="coconutPalm" prob="0.01" rotatemax="3" />
+					<decoration type="block" blockname="coconutPalm" prob="0.001" rotatemax="3" />
 					<decoration type="block" blockname="palm" prob="0.02" rotatemax="3" />
 					<decoration type="block" blockname="waterPlant" prob="0.02" rotatemax="3" />
 					<decoration type="block" blockname="blossomPalm" prob="0.02" rotatemax="3" />
@@ -1494,16 +1494,31 @@ If you do not declare them, the decorations of the main biome are used.
 			<terrain class="Water">
 				<property name="BaseHeight" value="12" />
 			</terrain>
-			<subbiome prob="0.351">
+			<subbiome prob="0.15">
 				<!-- Ore Sub Biome: leadOre -->
                     <layers>
-                        <layer depth="1" blockname="air2">
-					</layer>
-                        <layer depth="9" blockname="waterSource8">
-					</layer>
-					<layer depth="1" blockname="waterSource8">
-						<resource blockname="piranha" prob="0.08" rwgGenerationType="all" />
-                         <decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.5" />
+                    <layer depth="1" blockname="sandAir"/>
+					<layer depth="4" blockname="sandWater"/>
+                    <layer depth="1" blockname="sand">
+                        <resource blockname="piranha" prob="0.08" rwgGenerationType="all" />
+                        <decoration type="block" blockname="test1" prob="0.5"  rwgGenerationType="all"/>
+                        <decoration type="block" blockname="test2" prob="0.02"  rwgGenerationType="all"/>
+                        <decoration type="block" blockname="test3" prob="0.5" rwgGenerationType="all"/>
+                        <decoration type="block" blockname="test4" prob=".01" rwgGenerationType="all"/>
+                        <decoration type="block" blockname="test5" prob=".01" rwgGenerationType="all"/>
+                        <decoration type="block" blockname="test6" prob=".01" rwgGenerationType="all"/>
+                        <decoration type="block" blockname="test7" prob=".025"  rwgGenerationType="all"/>
+                        
+						<!--<resource blockname="piranha" prob="0.08" rwgGenerationType="all" />
+                        <decoration type="block" blockname="treePlainsGrassDiagonal" prob="0.5" rotatemax="3" />
+                        <decoration type="block" blockname="sugarcanePlant" prob="0.02" rotatemax="3" />
+                        <decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.5" />
+                        <decoration type="block" blockname="rock01" prob=".01" />
+                        <decoration type="block" blockname="rock02" prob=".01" />
+                        <decoration type="block" blockname="rock04" prob=".01" />
+                        <decoration type="block" blockname="rockResource" prob=".025" rotatemax="3" />
+                        <decoration type="block" blockname="driftwood" prob="0.0019" rotatemax="3" />
+                        <decoration type="block" blockname="driftwood2" prob="0.0019" rotatemax="3" />-->
                     </layer>
                     <layer depth="1" blockname="sand">
 						<resource blockname="clay" prob="0.15" rwgGenerationType="all" />
@@ -1525,10 +1540,7 @@ If you do not declare them, the decorations of the main biome are used.
 					</layer>
 					<layer depth="3" blockname="bedrock" />
 				</layers>
-                <decorations>
-                    <decoration type="block" blockname="piranha" prob="0.1" rotatemax="3" />
-                </decorations>
-			</subbiome>
+            </subbiome>
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: coalOre -->
 				<layers>
