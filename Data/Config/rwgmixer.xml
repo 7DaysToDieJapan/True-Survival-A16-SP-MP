@@ -461,7 +461,7 @@
 			<lot min_x_y="-135, -135" size="128,128" rotation_to_road="1" align="north_east" />
 		</hub_layout>
 	</hub_layouts>
-	<!--
+	<!-- 
 	GENERATOR MODULE TYPES
 	    AbsoluteOutput
         Add
@@ -593,7 +593,7 @@
 			</module>
 			<output module="clampOutput" />
 		</biome_generator>
-		<!-- Passes back the biome intensity to allow for per biome terrain control  THIS MUST MATCH THE BIOME DISTRIBUTION BUT RETURN 0-1 based on distance from center-->
+	<!-- Passes back the biome intensity to allow for per biome terrain control  THIS MUST MATCH THE BIOME DISTRIBUTION BUT RETURN 0-1 based on distance from center-->
 	</biome_generators>
 	<biome_intensity_generators>
 		<biome_intensity_generator name="vanilla">
@@ -625,6 +625,337 @@
 			<output module="clampOutput" />
 		</biome_intensity_generator>
 	</biome_intensity_generators>
+    <!--TESTING
+    <terrain_generators>
+	
+		<terrain_generator name="vanilla" use_old_final="false">
+		
+			<module name="landBase" type="FastBillow" no_seed="true">
+				<property name="frequency" value="0.02"/>
+			</module>
+			<module name="landT" type="FastTurbulence">
+				<property name="sourceModule" value="landBase"/>
+				<property name="power" value="5"/>
+				<property name="frequency" value="0.025"/>
+				<property name="roughness" value="8"/>
+			</module>
+			<module name="scaleLandBase" type="ScaleBiasOutput">
+				<property name="sourceModule" value="landT"/>
+				<property name="scale" value="0.15"/>
+				<property name="bias" value="0.25"/>
+			</module>
+			<module name="land" type="ClampOutput">
+				<property name="sourceModule" value="scaleLandBase"/>
+				<property name="bounds" value="0,0.05"/>
+			</module>
+			
+			<module name="landBase2" type="FastBillow" no_seed="true">
+				<property name="frequency" value="0.02"/>
+			</module>
+			<module name="landT2" type="FastTurbulence">
+				<property name="sourceModule" value="landBase2"/>
+				<property name="power" value="5"/>
+				<property name="frequency" value="0.025"/>
+				<property name="roughness" value="8"/>
+			</module>
+			<module name="scaleLandBase2" type="ScaleBiasOutput">
+				<property name="sourceModule" value="landT2"/>
+				<property name="scale" value="0.15"/>
+				<property name="bias" value="0.25"/>
+			</module>
+			<module name="land2" type="ClampOutput">
+				<property name="sourceModule" value="scaleLandBase2"/>
+				<property name="bounds" value="0,0.05"/>
+			</module>
+			
+			<module name="mountainsBase" type="FastNoise" no_seed="true">
+				<property name="frequency" value="0.25"/>
+			</module>
+			<module name="mountainsT" type="FastTurbulence">
+				<property name="sourceModule" value="mountainsBase"/>
+				<property name="power" value="5"/>
+				<property name="frequency" value="0.25"/>
+				<property name="roughness" value="8"/>
+			</module>
+			<module name="mountainsScaled" type="ScaleBiasOutput">
+				<property name="sourceModule" value="mountainsT"/>
+				<property name="scale" value="1.3"/>
+				<property name="bias" value="-0.4"/>
+			</module>
+			<module name="mountainsOutput" type="ClampOutput">
+				<property name="sourceModule" value="mountainsScaled"/>
+				<property name="bounds" value="0,1.3"/>
+			</module>
+			
+			<module name="Control" type="FastNoise" no_seed="true">
+				<property name="frequency" value="1"/>
+			</module>
+			
+			<module name="landMnt" type="Add" no_seed="true">
+				<property name="controlModule" value="Control"/>
+				<property name="sourceModule1" value="land"/>
+				<property name="sourceModule2" value="land2"/>
+				<property name="bounds" value="2500,5000"/>
+				<property name="edgeFalloff" value="32"/>
+			</module>
+			
+			<module name="landMnt2" type="Add" no_seed="true">
+				<property name="controlModule" value="Control"/>
+				<property name="sourceModule1" value="mountainsOutput"/>
+				<property name="sourceModule2" value="land"/>
+				<property name="bounds" value="0,5000"/> **want more mountais? make value="" closer "0,2500" etc,. **
+				<property name="edgeFalloff" value="32"/>
+			</module>
+			
+			<module name="landMnt3" type="Add" no_seed="true">
+				<property name="controlModule" value="Control"/>
+				<property name="sourceModule1" value="landMnt2"/>
+				<property name="sourceModule2" value="land"/>
+				<property name="bounds" value="0,5000"/> **want more mountais? make value="" closer "0,2500" etc,. **
+				<property name="edgeFalloff" value="32"/>
+			</module>
+			
+			<module name="WaterBase" type="FastBillow" no_seed="true">
+				<property name="frequency" value="1.5"/>
+				<property name="displacement" value="-0.5"/>
+			</module>
+			<module name="WaterOutput" type="BiasOutput">
+				<property name="sourceModule" value="WaterBase"/>
+				<property name="bias" value="0.8"/>
+			</module>
+			<module name="Water" type="ScaleOutput">
+				<property name="sourceModule" value="WaterOutput"/>
+				<property name="scale" value="0.15"/>
+			</module>
+			
+			<module name="landMntWater" type="Select" no_seed="true">
+				<property name="controlModule" value="Control"/>
+				<property name="sourceModule1" value="Water"/>
+				<property name="sourceModule2" value="land"/>
+
+				<property name="bounds" value="0,15000"/>
+				<property name="edgeFalloff" value="0.5"/>
+			</module>
+			
+			<module name="landMntWater2" type="Select" no_seed="true">
+				<property name="controlModule" value="Control"/>
+				<property name="sourceModule1" value="landMntWater"/>
+				<property name="sourceModule2" value="land"/>
+				<property name="bounds" value="0,15000"/> ** want more water make the value="" closer "0,1000" etc,. **
+				<property name="edgeFalloff" value="0.5"/>
+			</module>
+			
+			<module name="Control" type="FastNoise" no_seed="true">
+				<property name="frequency" value="1"/>
+			</module>
+			
+			<module name="scaleBiasOutput" type="ScaleBiasOutput">
+				<property name="sourceModule" value="landMntWater2"/>
+				<property name="scale" value="255"/>
+			</module>
+
+			<output module="scaleBiasOutput"/>
+			
+		</terrain_generator>
+		
+	</terrain_generators>
+	
+	<biome_generators>
+	
+		<biome_generator name="vanilla">
+		
+			<module name="voronoi" type="Voronoi">
+				<property name="frequency" value="0.0005"/> ** want smaller biomes sizes? increase Value="" Vanilla was "0.0008" **
+				<property name="displacement" value="0.5"/>
+			</module>
+			<module name="biasOutput" type="BiasOutput">
+				<property name="sourceModule" value="voronoi"/>
+				<property name="bias" value="0.5"/>
+			</module>
+			
+			<module name="biomeDither" type="FastTurbulence">
+				<property name="sourceModule" value="biasOutput"/>
+				<property name="frequency" value="0.25"/>
+				<property name="power" value="8"/>
+				<property name="roughness" value="5"/>
+			</module>
+			
+			<module name="biomeJiggle" type="FastTurbulence">
+				<property name="sourceModule" value="biomeDither"/>
+				<property name="frequency" value="0.0016"/>
+				<property name="power" value="400"/>
+				<property name="roughness" value="1"/>
+			</module>
+			
+			<module name="clampOutput" type="ClampOutput">
+				<property name="sourceModule" value="biomeJiggle"/>
+				<property name="bounds" value="0,1"/>
+			</module>
+			
+			<output module="clampOutput"/>
+			
+		</biome_generator>
+		
+		** Passes back the biome intensity to allow for per biome terrain control  THIS MUST MATCH THE BIOME DISTRIBUTION BUT RETURN 0-1 based on distance from center**
+	</biome_generators>
+	
+	<biome_intensity_generators>
+	
+		<biome_intensity_generator name="vanilla">
+		
+			<module name="voronoi" type="Voronoi">
+				<property name="frequency" value="0.0005"/> ** want smaller biomes sizes? increase Value="" Vanilla was "0.0008" **
+				<property name="displacement" value="0.5"/>
+				<property name="distanceEnabled" value="true"/>
+			</module>
+			<module name="biasOutput" type="BiasOutput">
+				<property name="sourceModule" value="voronoi"/>
+				<property name="bias" value="0.5"/>
+			</module>
+			
+			<module name="biomeDither" type="FastTurbulence">
+				<property name="sourceModule" value="biasOutput"/>
+				<property name="frequency" value="0.25"/>
+				<property name="power" value="8"/>
+				<property name="roughness" value="5"/>
+			</module>
+			
+			<module name="biomeJiggle" type="FastTurbulence">
+				<property name="sourceModule" value="biomeDither"/>
+				<property name="frequency" value="0.0016"/>
+				<property name="power" value="400"/>
+				<property name="roughness" value="1"/>
+			</module>
+			
+			<module name="clampOutput" type="ClampOutput">
+				<property name="sourceModule" value="biomeJiggle"/>
+				<property name="bounds" value="0,1"/>
+			</module>
+			
+			<output module="clampOutput"/>
+			
+		</biome_intensity_generator>
+		
+	</biome_intensity_generators>
+    
+    <biome_spawn_rules>
+		<biome_spawn_rule name="forest">
+			<biome_generator range="0.00,0.10" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="forest">
+			<biome_generator range="0.20,0.30" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="forest">
+			<biome_generator range="0.40,0.50" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="forest">
+			<biome_generator range="0.60,0.65" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="forest">
+			<biome_generator range="0.85,0.90" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="pine_forest">
+			<terrain_generator range="80,90" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="forest">
+			<terrain_generator range="40,80" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="plains">
+			<terrain_generator range="1,40" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="pine_forest">
+			<biome_generator range="0.15,0.20" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="burnt_forest">
+			<biome_generator range="0.30,0.40" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="wasteland">
+			<biome_generator range="0.50,0.60" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="burnt_forest">
+			<biome_generator range="0.90,1.00" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="city">
+			<terrain_generator range="110,125" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="pine_forest">
+			<terrain_generator range="90,110" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="city_wasteland">
+			<biome_generator range="0.75,0.85" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="snow">
+			<terrain_generator range="125,255" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="water">
+			<terrain_generator range="-31,3" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="desert">
+			<biome_generator range="0.10,0.15" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="snow">
+			<biome_generator range="0.65,0.70" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="desert">
+			<biome_generator range="0.70,0.75" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="snow">
+			<distance_from_center range="8750,9250" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="city_wasteland">
+			<distance_from_center range="9250,10000" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="radiated">
+			<distance_from_center range="10000,11000" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="wasteland_hub">
+			<distance_from_center range="0,1250" />
+		</biome_spawn_rule>
+	</biome_spawn_rules>
+    
+    -->
+    
+    <!--JZMOD FOR TESTING-->
+    <biome_spawn_rules>
+    
+    <biome_spawn_rule name="water">
+			<distance_from_center range="0,200" />
+		</biome_spawn_rule>
+    <biome_spawn_rule name="city">
+		<distance_from_center range="200,400" />
+	</biome_spawn_rule>
+    <biome_spawn_rule name="plains">
+			<distance_from_center range="400,600" />
+		</biome_spawn_rule>
+    <biome_spawn_rule name="burnt_forest">
+			<distance_from_center range="600,800" />
+		</biome_spawn_rule>
+    <biome_spawn_rule name="desert">
+			<distance_from_center range="800,1000" />
+		</biome_spawn_rule>
+    <biome_spawn_rule name="pine_forest">
+			<distance_from_center range="1000,1200" />
+		</biome_spawn_rule>
+    <biome_spawn_rule name="forest">
+			<distance_from_center range="1200,1400" />
+		</biome_spawn_rule>
+     <biome_spawn_rule name="snow">
+			<distance_from_center range="1400,1600" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="city_wasteland">
+			<distance_from_center range="1600,1800" />
+		</biome_spawn_rule>
+        <biome_spawn_rule name="wasteland">
+			<distance_from_center range="1800,2000" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="wasteland_hub">
+			<distance_from_center range="2000,2200" />
+		</biome_spawn_rule>
+        <biome_spawn_rule name="radiated">
+			<distance_from_center range="2200,10000" />
+		</biome_spawn_rule>
+    </biome_spawn_rules>
+    <!--vanilla
 	<biome_spawn_rules>
 		<biome_spawn_rule name="pine_forest">
 			<biome_generator range="0,0.1" />
@@ -655,5 +986,5 @@
 		<biome_spawn_rule name="water">
 			<terrain_generator range="-31,-1" />
 		</biome_spawn_rule>
-	</biome_spawn_rules>
+	</biome_spawn_rules>-->
 </rwgmixer>

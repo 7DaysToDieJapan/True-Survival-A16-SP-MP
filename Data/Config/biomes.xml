@@ -267,6 +267,57 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="treeSnowyGrassDiagonal" prob=".4" />
 				</decorations>
 			</subbiome>
+            <subbiome prob="0.1">
+				<!-- Snow Sub Biome ice -->
+				<layers>
+                    <layer depth="1" blockname="ice">
+						<resource blockname="waterSource8" cluster="1" prob="0.41" rwgGenerationType="all" />
+					</layer>
+					<layer depth="4" blockname="waterSource8"/>
+					<layer depth="3" blockname="dirt">
+						<resource blockname="clay" cluster="1" prob="0.2" rwgGenerationType="all" />
+						<resource blockname="gravelPlusIron" cluster="1" prob="0.811" rwgGenerationType="all" />
+					</layer>
+					<layer depth="4" blockname="stone">
+						<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+						<resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all" />
+						<resource blockname="silverOre" cluster="1" prob="0.00030" rwgGenerationType="all" />
+						<resource blockname="goldOre" cluster="1" prob="0.00020" rwgGenerationType="all" />
+						<resource blockname="diamondOre" cluster="1" prob="0.00010" rwgGenerationType="all" />
+					</layer>
+					<layer depth="*" blockname="hardStone">
+						<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
+						<resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all" />
+						<resource blockname="silverOre" cluster="1" prob="0.00030" rwgGenerationType="all" />
+						<resource blockname="goldOre" cluster="1" prob="0.00020" rwgGenerationType="all" />
+						<resource blockname="diamondOre" cluster="1" prob="0.00010" rwgGenerationType="all" />
+					</layer>
+					<layer depth="1" blockname="hardStone">
+						<resource blockname="gravelPlusIron" cluster="1" prob="0.8130" rwgGenerationType="all" />
+					</layer>
+					<layer depth="10" blockname="hardStone">
+						<resource blockname="potassiumNitrate" cluster="1" prob="0.1130" rwgGenerationType="all" />
+						<resource blockname="gravelPlusPotassium" cluster="1" prob="0.8130" rwgGenerationType="all" />
+						<resource blockname="silverOre" cluster="1" prob="0.00030" rwgGenerationType="all" />
+						<resource blockname="goldOre" cluster="1" prob="0.00020" rwgGenerationType="all" />
+						<resource blockname="diamondOre" cluster="1" prob="0.00010" rwgGenerationType="all" />
+					</layer>
+					<layer depth="1" blockname="hardStone">
+						<resource blockname="gravel" cluster="1" prob="0.8130" rwgGenerationType="all" />
+					</layer>
+					<layer depth="3" blockname="bedrock" />
+				</layers>
+				<decorations>
+					<decoration type="block" blockname="rock05" prob=".001" />
+					<decoration type="block" blockname="rock06" prob=".001" />
+					<decoration type="block" blockname="rock07" prob=".001" />
+					<decoration type="block" blockname="rockResource" prob=".025" rotatemax="3" />
+					<decoration type="block" blockname="rockResource02" prob=".025" rotatemax="3" />
+					<decoration type="block" blockname="lootForestHelper" prob="0.001" />
+					<decoration type="block" blockname="snowberry3Harvest" prob=".0001" />
+					<decoration type="block" blockname="treeSnowyGrassDiagonal" prob=".004" />
+				</decorations>
+			</subbiome>
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: leadOre -->
 				<layers>
@@ -415,6 +466,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<layers>
 					<layer depth="5" blockname="clay">
 						<resource blockname="gravelPlusIron" cluster="1" prob="0.071" rwgGenerationType="all" />
+                        <resource blockname="grass" cluster="1" prob="0.071" rwgGenerationType="all" />
 					</layer>
 					<layer depth="2" blockname="dirt">
 						<resource blockname="gravelPlusIron" cluster="1" prob="0.811" rwgGenerationType="all" />
@@ -616,6 +668,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<!-- Pine Forest Sub Biome Clustered Flowers and Boulders -->
 				<layers>
 					<layer depth="1" blockname="dirt">
+                        <resource blockname="forestGround" cluster="1" prob="0.071" rwgGenerationType="all" />
 						<resource blockname="gravelPlusIron" cluster="1" prob="0.071" rwgGenerationType="all" />
 					</layer>
 					<layer depth="6" blockname="dirt">
@@ -667,6 +720,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<!-- Pine Forest Sub Biome: clay, Flowers and Boulders -->
 				<layers>
 					<layer depth="5" blockname="clay">
+                        <resource blockname="forestGround" cluster="1" prob="0.071" rwgGenerationType="all" />
 						<resource blockname="gravelPlusIron" cluster="1" prob="0.071" rwgGenerationType="all" />
 					</layer>
 					<layer depth="2" blockname="dirt">
@@ -841,6 +895,8 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="snowberry3Harvest" prob=".001" />
 				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".4" />
 				<decoration type="block" blockname="appleTree" prob="0.001" rotatemax="7" />
+                <decoration type="block" blockname="spiderTrap" prob="0.000009" rotatemax="7" />
+                <decoration type="block" blockname="cannabisPlant" prob=".00009" rotatemax="3" />
 			</decorations>
 			<terrain class="Mountains" />
 		</biome>
@@ -861,7 +917,8 @@ If you do not declare them, the decorations of the main biome are used.
 			<subbiome prob="0.1">
 				<!-- Plains Sub Biome Clustered Trees -->
 				<layers>
-					<layer depth="1" blockname="plainsGround">
+					<layer depth="1" blockname="grass">
+                        <resource blockname="plainsGround" cluster="1" prob="0.1" rwgGenerationType="all" />
 						<resource blockname="gravelPlusIron" cluster="1" prob="0.1" rwgGenerationType="all" />
 					</layer>
 					<layer depth="5" blockname="dirt">
@@ -917,6 +974,8 @@ If you do not declare them, the decorations of the main biome are used.
 				<!-- Plains Sub Biome Clay + Thick Grass -->
 				<layers>
 					<layer depth="5" blockname="clay">
+                        <resource blockname="plainsGround" cluster="1" prob="0.1" rwgGenerationType="all" />
+                        <resource blockname="grass" cluster="1" prob="0.1" rwgGenerationType="all" />
 						<resource blockname="gravelPlusIron" cluster="1" prob="0.1" rwgGenerationType="all" />
 					</layer>
 					<layer depth="2" blockname="dirt">
@@ -973,6 +1032,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="treeForestGrassDiagonal" prob="0.25" />
 					<decoration type="block" blockname="plantedCotton3Harvest" prob="0.03" />
 					<decoration type="block" blockname="wheatPlant" prob="0.03" />
+                    <decoration type="block" blockname="sunflower" prob="0.01" />
 				</decorations>
 			</subbiome>
 			<subbiome prob="0.1551">
@@ -980,6 +1040,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<!-- different gravel prob because it doubles as topsoil decoration -->
 				<layers>
 					<layer depth="1" blockname="plainsGround">
+                        <resource blockname="stone" cluster="1" prob="0.1" rwgGenerationType="all" />
 						<resource blockname="gravelPlusLead" cluster="1" prob="0.1" rwgGenerationType="all" />
 					</layer>
 					<layer depth="5" blockname="dirt">
@@ -997,6 +1058,25 @@ If you do not declare them, the decorations of the main biome are used.
 					</layer>
 					<layer depth="3" blockname="bedrock" />
 				</layers>
+                <decorations>
+					<decoration type="prefab" name="resource_coal_pile" prob=".0007" rotatemax="7" />
+					<decoration type="block" blockname="treePlainsTree" prob="0.029" rotatemax="7" />
+					<decoration type="block" blockname="treePlainsTree2" prob="0.028" />
+					<decoration type="block" blockname="treeBirch10m" prob="0.0018" rotatemax="7" />
+					<decoration type="block" blockname="treeBirch12m" prob="0.0019" rotatemax="7" />
+					<decoration type="block" blockname="treeBirch15m" prob="0.0019" rotatemax="7" />
+					<decoration type="block" blockname="treeMaple6m" prob="0.0015" rotatemax="7" />
+					<decoration type="block" blockname="treeMaple13m" prob="0.0019" rotatemax="7" />
+					<decoration type="block" blockname="treeMaple15m" prob="0.0019" rotatemax="7" />
+					<decoration type="block" blockname="treeMaple16m" prob="0.0019" rotatemax="7" />
+					<decoration type="block" blockname="treeMaple17m" prob="0.0019" rotatemax="7" />
+					<decoration type="block" blockname="rockResource" prob="0.0005" rotatemax="3" />
+					<decoration type="block" blockname="rockResource02" prob="0.0005" rotatemax="3" />
+					<decoration type="block" blockname="lootPlainsHelper" prob="0.00025" />
+					<decoration type="block" blockname="cntBirdnest" prob="0.007" />
+					<decoration type="block" blockname="treePlainsGrassDiagonal" prob="0.50" />
+					<decoration type="block" blockname="treeForestGrassDiagonal" prob="0.25" />
+				</decorations>
 			</subbiome>
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: coalOre -->
@@ -1045,7 +1125,8 @@ If you do not declare them, the decorations of the main biome are used.
 			<!-- Block layers: Plains, Local ore: coalOre -->
 			<layers>
 				<layer filluptorg="60" blockname="water" />
-				<layer depth="1" blockname="plainsGround">
+				<layer depth="1" blockname="grass">
+                    <resource blockname="plainsGround" cluster="1" prob="0.1" rwgGenerationType="all" />
 					<resource blockname="gravelPlusIron" cluster="1" prob="0.1" rwgGenerationType="all" />
 				</layer>
 				<layer depth="5" blockname="dirt">
@@ -1111,6 +1192,11 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="treePlainsGrassDiagonal" prob="0.3" />
 				<decoration type="block" blockname="smallWheatPlant" prob="0.001" />
 				<decoration type="block" blockname="wheatPlant" prob=".00009" rotatemax="3" />
+                <decoration type="block" blockname="scorpionTrap" prob="0.00006" rotatemax="3" />
+				<decoration type="block" blockname="spiderTrap" prob="0.0001" rotatemax="3" />
+                <decoration type="block" blockname="smallWheatPlant" prob="0.001" />
+                <decoration type="block" blockname="cannabisPlant" prob=".00009" rotatemax="3" />
+				<decoration type="block" blockname="tobaccoPlant" prob=".00009" rotatemax="3" />
 			</decorations>
 			<terrain class="Desert" />
 		</biome>
@@ -1196,7 +1282,9 @@ If you do not declare them, the decorations of the main biome are used.
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: leadOre -->
 				<layers>
-					<layer depth="1" blockname="desertGround" />
+					<layer depth="1" blockname="desertGround">
+						<resource blockname="plainsGround" cluster="0" prob="0.30" rwgGenerationType="all" />
+					</layer>
 					<layer depth="22" blockname="sandStone" />
 					<layer depth="8" blockname="sandStone" />
 					<layer depth="5" blockname="hardStone" />
@@ -1206,6 +1294,25 @@ If you do not declare them, the decorations of the main biome are used.
 					</layer>
 					<layer depth="3" blockname="bedrock" />
 				</layers>
+                <decorations>
+					<decoration type="prefab" name="rock_form02" prob=".001" rotatemax="7" />
+					<decoration type="prefab" name="resource_coal_pile" prob=".0007" rotatemax="7" />
+					<decoration type="block" blockname="treePlainsTree" prob="0.005" rotatemax="7" />
+					<decoration type="block" blockname="rock01" prob=".001" rotatemax="3" />
+					<decoration type="block" blockname="rock02" prob=".001" rotatemax="3" />
+					<decoration type="block" blockname="rock04" prob=".001" rotatemax="3" />
+					<decoration type="block" blockname="rockResource" prob=".0004" rotatemax="3" />
+					<decoration type="block" blockname="rockResource02" prob=".0004" rotatemax="3" />
+					<decoration type="block" blockname="lootDesertHelper" prob="0.00025" />
+					<decoration type="block" blockname="treeDesertShrub" prob="0.007" />
+					<decoration type="block" blockname="treeDeadShrub" prob="0.0005" />
+					<decoration type="block" blockname="cntBirdnest" prob="0.0009" />
+					<decoration type="block" blockname="treeCactus04" prob="0.0025" rotatemax="3" />
+					<decoration type="block" blockname="treeCactus05" prob="0.0025" rotatemax="3" />
+					<decoration type="block" blockname="treeCactus06" prob="0.0025" rotatemax="3" />
+					<decoration type="block" blockname="treePlainsGrassDiagonal" prob=".02" />
+					<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".02" />
+				</decorations>
 			</subbiome>
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: potassiumNitrate -->
@@ -1264,6 +1371,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="prefab" name="desert_form01" prob="0.00009" rotatemax="7" />
 				<decoration type="prefab" name="desert_form02" prob="0.00009" rotatemax="7" />
 				<decoration type="prefab" name="resource_oilshale_pile" prob="0.00003" rotatemax="7" />
+                <decoration type="block" blockname="scorpionTrap" prob="0.0001" rotatemax="3" />
 			</decorations>
 			<terrain class="Desert" />
 		</biome>
@@ -1286,6 +1394,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<!-- Water Sub Biome: Clay -->
 				<layers>
 					<layer depth="2" blockname="clay">
+                        <resource blockname="plainsGround" cluster="1" prob="0.071" rwgGenerationType="all" />
 						<resource blockname="gravelPlusIron" cluster="1" prob="0.071" rwgGenerationType="all" />
 					</layer>
 					<layer depth="4" blockname="dirt">
@@ -1330,12 +1439,17 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="treeCactus05" prob="0.0025" rotatemax="3" />
 					<decoration type="block" blockname="treeCactus06" prob="0.0025" rotatemax="3" />
 					<decoration type="block" blockname="treePlainsGrassDiagonal" prob="0.20" />
+                    <decoration type="block" blockname="smallSugarcanePlant" prob="0.04" rotatemax="3" />
+					<decoration type="block" blockname="plantedBamboo3Harvest" prob="0.009" rotatemax="3" />
+					<decoration type="block" blockname="waterPlant" prob="0.03" rotatemax="3" />
+					<decoration type="block" blockname="sugarcanePlant" prob="0.02" rotatemax="3" />
 				</decorations>
 			</subbiome>
 			<subbiome prob="0.05">
 				<!-- Plains Sub Biome dirt + rocks -->
 				<layers>
 					<layer depth="1" blockname="dirt">
+                        <resource blockname="clay" cluster="1" prob="0.071" rwgGenerationType="all" />
 						<resource blockname="gravelPlusIron" cluster="1" prob="0.071" rwgGenerationType="all" />
 					</layer>
 					<layer depth="5" blockname="dirt">
@@ -1368,15 +1482,34 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="driftwood" prob="0.0019" rotatemax="3" />
 					<decoration type="block" blockname="driftwood2" prob="0.0019" rotatemax="3" />
 					<decoration type="block" blockname="treeTallGrassDiagonal" prob="0.50" />
+                    <decoration type="block" blockname="smallSugarcanePlant" prob="0.02" rotatemax="3" />
+					<decoration type="block" blockname="plantedBamboo3Harvest" prob="0.6" rotatemax="3" />
+					<decoration type="block" blockname="coconutPalm" prob="0.01" rotatemax="3" />
+					<decoration type="block" blockname="palm" prob="0.02" rotatemax="3" />
+					<decoration type="block" blockname="waterPlant" prob="0.02" rotatemax="3" />
+					<decoration type="block" blockname="blossomPalm" prob="0.02" rotatemax="3" />
+					<decoration type="block" blockname="sugarcanePlant" prob="0.02" rotatemax="3" />
 				</decorations>
 			</subbiome>
 			<terrain class="Water">
 				<property name="BaseHeight" value="12" />
 			</terrain>
-			<subbiome prob="0.1551">
+			<subbiome prob="0.351">
 				<!-- Ore Sub Biome: leadOre -->
-				<layers>
-					<layer depth="6" blockname="sand">
+                    <layers>
+                        <layer depth="1" blockname="air2">
+					</layer>
+                        <layer depth="9" blockname="waterSource8">
+					</layer>
+					<layer depth="1" blockname="waterSource8">
+						<resource blockname="piranha" prob="0.08" rwgGenerationType="all" />
+                         <decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.5" />
+                    </layer>
+                    <layer depth="1" blockname="sand">
+						<resource blockname="clay" prob="0.15" rwgGenerationType="all" />
+						<resource blockname="gravelPlusLead" cluster="1" prob="0.071" rwgGenerationType="all" />
+					</layer>
+                    <layer depth="1" blockname="sand">
 						<resource blockname="clay" prob="0.15" rwgGenerationType="all" />
 						<resource blockname="gravelPlusLead" cluster="1" prob="0.071" rwgGenerationType="all" />
 					</layer>
@@ -1392,6 +1525,9 @@ If you do not declare them, the decorations of the main biome are used.
 					</layer>
 					<layer depth="3" blockname="bedrock" />
 				</layers>
+                <decorations>
+                    <decoration type="block" blockname="piranha" prob="0.1" rotatemax="3" />
+                </decorations>
 			</subbiome>
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: coalOre -->
@@ -1465,24 +1601,31 @@ If you do not declare them, the decorations of the main biome are used.
 			</layers>
 			<spectrum name="pine_forest" />
 			<!-- Decorations Main: Water -->
-			<decorations>
-				<decoration type="block" blockname="treeAzalea" prob=".003" rotatemax="3" />
-				<decoration type="block" blockname="lootStreetHelper" prob=".0007" rotatemax="3" />
-				<decoration type="block" blockname="rock01" prob=".001" rotatemax="3" />
-				<decoration type="block" blockname="rock02" prob=".005" rotatemax="3" />
-				<decoration type="block" blockname="rock04" prob=".001" rotatemax="3" />
-				<decoration type="block" blockname="rockResource" prob=".0005" rotatemax="3" />
-				<decoration type="block" blockname="rockResource02" prob=".0005" rotatemax="3" />
-				<decoration type="block" blockname="driftwood" prob="0.0019" rotatemax="3" />
-				<decoration type="block" blockname="driftwood2" prob="0.0019" rotatemax="3" />
-				<decoration type="block" blockname="cinderBlocks01" prob=".0002" rotatemax="7" />
-				<decoration type="block" blockname="treeMountainPineDry" prob="0.005" rotatemax="7" />
-				<decoration type="block" blockname="treeDeadShrub" prob="0.005" rotatemax="7" />
-				<decoration type="block" blockname="treeDeadTree02" prob="0.005" rotatemax="7" />
-				<decoration type="block" blockname="treeDeadPineLeaf" prob="0.01" rotatemax="7" />
-				<decoration type="block" blockname="randomCarsHelper" prob="0.001" rotatemax="3" />
-				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".15" />
-				<decoration type="block" blockname="treeTallGrassDiagonal" prob=".35" />
+			 <decorations>
+                    <decoration type="block" blockname="treeAzalea" prob=".003" rotatemax="3" />
+                    <decoration type="block" blockname="lootStreetHelper" prob=".0007" rotatemax="3" />
+                    <decoration type="block" blockname="rock01" prob=".001" rotatemax="3" />
+                    <decoration type="block" blockname="rock02" prob=".005" rotatemax="3" />
+                    <decoration type="block" blockname="rock04" prob=".001" rotatemax="3" />
+                    <decoration type="block" blockname="rockResource" prob=".0005" rotatemax="3" />
+                    <decoration type="block" blockname="rockResource02" prob=".0005" rotatemax="3" />
+                    <decoration type="block" blockname="driftwood" prob="0.0019" rotatemax="3" />
+                    <decoration type="block" blockname="driftwood2" prob="0.0019" rotatemax="3" />
+                    <decoration type="block" blockname="smallSugarcanePlant" prob="0.03" rotatemax="3" />
+                    <decoration type="block" blockname="plantedBamboo3Harvest" prob="0.009" rotatemax="3" />
+                    <decoration type="block" blockname="coconutPalm" prob="0.001" rotatemax="3" />
+                    <decoration type="block" blockname="palm" prob="0.002" rotatemax="3" />
+                    <decoration type="block" blockname="blossomPalm" prob="0.002" rotatemax="3" />
+                    <decoration type="block" blockname="sugarcanePlant" prob="0.02" rotatemax="3" />
+                    <decoration type="block" blockname="waterPlant" prob="0.03" rotatemax="3" />
+                    <decoration type="block" blockname="cinderBlocks01" prob=".0002" rotatemax="7" />
+                    <decoration type="block" blockname="treeMountainPineDry" prob="0.005" rotatemax="7" />
+                    <decoration type="block" blockname="treeDeadShrub" prob="0.005" rotatemax="7" />
+                    <decoration type="block" blockname="treeDeadTree02" prob="0.005" rotatemax="7" />
+                    <decoration type="block" blockname="treeDeadPineLeaf" prob="0.01" rotatemax="7" />
+                    <decoration type="block" blockname="randomCarsHelper" prob="0.001" rotatemax="3" />
+                    <decoration type="block" blockname="treeBrownGrassDiagonal" prob=".15" />
+                    <decoration type="block" blockname="treeTallGrassDiagonal" prob=".35" />
 			</decorations>
 		</biome>
 		<!-- Radiated Main Biome -->
@@ -1536,6 +1679,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<!-- Wasteland Sub Biome: Plainsground -->
 				<layers>
 					<layer depth="1" blockname="plainsGround">
+                        <resource blockname="asphalt" cluster="1" prob="0.071" rwgGenerationType="all" />
 						<resource blockname="gravelPlusIron" cluster="1" prob="0.071" rwgGenerationType="all" />
 					</layer>
 					<layer depth="5" blockname="dirt">
@@ -1594,7 +1738,9 @@ If you do not declare them, the decorations of the main biome are used.
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: leadOre -->
 				<layers>
-					<layer depth="3" blockname="destroyedStone">
+					<layer depth="3" blockname="radiated">
+                        <resource blockname="asphalt" cluster="1" prob="0.071" rwgGenerationType="all" />
+                        <resource blockname="destroyedStone" cluster="1" prob="0.071" rwgGenerationType="all" />
 						<resource blockname="gravelPlusLead" cluster="1" prob="0.071" rwgGenerationType="all" />
 					</layer>
 					<layer depth="3" blockname="dirt">
@@ -1613,6 +1759,21 @@ If you do not declare them, the decorations of the main biome are used.
 					</layer>
 					<layer depth="3" blockname="bedrock" />
 				</layers>
+                <decorations>
+                    <decoration type="block" blockname="randomCarsHelper" prob=".0001" rotatemax="3" />
+					<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".1" />
+					<decoration type="block" blockname="rock01" prob=".01" rotatemax="3" />
+					<decoration type="block" blockname="rock02" prob=".001" rotatemax="3" />
+					<decoration type="block" blockname="rock04" prob=".01" rotatemax="3" />
+					<!--<decoration type="block" blockname="cntCorpseLoot02" prob=".006" rotatemax="3" />-->
+					<decoration type="block" blockname="decalSphere" prob=".1" rotatemax="3" />
+					<decoration type="block" blockname="radBarrelV" prob=".0006" rotatemax="3" />
+					<decoration type="block" blockname="radMushroom" prob=".0006" rotatemax="3" />
+					<decoration type="block" blockname="bonesPrefab" prob=".009" rotatemax="3" />
+					<decoration type="block" blockname="emberPile4" prob=".001" rotatemax="3" />
+					<decoration type="block" blockname="emberPile3" prob=".001" rotatemax="3" />
+					<decoration type="block" blockname="scrapMetalPile" prob="0.017" rotatemax="3" />
+				</decorations>
 			</subbiome>
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: coalOre -->
@@ -1636,11 +1797,29 @@ If you do not declare them, the decorations of the main biome are used.
 					</layer>
 					<layer depth="3" blockname="bedrock" />
 				</layers>
+                <decorations>
+					<decoration type="block" blockname="lootWastelandHelper" prob="0.00050" />
+					<decoration type="block" blockname="scrapMetalPile" prob=".0075" rotatemax="7" />
+					<decoration type="block" blockname="rock01" prob="0.007" rotatemax="3" />
+					<decoration type="block" blockname="rock02" prob="0.007" rotatemax="3" />
+					<decoration type="block" blockname="rock04" prob="0.007" rotatemax="3" />
+					<decoration type="block" blockname="cntBirdnest" prob="0.0002" />
+					<decoration type="block" blockname="cinderBlocks01" prob="0.0003" rotatemax="7" />
+					<decoration type="block" blockname="cinderBlocks02" prob="0.0003" rotatemax="7" />
+					<decoration type="block" blockname="cinderBlocks03" prob="0.0003" rotatemax="7" />
+					<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.050" />
+					<decoration type="prefab" name="mp_waste_pile_01" prob="0.03" />
+					<decoration type="prefab" name="mp_waste_pile_02" prob="0.03" />
+					<decoration type="prefab" name="mp_waste_pile_03" prob="0.03" />
+					<decoration type="prefab" name="mp_waste_pile_04" prob="0.03" />
+					<decoration type="prefab" name="mp_waste_pile_05" prob="0.03" />
+				</decorations>
 			</subbiome>
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: potassiumNitrate -->
 				<layers>
 					<layer depth="3" blockname="destroyedStone">
+                        <resource blockname="plainsGround" cluster="1" prob="0.071" rwgGenerationType="all" />
 						<resource blockname="gravelPlusPotassium" cluster="1" prob="0.071" rwgGenerationType="all" />
 					</layer>
 					<layer depth="3" blockname="dirt">
@@ -1659,12 +1838,40 @@ If you do not declare them, the decorations of the main biome are used.
 					</layer>
 					<layer depth="3" blockname="bedrock" />
 				</layers>
+                <decorations>
+					<decoration type="prefab" name="resource_nitrate_pile" prob=".0007" rotatemax="7" />
+					<decoration type="block" blockname="lootWastelandHelper" prob="0.00025" />
+					<decoration type="block" blockname="treeDeadPineLeaf" prob="0.010" rotatemax="7" />
+					<decoration type="block" blockname="scrapMetalPile" prob=".0015" rotatemax="7" />
+					<decoration type="block" blockname="rock01" prob=".004" rotatemax="3" />
+					<decoration type="block" blockname="rock02" prob=".004" rotatemax="3" />
+					<decoration type="block" blockname="rock04" prob=".004" rotatemax="3" />
+					<decoration type="block" blockname="rockResource" prob=".0005" rotatemax="3" />
+					<decoration type="block" blockname="rockResource02" prob=".0005" rotatemax="3" />
+					<decoration type="block" blockname="cntBirdnest" prob="0.002" />
+					<decoration type="block" blockname="cinderBlocks01" prob=".0006" rotatemax="7" />
+					<decoration type="block" blockname="cinderBlocks02" prob=".0006" rotatemax="7" />
+					<decoration type="block" blockname="cinderBlocks03" prob=".0006" rotatemax="7" />
+					<decoration type="block" blockname="treeBurntPine01" prob="0.036" rotatemax="7" />
+					<decoration type="block" blockname="treeBurntPine02" prob="0.040" rotatemax="7" />
+					<decoration type="block" blockname="treeBurntPine03" prob="0.024" rotatemax="7" />
+					<decoration type="block" blockname="treeDeadTree02" prob="0.020" rotatemax="7" />
+					<decoration type="block" blockname="plantedCornDead" prob="0.004" />
+					<decoration type="block" blockname="treeDeadShrub" prob="0.01" rotatemax="7" />
+					<decoration type="block" blockname="treeDeadPineLeaf" prob="0.10" rotatemax="7" />
+					<decoration type="block" blockname="treePlainsGrassDiagonal" prob="0.15" />
+					<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.10" />
+					<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
+					<decoration type="block" blockname="mineHubcap" prob="0.00005" />
+					<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
+				</decorations>
 			</subbiome>
 			<!-- Block layers: Wasteland Main, Local ore: potassiumNitrate -->
 			<layers>
 				<layer filluptorg="60" blockname="water" />
-				<layer depth="1" blockname="destroyedStone">
-					<resource blockname="gravelPlusIron" cluster="1" prob="0.071" rwgGenerationType="all" />
+				<layer depth="1" blockname="plainsGround">
+                    <resource blockname="destroyedStone" cluster="1" prob="0.2" rwgGenerationType="all" />
+					<resource blockname="gravelPlusIron" cluster="1" prob="0.091" rwgGenerationType="all" />
 				</layer>
 				<layer depth="2" blockname="destroyedStone">
 					<resource blockname="gravelPlusIron" cluster="1" prob="0.811" rwgGenerationType="all" />
@@ -1744,7 +1951,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="prefab" name="mp_waste_pile_04" prob=".003" />
 				<decoration type="prefab" name="mp_waste_pile_05" prob=".003" />
 				<decoration type="block" blockname="cntCar03SedanDamage2" prob="0.0005" rotatemax="3" />
-				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".05" />
+				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".09" />
 				<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
 				<decoration type="block" blockname="mineHubcap" prob="0.0001" />
 				<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
@@ -1761,6 +1968,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="prefab" name="sign_speed_55" prob="0.00025" />
 				<decoration type="prefab" name="sign_stop" prob="0.00025" />
 				<decoration type="prefab" name="sign_stop_4way" prob="0.00025" />
+                <decoration type="block" blockname="radTree" prob=".0006" rotatemax="3" />
 			</decorations>
 			<terrain class="Wasteland" />
 		</biome>
@@ -1780,6 +1988,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<layers>
 					<layer depth="1" blockname="burntForestGround">
 						<resource blockname="gravelPlusIron" cluster="1" prob="0.071" rwgGenerationType="all" />
+                        <resource blockname="asphalt" cluster="1" prob="0.071" rwgGenerationType="all" />
 						<resource blockname="fertilizedFarmland" cluster="1" prob="0.25" rwgGenerationType="all" />
 					</layer>
 					<layer depth="8" blockname="dirt">
@@ -1834,6 +2043,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<layers>
 					<layer depth="1" blockname="burntForestGround">
 						<resource blockname="gravelPlusIron" cluster="1" prob="0.071" rwgGenerationType="all" />
+                        <resource blockname="forestGround" cluster="1" prob="0.1" rwgGenerationType="all" />
 						<resource blockname="fertilizedFarmland" cluster="1" prob="0.25" rwgGenerationType="all" />
 					</layer>
 					<layer depth="8" blockname="dirt">
@@ -1885,6 +2095,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<!-- Ore Sub Biome: leadOre -->
 				<layers>
 					<layer depth="1" blockname="burntForestGround">
+                        <resource blockname="dirt" cluster="1" prob="0.071" rwgGenerationType="all" />
 						<resource blockname="gravelPlusLead" cluster="1" prob="0.071" rwgGenerationType="all" />
 					</layer>
 					<layer depth="8" blockname="dirt">
@@ -1903,6 +2114,27 @@ If you do not declare them, the decorations of the main biome are used.
 					</layer>
 					<layer depth="3" blockname="bedrock" />
 				</layers>
+                <decorations>
+					<decoration type="prefab" name="resource_coal_pile" prob="0.0007" rotatemax="7" />
+					<decoration type="block" blockname="lootBurntForestHelper" prob="0.00025" />
+					<decoration type="block" blockname="rock01" prob="0.005" rotatemax="3" />
+					<decoration type="block" blockname="rock02" prob="0.005" rotatemax="3" />
+					<decoration type="block" blockname="rock04" prob="0.005" rotatemax="3" />
+					<decoration type="block" blockname="rockResource" prob=".0005" rotatemax="3" />
+					<decoration type="block" blockname="rockResource02" prob=".0005" rotatemax="3" />
+					<decoration type="block" blockname="cntBirdnest" prob="0.0002" />
+					<decoration type="block" blockname="treeBurntPine01" prob="0.005" rotatemax="7" />
+					<decoration type="block" blockname="treeBurntPine02" prob="0.006" rotatemax="7" />
+					<decoration type="block" blockname="treeBurntPine03" prob="0.007" rotatemax="7" />
+					<decoration type="block" blockname="treeDeadShrub" prob="0.00001" rotatemax="7" />
+					<decoration type="block" blockname="treeDeadTree01" prob="0.0002" rotatemax="7" />
+					<decoration type="block" blockname="treeDeadTree02" prob="0.0003" rotatemax="7" />
+					<decoration type="block" blockname="emberPile1" prob="0.001" rotatemax="7" />
+					<decoration type="block" blockname="emberPile2" prob="0.001" rotatemax="7" />
+					<decoration type="block" blockname="emberPile3" prob="0.01" rotatemax="7" />
+					<decoration type="block" blockname="emberPile4" prob="0.01" rotatemax="7" />
+					<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.02" />
+				</decorations>
 			</subbiome>
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: coalOre -->
@@ -1990,7 +2222,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<layer depth="3" blockname="bedrock" />
 			</layers>
 			<!-- Decorations Main: Burnt Forest -->
-			<decorations>
+            <decorations>
 				<decoration type="prefab" name="resource_coal_pile" prob=".0007" rotatemax="7" />
 				<decoration type="block" blockname="lootBurntForestHelper" prob="0.00025" />
 				<decoration type="block" blockname="rock01" prob=".005" rotatemax="3" />
@@ -1998,13 +2230,14 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="rock04" prob=".005" rotatemax="3" />
 				<decoration type="block" blockname="rockResource" prob=".0005" rotatemax="3" />
 				<decoration type="block" blockname="rockResource02" prob=".0005" rotatemax="3" />
-				<decoration type="block" blockname="cntBirdnest" prob="0.0002" />
-				<decoration type="block" blockname="treeBurntPine01" prob="0.005" rotatemax="7" />
-				<decoration type="block" blockname="treeBurntPine02" prob="0.006" rotatemax="7" />
-				<decoration type="block" blockname="treeBurntPine03" prob="0.007" rotatemax="7" />
-				<decoration type="block" blockname="treeDeadShrub" prob="0.0001" rotatemax="7" />
-				<decoration type="block" blockname="treeDeadTree01" prob="0.0002" rotatemax="7" />
-				<decoration type="block" blockname="treeDeadTree02" prob="0.0003" rotatemax="7" />
+				<decoration type="block" blockname="cntBirdnest" prob="0.002" />
+				<decoration type="block" blockname="radTree" prob=".0006" rotatemax="3" />
+				<decoration type="block" blockname="treeBurntPine01" prob="0.003" rotatemax="7" />
+				<decoration type="block" blockname="treeBurntPine02" prob="0.003" rotatemax="7" />
+				<decoration type="block" blockname="treeBurntPine03" prob="0.003" rotatemax="7" />
+				<decoration type="block" blockname="treeDeadShrub" prob="0.001" rotatemax="7" />
+				<decoration type="block" blockname="treeDeadTree01" prob="0.002" rotatemax="7" />
+				<decoration type="block" blockname="treeDeadTree02" prob="0.003" rotatemax="7" />
 				<decoration type="prefab" name="houseburnt_deco1" prob=".0009" />
 				<decoration type="prefab" name="houseburnt_deco2" prob=".0009" />
 				<decoration type="block" blockname="emberPile1" prob="0.001" rotatemax="7" />
@@ -2012,27 +2245,43 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="emberPile3" prob="0.01" rotatemax="7" />
 				<decoration type="block" blockname="emberPile4" prob="0.01" rotatemax="7" />
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".02" />
+				<decoration type="block" blockname="spiderTrap" prob="0.0001" rotatemax="3" />
+				<decoration type="block" blockname="treeBirch10m" prob="0.00028" rotatemax="7" />
+				<decoration type="block" blockname="treeBirch12m" prob="0.00032" rotatemax="7" />
+				<decoration type="block" blockname="treeBirch15m" prob="0.00040" rotatemax="7" />
+				<decoration type="block" blockname="treeMaple6m" prob="0.00020" rotatemax="7" />
+				<decoration type="block" blockname="treeMaple13m" prob="0.00032" rotatemax="7" />
+				<decoration type="block" blockname="treeMaple15m" prob="0.00040" rotatemax="7" />
+				<decoration type="block" blockname="treeMaple16m" prob="0.00044" rotatemax="7" />
+				<decoration type="block" blockname="treeMaple17m" prob="0.00048" rotatemax="7" />
+				<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.02" />
+				<decoration type="block" blockname="mushroom01" prob="0.0002" rotatemax="7" />
+				<decoration type="block" blockname="mushroom02" prob="0.0002" rotatemax="7" />
+				<decoration type="block" blockname="plantedCoffee3Harvest" prob="0.0001" rotatemax="7" />
+				<decoration type="prefab" name="underwater_pile_01" prob="0.0001" />
+				<decoration type="prefab" name="underwater_pile_02" prob="0.0001" />
+				<decoration type="prefab" name="underwater_pile_03" prob="0.0001" />
 			</decorations>
 			<terrain class="Mountains" />
 		</biome>
 		<!-- City Main Biome Diersville -->
 		<biome name="city" biomemapcolor="#808080">
 			<weather>
-				<Temperature min="-15" max="15" prob="1" />
+				<Temperature min="-50" max="-30" prob="1" />
 				<Fog min="0" max="0" prob=".9" />
 				<Fog min="100" max="100" prob=".1" />
 				<CloudThickness min="0" max="0" prob=".2" />
-				<CloudThickness min="10" max="70" prob=".5" />
-				<CloudThickness min="100" max="100" prob=".3" />
+				<CloudThickness min="10" max="100" prob=".5" />
+				<CloudThickness min="95" max="100" prob=".5" />
 				<Precipitation min="0" max="0" prob=".0" />
 				<Precipitation min="50" max="100" prob=".75" />
-				<Wind min="10" max="20" prob="0.9" />
-				<Wind min="20" max="100" prob="0.1" />
+				<Wind min="20" max="40" prob="0.9" />
+				<Wind min="40" max="100" prob="0.1" />
 			</weather>
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: leadOre -->
 				<layers>
-					<layer depth="3" blockname="asphalt" />
+					<layer depth="3" blockname="forestGround" />
 					<layer depth="4" blockname="dirt">
 						<resource blockname="gravelPlusLead" cluster="1" prob="0.811" rwgGenerationType="all" />
 						<resource blockname="clay" cluster="1" prob="0.08" rwgGenerationType="all" />
@@ -2049,11 +2298,21 @@ If you do not declare them, the decorations of the main biome are used.
 					</layer>
 					<layer depth="3" blockname="bedrock" />
 				</layers>
+                <decorations>
+					<decoration type="block" blockname="plantedGoldenrod3Harvest" prob="0.008" />
+					<decoration type="block" blockname="plantedCotton3Harvest" prob="0.07" />
+					<decoration type="block" blockname="rock01" prob="0.01" />
+					<decoration type="block" blockname="rock02" prob="0.01" />
+					<decoration type="block" blockname="rock04" prob="0.01" />
+					<decoration type="block" blockname="rockResource" prob="0.0125" rotatemax="3" />
+					<decoration type="block" blockname="rockResource02" prob="0.0125" rotatemax="3" />
+					<decoration type="block" blockname="treeTallGrassDiagonal" prob="0.50" />
+				</decorations>
 			</subbiome>
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: coalOre -->
 				<layers>
-					<layer depth="3" blockname="asphalt" />
+					<layer depth="3" blockname="snow" />
 					<layer depth="4" blockname="dirt">
 						<resource blockname="gravelPlusCoal" cluster="1" prob="0.811" rwgGenerationType="all" />
 						<resource blockname="clay" cluster="1" prob="0.08" rwgGenerationType="all" />
@@ -2070,11 +2329,21 @@ If you do not declare them, the decorations of the main biome are used.
 					</layer>
 					<layer depth="3" blockname="bedrock" />
 				</layers>
+                <decorations>
+					<decoration type="block" blockname="rock05" prob="0.001" />
+					<decoration type="block" blockname="rock06" prob="0.001" />
+					<decoration type="block" blockname="rock07" prob="0.001" />
+					<decoration type="block" blockname="rockResource" prob="0.0125" rotatemax="3" />
+					<decoration type="block" blockname="rockResource02" prob="0.0125" rotatemax="3" />
+					<decoration type="block" blockname="lootForestHelper" prob="0.001" />
+					<decoration type="block" blockname="snowberry3Harvest" prob="0.001" />
+					<decoration type="block" blockname="treeSnowyGrassDiagonal" prob="0.4" />
+				</decorations>
 			</subbiome>
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: potassiumNitrate -->
 				<layers>
-					<layer depth="3" blockname="asphalt" />
+					<layer depth="3" blockname="forestGround" />
 					<layer depth="4" blockname="dirt">
 						<resource blockname="gravelPlusPotassium" cluster="1" prob="0.811" rwgGenerationType="all" />
 						<resource blockname="clay" cluster="1" prob="0.08" rwgGenerationType="all" />
@@ -2091,10 +2360,34 @@ If you do not declare them, the decorations of the main biome are used.
 					</layer>
 					<layer depth="3" blockname="bedrock" />
 				</layers>
+                <decorations>
+					<decoration type="block" blockname="lootForestHelper" prob="0.00025" />
+					<decoration type="prefab" name="rock_form02" prob="0.0001" rotatemax="7" />
+					<decoration type="prefab" name="rock_form01" prob="0.001" rotatemax="7" />
+					<decoration type="prefab" name="resource_lead_pile" prob="0.00007" rotatemax="7" />
+					<decoration type="block" blockname="plantedCotton3Harvest" prob="0.001" />
+					<decoration type="block" blockname="plantedPotato3Harvest" prob="0.0001" />
+					<decoration type="block" blockname="rock01" prob="0.001" />
+					<decoration type="block" blockname="rock02" prob="0.001" />
+					<decoration type="block" blockname="rock04" prob="0.001" />
+					<decoration type="block" blockname="cntBirdnest" prob="0.0001" />
+					<decoration type="block" blockname="treeDeadShrub" prob="0.001" rotatemax="7" />
+					<decoration type="block" blockname="treeJuniper6m" prob="0.003" rotatemax="7" />
+					<decoration type="block" blockname="treeMountainPine8m" prob="0.010" rotatemax="7" />
+					<decoration type="block" blockname="treeMountainPine13m" prob="0.015" rotatemax="7" />
+					<decoration type="block" blockname="treeMountainPine16m" prob="0.025" rotatemax="7" />
+					<decoration type="block" blockname="treeMountainPine19m" prob="0.030" rotatemax="7" />
+					<decoration type="block" blockname="treeMountainPine20m" prob="0.040" rotatemax="7" />
+					<decoration type="block" blockname="treeMountainPineDry" prob="0.004" rotatemax="7" />
+					<decoration type="block" blockname="snowberry3Harvest" prob=".0001" />
+					<decoration type="block" blockname="treeTallGrassDiagonal" prob=".35" />
+				</decorations>
 			</subbiome>
 			<!-- Block layers: City (Diersville), Local ore: potassiumNitrate -->
 			<layers>
-				<layer depth="3" blockname="asphalt" />
+				<layer depth="1" blockname="snow">
+					<resource blockname="forestGround" cluster="2" prob="0.15" rwgGenerationType="all" />
+				</layer>
 				<layer depth="4" blockname="dirt">
 					<resource blockname="gravel" cluster="1" prob="0.811" rwgGenerationType="all" />
 					<resource blockname="clay" cluster="1" prob="0.08" rwgGenerationType="all" />
@@ -2131,24 +2424,48 @@ If you do not declare them, the decorations of the main biome are used.
 				<layer depth="3" blockname="bedrock" />
 			</layers>
 			<spectrum name="city" />
-			<decorations></decorations>
+			<decorations>
+					<decoration type="block" blockname="lootForestHelper" prob="0.00025" />
+					<decoration type="prefab" name="rock_form02" prob="0.0001" rotatemax="7" />
+					<decoration type="prefab" name="rock_form01" prob="0.001" rotatemax="7" />
+					<decoration type="prefab" name="resource_lead_pile" prob="0.00007" rotatemax="7" />
+					<decoration type="block" blockname="plantedCotton3Harvest" prob="0.001" />
+					<decoration type="block" blockname="plantedPotato3Harvest" prob="0.0001" />
+					<decoration type="block" blockname="rock01" prob="0.001" />
+					<decoration type="block" blockname="rock02" prob="0.001" />
+					<decoration type="block" blockname="rock04" prob="0.001" />
+					<decoration type="block" blockname="cntBirdnest" prob="0.0001" />
+					<decoration type="block" blockname="treeDeadShrub" prob="0.001" rotatemax="7" />
+					<decoration type="block" blockname="treeJuniper6m" prob="0.003" rotatemax="7" />
+					<decoration type="block" blockname="treeMountainPine8m" prob="0.010" rotatemax="7" />
+					<decoration type="block" blockname="treeMountainPine13m" prob="0.015" rotatemax="7" />
+					<decoration type="block" blockname="treeMountainPine16m" prob="0.025" rotatemax="7" />
+					<decoration type="block" blockname="treeMountainPine19m" prob="0.030" rotatemax="7" />
+					<decoration type="block" blockname="treeMountainPine20m" prob="0.040" rotatemax="7" />
+					<decoration type="block" blockname="treeMountainPineDry" prob="0.004" rotatemax="7" />
+					<decoration type="block" blockname="snowberry3Harvest" prob=".0001" />
+					<decoration type="block" blockname="treeTallGrassDiagonal" prob=".35" />
+				</decorations>
 			<terrain class="City" />
 		</biome>
 		<!-- City Main Biome Gravestown -->
 		<biome name="city_wasteland" biomemapcolor="#c0c0c0">
 			<weather>
-				<Temperature min="5" max="15" prob="1" />
+				<Temperature min="-50" max="-30" prob="1" />
 				<Fog min="10" max="40" prob="1" />
 				<CloudThickness min="10" max="70" prob="0.1" />
 				<CloudThickness min="70" max="100" prob="0.9" />
-				<Precipitation min="100" max="100" prob="1" />
-				<Wind min="10" max="20" prob="0.9" />
-				<Wind min="20" max="100" prob="0.1" />
+				<Precipitation min="0" max="0" prob=".0" />
+				<Precipitation min="50" max="100" prob=".75" />
+				<Wind min="20" max="40" prob="0.9" />
+				<Wind min="40" max="100" prob="0.1" />
 			</weather>
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: leadOre -->
 				<layers>
-					<layer depth="3" blockname="asphalt" />
+					<layer depth="1" blockname="radiated">
+						<resource blockname="snow" cluster="1" prob="0.40" rwgGenerationType="all" />
+					</layer>
 					<layer depth="4" blockname="dirt">
 						<resource blockname="gravelPlusLead" cluster="1" prob="0.811" rwgGenerationType="all" />
 						<resource blockname="clay" cluster="1" prob="0.08" rwgGenerationType="all" />
@@ -2165,11 +2482,35 @@ If you do not declare them, the decorations of the main biome are used.
 					</layer>
 					<layer depth="3" blockname="bedrock" />
 				</layers>
+                <decorations>
+					<decoration type="block" blockname="rockResource" prob=".0025" rotatemax="3" />
+					<decoration type="block" blockname="rockResource02" prob=".0025" rotatemax="3" />
+					<decoration type="block" blockname="treeDeadShrub" prob="0.01" rotatemax="7" />
+					<decoration type="block" blockname="treeDeadTree02" prob="0.01" rotatemax="7" />
+					<decoration type="block" blockname="radTree" prob=".0006" rotatemax="3" />
+					<decoration type="block" blockname="cntTrashPile01" prob="0.007" rotatemax="7" />
+					<decoration type="block" blockname="cntTrashPile08" prob="0.007" rotatemax="7" />
+					<!--<decoration type="block" blockname="cntCorpseLoot02" prob="0.004" rotatemax="7" />-->
+					<decoration type="block" blockname="decalSphere" prob=".1" rotatemax="3" />
+					<decoration type="block" blockname="radBarrelV" prob=".0006" rotatemax="3" />
+					<decoration type="block" blockname="radMushroom" prob=".0006" rotatemax="3" />
+					<decoration type="prefab" name="waste_rubble_bldg_01" prob="0.03" />
+					<decoration type="prefab" name="waste_rubble_bldg_02" prob="0.03" />
+					<decoration type="prefab" name="waste_rubble_bldg_03" prob="0.03" />
+					<decoration type="prefab" name="waste_rubble_bldg_09" prob="0.02" />
+					<decoration type="prefab" name="waste_rubble_bldg_04" prob="0.015" />
+					<decoration type="prefab" name="waste_rubble_bldg_05" prob="0.015" />
+					<decoration type="prefab" name="waste_rubble_bldg_06" prob="0.015" />
+					<decoration type="prefab" name="waste_rubble_bldg_07" prob="0.015" />
+					<decoration type="prefab" name="waste_rubble_bldg_08" prob="0.015" />
+				</decorations>
 			</subbiome>
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: coalOre -->
 				<layers>
-					<layer depth="3" blockname="asphalt" />
+					<layer depth="1" blockname="snow">
+						<resource blockname="dirt" cluster="1" prob="0.50" rwgGenerationType="all" />
+					</layer>
 					<layer depth="4" blockname="dirt">
 						<resource blockname="gravelPlusCoal" cluster="1" prob="0.811" rwgGenerationType="all" />
 						<resource blockname="clay" cluster="1" prob="0.08" rwgGenerationType="all" />
@@ -2186,11 +2527,43 @@ If you do not declare them, the decorations of the main biome are used.
 					</layer>
 					<layer depth="3" blockname="bedrock" />
 				</layers>
+                <decorations>
+					<decoration type="prefab" name="resource_nitrate_pile" prob=".0007" rotatemax="7" />
+					<decoration type="block" blockname="lootWastelandHelper" prob="0.00025" />
+					<decoration type="block" blockname="treeDeadPineLeaf" prob="0.010" rotatemax="7" />
+					<decoration type="block" blockname="scrapMetalPile" prob="0.0015" rotatemax="7" />
+					<decoration type="block" blockname="brickDestroyedBlock01" prob=".0004" rotatemax="7" />
+                    <decoration type="block" blockname="brickDestroyedBlock02" prob=".0004" rotatemax="7" />
+                    <decoration type="block" blockname="brickDestroyedBlock03" prob=".0004" rotatemax="7" />
+					<decoration type="block" blockname="rock01" prob=".004" rotatemax="3" />
+					<decoration type="block" blockname="rock02" prob=".004" rotatemax="3" />
+					<decoration type="block" blockname="rock04" prob=".004" rotatemax="3" />
+					<decoration type="block" blockname="rockResource" prob="0.0005" rotatemax="3" />
+					<decoration type="block" blockname="rockResource02" prob="0.0005" rotatemax="3" />
+					<decoration type="block" blockname="cntBirdnest" prob="0.002" />
+					<decoration type="block" blockname="cinderBlocks01" prob=".0006" rotatemax="7" />
+					<decoration type="block" blockname="cinderBlocks02" prob=".0006" rotatemax="7" />
+					<decoration type="block" blockname="cinderBlocks03" prob=".0006" rotatemax="7" />
+					<decoration type="block" blockname="treeMountainPineDry" prob="0.30" rotatemax="7" />
+					<decoration type="block" blockname="treeWinterEverGreen" prob="0.0025" rotatemax="7" />
+					<decoration type="block" blockname="radTree" prob=".0006" rotatemax="3" />
+					<decoration type="block" blockname="treeWinterPine01" prob="0.0025" rotatemax="7" />
+					<decoration type="block" blockname="treeWinterPine02" prob="0.0025" rotatemax="7" />
+					<decoration type="block" blockname="treeWinterPine03" prob="0.0025" rotatemax="7" />
+					<decoration type="block" blockname="treeSnowyDeadBush" prob="0.01" rotatemax="7" />
+					<decoration type="block" blockname="treeSnowyGrassDiagonal" prob="0.25" />
+					<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
+					<decoration type="block" blockname="mineHubcap" prob="0.00005" />
+					<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
+				</decorations>
 			</subbiome>
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: potassiumNitrate -->
 				<layers>
-					<layer depth="3" blockname="asphalt" />
+                    <layer depth="2" blockname="snow">
+						<resource blockname="destroyedStone" cluster="1" prob="0.25" rwgGenerationType="all" />
+                        <resource blockname="asphalt" cluster="1" prob="0.25" rwgGenerationType="all" />
+					</layer>
 					<layer depth="4" blockname="dirt">
 						<resource blockname="gravelPlusPotassium" cluster="1" prob="0.811" rwgGenerationType="all" />
 						<resource blockname="clay" cluster="1" prob="0.08" rwgGenerationType="all" />
@@ -2207,11 +2580,37 @@ If you do not declare them, the decorations of the main biome are used.
 					</layer>
 					<layer depth="3" blockname="bedrock" />
 				</layers>
+                    <decorations>
+                        <decoration type="block" blockname="lootWastelandHelper" prob="0.00050" />
+                        <decoration type="block" blockname="scrapMetalPile" prob=".015" rotatemax="7" />
+                        <decoration type="block" blockname="brickDestroyedBlock01" prob=".0004" rotatemax="7" />
+                        <decoration type="block" blockname="brickDestroyedBlock02" prob=".0004" rotatemax="7" />
+                        <decoration type="block" blockname="brickDestroyedBlock03" prob=".0004" rotatemax="7" />
+                        <decoration type="block" blockname="rock01" prob="0.007" rotatemax="3" />
+                        <decoration type="block" blockname="rock02" prob="0.007" rotatemax="3" />
+                        <decoration type="block" blockname="rock04" prob="0.007" rotatemax="3" />
+                        <decoration type="block" blockname="cntBirdnest" prob="0.0002" />
+                        <decoration type="block" blockname="cinderBlocks01" prob="0.003" rotatemax="7" />
+                        <decoration type="block" blockname="cinderBlocks02" prob="0.003" rotatemax="7" />
+                        <decoration type="block" blockname="cinderBlocks03" prob="0.003" rotatemax="7" />
+                        <decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.050" />
+                        <decoration type="prefab" name="mp_waste_pile_01" prob="0.02" />
+                        <decoration type="prefab" name="mp_waste_pile_02" prob="0.02" />
+                        <decoration type="prefab" name="mp_waste_pile_03" prob="0.02" />
+                        <decoration type="prefab" name="mp_waste_pile_04" prob="0.02" />
+                        <decoration type="prefab" name="mp_waste_pile_05" prob="0.02" />
+                        <decoration type="block" blockname="mineCandyTin" prob="0.00015" />
+                        <decoration type="block" blockname="mineHubcap" prob="0.00005" />
+                        <decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
+                    </decorations>
 			</subbiome>
 			<!-- Block layers: city_wasteland (Gravestown), Local ore: potassiumNitrate -->
 			<layers>
 				<layer filluptorg="60" blockname="water" />
-				<layer depth="3" blockname="asphalt" />
+				<layer depth="1" blockname="destroyedStone">
+					<resource blockname="snow" cluster="1" prob="0.45" rwgGenerationType="all" />
+                    <resource blockname="asphalt" cluster="1" prob="0.045" rwgGenerationType="all" />
+				</layer>
 				<layer depth="4" blockname="dirt">
 					<resource blockname="gravel" cluster="1" prob="0.811" rwgGenerationType="all" />
 					<resource blockname="clay" cluster="1" prob="0.08" rwgGenerationType="all" />
@@ -2246,7 +2645,48 @@ If you do not declare them, the decorations of the main biome are used.
 				<layer depth="3" blockname="bedrock" />
 			</layers>
 			<spectrum name="wasteland" />
-			<decorations></decorations>
+			<decorations>
+				<decoration type="block" blockname="lootWastelandHelper" prob="0.00025" />
+				<!--<decoration type="block" blockname="cntCorpseLoot01" prob="0.00005" rotatemax="7" />
+				<decoration type="block" blockname="cntCorpseLoot02" prob="0.00015" rotatemax="7" />-->
+				<decoration type="block" blockname="treeDeadPineLeaf" prob="0.0010" rotatemax="7" />
+				<decoration type="block" blockname="scrapMetalPile" prob="0.00015" rotatemax="7" />
+				<decoration type="block" blockname="brickDestroyedBlock01" prob=".0004" rotatemax="7" />
+                <decoration type="block" blockname="brickDestroyedBlock02" prob=".0004" rotatemax="7" />
+                <decoration type="block" blockname="brickDestroyedBlock03" prob=".0004" rotatemax="7" />
+				<decoration type="block" blockname="cinderBlocks01" prob="0.0006" rotatemax="7" />
+				<decoration type="block" blockname="cinderBlocks02" prob="0.0006" rotatemax="7" />
+				<decoration type="block" blockname="cinderBlocks03" prob="0.0006" rotatemax="7" />
+				<decoration type="block" blockname="radTree" prob=".0006" rotatemax="3" />
+				<decoration type="prefab" name="waste_rubble_bldg_01" prob="0.025" />
+				<decoration type="prefab" name="waste_rubble_bldg_02" prob="0.025" />
+				<decoration type="prefab" name="waste_rubble_bldg_03" prob="0.030" />
+				<decoration type="prefab" name="waste_rubble_bldg_09" prob="0.055" />
+				<decoration type="prefab" name="waste_rubble_bldg_04" prob="0.060" />
+				<decoration type="prefab" name="waste_rubble_bldg_05" prob="0.060" />
+				<decoration type="prefab" name="waste_rubble_bldg_06" prob="0.060" />
+				<decoration type="prefab" name="waste_rubble_bldg_07" prob="0.060" />
+				<decoration type="prefab" name="waste_rubble_bldg_08" prob="0.060" />
+				<decoration type="prefab" name="waste_rubble_highway_01" prob="0.0025" />
+				<decoration type="prefab" name="street_light_01" prob="0.00125" />
+				<!--<decoration type="prefab" name="power_pole_01" prob="0.00025" />-->
+				<decoration type="prefab" name="sign_slow" prob="0.00025" />
+				<decoration type="prefab" name="sign_speed_25" prob="0.00025" />
+				<decoration type="prefab" name="sign_speed_35" prob="0.00025" />
+				<decoration type="prefab" name="sign_speed_45" prob="0.00025" />
+				<decoration type="prefab" name="sign_speed_55" prob="0.00025" />
+				<decoration type="prefab" name="sign_stop" prob="0.00025" />
+				<decoration type="prefab" name="sign_stop_4way" prob="0.00025" />
+				<decoration type="prefab" name="mp_waste_cover_01" prob="0.0005" />
+				<decoration type="prefab" name="mp_waste_cover_02" prob="0.0005" />
+				<decoration type="prefab" name="mp_waste_hole_asphalt_01" prob="0.00005" />
+				<decoration type="prefab" name="mp_waste_hole_rock_01" prob="0.0005" />
+				<decoration type="block" blockname="randomCarsHelper" prob="0.001" rotatemax="3" />
+				<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.025" />
+				<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
+				<decoration type="block" blockname="mineHubcap" prob="0.00005" />
+				<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
+			</decorations>
 			<terrain class="Mountains" />
 		</biome>
 		<!-- Wasteland Hub Biome Random Gen -->
@@ -2267,6 +2707,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<!-- Wasteland_hub Sub Biome Radiation and Corpses -->
 				<layers>
 					<layer depth="5" blockname="radiated">
+                        <resource blockname="destroyedStone" cluster="1" prob="0.071" rwgGenerationType="all" />
 						<resource blockname="gravelPlusIron" cluster="1" prob="0.071" rwgGenerationType="all" />
 					</layer>
 					<layer depth="4" blockname="stone">
@@ -2306,7 +2747,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="rock04" prob=".001" rotatemax="3" />
 				<!-- 	<decoration type="block" blockname="cntCorpseLoot02" prob=".006" rotatemax="3" /> -->
 					<decoration type="prefab" name="waste_rubble_bldg_01" prob="0.03" />
-					<decoration type="prefab" name="waste_rubble_bldg_02" prob="0.03" />
+                    <decoration type="prefab" name="waste_rubble_bldg_02" prob="0.03" />
 					<decoration type="prefab" name="waste_rubble_bldg_03" prob="0.03" />
 					<decoration type="prefab" name="waste_rubble_bldg_09" prob="0.02" />
 					<decoration type="prefab" name="waste_rubble_bldg_04" prob="0.015" />
@@ -2324,13 +2765,18 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="treeDeadTree02" prob="0.01" rotatemax="7" />
 					<decoration type="block" blockname="cntTrashPile01" prob="0.007" rotatemax="7" />
 					<decoration type="block" blockname="cntTrashPile08" prob="0.007" rotatemax="7" />
+                    <decoration type="block" blockname="radTree" prob=".0006" rotatemax="3" />
+					<decoration type="block" blockname="decalSphere" prob=".1" rotatemax="3" />
+					<decoration type="block" blockname="radBarrelV" prob=".0006" rotatemax="3" />
+					<decoration type="block" blockname="radMushroom" prob=".0006" rotatemax="3" />
 				</decorations>
 			</subbiome>
 			<spectrum name="wasteland" />
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: leadOre -->
 				<layers>
-					<layer depth="3" blockname="destroyedStone">
+					<layer depth="3" blockname="plainsGround">
+                    <resource blockname="destroyedStone" cluster="1" prob="0.071" rwgGenerationType="all" />
 						<resource blockname="gravelPlusLead" cluster="1" prob="0.071" rwgGenerationType="all" />
 					</layer>
 					<layer depth="3" blockname="dirt">
@@ -2349,11 +2795,43 @@ If you do not declare them, the decorations of the main biome are used.
 					</layer>
 					<layer depth="3" blockname="bedrock" />
 				</layers>
+                <decorations>
+					<decoration type="prefab" name="resource_nitrate_pile" prob=".0007" rotatemax="7" />
+					<decoration type="block" blockname="lootWastelandHelper" prob="0.00025" />
+					<decoration type="block" blockname="treeDeadPineLeaf" prob="0.010" rotatemax="7" />
+					<decoration type="block" blockname="scrapMetalPile" prob=".0015" rotatemax="7" />
+					<decoration type="block" blockname="brickDestroyedBlock01" prob=".0004" rotatemax="7" />
+                    <decoration type="block" blockname="brickDestroyedBlock02" prob=".0004" rotatemax="7" />
+                    <decoration type="block" blockname="brickDestroyedBlock03" prob=".0004" rotatemax="7" />
+					<decoration type="block" blockname="rock01" prob=".004" rotatemax="3" />
+					<decoration type="block" blockname="rock02" prob=".004" rotatemax="3" />
+					<decoration type="block" blockname="rock04" prob=".004" rotatemax="3" />
+					<decoration type="block" blockname="rockResource" prob=".0005" rotatemax="3" />
+					<decoration type="block" blockname="rockResource02" prob=".0005" rotatemax="3" />
+					<decoration type="block" blockname="cntBirdnest" prob="0.002" />
+					<decoration type="block" blockname="cinderBlocks01" prob=".0006" rotatemax="7" />
+					<decoration type="block" blockname="cinderBlocks02" prob=".0006" rotatemax="7" />
+					<decoration type="block" blockname="cinderBlocks03" prob=".0006" rotatemax="7" />
+					<decoration type="block" blockname="treeBurntPine01" prob="0.036" rotatemax="7" />
+					<decoration type="block" blockname="treeBurntPine02" prob="0.040" rotatemax="7" />
+					<decoration type="block" blockname="radTree" prob=".0006" rotatemax="3" />
+					<decoration type="block" blockname="treeBurntPine03" prob="0.024" rotatemax="7" />
+					<decoration type="block" blockname="treeDeadTree02" prob="0.020" rotatemax="7" />
+					<decoration type="block" blockname="plantedCornDead" prob="0.004" />
+					<decoration type="block" blockname="treeDeadShrub" prob="0.01" rotatemax="7" />
+					<decoration type="block" blockname="treeDeadPineLeaf" prob="0.10" rotatemax="7" />
+					<decoration type="block" blockname="treePlainsGrassDiagonal" prob="0.15" />
+					<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.10" />
+					<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
+					<decoration type="block" blockname="mineHubcap" prob="0.00005" />
+					<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
+				</decorations>
 			</subbiome>
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: coalOre -->
 				<layers>
-					<layer depth="3" blockname="destroyedStone">
+					<layer depth="3" blockname="asphalt">
+                        <resource blockname="destroyedStone" cluster="1" prob="0.31" rwgGenerationType="all" />
 						<resource blockname="gravelPlusCoal" cluster="1" prob="0.071" rwgGenerationType="all" />
 					</layer>
 					<layer depth="3" blockname="dirt">
@@ -2372,11 +2850,47 @@ If you do not declare them, the decorations of the main biome are used.
 					</layer>
 					<layer depth="3" blockname="bedrock" />
 				</layers>
+                <decorations>
+					<decoration type="block" blockname="lootWastelandHelper" prob="0.00050" />
+					<decoration type="block" blockname="scrapMetalPile" prob=".015" rotatemax="7" />
+					<decoration type="block" blockname="brickDestroyedBlock01" prob=".0004" rotatemax="7" />
+                    <decoration type="block" blockname="brickDestroyedBlock02" prob=".0004" rotatemax="7" />
+                    <decoration type="block" blockname="brickDestroyedBlock03" prob=".0004" rotatemax="7" />
+					<decoration type="block" blockname="rock01" prob="0.007" rotatemax="3" />
+					<decoration type="block" blockname="rock02" prob="0.007" rotatemax="3" />
+					<decoration type="block" blockname="rock04" prob="0.007" rotatemax="3" />
+					<decoration type="block" blockname="cntBirdnest" prob="0.0002" />
+					<decoration type="block" blockname="cinderBlocks01" prob="0.003" rotatemax="7" />
+					<decoration type="block" blockname="cinderBlocks02" prob="0.003" rotatemax="7" />
+					<decoration type="block" blockname="cinderBlocks03" prob="0.003" rotatemax="7" />
+					<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.050" />
+				<!--<decoration type="prefab" name="power_pole_01" prob="0.00025" />-->
+					<decoration type="prefab" name="sign_slow" prob="0.00025" />
+					<decoration type="prefab" name="sign_speed_25" prob="0.00025" />
+					<decoration type="prefab" name="sign_speed_35" prob="0.00025" />
+					<decoration type="prefab" name="sign_speed_45" prob="0.00025" />
+					<decoration type="prefab" name="sign_speed_55" prob="0.00025" />
+					<decoration type="prefab" name="sign_stop" prob="0.00025" />
+					<decoration type="prefab" name="sign_stop_4way" prob="0.00025" />
+					<decoration type="prefab" name="mp_waste_pile_01" prob="0.02" />
+					<decoration type="prefab" name="mp_waste_pile_02" prob="0.02" />
+					<decoration type="prefab" name="mp_waste_pile_03" prob="0.02" />
+					<decoration type="prefab" name="mp_waste_pile_04" prob="0.02" />
+					<decoration type="prefab" name="mp_waste_pile_05" prob="0.02" />
+					<decoration type="prefab" name="mp_waste_cover_01" prob="0.02" />
+					<decoration type="prefab" name="mp_waste_cover_02" prob="0.02" />
+					<decoration type="prefab" name="mp_waste_hole_asphalt_01" prob="0.0005" />
+					<decoration type="prefab" name="mp_waste_hole_rock_01" prob="0.005" />
+					<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
+					<decoration type="block" blockname="mineHubcap" prob="0.00005" />
+					<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
+				</decorations>
 			</subbiome>
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: potassiumNitrate -->
 				<layers>
 					<layer depth="3" blockname="destroyedStone">
+                        <resource blockname="asphalt" cluster="1" prob="0.071" rwgGenerationType="all" />
 						<resource blockname="gravelPlusPotassium" cluster="1" prob="0.071" rwgGenerationType="all" />
 					</layer>
 					<layer depth="3" blockname="dirt">
@@ -2395,12 +2909,33 @@ If you do not declare them, the decorations of the main biome are used.
 					</layer>
 					<layer depth="3" blockname="bedrock" />
 				</layers>
+                <decorations>
+					<decoration type="prefab" name="mp_waste_hole_asphalt_01" prob="0.7" />
+					<decoration type="prefab" name="mp_waste_hole_rock_01" prob="0.9" />
+					<decoration type="prefab" name="waste_rubble_bldg_01" prob="0.20" />
+					<decoration type="prefab" name="waste_rubble_bldg_02" prob="0.20" />
+					<decoration type="prefab" name="waste_rubble_bldg_03" prob="0.20" />
+					<decoration type="prefab" name="waste_rubble_bldg_09" prob="0.50" />
+					<decoration type="prefab" name="waste_rubble_bldg_04" prob="0.50" />
+					<decoration type="prefab" name="waste_rubble_bldg_05" prob="0.50" />
+					<decoration type="prefab" name="waste_rubble_bldg_06" prob="0.50" />
+					<decoration type="prefab" name="waste_rubble_bldg_07" prob="0.50" />
+					<decoration type="prefab" name="waste_rubble_bldg_08" prob="0.50" />
+					<decoration type="prefab" name="waste_rubble_highway_01" prob="0.0025" />
+					<decoration type="prefab" name="street_light_01" prob="0.00125" />
+					<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.025" />
+					<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
+					<decoration type="block" blockname="mineHubcap" prob="0.00005" />
+					<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
+				</decorations>
 			</subbiome>
 			<!-- Block layers: Wasteland_hub, Local ore: potassiumNitrate -->
 			<layers>
 				<layer filluptorg="60" blockname="water" />
 				<layer depth="1" blockname="destroyedStone">
-					<resource blockname="gravelPlusIron" cluster="1" prob="0.071" rwgGenerationType="all" />
+                    <resource blockname="plainsGround" cluster="1" prob="0.4" rwgGenerationType="all" />
+                    <resource blockname="clay" cluster="1" prob="0.2" rwgGenerationType="all" />
+					<resource blockname="gravelPlusIron" cluster="1" prob="0.1" rwgGenerationType="all" />
 				</layer>
 				<layer depth="2" blockname="destroyedStone">
 					<resource blockname="gravelPlusIron" cluster="1" prob="0.811" rwgGenerationType="all" />
@@ -2477,7 +3012,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="plantedCornDead" prob="0.004" />
 				<decoration type="block" blockname="treePlainsGrassDiagonal" prob="0.15" />
 				<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
-				<!-- <decoration type="prefab" name="power_pole_01" prob="0.00025" /> -->
+				<!--<decoration type="prefab" name="power_pole_01" prob="0.00025" />-->
 				<decoration type="prefab" name="sign_slow" prob="0.00025" />
 				<decoration type="prefab" name="sign_speed_25" prob="0.00025" />
 				<decoration type="prefab" name="sign_speed_35" prob="0.00025" />
@@ -2489,7 +3024,19 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="prefab" name="mp_waste_cover_02" prob="0.02" />
 				<decoration type="prefab" name="mp_waste_hole_asphalt_01" prob="0.0005" />
 				<decoration type="prefab" name="mp_waste_hole_rock_01" prob="0.005" />
-			</decorations>
+           		<!--<decoration type="block" blockname="cntCorpseLoot01" prob="0.0005" rotatemax="7" />
+				<decoration type="block" blockname="cntCorpseLoot02" prob="0.00015" rotatemax="7" />-->
+				<decoration type="prefab" name="waste_rubble_bldg_04" prob="0.060" />
+				<decoration type="prefab" name="waste_rubble_bldg_05" prob="0.060" />
+				<decoration type="prefab" name="waste_rubble_bldg_06" prob="0.060" />
+				<decoration type="prefab" name="waste_rubble_bldg_07" prob="0.060" />
+				<decoration type="prefab" name="waste_rubble_bldg_08" prob="0.060" />
+                <decoration type="block" blockname="radTree" prob=".0006" rotatemax="3" />
+                <decoration type="prefab" name="street_light_01" prob="0.00125" />
+				<decoration type="prefab" name="sign_slow" prob="0.00025" />
+				<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
+				<decoration type="block" blockname="mineHubcap" prob="0.00005" />
+            </decorations>
 			<terrain class="Wasteland" />
 		</biome>
 		<biome name="caveFloor" biomemapcolor="#a1a1a1">
@@ -2507,6 +3054,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="rock01" prob=".004" rotatemax="3" />
 				<decoration type="block" blockname="tire" prob="0.001" rotatemax="3" />
 				<decoration type="block" blockname="campfire" prob=".00004" rotatemax="3" />
+                <decoration type="block" blockname="spiderTrap" prob="0.001" rotatemax="3" />
 				<decoration type="block" blockname="cntApacheArtifactChest" prob=".00001" rotatemax="3" />
 			</decorations>
 		</biome>
