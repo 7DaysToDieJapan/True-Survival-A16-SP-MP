@@ -100,14 +100,9 @@
 		-->
 		
 		<!--NAMED COLORS-->
-
-		<!-- START ADDED GLOBALS FOR VALMOD -->
 		
 		<style_entry name="yellow"		value="247,255,0"/>
 		<style_entry name="gold" 		value="245,196,0"/>
-
-		<!-- END ADDED GLOBALS FOR VALMOD -->
-		
 		<style_entry name="limeGreen" 		value="222,255,163,255"/>
 		<style_entry name="tan" 					value="182,166,123,255"/>
 		<style_entry name="beige" 				value="222,206,163"/>
@@ -325,6 +320,7 @@
 		<style_entry name="pos" value="42,-6"/>
 		<style_entry name="size" value="250,32"/>
 		<style_entry name="font_size" value="32"/>
+		<style_entry name="color" value="[red]" />
 	</style>
 	
 	<style name="header.timer" type="label">
@@ -359,6 +355,7 @@
 		<style_entry name="justify" value="center"/>
 		<style_entry name="pos" value="300,-20"/>
 		<style_entry name="name" value="lblWindowName"/>
+		<style_entry name="color" value="[red]"/>
 	</style>
 	
 	<!--PAGING WINDOW BACKGROUND-->
