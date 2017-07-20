@@ -600,7 +600,7 @@
 	<!--#$-IGS END.-$#-->
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
 			<button depth="3" name="btnSort" style="icon32px, press, hover" pivot="center" pos="21,-21" sprite="ui_game_symbol_backpack" tooltip_key="lblSortInventory" sound="[paging_click]" />
-			<label depth="3" name="windowName" pos="42,-6" width="250" height="32" text="INVENTORY" text_key="xuiInventory" color="[red]" font_size="32" />
+			<label depth="3" name="windowName" pos="42,-6" width="250" height="32" text="INVENTORY" text_key="xuiInventory" font_size="32" />
 			<label depth="2" pos="472,-8" width="100" height="28" text="{currencyamount}" color="[yellow]" justify="right" />
 			<sprite depth="4" name="costIcon" sprite="ui_game_symbol_coin" size="24,24" pos="577,-10" color="[gold]" foregroundlayer="true" />
 		</panel>
@@ -828,7 +828,7 @@
 	<!--#$-IGS END.-$#-->
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">			
 			<sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_character"/>
-			<label depth="2" name="characterName" pos="42,-6" width="150" height="32" text="" color="[gold]" font_size="32"/>
+			<label depth="2" name="characterName" pos="42,-6" width="150" height="32" text="" color="[beige]" font_size="32"/>
 			<sprite depth="2" name="windowIcon" width="26" height="26" pos="200,-8" sprite="ui_game_symbol_trophy" color="[mediumGrey]"/>
 			<label depth="2" name="levelNumber" pos="240,-10" width="80" height="28" text="" color="[lightGrey]"/>
 		</panel>
@@ -884,7 +884,7 @@
 	<!--#$-IGS END.-$#-->
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
 			<sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_muscle"/>
-			<label depth="2" name="characterName" pos="42,-6" width="230" height="32" text="PLAYER STATS" text_key="xuiPlayerStats" color="[red]" font_size="32"/>
+			<label depth="2" name="characterName" pos="42,-6" width="230" height="32" text="PLAYER STATS" text_key="xuiPlayerStats" font_size="32"/>
 		</panel>
 		
 		<rect name="content" depth="0" pos="0,-46" height="343">
@@ -963,7 +963,7 @@
 	<!--#$-IGS END.-$#-->
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">			
 			<sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_medical"/>
-			<label depth="2" name="characterName" pos="42,-6" width="250" height="32" text="ACTIVE EFFECTS" text_key="xuiActiveEffects" color="[red]" font_size="32"/>
+			<label depth="2" name="characterName" pos="42,-6" width="250" height="32" text="ACTIVE EFFECTS" text_key="xuiActiveEffects" font_size="32"/>
 		</panel>
 		
 		<panel name="content" depth="0" pos="0,-40" disableautobackground="true">
