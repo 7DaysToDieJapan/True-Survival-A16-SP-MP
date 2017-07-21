@@ -497,7 +497,7 @@
         Turbulence
         Voronoi
 	
--->
+
 	<terrain_generators>
 		<terrain_generator name="vanilla" use_old_final="false">
 			<module name="landBaseBase" type="FastBillow" seed_additive="5">
@@ -593,7 +593,7 @@
 			</module>
 			<output module="clampOutput" />
 		</biome_generator>
-	<!-- Passes back the biome intensity to allow for per biome terrain control  THIS MUST MATCH THE BIOME DISTRIBUTION BUT RETURN 0-1 based on distance from center-->
+	**Passes back the biome intensity to allow for per biome terrain control  THIS MUST MATCH THE BIOME DISTRIBUTION BUT RETURN 0-1 based on distance from center-**
 	</biome_generators>
 	<biome_intensity_generators>
 		<biome_intensity_generator name="vanilla">
@@ -625,9 +625,9 @@
 			<output module="clampOutput" />
 		</biome_intensity_generator>
 	</biome_intensity_generators>
-    <!--TESTING
+-->
     <terrain_generators>
-	
+	<!--TINS TERRAIN-->
 		<terrain_generator name="vanilla" use_old_final="false">
 		
 			<module name="landBase" type="FastBillow" no_seed="true">
@@ -703,7 +703,7 @@
 				<property name="controlModule" value="Control"/>
 				<property name="sourceModule1" value="mountainsOutput"/>
 				<property name="sourceModule2" value="land"/>
-				<property name="bounds" value="0,5000"/> **want more mountais? make value="" closer "0,2500" etc,. **
+				<property name="bounds" value="0,5000"/> <!--want more mountais? make value="" closer "0,2500" etc,. -->
 				<property name="edgeFalloff" value="32"/>
 			</module>
 			
@@ -711,7 +711,7 @@
 				<property name="controlModule" value="Control"/>
 				<property name="sourceModule1" value="landMnt2"/>
 				<property name="sourceModule2" value="land"/>
-				<property name="bounds" value="0,5000"/> **want more mountais? make value="" closer "0,2500" etc,. **
+				<property name="bounds" value="0,5000"/> <!--want more mountais? make value="" closer "0,2500" etc,. -->
 				<property name="edgeFalloff" value="32"/>
 			</module>
 			
@@ -741,7 +741,7 @@
 				<property name="controlModule" value="Control"/>
 				<property name="sourceModule1" value="landMntWater"/>
 				<property name="sourceModule2" value="land"/>
-				<property name="bounds" value="0,15000"/> ** want more water make the value="" closer "0,1000" etc,. **
+				<property name="bounds" value="0,15000"/> <!--want more water make the value="" closer "0,1000" etc,. -->
 				<property name="edgeFalloff" value="0.5"/>
 			</module>
 			
@@ -765,7 +765,7 @@
 		<biome_generator name="vanilla">
 		
 			<module name="voronoi" type="Voronoi">
-				<property name="frequency" value="0.0005"/> ** want smaller biomes sizes? increase Value="" Vanilla was "0.0008" **
+				<property name="frequency" value="0.0005"/> <!-- want smaller biomes sizes? increase Value="" Vanilla was "0.0008" -->
 				<property name="displacement" value="0.5"/>
 			</module>
 			<module name="biasOutput" type="BiasOutput">
@@ -796,7 +796,7 @@
 			
 		</biome_generator>
 		
-		** Passes back the biome intensity to allow for per biome terrain control  THIS MUST MATCH THE BIOME DISTRIBUTION BUT RETURN 0-1 based on distance from center**
+		<!-- Passes back the biome intensity to allow for per biome terrain control  THIS MUST MATCH THE BIOME DISTRIBUTION BUT RETURN 0-1 based on distance from center-->
 	</biome_generators>
 	
 	<biome_intensity_generators>
@@ -804,7 +804,7 @@
 		<biome_intensity_generator name="vanilla">
 		
 			<module name="voronoi" type="Voronoi">
-				<property name="frequency" value="0.0005"/> ** want smaller biomes sizes? increase Value="" Vanilla was "0.0008" **
+				<property name="frequency" value="0.0005"/> <!-- want smaller biomes sizes? increase Value="" Vanilla was "0.0008" -->
 				<property name="displacement" value="0.5"/>
 				<property name="distanceEnabled" value="true"/>
 			</module>
@@ -837,7 +837,7 @@
 		</biome_intensity_generator>
 		
 	</biome_intensity_generators>
-    
+    <!-- JZMOD BIOME LAYOUT -->
     <biome_spawn_rules>
 		<biome_spawn_rule name="forest">
 			<biome_generator range="0.00,0.10" />
@@ -913,9 +913,9 @@
 		</biome_spawn_rule>
 	</biome_spawn_rules>
     
-    -->
     
-    <!--JZMOD FOR TESTING-->
+    
+    <!--JZMOD RINGS FOR TESTING BIOMES
     <biome_spawn_rules>
     
     <biome_spawn_rule name="water">
@@ -955,7 +955,7 @@
 			<distance_from_center range="2200,10000" />
 		</biome_spawn_rule>
     </biome_spawn_rules>
-    <!--vanilla
+    **vanilla**
 	<biome_spawn_rules>
 		<biome_spawn_rule name="pine_forest">
 			<biome_generator range="0,0.1" />

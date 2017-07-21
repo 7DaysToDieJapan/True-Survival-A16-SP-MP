@@ -394,65 +394,18 @@
 			</effect>
 		</crafting_skill>
 		<crafting_skill name="huntingCraft" icon="ui_game_symbol_huntingKnife" description_key="Learn to craft better Hunting knifes and fishing lures." title_key="huntingCraft" group="crafting">
-			<effect name="CraftingTime">
-				<multiply skill_level="1,10" value="1,0.975" />
-				<multiply skill_level="10,20" value="0.975,0.95" />
-				<multiply skill_level="20,30" value="0.95,0.925" />
-				<multiply skill_level="30,40" value="0.925,0.9" />
-				<multiply skill_level="40,50" value="0.9,0.875" />
-				<multiply skill_level="50,60" value="0.875,0.85" />
-				<multiply skill_level="60,70" value="0.85,0.825" />
-				<multiply skill_level="70,80" value="0.825,0.8" />
-				<multiply skill_level="80,90" value="0.8,0.775" />
-				<multiply skill_level="90,100" value="0.775,0.75" />
-			</effect>
-			<effect name="CraftingQuality">
-				<setvalue skill_level="1,10" value="1,239" />
-				<setvalue skill_level="10,20" value="239,316" />
-				<setvalue skill_level="20,30" value="316,371" />
-				<setvalue skill_level="30,40" value="371,416" />
-				<setvalue skill_level="40,50" value="416,455" />
-				<setvalue skill_level="50,60" value="455,489" />
-				<setvalue skill_level="60,70" value="489,520" />
-				<setvalue skill_level="70,80" value="520,549" />
-				<setvalue skill_level="80,90" value="549,575" />
-				<setvalue skill_level="90,100" value="575,600" />
-			</effect>
-			<effect name="RepairTime">
-				<multiply skill_level="1,10" value="1,0.975" />
-				<multiply skill_level="10,20" value="0.975,0.95" />
-				<multiply skill_level="20,30" value="0.95,0.925" />
-				<multiply skill_level="30,40" value="0.925,0.9" />
-				<multiply skill_level="40,50" value="0.9,0.875" />
-				<multiply skill_level="50,60" value="0.875,0.85" />
-				<multiply skill_level="60,70" value="0.85,0.825" />
-				<multiply skill_level="70,80" value="0.825,0.8" />
-				<multiply skill_level="80,90" value="0.8,0.775" />
-				<multiply skill_level="90,100" value="0.775,0.75" />
-			</effect>
-			<effect name="RepairAmount">
-				<add skill_level="1,10" value="1,21" />
-				<add skill_level="10,20" value="21,27" />
-				<add skill_level="20,30" value="27,31" />
-				<add skill_level="30,40" value="31,35" />
-				<add skill_level="40,50" value="35,38" />
-				<add skill_level="50,60" value="38,41" />
-				<add skill_level="60,70" value="41,43" />
-				<add skill_level="70,80" value="43,46" />
-				<add skill_level="80,90" value="46,48" />
-				<add skill_level="90,100" value="48,50" />
-			</effect>
-			<effect name="RepairQualityLoss">
-				<multiply skill_level="1,5" value="1.67,1.464" />
-				<!-- =100 points at QL 600 -->
-				<multiply skill_level="5,11" value="1.464,1.283" />
-				<multiply skill_level="11,19" value="1.283,1.109" />
-				<multiply skill_level="19,32" value="1.109,.892" />
-				<multiply skill_level="32,49" value=".892,.668" />
-				<multiply skill_level="49,70" value=".668,.44" />
-				<multiply skill_level="70,100" value=".44,.167" />
-				<!-- =10 points at QL 600 -->
-			</effect>
+			<effect name="HarvestCount">
+                <multiply skill_level="1,10" value="1" />
+				<multiply skill_level="10,20" value="1,2" />
+				<multiply skill_level="20,30" value="2,3" />
+				<multiply skill_level="30,40" value="3,4" />
+				<multiply skill_level="40,50" value="4,5" />
+				<multiply skill_level="50,60" value="5,6" />
+				<multiply skill_level="60,70" value="6,7" />
+				<multiply skill_level="70,80" value="7,8" />
+				<multiply skill_level="80,90" value="8,9" />
+				<multiply skill_level="90,100" value="9,10" />
+            </effect>
 		</crafting_skill>
 		<crafting_skill name="craftedGunsCraft" icon="ui_game_symbol_craftedgun" description_key="Craft guns of better quality, make them faster, and repair them better with this skill." title_key="Crafted Guns" group="firearms">
 			<effect name="CraftingTime">

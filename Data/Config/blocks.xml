@@ -1092,18 +1092,21 @@ group desc for stuff like metal siding
 		<property name="EconomicValue" value="20" />
 	</block>
 	<block id="123" name="cobblestoneFrameMaster">
-		<property name="LightOpacity" value="0" />
 		<property name="Group" value="Building" />
 		<property name="DescriptionKey" value="cobblestoneFrameGroupDesc" />
 		<property name="Material" value="wood_weak" />
-		<property name="Shape" value="CubeCutoutBackFaces" />
+		<property name="Shape" value="New" />
+		<property name="LightOpacity" value="0" />
+		<property name="Model" value="cube" />
 		<property name="Mesh" value="cutout" />
-		<property name="Texture" value="347" />
-		<property name="CreativeMode" value="None" />
+		<property name="Frame" />
+		<property name="Texture" value="381" />
+      	<property name="CreativeMode" value="None" />
 		<property name="MaxDamage" value="20" />
 		<property name="Collide" value="movement,melee,rocket" />
 		<property name="FuelValue" value="40" />
 		<property name="CanPickup" value="true" />
+        <property name="RandomTintColor1" value="0,50,110" />
 		<property class="RepairItems">
 			<property name="stick" value="10" />
 		</property>
@@ -1353,10 +1356,8 @@ group desc for stuff like metal siding
 	<block id="136" name="pouredConcreteMaster">
 		<property name="Group" value="Building" />
 		<property name="Material" value="wood" />
-		<property name="Shape" value="CubeCutoutBackFaces" />
-		<property name="Mesh" value="cutout" />
-		<property name="Texture" value="289,289,65,65,65,65" />
-		<property name="CreativeMode" value="None" />
+      	<property name="Texture" value="289,289,65,65,65,65" />
+      	<property name="CreativeMode" value="None" />
 		<property class="RepairItems">
 			<property name="plank" value="10" />
 		</property>
@@ -17664,7 +17665,7 @@ kind of free
 	<!--JZMOD BRICK BLOCKS-->
 	<block id="1045" name="playerBrick">
 		<property name="Extends" value="brickBlock" />
-		<property name="Texture" value="347,347,65,65,65,65" />
+		<property name="Texture" value="335,335,65,65,65,65" />
 		<!-- needs correct texture -->
 		<property name="DowngradeBlock" value="destroyedStone" prob=".5" />
 		<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
@@ -17775,10 +17776,8 @@ kind of free
 	<!--JZMOD Concrete FRAMES-->
 	<block id="1087" name="cementFormMaster">
 		<property name="Material" value="wood" />
-		<property name="Shape" value="CubeCutoutBackFaces" />
-		<property name="Mesh" value="cutout" />
-		<property name="Texture" value="347,347,65,65,65,65" />
-		<property name="IsDeveloper" value="true" />
+       	<property name="Texture" value="335,65,65,65,65,65" />
+      	<property name="IsDeveloper" value="true" />
 		<property class="RepairItems">
 			<property name="plank" value="5" />
 		</property>
@@ -17953,12 +17952,13 @@ kind of free
 	<block id="1479" name="forgedFrame">
 		<property name="Material" value="Msteel" />
 		<property name="MaxDamage" value="50" />
+		<property name="Shape" value="New" />
 		<property name="LightOpacity" value="0" />
-		<property name="Group" value="Building" />
-		<property name="Shape" value="CubeCutoutBackFaces" />
+		<property name="Model" value="cube" />
 		<property name="Mesh" value="cutout" />
+		<property name="Frame" />
 		<property name="Texture" value="289,289,357,357,357,357" />
-		<property name="Collide" value="movement,melee" />
+       	<property name="Collide" value="movement,melee" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="steelBlock" />
 			<property name="Item" value="metalRivetSheet" />
@@ -19530,6 +19530,21 @@ kind of free
 		<property name="Class" value="UpgradeRated" />
 		<property name="UpgradeRated.ToBlock" value="piranha" />
 		<property name="UpgradeRated.Rate" value="5" />
+	</block>
+    <block id="1743" name="deadBody">
+		<property name="Class" value="UpgradeRated" />
+		<property name="UpgradeRated.ToBlock" value="corpseLoot" />
+		<property name="UpgradeRated.Rate" value="1" />
+        <property name="Material" value="organic" />
+        <property name="Shape" value="ModelEntity" />
+		<property name="Model" value="Entities/Zombies/SleeperPoses/idleStomach" />
+	</block>
+	<block id="1744" name="corpseLoot">
+		<property name="Class" value="Loot" />
+        <property name="Material" value="organic" />
+        <property name="Shape" value="ModelEntity" />
+		<property name="Model" value="Entities/Zombies/SleeperPoses/idleStomach" />
+		<property name="LootList" value="2" />
 	</block>
 </blocks>
 <!-- Block limit: No block can have an ID greater 2047.
