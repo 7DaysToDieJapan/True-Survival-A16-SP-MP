@@ -300,7 +300,7 @@
 		<property name="AvatarController" value="AvatarZombie01Controller" />
 		<property name="ModelType" value="Standard" />
 		<property name="WalkType" value="2" />
-		<property name="ApproachSpeed" value="1" />
+		<property name="ApproachSpeed" value="0.85" />
 		<property name="NightApproachSpeed" value="1.6" />
 		<property name="ExperienceGain" value="742" />
 		<property name="MaxHealth" value="2000" />
@@ -460,54 +460,7 @@
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
 	</entity_class>
 	<!-- Missing: zombieJoeFeralRadiated -->
-	<entity_class name="zombieMoe" extends="zombieTemplateMale">
-		<!-- JZMOD RUN -->
-		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
-		<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
-		<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
-		<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain" />
-		<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death" />
-		<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
-		<property name="Mesh" value="Zombies/zombieStandardMoeRagdoll" />
-		<property name="AvatarController" value="AvatarZombie01Controller" />
-		<property name="ModelType" value="Standard" />
-		<property name="Class" value="EntityZombieCop" />
-		<property name="WalkType" value="1" />
-		<property name="ApproachSpeed" value=".88" />
-		<property name="NightApproachSpeed" value="1.72" />
-		<property name="HandItem" value="handFattyZombie" />
-		<property name="MaxHealth" value="3000" />
-		<property name="ExperienceGain" value="1089" />
-		<property name="Weight" value="70" />
-		<property name="PushFactor" value="20" />
-		<property name="CanClimbLadders" value="true" />
-		<property name="PhysicsBody" value="zombieStandard" />
-		<property name="RootMotion" value="true" />
-		<property name="HasDeathAnim" value="true" />
-		<property name="LootListOnDeath" value="38" />
-		<property name="TintMaterial2" value="41,38,34" />
-		<property name="AITask-1" value="BreakDoor" />
-		<property name="AITask-2" value="BreakBlock" />
-		<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="5" />
-		<property name="AITask-4" value="Territorial" />
-		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityPlayer" />
-		<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityNPC" />
-		<property name="AITask-7" value="ApproachSpot" />
-		<property name="AITask-8" value="Wander" />
-		<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityNPC" />
-		<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityPlayer" />
-		<property name="AITarget-3" value="BlockingTargetTask" />
-		<property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer" />
-		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityNPC" />
-		<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
-		<property name="Explosion.ParticleIndex" value="8" />
-		<property name="Explosion.RadiusBlocks" value="7" />
-		<property name="Explosion.RadiusEntities" value="3" />
-		<property name="Explosion.BlockDamage" value="800" />
-		<property name="Explosion.EntityDamage" value="40" />
-		<property name="Explosion.DamageBonus.earth" value="0" />
-		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
-	</entity_class>
+	
 	<!-- Missing: zombieMoeRadiated -->
 	<entity_class name="zombieMoeFeral" extends="zombieMoe">
 		<property name="HandItem" value="handZombieStrongFeral" />
@@ -635,7 +588,7 @@
 		<property name="AvatarController" value="AvatarZombie01Controller" />
 		<property name="ModelType" value="Standard" />
 		<property name="WalkType" value="5" />
-		<property name="ApproachSpeed" value="0.97" />
+		<property name="ApproachSpeed" value="0.87" />
 		<property name="NightApproachSpeed" value="1.75" />
 		<property name="HandItem" value="handZombie" />
 		<property name="MaxHealth" value="1000" />
@@ -912,7 +865,7 @@
 		<property name="AvatarController" value="AvatarZombie01Controller" />
 		<property name="ModelType" value="Standard" />
 		<property name="WalkType" value="7" />
-		<property name="ApproachSpeed" value="0.91" />
+		<property name="ApproachSpeed" value="0.55" />
 		<property name="NightApproachSpeed" value="1.75" />
 		<property name="HandItem" value="handZombie" />
 		<property name="CanClimbLadders" value="true" />
@@ -1072,6 +1025,31 @@
 		<property name="Buffs" value="zombieRadiatedBuff80" />
 		<property name="Explosion.BlockDamage" value="750" />
 		<property name="Explosion.EntityDamage" value="250" />
+		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
+	</entity_class>
+    <entity_class name="zombieMoe" extends="zombieFatCop">
+		<!-- JZMOD RUN -->
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
+		<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain" />
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death" />
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
+		<property name="Mesh" value="Zombies/zombieStandardMoeRagdoll" />
+		<property name="WalkType" value="1" />
+		<property name="ApproachSpeed" value=".88" />
+		<property name="NightApproachSpeed" value="1.72" />
+		<property name="HandItem" value="handFattyZombie" />
+		<property name="MaxHealth" value="3000" />
+		<property name="ExperienceGain" value="1089" />
+		<property name="LootListOnDeath" value="38" />
+		<property name="TintMaterial2" value="41,38,34" />
+		<property name="Explosion.ParticleIndex" value="8" />
+		<property name="Explosion.RadiusBlocks" value="7" />
+		<property name="Explosion.RadiusEntities" value="3" />
+		<property name="Explosion.BlockDamage" value="800" />
+		<property name="Explosion.EntityDamage" value="40" />
+		<property name="Explosion.DamageBonus.earth" value="0" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
 	</entity_class>
 	<entity_class name="zombieMaleHazmat" extends="zombieBoe">
@@ -3848,7 +3826,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="6" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.97" />
+		<property name="ApproachSpeed" value="0.76" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.39" />
 		<property name="PanicSpeed" value="0.6" />
@@ -3876,7 +3854,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.99" />
+		<property name="ApproachSpeed" value="0.49" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.71" />
 		<property name="PanicSpeed" value="0.9" />
@@ -3894,7 +3872,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.78" />
+		<property name="ApproachSpeed" value="0.58" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.58" />
 		<property name="PanicSpeed" value="0.9" />
@@ -3912,7 +3890,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.82" />
+		<property name="ApproachSpeed" value="0.52" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.8" />
 		<property name="PanicSpeed" value="0.9" />
@@ -3921,7 +3899,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.88" />
+		<property name="ApproachSpeed" value="0.48" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.83" />
 		<property name="PanicSpeed" value="0.9" />
@@ -3969,7 +3947,7 @@
 		<property name="MaxHealth" value="7000" />
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.72" />
+		<property name="ApproachSpeed" value="0.52" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.6" />
 		<property name="PanicSpeed" value="0.6" />
@@ -3997,7 +3975,7 @@
 		<property name="CanClimbVertical" value="false" />
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.07" />
-		<property name="ApproachSpeed" value="0.72" />
+		<property name="ApproachSpeed" value="0.60" />
 		<property name="NightWanderSpeed" value="0.07" />
 		<property name="NightApproachSpeed" value="1.65" />
 		<property name="PanicSpeed" value="0.54" />
@@ -4024,7 +4002,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.70" />
+		<property name="ApproachSpeed" value="0.62" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.39" />
 		<property name="PanicSpeed" value="0.6" />
@@ -4337,7 +4315,7 @@
 	<entity_class name="zombieSnow3" extends="zombieSnow">
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="3" />
-		<property name="ApproachSpeed" value="0.84" />
+		<property name="ApproachSpeed" value="0.64" />
 		<property name="NightApproachSpeed" value="1.55" />
 	</entity_class>
 	<entity_class name="zombieSnow4" extends="zombieSnow">

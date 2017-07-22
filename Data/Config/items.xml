@@ -982,8 +982,7 @@ Mesh files no longer used:
 		<property name="LightValue" value="0.45" />
 	</item>
 	<item id="48" name="gunAK47">
-        <property name="Meshfile" value="#drill?DrillTool" />
-		<!--<property name="Meshfile" value="Items/Weapons/Ranged/ak47/ak47Prefab" />-->
+        <property name="Meshfile" value="Items/Weapons/Ranged/ak47/ak47Prefab" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="weaponRepairKit" />
 		<property name="HoldType" value="48" />
@@ -2110,7 +2109,7 @@ Mesh files no longer used:
 		<property name="SellableToTrader" value="false" />
 		<property class="Action0">
 			<property name="Class" value="Melee" />
-			<property name="Delay" value="1.0" />
+			<property name="Delay" value="0.8" />
 			<property name="Range" value="3" />
 			<property name="Sphere" value="0.1" />
 			<property name="Block_range" value="4" />
@@ -2132,7 +2131,7 @@ Mesh files no longer used:
 		</property>
 		<property class="Action0">
 			<property name="Class" value="Melee" />
-			<property name="Delay" value="3.2" />
+			<property name="Delay" value="2.2" />
 			<property name="Range" value="3" />
 			<property name="Sphere" value="0.1" />
 			<property name="Block_range" value="4" />
@@ -2173,7 +2172,7 @@ Mesh files no longer used:
 		<property name="RepairTools" value="shortSteelPipe" />
 		<property name="EconomicValue" value="760" />
 		<property class="Action0">
-			<property name="Delay" value="1.5" />
+			<property name="Delay" value="1.1" />
 			<property name="Stamina_usage" value="7" />
 			<property name="DamageBonus.head" value="40" />
 			<property name="DamageBonus.glass" value="25" />
@@ -2187,7 +2186,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.steel" value="30" />
 		</property>
 		<property class="Action0">
-			<property name="Delay" value="4" />
+			<property name="Delay" value="3" />
 			<property name="Stamina_usage" value="14" />
 			<property name="DamageBonus.head" value="60" />
 			<property name="DamageBonus.glass" value="25" />
@@ -7222,7 +7221,7 @@ Mesh files no longer used:
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Gain_wellness" value="0" />
-			<property name="Buff" value="nutrition_5_Trigger" />
+			<property name="Buff" value="nutrition_35_Trigger" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -7232,7 +7231,7 @@ Mesh files no longer used:
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Gain_wellness" value="0" />
-			<property name="Buff" value="nutrition_5_Trigger" />
+			<property name="Buff" value="nutrition_35_Trigger" />
 		</property>
 		<property name="ActionSkillGroup" value="medicineCraft" />
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
@@ -7257,11 +7256,14 @@ Mesh files no longer used:
 			<property name="Buff" value="bluePillBuff" />
 		</property>
 		<property class="Action1">
-			<!-- UseAction -->
-			<property name="Class" value="LearnRecipe" />
-			<property name="Delay" value="1" />
-			<property name="Skills_to_gain" value="cookingCraft,cookingCraft,cookingCraft,cookingCraft,cookingCraftcooking" />
-			<property name="Sound_start" value="recipe_unlocked" />
+			<property name="Class" value="UseOther" />
+			<property name="Delay" value="1.0" />
+			<property name="Use_time" value="..." />
+			<property name="Sound_start" value="player_painkillers" />
+			<property name="Gain_food" value="1000" />
+			<property name="Gain_water" value="1000" />
+			<property name="Gain_wellness" value="1000" />
+			<property name="Buff" value="bluePillBuff" />
 		</property>
 	</item>
 	<item id="671" name="brokenGlass">
@@ -11407,7 +11409,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1561" name="clubSteelSpiked">
 		<property name="Extends" value="clubSpiked" />
-		<property name="Material" value="Msteel" />
+		<property name="Material" value="metal" />
 		<property name="DescriptionKey" value="clubSteelSpikedDesc" />
 		<property name="CustomIcon" value="ui_game_symbol_clubSteelSpiked" />
 		<property name="Weight" value="40" />
@@ -11992,7 +11994,7 @@ Mesh files no longer used:
 		<property name="Extends" value="schematicMaster" />
 		<property name="CustomIcon" value="ui_game_symbol_professionSkill" />
 		<property class="Action1">
-			<property name="Skills_to_gain" value="fitness Instructor" />
+			<property name="Skills_to_gain" value="fitnessInstructor" />
 		</property>
 		<property name="DescriptionKey" value="professionDesc" />
 		<property name="Group" value="Books" />
@@ -12132,7 +12134,7 @@ Mesh files no longer used:
 		<property name="DescriptionKey" value="doctorBookDesc" />
 		<property name="Group" value="Books" />
 	</item>
-	<item id="1506" name="incendiaryAmmoBook">
+	<item id="1606" name="incendiaryAmmoBook">
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
 			<property name="Recipes_to_learn" value="shotgunFireShell,9mmFireBullet,incendiaryPowder" />

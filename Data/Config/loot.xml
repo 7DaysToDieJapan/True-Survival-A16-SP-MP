@@ -160,7 +160,7 @@
 			<block name="gasTankEmpty" prob="5.2" /> 
 		</placeholder>
 		<!-- Replace the lootYard with one of the following -->
-	<!--	<placeholder name="militaryCarsHelper">
+		<placeholder name="randomMilitaryCarsHelper">
 			<block name="tankSecure" prob="14.3" />
 			<block name="militaryTruckSecure" prob="14.3" />
 			<block name="m1A1Secure" prob="14.3" />
@@ -168,7 +168,13 @@
 			<block name="guntruckSecure" prob="14.3" />
 			<block name="policeSecure" prob="14.3" />
 			<block name="gAZ33Secure" prob="14.3" />
-		</placeholder> -->
+		</placeholder> 
+        <!-- Replace the lootYard with one of the following -->
+		<placeholder name="randomCrashHelper">
+			<block name="helicoptor" prob="33.33" />
+			<block name="plane" prob="33.33" />
+			<block name="oldArrmyTruckSide" prob="33.33" />
+		</placeholder> 
 		<!-- Replace the lootYard with one of the following -->
 		<placeholder name="randomCarsHelper">
 			<block name="cntCar03SedanDamage0" prob="30.0" />
@@ -189,7 +195,7 @@
 			<block name="schoolBus" prob="5.2" />	
 		</placeholder>
 		<!-- Replace the lootYard with one of the following -->
-<!--		<placeholder name="brokenCarsHelper">
+		<placeholder name="randomOldCarsHelper">
 			<block name="cntCar03SedanDamage2" prob="50.0" />
 			<block name="oldArrmyTruckSide" prob="1.5" />
 			<block name="126" prob="7.7" />
@@ -199,7 +205,7 @@
 			<block name="ruinedTruck" prob="7.7" />
 			<block name="ambulanceDamaged" prob="3.1" />
 			<block name="schoolBusDamaged" prob="1.5" />
-		</placeholder> -->
+		</placeholder> 
 		<!-- Replace the lootYard with one of the following -->
 		<placeholder name="lootGarageHelper">
 			<block name="cntGarageStorage" prob="18.0" />

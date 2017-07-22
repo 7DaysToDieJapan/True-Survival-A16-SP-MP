@@ -973,6 +973,9 @@ animalStagHostile
 	<entitygroup name="VultureGroup">
 		<entity name="animalZombieVulture" />
 	</entitygroup>
+    <entitygroup name="CrocGrp">
+		<entity name="crocodile" prob="1" />
+	</entitygroup>
 	<entitygroup name="ZombieBusinessManGroup">
 		<entity name="zombieBusinessMan1" prob="14.28" />
 		<entity name="zombieBusinessMan2" prob="14.28" />
