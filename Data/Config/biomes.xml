@@ -223,6 +223,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<layer depth="3" blockname="bedrock" />
 				</layers>
 				<decorations>
+                    <blockontop blockname="randomCrashHelper" prob="0.00001" rotatemax="3" />
 					<decoration type="block" blockname="rock05" prob=".001" />
 					<decoration type="block" blockname="rock06" prob=".001" />
 					<decoration type="block" blockname="rock07" prob=".001" />
@@ -467,6 +468,7 @@ If you do not declare them, the decorations of the main biome are used.
 		<!-- Forest Main Biome -->
 		<biome name="forest" biomemapcolor="#008D00">
 			<weather>
+				<Temperature min="-35" max="5" prob="1"/>
 				<Fog min="0" max="0" prob="0.75"/>
                 <Fog min="25" max="25" prob="0.24"/>
                 <Fog min="50" max="50" prob="0.16"/>
@@ -687,7 +689,7 @@ If you do not declare them, the decorations of the main biome are used.
 		<!-- Pine Forest Main Biome  -->
 		<biome name="pine_forest" biomemapcolor="#004000">
 			<weather>
-				<Temperature min="-40" max="-40" prob="1"/>
+			<Temperature min="-40" max="-40" prob="1"/>
 			<Fog min="0" max="0" prob="0.75"/>
 			<Fog min="25" max="25" prob="0.24"/>
 			<Fog min="50" max="50" prob="0.16"/>
@@ -1329,7 +1331,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="treeCactus06" prob="0.01" rotatemax="3" />
 					<decoration type="block" blockname="rockResource" prob=".004" rotatemax="3" />
 					<decoration type="block" blockname="rockResource02" prob=".004" rotatemax="3" />
-					<decoration type="block" blockname="randomCarsHelper" prob="0.007" rotatemax="3" />
+					<decoration type="block" blockname="randomOldCarsHelper" prob="0.002" rotatemax="3" />
 					<decoration type="block" blockname="lootDesertHelper" prob="0.01" />
 					<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".01" />
 				</decorations>
@@ -1692,6 +1694,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<spectrum name="pine_forest" />
 			<!-- Decorations Main: Water -->
 			 <decorations>
+                    <blockontop blockname="randomCrashHelper" prob="0.00001" rotatemax="3" />
                     <decoration type="block" blockname="treeAzalea" prob=".003" rotatemax="3" />
                     <decoration type="block" blockname="lootStreetHelper" prob=".0007" rotatemax="3" />
                     <decoration type="block" blockname="rock01" prob=".001" rotatemax="3" />
@@ -1713,7 +1716,7 @@ If you do not declare them, the decorations of the main biome are used.
                     <decoration type="block" blockname="treeDeadShrub" prob="0.005" rotatemax="7" />
                     <decoration type="block" blockname="treeDeadTree02" prob="0.005" rotatemax="7" />
                     <decoration type="block" blockname="treeDeadPineLeaf" prob="0.01" rotatemax="7" />
-                    <decoration type="block" blockname="randomCarsHelper" prob="0.001" rotatemax="3" />
+                    <decoration type="block" blockname="randomOldCarsHelper" prob="0.008" rotatemax="3" />
                     <decoration type="block" blockname="treeBrownGrassDiagonal" prob=".15" />
                     <decoration type="block" blockname="treeTallGrassDiagonal" prob=".35" />
 			</decorations>
@@ -1830,7 +1833,8 @@ If you do not declare them, the decorations of the main biome are used.
 					<layer depth="3" blockname="bedrock" />
 				</layers>
 				<decorations>
-					<decoration type="block" blockname="randomCarsHelper" prob=".001" rotatemax="3" />
+					<decoration type="block" blockname="randomMilitaryCarsHelper" prob=".0001" rotatemax="3" />
+                    <decoration type="block" blockname="randomOldCarsHelper" prob=".0005" rotatemax="3" />
 					<decoration type="block" blockname="rock01" prob=".01" />
 					<decoration type="block" blockname="rock02" prob=".01" />
 					<decoration type="block" blockname="rock04" prob=".01" />
@@ -1871,7 +1875,8 @@ If you do not declare them, the decorations of the main biome are used.
 					<layer depth="3" blockname="bedrock" />
 				</layers>
                 <decorations>
-                    <decoration type="block" blockname="randomCarsHelper" prob=".0001" rotatemax="3" />
+                   <decoration type="block" blockname="randomMilitaryCarsHelper" prob=".0001" rotatemax="3" />
+                    <decoration type="block" blockname="randomOldCarsHelper" prob=".0005" rotatemax="3" />
 					<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".1" />
 					<decoration type="block" blockname="rock01" prob=".01" rotatemax="3" />
 					<decoration type="block" blockname="rock02" prob=".001" rotatemax="3" />
@@ -2213,7 +2218,8 @@ If you do not declare them, the decorations of the main biome are used.
 					<layer depth="3" blockname="bedrock" />
 				</layers>
 				<decorations>
-					<decoration type="block" blockname="emberPile1" prob="0.00025" rotatemax="7" />
+					<blockontop blockname="randomCrashHelper" prob="0.00001" rotatemax="3" />
+                    <decoration type="block" blockname="emberPile1" prob="0.00025" rotatemax="7" />
 					<decoration type="block" blockname="emberPile2" prob="0.00025" rotatemax="7" />
 					<decoration type="block" blockname="emberPile3" prob="0.0025" rotatemax="7" />
 					<decoration type="block" blockname="emberPile4" prob="0.0025" rotatemax="7" />
@@ -2522,6 +2528,7 @@ If you do not declare them, the decorations of the main biome are used.
 			</subbiome>
 			<!-- Block layers: City (Diersville), Local ore: potassiumNitrate -->
 			<layers>
+            <layer filluptorg="60" blockname="water" />
 				<layer depth="1" blockname="snow">
 					<resource blockname="forestGround" cluster="2" prob="0.15" rwgGenerationType="all" />
 				</layer>
@@ -2818,7 +2825,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="prefab" name="mp_waste_cover_02" prob="0.0005" />
 				<decoration type="prefab" name="mp_waste_hole_asphalt_01" prob="0.00005" />
 				<decoration type="prefab" name="mp_waste_hole_rock_01" prob="0.0005" />
-				<decoration type="block" blockname="randomCarsHelper" prob="0.001" rotatemax="3" />
+				<decoration type="block" blockname="randomOldCarsHelper" prob="0.0006" rotatemax="3" />
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.025" />
 				<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
 				<decoration type="block" blockname="mineHubcap" prob="0.00005" />
@@ -2877,7 +2884,8 @@ If you do not declare them, the decorations of the main biome are used.
 					<layer depth="3" blockname="bedrock" />
 				</layers>
 				<decorations>
-					<decoration type="block" blockname="randomCarsHelper" prob=".001" rotatemax="3" />
+					<decoration type="block" blockname="randomMilitaryCarsHelper" prob=".0001" rotatemax="3" />
+                    <decoration type="block" blockname="randomOldCarsHelper" prob=".0004" rotatemax="3" />
 					<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".1" />
 					<decoration type="block" blockname="rock01" prob=".001" rotatemax="3" />
 					<decoration type="block" blockname="rock02" prob=".001" rotatemax="3" />
@@ -3144,7 +3152,8 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="prefab" name="mp_waste_pile_03" prob=".005" />
 				<decoration type="prefab" name="mp_waste_pile_04" prob=".003" />
 				<decoration type="prefab" name="mp_waste_pile_05" prob=".003" />
-				<decoration type="block" blockname="randomCarsHelper" prob="0.13" rotatemax="3" />
+				<decoration type="block" blockname="randomMilitaryCarsHelper" prob=".0001" rotatemax="3" />
+                <decoration type="block" blockname="randomOldCarsHelper" prob=".0004" rotatemax="3" />
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".05" />
 				<decoration type="block" blockname="plantedCornDead" prob="0.004" />
 				<decoration type="block" blockname="treePlainsGrassDiagonal" prob="0.15" />
@@ -3264,7 +3273,8 @@ If you do not declare them, the decorations of the main biome are used.
 			<decal texture="14" face="0" prob="0.005" />
 			<decal texture="15" face="0" prob="0.005" />
 			<blockontop blockname="lootStreetHelper" prob="0.001" rotatemax="7" />
-			<blockontop blockname="randomCarsHelper" prob="0.0015" rotatemax="3" />
+			<blockontop blockname="randomCarsHelper" prob="0.0005" rotatemax="3" />
+            <blockontop blockname="randomOldCarsHelper" prob="0.0015" rotatemax="3" />
 			<blockontop blockname="tire" rotatemax="3" prob="0.001" />
 			<blockontop blockname="cinderBlocks01" rotatemax="3" prob="0.0007" />
 			<blockontop blockname="cinderBlocks02" rotatemax="3" prob="0.0007" />
@@ -3293,8 +3303,8 @@ If you do not declare them, the decorations of the main biome are used.
 			<decal texture="15" face="0" prob="0.005" />
 			<blockontop blockname="lootStreetHelper" prob="0.001" rotatemax="7" />
 			<blockontop blockname="treeBrownGrassDiagonal" rotatemax="3" prob="0.05" />
-			<blockontop blockname="randomCarsHelper" prob="0.0005" rotatemax="3" />
-			<!--blockontop blockname="potassiumNitrate" prob="0.02" offset="-1"/-->
+			<blockontop blockname="randomCarsHelper" prob="0.0001" rotatemax="3" /><blockontop blockname="randomCarsHelper" prob="0.0005" rotatemax="3" />
+            <blockontop blockname="randomOldCarsHelper" prob="0.0005" rotatemax="3" />
 		</poi>
 		<poi name="Water" poimapcolor="#0063ff" blockname="water" blockbelow="sand" yposfill="58" />
 		<poi name="WaterDesert" poimapcolor="#002868" blockname="water" blockbelow="sand" yposfill="44" />
