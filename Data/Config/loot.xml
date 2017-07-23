@@ -43,7 +43,7 @@
 			<block name="cntSportsBag01" prob="2.8" />
 			<block name="cntSportsBag02" prob="2.8" />
 			<block name="cntPurse01" prob="2.8" />
-			<block name="cntDeskSafe" prob="2.8" />		
+			<!--<block name="cntDeskSafe" prob="2.8" />	-->
 		</placeholder>
 		<!-- Replace the lootDesert with one of the following -->
 		<placeholder name="lootDesertHelper">
@@ -2316,7 +2316,7 @@
 		<item group="junk" prob="10" />
 		<item group="clothes" />
 		<item group="cannedfood" />
-		<item group="beverages" />
+		<item group="beverages" loot_prob_template="badFoodTemplate" />
 	</lootcontainer>
 	<!-- "bag" container that gets dropped when another loot container is destroyed -->
 	<lootcontainer id="47" count="0" size="5,10" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">

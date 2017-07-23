@@ -2706,7 +2706,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<layers>
                     <layer depth="2" blockname="snow">
 						<resource blockname="destroyedStone" cluster="1" prob="0.25" rwgGenerationType="all" />
-                        <resource blockname="asphalt" cluster="1" prob="0.25" rwgGenerationType="all" />
+                        <resource blockname="asphalt" cluster="1" prob="0.025" rwgGenerationType="all" />
 					</layer>
 					<layer depth="4" blockname="dirt">
 						<resource blockname="gravelPlusPotassium" cluster="1" prob="0.811" rwgGenerationType="all" />
@@ -2975,8 +2975,8 @@ If you do not declare them, the decorations of the main biome are used.
 			<subbiome prob="0.1551">
 				<!-- Ore Sub Biome: coalOre -->
 				<layers>
-					<layer depth="3" blockname="asphalt">
-                        <resource blockname="destroyedStone" cluster="1" prob="0.31" rwgGenerationType="all" />
+					<layer depth="3" blockname="destroyedStone">
+                        <resource blockname="asphalt" cluster="1" prob="0.35" rwgGenerationType="all" />
 						<resource blockname="gravelPlusCoal" cluster="1" prob="0.071" rwgGenerationType="all" />
 					</layer>
 					<layer depth="3" blockname="dirt">

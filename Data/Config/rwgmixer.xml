@@ -139,7 +139,7 @@
 	<wilderness_rules>
 		<wilderness_rule name="wildernessDefault" spawn_min_max="15,20">
 			<path_material value="asphalt" />
-			<path_radius value="6" />
+			<path_radius value="4" />
 			<path_adjust_terrain value="false" />
 			<prefab_rule name="wildernessGroup" prob="1" />
 		</wilderness_rule>

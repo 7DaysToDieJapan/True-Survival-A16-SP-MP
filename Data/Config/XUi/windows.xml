@@ -2920,7 +2920,7 @@
 		</panel>
 	</window>
 	<!-- JZMOD ADDED -->
-	<window name="windowBlastInput" width="228" height="204" panel="Right" controller="WorkstationMaterialInputWindow" materials_accepted="steel,iron,coal,clay" valid_materials_color="[green]" invalid_materials_color="[red]">
+	<window name="windowBlastInput" width="228" height="204" panel="Right" controller="WorkstationMaterialInputWindow" materials_accepted="steel,iron,coal,clay,plastic,glass" valid_materials_color="[green]" invalid_materials_color="[red]">
 		<panel style="header.panel">
 			<sprite style="header.icon" sprite="ui_game_symbol_forge" />
 			<label style="header.name" text="INPUT" text_key="xuiSmelting" />

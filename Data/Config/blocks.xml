@@ -2696,7 +2696,7 @@ group desc for stuff like metal siding
 		<property name="PlantGrowing.Next" value="plantedBlueberry3Harvest" />
 		<drop event="Destroy" name="plantedBlueberry1" count="1" />
 	</block>
-	<block id="263" name="lootWastelandHelper">
+	<block id="263" name="dumbAssBlock">
 		<property name="CreativeMode" value="Dev" />
 		<property name="CustomIcon" value="lootWastelandHelper" />
 		<property name="DescriptionKey" value="randomLootSpawnerDesc" />
@@ -2707,15 +2707,15 @@ group desc for stuff like metal siding
 		<property name="LootList" value="16" />
 	</block>
 	<block id="264" name="lootDesertHelper">
-		<property name="Extends" value="lootWastelandHelper" />
+		<property name="Extends" value="dumbAssBlock" />
 		<property name="CreativeMode" value="Dev" />
     </block>
 	<block id="265" name="lootBurntForestHelper">
-		<property name="Extends" value="lootWastelandHelper" />
+		<property name="Extends" value="dumbAssBlock" />
 		<property name="CreativeMode" value="Dev" />
     </block>
 	<block id="266" name="lootPlainsHelper">
-		<property name="Extends" value="lootWastelandHelper" />
+		<property name="Extends" value="dumbAssBlock" />
 		<property name="CreativeMode" value="Dev" />
     </block>
 	<block id="267" name="animalGore">
@@ -2747,7 +2747,7 @@ group desc for stuff like metal siding
 		<drop event="Destroy" name="femur" count="1" />
 	</block>
 	<block id="268" name="lootConstructionSuppliesHelper">
-		<property name="Extends" value="lootWastelandHelper" param1="CustomIcon,DescriptionKey" />
+		<property name="Extends" value="dumbAssBlock" param1="CustomIcon,DescriptionKey" />
 		<property name="Texture" value="278" />
 		<property name="CreativeMode" value="Dev" />
 	</block>
@@ -3707,7 +3707,7 @@ group desc for stuff like metal siding
 		</property>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="cntDeskSafeInsecure" />
-			<property name="Item" value="LockPick" />
+			<property name="Item" value="lockPick" />
 			<property name="ItemCount" value="1" />
 			<property name="UpgradeHitCount" value="5" />
 		</property>
@@ -3735,7 +3735,7 @@ group desc for stuff like metal siding
 		<property name="DowngradeBlock" value="cntWallSafeInsecure" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="cntWallSafeInsecure" />
-			<property name="Item" value="LockPick" />
+			<property name="Item" value="lockPick" />
 			<property name="ItemCount" value="2" />
 			<property name="UpgradeHitCount" value="5" />
 		</property>
@@ -4034,7 +4034,7 @@ group desc for stuff like metal siding
 		<property name="DescriptionKey" value="glassGroupDesc" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="plainWoodWindowPlug" />
-			<property name="Item" value="wood" />
+			<property name="Item" value="plank" />
 			<property name="ItemCount" value="10" />
 			<property name="UpgradeHitCount" value="4" />
 		</property>
@@ -4057,7 +4057,7 @@ group desc for stuff like metal siding
 		<property name="Model" value="Plate" />
 	</block>
 	<block id="398" name="lootMPHelper">
-		<property name="Extends" value="lootWastelandHelper" />
+		<property name="Extends" value="dumbAssBlock" />
 		<property name="CreativeMode" value="Dev" />
 	</block>
 	<block id="399" name="camoNetSheet">
@@ -6240,7 +6240,7 @@ kind of free
 		<property name="LootList" value="42" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="cntGunSafeInsecure" />
-			<property name="Item" value="LockPick" />
+			<property name="Item" value="lockPick" />
 			<property name="ItemCount" value="3" />
 			<property name="UpgradeHitCount" value="10" />
 		</property>
@@ -6996,7 +6996,7 @@ kind of free
 		<property name="DowngradeBlock" value="solidWoodFrameWedgeStairs" />
 	</block>
 	<block id="692" name="lootToolsAndForgeHelper">
-		<property name="Extends" value="lootWastelandHelper" param1="CustomIcon,DescriptionKey" />
+		<property name="Extends" value="dumbAssBlock" param1="CustomIcon,DescriptionKey" />
 		<property name="CreativeMode" value="Dev" />
 		<property name="Texture" value="278" />
 		<property name="Shape" value="New" />
@@ -7004,12 +7004,12 @@ kind of free
 		<property name="Place" value="TowardsPlacerInverted" />
 	</block>
 	<block id="693" name="lootStoreCratesHelper">
-		<property name="Extends" value="lootWastelandHelper" param1="DescriptionKey" />
+		<property name="Extends" value="dumbAssBlock" param1="DescriptionKey" />
 		<property name="CustomIcon" value="lootConstructionSuppliesHelper" />
 		<property name="CreativeMode" value="Dev" />
 	</block>
 	<block id="694" name="lootWorkstationsHelper">
-		<property name="Extends" value="lootWastelandHelper" param1="CustomIcon,DescriptionKey" />
+		<property name="Extends" value="dumbAssBlock" param1="CustomIcon,DescriptionKey" />
 		<property name="CustomIcon" value="chemistryStation" />
 		<property name="CreativeMode" value="Dev" />
 		<property name="Texture" value="279" />
@@ -7139,7 +7139,7 @@ kind of free
 		<property name="SellableToTrader" value="false" />
 	</block>
 	<block id="699" name="lootWorkstationsBustedHelper">
-		<property name="Extends" value="lootWastelandHelper" param1="CustomIcon,DescriptionKey" />
+		<property name="Extends" value="dumbAssBlock" param1="CustomIcon,DescriptionKey" />
 		<property name="CreativeMode" value="Dev" />
 		<property name="CustomIcon" value="lootToolsAndForgeHelper" />
 		<property name="Shape" value="ModelEntity" />
@@ -7316,7 +7316,7 @@ kind of free
 		<property name="CropsGrown.BonusHarvestDivisor" value="8" />
 	</block>
 	<block id="715" name="lootForgeBustedHelper">
-		<property name="Extends" value="lootWastelandHelper" param1="CustomIcon,DescriptionKey" />
+		<property name="Extends" value="dumbAssBlock" param1="CustomIcon,DescriptionKey" />
 		<property name="CustomIcon" value="lootToolsAndForgeHelper" />
 		<property name="CreativeMode" value="Dev" />
 		<property name="Shape" value="ModelEntity" />
@@ -7325,7 +7325,7 @@ kind of free
 		<property name="OnlySimpleRotations" value="true" />
 	</block>
 	<block id="716" name="lootWorkbenchBustedHelper">
-		<property name="Extends" value="lootWastelandHelper" param1="CustomIcon,DescriptionKey" />
+		<property name="Extends" value="dumbAssBlock" param1="CustomIcon,DescriptionKey" />
 		<property name="CustomIcon" value="lootToolsAndForgeHelper" />
 		<property name="CreativeMode" value="Dev" />
 		<property name="Shape" value="ModelEntity" />
@@ -7334,7 +7334,7 @@ kind of free
 		<property name="OnlySimpleRotations" value="true" />
 	</block>
 	<block id="717" name="lootCementMixerBustedHelper">
-		<property name="Extends" value="lootWastelandHelper" param1="CustomIcon,DescriptionKey" />
+		<property name="Extends" value="dumbAssBlock" param1="CustomIcon,DescriptionKey" />
 		<property name="CustomIcon" value="lootToolsAndForgeHelper" />
 		<property name="CreativeMode" value="Dev" />
 		<property name="Shape" value="ModelEntity" />
@@ -8655,23 +8655,23 @@ kind of free
 		<property name="DowngradeBlock" value="concreteWedgeCNRInsideBottom" />
 	</block>
 	<block id="873" name="lootForestHelper">
-		<property name="Extends" value="lootWastelandHelper" />
+		<property name="Extends" value="dumbAssBlock" />
 		<property name="CreativeMode" value="Dev" />
 	</block>
 	<block id="874" name="lootHouseHelper">
-		<property name="Extends" value="lootWastelandHelper" />
+		<property name="Extends" value="dumbAssBlock" />
 		<property name="CreativeMode" value="Dev" />
 	</block>
 	<block id="875" name="lootStreetHelper">
-		<property name="Extends" value="lootWastelandHelper" />
+		<property name="Extends" value="dumbAssBlock" />
 		<property name="CreativeMode" value="Dev" />
 	</block>
 	<block id="876" name="lootYardHelper">
-		<property name="Extends" value="lootWastelandHelper" />
+		<property name="Extends" value="dumbAssBlock" />
 		<property name="CreativeMode" value="Dev" />
 	</block>
 	<block id="877" name="lootChemistryStationBustedHelper">
-		<property name="Extends" value="lootWastelandHelper" param1="CustomIcon,DescriptionKey" />
+		<property name="Extends" value="dumbAssBlock" param1="CustomIcon,DescriptionKey" />
 		<property name="CustomIcon" value="lootToolsAndForgeHelper" />
 		<property name="CreativeMode" value="Dev" />
 		<property name="Shape" value="ModelEntity" />
@@ -8737,7 +8737,7 @@ kind of free
 		<property name="DescriptionKey" value="woodArrowSlitGroupDesc" />
 	</block>
 	<block id="883" name="lootGarageHelper">
-		<property name="Extends" value="lootWastelandHelper" param1="CustomIcon" />
+		<property name="Extends" value="dumbAssBlock" param1="CustomIcon" />
 		<property name="Texture" value="283,283,280,279,280,279" />
 		<!-- BRN 283, YEL 280, GRN 278, PUR 279 -->
 		<property name="CreativeMode" value="Dev" />
@@ -16288,7 +16288,7 @@ kind of free
 		<property class="Workstation">
 			<property name="CraftingAreaRecipes" value="blastFurnace" />
 			<property name="Modules" value="output,fuel,material_input" />
-			<property name="InputMaterials" value="steel,iron,coal,clay" />
+			<property name="InputMaterials" value="steel,iron,coal,clay,plastic,glass" />
 		</property>
 		<property name="CustomIcon" value="ui_game_symbol_blastFurnace" />
 		<property name="DescriptionKey" value="blastFurnaceDesc" />
@@ -16302,7 +16302,7 @@ kind of free
 		<property name="Material" value="Mmetal_thin" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#moonshine?moonshinePrefab" />
-        <property name="ModelOffset" value="0,-0.1,0" />
+        <property name="ModelOffset" value="0,-0.05,0" />
 		<property name="HeatMapStrength" value="2" />
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="15" />
@@ -17009,7 +17009,7 @@ kind of free
 		<property name="Model" value="#gaztank?gaztankPrefab" />
 		<property name="Place" value="TowardsPlacer" />
 		<property name="CanPickup" value="true" />
-		<property name="ModelOffset" value="0,-0.1,0" />
+		<property name="ModelOffset" value="0,0.1,0" />
 		<property name="DescriptionKey" value="gasTankEmptyDesc" />
 	</block>
 	<block id="868" name="gasTank">
@@ -17359,7 +17359,7 @@ kind of free
 	<!-- JZMOD BUILDING BLOCKS-->
 	<!-- JZMOD LOG CABIN BUILDING -->
 	<block id="968" name="logCabin">
-		<property name="Extends" value="woodMaster" />
+		<property name="Extends" value="woodMaster" param1="DowngradeBlock" />
 		<property name="Material" value="wood_weak" />
 		<property name="MaxDamage" value="20" />
 		<property name="Texture" value="74,74,43,43,43,43" />
@@ -18206,41 +18206,16 @@ kind of free
 		<property name="DescriptionKey" value="trapbearDesc" />
 		<property name="Model" value="#traps?BearTrap" />
 		<property name="CustomIcon" value="ui_game_symbol_bearTrap" />
-		<!--sdx<property name="KillChance" value="90" />
-	<property name="SpawnChance" value="100" />
-	<property name="DamageDone" value="25" />
-	<property name="HitLegs" value="true" />
-	<property name="Baited" value="true" />
-	<property name="EntityGroup" value="AnimalsAll" />
-	<property name="Baite" value="rawMeat" />
-	<property name="Loot1" value="rawMeat" />
-	<property name="Loot2" value="animalHide" />
-	<property name="OpenSound" value="beartrap_trigger" />
-	<property name="CloseSound" value="beartrap_trigger" />-->
 		<property name="DescriptionKey" value="BearTrapDesc" />
 		<drop event="Destroy" name="bearTrap" count="1" prob="1" tool_category="Disassemble" />
 	</block>
 	<block id="1495" name="scorpionTrap">
-		<!-- triggered trap -->
-		<!-- its an animal, so it autoresets -->
 		<property name="DescriptionKey" value="scorpionTrapDesc" />
-		<!--<property name="Class" value="TrapMorte, Mods" />
-    <property name="KillChance" value="0" />
-	<property name="DamageDone" value="5" />
-	<property name="HitLegs" value="false" />
-	<property name="Baited" value="false" />
-	 if set to true, if the trap kills an entity (not player), it will imediatly disapear 
-	<property name="DestroyOnDeath" value="false" />
-	<property name="OpenSound" value="scorpion_trigger" />
-	<property name="CloseSound" value="scorpion_trigger" />
-	<property name="AutoReset" value="true" />
-	<property name="Buffs" value="ScorpionPoisoning" />-->
 		<property name="Material" value="organic" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#scorpion?ScorpionPrefab" />
 		<property name="Collide" value="movement,bullet,rocket,melee" />
 		<property name="FuelValue" value="36" />
-		<!-- until better solution this is just to allow interaction -->
 		<property name="CanPickup" value="true" />
 		<property name="Group" value="Tools/Traps" />
 		<property name="debug" value="false" />
@@ -18249,26 +18224,12 @@ kind of free
 		<drop event="Destroy" name="rawMeat" count="1" prob="1" />
 	</block>
 	<block id="1496" name="spiderTrap">
-		<!-- triggered trap -->
-		<!-- its an animal, so it autoresets -->
 		<property name="DescriptionKey" value="spiderTrapDesc" />
-		<!--sdx<property name="Class" value="TrapMorte, Mods" />
-    <property name="KillChance" value="0" />
-	<property name="DamageDone" value="3" />
-	<property name="HitLegs" value="false" />
-	<property name="Baited" value="false" />
-	 if set to true, if the trap kills an entity (not player), it will imediatly disapear
-	<property name="DestroyOnDeath" value="false" />
-	<property name="OpenSound" value="scorpion_trigger" />
-	<property name="CloseSound" value="scorpion_trigger" />
-	<property name="AutoReset" value="true" />
-	<property name="Buffs" value="SpiderPoisoning" />-->
-		<property name="Material" value="organic" />
+        <property name="Material" value="organic" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#scorpion?SpiderPrefab" />
 		<property name="Collide" value="movement,bullet,rocket,melee" />
 		<property name="FuelValue" value="36" />
-		<!-- until better solution this is just to allow interaction -->
 		<property name="CanPickup" value="true" />
 		<drop event="Destroy" name="venomSack" count="2" prob="1" />
 		<property name="Group" value="Tools/Traps" />
@@ -18277,19 +18238,11 @@ kind of free
 	</block>
 	<!-- POWERED TRAPS -->
 	<block id="1497" name="trapSpike">
-		<!-- this is a powwered trap -->
-		<!-- it will only work if it has enough power -->
 		<property name="DescriptionKey" value="trapspikeDesc" />
-		<!--sdx<property name="Class" value="PowerTrap, Mods" />
-    <property name="powerType" value="Electric" />
-	 Boiler (heat), Gaz 
-	<property name="DamageDone" value="10" />
-	<property name="HitLegs" value="true" />
-	<property name="Buffs" value="bleeding" />
-    until better solution this is just to allow interaction -->
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#poweredtraps?TrapSpike1" />
+        <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="CustomIcon" value="ui_game_symbol_trapSpike" />
 		<property name="Collide" value="movement,bullet,rocket,melee" />
 		<property name="FuelValue" value="36" />
@@ -18305,10 +18258,8 @@ kind of free
 		<property name="Extends" value="trapSpike" />
 		<property name="DescriptionKey" value="trapfireDesc" />
 		<property name="Model" value="#poweredtraps?Trapfire1" />
+        <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="CustomIcon" value="ui_game_symbol_trapFire" />
-		<!--sdx<property name="powerType" value="Electric" />
-	<property name="HitLegs" value="false" />
-	<property name="Buffs" value="burningSmall" />-->
 		<drop event="Destroy" name="trapFire" count="1" prob="1" tool_category="Disassemble" />
 	</block>
 	<block id="1499" name="shockTrap">
@@ -18317,15 +18268,14 @@ kind of free
 		<property name="Shape" value="ModelEntity" />
 		<property name="Mesh" value="models" />
 		<property name="Model" value="#shockingTrap?shockingTrap" />
+        <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="CustomIcon" value="ui_game_symbol_shockTrap" />
-		<!--sdx<property name="powerType" value="Electric" />
-	<property name="DamageDone" value="1" />
-	<property name="Buffs" value="shocked" />-->
 		<drop event="Destroy" name="ShockTrap" count="1" prob="1" tool_category="Disassemble" />
 	</block>
 	<block id="1501" name="razorWire">
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#RazorWire?RazorWirePrefab" />
+        <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="CustomIcon" value="ui_game_symbol_razorWire" />
 		<property name="Class" value="Damage" />
 		<property name="Damage" value="4" />
@@ -18344,6 +18294,7 @@ kind of free
 	<block id="1502" name="razorWireOffSet">
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#RazorWire?RazorWireOffsetPrefab" />
+        <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="CustomIcon" value="ui_game_symbol_razorWire" />
 		<property name="Class" value="Damage" />
 		<property name="Damage" value="4" />
@@ -18366,6 +18317,7 @@ kind of free
 		<property name="Shape" value="ModelEntity" />
 		<property name="Mesh" value="models" />
 		<property name="Model" value="#fireTrap?fireTrap" />
+        <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="CustomIcon" value="ui_game_symbol_gasTankTrap" />
 		<property name="Weight" value="64" />
 		<property name="IsTerrainDecoration" value="true" />
@@ -18943,7 +18895,7 @@ kind of free
 		<property name="DowngradeBlock" value="cntCar03SedanDamage1" />
 		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
-	<block id="1640" name="lanos">
+	<block id="1656" name="lanos">
 		<property name="Extends" value="cntCar03SedanDamage0" />
 		<property name="Model" value="#vehiclesdeco?Lanos" />
         <property name="ModelOffset" value="0,-0.1,0" />
@@ -19033,7 +18985,7 @@ kind of free
 		<property name="CanPickup" param1="smallGenerator" value="true" />
 	</block>
 	<!-- JZMOD DOORS/GATES/SHUTTERS/ELEVATORS -->
-    <!--1956/1660/1661/1664/1665/1667/1670/1671/1676/1677/1680/1681/1682/1688/1689/1690/1691/1692/1693-->
+    <!--1656/1660/1661/1664/1665/1667/1670/1671/1676/1677/1680/1681/1682/1688/1689/1690/1691/1692/1693-->
     
 	
 	<block id="1683" name="woodBarricade2x3">
@@ -19159,6 +19111,7 @@ kind of free
 		<property name="Material" value="Mmetal_weak" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#radiated?RadBarrelV" />
+        <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="CanPickup" value="false" />
 		<property name="Group" value="Building" />
 		<property name="DropScale" value="3" />
@@ -19171,6 +19124,7 @@ kind of free
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#hflnew?ammunationBagSmall" />
+        <property name="ModelOffset" value="0,-0.1,0" />
 	</block>
 	<block id="1702" name="steelSpikes">
 		<property name="Extends" value="trapSpikesNew" />
@@ -19179,6 +19133,7 @@ kind of free
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#irSpike?irSpikeR" />
+        <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="CustomIcon" value="ui_game_symbol_steelSpikes" />
 		<property class="RepairItems">
 			<property name="shortSteelPipe" value="15" />
@@ -19211,6 +19166,7 @@ kind of free
    <block id="1705" name="plantedCannabis">
 		<property name="Extends" value="plantedTomato" />
 		<property name="Model" value="#CannabisSprout1?CannabisSprout1Prefab" />
+        <property name="ModelOffset" value="0,0.1,0" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="PlantGrowing.Next" value="smallCannabisPlant" />
 	</block>
@@ -19218,23 +19174,27 @@ kind of free
     <property name="Material" value="Mmetal_weak" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#forge1?forgestonePrefab" />
+        <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
 	<block id="1707" name="gastTank">
 		<property name="Material" value="Mmetal_weak" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#gastank?GasTank1Prefab" />
+        <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
 	<block id="1708" name="bigRig">
 		<property name="Extends" value="cntCar03SedanDamage1" />
 		<property name="Model" value="#lootcontainers?F04" />
+        <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="LootList" value="47" />
 		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
     <block id="1709" name="bigRig2">
 		<property name="Extends" value="cntCar03SedanDamage1" />
 		<property name="Model" value="#lootcontainers?F04Broken" />
+        <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="LootList" value="47" />
 		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
@@ -19242,11 +19202,13 @@ kind of free
 		<property name="Extends" value="cntCar03SedanDamage0" />
 		<property name="Model" value="#DecoVehiclesPrefabs?AmbulanceUSFBX" />
 		<property name="DowngradeBlock" value="ambulance02Damaged" />
+        <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
 	<block id="1711" name="ambulance02Damaged">
 		<property name="Extends" value="cntCar03SedanDamage1" param1="DowngradeBlock" />
 		<property name="Model" value="#DecoVehiclesPrefabs?AmbulanceUSFBX" />
+        <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
     <block id="1712" name="hordeLightPlayer">
@@ -19540,6 +19502,10 @@ kind of free
 		<property name="Model" value="Entities/Zombies/SleeperPoses/idleStomach" />
 		<property name="LootList" value="2" />
 	</block>
+    <block id="1745" name="lootWastelandHelper">
+		<property name="Extends" value="dumbAssBlock" />
+		<property name="CreativeMode" value="Dev" />
+    </block>
 </blocks>
 <!-- Block limit: No block can have an ID greater 2047.
 BLOCK MODELS
