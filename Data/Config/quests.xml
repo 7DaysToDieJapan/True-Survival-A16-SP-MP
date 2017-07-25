@@ -956,7 +956,7 @@
 	</quest>
 	<!--Mechanic-->
 	<quest id="StartMechanic" name_key="challenge_Profession" subtitle_key="Mechanics Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Mechanic" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="oldWrench" value="600" />
+		<reward type="Item" id="screwdriver" value="600" />
 		<!--<reward type="Quest" id="challenge_Mechanic" />
 		<reward type="Quest" id="challenge_Mechanic2" />
 		<reward type="Quest" id="challenge_Mechanic3" />
