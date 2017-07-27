@@ -6,7 +6,6 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 Models that are no longer used:
 	<property name="Model" value="Entities/Buildings/window03Prefab"/>
-
 Textures that are no longer used:
 	378
 	404
@@ -2559,8 +2558,8 @@ group desc for stuff like metal siding
 		<property name="UpgradeRated.ToBlock" value="rConcreteSupport" />
 	</block>
 	<block id="246" name="pouredConcreteBlock">
-		<property name="CreativeMode" value="Player" />
 		<property name="Extends" value="pouredConcreteMaster" />
+        <property name="CreativeMode" value="Player" />
 		<property name="UpgradeRated.ToBlock" value="concreteBlock" />
 	</block>
 	<block id="247" name="concreteRamp">
@@ -17000,7 +16999,7 @@ kind of free
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#WheatPlant1?WheatPlant1Prefab" />
         <property name="ModelOffset" value="0,-0.1,0" />
-		<drop event="Harvest" name="Wheat" count="1" />
+		<drop event="Harvest" name="wheat" count="1" />
 	</block>
 	<block id="867" name="gasTankEmpty">
 		<property name="CustomIcon" value="gasTank" />
