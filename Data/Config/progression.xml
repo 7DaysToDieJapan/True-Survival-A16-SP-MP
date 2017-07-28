@@ -340,20 +340,7 @@
 			<recipe name="redTea" unlock_level="10" />
 			<recipe name="baconAndEggs" unlock_level="15" />
 			<recipe name="friedEggOmelet" unlock_level="15" />
-			<recipe name="fruitServing" unlock_level="20" />
-			<recipe name="grainServing" unlock_level="20" />
-			<recipe name="veggieServing" unlock_level="20" />
-			<recipe name="proteinServing" unlock_level="20" />
-			<recipe name="fruitSaladSmall" unlock_level="20" />
-			<recipe name="fruitSaladMedium" unlock_level="20" />
-			<recipe name="fruitSaladLarge" unlock_level="20" />
-			<recipe name="veggieSaladSmall" unlock_level="20" />
-			<recipe name="veggieSaladMedium" unlock_level="20" />
-			<recipe name="veggieSaladLarge" unlock_level="20" />
-			<recipe name="kabobSmall" unlock_level="25" />
-			<recipe name="kabobMedium" unlock_level="25" />
-			<recipe name="kabobLarge" unlock_level="25" />
-			<recipe name="fruitJuice" unlock_level="30" />
+			<recipe name="fruitJuice" unlock_level="20" />
 			<recipe name="vegetableStew" unlock_level="35" />
 			<recipe name="bearStew" unlock_level="35" />
 			<recipe name="heartyStew" unlock_level="35" />
