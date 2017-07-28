@@ -3350,7 +3350,7 @@
 			<recipe name="cntSteelGunSafe" unlock_level="1" />
 			<recipe name="cntSteelGunSafeB" unlock_level="1" />
 		</perk>
-		<perk name="quickerCraftingPerk" icon="ui_game_symbol_quickerCrafting" description_key="quickerCraftingDesc" title_key="quickerCrafting" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="2" group="crafting">
+		<perk name="quickerCraftingPerk" icon="ui_game_symbol_quickercrafting" description_key="quickerCraftingDesc" title_key="quickerCrafting" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="2" group="crafting">
 			<requirement perk_level="1" required_player_level="20" />
 			<requirement perk_level="2" required_player_level="40" />
 			<requirement perk_level="3" required_player_level="60" />

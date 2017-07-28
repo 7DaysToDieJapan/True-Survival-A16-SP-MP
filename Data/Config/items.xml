@@ -13890,6 +13890,7 @@ Mesh files no longer used:
 		<property name="Meshfile" value="Items/Crafting/rock_smallPrefab" />
 		<property name="DropMeshfile" value="Items/Crafting/rock_smallPrefab" />
 		<property name="Material" value="stone" />
+		<property name="CustomIcon" value="ui_game_symbol_brick" />
 		<property name="HoldType" value="40" />
 		<property name="Stacknumber" value="5000" />
 		<property name="Weight" value="5" />
@@ -14102,7 +14103,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1821" name="scrapSteel">
 		<property name="Extends" value="itemMaster" />
-		<property name="CustomIcon" value="ui_game_symbol_scrapIron" />
+		<property name="CustomIcon" value="ui_game_symbol_scrapSteel" />
 		<property name="CustomIconTint" value="9b9999" />
 		<property name="Material" value="Msteel" />
 		<property name="Weight" value="1" />
@@ -16600,6 +16601,7 @@ Mesh files no longer used:
 			<property name="Gain_stamina" value="-20" />
 			<property name="Buff" value="nutrition_1_Trigger,wellness_3_Trigger,eatFood_5_Trigger" />
 			<property name="Create_item" value="emptyJar" />
+			<property name="CustomIcon" value="ui_game_symbol_fruitCake" />
 		</property>
 	</item>
     <item id="2032" name="steelOre">
