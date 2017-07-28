@@ -932,8 +932,8 @@ group desc for stuff like metal siding
 		<drop event="Harvest" name="" count="0" prob="1" tool_category="Disassemble" />
 		<drop event="Destroy" name="nutAndBolt" count="1,2" prob=".6" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" prob="1" tool_category="scrapIronBuilding" />
-		<drop event="Destroy" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="scrapIronBuilding" />
+		<drop event="Harvest" name="" count="0" prob="1" tool_category="ScrapIronBuilding" />
+		<drop event="Destroy" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="ScrapIronBuilding" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".6" stick_chance="1" />
 		<property name="EconomicValue" value="15" />
 		<property name="EconomicBundleSize" value="2" />
@@ -1085,8 +1085,8 @@ group desc for stuff like metal siding
 		<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
 		<drop event="Harvest" name="" count="0" prob="1" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" prob="1" tool_category="scrapIronBuilding" />
-		<drop event="Destroy" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="scrapIronBuilding" />
+		<drop event="Harvest" name="" count="0" prob="1" tool_category="ScrapIronBuilding" />
+		<drop event="Destroy" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="ScrapIronBuilding" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 		<property name="EconomicValue" value="20" />
 	</block>
@@ -1463,8 +1463,8 @@ group desc for stuff like metal siding
 		<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
 		<drop event="Harvest" name="scrapIron" count="10" prob="1" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="5,15" prob="1" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" prob="1" tool_category="scrapIronBuilding" />
-		<drop event="Destroy" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="scrapIronBuilding" />
+		<drop event="Harvest" name="" count="0" prob="1" tool_category="ScrapIronBuilding" />
+		<drop event="Destroy" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="ScrapIronBuilding" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 		<property name="EconomicValue" value="40" />
 		<property name="DescriptionKey" value="scrapIronGroupDesc" />
@@ -1546,12 +1546,12 @@ group desc for stuff like metal siding
 		<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
 		<drop event="Harvest" name="scrapIron" count="10" prob="1" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="5,15" prob="1" tool_category="Disassemble" />
-		<drop event="Harvest" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="scrapIronBuilding" />
-		<drop event="Harvest" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="scrapIronBuilding" />
+		<drop event="Harvest" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="ScrapIronBuilding" />
+		<drop event="Harvest" name="corrugatedMetalSheet" count="5,15" prob="1" tool_category="ScrapIronBuilding" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 		<property name="EconomicValue" value="20" />
 		<property name="DescriptionKey" value="scrapIronGroupDesc" />
-		<property name="CraftingSkillGroup" value="scrapIronBuilding" />
+		<property name="CraftingSkillGroup" value="ScrapIronBuilding" />
 	</block>
 	<block id="145" name="scrapIronFrameMaster">
 		<property name="Group" value="Building" />
@@ -1585,12 +1585,12 @@ group desc for stuff like metal siding
 		<drop event="Harvest" name="scrapIron" count="10" prob="1" tool_category="Disassemble" />
 		<drop event="Destroy" name="nutAndBolt" count="1,2" prob=".6" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapCable" count="5,15" prob="1" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" prob="1" tool_category="scrapIronBuilding" />
-		<drop event="Destroy" name="scrapIron" count="15,25" prob="1" tool_category="scrapIronBuilding" />
+		<drop event="Harvest" name="" count="0" prob="1" tool_category="ScrapIronBuilding" />
+		<drop event="Destroy" name="scrapIron" count="15,25" prob="1" tool_category="ScrapIronBuilding" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 		<property name="EconomicValue" value="15" />
 		<property name="EconomicBundleSize" value="2" />
-		<property name="CraftingSkillGroup" value="scrapIronBuilding" />
+		<property name="CraftingSkillGroup" value="ScrapIronBuilding" />
 	</block>
 	<block id="146" name="rWoodMetalMaster">
 		<property name="Group" value="Building" />
@@ -17360,7 +17360,6 @@ kind of free
 	<block id="968" name="logCabin">
 		<property name="Extends" value="woodMaster" param1="DowngradeBlock" />
 		<property name="Material" value="wood_weak" />
-		<property name="MaxDamage" value="20" />
 		<property name="Texture" value="74,74,43,43,43,43" />
 		<property name="DowngradeBlock" value="woodDebris" prob="0.75" />
 	</block>

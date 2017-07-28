@@ -125,7 +125,7 @@ built-in buff variables:
 
 -->
 <buffs>
-    <buff id="isPlayer" buffif="+full &gt; 0" />
+    <buff id="isPlayer" buffif="+full &gt; 0" actions="buff(malnourishTimer)"/>
 	<!--<buff id="isPlayer" buffif="+full > 0" />-->
 	<!-- This buff is called on the first time the player spawns into the game and on respawning the player after each death. Can not add buffs. -->
 	<buff id="initvars" duration="1" actions="setvar(beers,0);setvar(BDKbloodLoss,0);setvar(CTRbed,0);setvar(CTRbedroll,0);setvar(CTRbigbed,0);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0);setvar(CTRroadrun,0);setvar(CTRsnowberry,0);setvar(CTRtrapDmg1,0);setvar(CTRbluePill,0)" />
@@ -230,7 +230,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<buff id="firstAidLarge" duration="10" stack="extend" type="healthup" icon="ui_game_symbol_medical" name_key="firstAidLarge" description_key="firstAidLargeDesc" tooltip_key="firstAidLargeTooltip" causes="firstAidKit">
 		<modify id="1" stat="health" amount="1" rate="1" />
 	</buff>
-	<buff id="painkillerBuff" duration="90" stack="extend" type="healthup" icon="ui_game_symbol_pills" name_key="painkillersBuffName" description_key="painkillersBuffDesc" tooltip_key="painkillersBuffTooltip" causes="painkillers">
+	<buff id="painkillerBuff" duration="90" stack="extend" type="healthup" actions="debuff(pain)" icon="ui_game_symbol_pills" name_key="painkillersBuffName" description_key="painkillersBuffDesc" tooltip_key="painkillersBuffTooltip" causes="painkillers">
 		<modify id="1" stat="health" amount="0.34" rate="1" />
 	</buff>
 	<buff id="internalBleeding" duration="10" stack="reset" actions="damage(0,1,0,1);damage(0,3,0,0)" type="bleeding" icon="ui_game_symbol_critical" name_key="internalBleeding" description_key="internalBleedingDesc" tooltip_key="internalBleedingTooltip" causes="brokenGlass">
@@ -761,8 +761,7 @@ This requires a 50+ food bar:
     <!--JZMOD NUTRITION RESTART AFTER RESPAWN -->
     <buff id="malnourishedReset" requires="malnourishedActive" duration="2" actions="setvar(malnourished, 0)" />
 	<buff id="malnourishedActive" buffif="malnourished greater 0" debuffif="malnourished less 1" />
-    <buff id="nutritionAfterDeath" mutex="nutritionFade,malnourishTimer" buffif="+full > 0" duration="3" actions="setvar(nutrition, 1)" />
-	<!--JZMOD Malnourished Timer-->
+    <!--JZMOD Malnourished Timer-->
 	<buff id="malnourishTimer" mutex="goodNutrition1Tag" buffif="nutrition less 15" debuffif="nutrition gequal 15" actions="increment(malnourished, 1, 60, 0, 0)" name_key="malnourishTimer tester" icon="ui_game_symbol_limp" /><!--60-->
 	<!--JZMOD BAD NUTRITION-->
 	<buff id="malnourished1Tag" buffif="malnourished greater 179" debuffif="malnourished lequal 179" /><!--179 -->
