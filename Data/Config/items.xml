@@ -13159,7 +13159,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1739" name="mead">
 		<property name="Extends" value="beer" />
-		<property name="CustomIcon" value="ui_game_symbol_beer" />
+		<property name="CustomIcon" value="ui_game_symbol_mead" />
 		<property name="CustomIconTint" value="af8d05" />
 		<property class="Action1">
 			<property name="Gain_stamina" value="60" />
