@@ -8702,6 +8702,7 @@ Mesh files no longer used:
 		<property class="Action1">
 			<property name="Recipes_to_learn" value="partsHandlebars" />
 			<property name="Skills_to_gain" value="craftSkillMiscellaneous" />
+			<property name="CustomIcon" value="schematicMaster"/>
 		</property>
 	</item>
 	<item id="1003" name="minibikesForDumbshits">
@@ -10525,6 +10526,7 @@ Mesh files no longer used:
 			<property name="DegradationMax" value="30,600" />
 		</property>
 		<property name="CraftingSkillGroup" value="crossbowCraft" />
+		<property name="CustomIcon" value="partsAuger_parts"/>
 	</item>
 	<item id="1510" name="crossbow_Limb">
 		<property name="Extends" value="partsMaster" />
@@ -10594,7 +10596,7 @@ Mesh files no longer used:
 	<item id="1516" name="carbonCrossbow_Parts">
 		<property name="Extends" value="crossbow_Parts" />
 		<property name="DescriptionKey" value="carbonCrossbow_PartsDesc" />
-		<property name="CustomIcon" value="auger_Parts" />
+		<property name="CustomIcon" value="partsAuger_parts" />
 		<property class="Attributes">
 			<property name="DegradationMax" value="100,1000" />
 		</property>
