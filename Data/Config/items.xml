@@ -2059,9 +2059,9 @@ Mesh files no longer used:
 	<item id="108" name="fireaxeSteel">
 		<property name="Extends" value="fireaxeIron" />
 		<property name="Material" value="Msteel" />
-		<property name="CustomIcon" value="fireaxeSteel" />
+		<property name="CustomIcon" value="fireaxeIron" />
+		<property name="CustomIconTint" value="a0a0ff" />
 		<!-- xxx model to be replaced -->
-		<!-- <property name="CustomIconTint" value="a0a0ff"/> -->
 		<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab" />
 		<property name="RepairTools" value="shortSteelPipe" />
 		<property name="EconomicValue" value="760" />
@@ -8433,6 +8433,7 @@ Mesh files no longer used:
 	</item>
 	<item id="923" name="sawedoffPumpShotgunSchematic">
 		<property name="Extends" value="schematicMaster" />
+		<property name="CustomIcon" value="sawedoffShotgunSchematic" />
 		<property class="Action1">
 			<property name="Recipes_to_learn" value="gunSawedOffPumpShotgun" />
 		</property>
@@ -8457,6 +8458,7 @@ Mesh files no longer used:
 	</item>
 	<item id="928" name="aK47Schematic">
 		<property name="Extends" value="schematicMaster" />
+		<property name="CustomIcon" value="AK47Schematic" />
 		<property name="EconomicValue" value="500" />
 		<property class="Action1">
 			<property name="Recipes_to_learn" value="gunAK47" />
@@ -10470,7 +10472,7 @@ Mesh files no longer used:
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="31" />
 		<property name="Stacknumber" value="50" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="None" />
 		<property name="SellableToTrader" value="false" />
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -11697,6 +11699,7 @@ Mesh files no longer used:
 		<property name="Meshfile" value="#drill?DrillTool" />
 		<property name="DropMeshfile" value="#drill?DrillTool" />
         <property name="HandMeshfile" value="#drill?DrillTool" /> 
+		<property name="CustomIcon" value="ui_game_symbol_welder" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="forgedSteel" />
 		<property name="HoldType" value="37" />
@@ -12065,6 +12068,9 @@ Mesh files no longer used:
 	<item id="1598" name="handSaw">
 		<property name="Extends" value="itemMaster" />
         <property name="Meshfile" value="#hflnew?Saw" />
+
+		<property name="CustomIcon" value="ui_game_symbol_circularSaw" />
+	
 		<property name="DescriptionKey" value="handSawDesc" />
 		<property name="Group" value="Books" />
 	</item>
@@ -12800,27 +12806,7 @@ Mesh files no longer used:
 		<property name="ActionExp" value="10" />
 	</item>
 	<!-- JZMOD FOOD-->
-	<item id="1713" name="foodMaster">
-		<property name="Meshfile" value="Items/Misc/parcel" />
-		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="Material" value="organic" />
-		<property name="HoldType" value="31" />
-		<property name="Stacknumber" value="50" />
-		<property name="IsDeveloper" value="true" />
-		<property name="SellableToTrader" value="false" />
-		<property class="Action1">
-			<property name="Class" value="Eat" />
-			<property name="Delay" value="1.0" />
-			<property name="Use_time" value="..." />
-			<property name="Gain_health" value="0" />
-			<property name="Gain_food" value="0" />
-			<property name="Gain_water" value="0" />
-			<property name="Gain_stamina" value="0" />
-			<property name="Gain_wellness" value="0" />
-			<property name="Sound_start" value="UseActions/player_eating" />
-		</property>
-		<property name="Group" value="food/Cooking" />
-	</item>
+
 	<item id="1714" name="fruitServing">
 		<property name="Extends" value="foodMaster" />
 		<property name="CustomIcon" value="ui_game_symbol_unit_fruit" />
@@ -13680,7 +13666,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1778" name="bruteBash">
 		<property name="Extends" value="handMaster" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="None" />
 		<property class="Action0">
 			<property name="Range" value="1.75" />
 			<property name="DamageEntity" value="20" />
@@ -13706,7 +13692,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1779" name="charredHand">
 		<property name="Extends" value="handMaster" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="None" />
 		<property class="Action0">
 			<property name="Class" value="Melee" />
 			<property name="Sphere" value="0.4" />
@@ -13758,7 +13744,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1781" name="handBuck">
 		<property name="Extends" value="handMaster" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="None" />
 		<property name="HoldType" value="46" />
 		<property class="Action0">
 			<property name="Delay" value="1" />
@@ -14359,13 +14345,13 @@ Mesh files no longer used:
 		<property name="Extends" value="unit_iron" />
 		<property name="CustomIcon" value="coal" />
 		<property name="Material" value="forgecoal" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="Dev" />
 	</item>
 	<item id="1845" name="unit_steel">
 		<property name="Extends" value="unit_iron" />
 		<property name="CustomIcon" value="scrapIron" />
 		<property name="Material" value="Msteel" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="Dev" />
 	</item>
 	<!--JZMOD NPC GUNS -->
 	<item id="1846" name="npcPistol">
@@ -14373,7 +14359,7 @@ Mesh files no longer used:
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="weaponRepairKit" />
 		<property name="HoldType" value="1" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="Dev" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="ui_game_symbol_unused" />
 		<property name="DegradationBreaksAfter" value="false" />
@@ -14412,7 +14398,7 @@ Mesh files no longer used:
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="weaponRepairKit" />
 		<property name="HoldType" value="44" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="Dev" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="ui_game_symbol_unused" />
 		<property name="Degradation" value="99999" param1="true" />
@@ -14451,7 +14437,7 @@ Mesh files no longer used:
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="weaponRepairKit" />
 		<property name="HoldType" value="5" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="Dev" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="ui_game_symbol_unused" />
 		<property name="DegradationBreaksAfter" value="false" />
@@ -14492,7 +14478,7 @@ Mesh files no longer used:
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="weaponRepairKit" />
 		<property name="HoldType" value="48" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="Dev" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="ui_game_symbol_unused" />
 		<property name="DegradationBreaksAfter" value="false" />
@@ -14533,7 +14519,7 @@ Mesh files no longer used:
 	</item>
 	<!-- JZMOD NPC AMMO -->
 	<item id="1850" name="npc9mmBullet">
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="Dev" />
 		<property name="Candrop" value="false" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/9mm_bulletPrefab" />
 		<property name="Material" value="brass" />
@@ -14568,7 +14554,7 @@ Mesh files no longer used:
 	<item id="1854" name="npcSledgeHammer">
 		<property name="Extends" value="sledgehammer" />
 		<property name="CustomIcon" value="ui_game_symbol_unused" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="Dev" />
 		<property name="Candrop" value="false" />
 		<property name="CustomIcon" value="ui_game_symbol_unused" />
 		<property name="DegradationBreaksAfter" value="false" />
@@ -14588,7 +14574,7 @@ Mesh files no longer used:
 		<property name="SellableToTrader" value="false" />
 		<property name="DegradationBreaksAfter" value="false" />
 		<property name="Candrop" value="false" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="Dev" />
 		<property class="Action0">
 			<property name="Delay" value="1" />
 			<property name="Buff" value="banditBonus" />
@@ -14604,7 +14590,7 @@ Mesh files no longer used:
 		<property name="SellableToTrader" value="false" />
 		<property name="DegradationBreaksAfter" value="false" />
 		<property name="Candrop" value="false" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="Dev" />
 		<property class="Action0">
 			<property name="Delay" value="1" />
 			<property name="Buff" value="banditBonus" />
@@ -14620,7 +14606,7 @@ Mesh files no longer used:
 		<property name="SellableToTrader" value="false" />
 		<property name="DegradationBreaksAfter" value="false" />
 		<property name="Candrop" value="false" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="Dev" />
 		<property class="Action0">
 			<property name="Delay" value="1" />
 			<property name="Buff" value="banditBonus" />
@@ -14636,14 +14622,13 @@ Mesh files no longer used:
 		<property name="SellableToTrader" value="false" />
 		<property name="DegradationBreaksAfter" value="false" />
 		<property name="Candrop" value="false" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="Dev" />
 		<property class="Action0">
 			<property name="Delay" value="1" />
 			<property name="Buff" value="banditBonus" />
 		</property>
 		<property name="SellableToTrader" value="false" />
 		<property name="Candrop" value="false" />
-		<property name="IsDeveloper" value="true" />
 		<property class="Attributes">
 			<property name="DegradationMax" value="100000,100000" />
 			<property name="DegradationRate" value="1,1" />
@@ -14655,7 +14640,7 @@ Mesh files no longer used:
 		<property name="SellableToTrader" value="false" />
 		<property name="DegradationBreaksAfter" value="false" />
 		<property name="Candrop" value="false" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="Dev" />
 		<property class="Action0">
 			<property name="Delay" value="1" />
 			<property name="Buff" value="banditBonus" />
@@ -14666,7 +14651,6 @@ Mesh files no longer used:
 		</property>
 		<property name="SellableToTrader" value="false" />
 		<property name="Candrop" value="false" />
-		<property name="IsDeveloper" value="true" />
 	</item>
 	<item id="1860" name="scrapRubber">
 		<property name="Extends" value="itemMaster" />
@@ -15244,25 +15228,25 @@ Mesh files no longer used:
 		<property name="Extends" value="unit_iron" />
 		<property name="CustomIcon" value="ui_game_symbol_unit_veggie" />
 		<property name="Material" value="Mveggie" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="Dev" />
 	</item>
 	<item id="1935" name="unit_fruit">
 		<property name="Extends" value="unit_iron" />
 		<property name="CustomIcon" value="ui_game_symbol_unit_fruit" />
 		<property name="Material" value="Mfruit" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="Dev" />
 	</item>
 	<item id="1936" name="unit_grain">
 		<property name="Extends" value="unit_iron" />
 		<property name="CustomIcon" value="ui_game_symbol_unit_grain" />
 		<property name="Material" value="Mgrain" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="Dev" />
 	</item>
 	<item id="1937" name="unit_protein">
 		<property name="Extends" value="unit_iron" />
 		<property name="CustomIcon" value="ui_game_symbol_unit_protein" />
 		<property name="Material" value="Mprotein" />
-		<property name="IsDeveloper" value="true" />
+		<property name="CreativeMode" value="Dev" />
 	</item>
 	<item id="1938" name="plasticCondom">
 		<property name="Extends" value="itemMaster" />
@@ -15687,7 +15671,7 @@ Mesh files no longer used:
 		<property name="DescriptionKey" value="compactDriverDesc" />
 		<property name="RepairExpMultiplier" value="2" />
 	</item>
-   <item id="1976" name="Tomahawk">
+   <item id="1976" name="tomahawk">
 		<property name="Extends" value="fireaxeIron" />
 		<property name="HoldType" value="2" />
         <property name="Meshfile" value="#ZdWeapons?Tomahawk" />
@@ -16640,14 +16624,14 @@ Mesh files no longer used:
 		<property name="Material" value="clay" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="1" />
-        <property name="CustomIcon" value="ui_game_symbol_ironPickaxeHeadMold" />
+        <property name="CustomIcon" value="ui_game_symbol_pickaxeHeadMold" />
 	</item>
     <item id="2036" name="steelPickaxeHeadMold">
         <property name="Extends" value="itemMaster" />
 		<property name="Material" value="clay" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="1" />
-        <property name="CustomIcon" value="ui_game_symbol_steelPickaxeHeadMold" />
+        <property name="CustomIcon" value="ui_game_symbol_pickaxeHeadMold" />
 	</item>
     <item id="2037" name="spearHeadMold">
         <property name="Extends" value="itemMaster" />
@@ -16661,14 +16645,14 @@ Mesh files no longer used:
 		<property name="Material" value="clay" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="1" />
-        <property name="CustomIcon" value="ui_game_symbol_smallKnifeBladeMold" />
+        <property name="CustomIcon" value="ui_game_symbol_knifeBladeMold" />
 	</item>
     <item id="2039" name="largeKnifeBladeMold">
         <property name="Extends" value="itemMaster" />
 		<property name="Material" value="clay" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="1" />
-        <property name="CustomIcon" value="ui_game_symbol_largeKnifeBladeMold" />
+        <property name="CustomIcon" value="ui_game_symbol_knifeBladeMold" />
 	</item>
     <item id="2040" name="swordBladeMold">
         <property name="Extends" value="itemMaster" />
