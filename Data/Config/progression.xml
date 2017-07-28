@@ -175,7 +175,7 @@
 				<add skill_level="3" value="0.3" />
 			</effect>
 		</action_skill>
-		<action_skill name="assaultRiflesAction" icon="ui_game_symbol_aK47" description_key="Assault rifles were used by soldies for one good reason, they are one of the finest personal killing machine ever invented. More skill gives you a better chance at dismemberment." title_key="Assault Rifles" group="firearms" skill_point_cost_per_level="0">
+		<action_skill name="assaultRiflesAction" icon="ui_game_symbol_ak47" description_key="Assault rifles were used by soldies for one good reason, they are one of the finest personal killing machine ever invented. More skill gives you a better chance at dismemberment." title_key="Assault Rifles" group="firearms" skill_point_cost_per_level="0">
 			<effect name="DismembermentChance">
 				<add perk_level="0" value="0" />
 				<add skill_level="1" value="0.1" />
@@ -295,7 +295,7 @@
 			<!--upgrade material-->
 			<recipe name="concreteMix" unlock_level="10" />
 		</action_skill>
-		<action_skill name="scrapIronBuilding" icon="ui_game_symbol_scrapironBlock" description_key="Scrapiron Building is the skill to master if you want to build with scrapiron. Learn to make scrapiron sheets plus nuts and bolts at skill level 10" title_key="Scrap Iron Building" group="crafting" skill_point_cost_per_level="0">
+		<action_skill name="scrapIronBuilding" icon="ui_game_symbol_scrapIronBlock" description_key="Scrapiron Building is the skill to master if you want to build with scrapiron. Learn to make scrapiron sheets plus nuts and bolts at skill level 10" title_key="Scrap Iron Building" group="crafting" skill_point_cost_per_level="0">
 			<recipe name="scrapIronFrameBlock" unlock_level="2" />
 			<recipe name="scrapIronFrameRamp" unlock_level="2" />
 			<recipe name="scrapIronStairs25" unlock_level="2" />
@@ -394,7 +394,7 @@
 				<multiply skill_level="90,100" value="9,10" />
             </effect>
 		</crafting_skill>
-		<crafting_skill name="craftedGunsCraft" icon="ui_game_symbol_craftedgun" description_key="Craft guns of better quality, make them faster, and repair them better with this skill." title_key="Crafted Guns" group="firearms">
+		<crafting_skill name="craftedGunsCraft" icon="ui_game_symbol_craftedRifle" description_key="Craft guns of better quality, make them faster, and repair them better with this skill." title_key="Crafted Guns" group="firearms">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -514,7 +514,7 @@
 				<!-- Known bug; see XML.txt; "12" and zero skills: 30 QL loss; "1.6" + Fixer = 2 points, almost down to 1 -->
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="engineeringCraft" icon="ui_game_symbol_engineering" description_key="Learn to be an engineer! Make lots of stuff better and faster! Woo Woo!" title_key="engineeringCraft" group="crafting">
+		<crafting_skill name="engineeringCraft" icon="ui_game_symbol_engineBlock" description_key="Learn to be an engineer! Make lots of stuff better and faster! Woo Woo!" title_key="engineeringCraft" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1622,7 +1622,7 @@
 				<setvalue skill_level="90,100" value="575,600" />
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="bladeCraft" icon="ui_game_symbol_largeBlade" description_key="Blade Smithing." title_key="bladeCraft" group="weapons">
+		<crafting_skill name="bladeCraft" icon="ui_game_symbol_largeKnifeBlade" description_key="Blade Smithing." title_key="bladeCraft" group="weapons">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2067,7 +2067,7 @@
 				<!-- =10 points at QL 600 -->
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="steelFireaxeCraft" icon="ui_game_symbol_steelFireaxeHead" description_key="Steel Fireaxe." title_key="Steel Fireaxe" group="tools">
+		<crafting_skill name="steelFireaxeCraft" icon="ui_game_symbol_ironFireaxeHead" description_key="Steel Fireaxe." title_key="Steel Fireaxe" group="tools">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2128,7 +2128,7 @@
 				<!-- =10 points at QL 600 -->
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="steelPickaxeCraft" icon="ui_game_symbol_steelPickaxeHead" description_key="Steel Pickaxe." title_key="Steel Pickaxe" group="tools">
+		<crafting_skill name="steelPickaxeCraft" icon="ui_game_symbol_ironPickaxeHead" description_key="Steel Pickaxe." title_key="Steel Pickaxe" group="tools">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2189,7 +2189,7 @@
 				<!-- =10 points at QL 600 -->
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="steelShovelCraft" icon="ui_game_symbol_steelShovelHead" description_key="Steel Shovel." title_key="Steel Shovel" group="tools">
+		<crafting_skill name="steelShovelCraft" icon="ui_game_symbol_ironShovelHead" description_key="Steel Shovel." title_key="Steel Shovel" group="tools">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -3069,12 +3069,12 @@
 			<recipe name="silencedHuntingBarrel" unlock_level="1" />
 			<recipe name="silencedhuntingRifle" unlock_level="1" />
 		</perk>
-		<perk name="ak47ScopeAttachmentPerk" icon="ui_game_symbol_scopedAK47" description_key="Learn to attach sniper scopes to AK47s on the metal working bench using a wrench." title_key="AK47 Scope Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
+		<perk name="ak47ScopeAttachmentPerk" icon="ui_game_symbol_sniperRifleScopeFrame" description_key="Learn to attach sniper scopes to AK47s on the metal working bench using a wrench." title_key="AK47 Scope Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="20" />
 			<recipe name="aK47StockScope" unlock_level="1" />
 			<recipe name="scopedAK47" unlock_level="1" />
 		</perk>
-		<perk name="ak47SilencerAttachmentPerk" icon="ui_game_symbol_silencedAK47" description_key="Learn to attach Silencers to AK47s on the metal working bench using a wrench." title_key="AK47 Silencer Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+		<perk name="ak47SilencerAttachmentPerk" icon="ui_game_symbol_silencer" description_key="Learn to attach Silencers to AK47s on the metal working bench using a wrench." title_key="AK47 Silencer Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="40" />
 			<recipe name="silencedAK47Barrel" unlock_level="1" />
 			<recipe name="silencedAK47" unlock_level="1" />
@@ -3085,14 +3085,14 @@
 			<recipe name="woodSpear" unlock_level="1" />
 			<recipe name="woodJavelin" unlock_level="1" />
 		</perk>
-		<perk name="ironSpearPerkPerk" icon="ui_game_symbol_ironSpears" description_key="Learn how to craft an Iron Spear head in the forge and craft a spear and throwable Javelin with it" title_key="Iron Spear and Javelin" max_level="1" skill_point_cost_per_level="5" group="weapons">
+		<perk name="ironSpearPerk" icon="ui_game_symbol_ironSpears" description_key="Learn how to craft an Iron Spear head in the forge and craft a spear and throwable Javelin with it" title_key="Iron Spear and Javelin" max_level="1" skill_point_cost_per_level="5" group="weapons">
 			<requirement perk_level="1" required_skill_name="archeryAction" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="15" />
 			<recipe name="spearHead" unlock_level="1" />
 			<recipe name="ironSpear" unlock_level="1" />
 			<recipe name="ironJavelin" unlock_level="1" />
 		</perk>
-		<perk name="crossbowPerkPerk" icon="ui_game_symbol_crossbow" description_key="Level 1 - Learn to build and disassemble a simple Crossbow, crafting its parts on the wood working bench using a wrench. Level 2 - Learn to add a scope to the crossbow. Level 3 - Learn to upgrade to a automatic 6 shot crossbow." title_key="crossbowAction" max_level="3" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="weapons">
+		<perk name="crossbowPerk" icon="ui_game_symbol_crossbow" description_key="Level 1 - Learn to build and disassemble a simple Crossbow, crafting its parts on the wood working bench using a wrench. Level 2 - Learn to add a scope to the crossbow. Level 3 - Learn to upgrade to a automatic 6 shot crossbow." title_key="crossbowAction" max_level="3" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="weapons">
 			<requirement perk_level="1" required_skill_name="archeryAction" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="10" />
 			<recipe name="crossbow_Limb" unlock_level="1" />
@@ -3116,9 +3116,9 @@
 			<recipe name="forge" unlock_level="1" />
 			<recipe name="bellows" unlock_level="1" />
 		</perk>
-		<perk name="anvilPerk" icon="ui_game_symbol_Anvil" description_key="Learn to craft an anvil in a forge. The Anvil can be used as a workstation or as a tool in a workstation. Use a Hand Dolly to pick it back up and re install it." title_key="Anvil" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
+		<perk name="anvilPerk" icon="ui_game_symbol_anvil" description_key="Learn to craft an anvil in a forge. The Anvil can be used as a workstation or as a tool in a workstation. Use a Hand Dolly to pick it back up and re install it." title_key="Anvil" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
 			<requirement perk_level="1" required_player_level="5" />
-			<recipe name="Anvil" unlock_level="1" />
+			<recipe name="anvil" unlock_level="1" />
 		</perk>
 		<perk name="forgedIronPerk" icon="ui_game_symbol_forgedIron" description_key="Learn to craft a small stone Forge. Use it to smelt iron, brass, lead, glass, stone and clay. The Forge has 3 tools - anvil, calipers and tool And Die Set." title_key="Forged Iron" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
 			<requirement perk_level="1" required_player_level="25" />
@@ -3158,7 +3158,7 @@
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="50" />
 			<recipe name="spotlightPlayer" unlock_level="1" />
 		</perk>
-		<perk name="barbedWirePerk" icon="ui_game_symbol_barbedWire" description_key="Learn to craft Barbed Wire in the forge using a anvil" title_key="Barbed Wire" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="weapons">
+		<perk name="barbedWirePerk" icon="ui_game_symbol_barbedFence" description_key="Learn to craft Barbed Wire in the forge using a anvil" title_key="Barbed Wire" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="weapons">
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="barbedWireSheet" unlock_level="1" />
 		</perk>
@@ -3195,7 +3195,7 @@
 		</perk>
 		<perk name="nailgunPerk" icon="ui_game_symbol_nailgun" description_key="Learn to build and maintain a nailgun" title_key="Nailgun" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="35" group="tools">
 			<requirement perk_level="1" required_player_level="1" />
-			<recipe name="nailgun" unlock_level="1" />
+			<recipe name="ui_game_symbol_nailgun" unlock_level="1" />
 		</perk>
 		<perk name="stoneDrillPerk" icon="ui_game_symbol_auger" description_key="Learn to build and maintain a Stone drill that is cappable of digging hardstone and metals" title_key="Stone Drill" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="50" group="tools">
 			<requirement perk_level="1" required_player_level="55" />
@@ -3265,7 +3265,7 @@
 			<requirement perk_level="1" required_player_level="10" />
 			<recipe name="secureStorageChest" unlock_level="1" />
 		</perk>
-		<perk name="woodenDoorPerk" icon="ui_game_symbol_secureDoorWooden" description_key="Learn to craft a secure Wooden Door" title_key="Wooden Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
+		<perk name="woodenDoorPerk" icon="ui_game_symbol_woodenDoor" description_key="Learn to craft a secure Wooden Door" title_key="Wooden Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
 			<requirement perk_level="1" required_skill_name="woodBuilding" required_skill_level="5" />
 			<recipe name="secureDoorWooden" unlock_level="1" />
 		</perk>
@@ -3299,7 +3299,7 @@
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="ladderMetal" unlock_level="1" />
 		</perk>
-		<perk name="ironHatchPerk" icon="ui_game_symbol_scrapHatch_v1" description_key="Learn to craft Iron Hatches on the metal working bench using a wrench" title_key="Iron Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="crafting">
+		<perk name="ironHatchPerk" icon="ui_game_symbol_scrapHatch" description_key="Learn to craft Iron Hatches on the metal working bench using a wrench" title_key="Iron Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="crafting">
 			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="15" />
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="scrapHatch_v1" unlock_level="1" />
@@ -3308,7 +3308,7 @@
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="3" />
 			<recipe name="doorKnob" unlock_level="1" />
 		</perk>
-		<perk name="ironDoorPerk" icon="ui_game_symbol_ironDoor1_v1" description_key="Learn to craft Iron Doors on the metal working bench using a wrench" title_key="Iron Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
+		<perk name="ironDoorPerk" icon="ui_game_symbol_ironDoor" description_key="Learn to craft Iron Doors on the metal working bench using a wrench" title_key="Iron Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
 			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="5" />
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="ironDoor1_v1" unlock_level="1" />
