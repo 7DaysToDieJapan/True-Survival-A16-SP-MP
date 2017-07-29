@@ -124,9 +124,9 @@ If you do not declare them, the decorations of the main biome are used.
 		<biomemap id="10" name="city" />
 		<!--snow/foreset-->
 		<biomemap id="11" name="city_wasteland" />
-		<!--outerWasteLand-->
+		<!--SnowWasteLand-->
 		<biomemap id="12" name="wasteland_hub" />
-		<!--CenterBiome-->
+		<!--Wasteland-->
 		<biomemap id="13" name="caveFloor" />
 		<biomemap id="14" name="caveCeiling" />
 		<!--
@@ -2443,6 +2443,7 @@ If you do not declare them, the decorations of the main biome are used.
 				</layers>
                 <decorations>
 					<decoration type="block" blockname="plantedGoldenrod3Harvest" prob="0.008" />
+                    <decoration type="block" blockname="plantedBlueberry3Harvest" prob=".005" />
 					<decoration type="block" blockname="plantedCotton3Harvest" prob="0.07" />
 					<decoration type="block" blockname="rock01" prob="0.01" />
 					<decoration type="block" blockname="rock02" prob="0.01" />
@@ -2515,7 +2516,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="rock04" prob="0.001" />
 					<decoration type="block" blockname="cntBirdnest" prob="0.0001" />
 					<decoration type="block" blockname="treeDeadShrub" prob="0.001" rotatemax="7" />
-					<decoration type="block" blockname="treeJuniper6m" prob="0.003" rotatemax="7" />
+					<decoration type="block" blockname="treeJuniper6m" prob="0.005" rotatemax="7" />
 					<decoration type="block" blockname="treeMountainPine8m" prob="0.010" rotatemax="7" />
 					<decoration type="block" blockname="treeMountainPine13m" prob="0.015" rotatemax="7" />
 					<decoration type="block" blockname="treeMountainPine16m" prob="0.025" rotatemax="7" />
@@ -2580,7 +2581,10 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="rock04" prob="0.001" />
 					<decoration type="block" blockname="cntBirdnest" prob="0.0001" />
 					<decoration type="block" blockname="treeDeadShrub" prob="0.001" rotatemax="7" />
-					<decoration type="block" blockname="treeJuniper6m" prob="0.003" rotatemax="7" />
+					<decoration type="block" blockname="treeJuniper6m" prob="0.005" rotatemax="7" />
+                    <decoration type="block" blockname="treePlantedMountainPine6m" prob="0.010" rotatemax="7" />
+                    <decoration type="block" blockname="smallRedwoodTree" prob="0.010" rotatemax="7" />
+                    <decoration type="block" blockname="redwoodTree" prob="0.01" rotatemax="7" />
 					<decoration type="block" blockname="treeMountainPine8m" prob="0.010" rotatemax="7" />
 					<decoration type="block" blockname="treeMountainPine13m" prob="0.015" rotatemax="7" />
 					<decoration type="block" blockname="treeMountainPine16m" prob="0.025" rotatemax="7" />

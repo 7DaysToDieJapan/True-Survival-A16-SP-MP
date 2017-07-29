@@ -532,8 +532,7 @@
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
 	</entity_class>
 	<!-- Missing: zombieScreamerFeralRadiated -->
-	<entity_class name="zombieDarlene" extends="zombieTemplateMale">
-		<!-- JZMOD RUN -->
+	<entity_class name="zombieDarlene" extends="zombieTemplateMale"><!-- JZMOD RUN -->
 		<property name="Mesh" value="Zombies/zombieStandardDarleneRagdoll" />
 		<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam" />
 		<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert" />
@@ -544,7 +543,7 @@
 		<property name="AvatarController" value="AvatarZombie01Controller" />
 		<property name="ModelType" value="Standard" />
 		<property name="WalkType" value="3" />
-		<property name="ApproachSpeed" value="0.92" />
+		<property name="ApproachSpeed" value="0.72" />
 		<property name="NightApproachSpeed" value="1.87" />
 		<property name="HandItem" value="handZombie" />
 		<property name="MaxHealth" value="1000" />
