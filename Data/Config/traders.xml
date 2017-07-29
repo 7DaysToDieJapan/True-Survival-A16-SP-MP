@@ -377,10 +377,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item group="weaponsCommonParts" prob="3" />
 			<item group="weaponsMilitaryParts" prob="1" />
 		</trader_item_group>
-		<trader_item_group name="weaponsGunsMixed">
-			<item group="weaponsGunsCommon" prob="3" />
-			<item group="weaponsGunsMilitary" prob="1" />
-		</trader_item_group>
 		<trader_item_group name="ammo">
 			<item name="9mmBullet" count="40,120" />
 			<item name="762mmBullet" count="20,80" />
