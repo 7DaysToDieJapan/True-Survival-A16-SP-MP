@@ -1024,6 +1024,7 @@
 	</biome_intensity_generators>
     <!-- JZMOD BIOME LAYOUT -->
     <biome_spawn_rules>
+        <!-- BIOMES PERCENTAGE-->
 		<biome_spawn_rule name="forest">
 			<biome_generator range="0.11,0.23" />
 		</biome_spawn_rule>
@@ -1040,7 +1041,10 @@
         <biome_spawn_rule name="water">
 			<terrain_generator range="-31,3" />
 		</biome_spawn_rule>
-		<biome_spawn_rule name="wasteland">
+        <biome_spawn_rule name="city">
+			<biome_generator range="0.73,0.84" />
+		</biome_spawn_rule>
+        <biome_spawn_rule name="wasteland">
 			<biome_generator range="0.55,0.65" />
 		</biome_spawn_rule>
         <biome_spawn_rule name="snow">
@@ -1049,14 +1053,42 @@
 		<biome_spawn_rule name="burnt_forest">
 			<biome_generator range="0.65,0.73" />
 		</biome_spawn_rule>
-		<biome_spawn_rule name="city">
-			<biome_generator range="0.73,0.84" />
-		</biome_spawn_rule>
 		<biome_spawn_rule name="city_wasteland">
 			<biome_generator range="0.84,0.92" />
 		</biome_spawn_rule>
 		<biome_spawn_rule name="wasteland_hub">
 			<biome_generator range="0.92,1.00" />
+		</biome_spawn_rule>
+        <!-- CENTER ERASER-->
+        <biome_spawn_rule name="plains">
+            <distance_from_center range="0,3000" />
+		</biome_spawn_rule>
+        <!-- GOOD BIOMES PLAYER SPAWNS IN-->
+		<biome_spawn_rule name="forest">
+			<biome_generator range="0.11,0.23" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="pine_forest">
+			<biome_generator range="0.23,0.34" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="plains">
+			<biome_generator range="0.34,0.46" />
+		</biome_spawn_rule>
+        <!--JZMOD HIGH BIOME-->
+        <biome_spawn_rule name="city">
+			<terrain_generator range="145,200" />
+		</biome_spawn_rule>
+        <biome_spawn_rule name="snow">
+			<terrain_generator range="190,255" />
+		</biome_spawn_rule>
+		<biome_spawn_rule name="desert">
+			<biome_generator range="0.46,0.55" />
+		</biome_spawn_rule>
+        <!--JZMOD LOW BIOME-->
+        <biome_spawn_rule name="water">
+			<terrain_generator range="-31,3" />
+		</biome_spawn_rule>
+        <biome_spawn_rule name="city">
+			<biome_generator range="0.73,0.84" />
 		</biome_spawn_rule>
         <!--JZMOD OUTER RINGS-->
 		<biome_spawn_rule name="snow">
@@ -1068,24 +1100,7 @@
         <biome_spawn_rule name="radiated">
 			<distance_from_center range="10000,11000" />
 		</biome_spawn_rule>
-        <!--JZMOD CENTER RINGS-->
-        <biome_spawn_rule name="wasteland">
-			<distance_from_center range="1500,2250" />
-		</biome_spawn_rule>
-		<biome_spawn_rule name="wasteland_hub">
-			<distance_from_center range="750,1500" />
-		</biome_spawn_rule>
-        <biome_spawn_rule name="city_wasteland">
-			<distance_from_center range="0,750" />
-		</biome_spawn_rule>
-        <!--JZMOD HIGH BIOME-->
-        <biome_spawn_rule name="city">
-			<terrain_generator range="145,200" />
-		</biome_spawn_rule>
-        <biome_spawn_rule name="snow">
-			<terrain_generator range="190,255" />
-		</biome_spawn_rule>
-	</biome_spawn_rules>
+   	</biome_spawn_rules>
     
     
     <!--JZMOD RINGS FOR TESTING BIOMES
