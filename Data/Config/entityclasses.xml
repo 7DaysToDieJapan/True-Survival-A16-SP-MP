@@ -370,9 +370,65 @@
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
 	</entity_class>
-	<!-- Missing: zombieFootballPlayerRadiated -->
-	<!-- Missing: zombieFootballPlayerFeralRadiated -->
-	<entity_class name="zombieFemaleFat" extends="zombieTemplateMale">
+	<entity_class name="zombieFatCop" extends="zombieTemplateMale">
+		<!-- JZMOD WALK -->
+		<property name="Mesh" value="Zombies/zombieStandardCopRagdoll" />
+		<property name="Class" value="EntityZombieCop" />
+		<property name="HandItem" value="handzombieFatCop" />
+		<property name="WalkType" value="1" />
+		<property name="ApproachSpeed" value="0.28" />
+		<property name="NightApproachSpeed" value="1.2" />
+		<property name="RightHandJointName" value="Jaw" />
+		<property name="AvatarController" value="AvatarZombie01Controller" />
+		<property name="ModelType" value="Standard" />
+		<property name="CanClimbLadders" value="true" />
+		<property name="PhysicsBody" value="zombieFat" />
+		<property name="RootMotion" value="true" />
+		<property name="HasDeathAnim" value="true" />
+		<property name="MaxHealth" value="7000" />
+		<property name="ExperienceGain" value="1980" />
+		<property name="Weight" value="70" />
+		<property name="PushFactor" value="20" />
+		<property name="LootListOnDeath" value="17" />
+		<property name="AITask-1" value="BreakDoor" />
+		<property name="AITask-2" value="BreakBlock" />
+		<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="5" />
+		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" />
+		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag" />
+		<property name="AITask-6" value="ApproachSpot" />
+		<property name="AITask-7" value="Wander" />
+		<property name="SoundRandom" value="Enemies/Acid_Puking_Hulk/hulkroam" />
+		<property name="SoundAlert" value="Enemies/Acid_Puking_Hulk/hulkalert" />
+		<property name="SoundAttack" value="Enemies/Acid_Puking_Hulk/hulkattack" />
+		<property name="SoundHurt" value="Enemies/Acid_Puking_Hulk/hulkpain" />
+		<property name="SoundDeath" value="Enemies/Acid_Puking_Hulk/hulkdeath" />
+		<property name="SoundSense" value="Enemies/Acid_Puking_Hulk/hulksense" />
+		<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep" />
+		<property name="Explosion.ParticleIndex" value="8" />
+		<property name="Explosion.RadiusBlocks" value="5" />
+		<property name="Explosion.RadiusEntities" value="6" />
+		<property name="Explosion.BlockDamage" value="500" />
+		<property name="Explosion.EntityDamage" value="150" />
+		<property name="Explosion.DamageBonus.earth" value="0" />
+		<property name="HeadDismemberBonusChance" value="0.08" />
+		<property name="HeadDismemberThreshold" value="0" />
+		<property name="LowerLegDismemberThreshold" value="0" />
+		<property name="UpperLegDismemberThreshold" value="0" />
+		<property name="LowerArmDismemberThreshold" value="0" />
+		<property name="UpperArmDismemberThreshold" value="0" />
+		<property name="LegCrawlerThreshold" value="0" />
+		<property name="LegCrippleThreshold" value="0" />
+		<property name="KnockdownProneDamageThreshold" value="0" />
+		<property name="KnockdownKneelDamageThreshold" value="0" />
+		<property name="LegsExplosionDamageMultiplier" value="2" />
+		<!-- volatile so vulnerable to land mines/explosives -->
+		<property name="ArmsExplosionDamageMultiplier" value="2" />
+		<property name="HeadExplosionDamageMultiplier" value="2" />
+		<property name="ChestExplosionDamageMultiplier" value="2" />
+		<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1" />
+		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
+	</entity_class>
+	<entity_class name="zombieArlene" extends="zombieFatCop"><!--zombieFemaleFat-->
 		<!-- JZMOD RUN -->
 		<property name="Mesh" value="Zombies/zombieStandardFatLadyZRagdoll" />
 		<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam" />
@@ -423,7 +479,40 @@
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
 	</entity_class>
 	<!-- Missing: zombieFemaleFatRadiated -->
-	<!-- jzmod stoped here -->
+    <entity_class name="zombieFemaleFat" extends="zombieTemplateMale"><!--zombieArlene-->
+		<!-- JZMOD WALK -->
+		<property name="Mesh" value="Zombies/zombieStandardArleneRagdoll" />
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert" />
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack" />
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain" />
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath" />
+		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense" />
+		<property name="AvatarController" value="AvatarZombie01Controller" />
+		<property name="ModelType" value="Standard" />
+		<property name="WalkType" value="3" />
+		<property name="ApproachSpeed" value="0.4" />
+		<property name="NightApproachSpeed" value="0.99" />
+		<property name="HandItem" value="handZombie" />
+		<property name="MaxHealth" value="1000" />
+		<property name="CanClimbLadders" value="true" />
+		<property name="PhysicsBody" value="zombieStandardFemale" />
+		<property name="RootMotion" value="true" />
+		<property name="HasDeathAnim" value="true" />
+		<property name="LootListOnDeath" value="38" />
+		<property name="TintMaterial1" value="56,50,40" />
+		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
+	</entity_class>
+	<!-- Missing: zombieArleneRadiated -->
+	<entity_class name="zombieArleneFeral" extends="zombieArlene">
+		<property name="HandItem" value="handZombieFeral" />
+		<property name="MaxHealth" value="2000" />
+		<property name="ExperienceGain" value="742" />
+		<property name="ApproachSpeed" value="1.35" />
+		<property name="NightApproachSpeed" value="1.85" />
+		<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye" />
+		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
+	</entity_class>
 	<entity_class name="zombieFemaleFatFeral" extends="zombieFemaleFat">
 		<property name="HandItem" value="handZombieStrongFeral" />
 		<property name="MaxHealth" value="6000" />
@@ -463,40 +552,7 @@
 	
 	
 	<!-- Missing: zombieMoeFeralRadiated -->
-	<entity_class name="zombieArlene" extends="zombieTemplateMale">
-		<!-- JZMOD WALK -->
-		<property name="Mesh" value="Zombies/zombieStandardArleneRagdoll" />
-		<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
-		<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert" />
-		<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack" />
-		<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain" />
-		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath" />
-		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense" />
-		<property name="AvatarController" value="AvatarZombie01Controller" />
-		<property name="ModelType" value="Standard" />
-		<property name="WalkType" value="3" />
-		<property name="ApproachSpeed" value="0.4" />
-		<property name="NightApproachSpeed" value="0.99" />
-		<property name="HandItem" value="handZombie" />
-		<property name="MaxHealth" value="1000" />
-		<property name="CanClimbLadders" value="true" />
-		<property name="PhysicsBody" value="zombieStandardFemale" />
-		<property name="RootMotion" value="true" />
-		<property name="HasDeathAnim" value="true" />
-		<property name="LootListOnDeath" value="38" />
-		<property name="TintMaterial1" value="56,50,40" />
-		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
-	</entity_class>
-	<!-- Missing: zombieArleneRadiated -->
-	<entity_class name="zombieArleneFeral" extends="zombieArlene">
-		<property name="HandItem" value="handZombieFeral" />
-		<property name="MaxHealth" value="2000" />
-		<property name="ExperienceGain" value="742" />
-		<property name="ApproachSpeed" value="1.35" />
-		<property name="NightApproachSpeed" value="1.85" />
-		<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye" />
-		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
-	</entity_class>
+	
 	<!-- Missing: zombieArleneFeralRadiated -->
 	<entity_class name="zombieScreamer" extends="zombieTemplateMale">
 		<!-- JZMOD WALK -->
@@ -935,64 +991,7 @@
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
 	</entity_class>
 	<!-- Missing: zombieFatHawaiianFeralRadiated -->
-	<entity_class name="zombieFatCop" extends="zombieTemplateMale">
-		<!-- JZMOD WALK -->
-		<property name="Mesh" value="Zombies/zombieStandardCopRagdoll" />
-		<property name="Class" value="EntityZombieCop" />
-		<property name="HandItem" value="handzombieFatCop" />
-		<property name="WalkType" value="1" />
-		<property name="ApproachSpeed" value="0.28" />
-		<property name="NightApproachSpeed" value="1.2" />
-		<property name="RightHandJointName" value="Jaw" />
-		<property name="AvatarController" value="AvatarZombie01Controller" />
-		<property name="ModelType" value="Standard" />
-		<property name="CanClimbLadders" value="true" />
-		<property name="PhysicsBody" value="zombieFat" />
-		<property name="RootMotion" value="true" />
-		<property name="HasDeathAnim" value="true" />
-		<property name="MaxHealth" value="7000" />
-		<property name="ExperienceGain" value="1980" />
-		<property name="Weight" value="70" />
-		<property name="PushFactor" value="20" />
-		<property name="LootListOnDeath" value="17" />
-		<property name="AITask-1" value="BreakDoor" />
-		<property name="AITask-2" value="BreakBlock" />
-		<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="5" />
-		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" />
-		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag" />
-		<property name="AITask-6" value="ApproachSpot" />
-		<property name="AITask-7" value="Wander" />
-		<property name="SoundRandom" value="Enemies/Acid_Puking_Hulk/hulkroam" />
-		<property name="SoundAlert" value="Enemies/Acid_Puking_Hulk/hulkalert" />
-		<property name="SoundAttack" value="Enemies/Acid_Puking_Hulk/hulkattack" />
-		<property name="SoundHurt" value="Enemies/Acid_Puking_Hulk/hulkpain" />
-		<property name="SoundDeath" value="Enemies/Acid_Puking_Hulk/hulkdeath" />
-		<property name="SoundSense" value="Enemies/Acid_Puking_Hulk/hulksense" />
-		<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep" />
-		<property name="Explosion.ParticleIndex" value="8" />
-		<property name="Explosion.RadiusBlocks" value="5" />
-		<property name="Explosion.RadiusEntities" value="6" />
-		<property name="Explosion.BlockDamage" value="500" />
-		<property name="Explosion.EntityDamage" value="150" />
-		<property name="Explosion.DamageBonus.earth" value="0" />
-		<property name="HeadDismemberBonusChance" value="0.08" />
-		<property name="HeadDismemberThreshold" value="0" />
-		<property name="LowerLegDismemberThreshold" value="0" />
-		<property name="UpperLegDismemberThreshold" value="0" />
-		<property name="LowerArmDismemberThreshold" value="0" />
-		<property name="UpperArmDismemberThreshold" value="0" />
-		<property name="LegCrawlerThreshold" value="0" />
-		<property name="LegCrippleThreshold" value="0" />
-		<property name="KnockdownProneDamageThreshold" value="0" />
-		<property name="KnockdownKneelDamageThreshold" value="0" />
-		<property name="LegsExplosionDamageMultiplier" value="2" />
-		<!-- volatile so vulnerable to land mines/explosives -->
-		<property name="ArmsExplosionDamageMultiplier" value="2" />
-		<property name="HeadExplosionDamageMultiplier" value="2" />
-		<property name="ChestExplosionDamageMultiplier" value="2" />
-		<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1" />
-		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
-	</entity_class>
+	
 	<!-- Missing: zombieFatCopRadiated -->
 	<entity_class name="zombieFatCopFeral" extends="zombieFatCop">
 		<property name="HandItem" value="handZombieCopFeral" />
@@ -2151,9 +2150,7 @@
 	</entity_class>
 	<entity_class name="animalRabbitHostile" extends="animalTemplateHostile">
 		<property name="Mesh" value="Animals/Rabbit/RABBIT" />
-		<property name="Prefab" value="NPC" />
-		<property name="Class" value="EntityAnimalRabbit" />
-		<property name="Parent" value="Animals" />
+			<property name="Class" value="EntityAnimalRabbit" />
 		<property name="Weight" value="10" />
 		<property name="MaxHealth" value="100" />
 		<property name="PhysicsBody" value="rabbit" />
@@ -2167,11 +2164,23 @@
 		<property name="Faction" value="undead" />
 		<property name="HasRagdoll" value="true" />
 		<property name="DeadBodyHitPoints" value="175" />
+        <property name="AITask-1" value="BreakDoor" />
+		<property name="AITask-2" value="BreakBlock" />
+		<property name="AITask-3" value="Territorial" />
+		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="20" />
+		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityNPC" param2="20" />
+		<property name="AITask-6" value="ApproachSpot" />
+		<property name="AITask-7" value="Wander" />
+		<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityPlayer" />
+		<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityNPC" />
+		<property name="AITarget-3" value="BlockingTargetTask" />
+		<property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer" />
+		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
+		<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityNPC" />
 		<drop event="Harvest" name="rottingFlesh" count="1" />
 	</entity_class>
 	<entity_class name="animalChickenHostile" extends="animalTemplateHostile">
 		<property name="Mesh" value="Animals/CHICKEN/chickenPrefab" />
-		<property name="Prefab" value="NPC" />
 		<property name="Class" value="EntityAnimalRabbit" />
 		<property name="Parent" value="Animals" />
 		<property name="Weight" value="10" />
@@ -2187,6 +2196,19 @@
 		<property name="Faction" value="undead" />
 		<property name="HasRagdoll" value="true" />
 		<property name="DeadBodyHitPoints" value="175" />
+        <property name="AITask-1" value="BreakDoor" />
+		<property name="AITask-2" value="BreakBlock" />
+		<property name="AITask-3" value="Territorial" />
+		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="20" />
+		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityNPC" param2="20" />
+		<property name="AITask-6" value="ApproachSpot" />
+		<property name="AITask-7" value="Wander" />
+		<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityPlayer" />
+		<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityNPC" />
+		<property name="AITarget-3" value="BlockingTargetTask" />
+		<property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer" />
+		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
+		<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityNPC" />
 		<drop event="Harvest" name="rottingFlesh"  count="1" />
         <drop event="Harvest" name="feather"  count="5" />
 		<drop event="Harvest" name="feather" tool_category="Butcher" count="10" />

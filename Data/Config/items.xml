@@ -1339,9 +1339,9 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="10" />
 			<property name="DamageBlock" value="20" />
 			<property name="Sound_start" value="swoosh" />
-			<property name="DamageBonus.head" value="4" />
+			<property name="DamageBonus.head" value="1" />
 			<property name="DamageBonus.glass" value="1" />
-			<property name="DamageBonus.organic" value="0.2" />
+			<property name="DamageBonus.organic" value="1" />
 			<property name="DamageBonus.cloth" value="0.5" />
 			<property name="DamageBonus.earth" value="0.5" />
 			<property name="DamageBonus.stone" value="0" />
@@ -1842,13 +1842,12 @@ Mesh files no longer used:
 		<property name="CreativeMode" value="None" />
 		<property name="HoldType" value="35" />
 		<property class="Action0">
-			<property name="Delay" value="0.7" />
-			<property name="DamageEntity" value="10" />
+			<property name="Delay" value="0.5" />
+			<property name="DamageEntity" value="2" />
 			<property name="DamageBlock" value="20" />
-			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.3,1,0.2,0.1" />
-			<property name="DamageBonus.glass" value="25" />
-			<property name="DamageBonus.organic" value="5" />
+			<property name="Buff" value="bleeding,scratch" />
+			<property name="Buff_chance" value="0.09,1" />
+            <property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.cloth" value="10" />
 			<property name="DamageBonus.earth" value="3" />
 			<property name="DamageBonus.stone" value="1" />
@@ -1905,14 +1904,14 @@ Mesh files no longer used:
 			<property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.organic" value="5" />
 			<property name="DamageBonus.cloth" value="2" />
-			<property name="DamageBonus.earth" value="2" />
+			<property name="DamageBonus.earth" value="0.5" />
 			<property name="DamageBonus.stone" value="2" />
 			<property name="DamageBonus.hardStone" value="0" />
 			<property name="DamageBonus.wood" value="2" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 			<property name="ToolCategory.Butcher" value="0.4" param1="3.5" />
 			<property name="Sound_harvesting" value="open_animal" param1="organic" />
 		</property>
@@ -1924,8 +1923,10 @@ Mesh files no longer used:
 			<property name="Upgrade_hit_offset" value="0" />
 			<property name="Sound_start" value="repair_block" />
 			<property name="Allowed_upgrade_items" value="narrowLog" />
-         <property name="Restricted_upgrade_items" value="corrugatedMetalSheet,fertilizer,egg,dirtFragment,hoeIron,lockPick,professionKey,babyChicken,hen,plank,scrapIron,forgedIron,forgedSteel,fertileDirt,stick,concreteMix,cobblestones,bricks,cementMix,metalRivetSheet,scrapSteel" />
-    </property>
+            <property name="Restricted_upgrade_items" value="corrugatedMetalSheet,fertilizer,egg,dirtFragment,hoeIron,lockPick,professionKey,babyChicken,hen,plank,scrapIron,forgedIron,forgedSteel,fertileDirt,stick,concreteMix,cobblestones,bricks,cementMix,metalRivetSheet,scrapSteel" />
+            <property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="1" />
+        </property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="4,10" />
 			<property name="BlockDamage" value="10,20" />
@@ -2017,7 +2018,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 			<property name="ToolCategory.Butcher" value="0.5" param1="10" />
 			<property name="Sound_harvesting" value="open_animal" param1="organic" />
 		</property>
@@ -2040,7 +2041,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 			<property name="ToolCategory.Butcher" value="0.5" param1="10" />
 			<property name="Sound_harvesting" value="open_animal" param1="organic" />
 		</property>
@@ -2172,7 +2173,7 @@ Mesh files no longer used:
 		<property name="RepairTools" value="shortSteelPipe" />
 		<property name="EconomicValue" value="760" />
 		<property class="Action0">
-			<property name="Delay" value="0.4" />
+			<property name="Delay" value="0.6" />
 			<property name="Stamina_usage" value="7" />
 			<property name="DamageBonus.head" value="40" />
 			<property name="DamageBonus.glass" value="25" />
@@ -2186,7 +2187,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.steel" value="30" />
 		</property>
 		<property class="Action0">
-			<property name="Delay" value="0.8" />
+			<property name="Delay" value="0.9" />
 			<property name="Stamina_usage" value="14" />
 			<property name="DamageBonus.head" value="60" />
 			<property name="DamageBonus.glass" value="25" />
@@ -2259,7 +2260,7 @@ Mesh files no longer used:
 		<property class="Attributes">
 			<property name="EntityDamage" value="1,5" />
 			<property name="BlockDamage" value="10,20" />
-			<property name="DegradationMax" value="50,600" />
+			<property name="DegradationMax" value="50,400" />
 			<property name="DegradationRate" value="5,1" />
 		</property>
 		<property name="Group" value="Tools/Traps,Basics" />
@@ -2321,7 +2322,7 @@ Mesh files no longer used:
 			<property name="EntityDamage" value="5,10" />
 			<property name="BlockDamage" value="10,20" />
 			<!-- dirt blocks have up to 250 hp; skills + perks up to x4 the damage  -->
-			<property name="DegradationMax" value="200,1000" />
+			<property name="DegradationMax" value="200,800" />
 			<property name="DegradationRate" value="5,1" />
 			<property name="DismembermentBaseChance" value="-0.1,0.05" />
 		</property>
@@ -2358,6 +2359,7 @@ Mesh files no longer used:
 		<property class="Attributes">
 			<property name="EntityDamage" value="10,15" />
 			<property name="DegradationRate" value="5,1" />
+            <property name="DegradationMax" value="300,1000" />
 		</property>
 		<property name="CraftingSkillGroup" value="steelShovelCraft" />
 	</item>
@@ -2448,11 +2450,11 @@ Mesh files no longer used:
 			<property name="DamageBonus.stone" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
 			<property name="DamageBonus.wood" value="1" />
-			<property name="DamageBonus.metal" value="3" />
+			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="0" />
 			<property name="ActionExpBonusMultiplier" value="0" />
-			<property name="ToolCategory.ScrapIronBuilding" value="1" param1="10" />
+			<property name="ToolCategory.ScrapIronBuilding" value="1" param1="8" />
 			<property name="Sound_harvesting" value="wrench_harvest" param1="metal" />
 			<property name="Particle_harvesting" value="true" param1="metal" />
 		</property>
@@ -2517,7 +2519,7 @@ Mesh files no longer used:
 		<property class="Action1">
 			<property name="Class" value="Repair" />
 			<property name="Delay" value="0.5" />
-			<property name="Repair_amount" value="250" />
+			<property name="Repair_amount" value="50" />
 			<property name="Upgrade_hit_offset" value="0" />
 			<property name="Sound_start" value="repair_block" />
 			<property name="Allowed_upgrade_items" value="plank,wood,scrapIron" />
@@ -7263,10 +7265,10 @@ Mesh files no longer used:
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
 			<property name="Sound_start" value="player_painkillers" />
-			<property name="Gain_food" value="1000" />
-			<property name="Gain_water" value="1000" />
-			<property name="Gain_wellness" value="1000" />
-			<property name="Buff" value="bluePillBuff" />
+			<property name="Gain_food" value="0" />
+			<property name="Gain_water" value="0" />
+			<property name="Gain_wellness" value="0" />
+			<property name="Buff" value="nutrition_5_Trigger" />
 		</property>
 	</item>
 	<item id="671" name="brokenGlass">
@@ -11382,13 +11384,13 @@ Mesh files no longer used:
 		<property class="Action0">
 			<property name="Delay" value="1.4" />
 			<property name="Stamina_usage" value="9" />
-			<property name="Buff" value="criticalBlunt,shocked" />
+			<property name="Buff" value="criticalBlunt,shockedBuff" />
 			<property name="Buff_chance" value="0.3,0.9" />
 			<property name="DamageBonus.stone" value="0.25" />
 		</property>
 		<property class="Action1">
 			<property name="Delay" value="4" />
-			<property name="Buff" value="criticalBlunt,shocked" />
+			<property name="Buff" value="criticalBlunt,shockedBuff" />
 			<property name="Buff_chance" value="0.4,1" />
 			<property name="DamageBonus.stone" value="0.5" />
 		</property>
@@ -11537,6 +11539,7 @@ Mesh files no longer used:
 		<property name="RepairTools" value="rockSmall" />
 		<property name="DegradationBreaksAfter" value="true" />
 		<property name="SoundDestroy" value="wooddestroy1" />
+        <property name="DegradationBreaksAfter" value="true" />
 		<property name="FuelValue" value="5" />
 		<property name="Weight" value="10" />
 		<property name="EconomicValue" value="200" />
@@ -11553,18 +11556,18 @@ Mesh files no longer used:
 			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.stone" value="10" />
+			<property name="DamageBonus.stone" value="5" />
 			<property name="DamageBonus.wood" value="0" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.cloth" value="1" />
-			<property name="ToolCategory.CobblestoneBlock" value="1" param1="10" />
+			<property name="ToolCategory.cobblestoneBuilding" value="1" param1="12" />
 			<property name="ActionExp" value="0" />
 			<property name="ActionExpBonusMultiplier" value="0" />
 		</property>
-		<property class="Action1">
+        <property class="Action1">
 			<property name="Class" value="Repair" />
 			<property name="Delay" value="0.5" />
-			<property name="Repair_amount" value="250" />
+			<property name="Repair_amount" value="240" />
 			<property name="Sound_start" value="UseActions/repair_block" />
 			<property name="Allowed_upgrade_items" value="cobblestones" />
             <property name="Restricted_upgrade_items" value="corrugatedMetalSheet,fertilizer,egg,dirtFragment,hoeIron,narrowLog,lockPick,professionKey,babyChicken,hen,plank,scrapIron,forgedIron,forgedSteel,fertileDirt,stick,concreteMix,bricks,cementMix,metalRivetSheet,scrapSteel" />
@@ -11583,50 +11586,162 @@ Mesh files no longer used:
 		<property name="RepairExpMultiplier" value="5.5" />
 	</item>
 	<item id="1566" name="brickHammer">
-		<property name="Extends" value="cobblestoneHammer" />
 		<property name="Meshfile" value="#stonePickaxe?stonePickaxe" /> 
+		<property name="Material" value="stone" />
+		<property name="HoldType" value="32" />
+		<property name="RepairTools" value="rockSmall" />
+		<property name="DegradationBreaksAfter" value="true" />
+		<property name="SoundDestroy" value="wooddestroy1" />
+        <property name="DegradationBreaksAfter" value="true" />
+		<property name="FuelValue" value="5" />
+		<property name="Weight" value="10" />
+		<property name="EconomicValue" value="200" />
+		<property name="SellableToTrader" value="false" />
 		<property class="Action0">
-			<property name="ToolCategory.BrickBlock" value="1" param1="10" />
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="0.8" />
+			<property name="Range" value="2.2" />
+			<property name="Block_range" value="4" />
+			<property name="Sphere" value="0.1" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Stamina_usage" value="4" />
+			<property name="DamageBonus.head" value="5" />
+			<property name="DamageBonus.glass" value="5" />
+			<property name="DamageBonus.steel" value="0" />
+			<property name="DamageBonus.hardStone" value="0" />
+			<property name="DamageBonus.stone" value="5" />
+			<property name="DamageBonus.wood" value="0" />
+			<property name="DamageBonus.metal" value="0" />
+			<property name="DamageBonus.cloth" value="1" />
+			<property name="ToolCategory.BrickBuilding" value="1" param1="10" />
+			<property name="ActionExp" value="0" />
+			<property name="ActionExpBonusMultiplier" value="0" />
 		</property>
-		<property class="Action1">
+        <property class="Action1">
+			<property name="Class" value="Repair" />
+			<property name="Delay" value="0.5" />
+			<property name="Repair_amount" value="300" />
+			<property name="Sound_start" value="UseActions/repair_block" />
 			<property name="Allowed_upgrade_items" value="bricks" />
             <property name="Restricted_upgrade_items" value="corrugatedMetalSheet,fertilizer,egg,dirtFragment,hoeIron,narrowLog,lockPick,professionKey,babyChicken,hen,plank,scrapIron,forgedIron,forgedSteel,fertileDirt,stick,concreteMix,cobblestones,cementMix,metalRivetSheet,scrapSteel" />
+            <property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="8,20" />
+			<property name="BlockDamage" value="2,10" />
+			<property name="DegradationMax" value="100,600" />
+			<property name="DegradationRate" value="2,1" />
+		</property>
+		<property name="Group" value="Tools/Traps" />
 		<property name="ActionSkillGroup" value="brickBuilding" />
 		<property name="CraftingSkillGroup" value="brickHammerCraft" />
-	</item>
+		<property name="RepairExpMultiplier" value="5.5" />
+    </item>
 	<item id="1567" name="concreteSledge">
-		<property name="Extends" value="cobblestoneHammer" />
 		<property name="Meshfile" value="Items/Tools/sledgehammer_steelPrefab" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="shortMetalPipe" />
 		<property name="HoldType" value="33" />
 		<property name="SoundDestroy" value="metaldestroy1" />
-		<property name="FuelValue" value="30" />
+		<property name="FuelValue" value="10" />
+		<property name="DegradationBreaksAfter" value="true" />
+		<property name="Weight" value="10" />
+		<property name="EconomicValue" value="200" />
+		<property name="SellableToTrader" value="false" />
 		<property class="Action0">
-			<property name="ToolCategory.ConcreteBlock" value="1" param1="10" />
+            <property name="Class" value="Melee" />
+			<property name="Delay" value="2" />
+			<property name="Range" value="3.1" />
+			<property name="Sphere" value="0.2" />
+			<property name="Block_range" value="4" />
+			<property name="Sound_start" value="SlowSwoosh" />
+			<property name="Stamina_usage" value="4" />
+			<property name="Stamina_usage" value="4" />
+			<property name="DamageBonus.head" value="5" />
+			<property name="DamageBonus.glass" value="5" />
+			<property name="DamageBonus.steel" value="0" />
+			<property name="DamageBonus.hardStone" value="0" />
+			<property name="DamageBonus.stone" value="10" />
+			<property name="DamageBonus.wood" value="0" />
+			<property name="DamageBonus.metal" value="0" />
+			<property name="DamageBonus.cloth" value="1" />
+			<property name="ToolCategory.concreteBuilding" value="1" param1="40" />
+			<property name="ActionExp" value="0" />
+			<property name="ActionExpBonusMultiplier" value="0" />
 		</property>
-		<property class="Action1">
+        <property class="Action1">
+			<property name="Class" value="Repair" />
+			<property name="Delay" value="0.5" />
+			<property name="Repair_amount" value="600" />
+			<property name="Sound_start" value="UseActions/repair_block" />
 			<property name="Allowed_upgrade_items" value="cementMix" />
             <property name="Restricted_upgrade_items" value="corrugatedMetalSheet,fertilizer,egg,dirtFragment,hoeIron,narrowLog,lockPick,professionKey,babyChicken,hen,plank,scrapIron,forgedIron,forgedSteel,fertileDirt,stick,concreteMix,cobblestones,bricks,metalRivetSheet,scrapSteel" />
+            <property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="8,20" />
+			<property name="BlockDamage" value="2,10" />
+			<property name="DegradationMax" value="100,600" />
+			<property name="DegradationRate" value="2,1" />
+		</property>
+		<property name="Group" value="Tools/Traps" />
 		<property name="ActionSkillGroup" value="concreteBuilding" />
 		<property name="CraftingSkillGroup" value="concreteSledgeCraft" />
-	</item>
-	<item id="1568" name="rConcreteSledge">
-		<property name="Extends" value="concreteSledge" />
-        <property name="Meshfile" value="#hflnew?Crowbar" />
+		<property name="RepairExpMultiplier" value="5.5" />
+    </item>
+	<item id="1568" name="rConcreteBar">
+		<property name="Meshfile" value="#hflnew?Crowbar" />
         <property name="HoldType" value="17" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="shortMetalPipe" />
+		<property name="DegradationBreaksAfter" value="true" />
+		<property name="SoundDestroy" value="metaldestroy1" />
+		<property name="Weight" value="10" />
+		<property name="EconomicValue" value="200" />
+		<property name="SellableToTrader" value="false" />
 		<property class="Action0">
-			<property name="ToolCategory.rConcreteBlock" value="1" param1="10" />
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.4" />
+			<property name="Range" value="2.2" />
+			<property name="Block_range" value="4" />
+			<property name="Sphere" value="0.1" />
+			<property name="Sound_start" value="SlowSwoosh" />
+			<property name="Stamina_usage" value="4" />
+			<property name="DamageBonus.head" value="5" />
+			<property name="DamageBonus.glass" value="5" />
+			<property name="DamageBonus.steel" value="0" />
+			<property name="DamageBonus.hardStone" value="0" />
+			<property name="DamageBonus.stone" value="5" />
+			<property name="DamageBonus.wood" value="0" />
+			<property name="DamageBonus.metal" value="0" />
+			<property name="DamageBonus.cloth" value="1" />
+			<property name="ToolCategory.rConcreteBuilding" value="1" param1="40" />
+			<property name="ActionExp" value="0" />
+			<property name="ActionExpBonusMultiplier" value="0" />
 		</property>
-		<property class="Action1">
+        <property class="Action1">
+			<property name="Class" value="Repair" />
+			<property name="Delay" value="0.5" />
+			<property name="Repair_amount" value="1200" />
+			<property name="Sound_start" value="UseActions/repair_block" />
 			<property name="Allowed_upgrade_items" value="concreteMix" />
             <property name="Restricted_upgrade_items" value="corrugatedMetalSheet,fertilizer,egg,dirtFragment,hoeIron,narrowLog,lockPick,professionKey,babyChicken,hen,plank,scrapIron,forgedIron,forgedSteel,fertileDirt,stick,cobblestones,bricks,cementMix,metalRivetSheet,scrapSteel" />
+            <property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="8,20" />
+			<property name="BlockDamage" value="2,10" />
+			<property name="DegradationMax" value="100,600" />
+			<property name="DegradationRate" value="2,1" />
+		</property>
+		<property name="Group" value="Tools/Traps" />
 		<property name="ActionSkillGroup" value="rConcreteBuilding" />
 		<property name="CraftingSkillGroup" value="rConcreteSledgeCraft" />
-	</item>
+		<property name="RepairExpMultiplier" value="5.5" />
+    </item>
 	<item id="1569" name="screwdriver">
 		<property name="CustomIcon" value="ui_game_symbol_screwdriver" />
 		<property name="Meshfile" value="#hflnew?screwdriver 1" />
@@ -11702,13 +11817,13 @@ Mesh files no longer used:
 		</property>
 		<property class="Action0">
 			<property name="Class" value="Melee" />
-			<property name="Delay" value="0.3" />
+			<property name="Delay" value="0.1" />
 			<property name="Range" value="2.2" />
 			<property name="Block_range" value="4" />
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Sound_harvesting" value="UseActions/wrench_harvest" />
-			<property name="Stamina_usage" value="3" />
+			<property name="Stamina_usage" value="0" />
 			<property name="DamageBonus.head" value="20" />
 			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.stone" value="0" />
@@ -11717,14 +11832,14 @@ Mesh files no longer used:
 			<property name="DamageBonus.steel" value="5" />
 			<property name="DamageBonus.hardStone" value="0" />
 			<property name="DamageBonus.earth" value="0" />
-			<property name="ToolCategory.SteelBlock" value="1" param1="10" />
+			<property name="ToolCategory.SteelBuilding" value="1" param1="50" />
 			<property name="ActionExp" value="0" />
 			<property name="ActionExpBonusMultiplier" value="0" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Repair" />
 			<property name="Delay" value="0.4" />
-			<property name="Repair_amount" value="350" />
+			<property name="Repair_amount" value="2000" />
 			<property name="Sound_start" value="UseActions/repair_block" />
 			<property name="Allowed_upgrade_items" value="metalRivetSheet,scrapSteel,forgedSteel" />
             <property name="Restricted_upgrade_items" value="corrugatedMetalSheet,fertilizer,egg,dirtFragment,hoeIron,narrowLog,lockPick,professionKey,babyChicken,hen,plank,scrapIron,forgedIron,fertileDirt,stick,concreteMix,cobblestones,bricks,cementMix" />
@@ -13723,10 +13838,10 @@ Mesh files no longer used:
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Eat" />
-			<property name="Delay" value="1" />
+			<property name="Delay" value="30" />
 			<property name="Use_time" value="..." />
 			<property name="Consume" value="false" />
-			<property name="Buff" value="suicideBomber" />
+			<property name="Buff" value="SuicideBomber1" />
 			<property name="Buff_chance" value="1" />
 		</property>
 	</item>
@@ -14108,35 +14223,6 @@ Mesh files no longer used:
 		<property name="HoldType" value="40" />
 		<property name="RepairTime" value="10" />
 		<property name="RepairAmount" value="300" />
-	</item>
-	<item id="1824" name="animalGuts">
-		<property name="Extends" value="itemMaster" />
-		<property name="Meshfile" value="Items/Food/meat_rabbit" />
-		<property name="CustomIcon" value="ui_game_symbol_animalGuts" />
-		<property name="HoldType" value="21" />
-		<property class="Action0">
-			<property name="Class" value="Melee" />
-			<property name="Delay" value="1" />
-			<property name="Range" value="3" />
-			<property name="Stamina_usage" value="0" />
-			<property name="Sound_start" value="UseActions/bucketbail_water" />
-			<property name="Buff" value="guts" />
-			<property name="DamageBonus.head" value="0" />
-			<property name="DamageBonus.glass" value="0.01" />
-			<property name="DamageBonus.wood" value="0" />
-			<property name="DamageBonus.cloth" value="0" />
-			<property name="DamageBonus.stone" value="0" />
-			<property name="DamageBonus.metal" value="0" />
-			<property name="DamageBonus.earth" value="0" />
-		</property>
-		<property class="Attributes">
-			<property name="EntityDamage" value="1,1" />
-			<property name="BlockDamage" value="1,1" />
-			<property name="DegradationMax" value="1,1" />
-			<property name="DegradationRate" value="5,5" />
-		</property>
-		<property name="Group" value="Science" />
-		<property name="DescriptionKey" value="animalGutsDesc" />
 	</item>
 	<item id="1825" name="smallKnifeBlade">
 		<property name="Extends" value="itemMaster" />
@@ -15827,7 +15913,7 @@ Mesh files no longer used:
 		<property class="Action1">
 			<property name="Delay" value="2.2" />
 			<property name="Stamina_usage" value="9" />
-			<property name="Buff" value="criticalBlunt,shocked" />
+			<property name="Buff" value="criticalBlunt,shockedBuff" />
 			<property name="Buff_chance" value=".3,.9" />
 			<property name="DamageBonus.head" value="60" />
 			<property name="DamageBonus.wood" value=".25" />

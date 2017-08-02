@@ -2069,10 +2069,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="incendiaryPowder" count="1" />
 		<ingredient name="bulletCasing" count="1" />
 	</recipe>
-	<recipe name="animalGuts" count="1" craft_time="5" craft_exp_gain="30">
-		<ingredient name="rawMeat" count="2" />
-		<ingredient name="brainMatter" count="2" />
-	</recipe>
 	<recipe name="antiVenom" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="5" craft_exp_gain="30">
 		<ingredient name="forestFlower" count="1" />
 		<ingredient name="grainAlcohol" count="1" />

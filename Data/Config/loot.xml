@@ -1399,7 +1399,7 @@
 		<item name="welderTool" prob="12.5" quality="150,300" />
 		<item name="wireTool" prob="2.5" quality="150,300" />
 		<item name="concreteSledge" prob="2.5" quality="150,300" />
-		<item name="rConcreteSledge" prob="2.5" quality="150,300" />
+		<item name="rConcreteBar" prob="2.5" quality="150,300" />
 		<item name="screwdriver" prob="2.5" quality="150,300" />
 		<item name="calipers" prob="2.5" />
 		<item name="toolAndDieSet" prob="1.3" />
@@ -1519,14 +1519,14 @@
 	<lootgroup name="beverages" count="1">
 		<item name="emptyJar" prob="12.5" />
 		<item name="bottledWater" prob="11.9" />
-		<item name="beer" prob="11.9" />
+		<item name="beer" prob="9.9" />
 		<item name="mead" prob="4.0" />
 		<item name="megaCrush" prob="0.45" />
 		<item name="fruitJuice" prob="7.9" />
-		<item name="veggieJuice" prob="11.9" />
+		<item name="veggieJuice" prob="11.75" />
 		<item name="goldenRodTea" prob="9.9" />
 		<item name="redBull" prob="9.9" />
-		<item name="coffee" prob="11.9" />
+		<item name="coffee" prob="9.9" />
 		<item name="redTea" prob="11.9" />
 	</lootgroup>
 	<lootgroup name="automotive+tools+junk" count="0,2">
