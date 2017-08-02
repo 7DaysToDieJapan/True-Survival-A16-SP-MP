@@ -892,7 +892,7 @@ This requires a 50+ food bar:
 <buff id="nutrition_3_Trigger" duration="1" name_key="3 Nutrition" actions="increment(nutrition, 3, 0, 0, 1)" />
 <buff id="nutrition_4_Trigger" duration="1" name_key="4 Nutrition" actions="increment(nutrition, 4, 0, 0, 1)" />
 <buff id="nutrition_5_Trigger" duration="1" name_key="5 Nutrition" actions="increment(nutrition, 5, 0, 0, 1)" />
-<buff id="nutrition_35_Trigger" duration="1" actions="increment(nutrition, 35, 0, 0, 1)" />
+<buff id="nutrition_30_Trigger" duration="1" actions="increment(nutrition, 30, 0, 0, 1)" />
 <buff id="nutritionFade" buffif="nutrition greater 0" debuffif="nutrition less 1" duration="0" actions="increment(nutrition, -1, 10, 0, 0);min(nutrition, 0)" /><!--750-->
 <!--JZMOD GOOD NUTRITION STAGE 1-->
 <buff id="goodNutrition1Tag" buffif="nutrition greater 14" debuffif="nutrition lequal 14" />

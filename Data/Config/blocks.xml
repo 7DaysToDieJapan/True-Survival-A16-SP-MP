@@ -6295,7 +6295,7 @@ kind of free
 		<property name="OpenSound" value="open_door_wood" />
 		<property name="CloseSound" value="close_door_wood" />
 		<property class="RepairItems">
-			<property name="wood" value="10" />
+			<property name="plank" value="10" />
 		</property>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="secureReinforcedDoorWooden" />
@@ -6309,6 +6309,7 @@ kind of free
 		<drop event="Destroy" name="doorKnob" count="1" prob="0.6" />
 		<drop event="Destroy" count="0" />
 		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+        <drop event="Harvest" name="woodDebris" count="0" prob="1" tool_category="Door" />
 		<property name="Group" value="Building,Basics" />
 		<property name="EconomicValue" value="5" />
 		<property name="EconomicBundleSize" value="10" />
@@ -6448,6 +6449,7 @@ kind of free
 		<drop event="Harvest" name="plank" count="4" />
 		<drop event="Destroy" count="0" />
 		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+        <drop event="Harvest" name="woodDebris" count="0" prob="1" tool_category="Door" />
 		<property name="Group" value="Building" />
 	</block>
 	<block id="643" name="metalReinforcedDoorWooden">
@@ -6479,6 +6481,7 @@ kind of free
 		<property name="DowngradeBlock" value="secureReinforcedDoorWooden" />
 		<drop event="Harvest" name="scrapIron" count="8" prob="1" />
 		<drop event="Destroy" count="0" />
+        <drop event="Harvest" name="woodDebris" count="0" prob="1" tool_category="Door" />
 		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 		<property name="Group" value="Building" />
 	</block>
@@ -10469,6 +10472,7 @@ kind of free
 		<drop event="Harvest" name="scrapIron" count="8" prob="1" />
 		<drop event="Destroy" name="doorKnob" count="1" prob="0.6" />
 		<drop event="Destroy" count="0" />
+        <drop event="Harvest" name="woodDebris" count="0" prob="1" tool_category="Door" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 		<property name="Group" value="Building" />
 	</block>
@@ -10521,6 +10525,7 @@ kind of free
 			<property name="scrapIron" value="20" />
 		</property>
 		<drop event="Harvest" name="scrapIron" count="8" prob="1" />
+        <drop event="Harvest" name="woodDebris" count="0" prob="1" tool_category="Door" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 		<property name="Group" value="Building" />
 		<drop event="Destroy" count="0" />
@@ -10617,6 +10622,7 @@ kind of free
 		<drop event="Harvest" name="plank" count="4" prob="1" />
 		<drop event="Destroy" name="doorKnob" count="1" prob="0.6" />
 		<drop event="Destroy" count="0" />
+        <drop event="Harvest" name="woodDebris" count="0" prob="1" tool_category="Door" />
 		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	</block>
 	<block id="1177" name="scrapIronWedgeTipStairs">
@@ -11259,6 +11265,7 @@ kind of free
 		<drop event="Harvest" name="plank" count="4" />
 		<drop event="Destroy" count="0" />
 		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+        <drop event="Harvest" name="woodDebris" count="0" prob="1" tool_category="Door" />
 		<property name="Group" value="Building" />
 		<property name="EconomicValue" value="5" />
 		<property name="EconomicBundleSize" value="10" />
@@ -12640,6 +12647,7 @@ kind of free
 		<property name="ImposterExclude" value="true" />
 		<property name="UseGlobalUV" value="Local" />
 		<property name="FuelValue" value="300" />
+        <property name="CanPickup" value="true" />
 		<property name="DescriptionKey" value="furnitureGroupDesc" />
 		<property name="Collide" value="melee,bullet,arrow,rocket,movement" />
 		<drop event="Destroy" name="plank" count="2,5" />

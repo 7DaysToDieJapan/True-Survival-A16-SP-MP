@@ -60,7 +60,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 			<property name="ToolCategory.Butcher" value="0" param1="5" />
 		</property>
 		<property class="Action1">
@@ -82,7 +82,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 			<property name="ToolCategory.Butcher" value="0" param1="5" />
 		</property>
 		<property class="Attributes">
@@ -125,7 +125,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1.5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 			<property name="ToolCategory.Butcher" value="0" param1="5" />
 		</property>
 		<property class="Action1">
@@ -142,7 +142,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1.5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 			<property name="ToolCategory.Butcher" value="0" param1="5" />
 		</property>
 		<property class="Attributes">
@@ -195,7 +195,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="2" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 			<property name="ToolCategory.Butcher" value="0" param1="10" />
 		</property>
 		<property class="Action1">
@@ -212,7 +212,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="2" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 			<property name="ToolCategory.Butcher" value="0" param1="10" />
 		</property>
 		<property class="Attributes">
@@ -255,7 +255,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 			<property name="ToolCategory.Butcher" value="0" param1="1" />
 		</property>
 		<property class="Action1">
@@ -280,7 +280,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 			<property name="ToolCategory.Butcher" value="0" param1="1" />
 		</property>
 		<property class="Attributes">
@@ -449,7 +449,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 			<property name="ToolCategory.Butcher" value="0.2" param1="10" />
 			<property name="Sound_harvesting" value="open_animal" param1="organic" />
 			<!-- Special harvest sound only plays if the target has ANY matching ToolCategory harvest.
@@ -509,7 +509,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 			<property name="ToolCategory.Butcher" value="1" param1="20" />
 			<property name="Sound_harvesting" value="open_animal" param1="organic" />
 		</property>
@@ -570,7 +570,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 			<property name="ToolCategory.Butcher" value="0.75" param1="10" />
 			<property name="Sound_harvesting" value="open_animal" param1="organic" />
 		</property>
@@ -652,7 +652,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<!-- UseAction -->
@@ -738,7 +738,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<!-- UseAction -->
@@ -811,7 +811,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<!-- UseAction -->
@@ -884,7 +884,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<!-- UseAction -->
@@ -962,7 +962,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<!-- UseAction -->
@@ -1037,7 +1037,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<!-- UseAction -->
@@ -1108,7 +1108,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<!-- UseAction -->
@@ -1178,7 +1178,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<!-- UseAction -->
@@ -1297,7 +1297,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<!-- UseAction -->
@@ -1957,14 +1957,14 @@ Mesh files no longer used:
 			<property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.organic" value="5" />
 			<property name="DamageBonus.cloth" value="2" />
-			<property name="DamageBonus.earth" value="2" />
+			<property name="DamageBonus.earth" value="0.5" />
 			<property name="DamageBonus.stone" value="3" />
 			<property name="DamageBonus.hardStone" value="0" />
 			<property name="DamageBonus.wood" value="5" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -1987,11 +1987,11 @@ Mesh files no longer used:
 		</property>
 	</item>
 	<item id="107" name="fireaxeIron">
-		<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab" />
+		<property name="Meshfile" value="#axe1?AXE5" /> 
+		<property name="HoldType" value="2" />
 		<property name="CustomIcon" value="fireaxeIron" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="shortMetalPipe" />
-		<property name="HoldType" value="17" />
 		<property name="DegradationBreaksAfter" value="true" />
 		<property name="SoundJammed" value="ItemNeedsRepair" />
 		<property name="FuelValue" value="30" />
@@ -2011,10 +2011,10 @@ Mesh files no longer used:
 			<property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.organic" value="10" />
 			<property name="DamageBonus.cloth" value="10" />
-			<property name="DamageBonus.earth" value="2" />
-			<property name="DamageBonus.stone" value="2" />
+			<property name="DamageBonus.earth" value="0.5" />
+			<property name="DamageBonus.stone" value="1" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.wood" value="20" />
+			<property name="DamageBonus.wood" value="14" />
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
@@ -2034,10 +2034,10 @@ Mesh files no longer used:
 			<property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.organic" value="10" />
 			<property name="DamageBonus.cloth" value="10" />
-			<property name="DamageBonus.earth" value="2" />
-			<property name="DamageBonus.stone" value="2" />
+			<property name="DamageBonus.earth" value="0.5" />
+			<property name="DamageBonus.stone" value="1" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.wood" value="20" />
+			<property name="DamageBonus.wood" value="14" />
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
@@ -2064,6 +2064,7 @@ Mesh files no longer used:
 		<property name="CustomIconTint" value="a0a0ff" />
 		<!-- xxx model to be replaced -->
 		<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab" />
+        <property name="HoldType" value="17" />
 		<property name="RepairTools" value="shortSteelPipe" />
 		<property name="EconomicValue" value="760" />
 		<property class="Action0">
@@ -2071,24 +2072,24 @@ Mesh files no longer used:
 			<property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.organic" value="15" />
 			<property name="DamageBonus.cloth" value="15" />
-			<property name="DamageBonus.earth" value="2" />
-			<property name="DamageBonus.stone" value="3" />
-			<property name="DamageBonus.hardStone" value="3" />
-			<property name="DamageBonus.wood" value="40" />
-			<property name="DamageBonus.metal" value="2" />
-			<property name="DamageBonus.steel" value="2" />
+			<property name="DamageBonus.earth" value="0.5" />
+			<property name="DamageBonus.stone" value="0.5" />
+			<property name="DamageBonus.hardStone" value="0.5" />
+			<property name="DamageBonus.wood" value="24" />
+			<property name="DamageBonus.metal" value="1" />
+			<property name="DamageBonus.steel" value="1" />
 		</property>
-		<property class="Action0">
+		<property class="Action1">
 			<property name="DamageBonus.head" value="20" />
 			<property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.organic" value="15" />
 			<property name="DamageBonus.cloth" value="15" />
-			<property name="DamageBonus.earth" value="2" />
-			<property name="DamageBonus.stone" value="3" />
-			<property name="DamageBonus.hardStone" value="3" />
-			<property name="DamageBonus.wood" value="40" />
-			<property name="DamageBonus.metal" value="2" />
-			<property name="DamageBonus.steel" value="2" />
+			<property name="DamageBonus.earth" value="0.5" />
+			<property name="DamageBonus.stone" value="0.5" />
+			<property name="DamageBonus.hardStone" value="0.5" />
+			<property name="DamageBonus.wood" value="24" />
+			<property name="DamageBonus.metal" value="1" />
+			<property name="DamageBonus.steel" value="1" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="10,20" />
@@ -2110,7 +2111,7 @@ Mesh files no longer used:
 		<property name="SellableToTrader" value="false" />
 		<property class="Action0">
 			<property name="Class" value="Melee" />
-			<property name="Delay" value="0.4" />
+			<property name="Delay" value="0.5" />
 			<property name="Range" value="3" />
 			<property name="Sphere" value="0.1" />
 			<property name="Block_range" value="4" />
@@ -2120,17 +2121,17 @@ Mesh files no longer used:
 			<property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.organic" value="5" />
 			<property name="DamageBonus.cloth" value="2" />
-			<property name="DamageBonus.earth" value="5" />
-			<property name="DamageBonus.stone" value="20" />
+			<property name="DamageBonus.earth" value="0.5" />
+			<property name="DamageBonus.stone" value="10" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.wood" value="2" />
-			<property name="DamageBonus.metal" value="20" />
+			<property name="DamageBonus.wood" value="0.5" />
+			<property name="DamageBonus.metal" value="10" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 			<property name="ToolCategory.Butcher" value="0" param1="10" />
 		</property>
-		<property class="Action0">
+		<property class="Action1">
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="0.8" />
 			<property name="Range" value="3" />
@@ -2142,14 +2143,14 @@ Mesh files no longer used:
 			<property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.organic" value="5" />
 			<property name="DamageBonus.cloth" value="2" />
-			<property name="DamageBonus.earth" value="5" />
-			<property name="DamageBonus.stone" value="20" />
+			<property name="DamageBonus.earth" value="0.5" />
+			<property name="DamageBonus.stone" value="10" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.wood" value="2" />
-			<property name="DamageBonus.metal" value="20" />
+			<property name="DamageBonus.wood" value="0.5" />
+			<property name="DamageBonus.metal" value="10" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 			<property name="ToolCategory.Butcher" value="0" param1="10" />
 		</property>
 		<property name="Group" value="Tools/Traps" />
@@ -2173,32 +2174,32 @@ Mesh files no longer used:
 		<property name="RepairTools" value="shortSteelPipe" />
 		<property name="EconomicValue" value="760" />
 		<property class="Action0">
-			<property name="Delay" value="0.6" />
+			<property name="Delay" value="1.5" />
 			<property name="Stamina_usage" value="7" />
 			<property name="DamageBonus.head" value="40" />
 			<property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.organic" value="5" />
 			<property name="DamageBonus.cloth" value="2" />
-			<property name="DamageBonus.earth" value="5" />
-			<property name="DamageBonus.stone" value="30" />
-			<property name="DamageBonus.hardStone" value="30" />
-			<property name="DamageBonus.wood" value="2" />
-			<property name="DamageBonus.metal" value="30" />
-			<property name="DamageBonus.steel" value="30" />
+			<property name="DamageBonus.earth" value="0.5" />
+			<property name="DamageBonus.stone" value="17" />
+			<property name="DamageBonus.hardStone" value="17" />
+			<property name="DamageBonus.wood" value="0.5" />
+			<property name="DamageBonus.metal" value="17" />
+			<property name="DamageBonus.steel" value="17" />
 		</property>
-		<property class="Action0">
-			<property name="Delay" value="0.9" />
+		<property class="Action1">
+			<property name="Delay" value="1.9" />
 			<property name="Stamina_usage" value="14" />
 			<property name="DamageBonus.head" value="60" />
 			<property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.organic" value="5" />
 			<property name="DamageBonus.cloth" value="2" />
-			<property name="DamageBonus.earth" value="5" />
-			<property name="DamageBonus.stone" value="30" />
-			<property name="DamageBonus.hardStone" value="30" />
-			<property name="DamageBonus.wood" value="2" />
-			<property name="DamageBonus.metal" value="30" />
-			<property name="DamageBonus.steel" value="30" />
+			<property name="DamageBonus.earth" value="0.5" />
+			<property name="DamageBonus.stone" value="17" />
+			<property name="DamageBonus.hardStone" value="17" />
+			<property name="DamageBonus.wood" value="0.5" />
+			<property name="DamageBonus.metal" value="17" />
+			<property name="DamageBonus.steel" value="17" />
 		</property>
 		<property name="Group" value="Tools/Traps" />
 		<property class="Attributes">
@@ -2242,7 +2243,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ToolCategory.Butcher" value="0" param1="10" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -2303,7 +2304,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ToolCategory.Butcher" value="0" param1="10" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -2354,7 +2355,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.steel" value="1" />
 			<property name="ToolCategory.Butcher" value="0" param1="10" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="10,15" />
@@ -2396,7 +2397,7 @@ Mesh files no longer used:
 			<property name="ToolCategory.Butcher" value="0" param1="5" />
 			<property name="ToolCategory.Hoe" value="1" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<!-- UseAction -->
@@ -2523,9 +2524,9 @@ Mesh files no longer used:
 			<property name="Upgrade_hit_offset" value="0" />
 			<property name="Sound_start" value="repair_block" />
 			<property name="Allowed_upgrade_items" value="plank,wood,scrapIron" />
-            <property name="Restricted_upgrade_items" value="corrugatedMetalSheet,fertilizer,egg,dirtFragment,hoeIron,narrowLog,lockPick,professionKey,babyChicken,hen,scrapIron,forgedIron,forgedSteel,fertileDirt,stick,concreteMix,cobblestones,bricks,cementMix,metalRivetSheet,scrapSteel" />
+            <property name="Restricted_upgrade_items" value="corrugatedMetalSheet,fertilizer,egg,dirtFragment,hoeIron,narrowLog,lockPick,professionKey,babyChicken,hen,forgedIron,forgedSteel,fertileDirt,stick,concreteMix,cobblestones,bricks,cementMix,metalRivetSheet,scrapSteel" />
             <property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="1,5" />
@@ -2578,7 +2579,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.head" value="6" />
 			<property name="DamageBonus.glass" value="5" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<!-- UseAction -->
@@ -2591,7 +2592,7 @@ Mesh files no longer used:
 			<property name="Allowed_upgrade_items" value="corrugatedMetalSheet,plank,scrapIron,forgedIron,forgedSteel,stick,concreteMix,cobblestones,bricks,cementMix,metalRivetSheet,scrapSteel" />
             <property name="Restricted_upgrade_items" value="fertilizer,egg,dirtFragment,hoeIron,narrowLog,lockPick,professionKey,babyChicken,hen,fertileDirt" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property name="Group" value="Tools/Traps" />
 		<property name="ActionSkillGroup" value="upperBodyAction" />
@@ -2886,7 +2887,7 @@ Mesh files no longer used:
 			<property name="Sound_empty" value="weapon_empty" />
 			<property name="Sound_reload" value="crossbow_reload" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<!-- UseAction -->
@@ -2943,7 +2944,7 @@ Mesh files no longer used:
 			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
 			<property name="Max_strain_time" value="0.43" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Zoom" />
@@ -7226,7 +7227,7 @@ Mesh files no longer used:
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Gain_wellness" value="0" />
-			<property name="Buff" value="nutrition_35_Trigger" />
+			<property name="Buff" value="nutrition_30_Trigger" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -7236,7 +7237,7 @@ Mesh files no longer used:
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Gain_wellness" value="0" />
-			<property name="Buff" value="nutrition_35_Trigger" />
+			<property name="Buff" value="nutrition_30_Trigger" />
 		</property>
 		<property name="ActionSkillGroup" value="medicineCraft" />
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
@@ -9940,15 +9941,15 @@ Mesh files no longer used:
 		<property name="Degradation" value="100" param1="true" />
 		<property name="DegradationBreaksAfter" value="true" />
 		<property name="Group" value="Resources" />
-		<property class="Attributes">
-			<property name="VehicleMaxSpeed" value="5,18" />
-			<property name="VehicleAcceleration" value="7,14" />
-			<property name="DegradationMax" value="1000,6000" />
-		</property>
 		<property class="Action1">
 			<property name="Class" value="PlaceAsBlock" />
 			<property name="Delay" value="0.5" />
 			<property name="Blockname" value="decoyAirFilterMine" />
+		</property>
+        <property class="Attributes">
+			<property name="VehicleMaxSpeed" value="5,18" />
+			<property name="VehicleAcceleration" value="7,14" />
+			<property name="DegradationMax" value="1000,6000" />
 		</property>
 	</item>
 	<item id="1382" name="candyTin">
@@ -10100,7 +10101,8 @@ Mesh files no longer used:
 	</item>
 	<item id="1431" name="smallEngine">
 		<property name="PartType" value="Receiver" />
-		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
+		<property name="HandMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="VehicleSlotType" value="engine" />
 		<property name="Material" value="Msteel" />
@@ -10118,6 +10120,8 @@ Mesh files no longer used:
 			<property name="Pump" value="exhaust" />
 			<property name="Barrel" value="engineBlock" />
 		</property>
+        <property class="Attributes">
+	</property>
 		<property name="CraftingSkillGroup" value="engineeringCraft" />
 	</item>
 	<item id="1432" name="carBattery">
@@ -10655,7 +10659,6 @@ Mesh files no longer used:
 	</item>
 	<item id="1523" name="craftedRifle">
 		<property name="Extends" value="gunHuntingRifle" />
-		
 		<property name="CustomIcon" value="ui_game_symbol_craftedRifle" />
 		<property name="HandMeshfile" value="#steampunk?buechse" />
         <property name="DropMeshfile" value="#steampunk?buechse" />
@@ -11052,7 +11055,7 @@ Mesh files no longer used:
 			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
 			<property name="Max_strain_time" value="1" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="2" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Melee" />
@@ -11111,7 +11114,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.cloth" value="5" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="3" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Attributes">
 			<property name="GetQualityFromWeapon" value="true" />
@@ -11419,7 +11422,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.steel" value="10" />
 			<property name="DamageBonus.hardStone" value="10" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="10" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<property name="Delay" value="4.04" />
@@ -11429,7 +11432,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.hardStone" value="15" />
 			<property name="DamageBonus.metal" value="18" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="10" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="20,40" />
@@ -11440,11 +11443,13 @@ Mesh files no longer used:
 	</item>
 	<item id="1562" name="firemanAxe">
 		<property name="Extends" value="fireaxeIron" />
+        <property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab" />
+        <property name="HoldType" value="17" />
 		<property class="Action0">
-			<property name="ToolCategory.Door" value="0" param1="25" />
+			<property name="ToolCategory.Door" value="0" param1="10" />
 		</property>
 		<property class="Action1">
-			<property name="ToolCategory.Door" value="0" param1="25" />
+			<property name="ToolCategory.Door" value="0" param1="10" />
 		</property>
 		<property name="CustomIcon" value="ui_game_symbol_tomahawk" />
 		<property name="DescriptionKey" value="firemanAxeDesc" />
@@ -11906,7 +11911,7 @@ Mesh files no longer used:
 		<property name="DescriptionKey" value="engineBlockDesc" />
 		<property class="Attributes">
 			<property name="VehicleStartChance" value="0.5,0.99" />
-			<property name="VehicleTankSize" value="1000,2000" />
+			<property name="VehicleTankSize" value="1000, 2000" />
 			<property name="DegradationMax" value="1000,6000" />
 		</property>
 		<property name="CraftingSkillGroup" value="engineeringCraft" />
@@ -12659,7 +12664,7 @@ Mesh files no longer used:
 		<property name="DescriptionKey" value="qc_ZombieDesc" />
 		<property class="Action1">
 			<property name="QuestGiven" value="challenge_Killer" />
-		</property>
+       	</property>
 	</item>
 	<!--JZMOD DRUGS & FOODS-->
 	<item id="1699" name="herbalCream">
@@ -13040,8 +13045,6 @@ Mesh files no longer used:
 		<property name="Extends" value="foodMaster" />
 		<property name="Material" value="Mveggie" />
 		<property name="Weight" value="1" />
-		<property name="Material" value="Mveggie" />
-		<property name="Weight" value="1" />
 		<property name="Meshfile" value="#fruits?carrot" />
 		<property name="DescriptionKey" value="carrotDesc" />
 		<property class="Action1">
@@ -13053,8 +13056,6 @@ Mesh files no longer used:
 		<property name="Material" value="Mveggie" />
 		<property name="Weight" value="1" />
 		<property name="CustomIcon" value="ui_game_symbol_tomato1" />
-		<property name="Material" value="Mveggie" />
-		<property name="Weight" value="1" />
 		<property name="CustomIcon" value="ui_game_symbol_tomato" />
         <property name="Meshfile" value="#Tomato1?Tomato1Prefab" />
         <property name="DropMeshfile" value="#Tomato1?Tomato1Prefab" />
@@ -15727,7 +15728,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.earth" value="0" />
 			<property name="ToolCategory.SteelBlock" value="1" param1="10" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Repair" />
@@ -15772,7 +15773,7 @@ Mesh files no longer used:
             <property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
             <property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="4" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
             <property name="Class" value="Melee" />
@@ -15792,7 +15793,7 @@ Mesh files no longer used:
             <property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
             <property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="4" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="6,15" />
@@ -16377,7 +16378,7 @@ Mesh files no longer used:
 		<property name="Weight" value="50" />
 		<property class="Action0">
 			<property name="Class" value="Melee" />
-			<property name="Delay" value="1.5" />
+			<property name="Delay" value="1.3" />
 			<property name="Range" value="2.7" />
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
@@ -16399,7 +16400,7 @@ Mesh files no longer used:
 		</property>
         <property class="Action1">
             <property name="Class" value="Melee" />
-			<property name="Delay" value="6" />
+			<property name="Delay" value="2" />
 			<property name="Range" value="2.7" />
             <property name="Stamina_usage" value="12" />
             <property name="Buff" value="bleeding" />
@@ -16460,7 +16461,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ToolCategory.Butcher" value="0" param1="10" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -16520,7 +16521,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 			<property name="ToolCategory.Butcher" value="0" param1="1" />
 		</property>
 		<property class="Action1">
@@ -16545,7 +16546,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 			<property name="ToolCategory.Butcher" value="0" param1="1" />
 		</property>
 		<property class="Attributes">
@@ -16783,6 +16784,69 @@ Mesh files no longer used:
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="1" />
         <property name="CustomIcon" value="ui_game_symbol_brassKnucklesMold" />
+	</item>
+    <item id="2048" name="woodBuildingSkill">
+		<property name="Extends" value="schematicMaster" />
+		<property name="CustomIcon" value="ui_game_symbol_BuildingSkillBook" />
+		<property class="Action1">
+			<property name="Skills_to_gain" value="woodBuilding" />
+		</property>
+		<property name="DescriptionKey" value="BuildingSkillBookDesc" />
+		<property name="Group" value="Books" />
+	</item>
+    <item id="2049" name="cobblestoneBuildingSkill">
+		<property name="Extends" value="schematicMaster" />
+		<property name="CustomIcon" value="ui_game_symbol_BuildingSkillBook" />
+		<property class="Action1">
+			<property name="Skills_to_gain" value="cobblestoneBuilding" />
+		</property>
+		<property name="DescriptionKey" value="BuildingSkillBookDesc" />
+		<property name="Group" value="Books" />
+	</item>
+    <item id="2050" name="brickBuildingSkill">
+		<property name="Extends" value="schematicMaster" />
+		<property name="CustomIcon" value="ui_game_symbol_BuildingSkillBook" />
+		<property class="Action1">
+			<property name="Skills_to_gain" value="brickBuilding" />
+		</property>
+		<property name="DescriptionKey" value="BuildingSkillBookDesc" />
+		<property name="Group" value="Books" />
+	</item>
+    <item id="2051" name="concreteBuildingSkill">
+		<property name="Extends" value="schematicMaster" />
+		<property name="CustomIcon" value="ui_game_symbol_BuildingSkillBook" />
+		<property class="Action1">
+			<property name="Skills_to_gain" value="concreteBuilding" />
+		</property>
+		<property name="DescriptionKey" value="BuildingSkillBookDesc" />
+		<property name="Group" value="Books" />
+	</item>
+    <item id="2052" name="rConcreteBuildingSkill">
+		<property name="Extends" value="schematicMaster" />
+		<property name="CustomIcon" value="ui_game_symbol_BuildingSkillBook" />
+		<property class="Action1">
+			<property name="Skills_to_gain" value="rConcreteBuilding" />
+		</property>
+		<property name="DescriptionKey" value="BuildingSkillBookDesc" />
+		<property name="Group" value="Books" />
+	</item>
+    <item id="2053" name="scrapIronBuildingSkill">
+		<property name="Extends" value="schematicMaster" />
+		<property name="CustomIcon" value="ui_game_symbol_BuildingSkillBook" />
+		<property class="Action1">
+			<property name="Skills_to_gain" value="scrapIronBuilding" />
+		</property>
+		<property name="DescriptionKey" value="BuildingSkillBookDesc" />
+		<property name="Group" value="Books" />
+	</item>
+    <item id="2054" name="steelBuildingSkill">
+		<property name="Extends" value="schematicMaster" />
+		<property name="CustomIcon" value="ui_game_symbol_BuildingSkillBook" />
+		<property class="Action1">
+			<property name="Skills_to_gain" value="steelBuilding" />
+		</property>
+		<property name="DescriptionKey" value="BuildingSkillBookDesc" />
+		<property name="Group" value="Books" />
 	</item>
     <!-- JZMOD UN USED MESHES
         <property name="Meshfile" value="#crudeweapons?nailwood" /><property name="HoldType" value="2" />works nial shiv not using

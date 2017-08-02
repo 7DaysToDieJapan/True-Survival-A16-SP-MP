@@ -428,7 +428,7 @@
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
 	</entity_class>
-	<entity_class name="zombieArlene" extends="zombieFatCop"><!--zombieFemaleFat-->
+	<entity_class name="zombieFemaleFat" extends="zombieFatCop"><!--zombieFemaleFat-->
 		<!-- JZMOD RUN -->
 		<property name="Mesh" value="Zombies/zombieStandardFatLadyZRagdoll" />
 		<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam" />
@@ -479,7 +479,7 @@
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
 	</entity_class>
 	<!-- Missing: zombieFemaleFatRadiated -->
-    <entity_class name="zombieFemaleFat" extends="zombieTemplateMale"><!--zombieArlene-->
+    <entity_class name="zombieArlene" extends="zombieTemplateMale"><!--zombieArlene-->
 		<!-- JZMOD WALK -->
 		<property name="Mesh" value="Zombies/zombieStandardArleneRagdoll" />
 		<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />

@@ -46,8 +46,8 @@ RewardSkillPoint_keyword,,Keywords,KgNone,Skill Point,Point de compétence,Ferti
 requirementGroupFireaxe,,Requirement Group,KgNone,Holding Fire Axe,Tenir une hache de pompier,Feueraxt halten,,Sostener un hacha de incendio
 requirementGroupShotgun,,Requirement Group,KgNone,Holding Shotgun,Tenir un fusil à pompe,Schrotflinte halten,,Sostener una escopeta
 tutorialTipQuest01,,Popup Tip,,"Welcome Survivor,\n\nForget what you know about 7 Days to Die it will not help you here. Approach this Mod from a fresh perspective or you will surely be eaten by the horde or surcome to the elements. You will now step into the life of one of the few humans left alive after the outbreak. Humanity will live or die upon your struggle. Prepare to experience the meaning of TRUE SURVIVAL.\n\nDie well my friend.\n\nSpider",,,,
-tutorialTipQuest02,,Popup Tip,KgNone,"True Survival Notes!\n\n1)Zombies take much more damage in their heads and very little everywhere else.\n\n2)Zombies can run in the shadows even during the day.\n\n3)Wood and Stone materials will not hurt Iron and Iron materials will not hurt Steel materials.\n\n4)To read all the True Survival Mod Notes check your journal often.",,,,
-skillPointTip,,Popup Tip,KgNone,"True Survival Notes!\n\n1)Perks that unlock recipes will state in their descriptions if the item is crafted on a workbench and if it requires a tool.\n\n2)Extra professions can be learned by collecting 20 profession pages and crafting a profession kit.\n\n3)Hard Stone-After about 6 layers of normal stone rock under the soil of the biome you will find HardStone. It has the color of bedrock but does not chime when hit. This stone is very hard and can only be hurt by Steel Tools, Stone Drills and Explosives that contains Nitroglycerin.",,,,
+tutorialTipQuest02,,Popup Tip,KgNone,"True Survival Notes!\n\n1)Zombies take much more damage in their heads and very little everywhere else.\n\n2)Zombies move at different and un predictable speeds.\n\n3)Wood and Stone materials will not hurt Iron and Iron materials will not hurt Steel materials.\n\n4)To read all the True Survival Mod Notes check your journal often.",,,,
+skillPointTip,,Popup Tip,KgNone,"True Survival Notes!\n\n1)Dead is Dead! Every time you die you will lose 10 wellness and there is no bottom to wellness. So when the player dies with less than 10 wellness they cannot respawn alive.\n\n2)Extra professions can be learned by collecting 20 profession pages and crafting a profession kit.\n\n3)Hard Stone-After about 6 layers of normal stone rock under the soil of the biome you will find HardStone. It has the color of bedrock but does not chime when hit. This stone is very hard and can only be hurt by Steel Tools, Stone Drills and Explosives that contains Nitroglycerin.",,,,
 quest_BasicSurvival,,,,Basic Survival,,,,
 quest_BasicSurvival1,,,,Choose your Profession,,,,
 quest_BasicSurvival1_subtitle,,,,Choose your Profession,,,,
@@ -94,9 +94,9 @@ quest_BasicSurvival14_description,,,,"Water is vital. Water is life. There's not
 quest_BasicSurvival15,,,,Craft Iron Reinforced Club,,,,
 quest_BasicSurvival15_subtitle,,,,Craft Iron Reinforced Club,,,,
 quest_BasicSurvival15_description,,,,"Okay, it's time to improve. So far the wooden club was useful, but there's a way to make it even better. Use scrap metal and attach it to your wooden club. Why? Because it hurts more.",,,,
-quest_BasicSurvival16,,,,Find some Yucca,,,,
-quest_BasicSurvival16_subtitle,,,,Find some Yucca,,,,
-quest_BasicSurvival16_description,,,,"You need to eat. If you don't you will starve and die. That's the facts of life. Find some food. If you find a cactus break it apart. It contains yucca which may not be yummy but definitely use full, it can be eaten or used for hydration by crafting Yucca Juice. If you can’t find any cactuses be on the lookout for wild growing Blue Berries, Potato’s, Apples and Carrots.",,,,
+quest_BasicSurvival16,,,,Making Food Servings,,,,
+quest_BasicSurvival16_subtitle,,,,Making Food Servings,,,,
+quest_BasicSurvival16_description,,,,"You need to eat. If you don't you will starve and die. That's the facts of life. Find some food. Basic raw foods can be scraped into servings and used to cook more nutritious meals. Make some food servings to get the hang of it. Be on the lookout for wild growing foods like Blue Berries, Potato’s, Apples and Carrots.",,,,
 quest_BasicSurvival17,,,,Craft a torch,,,,
 quest_BasicSurvival17_subtitle,,,,Craft a torch,,,,
 quest_BasicSurvival17_description,,,,"It gets dark at night. There are several ways to light your place. The easiest is a torch. You may already carry one but it's time to make another one and hang it on a wall. Find some coal and a stick and there's your torch. If you place it on a wall, it will consume combustible materials and warm you if you are close. If it runs out of materials to burn the light will go out. (side note: apparently torches put a strain on your computer's GPU resources, so don't use too many or your frame rate will drop. Use candles and other lights instead.)",,,,
@@ -421,11 +421,6 @@ landClaimTip,,Popup Tip,,"A land claim grants a hardness modifier to all blocks 
 landClaimTip_title,,Popup Tip,,Land Claim,,,,
 passthroughTriggeringTip,,Popup Tip,,"Any combination of trigger plates, motion sensors, and trip wires will use Passthrough Triggering. This activates all directly connected trigger components when the Parent is triggered. An example usage of this is surrounding your base with a network of trip wires to sound an alarm.",,,,
 passthroughTriggeringTip_title,,Popup Tip,,Passthrough Triggering,,,,
-woodBuildingTip,,Popup Tip,KgNone,"Please add text here to finish me",,,,
-cobblestoneBuildingTip,,Popup Tip,KgNone,"Please add text here to finish me",,,,
-brickBuildingTip,,Popup Tip,KgNone,"Please add text here to finish me",,,,
-concreteBuildingTip,,Popup Tip,KgNone,"Please add text here to finish me",,,,
-rConcreteBuildingTip,,Popup Tip,KgNone,"Please add text here to finish me",,,,
-scrapIronBuildingTip,,Popup Tip,KgNone,"Please add text here to finish me",,,,
-steelBuildingTip,,Popup Tip,KgNone,"Please add text here to finish me",,,,
+BuildingTip,,Popup Tip,KgNone,"Build Frames and upgrade them to gain more xp in this skill and learn how to craft the used upgrade material from scratch instead of having to scavenge for it. ",,,,
+
 

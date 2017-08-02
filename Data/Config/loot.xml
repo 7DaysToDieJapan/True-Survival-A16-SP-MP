@@ -2486,7 +2486,6 @@
 	<lootcontainer id="55" count="1,5" size="5,4" sound_open="UseActions/open_cash_register" sound_close="UseActions/close_cash_register" loot_quality_template="baseTemplate">
 		<item name="paper" count="1,3" prob="0.031" />
 		<item name="oldCash" count="3,13" prob="0.1" />
-		<item name="casinoCoin" count="1,12" />
 	</lootcontainer>
 	<!-- Apache Artifact Chest -->
 	<lootcontainer id="56" count="1" size="6,3" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="baseTemplate">
@@ -2502,7 +2501,6 @@
 		<item name="ironCrossbowBolt" count="4,12" prob="12.0" />
 		<item group="weaponsCrossbow+ammo" count="1" prob="6.0" />
 		<item name="tazasStoneaxe" count="1" prob="10"/>
-		<item name="casinoCoin" count="20,200" prob="10.0" />
 		<item name="oldCash" count="12,45" prob="5" />
 	</lootcontainer>
 	<!-- miners chest -->
@@ -2599,7 +2597,6 @@
 		<item group="rareTools" count="1" prob="15.0" />
 		<item group="rareMedicine" quality="350,500" count="1" prob="15.0" />
 		<item group="treasureAmmo" />
-		<item name="casinoCoin" count="300,800" />
 		<item group="rareOres" count="5,11" />
 		<item name="oldCash" count="50,250" prob="0.5" />
 	</lootcontainer>
@@ -2703,7 +2700,6 @@
 		<item name="beer" prob="3" />
 		<item name="grainAlcohol" />
 		<item name="oldCash" count="1,15" />
-		<item name="casinoCoin" count="1,10" />
 		<item name="antibiotics" />
 		<item name="painkillers" />
 		<item group="weaponsCommonParts" prob="0.2" />
@@ -2724,7 +2720,6 @@
 	<lootcontainer id="84" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="junkPersonal" prob="4" />
 		<item name="oldCash" count="4,45" prob="2" />
-		<item name="casinoCoin" count="10,30" />
 		<item name="scrapPlastics" count="2" prob="0.3" />
 		<item name="bloodDrawKit" prob="0.3" />
 		<item name="painkillers" />
@@ -3172,68 +3167,67 @@
 		<item group="backpacks" prob="1" />
 	</lootcontainer>
 	<!-- Soldier Loot  -->
-	<lootcontainer id="212" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="212" count="1" size="4,4" buff="nutrition_30_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="soldier" count="1" />
 	</lootcontainer>
 	<!-- Doctor Loot  -->
-	<lootcontainer id="213" count="1" size="4,4"  destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="213" count="1" size="4,4"  buff="nutrition_30_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="doctor" count="1" />
 	</lootcontainer>
 	<!-- Bouncer Loot  -->
-	<lootcontainer id="214" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="214" count="1" size="4,4" buff="nutrition_30_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="bouncer" count="1" />
 	</lootcontainer>
 	<!-- Chemist Loot  -->
-	<lootcontainer id="215" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="215" count="1" size="4,4" buff="nutrition_30_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="chemist" count="1" />
 	</lootcontainer>
 	<!-- Carpenter Loot  -->
-	<lootcontainer id="216" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="216" count="1" size="4,4" buff="nutrition_30_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="carpenter" count="1" />
 	</lootcontainer>
 	<!-- Cop Loot  -->
-	<lootcontainer id="217" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
-		<!--buff="nutrition_35_Trigger"-->
+	<lootcontainer id="217" count="1" size="4,4" buff="nutrition_30_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="cop" count="1" />
 	</lootcontainer>
 	<!-- Mason Loot  -->
-	<lootcontainer id="218" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="218" count="1" size="4,4" buff="nutrition_30_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="mason" count="1" />
 	</lootcontainer>
 	<!-- Chef Loot  -->
-	<lootcontainer id="219" count="1" size="5,5" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="219" count="1" size="5,5" buff="nutrition_30_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="chef" count="1" />
 	</lootcontainer>
 	<!-- Fitness Instructor Loot  -->
-	<lootcontainer id="220" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="220" count="1" size="4,4" buff="nutrition_30_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="fitnessInstructor" count="1" />
 	</lootcontainer>
 	<!-- Fireman Loot  -->
-	<lootcontainer id="221" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="221" count="1" size="4,4" buff="nutrition_30_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="fireman" count="1" />
 	</lootcontainer>
 	<!-- Iron Worker Loot  -->
-	<lootcontainer id="222" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="222" count="1" size="4,4" buff="nutrition_30_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="ironWorker" count="1" />
 	</lootcontainer>
 	<!-- Electrician Loot  -->
-	<lootcontainer id="223" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="223" count="1" size="4,4" buff="nutrition_30_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="electrician" count="1" />
 	</lootcontainer>
 	<!-- Steel Welder Loot  -->
-	<lootcontainer id="224" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="224" count="1" size="4,4" buff="nutrition_30_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="steelWelder" count="1" />
 	</lootcontainer>
 	<!-- Thief Loot  -->
-	<lootcontainer id="225" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="225" count="1" size="4,4" buff="nutrition_30_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="thief" count="1" />
 	</lootcontainer>
 	<!-- Park Ranger Loot  -->
-	<lootcontainer id="226" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="226" count="1" size="4,4" buff="nutrition_30_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="parkRanger" count="1" />
 	</lootcontainer>
 	<!-- Mechanic Loot  -->
-	<lootcontainer id="227" count="1" size="4,4" buff="nutrition_35_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
+	<lootcontainer id="227" count="1" size="4,4" buff="nutrition_30_Trigger" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="mechanic" count="1" />
 	</lootcontainer>
 	<!--1st Responder Loot-->
