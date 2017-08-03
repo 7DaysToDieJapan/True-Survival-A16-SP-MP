@@ -151,7 +151,7 @@
 		<property name="SoundAttack" value="Enemies/Base_Zombie_Male/zombiemaleattack" />
 		<property name="SoundSleeperSense" value="sleepersense" />
 		<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep" />
-		<property name="TimeStayAfterDeath" value="5" />
+		<property name="TimeStayAfterDeath" value="10" />
 		<property name="AttackTimeoutDay" value="1.5" />
 		<!-- in s -->
 		<property name="AttackTimeoutNight" value="1.1" />
@@ -1135,7 +1135,7 @@
 	<!-- Missing: zombieSoldierFeralRadiated -->
 	<entity_class name="zombieSkateboarder" extends="zombieBoe">
 		<!-- JZMOD RUN -->
-		<property name="ApproachSpeed" value="0.96" />
+		<property name="ApproachSpeed" value="0.76" />
 		<property name="NightApproachSpeed" value="1.75" />
 		<property name="Mesh" value="Zombies/zombieStandardHoodieRagdoll" />
 		<property name="SoundRandom" value="zombiemaleroam" />
@@ -1938,7 +1938,7 @@
 		<!--property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" /-->
 		<!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
 		<property name="MaxHealth" value="50" />
-		<property name="HandItem" value="handZombie" />
+		<property name="HandItem" value="handSnake" />
 		<property name="Weight" value="70" />
 		<property name="WanderSpeed" value="0.08" />
 		<property name="PanicSpeed" value="0.2" />
@@ -2280,6 +2280,7 @@
 		<!-- used to determine container X/Y size -->
 		<property name="Faction" value="none" />
 	</entity_class>
+    <!--
 	<entity_class name="DroppedLootContainer">
 		<property name="Mesh" value="LootContainers/backpack_droppedPrefab" />
 		<property name="ModelType" value="Custom" />
@@ -2289,9 +2290,8 @@
 		<property name="TimeStayAfterDeath" value="60" />
 		<property name="IsEnemyEntity" value="false" />
 		<property name="LootListOnDeath" value="47" />
-		<!-- used to determine container X/Y size -->
 		<property name="Faction" value="none" />
-	</entity_class>
+	</entity_class>-->
 	<entity_class name="EvisceratedRemains">
 		<property name="Mesh" value="Gore/gore_block1_bonesPrefab" />
 		<property name="ModelType" value="Custom" />

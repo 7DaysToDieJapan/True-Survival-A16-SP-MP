@@ -555,12 +555,12 @@ This requires a 50+ food bar:
 </buff>
 <!--JZMOD ADDED-->
 <!--JZMOD BURN WOUND-->
-<buff id="burnWound" mutex="burnWound" duration="7200" onexpired="didntHealBiteWound" ondebuff="healBurnWound" name_key="Blistering Skin" type="bleeding" description_key="Your skin is badly burned and blistering. Treat it with some Aloe Cream befor it gets infected." tooltip_key="Hot!  Hot!   Hot!" icon="ui_game_symbol_run" cures="aloeCream" >
+<buff id="burnWound" mutex="burnWound" duration="7200" onexpired="didntHealBurnWound" ondebuff="healBurnWound" name_key="Blistering Skin" type="bleeding" description_key="Your skin is badly burned and blistering. Treat it with some Aloe Cream befor it gets infected." tooltip_key="Hot!  Hot!   Hot!" icon="ui_game_symbol_burnWound" cures="aloeCream" >
 	<modify id="0" stat="stamina" amount="2" rate="5" />
     <modify id="1" stat="health" amount="-1" rate="60" />
 </buff>
 <buff id="healBurnWound" duration="1" actions="increment(scratch, 6, 0, 0, 1)" />
-<buff id="didntHealBiteWound" duration="1" actions="increment(scratch, 16, 0, 0, 1)" />
+<buff id="didntHealBurnWound" duration="1" actions="increment(scratch, 16, 0, 0, 1)" />
 <!--JZMOD Limp Buff-->
 <buff id="limp" name_key="Limp" buffif="health less .1" mutex="limp,Drunk,limp1,limp2" duration="1" onexpired="limp1" type="speedmodifier" tooltip_key="You are injured and limping" icon="ui_game_symbol_limp">
 	<modify id="0" stat="speedmodifier" mulValue="0.4" />
@@ -627,12 +627,15 @@ This requires a 50+ food bar:
     <modify id="1" stat="speedmodifier" mulValue="0.50"/>
 </buff>
 <!--JZMOD 1H MELEE ALT ACTION-->
-<buff id="fightOffEnemy" duration="1.3" />
+<buff id="fightOffEnemy" duration="1.3" icon="ui_game_symbol_fightOffEnemy"/>
 <!-- JZMOD WOUND SYSTEM -->
 <buff id="scratch" duration="1" actions="increment(scratch, 1, 0, 0, 1)" />
 <buff id="scratchesHealing" duration="0" buffif="scratch less 6" debuffif="scratch gequal 6" actions="increment(scratch, -1, 1200, 0, 0);min(scratch, 0)" />
 <!--JZMOD Shrapnel Wound-->
-<buff id="shrapnel" mutex="shrapnel" duration="2" actions="increment(scratch, 10, 0, 0, 1);buff(bleeding)" castsound="Buffs/critical_blunt"  />
+<buff id="shrapnel" mutex="shrapnel" duration="1" actions="increment(scratch, 10, 0, 0, 1);buff(bleeding)" castsound="Buffs/critical_blunt"  />
+<buff id="riggedChest" mutex="riggedChest" duration="1" actions="buff(shrapnel)" type="bleeding"  >
+    <modify id="0" stat="health" amount="-40" rate="1" />
+</buff>
 <!--JZMOD ZOMEBIE BITES-->
 <buff id="bite" mutex="fightOffEnemy,bite" castsound="Buffs/critical_blunt" duration="3600" name_key="Bite" type="bleeding" requires="stunned" actions="increment(@wellness, -0.4, 300, 0, 0);buff(bleeding)" onexpired="infection" description_key="You were biten. You must cauterize the bite soon or you will catch the Z virus." tooltip_key="You have been bitten" icon="ui_game_symbol_zombie" cures="redHotPipe,redHotSteelPipe">
 	<modify id="0" stat="stamina" amount="-1" rate="5" />
@@ -732,15 +735,15 @@ This requires a 50+ food bar:
 	<modify id="3" stat="food" amount="1" rate="20" />
 </buff>
 <!--JZMOD Stimulan Withdrawl-->
-<buff id="withdrawalLv1" mutex="addictionLv2" debuffif="stim gequal 3" name_key="Withdrawal Stage 1" type="staminadown" actions="increment(@wellness, -0.2, 1200, 0, 0)" tooltip_key="You have entered Stimulant Withdrawl Stage 1" description_key="I know if I could just find another Stim I would feel better.(Wellness loss 0.2 every 20 min)" icon="ui_game_symbol_death">
+<buff id="withdrawalLv1" mutex="addictionLv2" debuffif="stim gequal 3" name_key="Withdrawal Stage 1" type="staminadown" actions="increment(@wellness, -0.2, 1200, 0, 0)" tooltip_key="You have entered Stimulant Withdrawl Stage 1" description_key="I know if I could just find another Stim I would feel better.(Wellness loss 0.2 every 20 min)" icon="ui_game_symbol_withdrawal">
 	<modify id="0" stat="stamina" amount="1" rate="1" />
 	<modify id="1" stat="speedmodifier" setValue="0.95" />
 </buff>
-<buff id="withdrawalLv2" mutex="addictionLv3" debuffif="stim gequal 6" name_key="Withdrawal Stage 2" type="staminadown" actions="increment(@wellness, -0.4, 1200, 0, 0)" tooltip_key="You have entered Stimulant Withdrawl Stage 2" description_key="I've gotta find me somemore Stims.(Wellness loss 0.4 every 20 min)" icon="ui_game_symbol_death">
+<buff id="withdrawalLv2" mutex="addictionLv3" debuffif="stim gequal 6" name_key="Withdrawal Stage 2" type="staminadown" actions="increment(@wellness, -0.4, 1200, 0, 0)" tooltip_key="You have entered Stimulant Withdrawl Stage 2" description_key="I've gotta find me somemore Stims.(Wellness loss 0.4 every 20 min)" icon="ui_game_symbol_withdrawal">
 	<modify id="0" stat="stamina" amount="2" rate="1" />
 	<modify id="1" stat="speedmodifier" setValue="0.90" />
 </buff>
-<buff id="withdrawalLv3" debuffif="stim gequal 9" name_key="Withdrawal Stage 3" type="staminadown" actions="increment(@wellness, -0.5, 1200, 0, 0)" tooltip_key="You have entered Stimulant Withdrawl Stage 3" description_key="I'd do anything for a Stim right now!(Wellness loss 0.5 every 20 min)" icon="ui_game_symbol_death">
+<buff id="withdrawalLv3" debuffif="stim gequal 9" name_key="Withdrawal Stage 3" type="staminadown" actions="increment(@wellness, -0.5, 1200, 0, 0)" tooltip_key="You have entered Stimulant Withdrawl Stage 3" description_key="I'd do anything for a Stim right now!(Wellness loss 0.5 every 20 min)" icon="ui_game_symbol_withdrawal">
 	<modify id="0" stat="stamina" amount="2" rate="1" />
 	<modify id="1" stat="speedmodifier" setValue="0.85" />
 </buff>
@@ -810,7 +813,7 @@ This requires a 50+ food bar:
 	<modify id="2" stat="coretemp" modifyValue="25" />
 </buff>	
 <!--JZMOD EATING SNOW-->
-<buff id="brainFreeze" duration="180" stack="reset" actions="buff(brainChill);debuff(severeFever)" onexpired="bFRemove" name_key="Brain Freeze" tooltip_key="Mmmmm Cold!" description_key="Burrrr. Eating snow lowers your temperature for a short time." icon="BrainFreeze" />
+<buff id="brainFreeze" duration="180" stack="reset" actions="buff(brainChill);debuff(severeFever)" onexpired="bFRemove" name_key="Brain Freeze" tooltip_key="Mmmmm Cold!" description_key="Burrrr. Eating snow lowers your temperature for a short time." icon="ui_game_symbol_brainFreeze" />
 <buff id="bFRemove" duration="5" actions="debuff(brainChill)" />
 <buff id="brainChill" type="coretemp" stack="stack" stacklimit="180">
 	<modify id="0" stat="coretemp" modifyValue="-3" />
@@ -844,32 +847,32 @@ This requires a 50+ food bar:
 <!-- JZMOD Z-VIRUS -->
 <buff id="cured" duration="3600" stack="reset" actions="buff(antiViralMedDose);debuff(infection)" icon="ui_game_symbol_pills" name_key="cured" description_key="curedDesc" tooltip_key="curedTooltip" />
 <buff id="antiViralMedDose" duration="1" actions="debuff(infectionD2);debuff(infectionD3);debuff(infectionD4);debuff(infectionD5);debuff(infectionD6);debuff(infectionD7)" />
-<buff id="infection" mutex="cured,infection,infectionD2,infectionD3,infectionD4,infectionD5,infectionD6,infectionD7" duration="3600" onexpired="infectionD2" type="sickness" icon="ui_game_symbol_infection" name_key="infection1" description_key="infection1Desc" tooltip_key="infection1Tooltip" cures="antivirialMeds">
+<buff id="infection" mutex="cured,infection,infectionD2,infectionD3,infectionD4,infectionD5,infectionD6,infectionD7" duration="3600" onexpired="infectionD2" type="sickness" icon="ui_game_symbol_zVirus" name_key="infection1" description_key="infection1Desc" tooltip_key="infection1Tooltip" cures="antivirialMeds">
 	<modify id="0" stat="stamina" amount="-1" rate="5" />
 </buff>
-<buff id="infectionD2" mutex="cured" duration="3600" onexpired="infectionD3" ondebuff="infection" type="sickness" icon="ui_game_symbol_infection" name_key="infection2" description_key="infection2Desc" tooltip_key="infection2Tooltip" cures="antivirialMeds">
+<buff id="infectionD2" mutex="cured" duration="3600" onexpired="infectionD3" ondebuff="infection" type="sickness" icon="ui_game_symbol_zVirus" name_key="infection2" description_key="infection2Desc" tooltip_key="infection2Tooltip" cures="antivirialMeds">
 	<modify id="0" stat="stamina" amount="-1" rate="5" />
 	<modify id="1" stat="water" amount="-1" rate="5" />
 </buff>
-<buff id="infectionD3" mutex="cured" duration="3600" onexpired="infectionD4" ondebuff="infectionD2" type="sickness" icon="ui_game_symbol_infection" name_key="infection3" description_key="infection3Desc" tooltip_key="infection3Tooltip" cures="antivirialMeds">
+<buff id="infectionD3" mutex="cured" duration="3600" onexpired="infectionD4" ondebuff="infectionD2" type="sickness" icon="ui_game_symbol_zVirus" name_key="infection3" description_key="infection3Desc" tooltip_key="infection3Tooltip" cures="antivirialMeds">
 	<modify id="0" stat="stamina" amount="-1" rate="5" />
 	<modify id="1" stat="water" amount="-1" rate="5" />
 	<modify id="2" stat="coretemp" modifyValue="5" />
 </buff>
-<buff id="infectionD4" mutex="cured" duration="3600" onexpired="infectionD5" ondebuff="infectionD3" type="sickness" icon="ui_game_symbol_infection" name_key="infection1" description_key="infection1Desc" tooltip_key="infection1Tooltip" cures="antivirialMeds">
+<buff id="infectionD4" mutex="cured" duration="3600" onexpired="infectionD5" ondebuff="infectionD3" type="sickness" icon="ui_game_symbol_zVirus" name_key="infection1" description_key="infection1Desc" tooltip_key="infection1Tooltip" cures="antivirialMeds">
 	<modify id="0" stat="stamina" amount="-1" rate="4" />
 	<modify id="1" stat="water" amount="-1" rate="5" />
 	<modify id="2" stat="coretemp" modifyValue="10" />
 	<modify id="3" stat="speedmodifier" setValue="0.98" />
 </buff>
-<buff id="infectionD5" mutex="cured" duration="3600" onexpired="infectionD6" ondebuff="infectionD4" type="sickness" icon="ui_game_symbol_infection" name_key="infection2" description_key="infection2Desc" tooltip_key="infection2Tooltip" cures="antivirialMeds">
+<buff id="infectionD5" mutex="cured" duration="3600" onexpired="infectionD6" ondebuff="infectionD4" type="sickness" icon="ui_game_symbol_zVirus" name_key="infection2" description_key="infection2Desc" tooltip_key="infection2Tooltip" cures="antivirialMeds">
 	<modify id="0" stat="stamina" amount="-1" rate="4" />
 	<modify id="1" stat="water" amount="-1" rate="5" />
 	<modify id="2" stat="coretemp" modifyValue="10" />
 	<modify id="3" stat="speedmodifier" setValue="0.95" />
 	<modify id="4" stat="food" amount="1" rate="5" />
 </buff>
-<buff id="infectionD6" mutex="cured" duration="3600" onexpired="infectionD7" ondebuff="infectionD5" type="sickness" icon="ui_game_symbol_infection" name_key="infection3" description_key="infection3Desc" tooltip_key="infection3Tooltip" cures="antivirialMeds">
+<buff id="infectionD6" mutex="cured" duration="3600" onexpired="infectionD7" ondebuff="infectionD5" type="sickness" icon="ui_game_symbol_zVirus" name_key="infection3" description_key="infection3Desc" tooltip_key="infection3Tooltip" cures="antivirialMeds">
 	<modify id="0" stat="stamina" amount="-1" rate="3" />
 	<modify id="1" stat="water" amount="-1" rate="5" />
 	<modify id="2" stat="coretemp" modifyValue="15" />
@@ -877,7 +880,7 @@ This requires a 50+ food bar:
 	<modify id="4" stat="food" amount="1" rate="5" />
 	<modify id="5" stat="health" amount="-1" rate="60" />
 </buff>
-<buff id="infectionD7" mutex="cured" duration="3600" onexpired="infectionX" ondebuff="infectionD6" type="sickness" icon="ui_game_symbol_infection" name_key="infection3" description_key="infection3Desc" tooltip_key="infection3Tooltip" cures="antivirialMeds">
+<buff id="infectionD7" mutex="cured" duration="3600" onexpired="infectionX" ondebuff="infectionD6" type="sickness" icon="ui_game_symbol_zVirus" name_key="infection3" description_key="infection3Desc" tooltip_key="infection3Tooltip" cures="antivirialMeds">
 	<modify id="0" stat="stamina" amount="-1" rate="2" />
 	<modify id="1" stat="water" amount="-1" rate="5" />
 	<modify id="2" stat="coretemp" modifyValue="20" />
@@ -885,7 +888,7 @@ This requires a 50+ food bar:
 	<modify id="4" stat="food" amount="1" rate="5" />
 	<modify id="5" stat="health" amount="-1" rate="60" />
 </buff>
-<buff id="infectionX" mutex="cured" actions="kill" icon="ui_game_symbol_infection" name_key="infection4" description_key="infection4Desc" tooltip_key="infection4Tooltip" />
+<buff id="infectionX" mutex="cured" actions="kill" icon="ui_game_symbol_zVirus" name_key="infection4" description_key="infection4Desc" tooltip_key="infection4Tooltip" />
 <!--JZMOD Nutrition-->
 <buff id="nutrition_1_Trigger" duration="1" name_key="1 Nutrition" actions="increment(nutrition, 1, 0, 0, 1)" />
 <buff id="nutrition_2_Trigger" duration="1" name_key="2 Nutrition" actions="increment(nutrition, 2, 0, 0, 1)" />
@@ -893,17 +896,17 @@ This requires a 50+ food bar:
 <buff id="nutrition_4_Trigger" duration="1" name_key="4 Nutrition" actions="increment(nutrition, 4, 0, 0, 1)" />
 <buff id="nutrition_5_Trigger" duration="1" name_key="5 Nutrition" actions="increment(nutrition, 5, 0, 0, 1)" />
 <buff id="nutrition_30_Trigger" duration="1" actions="increment(nutrition, 30, 0, 0, 1)" />
-<buff id="nutritionFade" buffif="nutrition greater 0" debuffif="nutrition less 1" duration="0" actions="increment(nutrition, -1, 10, 0, 0);min(nutrition, 0)" /><!--750-->
+<buff id="nutritionFade" buffif="nutrition greater 0" debuffif="nutrition less 1" duration="0" actions="increment(nutrition, -1, 750, 0, 0);min(nutrition, 0)" /><!--750-->
 <!--JZMOD GOOD NUTRITION STAGE 1-->
 <buff id="goodNutrition1Tag" buffif="nutrition greater 14" debuffif="nutrition lequal 14" />
-<buff id="goodNutrition1" mutex="goodNutrition2,goodNutrition3" buffif="nutrition greater 14" debuffif="nutrition lequal 14" actions="buff(malnourishedReset)" name_key="Good Diet" tooltip_key="Feeling Good!" description_key="Your eating a more balanced diet now and can benifit from wellness and health gains from foods." icon="ui_game_symbol_limp" />
+<buff id="goodNutrition1" mutex="goodNutrition2,goodNutrition3" buffif="nutrition greater 14" debuffif="nutrition lequal 14" actions="buff(malnourishedReset)" name_key="Good Diet" tooltip_key="Feeling Good!" description_key="Your eating a more balanced diet now and can benifit from wellness and health gains from foods." icon="ui_game_symbol_goodNutrition1" />
 <!--JZMOD GOOD NUTRITION STAGE 1-->
 <buff id="goodNutrition2Tag" buffif="nutrition greater 24" debuffif="nutrition lequal 24" />
-<buff id="goodNutrition2" mutex="goodNutrition3" buffif="nutrition greater 24" debuffif="nutrition lequal 24" actions="debuff(goodNutrition1);buff(malnourishedReset)" name_key="Balanced Diet" type="staminaup" tooltip_key="Feeling Great!" description_key="Your eating a very balanced diet now because of this you can regain stamina quicker and heal from injurys faster now." icon="ui_game_symbol_limp">
+<buff id="goodNutrition2" mutex="goodNutrition3" buffif="nutrition greater 24" debuffif="nutrition lequal 24" actions="debuff(goodNutrition1);buff(malnourishedReset)" name_key="Balanced Diet" type="staminaup" tooltip_key="Feeling Great!" description_key="Your eating a very balanced diet now because of this you can regain stamina quicker and heal from injurys faster now." icon="ui_game_symbol_goodNutrition2">
 	<modify id="0" stat="stamina" amount="1" rate="3" />
 </buff> 
 <!--JZMOD GOOD NUTRITION STAGE 1-->
-<buff id="goodNutrition3" buffif="nutrition greater 34" debuffif="nutrition lequal 34" actions="debuff(goodNutrition2);debuff(goodNutrition1);buff(malnourishedReset)" type="speedmodifier" name_key="Healthy Diet" tooltip_key="Feeling Great!" description_key="Your healthy balanced diet fills you with energy through out the day increasing your speed. When full you will naturaly heal also." icon="ui_game_symbol_limp">
+<buff id="goodNutrition3" buffif="nutrition greater 34" debuffif="nutrition lequal 34" actions="debuff(goodNutrition2);debuff(goodNutrition1);buff(malnourishedReset)" type="speedmodifier" name_key="Healthy Diet" tooltip_key="Feeling Great!" description_key="Your healthy balanced diet fills you with energy through out the day increasing your speed. When full you will naturaly heal also." icon="ui_game_symbol_goodNutrition3">
 	<modify id="0" stat="stamina" amount="1" rate="3" />
 	<modify id="1" stat="speedmodifier" modifyMaxValue="2.0" />
 	<modify id="2" stat="speedmodifier" mulValue="1.5" />
@@ -918,17 +921,17 @@ This requires a 50+ food bar:
 <!--JZMOD Malnourished Timer-->
 <buff id="malnourishTimer" mutex="goodNutrition1Tag" buffif="nutrition less 15" debuffif="nutrition gequal 15" actions="increment(malnourished, 1, 60, 0, 0)" /><!--1,60-->
 <!--JZMOD BAD NUTRITION-->
-<buff id="malnourished1" mutex="malnourished2,malnourished3" buffif="malnourished greater 179" debuffif="malnourished lequal 179" name_key="Bad Diet" tooltip_key="Feeling Tired" description_key="Your diet is not very healthy and it is starting to effect you. Try eating foods that contain more food groups." icon="ui_game_symbol_limp">
+<buff id="malnourished1" mutex="malnourished2,malnourished3" buffif="malnourished greater 179" debuffif="malnourished lequal 179" name_key="Bad Diet" tooltip_key="Feeling Tired" description_key="Your diet is not very healthy and it is starting to effect you. Try eating foods that contain more food groups." icon="ui_game_symbol_malnourished1">
 	<modify id="0" stat="food" amount="-1" rate="15" />
 	<modify id="1" stat="stamina" amount="-1" rate="3" /> 
 </buff>
 <buff id="malnourished1Tag" buffif="malnourished greater 359" debuffif="malnourished lequal 359" />
-<buff id="malnourished2" mutex="malnourished3" buffif="malnourished greater 359" debuffif="malnourished lequal 359" name_key="Vitamin Deficiency" actions="debuff(malnourished1)" type="staminadown" tooltip_key="Could use a rest" description_key="Your poor diet means your not getting all the vitamins you need and its slowing you down. Cook and eat fresh meals with many food groups to improve your health." icon="ui_game_symbol_limp"><!--359 -->
+<buff id="malnourished2" mutex="malnourished3" buffif="malnourished greater 359" debuffif="malnourished lequal 359" name_key="Vitamin Deficiency" actions="debuff(malnourished1)" type="staminadown" tooltip_key="Could use a rest" description_key="Your poor diet means your not getting all the vitamins you need and its slowing you down. Cook and eat fresh meals with many food groups to improve your health." icon="ui_game_symbol_malnourished2"><!--359 -->
 	<modify id="0" stat="food" amount="-2" rate="15" />
 	<modify id="1" stat="stamina" amount="-1" rate="2" />
 	<modify id="2" stat="speedmodifier" setValue="0.95" />
 </buff>
-<buff id="malnourished3" buffif="malnourished greater 539" debuffif="malnourished lequal 539" name_key="Malnourished" actions="debuff(malnourished2);debuff(malnourished1)" type="speedmodifier" tooltip_key="You feel weak" description_key="Your health is failing. You must eat a more balanced diet that combines all the food groups in order to have a healthy diet. Try making and eating meals from a food prep table." icon="ui_game_symbol_limp"><!--539-->
+<buff id="malnourished3" buffif="malnourished greater 539" debuffif="malnourished lequal 539" name_key="Malnourished" actions="debuff(malnourished2);debuff(malnourished1)" type="speedmodifier" tooltip_key="You feel weak" description_key="Your health is failing. You must eat a more balanced diet that combines all the food groups in order to have a healthy diet. Try making and eating meals from a food prep table." icon="ui_game_symbol_malnourished3"><!--539-->
 	<modify id="0" stat="food" amount="-3" rate="15" />
 	<modify id="1" stat="stamina" amount="-1" rate="1" />
 	<modify id="2" stat="speedmodifier" setValue="0.85" />

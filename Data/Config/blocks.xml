@@ -1091,8 +1091,7 @@ group desc for stuff like metal siding
 		<property name="EconomicValue" value="20" />
 	</block>
 	<block id="123" name="cobblestoneFrameMaster">
-		<property name="Group" value="Building" />
-		<property name="DescriptionKey" value="cobblestoneFrameGroupDesc" />
+        <property name="Group" value="Building" />
 		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="New" />
 		<property name="LightOpacity" value="0" />
@@ -1100,27 +1099,27 @@ group desc for stuff like metal siding
 		<property name="Mesh" value="cutout" />
 		<property name="Frame" />
 		<property name="Texture" value="381" />
-      	<property name="CreativeMode" value="None" />
-		<property name="MaxDamage" value="20" />
+		<property name="ImposterExclude" value="true" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="CreativeMode" value="Dev" />
 		<property name="Collide" value="movement,melee,rocket" />
+        <property name="MaxDamage" value="20" />
 		<property name="FuelValue" value="40" />
-		<property name="CanPickup" value="true" />
-        <property name="RandomTintColor1" value="0,50,110" />
-		<property class="RepairItems">
+        <property class="RepairItems">
 			<property name="stick" value="10" />
 		</property>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="cobblestoneMaster" />
 			<property name="Item" value="cobblestones" />
-			<property name="ItemCount" value="20" />
+			<property name="ItemCount" value="10" />
 			<property name="UpgradeHitCount" value="3" />
 		</property>
+		<property name="CustomUpgradeSound" value="place_block_wood" />
 		<drop event="Destroy" name="stick" count="1,15" prob="1" />
 		<drop event="Fall" name="woodDebris" count="1" prob=".3" stick_chance="1" />
 		<property name="CraftingSkillGroup" value="cobblestoneBuilding" />
-		<property name="EconomicValue" value="6" />
-		<property name="EconomicBundleSize" value="20" />
-	</block>
+        <property name="DescriptionKey" value="cobblestoneFrameGroupDesc" />
+    </block>
 	<block id="124" name="cobblestoneMaster">
 		<property name="Group" value="Building" />
 		<property name="Material" value="Mcobblestone" />
@@ -3513,7 +3512,7 @@ group desc for stuff like metal siding
 			<!-- damage radius for entities -->
 			<property name="EntityDamage" value="70" />
 			<!-- damage for entities in the center of the explosion -->
-		</property>
+       	</property>
 		<drop event="Harvest" name="electricParts" count="2,7" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="0,4" tool_category="Disassemble" />
 		<drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble" />
@@ -3782,7 +3781,7 @@ group desc for stuff like metal siding
 			<property name="EntityDamage" value="200" />
 			<!-- damage for entities in the center of the explosion -->
 			<property name="DamageBonus.earth" value="0.5" />
-		</property>
+      	</property>
 		<drop event="Destroy" count="0" />
 		<property name="CanPickup" value="true" />
 		<property name="Group" value="Resources,Decor/Miscellaneous" />
@@ -4418,7 +4417,7 @@ group desc for stuff like metal siding
 		<property name="Explosion.RadiusEntities" value="4" />
 		<property name="Explosion.BlockDamage" value="10" />
 		<property name="Explosion.EntityDamage" value="25" />
-		<!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
+      	<!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
 		<property name="Explosion.DamageBonus.stone" value="0.1" />
 		<property name="Explosion.DamageBonus.metal" value="0.1" />
 		<property name="Explosion.DamageBonus.earth" value="0" />
@@ -4440,7 +4439,7 @@ group desc for stuff like metal siding
 		<property name="Explosion.RadiusEntities" value="5" />
 		<property name="Explosion.BlockDamage" value="10" />
 		<property name="Explosion.EntityDamage" value="50" />
-		<property name="EconomicValue" value="146" />
+      	<property name="EconomicValue" value="146" />
 	</block>
 	<block id="433" name="mineAirFilter">
 		<property name="Extends" value="mineCandyTin" />
@@ -4452,7 +4451,7 @@ group desc for stuff like metal siding
 		<property name="Explosion.RadiusEntities" value="5" />
 		<property name="Explosion.BlockDamage" value="10" />
 		<property name="Explosion.EntityDamage" value="80" />
-		<property name="EconomicValue" value="182" />
+        <property name="EconomicValue" value="182" />
 	</block>
 	<block id="434" name="cntToilet01">
 		<property name="Material" value="Mmetal_weak" />
@@ -4753,7 +4752,9 @@ kind of free
 		<property name="DescriptionKey" value="decorationBlockGroupDesc" />
 		<property name="Material" value="wood_weak" />
 		<property name="StabilitySupport" value="false" />
-		<!-- build restriction -->
+        <property name="CanPickup" value="true" />
+		<property name="FuelValue" value="10" />
+		<property name="Weight" value="30" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Texture" value="293" />
 		<property name="Mesh" value="models" />
@@ -4761,8 +4762,6 @@ kind of free
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<drop event="Harvest" name="stick" count="12" />
-		<drop event="Destroy" name="treePlantedMaple1m" count="1" prob=".03" />
-		<drop event="Destroy" name="treePlantedMountainPine1m" count="1" prob=".03" />
 	</block>
 	<block id="469" name="driftwood2">
 		<property name="Extends" value="driftwood" />
@@ -5134,7 +5133,7 @@ kind of free
 		<property name="Explosion.RadiusEntities" value="3" />
 		<property name="Explosion.BlockDamage" value="10" />
 		<property name="Explosion.EntityDamage" value="40" />
-		<property name="CanPickup" value="true" param1="cookingPot" />
+        <property name="CanPickup" value="true" param1="cookingPot" />
 		<property name="EconomicValue" value="120" />
 	</block>
 	<block id="527" name="plantedHop1">
@@ -12543,7 +12542,7 @@ kind of free
 		<property name="Explosion.RadiusEntities" value="3" />
 		<property name="Explosion.BlockDamage" value="10" />
 		<property name="Explosion.EntityDamage" value="50" />
-		<!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
+      	<!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
 		<property name="Explosion.DamageBonus.stone" value="0.1" />
 		<property name="Explosion.DamageBonus.metal" value="0.1" />
 		<property name="Explosion.DamageBonus.earth" value="0" />
@@ -13188,7 +13187,7 @@ kind of free
 			<!-- damage radius for entities -->
 			<property name="EntityDamage" value="70" />
 			<!-- damage for entities in the center of the explosion -->
-		</property>
+        </property>
 		<property name="ActivationDistance" value="6" />
 	</block>
 	<block id="1454" name="cntCar03SedanDamage1">
@@ -13245,7 +13244,7 @@ kind of free
 			<!-- damage radius for entities -->
 			<property name="EntityDamage" value="70" />
 			<!-- damage for entities in the center of the explosion -->
-		</property>
+        </property>
 		<property name="ActivationDistance" value="6" />
 	</block>
 	<block id="1455" name="cntCar03SedanDamage2">
@@ -13297,7 +13296,7 @@ kind of free
 			<!-- damage radius for entities -->
 			<property name="EntityDamage" value="70" />
 			<!-- damage for entities in the center of the explosion -->
-		</property>
+        </property>
 		<property name="ActivationDistance" value="6" />
 	</block>
 	<!-- n Free -->
@@ -16058,24 +16057,24 @@ kind of free
 		<property name="CraftingSkillGroup" value="engineeringCraft" />
 	</block>
 	<block id="85" name="riggedChest">
-		<!--JZMOD MAKE SIMPLE CUDE TRAP FOR PAINTING-->
-		<property name="Class" value="TNT" />
+        <property name="CreativeMode" value="Player" />
+		<property name="Class" value="Loot" />
+		<property name="CustomIcon" value="cntChest01" />
 		<property name="Material" value="wood+wood" />
+		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="Ext3dModel" />
+		<property name="Texture" value="293" />
 		<property name="Mesh" value="models" />
+		<property name="IsTerrainDecoration" value="true" />
 		<property name="Model" value="LootContainers/chest01" param1="main_mesh" />
-		<property name="CustomIcon" value="ui_game_symbol_secureStorageChest" />
-		<property name="Place" value="TowardsPlacer" />
-		<property name="Group" value="Tools/Traps" />
-		<property class="Explosion">
-			<property name="ParticleIndex" value="4" />
-			<property name="RadiusBlocks" value="1" />
-			<property name="BlockDamage" value="1" />
-			<property name="RadiusEntities" value="5" />
-			<property name="EntityDamage" value="75" />
-			<property name="DamageBonus.earth" value="0.5" />
-		</property>
+		<property name="HandleFace" value="Bottom" />
+		<property name="ImposterExchange" value="imposterQuarter" param1="154" />
+		<property name="LootList" value="250" />
+		<property class="RepairItems"> <property name="plank" value="10" /> </property>
 		<drop event="Destroy" count="0" />
+		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+		<property name="Group" value="Tools/Traps" />
+		<property name="DescriptionKey" value="riggedChestDesc" />
 		<property name="CraftingSkillGroup" value="engineeringCraft" />
 	</block>
 	<!--JZMOD WORKSTATIONS-->
@@ -16598,7 +16597,7 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="chefSupplies" />
 		</property>
-		<property name="CraftingSkillGroup" value="bladeWeaponsAction" />
+		<property name="CraftingSkillGroup" value="cookingCraft" />
 		<drop event="Fall" name="soldierProfession" count="0" prob="1" />
 		<drop event="Fall" name="chefProfession" count="1" prob="1" />
 		<property name="DowngradeBlock" value="chefSupplies" />
@@ -16945,7 +16944,7 @@ kind of free
 			<property name="BlockDamage" value="0" />
 			<property name="RadiusEntities" value="8" />
 			<property name="EntityDamage" value="1500" />
-		</property>
+      	</property>
 		<property name="DescriptionKey" value="gasTankDesc" />
 	</block>
 	<block id="904" name="hardStone">
@@ -18289,22 +18288,32 @@ kind of free
 		<property name="SellableToTrader" value="false" />
 	</block>
 	<block id="1534" name="palm">
-		<property name="Extends" value="treeMasterGrowing" />
+		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#smallpalm?Palm" />
 		<!--sdx<property name="MeshScale" value="2,2" />-->
 		<property name="MaxDamage" value="800" />
+        <drop event="Harvest" name="woodBranch" count="15" prob="1" />
+		<drop event="Destroy" name="narrowLog" count="6,14" prob="1" />
 	</block>
 	<block id="1535" name="blossomPalm">
-		<property name="Extends" value="treeMasterGrowing" />
+		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#palm?PalmDate" />
 		<!--sdx<property name="MeshScale" value="2,2" />-->
 		<property name="MaxDamage" value="800" />
+        <drop event="Harvest" name="dates" count="3,10" />
+        <drop event="Harvest" name="woodBranch" count="15" />
+		<drop event="Destroy" name="narrowLog" count="6,14" prob="1" />
+		<drop event="Destroy" name="dates" count="3,10" prob="1" />
 	</block>
 	<block id="1543" name="coconutPalm">
-		<property name="Extends" value="treeMasterGrowing" />
+		<property name="Extends" value="treeMaster" />
 		<property name="Model" value="#palm?PalmCoco" />
 		<!--sdx<property name="MeshScale" value="2,2" />-->
 		<property name="MaxDamage" value="800" />
+        <drop event="Harvest" name="coconuts" count="1,3" prob="1" />
+        <drop event="Harvest" name="woodBranch" count="15" prob="1" />
+		<drop event="Destroy" name="narrowLog" count="6,14" prob="1" />
+		<drop event="Destroy" name="coconuts" count="2,5" prob="1" />
 	</block>
 	<block id="1544" name="smallRedwoodTree">
 		<property name="Extends" value="treeMasterGrowing" />
@@ -18315,8 +18324,9 @@ kind of free
 		<property name="BigDecorationRadius" value="4" />
 		<property name="MaxDamage" value="2000" />
 		<property name="FallOver" value="true" />
-		<drop event="Destroy" name="wood" count="25,100" prob="1" />
-		<!--<drop event="Destroy" name="RedwoodSeed" count="1" prob="0.5" />-->
+		<drop event="Harvest" name="woodBranch" count="10,25" />
+		<drop event="Destroy" name="narrowLog" count="10,15" prob="1" />
+		<drop event="Destroy" name="woodLogPillar100" count="7,12" prob="1" />
 	</block>
 	<block id="1547" name="redwoodTree">
 		<property name="Extends" value="treeMaster" />
@@ -18330,8 +18340,9 @@ kind of free
 		<property name="BigDecorationRadius" value="5" />
 		<property name="MaxDamage" value="3000" />
 		<property name="FallOver" value="true" />
-		<drop event="Destroy" name="wood" count="50,250" prob="1" />
-		<!--<drop event="Destroy" name="RedwoodSeed" count="1" prob="0.7" />-->
+		<drop event="Harvest" name="woodBranch" count="10,25" />
+		<drop event="Destroy" name="narrowLog" count="13,18" prob="1" />
+		<drop event="Destroy" name="woodLogPillar100" count="9,17" prob="1" />
 	</block>
 	<block id="1555" name="plantedTomato">
 		<property name="Extends" value="cropsGrowingMaster" />
@@ -18523,7 +18534,7 @@ kind of free
 			<property name="BlockDamage" value="5000" />
 			<property name="RadiusEntities" value="5" />
 			<property name="EntityDamage" value="70" />
-		</property>
+      	</property>
 	</block>
 	<block id="1606" name="tankSecure">
 		<property name="Extends" value="militaryTruckSecure" />
@@ -18716,7 +18727,7 @@ kind of free
 			<property name="BlockDamage" value="5000" />
 			<property name="RadiusEntities" value="5" />
 			<property name="EntityDamage" value="70" />
-		</property>
+        </property>
 	</block>
 	<block id="1631" name="oldArmyTruck">
 		<property name="Extends" value="fireTruck" />

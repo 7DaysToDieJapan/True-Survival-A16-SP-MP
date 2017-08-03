@@ -3429,4 +3429,8 @@
 		<item name="grainAlcohol" prob="11.1" />
 		<item name="mead" prob="5.6" />
 	</lootcontainer>
+    <!-- Rigged Chest  -->
+	<lootcontainer id="250" count="1" size="4,4" buff="riggedChest" destroy_on_close="false" sound_open="UseActions/explosion1" sound_close="UseActions/close_chest">
+		<item name="cobweb" prob="1" count="1" />
+	</lootcontainer>
 </lootcontainers>

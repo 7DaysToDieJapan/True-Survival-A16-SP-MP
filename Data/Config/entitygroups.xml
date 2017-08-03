@@ -962,12 +962,10 @@ animalStagHostile
 	<entitygroup name="FriendlyAnimalsPlains">
 		<entity name="animalRabbit" prob="25.0" />
 		<entity name="animalChicken" prob="25.0" />
-		<entity name="animalRabbitHostile" prob="5.0" />
-		<entity name="animalChickenHostile" prob="5.0" />
-		<entity name="animalStag" prob="10.0" />
-		<entity name="animalBoar" prob="10.0" />
-		<entity name="animalPig" prob="10.0" />
-		<entity name="animalStagHostile" prob="10.0" />
+		<entity name="animalRabbitHostile" prob="10.0" />
+		<entity name="animalChickenHostile" prob="10.0" />
+		<entity name="animalBoar" prob="15.0" />
+		<entity name="animalPig" prob="15.0" />
 	</entitygroup>
 	<entitygroup name="AnimalsAll">
 		<entity name="animalRabbit" />
