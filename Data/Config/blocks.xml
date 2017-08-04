@@ -16887,12 +16887,12 @@ kind of free
 		<drop event="Destroy" name="apple" count="3,15" prob="1" />
 	</block>
 	<block id="700" name="carrotSeed">
-		<property name="Extends" value="cropsHarvestableMaster" />
+		<property name="Extends" value="cropsGrowingMaster" />
 		<property name="Texture" value="296" />
 		<property name="PlantGrowing.Next" value="smallCarrot" />
 	</block>
 	<block id="750" name="smallCarrot">
-		<property name="Extends" value="cropsHarvestableMaster" />
+		<property name="Extends" value="cropsGrowingMaster" />
 		<property name="Model" value="#carrot?carrotPrefab" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="PlantGrowing.Next" value="carrotPlant" />
@@ -16906,14 +16906,14 @@ kind of free
 		<drop event="Harvest" name="carrot" count="1" />
 	</block>
 	<block id="1704" name="wheatSeed">
-		<property name="Extends" value="cropsHarvestableMaster" />
+		<property name="Extends" value="cropsGrowingMaster" />
 		<property name="Model" value="#WheatSprout1?WheatSprout1Prefab" />
         <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="PlantGrowing.Next" value="smallWheatPlant" />
 	</block>
 	<block id="865" name="smallWheatPlant">
-		<property name="Extends" value="cropsHarvestableMaster" />
+		<property name="Extends" value="cropsGrowingMaster" />
 		<property name="Model" value="#WheatSmallPlant1?WheatSmallPlant1Prefab" />
         <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="Shape" value="ModelEntity" />

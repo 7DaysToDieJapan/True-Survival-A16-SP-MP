@@ -1333,7 +1333,7 @@ Mesh files no longer used:
 			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="0.8" />
-			<property name="Range" value="2.0" />
+			<property name="Range" value="1.8" />
 			<!-- This not what "clientside melee combat" means. =) This is the adjustment afterwards due to code changes. -->
 			<property name="Sphere" value="0.1" />
 			<property name="Block_range" value="2.5" />
@@ -1847,7 +1847,7 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="2" />
 			<property name="DamageBlock" value="20" />
 			<property name="Buff" value="bleeding,scratch" />
-			<property name="Buff_chance" value="0.09,1" />
+			<property name="Buff_chance" value="0.03,1" />
             <property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.cloth" value="10" />
 			<property name="DamageBonus.earth" value="3" />
@@ -6973,7 +6973,7 @@ Mesh files no longer used:
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Sound_start" value="player_bandage" />
-			<property name="Debuff" value="bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1" />
+			<property name="Debuff" value="bleedingHealthy,bleedingNormal,bleedingMalnourished,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -6983,7 +6983,7 @@ Mesh files no longer used:
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Sound_start" value="player_bandage" />
-			<property name="Debuff" value="bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1" />
+			<property name="Debuff" value="bleedingHealthy,bleedingNormal,bleedingMalnourished,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1" />
 		</property>
 		<property name="Group" value="Science" />
 		<property name="DescriptionKey" value="bandageDesc" />
@@ -6996,11 +6996,11 @@ Mesh files no longer used:
 		<property name="Extends" value="bandage" />
 		<property name="EconomicValue" value="15" />
 		<property class="Action0">
-			<property name="Debuff" value="bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2" />
+			<property name="Debuff" value="bleedingHealthy,bleedingNormal,bleedingMalnourished,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2" />
 			<property name="Buff" value="firstAid" />
 		</property>
 		<property class="Action1">
-			<property name="Debuff" value="bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2" />
+			<property name="Debuff" value="bleedingHealthy,bleedingNormal,bleedingMalnourished,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2" />
 			<property name="Buff" value="firstAid" />
 		</property>
 		<property name="DescriptionKey" value="firstAidBandageDesc" />
@@ -7013,13 +7013,13 @@ Mesh files no longer used:
 		<property class="Action0">
 			<property name="Gain_health" value="50" />
 			<property name="Sound_start" value="player_firstAidKit" />
-			<property name="Debuff" value="burning,bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,infectedWound,dirtyBandage4" />
+			<property name="Debuff" value="bleedingHealthy,bleedingNormal,bleedingMalnourished,burning,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,infectedWound,dirtyBandage4" />
 			<property name="Buff" value="firstAidLarge" />
 		</property>
 		<property class="Action1">
 			<property name="Gain_health" value="50" />
 			<property name="Sound_start" value="player_firstAidKit" />
-			<property name="Debuff" value="burning,bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,infectedWound,dirtyBandage4" />
+			<property name="Debuff" value="burning,bleedingHealthy,bleedingNormal,bleedingMalnourished,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,infectedWound,dirtyBandage4" />
 			<property name="Buff" value="firstAidLarge" />
 		</property>
 		<property name="DescriptionKey" value="firstAidKitDesc" />
@@ -7158,7 +7158,7 @@ Mesh files no longer used:
 			<property name="Gain_water" value="0" />
 			<property name="Gain_wellness" value="0" />
 			<property name="Sound_start" value="player_painkillers" />
-			<property name="Debuff" value="infection,dysentery,dysentery2" />
+			<property name="Debuff" value="infection,dysenteryHealthy,dysenteryNormal,dysenteryMalnourished,dysentery2" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -7169,7 +7169,7 @@ Mesh files no longer used:
 			<property name="Gain_water" value="0" />
 			<property name="Gain_wellness" value="0" />
 			<property name="Sound_start" value="player_painkillers" />
-			<property name="Debuff" value="infection,dysentery,dysentery2" />
+			<property name="Debuff" value="infection,dysenteryHealthy,dysenteryNormal,dysenteryMalnourished,dysentery2" />
 		</property>
 		<property name="ActionSkillGroup" value="medicineCraft" />
 		<property name="CraftingSkillGroup" value="medicineCraft" />
@@ -7192,7 +7192,7 @@ Mesh files no longer used:
 			<property name="Gain_water" value="0" />
 			<property name="Gain_wellness" value="0" />
 			<property name="Sound_start" value="player_painkillers" />
-			<property name="Debuff" value="bioInfection,bioInfection2,bioInfection3,dysentery,dysentery2" />
+			<property name="Debuff" value="bioInfection,bioInfection2,bioInfection3,dysenteryHealthy,dysenteryNormal,dysenteryMalnourished,dysentery2" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -7203,7 +7203,7 @@ Mesh files no longer used:
 			<property name="Gain_water" value="0" />
 			<property name="Gain_wellness" value="0" />
 			<property name="Sound_start" value="player_painkillers" />
-			<property name="Debuff" value="bioInfection,bioInfection2,bioInfection3,dysentery,dysentery2" />
+			<property name="Debuff" value="bioInfection,bioInfection2,bioInfection3,dysenteryHealthy,dysenteryNormal,dysenteryMalnourished,dysentery2" />
 		</property>
 		<property name="ActionSkillGroup" value="medicineCraft" />
 		<property name="CraftingSkillGroup" value="medicineCraft" />
@@ -8216,7 +8216,7 @@ Mesh files no longer used:
 			<property name="Gain_stamina" value="40" />
 			<property name="Gain_wellness" value="0.2" />
 			<property name="Sound_start" value="player_drinking" />
-			<property name="Debuff" value="dysentery,burningSmall,burning" />
+			<property name="Debuff" value="dysenteryHealthy,dysenteryNormal,dysenteryMalnourished,burningSmall,burning" />
 			<property name="Create_item" value="emptyJar" />
 		</property>
 		<property name="Group" value="food/Cooking" />
@@ -8239,7 +8239,7 @@ Mesh files no longer used:
 			<property name="Gain_wellness" value="0.2" />
 			<property name="Sound_start" value="player_drinking" />
 			<property name="Buff" value="redTeaCooling" />
-			<property name="Debuff" value="dysentery,burningSmall,burning" />
+			<property name="Debuff" value="dysenteryHealthy,dysenteryNormal,dysenteryMalnourished,burningSmall,burning" />
 			<property name="Create_item" value="emptyJar" />
 		</property>
 		<property name="Group" value="food/Cooking" />
@@ -9030,7 +9030,7 @@ Mesh files no longer used:
 		<!-- scrap material -->
 		<property name="Meshfile" value="Items/Crafting/plant_fibers" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="CustomIcon" value="plantFibers" />
+		<property name="CustomIcon" value="ui_game_symbol_plantFibers" />
 		<property name="Weight" value="1" />
 		<property name="Material" value="plants" />
 		<property name="RepairTime" value="2.5" />
@@ -12702,7 +12702,7 @@ Mesh files no longer used:
 		<property name="Weight" value="5" />
 		<property class="Action1">
 			<property name="Gain_health" value="0" />
-			<property name="Debuff" value="bleeding,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,infectedWound,dirtyBandage4" />
+			<property name="Debuff" value="bleedingHealthy,bleedingNormal,bleedingMalnourished,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,infectedWound,dirtyBandage4" />
 			<property name="Create_item" value="emptyJar" />
 		</property>
 		<property name="DescriptionKey" value="sanitizingBandageDesc" />
@@ -13194,6 +13194,7 @@ Mesh files no longer used:
 			<property name="Buff" value="redBull" />
 			<property name="Create_item" value="emptyJar" />
 		</property>
+        <property name="CustomIcon" value="ui_game_symbol_redBull" />
 		<property name="DescriptionKey" value="redBullDesc" />
 		<property name="ActionSkillGroup" value="medicineCraft" />
 		<property name="CraftingSkillGroup" value="chemistryCraft" />
@@ -13695,6 +13696,7 @@ Mesh files no longer used:
 			<property name="Buff" value="randomFood1,randomFood2,randomFood3,randomWater1,randomWater2,foodPoisoning" />
 			<property name="Buff_chance" value="0.2,0.7,0.3,0.3,0.2,0.08" />
 		</property>
+        <property name="CustomIcon" value="ui_game_symbol_canUnlabeled" />
 		<property name="DescriptionKey" value="canUnlabeledDesc" />
 		<property name="Group" value="food/Cooking" />
 	</item>
@@ -13948,6 +13950,7 @@ Mesh files no longer used:
 		<property name="RepairAmount" value="10" />
 		<property name="FuelValue" value="1" />
 		<property name="DescriptionKey" value="stickDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_stick" />
 	</item>
 	<item id="1793" name="scubaTankFull">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -16891,6 +16894,30 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="ui_game_symbol_blockbook" />
 		<property name="Group" value="Books" />
 	</item>
+    <item id="2058" name="RabbitAttack">
+        <property name="CreativeMode" value="None" />
+        <property name="CustomIcon" value="unused" />
+		<property name="Material" value="organic" />
+		<property name="Canhold" value="false" />
+		<property name="HoldType" value="35" />
+		<property name="Stacknumber" value="1" />
+		<property name="Candrop" value="false" />
+		<property class="Action0">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="0.8" />
+			<property name="Range" value="1.0" />
+			<property name="Sphere" value="0.4" />
+			<property name="Block_range" value="1.0" />
+			<property name="DamageEntity" value="1" />
+			<property name="DamageBlock" value="5" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Buff" value="bleeding,stunned,scratch" />
+			<property name="Buff_chance" value="0.01,0.02,0.5" />
+			<property name="DamageBonus.earth" value="5" />
+			<property name="DamageBonus.wood" value="1" />
+		</property>
+	</item>
+   
     <!-- JZMOD UN USED MESHES
         <property name="Meshfile" value="#crudeweapons?nailwood" /><property name="HoldType" value="2" />works nial shiv not using
         <property name="Meshfile" value="#crudeweapons?Fork" /><property name="HoldType" value="36" />works brass knocklew fork not using
