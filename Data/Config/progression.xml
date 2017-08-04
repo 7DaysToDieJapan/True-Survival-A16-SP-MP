@@ -260,8 +260,7 @@
 			<recipe name="BrickFramePillar100" unlock_level="2" />
 			<recipe name="BrickFramePillar50" unlock_level="2" />
 			<recipe name="BrickFramePole" unlock_level="2" />
-            <recipe name="brickCNRFull" unlock_level="2" />
-			<!--upgrade material-->
+          	<!--upgrade material-->
 			<recipe name="Bricks" unlock_level="10" />
 		</action_skill>
 		<action_skill name="concreteBuilding" icon="ui_game_symbol_concreteMix" description_key="Concrete Building is the skill to master if you want to build with cement. Learn to make cement at skill level 10" title_key="Concrete Building" group="crafting" skill_point_cost_per_level="0">
@@ -313,11 +312,11 @@
 			<recipe name="scrapIronFramePole" unlock_level="2" />
 			<recipe name="rScrapIronPlate" unlock_level="2" />
 			<!--upgrade material-->
-			<recipe name="NutAndBolt" unlock_level="10" />
+			<recipe name="nutAndBolt" unlock_level="10" />
 			
 		</action_skill>
 		<action_skill name="steelBuilding" icon="ui_game_symbol_steelWall" description_key="Steel Building is the skill to master if you want to build with forged steel. Learn to make forged steel sheets at skill level 10" title_key="Steel Building" group="crafting" skill_point_cost_per_level="0">
-			<recipe name="forgedFrameBlock" unlock_level="2" />
+			<recipe name="forgedFrame" unlock_level="2" />
 			<recipe name="forgedFrameRamp" unlock_level="2" />
 			<recipe name="forgedStairs25" unlock_level="2" />
 			<recipe name="forgedArrowSlitHalf" unlock_level="2" />
@@ -3049,7 +3048,8 @@
 		</perk>
         <perk name="magnumScopeAttachmentPerk" icon="ui_game_symbol_44MagnumScope" description_key="Learn to attach sniper scopes to Magnums on the metal working bench using a wrench" title_key="Magnum Scope Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="20" />
-			<recipe name="44MagnumScope" unlock_level="1" />
+			<recipe name="magnumFrameScope" unlock_level="1" />
+            <recipe name="44MagnumScope" unlock_level="1" />
 		</perk>
 		<perk name="ak47ScopeAttachmentPerk" icon="ui_game_symbol_sniperRifleScopeFrame" description_key="Learn to attach sniper scopes to AK47s on the metal working bench using a wrench." title_key="AK47 Scope Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="20" />
@@ -3233,6 +3233,11 @@
 			<requirement perk_level="1" required_player_level="1" />
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="40" />
 			<recipe name="oil" unlock_level="1" />
+		</perk>
+        <perk name="oilPerk" icon="ui_game_symbol_oil" description_key="Learn to process GAS in a refinery" title_key="GAS" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
+			<requirement perk_level="1" required_player_level="1" />
+			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="40" />
+			<recipe name="gasCan" unlock_level="1" />
 		</perk>
 		<perk name="screwdriverPerk" icon="ui_game_symbol_screwdriver" description_key="Learn to repair a screwdriver and craft it on the Metal Working Bench" title_key="Screwdriver" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
 			<requirement perk_level="1" required_player_level="10" />
@@ -3470,6 +3475,11 @@
 			<recipe name="StorageWeapons" unlock_level="1" />
 		</perk>
 		
+        <perk name="steelLadderPerk" icon="ui_game_symbol_ladderMetal" description_key="Learn to craft a steel Ladder on the Metal Working Bench" title_key="steel Ladder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="crafting">
+			<requirement perk_level="1" required_skill_name="steelBuilding" required_skill_level="5" />
+			<requirement perk_level="1" required_player_level="75" />
+			<recipe name="ladderSteel" unlock_level="1" />
+		</perk>
 		<perk name="metalLadderPerk" icon="ui_game_symbol_ladderMetal" description_key="Learn to craft a Metal Ladder on the Metal Working Bench" title_key="Metal Ladder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="crafting">
 			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="5" />
 			<requirement perk_level="1" required_player_level="25" />
@@ -3507,7 +3517,7 @@
 		</perk>
 		<perk name="methaneProducerPerk" icon="ui_game_symbol_methaneProducer" description_key="Learn to craft a Methane gas producer on the metal working bench and use it to craft methane gas bombs." title_key="Methane Gas Bombs" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
 			<requirement perk_level="1" required_player_level="25" />
-			<recipe name="biogasDigester" unlock_level="1" />
+			<recipe name="methaneProducer" unlock_level="1" />
 			<recipe name="gasTankEmpty" unlock_level="1" />
 		</perk>
 		<perk name="steelVaultHatchPerk" icon="ui_game_symbol_vaultHatch" description_key="Learn to craft steel Vault Hatches on the metal working bench using the wielder" title_key="Steel Vault Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
@@ -3916,8 +3926,7 @@
 			<recipe name="BrickFramePillar100" unlock_level="1" />
 			<recipe name="BrickFramePillar50" unlock_level="1" />
 			<recipe name="BrickFramePole" unlock_level="1" />
-            <recipe name="brickCNRFull" unlock_level="1" />
-			<effect name="RepairTime">
+      		<effect name="RepairTime">
 				<multiply perk_level="0" value="1" />
 				<multiply skill_level="1" value="0.95" />
 			</effect>

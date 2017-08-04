@@ -48,7 +48,6 @@
 			<window name="windowCraftingQueue"/>
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
-			<window name="windowCombine" />
 		</window_group>				
 
 		<window_group name="workstation_chemistryStation" controller="XUiC_WorkstationWindowGroup">

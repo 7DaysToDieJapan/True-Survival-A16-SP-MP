@@ -631,6 +631,8 @@ This requires a 50+ food bar:
 <!-- JZMOD WOUND SYSTEM -->
 <buff id="scratch" duration="1" actions="increment(scratch, 1, 0, 0, 1)" />
 <buff id="scratchesHealing" duration="0" buffif="scratch less 6" debuffif="scratch gequal 6" actions="increment(scratch, -1, 1200, 0, 0);min(scratch, 0)" />
+<buff id="scratchTag" buffif="scratch greater 0" debuffif="scratch less 1" duration="0"  />
+<buff id="scratchRestAfterDeath" requires="scratchTag" buffif="+full > 0" actions="setvar(scratch ,0)" />
 <!--JZMOD Shrapnel Wound-->
 <buff id="shrapnel" mutex="shrapnel" duration="1" actions="increment(scratch, 10, 0, 0, 1);buff(bleeding)" castsound="Buffs/critical_blunt"  />
 <buff id="riggedChest" mutex="riggedChest" duration="1" actions="buff(shrapnel)" type="bleeding"  >
@@ -1032,4 +1034,7 @@ This requires a 50+ food bar:
 <buff id="sprainedLegMalnourished" requires="malnourished1Tag" mutex="brokenLeg,goodNutrition2Tag" type="speedmodifier" duration="3600" actions="debuff(firstAid);debuff(splint)" icon="ui_game_symbol_brokenbone" name_key="sprainedLeg" description_key="sprainedLegDesc" tooltip_key="sprainedLegTooltip" cures="splint">
 	<modify id="0" stat="speedmodifier" mulValue="0.80"/>
 </buff>
+
+
+
 </buffs>

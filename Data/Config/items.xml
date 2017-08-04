@@ -685,6 +685,7 @@ Mesh files no longer used:
 		<property class="Action0">
 			<property name="Sound_start" value="Pistol_Fire" />
 		</property>
+        <property name="DescriptionKey" value="SilencedPistolDesc" />
 	</item>
 	<item id="42" name="gun44Magnum">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
@@ -7226,7 +7227,7 @@ Mesh files no longer used:
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Gain_wellness" value="0" />
-			<property name="Buff" value="nutrition_30_Trigger" />
+			<property name="Buff" value="scratch" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -7236,7 +7237,7 @@ Mesh files no longer used:
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Gain_wellness" value="0" />
-			<property name="Buff" value="nutrition_30_Trigger" />
+			<property name="Buff" value="scratch" />
 		</property>
 		<property name="ActionSkillGroup" value="medicineCraft" />
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
@@ -11586,6 +11587,7 @@ Mesh files no longer used:
 			<property name="DegradationRate" value="2,1" />
 		</property>
 		<property name="Group" value="Tools/Traps" />
+        <property name="DescriptionKey" value="cobblestoneHammerDesc" />
 		<property name="ActionSkillGroup" value="cobblestoneBuilding" />
 		<property name="CraftingSkillGroup" value="cobblestoneCraft" />
 		<property name="RepairExpMultiplier" value="5.5" />
@@ -11639,6 +11641,7 @@ Mesh files no longer used:
 			<property name="DegradationRate" value="2,1" />
 		</property>
 		<property name="Group" value="Tools/Traps" />
+        <property name="DescriptionKey" value="brickHammerDesc" />
 		<property name="ActionSkillGroup" value="brickBuilding" />
 		<property name="CraftingSkillGroup" value="brickHammerCraft" />
 		<property name="RepairExpMultiplier" value="5.5" />
@@ -11692,6 +11695,7 @@ Mesh files no longer used:
 			<property name="DegradationRate" value="2,1" />
 		</property>
 		<property name="Group" value="Tools/Traps" />
+        <property name="DescriptionKey" value="concreteSledgeDesc" />
 		<property name="ActionSkillGroup" value="concreteBuilding" />
 		<property name="CraftingSkillGroup" value="concreteSledgeCraft" />
 		<property name="RepairExpMultiplier" value="5.5" />
@@ -11743,6 +11747,7 @@ Mesh files no longer used:
 			<property name="DegradationRate" value="2,1" />
 		</property>
 		<property name="Group" value="Tools/Traps" />
+        <property name="DescriptionKey" value="rConcreteBarDesc" />
 		<property name="ActionSkillGroup" value="rConcreteBuilding" />
 		<property name="CraftingSkillGroup" value="rConcreteSledgeCraft" />
 		<property name="RepairExpMultiplier" value="5.5" />
@@ -11790,6 +11795,7 @@ Mesh files no longer used:
 			<property name="DegradationRate" value="2,1" />
 		</property>
 		<property name="Group" value="Tools/Traps" />
+        <property name="DescriptionKey" value="screwdriverDesc" />
 		<property name="CraftingSkillGroup" value="screwdriverCraft" />
 		<property name="RepairExpMultiplier" value="5.5" />
 		<property name="ActionSkillGroup" value="engineeringCraft" />
@@ -11854,7 +11860,7 @@ Mesh files no longer used:
 		<property name="Group" value="Tools/Traps" />
 		<property name="ActionSkillGroup" value="steelBuilding" />
 		<property name="CraftingSkillGroup" value="steelWelderCraft" />
-		<property name="DescriptionKey" value="compactDriverDesc" />
+		<property name="DescriptionKey" value="welderToolDesc" />
 		<property name="RepairExpMultiplier" value="2" />
 	</item>
 	<item id="1572" name="welder_receiver">
@@ -12212,7 +12218,7 @@ Mesh files no longer used:
 	<item id="1602" name="glassBook">
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="glassCTRSheet,glassShowerBlock,glassIndustrialCTRPlate,glassIndustrial02CTRPlate,glassBusinessSheet,glassBusinessCTRSheet,glassBusinessBlock" />
+			<property name="Recipes_to_learn" value="glassBusinessPlate,glassBusinessPlateCurved,glassShowerRamp,glassCTRSheet,glassShowerBlock,glassIndustrialCTRPlate,glassIndustrial02CTRPlate,glassBusinessSheet,glassBusinessCTRSheet,glassBusinessBlock" />
 		</property>
 		<property name="DescriptionKey" value="skillBookDesc" />
 		<property name="CustomIcon" value="ui_game_symbol_blockbook" />
@@ -16866,6 +16872,24 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="1" />
 		</property>
+	</item>
+    <item id="2056" name="ironBarsBook">
+		<property name="Extends" value="schematicMaster" />
+		<property class="Action1">
+			<property name="Recipes_to_learn" value="ironBars,ironBarsCentered" />
+		</property>
+		<property name="DescriptionKey" value="skillBookDesc" />
+		<property name="CustomIcon" value="ui_game_symbol_blockbook" />
+		<property name="Group" value="Books" />
+	</item>
+    <item id="2057" name="metalPipeBook">
+		<property name="Extends" value="schematicMaster" />
+		<property class="Action1">
+			<property name="Recipes_to_learn" value="metalPipeStraight,metalPipeCorner,metalPipeJoint,metalPipeFlange" />
+		</property>
+		<property name="DescriptionKey" value="skillBookDesc" />
+		<property name="CustomIcon" value="ui_game_symbol_blockbook" />
+		<property name="Group" value="Books" />
 	</item>
     <!-- JZMOD UN USED MESHES
         <property name="Meshfile" value="#crudeweapons?nailwood" /><property name="HoldType" value="2" />works nial shiv not using
