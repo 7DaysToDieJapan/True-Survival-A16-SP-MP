@@ -2007,8 +2007,8 @@
 	</lootgroup>
 	
 	<lootgroup name="airdropMason" count="all">
-		<item name="wrench" />
-		<item name="cementMix" count="10,20" />
+		<item name="brickHammer" />
+		<item name="bricks" count="10,20" />
 		<item name="canBeef" />
 		<item name="bottledWater" count="5" />
 		<item name="painkillers" />
@@ -2087,7 +2087,7 @@
 		<item group="professionPageChance" count="1" />
 	</lootgroup>
 	<lootgroup name="airdropMechanic" count="all">
-		<item name="wrench" />
+		<item name="screwdriver" />
 		<item name="chainsaw" />
 		<item name="canBeef" count="5" />
 		<item name="bottledWater" count="5" />
@@ -2161,7 +2161,7 @@
 		<item name="canEmpty" count="1,2" />
 		<item name="coffeeBeans" count="1,4" />
 		<item name="shortMetalPipe" count="1,2" prob="1.0" />
-		<item name="wrench" count="1" />
+		<item group="tools" count="1" />
 		<item name="scrapLead" count="1,10" />
 		<item name="clawHammer" count="1" prob="0.1" quality="1,300" />
 		<item group="dryfood" loot_prob_template="goodFoodTemplate" />
@@ -2762,8 +2762,7 @@
 		<item name="headlight" count="1,2" prob="0.3" />
 		<item name="partsHandlebars" prob="0.3" />
 		<item name="footballHelmet" prob="0.3" />
-		<item name="clawHammer" prob="0.3" />
-		<item name="wrench" prob="0.3" />
+		<item group="tools" prob="0.3" />
 		<!-- <item name="calipers" prob="0.1"/> -->
 		<item name="toolAndDieSet" prob="0.1" />
 		<item group="minibikeParts" prob="0.6" />
@@ -2784,8 +2783,7 @@
 		<item name="paint" count="20,150" />
 		<item name="paintTool" />
 		<item name="wireTool" prob="0.4" />
-		<item name="clawHammer" />
-		<item name="wrench" />
+		<item group="tools" />
 		<item name="sledgehammer" prob="0.4" />
 		<item group="nailgun+parts" prob="0.4" />
 		<item group="electricalDevices" prob="1" />

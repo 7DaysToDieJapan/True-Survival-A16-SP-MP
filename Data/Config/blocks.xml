@@ -2653,16 +2653,18 @@ group desc for stuff like metal siding
 		<property name="CustomIcon" value="potatoSeed" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#paprika?smallPlantPrefab" />
-        <property name="ModelOffset" value="0,-0.15,0" />
-		<property name="PlantGrowing.Next" value="plantedPotato3Harvest" />
+        <property name="ModelOffset" value="0,0,0" />
+        <property name="MultiBlockDim" value="1,1,1" />
 		<property name="Collide" value="melee" />
+		<property name="PlantGrowing.Next" value="plantedPotato3Harvest" />
 		<drop event="Destroy" name="plantedPotato1" count="1" />
 	</block>
 	<block id="261" name="plantedPotato3Harvest">
 		<property name="Extends" value="cropsHarvestableMaster" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#paprika?smallPlantPrefab" />
-        <property name="ModelOffset" value="0,-0.1,0" />
+        <property name="ModelOffset" value="0,0,0" />
+        <property name="MultiBlockDim" value="1,1,1" />
 		<property name="Collide" value="melee" />
 		<drop event="Harvest" name="potato" count="1" />
 	</block>
@@ -4761,6 +4763,7 @@ kind of free
 		<property name="Model" value="Plants/driftwood" param1="main_mesh" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
+        <drop event="Destroy" count="0" />
 		<drop event="Harvest" name="stick" count="12" />
 	</block>
 	<block id="469" name="driftwood2">
@@ -8472,6 +8475,8 @@ kind of free
 		<property name="Extends" value="treeGrassMaster" param1="CustomIcon" />
 		<property name="Class" value="Tallgrass" />
 		<property name="Texture" value="567" />
+        <drop event="Destroy" name="plantFibers" count="0" />
+        <drop event="Destroy" name="forestFlower" count="1" />
 	</block>
 	<block id="853" name="plantedYucca3Harvest">
 		<property name="Extends" value="cropsHarvestableMaster" />
@@ -8858,6 +8863,7 @@ kind of free
 		<property name="Texture" value="282" />
 		<property name="Mesh" value="models" />
 		<property name="IsTerrainDecoration" value="true" />
+        <property name="CanPickup" value="true" param1="minibikeWheels" />
 		<property name="Model" value="OutdoorDecor/tire" param1="main_mesh" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<drop event="Destroy" name="minibikeWheels" count="1" prob="1" />
@@ -10198,7 +10204,7 @@ kind of free
 	</block>
 	<block id="1125" name="hubcapNoMine">
 		<property name="CustomIcon" value="mineHubcap" />
-		<property name="Material" value="MmetalNoGlue" /><!--bugfind-->
+		<property name="Material" value="MmetalNoGlue" />
 		<property name="MaxDamage" value="25" />
 		<property name="StabilitySupport" value="false" />
 		<!-- build restriction -->
@@ -15787,7 +15793,7 @@ kind of free
 	</block>
 	<block id="2028" name="tripwirepost">
 		<property name="Class" value="TripWire" />
-		<property name="Material" value="wood_weak" /><!--bugfind-->
+		<property name="Material" value="wood_weak" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Mesh" value="models" />
@@ -16276,7 +16282,7 @@ kind of free
 		<property name="Material" value="wood" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#TableMetal1?TableMetal1Prefab" />
-        <property name="ModelOffset" value="0,-0.03,0" />
+        <property name="ModelOffset" value="0,-0.01,0" />
 		<property name="Class" value="Campfire" />
 		<property name="HeatMapStrength" value="1" />
 		<property name="HeatMapTime" value="1200" />
@@ -16769,7 +16775,7 @@ kind of free
 	</block>
 	<block id="457" name="bikeLoot">
 		<property name="Class" value="Loot" />
-		<property name="Material" value="MdroppedBackpack" /><!--bugfind-->
+		<property name="Material" value="MdroppedBackpack" />
 		<property name="Texture" value="423" />
 		<property name="LootList" value="111" />
 		<property name="CanPickup" value="false" />
@@ -16849,7 +16855,7 @@ kind of free
 	<block id="660" name="appleSeed">
 		<property name="Extends" value="treeMasterGrowing" />
 		<property name="Model" value="Entities/Trees/Prefabs/MountainPine1mPrefab" />
-		<property name="Material" value="treeWoodSmall" /><!--bugfind-->
+		<property name="Material" value="treeWoodSmall" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Collide" value="melee" />
 		<property name="BigDecorationRadius" value="4" />
@@ -16867,7 +16873,7 @@ kind of free
         <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="PlantGrowing.Next" value="appleTree" />
 		<property name="Material" value="treeWoodMedium" />
-		<property name="Collide" value="melee" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="BigDecorationRadius" value="2" />
 		<property name="UpwardsCount" value="2" />
 		<property name="FallOver" value="true" />
@@ -16882,6 +16888,7 @@ kind of free
 		<property name="BigDecorationRadius" value="4" />
 		<property name="UpwardsCount" value="3" />
 		<property name="ModelOffset" value="0,0,0" />
+         <property name="MultiBlockDim" value="1,4,1" />
 		<drop event="Harvest" name="woodBranch" count="15" />
 		<drop event="Destroy" name="narrowLog" count="6,14" prob="1" />
 		<drop event="Destroy" name="apple" count="3,15" prob="1" />
@@ -16908,14 +16915,14 @@ kind of free
 	<block id="1704" name="wheatSeed">
 		<property name="Extends" value="cropsGrowingMaster" />
 		<property name="Model" value="#WheatSprout1?WheatSprout1Prefab" />
-        <property name="ModelOffset" value="0,-0.1,0" />
+        <property name="ModelOffset" value="0,-0.02,0" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="PlantGrowing.Next" value="smallWheatPlant" />
 	</block>
 	<block id="865" name="smallWheatPlant">
 		<property name="Extends" value="cropsGrowingMaster" />
 		<property name="Model" value="#WheatSmallPlant1?WheatSmallPlant1Prefab" />
-        <property name="ModelOffset" value="0,-0.1,0" />
+        <property name="ModelOffset" value="0,-0.02,0" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="PlantGrowing.Next" value="wheatPlant" />
 	</block>
@@ -16923,17 +16930,19 @@ kind of free
 		<property name="Extends" value="cropsHarvestableMaster" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#WheatPlant1?WheatPlant1Prefab" />
-        <property name="ModelOffset" value="0,-0.1,0" />
+        <property name="ModelOffset" value="0,-0.02,0" />
+        <property name="MultiBlockDim" value="1,1,1" />
+        <property name="Collide" value="melee,bullet,arrow,rocket" />
 		<drop event="Harvest" name="wheat" count="1" />
 	</block>
 	<block id="867" name="gasTankEmpty">
 		<property name="CustomIcon" value="gasTank" />
-		<property name="Material" value="Mmetal_thin" /><!--bugfind-->
+		<property name="Material" value="Mmetal_thin" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#gaztank?gaztankPrefab" />
 		<property name="Place" value="TowardsPlacer" />
 		<property name="CanPickup" value="true" />
-		<property name="ModelOffset" value="0,0.1,0" />
+		<property name="ModelOffset" value="0,0.3,0" />
 		<property name="DescriptionKey" value="gasTankEmptyDesc" />
 	</block>
 	<block id="868" name="gasTank">
@@ -16980,7 +16989,7 @@ kind of free
 		<property name="CraftingSkillGroup" value="engineeringCraft" />
 	</block>
 	<block id="906" name="still">
-		<property name="Material" value="Mmetal_thin" /><!--bugfind-->
+		<property name="Material" value="Mmetal_thin" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#OilRefinery?OilRefinery" />
@@ -17010,7 +17019,7 @@ kind of free
 		<property name="CraftingSkillGroup" value="engineeringCraft" />
 	</block>
 	<block id="950" name="cntUSRLockers">
-		<property name="Material" value="metal" /><!--bugfind-->
+		<property name="Material" value="metal" />
 		<property name="Class" value="SecureLoot" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Texture" value="282" />
@@ -17027,7 +17036,7 @@ kind of free
 	</block>
 	<block id="951" name="cntUSRFileCabinet">
 		<property name="Class" value="SecureLoot" />
-		<property name="Material" value="metal" /><!--bugfind-->
+		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Texture" value="282" />
 		<property name="Weight" value="72" />
@@ -18118,7 +18127,7 @@ kind of free
 	<property name="OpenSound" value="nailtrap_trigger" />
 	<property name="CloseSound" value="nailtrap_trigger" />
 	 until better solution this is just to allow interaction -->
-		<property name="Material" value="metal" /><!--bugfind-->
+		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#traps?NailTrap" />
 		<property name="CustomIcon" value="ui_game_symbol_trapNail" />
@@ -18401,9 +18410,7 @@ kind of free
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#SugarCane1?SugarCaneClump1Prefab" />
 		<property name="ModelOffset" value="0,-0.12,0" />
-		<!--sdx<property name="Class" value="MortePlantGrowing, Mods" />
-	<property name="MeshScale" value="1.5,1.5" />-->
-		<drop event="Harvest" name="sugarcanePlant" count="1" />
+		<drop event="Destroy" name="plantFibers" count="1,3" />
 	</block>
 	<block id="1590" name="plantedSunflower">
 		<property name="Extends" value="plantedTomato" />
@@ -18644,7 +18651,7 @@ kind of free
 	</block>
 	<block id="1624" name="containerOpen">
 		<property name="Class" value="SecureLoot" />
-		<property name="Material" value="metal" /><!--bugfind-->
+		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="MultiBlockDim" value="2,2,2" />
 		<property name="Model" value="#lootcontainers?Container" />
@@ -19088,18 +19095,6 @@ kind of free
 		<property name="StabilitySupport" value="false" />
 		<property name="Model" value="#WheatSmallPlant1?WheatSmallPlant1Prefab" />
 		<property name="Shape" value="ModelEntity" />
-		<!--<property name="Class" value="MortePlantGrowing, Mods" />
-        <property name="PlantGrowing.FertileLevel" value="0" />
-        <property name="MeshScale" value="2.4,2.4" />
-        <property name="MultiBlockDim" value="1,2,1" />
-        <property name="Collide" value="melee" />
-        <property name="doDamage" value="true" />
-        <property name="AllowSize" value="0,0,0" />
-        <property name="Tag" value="TreeTrunk" />
-        <property name="BigDecorationRadius" value="0" />
-        <property name="UpwardsCount" value="0" />
-        <property name="IsPlant" value="true" />
-        <property name="FallOver" value="false" />-->
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="CanDecorateOnSlopes" value="true" />
 		<property name="RotationAllowed" value="pivotOnFloor" />
@@ -19288,27 +19283,23 @@ kind of free
 		<drop event="Destroy" count="0" />
 		<drop event="Destroy" name="scrapIron" count="1,3" prob="1" />
 	</block> 
-    <block id="1726" name="zGrinderOff">
-		<property name="Class" value="Loot" />
+    <block id="1726" name="zGrinderOn">
 		<property name="Material" value="Mmetal_weak" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#poweredtraps?PoweredZdGrinder" />
-        <property name="ModelOffset" value="0,-0.1,0" />
+        <property name="ModelOffset" value="0,0.2,0" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="IsTerrainDecoration" value="true" />
-		<property name="LootList" value="2" />
 		<drop event="Destroy" count="0" />
 		<drop event="Destroy" name="scrapIron" count="1,3" prob="1" />
 	</block>
-    <block id="1728" name="sGrinderOn">
-		<property name="Class" value="Loot" />
-		<property name="Material" value="Mmetal_weak" />
+    <block id="1728" name="zGrinderOff">
+        <property name="Material" value="Mmetal_weak" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#traps?ZdGrinder" />
         <property name="ModelOffset" value="0,-0.1,0" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="IsTerrainDecoration" value="true" />
-		<property name="LootList" value="2" />
 		<drop event="Destroy" count="0" />
 		<drop event="Destroy" name="scrapIron" count="1,3" prob="1" />
 	</block>

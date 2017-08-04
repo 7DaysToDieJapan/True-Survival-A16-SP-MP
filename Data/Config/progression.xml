@@ -3080,7 +3080,7 @@
             <recipe name="shotgunSlug" unlock_level="1" />
 		</perk>	
         <!--WEAPONS-->
-        <perk name="crossbowPerk" icon="ui_game_symbol_crossbow" description_key="Level 1 - Learn to build and disassemble a simple Crossbow, crafting its parts on the wood working bench using a wrench. Level 2 - Learn to add a scope to the crossbow. Level 3 - Learn to upgrade to a automatic 6 shot crossbow." title_key="crossbowAction" max_level="3" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="weapons">
+        <perk name="crossbowPerk" icon="ui_game_symbol_crossbow" description_key="Level 1 - Learn to build and disassemble a simple Crossbow, crafting its parts on the wood working bench using a wrench. Level 2 - Learn to add a scope to the crossbow. Level 3 - Learn to upgrade to a automatic 6 shot crossbow." title_key="crossbow" max_level="3" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="weapons">
 			<requirement perk_level="1" required_skill_name="archeryAction" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="10" />
 			<recipe name="crossbow_Limb" unlock_level="1" />
@@ -3088,10 +3088,10 @@
 			<recipe name="crossbow_Barrel" unlock_level="1" />
 			<recipe name="crossbow" unlock_level="1" />
 			<recipe name="crossbowBolt" unlock_level="1" />
-			<requirement perk_level="2" required_skill_name="crossbowAction" required_skill_level="20" />
+			<requirement perk_level="2" required_skill_name="crossbowCraft" required_skill_level="20" />
 			<recipe name="crossbowStockScope" unlock_level="2" />
 			<recipe name="crossbowScope" unlock_level="2" />
-			<requirement perk_level="3" required_skill_name="crossbowAction" required_skill_level="60" />
+			<requirement perk_level="3" required_skill_name="crossbowCraft" required_skill_level="60" />
 			<recipe name="boltCylinder" unlock_level="3" />
 			<recipe name="autoCrossbow" unlock_level="3" />
 		</perk>
@@ -3455,7 +3455,8 @@
 		</perk>
 		<perk name="chestPerk" icon="ui_game_symbol_secureStorageChest" description_key="Learn to craft a secure storage container" title_key="Secure Storage" max_level="1" skill_point_cost_multiplier="1" skill_point_cost_per_level="2" group="crafting">
 			<requirement perk_level="1" required_player_level="10" />
-			<recipe name="secureStorageChest" unlock_level="1" />
+			<recipe name="cntStorageGeneric" unlock_level="1" />
+            <recipe name="cntSecureStorageChest" unlock_level="1" />
 		</perk>
 		<perk name="woodenDoorPerk" icon="ui_game_symbol_woodenDoor" description_key="Learn to craft a secure Wooden Door" title_key="Wooden Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
 			<requirement perk_level="1" required_skill_name="woodBuilding" required_skill_level="5" />

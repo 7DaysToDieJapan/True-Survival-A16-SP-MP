@@ -18,7 +18,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="grainServing" count="1" tooltip="ttScrapMetalBrass">
 		<wildcard_forge_category />
 	</recipe>
-	<recipe name="grainServing" count="1" craft_area="prepTable" material_based="true" craft_time="1" craft_exp_gain="0">
+	<recipe name="grainServing" count="3" craft_area="prepTable" material_based="true" craft_time="1" craft_exp_gain="0">
 		<ingredient name="unit_grain" count="1" />
 	</recipe>
 	<recipe name="veggieServing" count="1" tooltip="ttScrapMetalBrass">
@@ -564,7 +564,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="plank" count="20" />
 	</recipe>
 	<recipe name="cntSecureStorageChest" count="1">
-		<ingredient name="plank" count="10" />
+        <ingredient name="nail" count="10" />
+		<ingredient name="plank" count="20" />
 	</recipe>
 	<recipe name="cntStorageGeneric" count="1">
 		<ingredient name="nail" count="10" />
@@ -2200,6 +2201,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="sinew" count="3" />
 		<ingredient name="bottledWater" count="1" />
 	</recipe>
+    <recipe name="brickHammer" count="1" craft_time="30" craft_exp_gain="10">
+		<ingredient name="rockSmall" count="5" />
+		<ingredient name="fiberRope" count="2" />
+		<ingredient name="woodBranch" count="2" />
+	</recipe>
 	<recipe name="brownDenimPants" count="1" craft_area="armorTable" craft_tool="sewingNeedle" craft_time="4" craft_exp_gain="5">
 		<ingredient name="cloth" count="10" />
 		<ingredient name="fiberRope" count="5" />
@@ -2308,11 +2314,15 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="coal" count="1" craft_area="campfire" craft_time="4" craft_exp_gain="0">
 		<ingredient name="plank" count="5" />
 	</recipe>
-	<recipe name="ironWorkerProfession" count="1" craft_time="4" craft_exp_gain="1000">
-		<ingredient name="chooseAProfession" count="1" />
+    <recipe name="cobblestoneHammer" count="1" craft_time="30" craft_exp_gain="10">
+		<ingredient name="rockSmall" count="5" />
+		<ingredient name="fiberRope" count="2" />
+		<ingredient name="woodBranch" count="2" />
 	</recipe>
-	<recipe name="ironWorkerProfession" count="1" craft_area="researchDesk" craft_time="4" craft_exp_gain="1000">
-		<ingredient name="professionPage" count="20" />
+    <recipe name="concreteSledge" count="1" craft_area="anvil" craft_tool="clawHammer" craft_time="30" craft_exp_gain="10">
+		<ingredient name="sledgeHead" count="1" />
+		<ingredient name="fiberRope" count="5" />
+		<ingredient name="stick" count="10" />
 	</recipe>
 	<recipe name="copProfession" count="1" craft_time="4" craft_exp_gain="1000">
 		<ingredient name="chooseAProfession" count="1" />
@@ -2624,6 +2634,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="unit_iron" count="10" />
 		<ingredient name="unit_clay" count="3" />
 	</recipe>
+    <recipe name="handFullOfSeeds" count="5" craft_area="dryingRack" craft_time="300" craft_exp_gain="0">
+		<ingredient name="sunflowerHead" count="1" />
+	</recipe>
 	<recipe name="healthyMealSmall" count="1" craft_area="prepTable" craft_tool="cookingPot" material_based="true" craft_time="4">
 		<ingredient name="unit_protein" count="1" />
 		<ingredient name="unit_grain" count="1" />
@@ -2733,6 +2746,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="ironShovelHead" count="1" craft_area="forge" craft_tool="shovelHeadMold" material_based="true" craft_time="30" craft_exp_gain="10">
 		<ingredient name="unit_iron" count="100" />
 		<ingredient name="unit_clay" count="5" />
+	</recipe>
+    <recipe name="ironWorkerProfession" count="1" craft_time="4" craft_exp_gain="1000">
+		<ingredient name="chooseAProfession" count="1" />
+	</recipe>
+	<recipe name="ironWorkerProfession" count="1" craft_area="researchDesk" craft_time="4" craft_exp_gain="1000">
+		<ingredient name="professionPage" count="20" />
 	</recipe>
     <recipe name="kabobSmall" count="1" craft_area="campfire" craft_tool="stick" craft_time="4" craft_exp_gain="5">
 		<ingredient name="unit_protein" count="1" />
@@ -2942,8 +2961,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="bottledWater" count="1" />
 		<ingredient name="forestFlower" count="1" />
 	</recipe>
+     <recipe name="ratOnAStick" count="1" craft_area="campfire" craft_tool="stick" craft_time="4" craft_exp_gain="5">
+		<ingredient name="deadRat" count="1" />
+	</recipe>
 	<recipe name="rawMeat" count="6" craft_time="15" craft_exp_gain="5">
 		<ingredient name="hen" count="1" />
+	</recipe>
+    <recipe name="rConcreteBar" count="1" craft_area="forge" craft_tool="crowbarMold" craft_time="15" craft_exp_gain="10">
+		<ingredient name="unit_iron" count="100" />
 	</recipe>
 	<recipe name="redBull" count="1" craft_time="20" craft_exp_gain="5">
 		<ingredient name="bottledWater" count="1" />
@@ -3137,6 +3162,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="fiberRope" count="1" />
 		<ingredient name="coal" count="2" />
 	</recipe>
+    <recipe name="sledgeHead" count="1" craft_area="forge" craft_tool="sledgeHeadMold" craft_time="15" craft_exp_gain="10">
+		<ingredient name="unit_iron" count="100" />
+	</recipe>
 	<recipe name="smallEngine" count="1" scrapable="true" craft_area="assembly">
 		<ingredient name="airFilter" count="1" />
 		<ingredient name="radiator" count="1" />
@@ -3206,7 +3234,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="partsAuger_parts" count="1" />
 		<ingredient name="partsAuger_bladeDiamond" count="1" />
 	</recipe>
-	<recipe name="sutureKit" count="1" craft_time="4" craft_exp_gain="50">
+    <recipe name="storageSack" count="1" craft_time="30" craft_exp_gain="5">
+		<ingredient name="cloth" count="16" />
+		<ingredient name="scrapIron" count="5" />
+	</recipe>
+    <recipe name="sutureKit" count="1" craft_time="4" craft_exp_gain="50">
 		<ingredient name="sutures" count="1" />
 		<ingredient name="sewingNeedle" count="1" />
 	</recipe>
