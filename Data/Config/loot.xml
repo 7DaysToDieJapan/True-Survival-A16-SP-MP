@@ -117,6 +117,8 @@
 			<block name="cntSportsBag01" prob="5.0" />
 			<block name="cntSportsBag02" prob="5.0" />
 			<block name="cntPurse01" prob="5.0" />		
+            <block name="cntPurse01" prob="5.0" />		
+            
 		</placeholder>
 		<!-- Replace the lootStreet with one of the following -->
 		<placeholder name="lootStreetHelper">
@@ -150,8 +152,6 @@
 			<block name="cntSportsBag01" prob="3.3" />
 			<block name="cntSportsBag02" prob="3.3" />
 			<block name="cntPurse01" prob="3.3" />
-		<!--	<block name="smallLimeTree" prob="0.1" />
-			<block name="smallPlainsTree" prob="0.2" /> -->
 			<block name="appleTree" prob="1.2" />
 			<block name="tomatoPlant" prob="1.2" />
 			<block name="strawberryPlant" prob="1.1" />
@@ -1167,7 +1167,10 @@
 	</lootgroup>
 	<lootgroup name="dryfood">
 		<item group="cannedfood" count="1,3" prob="10.0" />
-		<item name="cornMeal" count="1,4" prob="10.0" />
+		<item name="cereal" count="1,4" prob="10.0" />
+        <item name="chips" count="1,4" prob="10.0" />
+        <item name="oatMeal" count="1,4" prob="10.0" />
+        <item name="mreSmall" count="1,4" prob="10.0" />
 		<item name="fruitCake" count="1" prob="10.0" />
 		<item name="bread" count="1,2" prob="10.0" />
 		<item name="flour" count="1,4" prob="10.0" />
@@ -1175,11 +1178,12 @@
 		<item name="dates" count="1,4" prob="10.0" />
 	</lootgroup>
 	<lootgroup name="farmCrops">
-		<item name="corn" prob="10.0" />
-		<item name="potato" prob="10.0" />
-		<item name="blueberries" prob="10.0" />
-		<item name="cottonPlant" prob="10.0" />
-		<item name="goldenrodPlant" prob="10.0" />
+		<item name="corn" count="1,2" prob="10.0" />
+		<item name="potato" count="1,2" prob="10.0" />
+        <item name="strawberry" count="1,2" prob="10.0" />
+		<item name="blueberries" count="1,2" prob="10.0" />
+		<item name="cottonPlant" count="1,2" prob="10.0" />
+		<item name="goldenrodPlant" count="1,2" prob="10.0" />
 		<item name="carrot" count="1,2" prob="10.0" />
 		<item name="apple" count="1,2" prob="10.0" />
 		<item name="tomato" count="1,2" prob="10.0" />
@@ -1382,48 +1386,49 @@
 		<item group="metalpipe_scrap" />
 	</lootgroup>
 	<lootgroup name="resources" count="1">
-		<item name="cobblestones" count="5,50" />
-		<item name="bricks" count="5,50" />
-		<item name="plank" count="5,50" />
-		<item name="nail" count="5,50" />
-		<item name="cementMix" count="5,50" />
-		<item name="concreteMix" count="5,50" />
-		<item name="corrugatedMetalSheet" count="5,50" />
-		<item name="nutAndBolt" count="5,50" />
-		<item name="metalRivetSheet" count="5,50" />
+		<item name="cobblestones" count="5,50" prob="11.11" />
+		<item name="bricks" count="5,50" prob="11.11" />
+		<item name="plank" count="5,50" prob="11.11" />
+		<item name="nail" count="5,50" prob="11.11" />
+		<item name="cementMix" count="5,50" prob="11.11" />
+		<item name="concreteMix" count="5,50" prob="11.11" />
+		<item name="corrugatedMetalSheet" count="5,50" prob="11.11" />
+		<item name="nutAndBolt" count="5,50" prob="11.11" />
+		<item name="metalRivetSheet" count="5,50" prob="11.11" />
 	</lootgroup>
 	<lootgroup name="rareTools" count="1">
-		<item group="motorToolParts" count="1" prob="5" />
-		<item name="sledgehammer" quality="150,300" />
-		<item name="smallEngine" />
-		<item name="welderTool" prob="12.5" quality="150,300" />
-		<item name="wireTool" prob="2.5" quality="150,300" />
-		<item name="concreteSledge" prob="2.5" quality="150,300" />
-		<item name="rConcreteBar" prob="2.5" quality="150,300" />
-		<item name="screwdriver" prob="2.5" quality="150,300" />
-		<item name="calipers" prob="2.5" />
-		<item name="toolAndDieSet" prob="1.3" />
-		<item name="lightBulb" prob="7.5" />
-		<item group="nailgun+parts" prob="7.5" />
+		<item group="motorToolParts" count="1" prob="11.1" />
+		<item name="sledgehammer" quality="150,300" prob="8.33" />
+		<item name="smallEngine" prob="8.33" />
+		<item name="welderTool" quality="150,300" prob="8.33" />
+		<item name="wireTool" quality="150,300" />
+		<item name="concreteSledge" quality="150,300" prob="8.33" />
+		<item name="rConcreteBar" quality="150,300" prob="8.33" />
+		<item name="screwdriver" quality="150,300" prob="8.33" />
+		<item name="calipers" prob="8.33" />
+		<item name="toolAndDieSet" prob="8.33" />
+		<item name="lightBulb" prob="8.33" />
+		<item group="nailgun+parts" prob="8.33" />
 	</lootgroup>
 	<lootgroup name="tools" count="1">
-		<item name="padlock" />
-		<item name="hoeIron" />
-		<item name="bucket" prob="4.9" />
-		<item name="handSaw" prob="2.0" />
-		<item name="scavengedParts" count="1,4" prob="4.6" />
-		<item name="cobblestoneHammer" quality="150,300" prob="2.5" />
-		<item name="brickHammer" quality="150,300" prob="2.5" />
-		<item name="clawHammer" quality="150,300" prob="2.5" />
-		<item name="wrench" quality="150,300" prob="2.5" />
-		<item name="weaponRepairKit" count="1,4" />
-		<item group="rareTools" />
-		<item group="resources" />
-		<item name="forgedIron" count="1,6" prob="0.41" />
-		<item name="forgedSteel" count="1,6" prob="0.22" />
-		<item name="paintTool" prob="0.5" />
-		<item name="wireTool" />
-		<item name="sharpeningStone" count="1,6" prob="1.5" />
+		<item name="padlock" prob="5.55" />
+		<item name="hoeIron" prob="5.55" />
+		<item name="bucket" prob="5.55" />
+		<item name="handSaw" prob="5.55" />
+		<item name="scavengedParts" count="1,4" prob="5.55" />
+		<item name="cobblestoneHammer" quality="150,300" prob="5.55" />
+		<item name="brickHammer" quality="150,300" prob="5.55" />
+		<item name="clawHammer" quality="150,300" prob="5.55" />
+		<item name="wrench" quality="150,300" prob="5.55" />
+        <item name="screwdriver" quality="150,300" prob="5.55" />
+		<item name="weaponRepairKit" count="1,4" prob="5.55" />
+		<item group="rareTools" prob="5.55" />
+		<item group="resources" prob="5.55" />
+		<item name="forgedIron" count="1,6" prob="5.55" />
+		<item name="forgedSteel" count="1,6" prob="5.55" />
+		<item name="paintTool" prob="5.55" />
+		<item name="wireTool" prob="5.55" />
+		<item name="sharpeningStone" count="1,6" prob="5.55" />
 	</lootgroup>
 	<lootgroup name="workingStiffs" count="1">
 		<item group="resources" />
@@ -2126,13 +2131,13 @@
 	</lootcontainer>
 	<!-- stove, cooking pots and pans rotten food -->
 	<lootcontainer id="5" count="0,2" size="4,3" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" loot_quality_template="baseTemplate">
-		<item name="cookingPot" count="1,2" prob="1.5" />
+		<item name="cookingPot" count="1" prob="0.5" />
 		<item name="fryingPan" count="1" prob="0.5" />
-		<item name="cookingGrill" prob="0.5" />
+		<item name="cookingGrill" count="1" prob="0.5" />
 		<item name="scrapIron" count="1,15" prob="1.5" />
 		<item name="emptyJar" count="1,2" />
 		<item name="canEmpty" count="1,2" />
-		<item name="coal" count="4,12" prob="0.5" />
+        <item name="coal" count="4,12" prob="0.5" />
 	</lootcontainer>
 	<!-- night stands and dressers, pistol, ammo, magazines, books -->
 	<lootcontainer id="6" count="0,2" size="4,3" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="baseTemplate">
@@ -2153,17 +2158,19 @@
 	</lootcontainer>
 	<!-- kitchen sink, cupboards (lower), cleaning chemicals, plates, silverware, pots and pans -->
 	<lootcontainer id="8" count="0,2" size="4,3" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" loot_quality_template="baseTemplate">
-		<item name="cookingPot" count="1" />
-		<item name="fryingPan" count="1" prob="1.0" />
-		<item name="bucket" count="1" prob="1.0" />
-		<item group="cupboard" count="1,2" prob="4.2" />
-		<item name="emptyJar" count="1,2" />
-		<item name="canEmpty" count="1,2" />
-		<item name="coffeeBeans" count="1,4" />
-		<item name="shortMetalPipe" count="1,2" prob="1.0" />
-		<item group="tools" count="1" />
-		<item name="scrapLead" count="1,10" />
-		<item name="clawHammer" count="1" prob="0.1" quality="1,300" />
+		<item name="cookingPot" count="1" prob="7.0" />
+		<item name="fryingPan" count="1" prob="7.0" />
+		<item name="cookingGrill" count="1" prob="7.0" />
+        <item name="bucket" count="1" prob="7.0" />
+		<item group="cupboard" count="1,2" prob="7.0" />
+		<item name="emptyJar" count="1,2" prob="7.0" />
+		<item name="canEmpty" count="1,2" prob="7.0" />
+		<item name="coffeeBeans" count="1,4" prob="7.0" />
+		<item name="shortMetalPipe" count="1,2" prob="7.0" />
+		<item group="tools" count="1" prob="7.0" />
+		<item name="scrapLead" count="1,10" prob="7.0" />
+		<item name="screwdriver" count="1" quality="1,300" prob="7.0" />
+		<item name="clawHammer" count="1" quality="1,300" prob="7.0" />
 		<item group="dryfood" loot_prob_template="goodFoodTemplate" />
 		<item group="rottenFood" loot_prob_template="badFoodTemplate" />
 	</lootcontainer>
@@ -2873,7 +2880,7 @@
 		<item name="chrysanthemumPlant" count="5,12" />
 		<item name="cottonPlant" count="5,12" />
 		<item name="goldenrodPlant" count="5,12" />
-		<item name="cornMeal" count="5,20" />
+		<item name="grainServing" count="5,20" />
 	</lootcontainer>
 	<!-- cntLootCrateHero, Hero / Hidden Stash Cardboard Loot-->
 	<lootcontainer id="95" count="1,2" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="treasureTemplate">

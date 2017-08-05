@@ -846,6 +846,10 @@ This requires a 50+ food bar:
 <buff id="banditBonus" mutex="isPlayer" duration="2" stack="extend">
 	<modify id="0" stat="health" amount="-150" rate="1" />
 </buff>
+<!-- JZMOD DOCTOR INFECTED SHOT -->
+<buff id="zombieKill" mutex="isPlayer" duration="6" stack="extend">
+	<modify id="0" stat="health" amount="-250" rate="1" />
+</buff>
 <!-- JZMOD Z-VIRUS -->
 <buff id="cured" duration="3600" stack="reset" actions="buff(antiViralMedDose);debuff(infection)" icon="ui_game_symbol_pills" name_key="cured" description_key="curedDesc" tooltip_key="curedTooltip" />
 <buff id="antiViralMedDose" duration="1" actions="debuff(infectionD2);debuff(infectionD3);debuff(infectionD4);debuff(infectionD5);debuff(infectionD6);debuff(infectionD7)" />

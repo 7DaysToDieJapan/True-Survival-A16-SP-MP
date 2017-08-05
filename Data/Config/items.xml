@@ -9125,7 +9125,7 @@ Mesh files no longer used:
 		<property name="EconomicBundleSize" value="10" />
 		<property name="Group" value="Resources" />
 		<property name="RepairTime" value="0.5" />
-		<property name="RepairAmount" value="20" />
+		<property name="RepairAmount" value="40" />
 		<property name="CraftingIngredientTime" value="0.2" />
 	</item>
 	<item id="1306" name="forgedIron">
@@ -11681,7 +11681,7 @@ Mesh files no longer used:
 		<property name="Meshfile" value="Items/Tools/sledgehammer_steelPrefab" />
         <property name="CustomIcon" value="sledgehammer" />
 		<property name="Material" value="metal" />
-		<property name="RepairTools" value="shortMetalPipe" />
+		<property name="RepairTools" value="scrapIron" />
 		<property name="HoldType" value="33" />
 		<property name="SoundDestroy" value="metaldestroy1" />
 		<property name="FuelValue" value="10" />
@@ -13214,7 +13214,7 @@ Mesh files no longer used:
 	<item id="1731" name="flour">
 		<property name="Meshfile" value="Items/Misc/parcel" />
         <property name="CustomIcon" value="ui_game_symbol_flour" />
-		<property name="Material" value="Mgrain" />
+		<property name="Material" value="organic" />
 		<property name="Weight" value="1" />
 		<property name="HoldType" value="31" />
 		<property name="Group" value="food/Cooking" />
@@ -14435,10 +14435,10 @@ Mesh files no longer used:
 	</item>
 	<item id="1840" name="wheat">
 		<property name="Extends" value="itemMaster" />
+        <property name="Material" value="Mgrain" />
+        <property name="Weight" value="1" />
 		<property name="Stacknumber" value="5000" />
-		<property name="EconomicValue" value="5" />
 		<property name="SellableToTrader" value="false" />
-		<property name="EconomicBundleSize" value="1" />
 		<property name="DescriptionKey" value="cannabisBubDesc" />
 		<property name="CustomIcon" value="ui_game_symbol_wheat" />
 	</item>
@@ -16755,15 +16755,17 @@ Mesh files no longer used:
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="1" />
         <property name="CustomIcon" value="ui_game_symbol_axeHeadMold" />
+        <property name="Group" value="Science" />
 	</item>
-    <item id="2035" name="ironPickaxeHeadMold">
+    <item id="2035" name="PickaxeHeadMold">
         <property name="Extends" value="itemMaster" />
 		<property name="Material" value="clay" />
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="1" />
         <property name="CustomIcon" value="ui_game_symbol_pickaxeHeadMold" />
+        <property name="Group" value="Science" />
 	</item>
-    <item id="2036" name="steelPickaxeHeadMold">
+    <item id="2036" name="steelPickaxeHeadMold"><!--JZMOD DELETE-->
         <property name="Extends" value="itemMaster" />
 		<property name="Material" value="clay" />
 		<property name="HoldType" value="45" />
@@ -16776,6 +16778,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="1" />
         <property name="CustomIcon" value="ui_game_symbol_spearHeadMold" />
+        <property name="Group" value="Science" />
 	</item>
     <item id="203" name="smallKnifeBladeMold">
         <property name="Extends" value="itemMaster" />
@@ -16783,6 +16786,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="1" />
         <property name="CustomIcon" value="ui_game_symbol_knifeBladeMold" />
+        <property name="Group" value="Science" />
 	</item>
     <item id="2039" name="largeKnifeBladeMold">
         <property name="Extends" value="itemMaster" />
@@ -16790,6 +16794,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="1" />
         <property name="CustomIcon" value="ui_game_symbol_knifeBladeMold" />
+        <property name="Group" value="Science" />
 	</item>
     <item id="2040" name="swordBladeMold">
         <property name="Extends" value="itemMaster" />
@@ -16797,6 +16802,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="1" />
         <property name="CustomIcon" value="ui_game_symbol_swordBladeMold" />
+        <property name="Group" value="Science" />
 	</item>
     <item id="2041" name="hammerHeadMold">
         <property name="Extends" value="itemMaster" />
@@ -16804,6 +16810,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="1" />
         <property name="CustomIcon" value="ui_game_symbol_hammerHeadMold" />
+        <property name="Group" value="Science" />
 	</item>
     <item id="2042" name="scrapWrenchMold">
         <property name="Extends" value="itemMaster" />
@@ -16811,6 +16818,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="1" />
         <property name="CustomIcon" value="ui_game_symbol_scrapWrenchMold" />
+        <property name="Group" value="Science" />
 	</item>
     <item id="2043" name="screwdriverHeadMold">
         <property name="Extends" value="itemMaster" />
@@ -16818,6 +16826,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="1" />
         <property name="CustomIcon" value="ui_game_symbol_screwdriverHeadMold" />
+        <property name="Group" value="Science" />
 	</item>
     <item id="2044" name="sledgeHeadMold">
         <property name="Extends" value="itemMaster" />
@@ -16825,6 +16834,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="1" />
         <property name="CustomIcon" value="ui_game_symbol_sledgeHeadMold" />
+        <property name="Group" value="Science" />
 	</item>
     <item id="2045" name="shovelHeadMold">
         <property name="Extends" value="itemMaster" />
@@ -16832,6 +16842,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="1" />
         <property name="CustomIcon" value="ui_game_symbol_shovelHeadMold" />
+        <property name="Group" value="Science" />
 	</item>
     <item id="2046" name="crowbarMold">
         <property name="Extends" value="itemMaster" />
@@ -16839,6 +16850,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="1" />
         <property name="CustomIcon" value="ui_game_symbol_crowbarMold" />
+        <property name="Group" value="Science" />
 	</item>
     <item id="2047" name="brassKnucklesMold">
         <property name="Extends" value="itemMaster" />
@@ -16846,6 +16858,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="1" />
         <property name="CustomIcon" value="ui_game_symbol_brassKnucklesMold" />
+        <property name="Group" value="Science" />
 	</item>
     <item id="2048" name="woodBuildingSkill">
 		<property name="Extends" value="schematicMaster" />
@@ -17039,6 +17052,42 @@ Mesh files no longer used:
 			<property name="Gain_water" value="-1" />
 			<property name="Gain_stamina" value="0" />
 		</property>
+	</item>
+    <item id="2065" name="meatPieSmall">
+		<property name="Extends" value="foodMaster" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="10" />
+			<property name="Gain_water" value="-3" />
+			<property name="Gain_stamina" value="-20" />
+			<property name="Buff" value="nutrition_1_Trigger,wellness_4_Trigger,eatFood_2_Trigger" />
+		</property>
+		<property name="Smell" value="mediumSmell" />
+		<property name="CustomIcon" value="cornBread" />
+	</item>
+	<item id="2066" name="meatPieMedium">
+		<property name="Extends" value="foodMaster" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="20" />
+			<property name="Gain_water" value="-6" />
+			<property name="Gain_stamina" value="-40" />
+			<property name="Buff" value="nutrition_2_Trigger,wellness_8_Trigger,eatFood_4_Trigger" />
+		</property>
+		<property name="Smell" value="mediumSmell" />
+		<property name="CustomIcon" value="cornBread" />
+	</item>
+	<item id="2067" name="meatPieLarge">
+		<property name="Extends" value="foodMaster" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="30" />
+			<property name="Gain_water" value="-9" />
+			<property name="Gain_stamina" value="-60" />
+			<property name="Buff" value="nutrition_3_Trigger,wellness_12_Trigger,eatFood_6_Trigger" />
+		</property>
+		<property name="Smell" value="mediumSmell" />
+		<property name="CustomIcon" value="cornBread" />
 	</item>
     <!-- JZMOD UN USED MESHES
         <property name="Meshfile" value="#crudeweapons?nailwood" /><property name="HoldType" value="2" />works nial shiv not using

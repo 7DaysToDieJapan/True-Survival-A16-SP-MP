@@ -335,8 +335,6 @@
 		</action_skill>
 		<!-- JZMOD CRAFTING SKILLS-->
 		<crafting_skill name="cookingCraft" icon="ui_game_symbol_spatula" description_key="Learn to cook more filling and nutritious food." title_key="Cooking" group="scavenging">
-			<recipe name="cornMeal" unlock_level="5" />
-			<recipe name="cornBread" unlock_level="5" />
 			<recipe name="flour" unlock_level="5" />
 			<recipe name="bread" unlock_level="5" />
 			<recipe name="goldenRodTea" unlock_level="10" />
@@ -3800,8 +3798,6 @@
 		</perk>
 		<perk name="chef" icon="ui_game_symbol_chef" description_key="These are the skills a Chef starts with. Collect 20 Profession pages to learn another profession" title_key="Chef" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="sharpeningStone" unlock_level="1" />
-			<recipe name="cornMeal" unlock_level="1" />
-			<recipe name="cornBread" unlock_level="1" />
 			<recipe name="flour" unlock_level="1" />
 			<recipe name="bread" unlock_level="1" />
 			<recipe name="goldenRodTea" unlock_level="1" />

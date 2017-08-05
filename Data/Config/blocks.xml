@@ -16958,6 +16958,8 @@ kind of free
 		<property name="Place" value="TowardsPlacer" />
 		<property name="CanPickup" value="true" />
 		<property name="ModelOffset" value="0,0.3,0" />
+        <property name="MultiBlockDim" value="1,2,1" />
+        <property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="DescriptionKey" value="gasTankEmptyDesc" />
 	</block>
 	<block id="868" name="gasTank">
@@ -19218,7 +19220,8 @@ kind of free
 		<property name="Material" value="wood" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#workbenches?ToolboxPrefab" />
-        <property name="ModelOffset" value="0,-0.1,0" />
+        <property name="ModelOffset" value="0,0,0" />
+        <property name="MultiBlockDim" value="1,1,1" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="LootList" value="2" />
@@ -19230,7 +19233,8 @@ kind of free
 		<property name="Material" value="Mmetal_weak" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#workbenches?cableExtension" /> 
-        <property name="ModelOffset" value="0,-0.1,0" />
+        <property name="ModelOffset" value="0,0,0" />
+        <property name="MultiBlockDim" value="1,1,1" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="LootList" value="2" />
