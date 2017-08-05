@@ -140,9 +140,6 @@ If you do not declare them, the decorations of the main biome are used.
 				<Temperature min="-90" max="-90" prob="0"/>
                 <Fog min="0" max="5" prob="0.15"/>
                 <Fog min="0" max="0" prob="0.25"/>
-
-
-
                 <!-- Cloud Density *Must be above 60 to Rain* -->
                 <CloudThickness min="70" max="100" prob="0.25"/>
                 <CloudThickness min="50" max="70" prob="0.25"/>
@@ -151,16 +148,9 @@ If you do not declare them, the decorations of the main biome are used.
                 <!-- Rain Density -->
                 <Precipitation min="100" max="100" prob="0.2"/>
                 <Precipitation min="50" max="75" prob="0.2"/>
-
-
-
-
                 <Precipitation min="25" max="50" prob="0.2"/>
                 <Precipitation min="0" max="25" prob="0.2"/>
-
                 <Precipitation min="0" max="0" prob="0.2"/>
-
-
                 <!-- Wind spd -->
                 <Wind min="75" max="100" prob="0.25"/>
                 <Wind min="50" max="75" prob="0.25"/>
@@ -1762,9 +1752,6 @@ If you do not declare them, the decorations of the main biome are used.
 				<Temperature min="-5" max="5" prob="1"/>
                 <Fog min="0" max="5" prob="0.15"/>
                 <Fog min="0" max="0" prob="0.25"/>
-
-
-
                 <!-- Cloud Density *Must be above 60 to Rain* -->
                 <CloudThickness min="70" max="100" prob="0.25"/>
                 <CloudThickness min="50" max="70" prob="0.25"/>
@@ -1773,15 +1760,9 @@ If you do not declare them, the decorations of the main biome are used.
                 <!-- Rain Density -->
                 <Precipitation min="100" max="100" prob="0.2"/>
                 <Precipitation min="50" max="75" prob="0.2"/>
-
-
-
                 <Precipitation min="25" max="50" prob="0.2"/>
                 <Precipitation min="0" max="25" prob="0.2"/>
-
                 <Precipitation min="0" max="0" prob="0.2"/>
-
-
                 <!-- Wind spd -->
                 <Wind min="75" max="100" prob="0.25"/>
                 <Wind min="50" max="75" prob="0.25"/>
@@ -2044,6 +2025,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="rockResource" prob=".0005" rotatemax="3" />
 				<decoration type="block" blockname="rockResource02" prob=".0005" rotatemax="3" />
 				<decoration type="block" blockname="cntBirdnest" prob="0.002" />
+                <decoration type="block" blockname="plantedCoffee3Harvest" prob="0.0002" />
 				<decoration type="block" blockname="cinderBlocks01" prob=".006" rotatemax="7" />
 				<decoration type="block" blockname="cinderBlocks02" prob=".006" rotatemax="7" />
 				<decoration type="block" blockname="cinderBlocks03" prob=".006" rotatemax="7" />
@@ -2095,12 +2077,8 @@ If you do not declare them, the decorations of the main biome are used.
 		<biome name="burnt_forest" biomemapcolor="#ba00ff">
 			<weather>
 				<Temperature min="-20" max="-20" prob="1"/>
-
                 <Fog min="0" max="5" prob="0.15"/>
                 <Fog min="0" max="0" prob="0.25"/>
-
-
-
                 <!-- Cloud Density *Must be above 60 to Rain* -->
                 <CloudThickness min="70" max="100" prob="0.25"/>
                 <CloudThickness min="50" max="70" prob="0.25"/>
@@ -2109,15 +2087,9 @@ If you do not declare them, the decorations of the main biome are used.
                 <!-- Rain Density -->
                 <Precipitation min="100" max="100" prob="0.2"/>
                 <Precipitation min="50" max="75" prob="0.2"/>
-
-
-
                 <Precipitation min="25" max="50" prob="0.2"/>
                 <Precipitation min="0" max="25" prob="0.2"/>
-
                 <Precipitation min="0" max="0" prob="0.2"/>
-
-
                 <!-- Wind spd -->
                 <Wind min="75" max="100" prob="0.25"/>
                 <Wind min="50" max="75" prob="0.25"/>
@@ -2127,7 +2099,6 @@ If you do not declare them, the decorations of the main biome are used.
                 <ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="21"/>
                 <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="17"/>
                 <ParticleEffect prefab="ParticleEffects/p_hotembers" ChunkMargin="1"/>
-                
             </weather>
 			<subbiome prob="0.02">
 				<!-- Burnt Forest Sub Biome Coal and Corpses -->
@@ -2385,6 +2356,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="treeDeadShrub" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="treeDeadTree01" prob="0.002" rotatemax="7" />
 				<decoration type="block" blockname="treeDeadTree02" prob="0.003" rotatemax="7" />
+                <decoration type="block" blockname="plantedCoffee3Harvest" prob="0.0002" />
 				<decoration type="prefab" name="houseburnt_deco1" prob=".0009" />
 				<decoration type="prefab" name="houseburnt_deco2" prob=".0009" />
 				<decoration type="block" blockname="emberPile1" prob="0.001" rotatemax="7" />
@@ -2818,6 +2790,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="prefab" name="waste_rubble_bldg_05" prob="0.060" />
 				<decoration type="prefab" name="waste_rubble_bldg_06" prob="0.060" />
 				<decoration type="prefab" name="waste_rubble_bldg_07" prob="0.060" />
+                 <decoration type="block" blockname="plantedCoffee3Harvest" prob="0.0002" />
 				<decoration type="prefab" name="waste_rubble_bldg_08" prob="0.060" />
 				<decoration type="prefab" name="waste_rubble_highway_01" prob="0.0025" />
 				<decoration type="prefab" name="street_light_01" prob="0.00125" />
@@ -3142,6 +3115,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="cntBirdnest" prob="0.002" />
 				<decoration type="block" blockname="cinderBlocks01" prob=".006" rotatemax="7" />
 				<decoration type="block" blockname="cinderBlocks02" prob=".006" rotatemax="7" />
+                 <decoration type="block" blockname="plantedCoffee3Harvest" prob="0.0002" />
 				<decoration type="block" blockname="cinderBlocks03" prob=".006" rotatemax="7" />
 				<decoration type="block" blockname="treeBurntPine01" prob="0.0012" rotatemax="7" />
 				<decoration type="block" blockname="treeBurntPine02" prob="0.0012" rotatemax="7" />

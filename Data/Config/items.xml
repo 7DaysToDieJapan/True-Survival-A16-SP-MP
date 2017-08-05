@@ -17004,6 +17004,42 @@ Mesh files no longer used:
 		<property name="CraftingSkillGroup" value="ironShovelCraft" />
 		<property name="CustomIcon" value="ui_game_symbol_ironSledgeHead" />
 	</item>
+    <item id="2062" name="salmonSandwich">
+		<property name="Extends" value="foodMaster" />
+		<property name="CustomIcon" value="ui_game_symbol_shamSandwich" />
+		<property name="Smell" value="largeSmell" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="17" />
+			<property name="Gain_water" value="-7" />
+			<property name="Gain_stamina" value="-35" />
+			<property name="Buff" value="nutrition_1_Trigger,wellness_1.5_Trigger,eatFood_2_Trigger" />
+		</property>
+	</item>
+    <item id="2063" name="tunaSandwich">
+		<property name="Extends" value="foodMaster" />
+		<property name="CustomIcon" value="ui_game_symbol_shamSandwich" />
+		<property name="Smell" value="largeSmell" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="14" />
+			<property name="Gain_water" value="-9" />
+			<property name="Gain_stamina" value="-30" />
+			<property name="Buff" value="nutrition_1_Trigger,wellness_1.5_Trigger,eatFood_2_Trigger" />
+		</property>
+	</item>
+    <item id="2064" name="wildBeans">
+		<property name="Extends" value="foodMaster" />
+        <property name="Material" value="Mprotein" />
+		<property name="Weight" value="1" />
+		<property name="CustomIcon" value="ui_game_symbol_wildBeans" />
+		<property class="Action1">
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="2" />
+			<property name="Gain_water" value="-1" />
+			<property name="Gain_stamina" value="0" />
+		</property>
+	</item>
     <!-- JZMOD UN USED MESHES
         <property name="Meshfile" value="#crudeweapons?nailwood" /><property name="HoldType" value="2" />works nial shiv not using
         <property name="Meshfile" value="#crudeweapons?Fork" /><property name="HoldType" value="36" />works brass knocklew fork not using

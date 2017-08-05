@@ -898,7 +898,7 @@ This requires a 50+ food bar:
 <buff id="nutrition_4_Trigger" duration="1" name_key="4 Nutrition" actions="increment(nutrition, 4, 0, 0, 1)" />
 <buff id="nutrition_5_Trigger" duration="1" name_key="5 Nutrition" actions="increment(nutrition, 5, 0, 0, 1)" />
 <buff id="nutrition_30_Trigger" duration="1" actions="increment(nutrition, 30, 0, 0, 1)" />
-<buff id="nutritionFade" buffif="nutrition greater 0" debuffif="nutrition less 1" duration="0" actions="increment(nutrition, -1, 750, 0, 0);min(nutrition, 0)" /><!--750-->
+<buff id="nutritionFade" buffif="nutrition greater 0" debuffif="nutrition less 1" duration="0" actions="increment(nutrition, -1, 900, 0, 0);min(nutrition, 0)" /><!--900-->
 <!--JZMOD GOOD NUTRITION STAGE 1-->
 <buff id="goodNutrition1Tag" buffif="nutrition greater 14" debuffif="nutrition lequal 14" />
 <buff id="goodNutrition1" mutex="goodNutrition2,goodNutrition3" buffif="nutrition greater 14" debuffif="nutrition lequal 14" actions="buff(malnourishedReset)" name_key="Good Diet" tooltip_key="Feeling Good!" description_key="Your eating a more balanced diet now and can benifit from wellness and health gains from foods." icon="ui_game_symbol_goodNutrition1" />
@@ -921,20 +921,20 @@ This requires a 50+ food bar:
 <buff id="malnourishedReset" requires="malnourishedActive" duration="2" actions="setvar(malnourished, 0)" />
 <buff id="malnourishedActive" buffif="malnourished greater 0" debuffif="malnourished less 1" />
 <!--JZMOD Malnourished Timer-->
-<buff id="malnourishTimer" mutex="goodNutrition1Tag" buffif="nutrition less 15" debuffif="nutrition gequal 15" actions="increment(malnourished, 1, 60, 0, 0)" /><!--1,60-->
+<buff id="malnourishTimer" mutex="goodNutrition1Tag" buffif="nutrition less 15" debuffif="nutrition gequal 15" actions="increment(malnourished, 1, 90, 0, 0)" /><!--1,90-->
 <!--JZMOD BAD NUTRITION-->
 <buff id="malnourished1" mutex="malnourished2,malnourished3" buffif="malnourished greater 179" debuffif="malnourished lequal 179" name_key="Bad Diet" tooltip_key="Feeling Tired" description_key="Your diet is not very healthy and it is starting to effect you. Try eating foods that contain more food groups." icon="ui_game_symbol_malnourished1">
-	<modify id="0" stat="food" amount="-1" rate="15" />
+	<modify id="0" stat="food" amount="-1" rate="60" />
 	<modify id="1" stat="stamina" amount="-1" rate="3" /> 
 </buff>
 <buff id="malnourished1Tag" buffif="malnourished greater 359" debuffif="malnourished lequal 359" />
 <buff id="malnourished2" mutex="malnourished3" buffif="malnourished greater 359" debuffif="malnourished lequal 359" name_key="Vitamin Deficiency" actions="debuff(malnourished1)" type="staminadown" tooltip_key="Could use a rest" description_key="Your poor diet means your not getting all the vitamins you need and its slowing you down. Cook and eat fresh meals with many food groups to improve your health." icon="ui_game_symbol_malnourished2"><!--359 -->
-	<modify id="0" stat="food" amount="-2" rate="15" />
+	<modify id="0" stat="food" amount="-2" rate="60" />
 	<modify id="1" stat="stamina" amount="-1" rate="2" />
 	<modify id="2" stat="speedmodifier" setValue="0.95" />
 </buff>
 <buff id="malnourished3" buffif="malnourished greater 539" debuffif="malnourished lequal 539" name_key="Malnourished" actions="debuff(malnourished2);debuff(malnourished1)" type="speedmodifier" tooltip_key="You feel weak" description_key="Your health is failing. You must eat a more balanced diet that combines all the food groups in order to have a healthy diet. Try making and eating meals from a food prep table." icon="ui_game_symbol_malnourished3"><!--539-->
-	<modify id="0" stat="food" amount="-3" rate="15" />
+	<modify id="0" stat="food" amount="-3" rate="60" />
 	<modify id="1" stat="stamina" amount="-1" rate="1" />
 	<modify id="2" stat="speedmodifier" setValue="0.85" />
 	<modify id="3" stat="wellness" amount="-1" rate="300" />

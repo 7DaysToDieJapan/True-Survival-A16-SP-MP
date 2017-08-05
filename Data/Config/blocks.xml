@@ -4343,34 +4343,44 @@ group desc for stuff like metal siding
 		<property name="Model" value="LootContainers/backpack01" param1="main_mesh" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="LootList" value="9" />
-		<drop event="Harvest" name="cloth" count="2" />
-		<drop event="Destroy" name="cloth" count="1" />
+		<drop event="Destroy" name="cntBackpack01" count="1" />
 	</block>
 	<block id="424" name="cntBackpack02">
 		<property name="Extends" value="cntBackpack01" />
 		<property name="Model" value="LootContainers/backpack02" param1="main_mesh" />
+        <drop event="Destroy" name="cntBackpack01" count="0" />
+        <drop event="Destroy" name="cntBackpack02" count="1" />
 	</block>
 	<block id="425" name="cntBackpack03">
 		<property name="Extends" value="cntBackpack01" />
 		<property name="Model" value="LootContainers/backpack03" param1="main_mesh" />
+        <drop event="Destroy" name="cntBackpack01" count="0" />
+        <drop event="Destroy" name="cntBackpack03" count="1"/>
 	</block>
 	<block id="426" name="cntDuffle01">
 		<property name="Extends" value="cntBackpack01" />
 		<property name="Model" value="LootContainers/duffle01" param1="main_mesh" />
+        <drop event="Destroy" name="cntBackpack01" count="0" />
+         <drop event="Destroy" name="cntDuffle01" count="1"/>
 	</block>
 	<block id="427" name="cntSportsBag01">
 		<property name="Extends" value="cntBackpack01" />
 		<property name="Model" value="LootContainers/sports_bag01" param1="main_mesh" />
+        <drop event="Destroy" name="cntBackpack01" count="0" />
+         <drop event="Destroy" name="cntSportsBag01" count="1"/>
 	</block>
 	<block id="428" name="cntSportsBag02">
 		<property name="Extends" value="cntBackpack01" />
 		<property name="Model" value="LootContainers/sports_bag02" param1="main_mesh" />
+        <drop event="Destroy" name="cntBackpack01" count="0" />
+        <drop event="Destroy" name="cntSportsBag02" count="1"/>
 	</block>
 	<block id="429" name="cntPurse01">
 		<property name="Extends" value="cntBackpack01" />
 		<property name="Model" value="LootContainers/purse01" param1="main_mesh" />
-		<property name="LootList" value="48" />
-		<drop event="Destroy" count="0" />
+        <property name="LootList" value="48" />
+        <drop event="Destroy" name="cntBackpack01" count="0" />
+		<drop event="Destroy" name="cntPurse01" count="1"/>
 	</block>
 	<block id="430" name="barbedFence">
 		<property name="Class" value="TrunkTip" />
@@ -7717,7 +7727,8 @@ kind of free
 	<block id="761" name="plantedCoffee3Harvest">
 		<property name="Extends" value="cropsHarvestableMaster" />
 		<property name="Texture" value="395" />
-		<drop event="Harvest" name="coffeeBeans" count="1" />
+		<drop event="Harvest" name="wildBeans" count="1,2" />
+        <drop event="Destroy" name="wildBeans" count="1" />
 	</block>
 	<block id="762" name="plantedGoldenrod1">
 		<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey" />
@@ -15946,10 +15957,14 @@ kind of free
 	<block id="75" name="storageSack">
 		<property name="Extends" value="cntStorageGenericInsecure" />
 		<property name="Material" value="cloth" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#hflnew?ammoBag" />
-        <property name="ModelOffset" value="0,-0.1,0" />
-		<property name="Weight" value="20" />
+		<property name="LightOpacity" value="0" />
+		<property name="StabilitySupport" value="false" />
+		<property name="Shape" value="Ext3dModel" />
+		<property name="Texture" value="293" />
+		<property name="Mesh" value="models" />
+		<property name="Model" value="LootContainers/sports_bag02" param1="main_mesh" />
+		<property name="IsTerrainDecoration" value="true" />
+        <property name="Weight" value="20" />
 		<property name="LootList" value="10" />
 		<property class="RepairItems">
 			<property name="cloth" value="10" />

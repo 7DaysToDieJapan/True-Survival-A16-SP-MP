@@ -108,7 +108,7 @@ friendRemoved,UI,Menu,EnChanged KgNone,{0} was removed from your friends list.,V
 friendRemoved2,UI,Menu,EnChanged KgNone,{0} removed you from their friends list.,{0} vous a retiré(e) de sa liste d'alliés.,Du wurdest aus der Verbündete von {0} entfernt.,,{0} te eliminó de su lista de aliados.
 friendSentInvite,UI,Menu,EnChanged KgNone,Friend invite sent to {0}.,Vous avez envoyé une demande d'allié à {0}.,Verbündeteschaftsanfrage an {0} geschickt.,,Invitación de aliado enviada a {0}.
 goDayLengthDesc,UI,Menu,EnChanged KgNone,How long it takes for 24 hours to pass in the game.,Durée réelle d'un cycle de 24 heures dans le jeu.,"Bestimmt, wie lange es in Echtzeit dauert, bis 24 Stunden im Spiel vergehen.",,Cuánto tardan en pasar las 24 horas en el juego en minutos reales.
-lblCategoryScavenging,UI,Tooltip,EnChanged KgNone,Scavenging/Trading,Glanage,Plünderung,,Carroñar
+lblCategoryScavenging,UI,Tooltip,EnChanged KgNone,Survival,Glanage,Plünderung,,Carroñar
 itemTooltipFocusedOne,UI,Use Prompt,EnChanged KgNone,<{0}> Collect: {1},<{0}> pour récupérer {1},<{0}> Sammle {1},,<{0}> Recoge {1}
 itemTooltipFocusedSeveral,UI,Use Prompt,EnChanged KgNone,<{0}> Collect: {2} of {1},<{0}> pour récupérer {1} sur {2},<{0}> Sammle {2} von: {1},,<{0}> Recoge {2} de {1}
 cannotBreatheTooltip,buffs,Buff,EnNone FrNone GrNone KgNone SpNone,,,,,
@@ -2552,15 +2552,15 @@ lblCategoryBooks,UI,Tooltip,KgNone,Books,Livres,Bücher,,Libros
 lblCategoryBuilding,UI,Tooltip,KgNone,Building,Construire,Gebäude,,Construcción
 lblCategoryChemicals,UI,Tooltip,KgNone,Chemicals,Produits chimiques,Chemikalien,,Químicos
 lblCategoryClothing,UI,Tooltip,KgNone,Clothing,Vêtements,Kleidung,,Ropa
-lblCategoryCraftingMisc,UI,Tooltip,KgNone,Crafting/Miscellaneous,Fabrication/Divers,Fertigung/Sonstiges,,Fabricación/Varios
+lblCategoryCraftingMisc,UI,Tooltip,KgNone,Crafting Skills,Fabrication/Divers,Fertigung/Sonstiges,,Fabricación/Varios
 lblCategoryDecorMisc,UI,Tooltip,KgNone,Decor/Miscellaneous,Décorations/divers,Dekor/Verschiedenes,,Decoración/Varios
-lblCategoryFirearms,UI,Tooltip,KgNone,Firearms,Armes à feu,Schusswaffen,,Armas de fuego
+lblCategoryFirearms,UI,Tooltip,KgNone,Weapons,Armes à feu,Schusswaffen,,Armas de fuego
 lblCategoryFoodCooking,UI,Tooltip,KgNone,Food/Cooking,Nourriture/cuisine,Nahrung/Kochen,,Comida/Cocina
 lblCategoryHealth,UI,Tooltip,KgNone,Health/Fitness,Santé/Forme physique,Gesundheit/Fitness,,Salud/Condición física
 lblCategoryMedicine,UI,Tooltip,KgNone,Medicine,Médecine,Medizin,,Medicina
 lblCategoryResources,UI,Tooltip,KgNone,Resources,Ressources,Rohstoffe,,Recursos
-lblCategoryToolsTraps,UI,Tooltip,KgNone,Tools/Traps,Outils/pièges,Werkzeuge/Fallen,,Herramientas/trampas
-lblCategoryWeapons,UI,Tooltip,KgNone,Weapons,Armes,Waffen,,Armas
+lblCategoryToolsTraps,UI,Tooltip,KgNone,Tools,Outils/pièges,Werkzeuge/Fallen,,Herramientas/trampas
+lblCategoryWeapons,UI,Tooltip,KgNone,Traps,Armes,Waffen,,Armas
 lblCenterOnPlayer,UI,Tooltip,KgNone,Center on Player,Centrer sur le joueur,Auf Spieler zentrieren,,Centrar en jugador
 lblCenterOnSleepingBag,UI,Tooltip,KgNone,Center on Sleeping Bag,Centrer sur le sac de couchage,Auf Schlafsack zentrieren,,Centrar en saco de dormir
 lblChestArmor,UI,Tooltip,KgNone,Chest Armor,Plastron,Brustpanzer,,Coraza
@@ -4209,8 +4209,8 @@ xuiSkillLockPickChance,UI,Menu,New,Lock Pick Chance,,,,
 xuiVendingWithOwner,UI,Menu,New,Vending Machine - {0},,,,
 lblShowPassword,UI,Password Dialog,New,Show Password,,,,
 browserBloodMoonEnemyCount,UI,Server Browser,New,Blood Moon Count,,,,
-lblCategoryPainting,UI,Tooltip,New,Painting,,,,
-lblCategoryScience,UI,Tooltip,New,Science,,,,
+lblCategoryPainting,UI,Tooltip,New,Professions,,,,
+lblCategoryScience,UI,Tooltip,New,Science/Engineering,,,,
 lblCategorySecretStash,UI,Tooltip,New,Secret Stash,,,,
 lblCategorySpecialItems,UI,Tooltip,New,Special Items,,,,
 lblSortContainer,UI,Tooltip,New,Sort Container,,,,
