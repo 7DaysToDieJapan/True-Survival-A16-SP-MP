@@ -5377,6 +5377,7 @@ kind of free
 		<property name="Texture" value="293" />
 		<property name="Mesh" value="models" />
 		<property name="Model" value="Furniture/end_table" param1="main_mesh" />
+        <property name="CanPickup" value="true" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="DescriptionKey" value="furnitureGroupDesc" />
@@ -5385,6 +5386,7 @@ kind of free
 	<block id="548" name="endTableLamp">
 		<property name="Extends" value="endTable" param1="RepairItems" />
 		<property name="Model" value="Furniture/end_table_lamp" param1="main_mesh" />
+        <property name="CanPickup" value="true" />
 		<property class="RepairItems">
 			<property name="wood" value="5" />
 			<property name="electricParts" value="3" />
@@ -6618,7 +6620,7 @@ kind of free
 		<property name="Material" value="Mmetal_medium" />
 		<property name="LightOpacity" value="0" />
 		<property name="StabilitySupport" value="false" />
-		<!-- build restriction -->
+		<property name="MaxDamage" value="150" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="Entities/LootContainers/vending_machine_playerPrefab" />
 		<property name="MultiBlockDim" value="1,2,1" />
@@ -6649,6 +6651,23 @@ kind of free
 	<block id="658" name="cntVendingMachine2">
 		<property name="Extends" value="cntVendingMachine" />
 		<property name="Model" value="Entities/LootContainers/vending_machinePrefab" />
+        <drop event="Harvest" name="RedBull" count="1" prob="0.4" />
+		<drop event="Harvest" name="redTea" count="1" prob="0.4" />
+		<drop event="Harvest" name="snowberryJuice" count="1" prob="0.4" />
+		<drop event="Harvest" name="goldenRodTea" count="1" prob="0.4" />
+		<drop event="Harvest" name="electricParts" count="2" prob="0.4" />
+		<drop event="Harvest" name="electronicParts" count="2" prob="0.4" />
+		<drop event="Harvest" name="mechanicalParts" count="1" prob="0.4" />
+		<drop event="Harvest" name="beer" count="1" prob="0.3" />
+		<drop event="Harvest" name="RedBull" count="1" prob="0.2" tool_category="Disassemble" />
+		<drop event="Harvest" name="redTea" count="1" prob="0.2" tool_category="Disassemble" />
+		<drop event="Harvest" name="snowberryJuice" count="1" prob="0.2" tool_category="Disassemble" />
+		<drop event="Harvest" name="goldenRodTea" count="1" prob="0.5" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="3" prob="0.5" tool_category="Disassemble" />
+		<drop event="Harvest" name="electronicParts" count="3" prob="0.5" tool_category="Disassemble" />
+		<drop event="Harvest" name="mechanicalParts" count="2" prob="0.5" tool_category="Disassemble" />
+		<drop event="Harvest" name="beer" count="1" prob="0.1" tool_category="Disassemble" />
+		<drop event="Destroy" name="scrapIron" count="2" />
 	</block>
 	<!-- 1 Free -->
 	<block id="662" name="flagstonePole">
@@ -13126,7 +13145,7 @@ kind of free
 		<property name="CustomIcon" value="cntCar03SedanDamage0" />
 		<property name="Material" value="metal" />
 		<property name="Class" value="Loot" />
-		<property name="LootList" value="16" />
+		<property name="LootList" value="19" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="Place" value="TowardsPlacer" />
@@ -14551,20 +14570,27 @@ kind of free
 		<property name="PickupJournalEntry" value="cameraTip" />
 	</block>
 	<block id="1774" name="burningBarrelPlayer">
-		<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
+	    <property name="Material" value="Mmetal_weak" />
 		<property name="CreativeMode" value="Player" />
 		<property name="CanPickup" value="true" />
 		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="Entities/Industrial/barrel03_burningPrefab" />
+		<property name="Model" value="Entities/Industrial/barrel03Prefab" />
 		<property name="IsTerrainDecoration" value="true" />
-		<property name="Stacknumber" value="50" />
-		<property name="Class" value="TorchHeatMap" />
-		<property name="HeatMapStrength" value="4.05" />
-		<property name="HeatMapTime" value="1200" />
-		<property name="HeatMapFrequency" value="15" />
-		<property name="Group" value="Building" />
+		<property name="ActiveRadiusEffects" value="+heatSource(2)" />
+        <property name="Group" value="Building" />
+		<property name="Class" value="Campfire" />
+        <property name="ParticleName" value="burning_barrel" />
+		<property name="ParticleOffset" value="0.5,0,0.5" />
+		<property name="Stacknumber" value="1" />
 		<property name="DescriptionKey" value="torchPlayerGroupDesc" />
-	</block>
+		<property class="Workstation">
+			<property name="Modules" value="fuel,output" />
+		</property>
+        <property class="RepairItems"> <property name="scrapIron" value="50" /> </property>
+        <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+		<drop event="Destroy" name="scrapIron" count="2" tool_category="Disassemble" />
+		<drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
+    </block>
 	<block id="1775" name="burningBarrel">
 		<property name="Extends" value="burningBarrelPlayer" />
 		<property name="CreativeMode" value="Dev" />
@@ -16069,7 +16095,7 @@ kind of free
 			<property name="ToBlock" value="trapSpikesNew" />
 			<property name="Item" value="stick" />
 			<property name="ItemCount" value="10" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="UpgradeHitCount" value="3" />
 		</property>
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Tools/Traps" />
@@ -17320,6 +17346,7 @@ kind of free
         <property name="DowngradeBlock" value="woodDebris" prob="0.75" />
 		<drop event="Harvest" name="stick" count="25,200" prob="1" />
 		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+        <drop event="Destroy" count="0" />
 	</block>
 	<!-- JZMOD COBBLESTONE FRAMES -->
 	<block id="969" name="cobblestoneFrameBlock">

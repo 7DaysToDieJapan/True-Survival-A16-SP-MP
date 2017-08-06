@@ -1135,7 +1135,7 @@
 	<!-- Missing: zombieSoldierFeralRadiated -->
 	<entity_class name="zombieSkateboarder" extends="zombieBoe">
 		<!-- JZMOD RUN -->
-		<property name="ApproachSpeed" value="0.69" />
+		<property name="ApproachSpeed" value="0.55" />
 		<property name="NightApproachSpeed" value="1.75" />
 		<property name="Mesh" value="Zombies/zombieStandardHoodieRagdoll" />
 		<property name="SoundRandom" value="zombiemaleroam" />
@@ -4193,19 +4193,19 @@
 	<entity_class name="zombieSnow3" extends="zombieSnow">
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="3" />
-		<property name="ApproachSpeed" value="0.58" />
+		<property name="ApproachSpeed" value="0.55" />
 		<property name="NightApproachSpeed" value="1.55" />
 	</entity_class>
 	<entity_class name="zombieSnow4" extends="zombieSnow">
 		<!-- JZMOD CRAWLER -->
 		<property name="WalkType" value="4" />
-		<property name="ApproachSpeed" value="0.89" />
+		<property name="ApproachSpeed" value="0.79" />
 		<property name="NightApproachSpeed" value="1.68" />
 	</entity_class>
 	<entity_class name="zombieSnow5" extends="zombieSnow">
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="5" />
-		<property name="ApproachSpeed" value="0.79" />
+		<property name="ApproachSpeed" value="0.71" />
 		<property name="NightApproachSpeed" value="1.78" />
 	</entity_class>
 	<entity_class name="zombieSnow6" extends="zombieSnow">
@@ -4223,7 +4223,7 @@
 	<entity_class name="zombieSnowFeral8" extends="zombieSnow">
 		<!-- JZMOD CLIMB -->
 		<property name="WalkType" value="8" />
-		<property name="ApproachSpeed" value="0.83" />
+		<property name="ApproachSpeed" value="0.73" />
 		<property name="NightApproachSpeed" value="1.67" />
 	</entity_class>
 	<!--JZMOD COP-->

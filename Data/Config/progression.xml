@@ -3,7 +3,7 @@
 	<player max_level="200" exp_to_level="8300" experience_multiplier="1.01536" skill_points_per_level="5" skill_point_multiplier="0" />
 	<!-- A15: 8000 XP for level 1 and 134k for level 199, total cumulative of 9MXP; XPRequired = exp_to_level * experience_multiplier ^ level -->
 	<!-- A16: 8300 XP for level 1, total cumulative of 11MXP -->
-	<skills max_level="100" exp_to_level="250" experience_multiplier="1.03" skill_point_cost_multiplier="1" skill_point_cost_per_level="1">
+	<skills max_level="100" exp_to_level="250" experience_multiplier="1.03" skill_point_cost_multiplier="1.25" skill_point_cost_per_level="1">
 		<!-- these are defaults and can be used to modify individual skills as needed -->
 		<!-- if skill_point_cost_multiplier > 0 then PointCostPerLevel = int(SkillPointCostMultiplier ^ currentTier) * SkillPointCostPerLevel -->
 		<!-- JZMOD WEAPONS-->
@@ -380,7 +380,7 @@
 				<multiply skill_level="90,100" value="0.775,0.75" />
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="huntingCraft" icon="ui_game_symbol_huntingKnife" description_key="Learn to craft better Hunting knifes and fishing lures." title_key="huntingCraft" group="scavenging">
+		<crafting_skill name="huntingCraft" icon="ui_game_symbol_huntingKnife" description_key="Learn to craft better Hunting knifes and fishing lures." title_key="huntingCraft" skill_point_cost_per_level="0" group="scavenging">
 			<effect name="HarvestCount">
                 <multiply skill_level="1,10" value="1" />
 				<multiply skill_level="10,20" value="1,2" />
@@ -2372,7 +2372,7 @@
 				<!-- =10 points at QL 600 -->
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="cobblestoneHammerCraft" icon="ui_game_symbol_stoneHammer" description_key="ClawHammer." title_key="Claw Hammer" skill_point_cost_per_level="0" group="crafting">
+		<crafting_skill name="cobblestoneHammerCraft" icon="ui_game_symbol_stoneHammer" description_key="cobblestone Hammer." title_key="cobblestone Hammer" skill_point_cost_per_level="1" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2433,7 +2433,7 @@
 				<!-- =10 points at QL 600 -->
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="brickHammerCraft" icon="ui_game_symbol_brickHammer" description_key="ClawHammer." title_key="Claw Hammer" skill_point_cost_per_level="0" group="crafting">
+		<crafting_skill name="brickHammerCraft" icon="ui_game_symbol_brickHammer" description_key="brick Hammer." title_key="brick Hammer" skill_point_cost_per_level="1" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2494,7 +2494,7 @@
 				<!-- =10 points at QL 600 -->
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="plankHammerCraft" icon="ui_game_symbol_hammer" description_key="ClawHammer." title_key="Claw Hammer" skill_point_cost_per_level="0" group="crafting">
+		<crafting_skill name="plankHammerCraft" icon="ui_game_symbol_hammer" description_key="ClawHammer." title_key="Claw Hammer" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2555,7 +2555,7 @@
 				<!-- =10 points at QL 600 -->
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="concreteSledgeCraft" icon="ui_game_symbol_sledge" description_key="Wrench." title_key="Wrench" skill_point_cost_per_level="0" group="crafting">
+		<crafting_skill name="concreteSledgeCraft" icon="ui_game_symbol_sledge" description_key="Wrench." title_key="Wrench" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2616,7 +2616,7 @@
 				<!-- =10 points at QL 600 -->
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="rConcreteSledgeCraft" icon="ui_game_symbol_sledge" description_key="Wrench." title_key="Wrench" skill_point_cost_per_level="0" group="crafting">
+		<crafting_skill name="rConcreteSledgeCraft" icon="ui_game_symbol_sledge" description_key="Wrench." title_key="Wrench" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2677,7 +2677,7 @@
 				<!-- =10 points at QL 600 -->
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="steelWelderCraft" icon="ui_game_symbol_welder" description_key="Wrench." title_key="Wrench" skill_point_cost_per_level="0" group="crafting">
+		<crafting_skill name="steelWelderCraft" icon="ui_game_symbol_welder" description_key="Wrench." title_key="Wrench" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2738,7 +2738,7 @@
 				<!-- =10 points at QL 600 -->
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="scrapWrenchCraft" icon="ui_game_symbol_wrench" description_key="Wrench." title_key="Wrench" skill_point_cost_per_level="0" group="crafting">
+		<crafting_skill name="scrapWrenchCraft" icon="ui_game_symbol_wrench" description_key="Wrench." title_key="Wrench" group="crafting">
         <effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2860,7 +2860,7 @@
 				<!-- =10 points at QL 600 -->
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="wireToolCraft" icon="ui_game_symbol_wireTool" description_key="Wrench." title_key="Wrench" skill_point_cost_per_level="0" group="crafting">
+		<crafting_skill name="wireToolCraft" icon="ui_game_symbol_wireTool" description_key="Wrench." title_key="Wrench" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2921,7 +2921,7 @@
 				<!-- =10 points at QL 600 -->
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="paintToolCraft" icon="ui_game_symbol_paintTool" description_key="Wrench." title_key="Wrench" skill_point_cost_per_level="0" group="crafting">
+		<crafting_skill name="paintToolCraft" icon="ui_game_symbol_paintTool" description_key="Wrench." title_key="Wrench" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -3362,14 +3362,6 @@
 			<requirement perk_level="3" required_skill_name="Athletics" required_skill_level="60" />
 			<requirement perk_level="4" required_skill_name="Athletics" required_skill_level="80" />
 			<requirement perk_level="5" required_skill_name="Athletics" required_skill_level="100" />
-			<effect name="MinWellness">
-				<add perk_level="0" value="-50" />
-				<add perk_level="1" value="20" />
-				<add perk_level="2" value="30" />
-				<add perk_level="3" value="40" />
-				<add perk_level="4" value="50" />
-				<add perk_level="5" value="60" />
-			</effect>
 			<effect name="MaxWellness">
 				<add perk_level="0" value="0" />
 				<add perk_level="1" value="10" />
@@ -3689,7 +3681,7 @@
 			<requirement skill_level="1" required_skill_name="engineeringCraft" required_skill_level="2" />
 			<recipe name="generatorbank" unlock_level="1" />
 		</perk>
-		<perk name="electricBatteryBankPerk" icon="ui_game_symbol_batteryBank" description_key="electricBatteryBankDesc" title_key="electricBatteryBankName" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science">
+		<perk name="electricBatteryBankPerk" icon="ui_game_symbol_batteryBank" description_key="electricBatteryBankDesc" title_key="electricBatteryBankName" max_level="1" group="science">
 			<recipe name="batterybank" unlock_level="1" />
 		</perk>
 		<perk name="doItYourselfPerk" icon="ui_game_symbol_misc_crafting" description_key="doItYourselfDesc" title_key="doItYourselfName" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="science">
