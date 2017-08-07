@@ -7954,7 +7954,7 @@ Mesh files no longer used:
 			<property name="Gain_stamina" value="0" />
 			<property name="Gain_wellness" value="0.32" />
 			<property name="Sound_start" value="player_eating" />
-			<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
+			<property name="Create_item" value="emptyJar"/>
 		</property>
 		<property name="Group" value="food/Cooking" />
         <property name="CraftingSkillGroup" value="cookingCraft" />
@@ -13253,7 +13253,7 @@ Mesh files no longer used:
 		<property name="Material" value="organic" />
 		<property name="HoldType" value="31" />
 		<property name="Stacknumber" value="500" />
-		<property name="CustomIcon" value="ui_game_symbol_apple" />
+		<property name="CustomIcon" value="ui_game_symbol_venomSack" />
 		<property name="DescriptionKey" value="venomSackDesc" />
 	</item>
 	<item id="1736" name="porkBelly">
@@ -15687,6 +15687,7 @@ Mesh files no longer used:
 	</item>
     <item id="1973" name="batGoodNight">
 		<property name="Extends" value="bat" />
+		<property name="CustomIcon" value="ui_game_symbol_goodNightBat" />
 		<property name="DescriptionKey" value="batDesc" />
 		<property name="Meshfile" value="#goodNight?goodNight" />
 		<property name="FuelValue" value="60" />
@@ -15801,6 +15802,7 @@ Mesh files no longer used:
 	</item>
    <item id="1976" name="tomahawk">
 		<property name="Extends" value="fireaxeIron" />
+		<property name="CustomIcon" value="ui_game_symbol_tomahawk" />
 		<property name="HoldType" value="2" />
         <property name="Meshfile" value="#ZdWeapons?Tomahawk" />
 		<property name="HandMeshfile" value="#ZdWeapons?Tomahawk" />
@@ -15859,11 +15861,11 @@ Mesh files no longer used:
         <property name="DescriptionKey" value="TomahawkDesc" />
         <property name="ActionSkillGroup" value="Blade Weapons" />
     </item>
-    <item id="1977" name="ChainNlock">
+    <item id="1977" name="chainNlock">
 		<property name="Extends" value="itemMaster" />
         <property name="Meshfile" value="#crudeweapons?ChainNlocksPrefab" />
 		<property name="Material" value="metal" />
-		<property name="CustomIcon" value="ui_game_symbol_ironScissors" />
+		<!-- <property name="CustomIcon" value="ui_game_symbol_ironScissors" /> -->
 		<property name="Weight" value="1" />
 	</item>
     <item id="1978" name="ironShiv">
@@ -15976,16 +15978,16 @@ Mesh files no longer used:
 		</property>
         <property name="CraftingSkillGroup" value="ElectricSpear" />
 	</item>
-    <item id="1981" name="CraftedRevolver">
+    <item id="1981" name="craftedRevolver">
 		<property name="Extends" value="gunPistol" />
 		<property name="Meshfile" value="#steampunk?Revolver" />
 		<property name="RepairTools" value="repairKit" />
 		<property name="HoldType" value="44" />
 		<property class="Parts">
-			<property name="Stock" value="CraftedRevolverStock" />
+			<property name="Stock" value="craftedRevolverStock" />
 			<property name="Receiver" value="revolver_cylinder" />
 			<property name="Pump" value="revolver_parts" />
-			<property name="Barrel" value="CraftedRevolverBarrel" />
+			<property name="Barrel" value="craftedRevolverBarrel" />
 		</property>
 		<property class="Action0">
 			<property name="Delay" value="0.45" />
@@ -16002,7 +16004,7 @@ Mesh files no longer used:
         <property name="DescriptionKey" value="CraftedRevolverDesc" />
 		<property name="CraftingSkillGroup" value="CraftedGuns" />
 	</item>
-	<item id="1982" name="CraftedRevolverStock">
+	<item id="1982" name="craftedRevolverStock">
 		<property name="Extends" value="partsMaster" />
 		<property name="DescriptionKey" value="CraftedGunPartsDesc" />
 		<property name="PartType" value="Stock" />
@@ -16015,7 +16017,7 @@ Mesh files no longer used:
 		<property name="SellableToTrader" value="false" />
         <property name="CraftingSkillGroup" value="CraftedGuns" />
 	</item>
-	<item id="1983" name="CraftedRevolverBarrel">
+	<item id="1983" name="craftedRevolverBarrel">
 		<property name="Extends" value="partsMaster" />
 		<property name="DescriptionKey" value="CraftedGunPartsDesc" />
 		<property name="PartType" value="Barrel" />
@@ -16041,13 +16043,13 @@ Mesh files no longer used:
 		</property>
 		<property name="EconomicValue" value="1125" />
 	</item>
-    <item id="1985" name="DoubleBarrel">
+    <item id="1985" name="doubleBarrel">
 		<property name="Extends" value="gunPumpShotgun" />
+		<property name="CustomIcon" value="ui_game_symbol_blunderbussDouble" />
         <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
 		<property name="HandMeshfile" value="#doublebarrel?DoubleBarrel" />
 		<property name="DropMeshfile" value="#doublebarrel?DoubleBarrel" />
-		<property name="CustomIcon" value="BlunderbussDouble" />
-        <property name="DescriptionKey" value="DoubleBarrelDesc" />
+		<property name="DescriptionKey" value="DoubleBarrelDesc" />
 		<property class="Parts">
 			<property name="Receiver" value="partsDoubleBarrel_receiver" />
 			<property name="Pump" value="partsDoubleBarrel_parts" />
@@ -16093,8 +16095,9 @@ Mesh files no longer used:
 			<property name="DegradationMax" value="800,3500" />
 		</property>
 	</item>
-    <item id="1989" name="DesertEagleVII">
+    <item id="1989" name="desertEagleVII">
 		<property name="Extends" value="gun44Magnum" />
+		<property name="CustomIcon" value="ui_game_symbol_desertEagleVII" />
         <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
 		<property name="HandMeshfile" value="#desertVII?desertVII" />
 		<property name="DropMeshfile" value="#desertVII?desertVII" />
@@ -16134,8 +16137,9 @@ Mesh files no longer used:
 			<property name="DegradationMax" value="700,4000" />
 		</property>
 	</item>
-    <item id="1992" name="DeltaElite1911">
+    <item id="1992" name="deltaElite1911">
 		<property name="Extends" value="gunPistol" />
+		<property name="CustomIcon" value="ui_game_symbol_deltaElite1911" />
         <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
 		<property name="HandMeshfile" value="#colt1911?colt1911" />
 		<property name="DropMeshfile" value="#colt1911?colt1911" />
@@ -16175,8 +16179,9 @@ Mesh files no longer used:
 			<property name="DegradationMax" value="700,4000" />
 		</property>
 	</item>
-    <item id="1995" name="AK12">
+    <item id="1995" name="aK12">
 		<property name="Extends" value="gunAK47" />
+		<property name="CustomIcon" value="ui_game_symbol_aK12" />
         <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
 		<property name="HandMeshfile" value="#assaultrifles?AK12" />
 		<property name="DropMeshfile" value="#assaultrifles?AK12" />
@@ -16184,8 +16189,8 @@ Mesh files no longer used:
 		<property name="HoldType" value="6" />
 		<property class="Parts">
 			<property name="Stock" value="assaultRifle_stock" />
-			<property name="Receiver" value="AK12_receiver" />
-			<property name="Barrel" value="AK12_barrel" />
+			<property name="Receiver" value="aK12_receiver" />
+			<property name="Barrel" value="aK12_barrel" />
 			<property name="Pump" value="assaultRifle_parts" />
 		</property>
 		<property class="Action0">
@@ -16205,12 +16210,12 @@ Mesh files no longer used:
 		<property name="Extends" value="partsAK47_parts" />
 		<property name="DescriptionKey" value="partsAK47GroupDesc" />
 	</item>
-	<item id="1998" name="AK12_receiver">
+	<item id="1998" name="aK12_receiver">
 		<property name="Extends" value="partsAK47_receiver" />
         <property name="CustomIcon" value="partsAK47_receiver" />
 		<property name="DescriptionKey" value="partsAK47GroupDesc" />
 	</item>
-	<item id="1999" name="AK12_barrel">
+	<item id="1999" name="aK12_barrel">
 		<property name="Extends" value="partsAK47_barrel" />
 		<property name="CustomIcon" value="partsPistol_barrel" />
 		<property name="DescriptionKey" value="partsAK47GroupDesc" />
@@ -16220,50 +16225,52 @@ Mesh files no longer used:
 			<property name="EntityDamage" value="25,55" />
 		</property>
 	</item>
-	<item id="2000" name="SCARH">
-		<property name="Extends" value="AK12" />
+	<item id="2000" name="sCARH">
+		<property name="Extends" value="aK12" />
+		<property name="CustomIcon" value="ui_game_symbol_sCARH" />
         <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
 		<property name="HandMeshfile" value="#assaultrifles?Scar-H" />
 		<property name="DropMeshfile" value="#assaultrifles?Scar-H" />
 		<property name="DescriptionKey" value="ScarHDesc" />
 		<property class="Parts">
-			<property name="Receiver" value="SCARH_receiver" />
-			<property name="Barrel" value="SCARH_barrel" />
+			<property name="Receiver" value="sCARH_receiver" />
+			<property name="Barrel" value="sCARH_barrel" />
 		</property>
 		<property class="Action0">
 			<property name="Delay" value=".085" />
 		</property>
 	</item>
-	<item id="2001" name="SCARH_receiver">
-		<property name="Extends" value="AK12_receiver" />
+	<item id="2001" name="sCARH_receiver">
+		<property name="Extends" value="aK12_receiver" />
         <property name="CustomIcon" value="partsAK47_receiver" />
 		<property name="DescriptionKey" value="partsAK47GroupDesc" />
 	</item>
-	<item id="2002" name="SCARH_barrel">
-		<property name="Extends" value="AK12_barrel" />
+	<item id="2002" name="sCARH_barrel">
+		<property name="Extends" value="aK12_barrel" />
         <property name="CustomIcon" value="partsPistol_barrel" />
 		<property name="DescriptionKey" value="partsAK47GroupDesc" />
 	</item>
-	<item id="2003" name="M4A1">
-		<property name="Extends" value="AK12" />
+	<item id="2003" name="m4A1">
+		<property name="Extends" value="aK12" />
+		<property name="CustomIcon" value="ui_game_symbol_m4A1" />
         <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
 		<property name="HandMeshfile" value="#assaultrifles?M4A1" />
 		<property name="DropMeshfile" value="#assaultrifles?M4A1" />
 		<property name="DescriptionKey" value="m4a1Desc" />
 		<property class="Parts">
-			<property name="Receiver" value="M4A1_receiver" />
-			<property name="Barrel" value="M4A1_barrel" />
+			<property name="Receiver" value="m4A1_receiver" />
+			<property name="Barrel" value="m4A1_barrel" />
 		</property>
 		<property class="Action0">
 			<property name="Delay" value="0.1" />
         </property>
 	</item>
-	<item id="2004" name="M4A1_receiver">
+	<item id="2004" name="m4A1_receiver">
 		<property name="Extends" value="partsAK47_receiver" />
         <property name="CustomIcon" value="partsAK47_receiver" />
 		<property name="DescriptionKey" value="partsAK47GroupDesc" />
 	</item>
-	<item id="2005" name="M4A1_barrel">
+	<item id="2005" name="m4A1_barrel">
 		<property name="Extends" value="partsAK47_barrel" />
         <property name="CustomIcon" value="partsPistol_barrel" />
 		<property name="DescriptionKey" value="partsAK47GroupDesc" />
@@ -16273,15 +16280,16 @@ Mesh files no longer used:
 			<property name="EntityDamage" value="25,55" />
 		</property>
 	</item>
-	<item id="2006" name="G36C">
-		<property name="Extends" value="AK12" />
+	<item id="2006" name="g36C">
+		<property name="Extends" value="aK12" />
+		<property name="CustomIcon" value="ui_game_symbol_g36C" />
         <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
 		<property name="HandMeshfile" value="#assaultrifles?G36c" />
 		<property name="DropMeshfile" value="#assaultrifles?G36c" />
 		<property name="DescriptionKey" value="g36cDesc" />
 		<property class="Parts">
-			<property name="Receiver" value="G36C_receiver" />
-			<property name="Barrel" value="G36C_barrel" />
+			<property name="Receiver" value="g36C_receiver" />
+			<property name="Barrel" value="g36C_barrel" />
 		</property>
 		<property class="Action0">
 			<property name="Delay" value="0.085" />
@@ -16292,51 +16300,52 @@ Mesh files no longer used:
 			<property name="Sound_reload" value="Weapons/Ranged/AK47/ak47_reload" />
 		</property>
 	</item>
-	<item id="2008" name="G36C_receiver">
-		<property name="Extends" value="AK12_receiver" />
+	<item id="2008" name="g36C_receiver">
+		<property name="Extends" value="aK12_receiver" />
         <property name="CustomIcon" value="partsAK47_receiver" />
 		<property name="DescriptionKey" value="partsAK47GroupDesc" />
 	</item>
-	<item id="2009" name="G36C_barrel">
-		<property name="Extends" value="AK12_barrel" />
+	<item id="2009" name="g36C_barrel">
+		<property name="Extends" value="aK12_barrel" />
         <property name="CustomIcon" value="partsPistol_barrel" />
 		<property name="DescriptionKey" value="partsAK47GroupDesc" />
 	</item>
-    <item id="2010" name="ACW">
+    <item id="2010" name="aCW">
 		<property name="Extends" value="gunAK47" />
+		<property name="CustomIcon" value="ui_game_symbol_aCW" />
         <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
 		<property name="HandMeshfile" value="#assaultrifles?ACWPrefab" />
 		<property name="DropMeshfile" value="#assaultrifles?ACWPrefab" />
 		<property name="DescriptionKey" value="ACWDesc" />
 		<property class="Parts">
-			<property name="Receiver" value="ACW_receiver" />
-			<property name="Barrel" value="ACW_barrel" />
+			<property name="Receiver" value="aCW_receiver" />
+			<property name="Barrel" value="aCW_barrel" />
 		</property>
 		<property class="Action0">
 			<property name="Delay" value="0.11" />
 			<property name="Reload_time" value="4.1" />
 		</property>
 	</item>
-	<item id="2011" name="ACW_receiver">
+	<item id="2011" name="aCW_receiver">
 		<property name="Extends" value="partsAK47_receiver" />
         <property name="CustomIcon" value="partsAK47_receiver" />
 		<property name="DescriptionKey" value="HK416GroupDesc" />
 	</item>
-	<item id="2012" name="ACW_barrel">
+	<item id="2012" name="aCW_barrel">
 		<property name="Extends" value="partsAK47_barrel" />
 		<property name="CustomIcon" value="partsPistol_barrel" />
 		<property name="DescriptionKey" value="partsAK47GroupDesc" />
 	</item>
-    <item id="2013" name="UMP">
+    <item id="2013" name="uMP">
 		<property name="Extends" value="gunMP5" />
+		<property name="CustomIcon" value="ui_game_symbol_uMP" />
 		<property name="DescriptionKey" value="UmpDesc" />
         <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
 		<property name="HandMeshfile" value="#hk?UMP45" />
 		<property name="DropMeshfile" value="#hk?UMP45" />
-        <property name="CustomIcon" value="UMPJZ" />
-		<property class="Parts">
-			<property name="Receiver" value="UMP_receiver" />
-			<property name="Barrel" value="UMP_barrel" />
+      	<property class="Parts">
+			<property name="Receiver" value="uMP_receiver" />
+			<property name="Barrel" value="uMP_barrel" />
 		</property>
 		<property class="Action0">
 			<property name="Magazine_items" value="44MagBullet" />
@@ -16344,18 +16353,18 @@ Mesh files no longer used:
 			<property name="Magazine_item_ray_spreads" value="0" />
 		</property>
 	</item>
-	<item id="2014" name="UMP_receiver">
+	<item id="2014" name="uMP_receiver">
 		<property name="Extends" value="partsMP5_receiver" />
-        <property name="CustomIcon" value="UMP_UpperReceiver" />
+        <property name="CustomIcon" value="ui_game_symbol_uMP_UpperReceiver" />
 		<property name="DescriptionKey" value="UMPGroupDesc" />
 		<property class="Attributes">
 			<property name="BlockDamage" value="3,6" />
 			<property name="FalloffRange" value="24,72" />
 		</property>
 	</item>
-	<item id="2015" name="UMP_barrel">
+	<item id="2015" name="uMP_barrel">
 		<property name="Extends" value="partsMP5_barrel" />
-        <property name="CustomIcon" value="UMP_Barrel" />
+        <property name="CustomIcon" value="ui_game_symbol_uMP_Barrel" />
 		<property name="DescriptionKey" value="UMPGroupDesc" />
 		<property class="Attributes">
 			<property name="Accuracy" value=".9,0.03" />
@@ -16363,16 +16372,17 @@ Mesh files no longer used:
 			<property name="BlockDamage" value="3,6" />
 		</property>
 	</item>
-    <item id="2016" name="HK416">
+    <item id="2016" name="hK416">
 		<property name="Extends" value="gunAK47" />
+		<property name="CustomIcon" value="ui_game_symbol_hK416" />
 		<property name="DescriptionKey" value="HK416Desc" />
         <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
 		<property name="HandMeshfile" value="#hk?HK416" />
 		<property name="DropMeshfile" value="#hk?HK416" />
 		<property name="HoldType" value="6" />
 		<property class="Parts">
-			<property name="Receiver" value="HK416_receiver" />
-			<property name="Barrel" value="HK416_barrel" />
+			<property name="Receiver" value="hK416_receiver" />
+			<property name="Barrel" value="hK416_barrel" />
 		</property>
 		<property class="Action0">
 			<property name="Sound_start" value="Weapons/Ranged/AK47/ak47_fire_start" />
@@ -16382,45 +16392,46 @@ Mesh files no longer used:
 			<property name="Sound_reload" value="Weapons/Ranged/AK47/ak47_reload" />
 		</property>
 	</item>
-	<item id="2017" name="HK416_receiver">
+	<item id="2017" name="hK416_receiver">
 		<property name="Extends" value="partsAK47_receiver" />
-        <property name="CustomIcon" value="HK416_UpperReceiver" />
-		<property name="DescriptionKey" value="HK416GroupDesc" />
+        <property name="CustomIcon" value="hK416_UpperReceiver" />
+		<property name="DescriptionKey" value="hK416GroupDesc" />
 	</item>
-	<item id="2018" name="HK416_barrel">
+	<item id="2018" name="hK416_barrel">
 		<property name="Extends" value="partsAK47_barrel" />
 		<property name="CustomIcon" value="partsPistol_barrel" />
 		<property name="DescriptionKey" value="partsAK47GroupDesc" />
 	</item>
-    <item id="2019" name="MG4">
+    <item id="2019" name="mG4">
 		<property name="Extends" value="gunSniperRifle" />
-        <property name="CustomIcon" value="MG42" />
+        <property name="CustomIcon" value="ui_game_symbol_mG4" />
         <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
 		<property name="HandMeshfile" value="#hk?MG4" />
 		<property name="DropMeshfile" value="#hk?MG4" />
 		<property name="DescriptionKey" value="mg4Desc" />
 		<property class="Parts">
-			<property name="Receiver" value="MG4_receiver" />
-			<property name="Barrel" value="MG4_barrel" />
+			<property name="Receiver" value="mG4_receiver" />
+			<property name="Barrel" value="mG4_barrel" />
 		</property>
 		<property class="Action0">
 			<property name="Reload_time" value="6" />
 		</property>
 	</item>
-	<item id="2020" name="MG4_receiver">
+	<item id="2020" name="mG4_receiver">
 		<property name="Extends" value="partsSniperRifle_receiver" />
-        <property name="CustomIcon" value="HK416_UpperReceiver" />
+        <property name="CustomIcon" value="ui_game_symbol_hK416_UpperReceiver" />
 		<property name="DescriptionKey" value="lsatPartsGroupDesc" />
 	</item>
-	<item id="2021" name="MG4_barrel">
+	<item id="2021" name="mG4_barrel">
 		<property name="Extends" value="partsSniperRifle_barrel" />
 		<property name="DescriptionKey" value="lsatPartsGroupDesc" />
-        <property name="CustomIcon" value="MG4_Barrel" />
+        <property name="CustomIcon" value="ui_game_symbol_mG4_Barrel" />
 	</item>
     <item id="2022" name="axe02">
 		<property name="Meshfile" value="#hflnew?AXE" />
        	<property name="HandMeshfile" value="#hflnew?AXE" />
 		<property name="DropMeshfile" value="#hflnew?AXE" />
+		<property name="CustomIcon" value="ui_game_symbol_axe02" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="2" />
 		<property name="Stacknumber" value="1" />
@@ -16484,6 +16495,7 @@ Mesh files no longer used:
 	</item>
     <item id="2023" name="hayfork">
 		<property name="Meshfile" value="#hflnew?Hayfork" />
+		<property name="CustomIcon" value="ui_game_symbol_hayfork" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="rockSmall" />
 		<property name="HoldType" value="18" />
@@ -16544,6 +16556,7 @@ Mesh files no longer used:
 	</item>
     <item id="2024" name="halbert">
 		<property name="Meshfile" value="#hflnew?Halbert1" />
+		<property name="CustomIcon" value="ui_game_symbol_halbert" />
 		<property name="Material" value="metal" />
 		<property name="RepairTools" value="shortMetalPipe" />
 		<property name="HoldType" value="33" />
@@ -16631,6 +16644,7 @@ Mesh files no longer used:
 	</item>
     <item id="2026" name="battleKnifeCherry">
 		<property name="Extends" value="huntingKnife" />
+		<property name="CustomIcon" value="ui_game_symbol_battleKnifeCherry" />
 		<property name="Meshfile" value="#CombatKnife?CombatKnife" />
 		<property name="RepairTools" value="sharpeningStone" />
 		<property class="Action0">
@@ -16643,10 +16657,10 @@ Mesh files no longer used:
 		<property name="DescriptionKey" value="battleKnifeCherryDesc" />
          <property name="ActionSkillGroup" value="Blade Weapons" />
 	</item>
-    <item id="2027" name="FieldKnife">
+    <item id="2027" name="fieldKnife">
 		<property name="Extends" value="huntingKnife" />
 		<property name="Meshfile" value="#Knife?Knife" />
-		<property name="CustomIcon" value="ui_game_symbol_FieldKnife" />
+		<property name="CustomIcon" value="ui_game_symbol_fieldKnife" />
 		<property class="Action0">
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".4,.4" />
@@ -16668,7 +16682,7 @@ Mesh files no longer used:
      <item id="2028" name="chefKnife">
 		<property name="Extends" value="huntingKnife" />
 		<property name="Meshfile" value="#hflnew?knife 1" />
-		<property name="CustomIcon" value="ui_game_symbol_FieldKnife" />
+		<property name="CustomIcon" value="ui_game_symbol_chefKnife" />
 		<property class="Action0">
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".4,.4" />
@@ -16714,6 +16728,7 @@ Mesh files no longer used:
 			<property name="Gain_stamina" value="-20" />
 			<property name="Buff" value="nutrition_1_Trigger,wellness_3_Trigger,eatFood_5_Trigger" />
 			<property name="Create_item" value="emptyJar" />
+			<property name="CustomIcon" value="ui_game_symbol_fruitCake" />
 		</property>
 	</item>
     <item id="2032" name="steelOre">
@@ -16736,7 +16751,7 @@ Mesh files no longer used:
         <property name="CustomIcon" value="ui_game_symbol_axeHeadMold" />
         <property name="Group" value="Science" />
 	</item>
-    <item id="2035" name="PickaxeHeadMold">
+    <item id="2035" name="pickaxeHeadMold">
         <property name="Extends" value="itemMaster" />
 		<property name="Material" value="clay" />
 		<property name="HoldType" value="45" />
