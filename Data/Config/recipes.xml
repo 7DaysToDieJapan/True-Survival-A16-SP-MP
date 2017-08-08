@@ -591,6 +591,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="cornOnTheCob" count="1" craft_area="campfire" craft_tool="cookingGrill" craft_time="4" craft_exp_gain="5">
 		<ingredient name="corn" count="1" />
 	</recipe>
+    <recipe name="cornMeal" count="1" craft_area="workStoneMill" craft_time="4" craft_exp_gain="10">
+		<ingredient name="corn" count="4" />
+	</recipe>
 	<recipe name="plantedCorn1" count="1" craft_time="60" craft_exp_gain="0">
 		<ingredient name="corn" count="1" />
 	</recipe>
@@ -1890,8 +1893,60 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="bowString" count="1" craft_area="campfire" craft_tool="cookingPot" craft_time="4" craft_exp_gain="10">
 		<ingredient name="sinew" count="3" />
 		<ingredient name="bottledWater" count="1" />
+	</recipe><recipe name="cobblestoneFrameBlock" count="1" craft_time="10" craft_exp_gain="5">
+		<ingredient name="stick" count="20" />
+		<ingredient name="fiberRope" count="1" />
 	</recipe>
-    <recipe name="brickHammer" count="1" craft_time="30" craft_exp_gain="40">
+	<recipe name="brickFrameBlock" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="4" craft_exp_gain="5">
+		<ingredient name="stick" count="20" />
+		<ingredient name="fiberRope" count="1" />
+	</recipe>
+	<recipe name="brickFrameRamp" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="4" craft_exp_gain="5">
+		<ingredient name="stick" count="20" />
+		<ingredient name="fiberRope" count="1" />
+	</recipe>
+	<recipe name="brickFrameWedge" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="4" craft_exp_gain="5">
+		<ingredient name="stick" count="20" />
+		<ingredient name="fiberRope" count="1" />
+	</recipe>
+	<recipe name="brickFrameWedgeTip" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="4" craft_exp_gain="5">
+		<ingredient name="stick" count="20" />
+		<ingredient name="fiberRope" count="1" />
+	</recipe>
+	<recipe name="brickFramePlate" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="4" craft_exp_gain="5">
+		<ingredient name="stick" count="20" />
+		<ingredient name="fiberRope" count="1" />
+	</recipe>
+	<recipe name="brickFrameCNRFull" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="4" craft_exp_gain="5">
+		<ingredient name="stick" count="20" />
+		<ingredient name="fiberRope" count="1" />
+	</recipe>
+	<recipe name="brickFrameCNRInside" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="4" craft_exp_gain="5">
+		<ingredient name="stick" count="20" />
+		<ingredient name="fiberRope" count="1" />
+	</recipe>
+	<recipe name="brickFramePillar100" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="4" craft_exp_gain="5">
+		<ingredient name="stick" count="20" />
+		<ingredient name="fiberRope" count="1" />
+	</recipe>
+	<recipe name="brickFramePillar50" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="4" craft_exp_gain="5">
+		<ingredient name="stick" count="20" />
+		<ingredient name="fiberRope" count="1" />
+	</recipe>
+	<recipe name="brickFramePole" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="4" craft_exp_gain="5">
+		<ingredient name="stick" count="20" />
+		<ingredient name="fiberRope" count="1" />
+	</recipe>
+	<recipe name="playerBrickStairs25" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="4" craft_exp_gain="5">
+		<ingredient name="stick" count="20" />
+		<ingredient name="fiberRope" count="1" />
+	</recipe>
+	<recipe name="playerBrickArrowSlitHalf" count="1" craft_area="workbench" craft_tool="handSaw" craft_time="4" craft_exp_gain="5">
+		<ingredient name="cobblestones" count="10" />
+		<ingredient name="stick" count="20" />
+		<ingredient name="fiberRope" count="1" />
+	</recipe>
+	<recipe name="brickHammer" count="1" craft_time="30" craft_exp_gain="40">
 		<ingredient name="rockSmall" count="5" />
 		<ingredient name="fiberRope" count="2" />
 		<ingredient name="woodBranch" count="2" />
@@ -2520,7 +2575,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="proteinServing" count="1" />
 		<ingredient name="veggieServing" count="1" />
 	</recipe>
-    <recipe name="kabobSmall" count="1" craft_area="prepTable" craft_tool="cookingGrill" material_based="true" craft_time="4" craft_exp_gain="10">
+    <recipe name="kabobSmall" count="1" craft_area="prepTable" craft_tool="stick" material_based="true" craft_time="4" craft_exp_gain="10">
 		<ingredient name="unit_protein" count="1" />
 		<ingredient name="unit_veggie" count="1" />
 	</recipe>
@@ -2528,7 +2583,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="proteinServing" count="2" />
 		<ingredient name="veggieServing" count="2" />
 	</recipe>
-    <recipe name="kabobMedium" count="1" craft_area="prepTable" craft_tool="cookingGrill" material_based="true" craft_time="4" craft_exp_gain="20">
+    <recipe name="kabobMedium" count="1" craft_area="prepTable" craft_tool="stick" material_based="true" craft_time="4" craft_exp_gain="20">
 		<ingredient name="unit_protein" count="2" />
 		<ingredient name="unit_veggie" count="2" />
 	</recipe>
@@ -2536,7 +2591,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="proteinServing" count="3" />
 		<ingredient name="veggieServing" count="3" />
 	</recipe>
-    <recipe name="kabobLarge" count="1" craft_area="prepTable" craft_tool="cookingGrill" material_based="true" craft_time="4" craft_exp_gain="35">
+    <recipe name="kabobLarge" count="1" craft_area="prepTable" craft_tool="stick" material_based="true" craft_time="4" craft_exp_gain="35">
 		<ingredient name="unit_protein" count="3" />
 		<ingredient name="unit_veggie" count="3" />
 	</recipe>

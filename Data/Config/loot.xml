@@ -1086,10 +1086,10 @@
 	</lootgroup>
 	<lootgroup name="t3Books" count="1">
 		<item group="gunBooks" prob="20.0" />
-		<item group="t3Magazines" prob="20.0" />
+		<item group="t3Magazines" prob="29.0" />
 		<item name="claimingYourShit" prob="5.2" />
 		<item name="bedBook" prob="7.3" />
-		<item name="glassBook" prob="7.3" />
+		<item name="bulletproofGlassBook" prob="7.3" />
 		<item name="augerSchematic" prob="5.8" />
 		<item name="chainsawSchematic" prob="5.8" />
 		<item name="paintMagazineDecorations" prob="5.8" />
@@ -1097,11 +1097,12 @@
         <item name="nailgunSchematic" prob="5.8" />
 	</lootgroup>
 	<lootgroup name="t2Books" count="1">
-		<item group="t2Magazines" prob="17.3" />
+		<item group="t2Magazines" prob="22.3" />
 		<item name="claimingYourShit" prob="5.0" />
 		<item name="pumpShotgunSchematic" prob="5.0" />
 		<item name="pistolBook" prob="5.8" />
 		<item name="camoNetBook" prob="5.8" />
+        <item name="glassBook" prob="7.3" />
 		<item name="fencing" prob="5.8" />
 		<item name="augerSchematic" prob="5" />
 		<item name="chainsawSchematic" prob="5.8" />
@@ -1110,7 +1111,7 @@
 		<item name="ironBarsBook" prob="13.5" />
 	</lootgroup>
 	<lootgroup name="t1Books" count="1">
-		<item group="t1Magazines" prob="17.3" />
+		<item group="t1Magazines" prob="22.3" />
 		<item name="craftedGunsSchematic" prob="11.5" />
 		<item name="sawedoffPumpShotgunSchematic" prob="9.6" />
 		<item name="handleBarsSchematic" prob="11.5" />

@@ -12127,16 +12127,26 @@ kind of free
 		<property name="ImposterExchange" value="imposterRamp" param1="63" />
 	</block>
 	<block id="1353" name="candleWallPlayer">
-		<property name="Extends" value="candleWall" />
-		<property name="CreativeMode" value="Player" />
-		<property name="CustomIcon" value="candleWall" />
-		<property name="Stacknumber" value="50" />
-		<property name="Class" value="TorchHeatMap" />
-		<property name="HeatMapStrength" value="1" />
-		<property name="HeatMapTime" value="1200" />
-		<property name="HeatMapFrequency" value="15" />
-		<property name="DescriptionKey" value="torchPlayerGroupDesc" />
-	</block>
+        <property name="CreativeMode" value="Dev"/>
+        <property name="Class" value="Torch"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Material" value="wood_weak"/>
+        <property name="MaxDamage" value="1"/>
+        <property name="StabilitySupport" value="false"/> <!-- build restriction -->
+        <property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+        <property name="Mesh" value="models"/>
+        <property name="Model" value="Lighting/candleWall" param1="main_mesh"/>
+        <property name="Place" value="TowardsPlacerInverted"/>
+        <property name="OnlySimpleRotations" value="true"/>
+        <property name="ParticleName" value="candleWall_flame"/>
+        <property name="CanPickup" value="true" param1="candle"/>
+        <property name="HeatMapStrength" value="1"/>
+        <property name="HeatMapTime" value="1200"/>
+        <property name="HeatMapFrequency" value="15"/>
+        <drop event="Destroy" name="candle" count="1"/>
+        <property name="Group" value="Building"/>
+        <property name="DescriptionKey" value="torchGroupDesc"/>
+    </block>
 	<block id="1354" name="candleTablePlayer">
 		<property name="Extends" value="candleWallPlayer" />
 		<property name="CreativeMode" value="Player" />
@@ -12734,6 +12744,7 @@ kind of free
 		<property name="Material" value="metal" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="table" />
+        <property name="Weight" value="150" />
 		<property name="IsDecoration" value="true" />
 		<property name="UseGlobalUV" value="Local" />
 		<property name="Texture" value="282" />
@@ -16172,7 +16183,7 @@ kind of free
 		<property name="BuffsWhenWalkedOn" value="blockBurn3Trigger" />
 		<property name="ActiveRadiusEffects" value="+heatSource(3)" />
 		<property class="Workstation">
-			<property name="CraftingAreaRecipes" value="prepTable" />
+			<property name="CraftingAreaRecipes" value="prepTable,player" />
 			<property name="Modules" value="tools,output,material_input,fuel" />
 			<property name="InputMaterials" value="fruit,grain,veggie,protein" />
 		</property>
@@ -16929,7 +16940,7 @@ kind of free
 		<property name="BigDecorationRadius" value="4" />
 		<property name="UpwardsCount" value="3" />
 		<property name="ModelOffset" value="0,0,0" />
-         <property name="MultiBlockDim" value="1,4,1" />
+         <property name="MultiBlockDim" value="0,4,0" />
 		<drop event="Harvest" name="woodBranch" count="15" />
 		<drop event="Destroy" name="narrowLog" count="6,14" prob="1" />
 		<drop event="Destroy" name="apple" count="3,15" prob="1" />
@@ -16984,12 +16995,13 @@ kind of free
 		<property name="Place" value="TowardsPlacer" />
 		<property name="CanPickup" value="true" />
 		<property name="ModelOffset" value="0,0.3,0" />
-        <property name="MultiBlockDim" value="1,2,1" />
-        <property name="Collide" value="melee,bullet,arrow,rocket" />
+        <property name="MultiBlockDim" value="0,1,0" />
+        <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="DescriptionKey" value="gasTankEmptyDesc" />
 	</block>
 	<block id="868" name="gasTank">
 		<property name="Extends" value="gasTankEmpty" />
+         <property name="MultiBlockDim" value="0,2,0" />
 		<property name="Class" value="TNT" />
 		<property name="CanPickup" value="true" />
 		<property class="Explosion">

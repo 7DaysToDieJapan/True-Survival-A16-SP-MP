@@ -248,34 +248,36 @@
 			<recipe name="cobblestones" unlock_level="10" />
 		</action_skill>
 		<action_skill name="brickBuilding" icon="ui_game_symbol_brick" description_key="Brick Building is the skill to master if you want to build with bricks. Learn to make bricks at skill level 10" title_key="Brick Building" group="science" skill_point_cost_per_level="0">
-			<recipe name="BrickFrameBlock" unlock_level="2" />
-			<recipe name="BrickFrameRamp" unlock_level="2" />
-			<recipe name="BrickFrameStairs" unlock_level="2" />
-			<recipe name="BrickModernArrowSlitHalf" unlock_level="2" />
-			<recipe name="BrickFrameWedge" unlock_level="2" />
-			<recipe name="BrickFrameWedgeTip" unlock_level="2" />
-			<recipe name="BrickFramePlate" unlock_level="2" />
-			<recipe name="BrickFrameCNRFull" unlock_level="2" />
-			<recipe name="BrickFrameCNRInside" unlock_level="2" />
-			<recipe name="BrickFramePillar100" unlock_level="2" />
-			<recipe name="BrickFramePillar50" unlock_level="2" />
-			<recipe name="BrickFramePole" unlock_level="2" />
+			<recipe name="brickFrameBlock" unlock_level="2" />
+			<recipe name="brickFrameRamp" unlock_level="2" />
+			<recipe name="brickFrameStairs" unlock_level="2" />
+			<recipe name="brickModernArrowSlitHalf" unlock_level="2" />
+			<recipe name="brickFrameWedge" unlock_level="2" />
+			<recipe name="brickFrameWedgeTip" unlock_level="2" />
+			<recipe name="brickFramePlate" unlock_level="2" />
+			<recipe name="brickFrameCNRFull" unlock_level="2" />
+			<recipe name="brickFrameCNRInside" unlock_level="2" />
+			<recipe name="brickFramePillar100" unlock_level="2" />
+			<recipe name="brickFramePillar50" unlock_level="2" />
+			<recipe name="brickFramePole" unlock_level="2" />
+            <recipe name="playerBrickStairs25" unlock_level="2" />
+            <recipe name="playerBrickArrowSlitHalf" unlock_level="2" />
           	<!--upgrade material-->
-			<recipe name="Bricks" unlock_level="10" />
+			<recipe name="bricks" unlock_level="10" />
 		</action_skill>
 		<action_skill name="concreteBuilding" icon="ui_game_symbol_concreteMix" description_key="Concrete Building is the skill to master if you want to build with cement. Learn to make cement at skill level 10" title_key="Concrete Building" group="science" skill_point_cost_per_level="0">
-			<recipe name="ConcreteFormBlock" unlock_level="2" />
-			<recipe name="ConcreteFormRamp" unlock_level="2" />
-			<recipe name="ConcreteFormStairs" unlock_level="2" />
-			<recipe name="ConcreteArrowSlitHalf" unlock_level="2" />
-			<recipe name="ConcreteFormWedge" unlock_level="2" />
-			<recipe name="ConcreteFormWedgeTip" unlock_level="2" />
-			<recipe name="ConcreteFormPlate" unlock_level="2" />
-			<recipe name="ConcreteFormCNRFull" unlock_level="2" />
-			<recipe name="ConcreteFormCNRInside" unlock_level="2" />
-			<recipe name="ConcreteFormPillar100" unlock_level="2" />
-			<recipe name="ConcreteFormPillar50" unlock_level="2" />
-			<recipe name="ConcreteFormPole" unlock_level="2" />
+			<recipe name="concreteFormBlock" unlock_level="2" />
+			<recipe name="concreteFormRamp" unlock_level="2" />
+			<recipe name="concreteFormStairs" unlock_level="2" />
+			<recipe name="concreteArrowSlitHalf" unlock_level="2" />
+			<recipe name="concreteFormWedge" unlock_level="2" />
+			<recipe name="concreteFormWedgeTip" unlock_level="2" />
+			<recipe name="concreteFormPlate" unlock_level="2" />
+			<recipe name="concreteFormCNRFull" unlock_level="2" />
+			<recipe name="concreteFormCNRInside" unlock_level="2" />
+			<recipe name="concreteFormPillar100" unlock_level="2" />
+			<recipe name="concreteFormPillar50" unlock_level="2" />
+			<recipe name="concreteFormPole" unlock_level="2" />
 			<!--upgrade material-->
 			<recipe name="cement" unlock_level="10" />
             <recipe name="cementMix" unlock_level="10" />
@@ -3684,15 +3686,6 @@
 		<perk name="electricBatteryBankPerk" icon="ui_game_symbol_batteryBank" description_key="electricBatteryBankDesc" title_key="electricBatteryBankName" max_level="1" group="science">
 			<recipe name="batterybank" unlock_level="1" />
 		</perk>
-		<perk name="doItYourselfPerk" icon="ui_game_symbol_misc_crafting" description_key="doItYourselfDesc" title_key="doItYourselfName" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="science">
-			<requirement skill_level="1" required_skill_name="engineeringCraft" required_skill_level="5" />
-			<recipe name="mechanicalParts" unlock_level="1" />
-			<requirement skill_level="2" required_skill_name="engineeringCraft" required_skill_level="7" />
-			<recipe name="insulator" unlock_level="2" />
-			<recipe name="electricParts" unlock_level="2" />
-			<requirement skill_level="3" required_skill_name="engineeringCraft" required_skill_level="10" />
-			<recipe name="electronicParts" unlock_level="3" />
-		</perk>
 		<perk name="paintDecorations" icon="ui_game_symbol_paintTool" description_key="paintGroupDesc" title_key="paintMagazineDecorations" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science">
 			<requirement skill_level="0" required_skill_name="miscellaneousCraft" required_skill_level="1" />
 			<material_group name="txGroupDecoration" unlock_level="1" />
@@ -3970,18 +3963,20 @@
 			</effect>
 		</perk>
 		<perk name="mason" icon="ui_game_symbol_mason" description_key="These are the skills a mason starts with. Collect 20 Profession pages to learn another profession" title_key="Mason" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
-			<recipe name="BrickFrameBlock" unlock_level="1" />
-			<recipe name="BrickFrameRamp" unlock_level="1" />
-			<recipe name="BrickFrameStairs" unlock_level="1" />
-			<recipe name="BrickModernArrowSlitHalf" unlock_level="1" />
-			<recipe name="BrickFrameWedge" unlock_level="1" />
-			<recipe name="BrickFrameWedgeTip" unlock_level="1" />
-			<recipe name="BrickFramePlate" unlock_level="1" />
-			<recipe name="BrickFrameCNRFull" unlock_level="1" />
-			<recipe name="BrickFrameCNRInside" unlock_level="1" />
-			<recipe name="BrickFramePillar100" unlock_level="1" />
-			<recipe name="BrickFramePillar50" unlock_level="1" />
-			<recipe name="BrickFramePole" unlock_level="1" />
+			<recipe name="brickFrameBlock" unlock_level="1" />
+			<recipe name="brickFrameRamp" unlock_level="1" />
+			<recipe name="brickFrameStairs" unlock_level="1" />
+			<recipe name="brickModernArrowSlitHalf" unlock_level="1" />
+			<recipe name="brickFrameWedge" unlock_level="1" />
+			<recipe name="brickFrameWedgeTip" unlock_level="1" />
+			<recipe name="brickFramePlate" unlock_level="1" />
+			<recipe name="brickFrameCNRFull" unlock_level="1" />
+			<recipe name="brickFrameCNRInside" unlock_level="1" />
+			<recipe name="brickFramePillar100" unlock_level="1" />
+			<recipe name="brickFramePillar50" unlock_level="1" />
+			<recipe name="brickFramePole" unlock_level="1" />
+            <recipe name="playerBrickStairs25" unlock_level="1" />
+            <recipe name="playerBrickArrowSlitHalf" unlock_level="1" />
       		<effect name="RepairTime">
 				<multiply perk_level="0" value="1" />
 				<multiply skill_level="1" value="0.95" />

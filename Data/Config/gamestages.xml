@@ -97,49 +97,49 @@ There is a console command: forcegamestage
 			<spawn group="wanderingHorde15" num="8" maxAlive="30" duration="09" />
 		</gamestage>
 		<gamestage stage="05">
-			<spawn group="ZombieBunnyGroup" num="20" maxAlive="30" duration="09" />
-		</gamestage>
-		<gamestage stage="06">
 			<spawn group="wanderingHorde15" num="10" maxAlive="30" duration="09" />
 		</gamestage>
+		<gamestage stage="06">
+			<spawn group="wanderingHorde15" num="12" maxAlive="30" duration="09" />
+		</gamestage>
 		<gamestage stage="07">
-			<spawn group="wanderingHorde20" num="11" maxAlive="30" duration="09" />
-		</gamestage>
-		<gamestage stage="08">
-			<spawn group="ZombieChickenGroup" num="20" maxAlive="30" duration="09" />
-		</gamestage>
-		<gamestage stage="09">
 			<spawn group="wanderingHorde20" num="13" maxAlive="30" duration="09" />
 		</gamestage>
-		<gamestage stage="10">
+		<gamestage stage="08">
 			<spawn group="wanderingHorde20" num="14" maxAlive="30" duration="09" />
 		</gamestage>
-		<gamestage stage="11">
+		<gamestage stage="09">
 			<spawn group="wanderingHorde20" num="15" maxAlive="30" duration="09" />
 		</gamestage>
+		<gamestage stage="10">
+			<spawn group="wanderingHorde20" num="16" maxAlive="30" duration="09" />
+		</gamestage>
+		<gamestage stage="11">
+			<spawn group="wanderingHorde20" num="17" maxAlive="30" duration="09" />
+		</gamestage>
 		<gamestage stage="12">
-			<spawn group="wanderingHorde30" num="16" maxAlive="30" duration="09" />
+			<spawn group="wanderingHorde30" num="18" maxAlive="30" duration="09" />
 		</gamestage>
 		<gamestage stage="13">
-			<spawn group="wanderingHorde30" num="17" maxAlive="30" duration="09" />
+			<spawn group="wanderingHorde30" num="19" maxAlive="30" duration="09" />
 		</gamestage>
 		<gamestage stage="14">
-			<spawn group="wanderingHorde30" num="18" maxAlive="30" duration="09" />
+			<spawn group="wanderingHorde30" num="20" maxAlive="30" duration="09" />
 		</gamestage>
 		<gamestage stage="15">
 			<spawn group="VultureGroup" num="20" maxAlive="30" duration="09" />
 		</gamestage>
 		<gamestage stage="16">
-			<spawn group="wanderingHorde30" num="20" maxAlive="30" duration="09" />
-		</gamestage>
-		<gamestage stage="17">
 			<spawn group="wanderingHorde30" num="21" maxAlive="30" duration="09" />
 		</gamestage>
-		<gamestage stage="18">
+		<gamestage stage="17">
 			<spawn group="wanderingHorde30" num="22" maxAlive="30" duration="09" />
 		</gamestage>
-		<gamestage stage="19">
+		<gamestage stage="18">
 			<spawn group="wanderingHorde30" num="23" maxAlive="30" duration="09" />
+		</gamestage>
+		<gamestage stage="19">
+			<spawn group="wanderingHorde30" num="24" maxAlive="30" duration="09" />
 		</gamestage>
 		<gamestage stage="20">
 			<spawn group="animalZombieDog" num="6" maxAlive="30" duration="09" />
