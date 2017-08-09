@@ -485,7 +485,6 @@ Mesh files no longer used:
 		<property name="RepairTools" value="sharpeningStone" />
 		<property name="HoldType" value="36" />
 		<property name="DegradationBreaksAfter" value="true" />
-		<property name="FuelValue" value="12" />
 		<property name="EconomicValue" value="120" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property class="Action0">
@@ -2827,8 +2826,10 @@ Mesh files no longer used:
 		<property name="PickupJournalEntry" value="alternateAmmoTip" />
 	</item>
 	<item id="146" name="crossbow">
-		<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
-		<property name="Material" value="metal" />
+        <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
+		<property name="DropMeshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
+		<property name="HandMeshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
+        <property name="Material" value="metal" />
 		<property name="RepairTools" value="scrapIron" />
 		<property name="HoldType" value="26" />
 		<property name="FuelValue" value="70" />
@@ -10526,7 +10527,7 @@ Mesh files no longer used:
 		<property name="Weight" value="10" />
 		<property class="Attributes">
 			<property name="DegradationRate" value="3,1" />
-			<property name="DegradationMax" value="30,600" />
+			<property name="DegradationMax" value="50,600" />
 		</property>
 		<property name="CraftingSkillGroup" value="crossbowCraft" />
 		<property name="CustomIcon" value="partsAuger_parts"/>
@@ -10538,7 +10539,7 @@ Mesh files no longer used:
 		<property name="PartType" value="Receiver" />
 		<property name="Weight" value="10" />
 		<property class="Attributes">
-			<property name="DegradationMax" value="30,600" />
+			<property name="DegradationMax" value="50,600" />
 		</property>
 		<property name="CraftingSkillGroup" value="crossbowCraft" />
 	</item>
@@ -10550,7 +10551,7 @@ Mesh files no longer used:
 		<property name="Weight" value="10" />
 		<property name="FuelValue" value="15" />
 		<property class="Attributes">
-			<property name="DegradationMax" value="30,600" />
+			<property name="DegradationMax" value="50,600" />
 		</property>
 		<property name="CraftingSkillGroup" value="crossbowCraft" />
 	</item>
@@ -10562,7 +10563,7 @@ Mesh files no longer used:
 		<property name="Weight" value="10" />
 		<property class="Attributes">
 			<property name="Accuracy" value="1,0.01" />
-			<property name="DegradationMax" value="30,600" />
+			<property name="DegradationMax" value="50,600" />
 		</property>
 		<property name="CraftingSkillGroup" value="crossbowCraft" />
 	</item>
@@ -15424,7 +15425,7 @@ Mesh files no longer used:
 		<property name="Extends" value="itemMaster" />
 		<property name="Material" value="cloth" />
 		<property name="CustomIcon" value="ui_game_symbol_clothOldShoe" />
-		<property name="Weight" value="1" />
+		<property name="Weight" value="10" />
 	</item>
 	<item id="1946" name="plasticToothBrush">
 		<property name="Extends" value="itemMaster" />

@@ -4143,7 +4143,7 @@ group desc for stuff like metal siding
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="BuffsWhenWalkedOn" value="trapDamageZombie" />
 		<property class="RepairItems">
-			<property name="stick" value="3" />
+			<property name="stick" value="8" />
 		</property>
 		<property name="DowngradeBlock" value="trapSpikesDamage1" />
 		<drop event="Destroy" name="stick" count="1,3" />
@@ -4159,8 +4159,8 @@ group desc for stuff like metal siding
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="trapSpikesNew" />
 			<property name="Item" value="stick" />
-			<property name="ItemCount" value="5" />
-			<property name="UpgradeHitCount" value="4" />
+			<property name="ItemCount" value="3" />
+			<property name="UpgradeHitCount" value="3" />
 		</property>
 		<property name="CustomUpgradeSound" value="place_block_wood" />
 	</block>
@@ -4169,7 +4169,7 @@ group desc for stuff like metal siding
 		<property name="Model" value="Traps/trap_spikes01_damage02" param1="main_mesh" />
 		<property name="DowngradeBlock" value="trapSpikesDamage3" />
 		<property class="UpgradeBlock">
-			<property name="ItemCount" value="24" />
+			<property name="ItemCount" value="5" />
 			<property name="ToBlock" value="trapSpikesNew" />
 		</property>
 	</block>
@@ -4178,7 +4178,7 @@ group desc for stuff like metal siding
 		<property name="Model" value="Traps/trap_spikes01_damage03" param1="main_mesh" />
 		<property name="DowngradeBlock" value="trapSpikesDamage4" />
 		<property class="UpgradeBlock">
-			<property name="ItemCount" value="36" />
+			<property name="ItemCount" value="7" />
 			<property name="ToBlock" value="trapSpikesNew" />
 		</property>
 	</block>
@@ -4187,7 +4187,7 @@ group desc for stuff like metal siding
 		<property name="Model" value="Traps/trap_spikes01_damage04" param1="main_mesh" />
 		<property name="DowngradeBlock" value="trapSpikesDamage5" />
 		<property class="UpgradeBlock">
-			<property name="ItemCount" value="48" />
+			<property name="ItemCount" value="9" />
 			<property name="ToBlock" value="trapSpikesNew" />
 		</property>
 	</block>
@@ -4195,7 +4195,7 @@ group desc for stuff like metal siding
 		<property name="Extends" value="trapSpikesDamage1" param1="DowngradeBlock" />
 		<property name="Model" value="Traps/trap_spikes01_damage04" param1="main_mesh" />
 		<property class="UpgradeBlock">
-			<property name="ItemCount" value="60" />
+			<property name="ItemCount" value="10" />
 			<property name="ToBlock" value="trapSpikesNew" />
 		</property>
 	</block>
@@ -4338,6 +4338,7 @@ group desc for stuff like metal siding
 		<property name="StabilitySupport" value="false" />
 		<!-- build restriction -->
 		<property name="Shape" value="Ext3dModel" />
+        <property name="Weight" value="40" />
 		<property name="Texture" value="293" />
 		<property name="Mesh" value="models" />
 		<property name="Model" value="LootContainers/backpack01" param1="main_mesh" />
@@ -4360,6 +4361,7 @@ group desc for stuff like metal siding
 	<block id="426" name="cntDuffle01">
 		<property name="Extends" value="cntBackpack01" />
 		<property name="Model" value="LootContainers/duffle01" param1="main_mesh" />
+        <property name="Weight" value="60" />        
         <drop event="Destroy" name="cntBackpack01" count="0" />
          <drop event="Destroy" name="cntDuffle01" count="1"/>
 	</block>
@@ -4378,6 +4380,7 @@ group desc for stuff like metal siding
 	<block id="429" name="cntPurse01">
 		<property name="Extends" value="cntBackpack01" />
 		<property name="Model" value="LootContainers/purse01" param1="main_mesh" />
+        <property name="Weight" value="20" />
         <property name="LootList" value="48" />
         <drop event="Destroy" name="cntBackpack01" count="0" />
 		<drop event="Destroy" name="cntPurse01" count="1"/>
@@ -5515,10 +5518,15 @@ kind of free
 		<property name="ImposterExchange" value="imposterHalf" param1="112" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="LootList" value="40" />
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="crackedMunitionsBox" />
+			<property name="Item" value="lockPick" />
+			<property name="ItemCount" value="10" />
+			<property name="UpgradeHitCount" value="10" />
+		</property>
 		<property name="DowngradeBlock" value="crackedMunitionsBox" />
 		<drop event="Destroy" count="0" />
 		<property name="EconomicValue" value="250" />
-		<!-- disassemble value -->
 	</block>
 	<block id="558" name="ironBarsCentered">
 		<property name="CustomIcon" value="ironBars" />
@@ -16183,7 +16191,7 @@ kind of free
 		<property name="BuffsWhenWalkedOn" value="blockBurn3Trigger" />
 		<property name="ActiveRadiusEffects" value="+heatSource(3)" />
 		<property class="Workstation">
-			<property name="CraftingAreaRecipes" value="prepTable,player" />
+			<property name="CraftingAreaRecipes" value="prepTable" />
 			<property name="Modules" value="tools,output,material_input,fuel" />
 			<property name="InputMaterials" value="fruit,grain,veggie,protein" />
 		</property>

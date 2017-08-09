@@ -2437,19 +2437,19 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <recipe name="handFullOfSeeds" count="5" craft_area="dryingRack" craft_time="300" craft_exp_gain="0">
 		<ingredient name="sunflowerHead" count="1" />
 	</recipe>
-	<recipe name="healthyMealSmall" count="1" craft_area="prepTable" craft_tool="cookingPot" material_based="true" craft_time="30">
+	<recipe name="healthyMealSmall" count="1" craft_area="prepTable" craft_tool="cookingPot" material_based="true" craft_exp_gain="30" craft_time="4">
 		<ingredient name="unit_protein" count="1" />
 		<ingredient name="unit_grain" count="1" />
 		<ingredient name="unit_veggie" count="1" />
 		<ingredient name="unit_fruit" count="1" />
 	</recipe>
-	<recipe name="healthyMealMedium" count="1" craft_area="prepTable" craft_tool="cookingPot" material_based="true" craft_time="60">
+	<recipe name="healthyMealMedium" count="1" craft_area="prepTable" craft_tool="cookingPot" material_based="true" craft_exp_gain="60" craft_time="4">
 		<ingredient name="unit_protein" count="2" />
 		<ingredient name="unit_grain" count="2" />
 		<ingredient name="unit_veggie" count="2" />
 		<ingredient name="unit_fruit" count="2" />
 	</recipe>
-	<recipe name="healthyMealLarge" count="1" craft_area="prepTable" craft_tool="cookingPot" material_based="true" craft_time="100">
+	<recipe name="healthyMealLarge" count="1" craft_area="prepTable" craft_tool="cookingPot" material_based="true" craft_exp_gain="100" craft_time="4">
 		<ingredient name="unit_protein" count="3" />
 		<ingredient name="unit_grain" count="3" />
 		<ingredient name="unit_veggie" count="3" />

@@ -798,28 +798,34 @@
 		<item group="rocketLauncherWeaponParts" prob="10" />
 	</lootgroup> 
 	<lootgroup name="weaponsMelee">
-		<item name="steakKnife" quality="30,500" prob="20.43" />
-		<item name="woodSpear" quality="30,500" prob="20.43" />
-		<item name="ironSpear" quality="30,100" prob="0.51" />
-		<item name="oldAxe" quality="30,500" prob="10.21" />
-		<item name="oldKnife" quality="30,500" prob="10.21" />
-		<item name="huntingKnife" quality="30,100" prob="10.21" />
-		<item name="machete" quality="30,100" prob="0.51" />
-		<item name="kaBar" quality="30,100" prob="0.41" />
-		<item name="battleKnifeCherry" quality="30,100" prob="0.51" />
-		<item name="halbert" quality="30,100" prob="0.41" />
-		<item name="hayfork" quality="30,300" prob="5.11" />
-		<item name="axe02" quality="30,100" prob="4.09" />
-		<item name="fieldKnife" quality="30,100" prob=".11" />
-		<item name="chefKnife" quality="30,100" prob="4.09" />
-		<item name="bat" quality="30,200" prob="5.11" />
-		<item name="nailedBat" quality="30,100" prob="0.51" />
-		<item name="nightStick" quality="30,100" prob="0.52" />
-		<item name="katana" quality="30,100" prob="0.1" />
-		<item name="firemanAxe" quality="30,100" prob="0.51" />
-		<item name="clubSteelSpiked" quality="30,100" prob="0.31" />
-		<item name="shockStick" quality="30,100" prob="0.2" />
-		<item name="lucille" quality="30,100" prob="0.1" />
+		<item name="steakKnife" quality="100,600" prob="12.0" />
+        <item name="ironShiv" quality="100,300" prob="7.0" />
+		<item name="woodSpear" quality="100,300" prob="1.0" />
+        <item name="huntingKnifeSpear" quality="100,300" prob="0.5" />
+        <item name="electricSpear" quality="100,300" prob="0.5" />
+		<item name="ironSpear" quality="100,300" prob="1.0" />
+		<item name="oldAxe" quality="100,600" prob="4.0" />
+		<item name="oldKnife" quality="100,600" prob="10.0" />
+		<item name="huntingKnife" quality="100,300" prob="8.0" />
+		<item name="machete" quality="100,300" prob="4.0" />
+		<item name="kaBar" quality="100,600" prob="4.0" />
+		<item name="battleKnifeCherry" quality="100,600" prob="4.0" />
+		<item name="halbert" quality="100,600" prob="0.5" />
+		<item name="hayfork" quality="100,600" prob="3.0" />
+		<item name="axe02" quality="100,300" prob="0.5" />
+		<item name="fieldKnife" quality="100,300" prob=".5" />
+		<item name="chefKnife" quality="100,600" prob="4.0" />
+		<item name="bat" quality="100,600" prob="9.0" />
+		<item name="nailedBat" quality="100,300" prob="2.0" />
+        <item name="batGoodNight" quality="100,600" prob="9.0" />
+        <item name="batTPX" quality="100,600" prob="9.0" />
+        <item name="tomahawk" quality="100,300" prob="2.0" />
+		<item name="nightStick" quality="100,300" prob="2.0" />
+		<item name="katana" quality="100,300" prob="0.3" />
+		<item name="firemanAxe" quality="100,300" prob="1.0" />
+		<item name="clubSteelSpiked" quality="100,300" prob="0.4" />
+		<item name="shockStick" quality="100,300" prob="0.5" />
+		<item name="lucille" quality="100,300" prob="0.6" />
 	</lootgroup>
 	<lootgroup name="weaponsCrossbow+ammo" count="all">
 		<item name="crossbow" quality="300,350" count="1" />
@@ -1695,7 +1701,7 @@
 		<item name="grainAlcohol" count="5,10" />
 		<item name="vitamins" count="1,2" />
 		<item name="animalFat" count="4,10" />
-		<item name="coal" count="10,20" prob="2" />
+		<item name="charcoal" count="1,4" prob="2" />
 		<item name="potassiumNitratePowder" count="10,20" prob="2" />
 		<item name="glue" count="1,5" />
 		<item name="oilShale" count="10,30" />
@@ -1767,7 +1773,6 @@
 		<item name="chef" />
 		<item name="qc_Chef" />
 		<item name="qc_King" />
-		<item name="steakKnife" />
 	</lootgroup>
 	<lootgroup name="fitnessInstructor" count="all">
 		<item name="canBeef" />
@@ -2207,7 +2212,7 @@
 		<item name="scrapIron" count="1,15" prob="1.5" />
 		<item name="emptyJar" count="1,2" />
 		<item name="canEmpty" count="1,2" />
-        <item name="coal" count="4,12" prob="0.5" />
+        <item name="charcoal" count="1,2" prob="0.5" />
 	</lootcontainer>
 	<!-- night stands and dressers, pistol, ammo, magazines, books -->
 	<lootcontainer id="6" count="0,2" size="4,3" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="baseTemplate">
@@ -2445,7 +2450,7 @@
 		<item name="professionPage" count="1,2" prob="14.0" />
 	</lootcontainer>
 	<!-- player dropped backpacks, they only destroy on close when they are empty -->
-	<lootcontainer id="41" count="0" size="5,10" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+	<lootcontainer id="41" count="0" size="6,10" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
 		<item name="cobweb" count="1,2" prob="0.01" />
 	</lootcontainer>
 	<!-- gun safe -->

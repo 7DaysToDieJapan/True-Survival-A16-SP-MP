@@ -944,27 +944,27 @@ This requires a 50+ food bar:
 	<modify id="3" stat="wellness" amount="-1" rate="300" />
 </buff>
 <!--JZMOD Wellness-->
-<buff id="wellness_1_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 0.1, 0, 0, 1)" />
-<buff id="wellness_1.5_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 0.15, 0, 0, 1)" />
-<buff id="wellness_2_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 0.2, 0, 0, 1)" />
-<buff id="wellness_3_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 0.3, 0, 0, 1)" />
-<buff id="wellness_4_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 0.4, 0, 0, 1)" />
-<buff id="wellness_5_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 0.5, 0, 0, 1)" />
-<buff id="wellness_6_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 0.6, 0, 0, 1)" />
-<buff id="wellness_7_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 0.7, 0, 0, 1)" />
-<buff id="wellness_8_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 0.8, 0, 0, 1)" />
-<buff id="wellness_9_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 0.9, 0, 0, 1)" />
-<buff id="wellness_10_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 1.0, 0, 0, 1)" />
-<buff id="wellness_11_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 1.1, 0, 0, 1)" />
-<buff id="wellness_12_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 1.2, 0, 0, 1)" />
-<buff id="wellness_13_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 1.3, 0, 0, 1)" />
-<buff id="wellness_14_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 1.4, 0, 0, 1)" />
-<buff id="wellness_15_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 1.5, 0, 0, 1)" />
-<buff id="wellness_16_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 1.6, 0, 0, 1)" />
-<buff id="wellness_17_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 1.7, 0, 0, 1)" />
-<buff id="wellness_18_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 1.8, 0, 0, 1)" />
-<buff id="wellness_19_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 1.9, 0, 0, 1)" />
-<buff id="wellness_20_Trigger" requires="goodNutrition1Tag" duration="1" actions="increment(@wellness, 2.0, 0, 0, 1)" />
+<buff id="wellness_1_Trigger" requires="goodNutrition1Tag" name_key="0.1 Wellness" duration="1" actions="increment(@wellness, 0.1, 0, 0, 1)" />
+<buff id="wellness_1.5_Trigger" requires="goodNutrition1Tag" name_key="0.15 Wellness" duration="1" actions="increment(@wellness, 0.15, 0, 0, 1)" />
+<buff id="wellness_2_Trigger" requires="goodNutrition1Tag" name_key="0.2Wellness" duration="1" actions="increment(@wellness, 0.2, 0, 0, 1)" />
+<buff id="wellness_3_Trigger" requires="goodNutrition1Tag" name_key="0.3 Wellness" duration="1" actions="increment(@wellness, 0.3, 0, 0, 1)" />
+<buff id="wellness_4_Trigger" requires="goodNutrition1Tag" name_key="0.4 Wellness" duration="1" actions="increment(@wellness, 0.4, 0, 0, 1)" />
+<buff id="wellness_5_Trigger" requires="goodNutrition1Tag" name_key="0.5 Wellness" duration="1" actions="increment(@wellness, 0.5, 0, 0, 1)" />
+<buff id="wellness_6_Trigger" requires="goodNutrition1Tag" name_key="0.6 Wellness" duration="1" actions="increment(@wellness, 0.6, 0, 0, 1)" />
+<buff id="wellness_7_Trigger" requires="goodNutrition1Tag" name_key="0.7 Wellness" duration="1" actions="increment(@wellness, 0.7, 0, 0, 1)" />
+<buff id="wellness_8_Trigger" requires="goodNutrition1Tag" name_key="0.8 Wellness" duration="1" actions="increment(@wellness, 0.8, 0, 0, 1)" />
+<buff id="wellness_9_Trigger" requires="goodNutrition1Tag" name_key="0.9 Wellness" duration="1" actions="increment(@wellness, 0.9, 0, 0, 1)" />
+<buff id="wellness_10_Trigger" requires="goodNutrition1Tag" name_key="1.0 Wellness" duration="1" actions="increment(@wellness, 1.0, 0, 0, 1)" />
+<buff id="wellness_11_Trigger" requires="goodNutrition1Tag" name_key="1.1 Wellness" duration="1" actions="increment(@wellness, 1.1, 0, 0, 1)" />
+<buff id="wellness_12_Trigger" requires="goodNutrition1Tag" name_key="1.2 Wellness" duration="1" actions="increment(@wellness, 1.2, 0, 0, 1)" />
+<buff id="wellness_13_Trigger" requires="goodNutrition1Tag" name_key="1.3 Wellness" duration="1" actions="increment(@wellness, 1.3, 0, 0, 1)" />
+<buff id="wellness_14_Trigger" requires="goodNutrition1Tag" name_key="1.4 Wellness" duration="1" actions="increment(@wellness, 1.4, 0, 0, 1)" />
+<buff id="wellness_15_Trigger" requires="goodNutrition1Tag" name_key="1.5 Wellness" duration="1" actions="increment(@wellness, 1.5, 0, 0, 1)" />
+<buff id="wellness_16_Trigger" requires="goodNutrition1Tag" name_key="1.6 Wellness" duration="1" actions="increment(@wellness, 1.6, 0, 0, 1)" />
+<buff id="wellness_17_Trigger" requires="goodNutrition1Tag" name_key="1.7 Wellness" duration="1" actions="increment(@wellness, 1.7, 0, 0, 1)" />
+<buff id="wellness_18_Trigger" requires="goodNutrition1Tag" name_key="1.8 Wellness" duration="1" actions="increment(@wellness, 1.8, 0, 0, 1)" />
+<buff id="wellness_19_Trigger" requires="goodNutrition1Tag" name_key="1.9 Wellness" duration="1" actions="increment(@wellness, 1.9, 0, 0, 1)" />
+<buff id="wellness_20_Trigger" requires="goodNutrition1Tag" name_key="2 Wellness" duration="1" actions="increment(@wellness, 2.0, 0, 0, 1)" />
 <!--JZMOD NUTRITION AFFECTED BUFFS-->
 <!--BLEEDING-->
 <buff id="bleeding" duration="1" actions="buff(bleedingHealthy);buff(bleedingNormal);buff(bleedingMalnourished)" />
