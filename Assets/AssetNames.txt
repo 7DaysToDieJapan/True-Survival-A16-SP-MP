@@ -1,0 +1,26 @@
+All files are in xml called as follows:
+
+Blocks: 
+
+Calls to single prefab files use format: <property name="Model" value="#Name?NamePrefab" /> where name is the unity3d filename and NamePrefab is the actual model in the unity3d package.
+Example:
+ 		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#FernSmall?FernSmallPrefab" />
+		
+Items:
+Calls to single prefab files use format: <property name="Meshfile" value="#Name?NamePrefab" /> where name is the unity3d filename and NamePrefab is the actual model in the unity3d package.
+
+Example:
+		<property name="Meshfile" value="#Pan2?PanPrefab" />
+		
+Calls to multiple prefab files use format: <property name="Model" value="#Names?NamePrefab" /> where name is the unity3d filename and NamePrefab is the actual model in the unity3d package.		
+
+Names.unity3d
+	- Name1Prefab
+	- Name2Prefab
+	- Name3Prefab
+	- Name4Prefab
+	
+Example for calling the 2 different Roadblock models out of the file - RoadBlocks.unity3d:
+		<property name="Model" value="#RoadBlocks?RoadBlock1Prefab" />
+		<property name="Model" value="#RoadBlocks?RoadBlock2Prefab" />
