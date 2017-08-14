@@ -323,7 +323,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 		
 		</trader_item_group>
 		<trader_item_group name="rareBooks" count="1">
-			<item name="aK47Schematic" />
+			<item name="ak47Schematic" />
 			<item name="augerSchematic" />
 			<item name="chainsawSchematic" />
 			
@@ -403,7 +403,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="ironArrowHead" count="5,25" prob="0.05" />
 			<!-- 5 -->
 			<item name="steelArrowHead" count="5,25" prob="0.05" />
-			<!-- 5 -->&gt;
+			<!-- 5 -->
 			<item name="feather" count="10,45" /><!-- 5 --></trader_item_group>
 		<trader_item_group name="seeds">
 			<item name="plantedPotato1" />

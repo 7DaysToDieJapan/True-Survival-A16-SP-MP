@@ -1166,8 +1166,8 @@ qc_thatlldopig,items,Animal Challenge Note,KgNone,That'll Do Pig Challenge,Défi
 762mmBulletSchematicDesc,items,Book,KgNone,Learn to craft this ammunition type if you meet the skill requirement or improve your base skill if you do not.,"Apprenez à fabriquer ce type de munition si vous avez les compétences requises. Si ce n'est pas le cas, améliorez votre compétence de base.","Wenn du die erforderliche Fertigkeit besitzt, kannst du lernen, diese Munition zu fertigen. Ansonsten musst du deine Fertigkeit verbessern.",,Aprendes a crear este tipo de munición si adquieres la habilidad necesaria o mejoras tu habilidad de base si no.
 9mmBulletSchematic,items,Book,KgNone,9mm Round Schematic,Schéma de cartouche 9 mm,Bauplan - 9mm Patrone,,Esquema de bala de 9mm
 9mmBulletSchematicDesc,items,Book,KgNone,Learn to craft this ammunition type if you meet the skill requirement or improve your base skill if you do not.,"Apprenez à fabriquer ce type de munition si vous avez les compétences requises. Si ce n'est pas le cas, améliorez votre compétence de base.","Wenn du die erforderliche Fertigkeit besitzt, kannst du lernen, diese Munition zu fertigen. Ansonsten musst du deine Fertigkeit verbessern.",,Aprendes a crear este tipo de munición si adquieres la habilidad necesaria o mejoras tu habilidad de base si no.
-ak47Schematic,items,Book,KgNone,AK-47 Schematic,Schéma d'AK-47,Bauplan – AK-47,,Esquema de AK-47
-ak47SchematicDesc,items,Book,KgNone,"Learn how to assemble, repair and augment AK-47 Assault Rifles by reading this schematic.","Apprenez à assembler, réparer et perfectionner les fusils d'assaut AK-47 en lisant ce schéma.","In diesem Bauplan erfährst du, wie AK-47-Sturmgewehre zusammengesetzt, repariert und verbessert werden.",,"Lee el esquema para aprender a armar, reparar e incrementar un rifle de asalto AK-47."
+ak47Schematic,items,Book,KgNone,Assualt Rifle Schematic,Schéma d'AK-47,Bauplan – AK-47,,Esquema de AK-47
+ak47SchematicDesc,items,Book,KgNone,"Learn how to assemble, repair and augment Assault Rifles by reading this schematic.","Apprenez à assembler, réparer et perfectionner les fusils d'assaut AK-47 en lisant ce schéma.","In diesem Bauplan erfährst du, wie AK-47-Sturmgewehre zusammengesetzt, repariert und verbessert werden.",,"Lee el esquema para aprender a armar, reparar e incrementar un rifle de asalto AK-47."
 ammunitionNationBook,items,Book,KgNone,Ammunition Nation Book,Livre « La nation des munitions »,Buch „Munition-Nation“,,Libro Nación de munición
 ammunitionNationBookDesc,items,Book,KgNone,Learn to craft brass casings and lead tips for ammunition crafting.,Apprenez à fabriquer des douilles en laiton et des pointes en plomb pour la fabrication de munitions.,"In diesem Buch erfährst du, wie Patronenhülsen aus Messing und Geschossspitzen aus Blei gefertigt werden.",,Aprende a fabricar cartuchos de latón y puntas de bala de plomo para fabricar munición.
 augerSchematic,items,Book,KgNone,Auger Schematic,Schéma de foreuse,Bauplan – Erdbohrer,,Esquema de taladro
@@ -1223,8 +1223,8 @@ pistolBook,items,Book,KgNone,Pistol Book,« Le livre des pistolets »,Buch „
 pistolBookDesc,items,Book,KgNone,"Read the pistol book to learn how to assemble, repair and augment 9mm pistols. ","Lisez « Le livre des pistolets » pour apprendre à assembler, réparer et perfectionner les pistolets de calibre 9 mm. ","In diesem Buch über Pistolen erfährst du, wie 9 mm Pistolen zusammengesetzt, repariert und verbessert werden. ",,"Lee el libro de la Pistola para aprender a armar, reparar y mejorar revólveres de 9 mm. "
 pumpShotgunSchematic,items,Book,KgNone,Shotgun Schematic,Schéma de fusil à pompe,Bauplan – Schrotflinte,,Esquema de escopeta
 reloadingWeeklyBook,items,Book,KgNone,Reloading Weekly Book,Livre « La recharge hebdomadaire »,Buch „Wöchentlich nachladen“,,Libro “Recarga semanal”
-rocketLauncherSchematic,items,Book,KgNone,Rocket Launcher Schematic,Schéma de lance-roquettes,Bauplan – Raketenwerfer,,Esquema de lanzacohetes
-rocketLauncherSchematicDesc,items,Book,KgNone,Learn how to assemble and repair rocket launchers and craft rocket ammo by reading this schematic.,Apprenez à assembler et réparer les lance-roquettes et à fabriquer des roquettes en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Raketenwerfer zusammengesetzt und repariert werden und wie Raketenwerfermunition hergestellt wird.",,Lee este esquema para aprender a armar y reparar lanzacohetes y a fabricar cohetes.
+rocketLauncherSchematic,items,Book,KgNone,Heavy Weapons Schematic,Schéma de lance-roquettes,Bauplan – Raketenwerfer,,Esquema de lanzacohetes
+rocketLauncherSchematicDesc,items,Book,KgNone,Learn how to assemble and repair heavy weapons and craft rocket ammo by reading this schematic.,Apprenez à assembler et réparer les lance-roquettes et à fabriquer des roquettes en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Raketenwerfer zusammengesetzt und repariert werden und wie Raketenwerfermunition hergestellt wird.",,Lee este esquema para aprender a armar y reparar lanzacohetes y a fabricar cohetes.
 scrapArmorSchematicDesc,items,Book,KgNone,Learn MacDyver's secret to making scrap metal armor by reading this gem by the king of made-up stuff.,Apprenez les secrets de MacDyver sur la fabrication d'armures en métal recyclé et autres en lisant cette merveille écrite par le roi de la débrouille.,"Finde mit diesem einzigartigen Buch von MacDyver, dem Großmeister der Improvisation, heraus, wie Rüstung aus Altmetall gefertigt wird.",,Lee esta joya y conoce los secretos de MacDyver para fabricar armaduras con chatarra de metal y mucho más de mano del rey de inventarse cosas.
 setInConcrete,items,Book,KgNone,Set In Concrete,Livre « Coulé dans le béton »,Einbetonieren,,Grabado en hormigón
 setInConcreteDesc,items,Book,KgNone,Learn to craft concrete if you meet the skill requirement or improve your base skill if you do not.,"Apprenez à fabriquer du béton si vous avez les compétences requises. Si ce n'est pas le cas, améliorez votre compétence de base.","Wenn du die erforderliche Fertigkeitsstufe besitzt, kannst du lernen, Beton zu fertigen. Ansonsten musst du deine Fertigkeit verbessern.",,Aprendes a crear hormigón si adquieres la habilidad necesaria o mejoras tu habilidad de base si no.
@@ -1234,7 +1234,7 @@ shotgunSlugSchematic,items,Book,KgNone,Shotgun Slug Schematic,Schéma de balle p
 shotgunSlugSchematicDesc,items,Book,KgNone,Be the life of the party and learn how to create your very own shotgun slugs by reading this schematic.,Soyez au cœur de la fête et apprenez à fabriquer vos propres balles pour fusil à pompe en lisant ce schéma.,"Sei der Star jeder Party und lerne mit diesem Bauplan, wie Flintenlaufgeschosse gefertigt werden.",,Sé el alma de la fiesta y aprende a crear tus propios perdigones de escopeta leyendo este esquema.
 sledgehammerSchematic,items,Book,KgNone,Sledgehammer Schematic,Schéma de masse,Bauplan – Vorschlaghammer,,Esquema de mazo
 sledgehammerSchematicDesc,items,Book,KgNone,Learn how to craft a sledgehammer by reading this schematic.,Apprenez à fabriquer une masse en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Vorschlaghämmer gefertigt werden.",,Lee este esquema para aprender a fabricar un mazo.
-smgSchematics,items,Book,KgNone,SMG Schematic,Schéma de mitraillette,Bauplan – Maschinenpistole,,Esquema de metralleta
+smgSchematics,items,Book,KgNone,Submachine Gun Schematic,Schéma de mitraillette,Bauplan – Maschinenpistole,,Esquema de metralleta
 smgSchematicsDesc,items,Book,KgNone,"Learn how to assemble, repair and augment Submachine Guns by reading this schematic.","Apprenez à assembler, réparer et améliorer les mitraillettes en lisant ce schéma.","In diesem Bauplan erfährst du, wie Maschinenpistolen zusammengesetzt, repariert und verbessert werden.",,"Lee el esquema para aprender a armar, reparar y mejorar metralletas."
 sniperRifleSchematic,items,Book,KgNone,Sniper Rifle Schematic,Schéma de fusil de précision,Bauplan – Scharfschützengewehr,,Esquema de rifle de francotirador
 sniperRifleSchematicDesc,items,Book,KgNone,"Learn how to assemble, repair and augment precision rifles by reading this schematic.","Apprenez à assembler, réparer et améliorer les fusils de précision en lisant ce schéma.","In diesem Bauplan erfährst du, wie Scharfschützengewehre zusammengesetzt, repariert und verbessert werden.",,"Lee el esquema para aprender a armar, reparar y mejorar rifle de precisión."
@@ -1710,9 +1710,9 @@ parts44Magnum_grip,items,Part,KgNone,.44 Magnum Grip,Crosse de .44 magnum,.44 Ma
 parts44Magnum_parts,items,Part,KgNone,.44 Magnum Parts,Pièces de .44 magnum,.44 Magnum Teile,,Partes de Magnum 44
 parts44MagnumGroupDesc,items,Part,KgNone,A part of the .44 Magnum. Assemble with other parts to create a complete revolver once you've read the Enforcer Magazine.,Une pièce de .44 magnum À assembler à d'autres pièces pour fabriquer un revolver une fois que vous avez lu le Magazine Enforcer.,"Ein Teil von einer .44 Magnum. Setze es mit den anderen Teilen zu einem Revolver zusammen, wenn du das Vollstrecker-Magazin gelesen hast.",,"Una parte de una Magnum 44. Una vez que has leído la Revista del sicario, ármala con otras partes para crear una pistola completa."
 partsAK47_barrel,items,Part,KgNone,AK-47 Barrel,Canon d'AK-47,AK-47 Lauf,,Cañón de AK-47
-partsAK47_parts,items,Part,KgNone,AK-47 Parts,Pièces d'AK-47,AK-47 Teile,,Partes de AK-47
+partsAK47_parts,items,Part,KgNone,AssaultRifle Parts,Pièces d'AK-47,AK-47 Teile,,Partes de AK-47
 partsAK47_receiver,items,Part,KgNone,AK-47 Receiver,Carcasse d'AK-47,AK-47 Verschlussgehäuse,,Receptor de AK-47
-partsAK47_stock,items,Part,KgNone,AK-47 Stock,Crosse d'AK-47,AK-47 Schaft,,Cantonera de AK-47
+partsAK47_stock,items,Part,KgNone,AssaultRifle Stock,Crosse d'AK-47,AK-47 Schaft,,Cantonera de AK-47
 partsAK47GroupDesc,items,Part,KgNone,A part of the AK-47 Assault Rifle. Assemble with other parts to create a complete Ak-47 once you've read the schematic.,Une pièce du fusil d'assaut AK-47. À assembler à d'autres pièces pour fabriquer un fusil d'assaut AK-47 une fois que vous avez lu le schéma.,"Ein Teil von einem AK-47-Sturmgewehr. Setze es mit den anderen Teilen zu einer AK-47 zusammen, wenn du den Bauplan gelesen hast.",,"Una parte de un rifle de asalto AK-47. Una vez que hayas leído el esquema, ármala con otras partes para crear un AK-47 completo."
 partsAuger_blade,items,Part,KgNone,Auger Blade,Foret de foreuse,Erdbohrer-Bohrkopf,,Cuchilla de barrena
 partsAuger_parts,items,Part,KgNone,Auger Parts,Pièces de foreuse,Erdbohrerteile,,Partes de la barrena
@@ -1728,9 +1728,9 @@ partsHuntingRifle_receiver,items,Part,KgNone,Hunting Rifle Receiver,Carcasse de 
 partsHuntingRifle_stock,items,Part,KgNone,Hunting Rifle Stock,Crosse de fusil de chasse,Jagdgewehrschaft,,Cantonera de rifle de caza
 partsHuntingRifleGroupDesc,items,Part,KgNone,A part of the hunting rifle. Assemble with other parts to create a complete hunting rifle once you've read the schematic.,Une pièce de fusil de chasse. À assembler à d'autres pièces pour fabriquer un fusil de chasse une fois que vous avez lu le schéma.,"Ein Teil von einem Jagdgewehr. Setze es mit den anderen Teilen zu einem Jagdgewehr zusammen, wenn du den Bauplan gelesen hast.",,"Una parte de un rifle de caza. Una vez que has leído el esquema, ármala con otras partes para crear un rifle de caza completo."
 partsMP5_barrel,items,Part,KgNone,SMG Barrel,Canon de mitraillette,Maschinenpistolenlauf,,Cañón de metralleta
-partsMP5_parts,items,Part,KgNone,SMG Parts,Pièces de mitraillette,Maschinenpistolenteile,,Partes de metralleta
+partsMP5_parts,items,Part,KgNone,Submachine Gun Parts,Pièces de mitraillette,Maschinenpistolenteile,,Partes de metralleta
 partsMP5_receiver,items,Part,KgNone,SMG Receiver,Carcasse de mitraillette,Maschinenpistolen-Verschlussgehäuse,,Receptor de metralleta
-partsMP5_stock,items,Part,KgNone,SMG Stock,Crosse de mitraillette,Maschinenpistolenschaft,,Cantonera de metralleta
+partsMP5_stock,items,Part,KgNone,Submachine Gun Stock,Crosse de mitraillette,Maschinenpistolenschaft,,Cantonera de metralleta
 partsMP5GroupDesc,items,Part,KgNone,A part of the Submachine Gun. Assemble with other parts to create a complete SMG once you've read the schematic.,Une pièce de mitraillette. À assembler à d'autres pièces pour fabriquer une mitraillette une fois que vous avez lu le schéma.,"Ein Teil von einer Maschinenpistole. Setze es mit den anderen Teilen zu einer Maschinenpistole zusammen, wenn du den Bauplan gelesen hast.",,"Una parte de una metralleta. Una vez que has leído el esquema, ármala con otras partes para crear una metralleta completa."
 partsPistol_barrel,items,Part,KgNone,Pistol Barrel,Canon de pistolet,Pistolenlauf,,Cañón de revólver
 partsPistol_grip,items,Part,KgNone,Pistol Grip,Crosse de pistolet,Pistolengriff,,Empuñadura de revólver
@@ -1758,7 +1758,6 @@ partsSniperRifleGroupDesc,items,Part,KgNone,A part of the sniper rifle. Assemble
 shoppingBasketItem,items,Part,KgNone,Shopping Basket,Panier à provisions,Einkaufskorb,,Cesto de compras
 shoppingBasketItemDesc,items,Part,KgNone,A shopping basket can be used to add storage to minibikes.,Un panier à provisions permet d'ajouter un espace de stockage aux mini-motos.,Ein Einkaufskorb für mehr Platz auf dem Taschenmotorrad.,,Se puede usar un cesto de compras para agregar un espacio de almacenamiento a las minimotos.
 smallEngine,items,Part,KgNone,Small Engine,Petit moteur,Kleiner Motor,,Motor pequeño
-smallEngineDesc,items,Part,KgNone,"A common part for a chainsaw, auger or minibike. Can be used to make these items once you've read the schematic.","Une pièce commune aux tronçonneuses, foreuses et mini-motos. Sert à fabriquer ces objets une fois que vous avez lu le schéma.","Ein gewöhnliches Teil einer Kettensäge, eines Erdbohrers oder eines Taschenmotorrads. Kann verwendet werden, um diese Gegenstände zu fertigen, wenn du den richtigen Bauplan gelesen hast.",,"Una parte común de las motosierras, los taladros y las minimotos. Una vez que hayas leído el esquema, úsala para crear estos objetos."
 q_basicSurvival,items,Quest Note,KgNone,Basic Survival Quest Note,Note de quête « Les bases de la survie »,Questnotiz – Das 1x1 des Überlebens,,Nota de búsqueda de supervivencia básica
 q_basicSurvivalDesc,items,Quest Note,KgNone,A mysterious note from a stranger. I don't know how I got it.,Un petit mot mystérieux provenant d'un étranger. Je ne sais pas comment je l'ai obtenu.,"Eine geheimnisvolle Notiz von einem Fremden. Ich weiß nicht, woher ich sie habe.",,Una nota misteriosa de un extraño. No sé cómo llegó a mí.
 auger,items,Tool,KgNone,Auger,Foreuse,Erdbohrer,,Taladro
@@ -4902,6 +4901,12 @@ solidScrapIronFrameHalf,blocks,Block,New,Solid Scrap Iron 1/2 Block,,,,
 scrapIronHalf,blocks,Block,New,Scrap Iron 1/2 Block,,,,
 rScrapIronHalf,blocks,Block,New,Reinforced Scrap Iron 1/2 Block,,,,
 xuiExpires,UI,Menu,New,Expires,,,,
+inpActGuiLeftclick,UI,Controls Dialog,,UI primary click,,,,
+inpActGuiRightclick,UI,Controls Dialog,,UI secondary click,,,,
+ttBedrollGone,UI,Tooltip,New,Your bedroll is gone,,Dein Schlafsack ist verschwunden,,
+extinguishFireBuffName,buffs,Buff,New,Extinguish Fire,,Lösche Feuer,,
+extinguishFireBuffDesc,buffs,Buff,New,If you happen to be on fire then this will put out the fire and prevent another while the buff remains active.,,Solltest Du in Flammen stehen dann löscht dies das Feuer und verhindert ein neues solange der Effekt aktiv ist.,,
+DroppedLootContainer,entityclasses,Entity Info,New,Dropped Loot,,,,
 SilencerDesc,,,,"The Silencer can be attached to the Pistol, Magnum, and Hunting Rifle. Crafted on the metal working bench.",,,,
 SilencedPistolDesc,,,,"In the land of the Dead the quiet man lives.",,,,
 SilencedhuntingRifle,,,,"Silenced Hunting Rifle",,,,
@@ -5018,7 +5023,6 @@ canMeat,,,,"Canned Meat",,,,
 CanMeatDesc,,,,"Freshly canned meat helps remove the smell but you lose the wellness gain.",,,,
 VenomSack,,,,"Venom Sack",,,,
 VenomSackDesc,,,,"A venom gland from a poisonous animal. The potent chemicals in the gland make it very useful in crafting. Can be crafted into Anti Venom on the Campfire in a Cooking Pot",,,,
-yuccaSeed,,,,"Yucca Seed",,,,
 SeedDesc,,,,"Plant these seeds in the sunlight near water to grow. Plant on fertile dirt to increase its produce, add fertilizer to increase it even more. To craft more Seeds build a Seed Nursery",,,,
 shortSteelPipe,,,,"Short Steel Pipe",,,,
 SteelPipeDesc,,,,"A strong pipe that can be used for many things including crafting, repairing and upgrading.",,,,
@@ -5062,8 +5066,6 @@ workMortarAndPestle,,,,"Mortar and Pestle",,,,
 MortarAndPestleDesc,,,,"Used to grind Plants and Minerals into powders and creams.",,,,
 SteakKnife,,,,"Steak Knife",,,,
 SteakKnifeDesc,,,,"A old rusty steak knife. You might be able to crush a few more skulls with it before it breaks.",,,,
-FishNChips,,,,"Fish N Chips",,,,
-FishNChipsDesc,,,,"Crispy delicious fish and chips",,,,
 FiberRope,,,,"Fiber Rope",,,,
 FiberRopeDesc,,,,"Strong hand made rope used in many crafting recipes.",,,,
 ProfessionKey,,,,"Profession Key",,,,
@@ -5082,7 +5084,7 @@ BikeNABoxDesc,,,,"A crate with a mini bike in it. Place it on the ground and bre
 BearTrap,,,,"Bear Trap",,,,
 trapbearDesc,,,,"A Strong metal Bear Trap. Use it as a trap for zombies or bait it to try and catch some animals. Crafted on the wood working bench using a wrench.",,,,
 qc_ZombieDesc,,,,"So you think you’re a True Survivor. Let’s see you do this",,,,
-SkillMagazineReadDesc,,,,"Select recipes and craft Read the Magazine to gain knowledge(50XP) in the category of the magazine.",,,,
+SkillMagazineReadDesc,,,,"UUS this Magazine to gain knowledge(100XP) in the category of the magazine or collect 3 of this magazine and scrap it into a Profession page.",,,,
 SkillMagazinemonthlyDesc,,,,"Select recipes and craft Read the Magazine to gain knowledge(100XP) in the category of the magazine.",,,,
 SkillMagazineDesc,,,,"You have gotten all the knowledge you can get from this magazine burn it or scrap it for paper",,,,
 Primitive1,,,,"Read the Magazine",,,,
@@ -5161,22 +5163,6 @@ canUnlabeledDesc,,,,"This can of food has long since lost its label, leaving the
 AnimalGutsDesc,,,,"Rub this on a follower to make them smell and use them as bait for the zombies",,,,
 HandDollyDesc,,,,"Warning!!  Only used to pick up workstations!! Do not use on anything else!!   Place in hand and click on Workstation to be moved.",,,,
 ttScrapMetalSteel,,,,"Scrap Steel",,,,
-SimplePole,,,,"Simple Fishing Pole",,,,
-FishingPole,,,,"Nice Fishing Pole",,,,
-FishingDesc,,,,"If you can fish you will see a buff icon with a drop of water, and your cane will move up. To begin press R to bait your hook with a earthworm. Once baited the cane should go down. When you get a bite the cane will move down and you'll hear a splash. Quickly press the left mouse button to yank the rod. If you catch something quickly grab the loot by pressing the right mouse button.",,,,
-fishingLure1,,,,"Fish Lure",,,,
-fishingLure1Desc,,,,"Use while fishing to have a 25% better chance at catching fish.",,,,
-fishingLure2,,,,"Big Bass Lure",,,,
-fishingLure2Desc,,,,"Use while fishing to have a 50% better chance at catching fish, 34% better chance at catching big fish and 10% better chance at catching bass.",,,,
-fishingLure3,,,,"Bass Lure",,,,
-fishingLure3Desc,,,,"Use while fishing to have a 25% better chance at catching fish, 20% better chance at catching bass and 50% better chance at catching big bass.",,,,
-fishingLure4,,,,"Big Salmon Lure",,,,
-fishingLure4Desc,,,,"Use while fishing to have a 25% better chance at catching fish, 20% better chance at catching salmon and 50% better chance at catching big salmon.",,,,
-fishingLure5,,,,"Salmon Lure",,,,
-fishingLure5Desc,,,,"Use while fishing to have a 50% better chance at catching fish, 34% better chance at catching big fish and 10% better chance at catching bass.",,,,
-CleaningFishDesc,,,,"Wow nice catch! Now what are you going to do with it? Place the fish on the ground and harvest the meat from it. Be careful cleaning fishing smells.",,,,
-FloatDesc,,,,"Place the float on the water and climb on. Use this to fish in deep water for a better chance to catch fish. Makes a nice place to hide from the horde too.",,,,
-earthwormDesc,,,,"Use these little guys to bait a fishing hook and catch some fish.",,,,
 RadMushroomDesc,,,,"This strange looking Mushroom was growing from radiated soil and give off a strange glow and warmth. It doesn’t look edible.",,,,
 AdvAssaultGroupDesc,,,,"A part of an Advanced Assault Rifle. Assemble with other parts to create a complete AK47, HK416 or LSAT once you've read the appropriate schematic.",,,,
 CraftedGunPartsDesc,,,,"A part of an Crafted Gun. Crafted on the wood working bench with a wrench. Assemble with other parts to create a complete Crafted Revolver.",,,,
@@ -5200,11 +5186,6 @@ SIGSauerP229,,,,"SIG Sauer P229",,,,
 partsP229_receiver,,,,"P229 Receiver",,,,
 partsP229_barrel,,,,"P229 Barrel",,,,
 partsP229GroupDesc,,,,"A part of a SIG Sauer P229. Assemble with other parts to create a complete SIG Sauer P229 once you've read the appropriate schematic.",,,,
-AutomaticShotgun,,,,"Automatic Shotgun",,,,
-USAS_barrel,,,,"USAS Barrel",,,,
-USAS_parts,,,,"USAS Parts",,,,
-USAS_receiver,,,,"USAS Receiver",,,,
-USASPartsDesc,,,,"A part of a Automatic Shotgun. Assemble with other parts to create a complete Automatic Shotgun once you've read the appropriate schematic.",,,,
 TatteredClothesDesc,,,,"Threadbare clothes give you no protection for the elements or attackers but its better than being naked. Might come in handy for scrap cloth though.",,,,
 ProfessionKitDesc,,,,"Your only worldly possessions. Place on the ground and use your key to open or break open to gather your belongings. Check your skill screen to see what each profession teaches. Craft additional professions with 20 profession pages on the research desk.",,,,
 DoctorProfession,,,,"Doctor Profession",,,,
@@ -5223,31 +5204,10 @@ BurglarProfession,,,,"Burglar Profession",,,,
 Park RangerProfession,,,,"Park Ranger Profession",,,,
 MechanicProfession,,,,"Mechanic Profession",,,,
 SoldierProfession,,,,"Soldier Profession",,,,
-workcampfire,,,,"Campfire",,,,
-workchemistryStation,,,,"Chemistry Station",,,,
-workforge,,,,"Forge",,,,
-workcementMixer,,,,"Cement Mixer",,,,
-workworkbench,,,,"Wood Working Bench",,,,
-workBatteryPack,,,,"Battery Pack",,,,
-workBatteryPackDesc,,,,"Place the Battery Pack next to a power line and power it with a genorator. Use this workstation to recharge batteries and refill scuba tanks. You do not gain any XP in this Workstation. Crafted on the wood working bench with a wrench.",,,,
-workMortarAndPestle,,,,"Mortar & Pestle",,,,
-workAnvil,,,,"Anvil",,,,
-workStoneMill,,,,"Stone Mill",,,,
-workStove,,,,"Stove",,,,
 workStoveDesc,,,,"A Stove can be used to bake bread and pies and all other cooking recipes. You do not gain any XP in this Workstation.",,,,
-bigGenerator,,,,"Large Generator",,,,
-bigGeneratorDesc,,,,"This large generator uses the lest amount of fuel and is very durable. Crafted on the metal working bench using a welder. Check your journal for more instructions.",,,,
-dieselGen,,,,"Crafted Generator",,,,
-dieselGenDesc,,,,"A small generator crafted from scraps. It will put out some watts but it uses a lot gas and needs repairs often. Check your journal for more instructions.",,,,
-smallGenerator,,,,"Generator",,,,
-smallGeneratorDesc,,,,"A good quality generator. Uses a moderate amount of gas and is well built needing little repairs. Check your journal for more instructions.",,,,
 GasTankTrap,,,"Gas Fire Trap",,,,
 workMethaneProducer,,,,"Methane Producer",,,,
 digesterDesc,,,,"A home-made Methane gas Producer. Used to create Methane Bombs. Crafted on the metal working work bench.",,,,
-knifeSwithc,,,,"Knife Switch",,,,
-knifeSwitchDesc,,,,"This Switch can turn off and on its entire power branch.",,,,
-powerBox,,,,"Fuse box",,,,
-powerBoxDesc,,,,"This fuse box will allow the power to extend 10 more blocks.",,,,
 gasTankEmpty,,,,"Empty Tank",,,
 gasTankEmptyDesc,,,,"Fill this with methane gas in a methane producer to use as a shootable bomb to thin out the zombie hordes.",,,,
 gasTank,,,,"Methane Bomb",,,,
@@ -5282,7 +5242,6 @@ axe04Desc,,,,"A razor sharp steel battle axe. Quick and deadly. Its light weight
 axe06,,,,"Death Bringer",,,,
 axe06Desc,,,,"An antique axe probably looted from a museum at some point. On the handle a very old engraving can barely still be read. All you can make out is the words Death Bringer.",,,,
 TomahawkDesc,,,,"A modern made Tomahawk. Sharp and strong. Designed for fighting.",,,,
-PoulticeDesc,,,,"A moist herbal poultice. Used to draw out hornet venom.",,,,
 ironSoldier,,,,"Soldier Toy",,,,
 ironSoldierDesc,,,,"A rusty old iron toy soldier. A little dirty and roughed up but only cosmetic scars. It'd make a decent gift for a child.",,,,
 ironPaperClips,,,,"Paper Clips",,,,
@@ -5399,12 +5358,9 @@ OldRifleDesc,,,,"An old rusty rifle. The screws are striped and the firing pin i
 partsDoubleBarrel_receiver,,,,"Double Barrel Receiver",,,,
 partsDoubleBarrel_parts,,,,"Double Barrel parts",,,,
 partsDoubleBarrel_barrel,,,,"Double Barrel Barrel",,,,
-AutomaticShotgun,,,,"Automatic Shotgun",,,,
-USAS_barrel,,,,"USAS Barrel",,,,
 HoofDesc,,,,"A freshly removed hoof. A main ingredient in making glue.",,,,
 SuturesDesc,,,,"A very strong thin natural thread. Crafted on the campfire in a cooking pot.",,,,
 LashingDesc,,,,"A very strong thick natural cord. Crafted on the campfire in a cooking pot.",,,,
-BowStringDesc,,,,"A very strong bow string. Capable of being used on high powered bows and crossbows. Crafted on the campfire in a cooking pot",,,,
 SinewDesc,,,,"A peace of long un broken tendon harvested from an animal. After curing can be used to make many strong strings and ropes.",,,,
 AnimalBladder,,,,"Un Damaged Bladder",,,,
 SunflowerHead,,,,"Sunflower Head",,,,

@@ -1124,14 +1124,5 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="Hardness" type="float" value="1" />
 		<property name="Mass" type="int" value="1" />
 	</material>
-    <material id="Mbiomewater">
-		<property name="damage_category" value="earth" />
-		<property name="surface_category" value="earth" />
-		<property name="Hardness" type="float" value="1" />
-		<property name="stepsound" value="sand" />
-		<property name="stability_glue" value="0" />
-        <property name="StabilitySupport" value="false" />
-		<property name="Mass" type="int" value="10" />
-		<property name="MaxDamage" value="1" />
-	</material>
+   
 </materials>

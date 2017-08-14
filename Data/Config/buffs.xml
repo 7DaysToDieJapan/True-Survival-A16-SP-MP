@@ -540,11 +540,11 @@ This requires a 50+ food bar:
 -->
 
 <buff id="zombieRadiatedBuff40" duration="0" icon="ui_game_symbol_fire">
-	<modify id="0" stat="health" amount="40" rate="3" />
+	<modify id="0" stat="health" amount="20" rate="3" />
 </buff>
 
 <buff id="zombieRadiatedBuff80" duration="0" icon="ui_game_symbol_fire">
-	<modify id="0" stat="health" amount="80" rate="3" />
+	<modify id="0" stat="health" amount="40" rate="3" />
 </buff>
 
 <buff id="shockedBuff" duration="4.5" stack="discard" debuffif="ShockAmount equals 0" buffif="ShockAmount greater 0"

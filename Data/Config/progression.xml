@@ -214,127 +214,6 @@
 				<multiply skill_level="90,100" value="1.95,2.00" />
 			</effect>
 		</action_skill>
-		<!-- JZMOD BUILDING SKILLS-->
-		<action_skill name="woodBuilding" icon="ui_game_symbol_plank" description_key="Wood Building is the skill to master if you want to build with wood. Learn to make nails and planks at skill level 10." title_key="Wood Building" group="science" skill_point_cost_per_level="0">
-			<recipe name="woodFrameBlock" unlock_level="2" />
-			<recipe name="woodFrameCNRFull" unlock_level="2" />
-			<recipe name="woodFrameCNRInside" unlock_level="2" />
-			<recipe name="woodFrameWedge" unlock_level="2" />
-			<recipe name="woodFrameRamp" unlock_level="2" />
-			<recipe name="woodStairs25" unlock_level="2" />
-			<recipe name="woodPillar100" unlock_level="2" />
-			<recipe name="powerPoleWoodPillar50" unlock_level="2" />
-			<recipe name="woodPlate" unlock_level="2" />
-			<recipe name="woodPole" unlock_level="2" />
-			<recipe name="woodArrowSlitHalf" unlock_level="2" />
-			<!--upgrade material-->
-			<recipe name="nail" unlock_level="10" />
-			<recipe name="plank" unlock_level="10" />
-		</action_skill>
-		<action_skill name="cobblestoneBuilding" icon="ui_game_symbol_cobblestone" description_key="Cobblestone Building is the skill to master if you want to build with cobblestone. Learn to make cobblestones at skill level 10" title_key="Cobblestone Building" group="science" skill_point_cost_per_level="0">
-			<recipe name="cobblestoneFrameBlock" unlock_level="2" />
-			<recipe name="cobblestoneFrameRamp" unlock_level="2" />
-			<recipe name="cobblestoneFrameStairs25" unlock_level="2" />
-			<recipe name="cobblestoneArrowSlitHalf" unlock_level="2" />
-			<recipe name="cobblestoneFrameWedge" unlock_level="2" />
-			<recipe name="cobblestoneFrameWedgeTip" unlock_level="2" />
-			<recipe name="cobblestoneFramePlate" unlock_level="2" />
-			<recipe name="cobblestoneFrameCNRFull" unlock_level="2" />
-			<recipe name="cobblestoneFrameCNRInside" unlock_level="2" />
-			<recipe name="cobblestoneFramePillar100" unlock_level="2" />
-			<recipe name="cobblestoneFramePillar50" unlock_level="2" />
-			<recipe name="cobblestoneFramePole" unlock_level="2" />
-			<!--upgrade material-->
-			<recipe name="cobblestones" unlock_level="10" />
-		</action_skill>
-		<action_skill name="brickBuilding" icon="ui_game_symbol_brick" description_key="Brick Building is the skill to master if you want to build with bricks. Learn to make bricks at skill level 10" title_key="Brick Building" group="science" skill_point_cost_per_level="0">
-			<recipe name="brickFrameBlock" unlock_level="2" />
-			<recipe name="brickFrameRamp" unlock_level="2" />
-			<recipe name="brickFrameStairs" unlock_level="2" />
-			<recipe name="brickModernArrowSlitHalf" unlock_level="2" />
-			<recipe name="brickFrameWedge" unlock_level="2" />
-			<recipe name="brickFrameWedgeTip" unlock_level="2" />
-			<recipe name="brickFramePlate" unlock_level="2" />
-			<recipe name="brickFrameCNRFull" unlock_level="2" />
-			<recipe name="brickFrameCNRInside" unlock_level="2" />
-			<recipe name="brickFramePillar100" unlock_level="2" />
-			<recipe name="brickFramePillar50" unlock_level="2" />
-			<recipe name="brickFramePole" unlock_level="2" />
-            <recipe name="playerBrickStairs25" unlock_level="2" />
-            <recipe name="playerBrickArrowSlitHalf" unlock_level="2" />
-          	<!--upgrade material-->
-			<recipe name="bricks" unlock_level="10" />
-		</action_skill>
-		<action_skill name="concreteBuilding" icon="ui_game_symbol_concreteMix" description_key="Concrete Building is the skill to master if you want to build with cement. Learn to make cement at skill level 10" title_key="Concrete Building" group="science" skill_point_cost_per_level="0">
-			<recipe name="concreteFormBlock" unlock_level="2" />
-			<recipe name="concreteFormRamp" unlock_level="2" />
-			<recipe name="concreteFormStairs" unlock_level="2" />
-			<recipe name="concreteArrowSlitHalf" unlock_level="2" />
-			<recipe name="concreteFormWedge" unlock_level="2" />
-			<recipe name="concreteFormWedgeTip" unlock_level="2" />
-			<recipe name="concreteFormPlate" unlock_level="2" />
-			<recipe name="concreteFormCNRFull" unlock_level="2" />
-			<recipe name="concreteFormCNRInside" unlock_level="2" />
-			<recipe name="concreteFormPillar100" unlock_level="2" />
-			<recipe name="concreteFormPillar50" unlock_level="2" />
-			<recipe name="concreteFormPole" unlock_level="2" />
-			<!--upgrade material-->
-			<recipe name="cement" unlock_level="10" />
-            <recipe name="cementMix" unlock_level="10" />
-		</action_skill>
-		<action_skill name="rConcreteBuilding" icon="ui_game_symbol_concreteReinforced" description_key="Reinforced Concrete Building is the skill to master if you want to build with concrete mix. Learn to make concrete mix at skill level 10" title_key="Reinforced Concrete Building" group="science" skill_point_cost_per_level="0">
-			<recipe name="rebarFrameBlock" unlock_level="2" />
-			<recipe name="rebarFrameRamp" unlock_level="2" />
-			<recipe name="rebarStairs25" unlock_level="2" />
-			<recipe name="rebarArrowSlitHalf" unlock_level="2" />
-			<recipe name="rebarFrameWedge" unlock_level="2" />
-			<recipe name="rebarFrameWedgeTip" unlock_level="2" />
-			<recipe name="rebarFramePlate" unlock_level="2" />
-			<recipe name="rebarFrameCNRFull" unlock_level="2" />
-			<recipe name="rebarFrameCNRInside" unlock_level="2" />
-			<recipe name="rebarFramePillar100" unlock_level="2" />
-			<recipe name="rebarFramePillar50" unlock_level="2" />
-			<recipe name="rebarFramePole" unlock_level="2" />
-			<!--upgrade material-->
-            <recipe name="cement" unlock_level="10" />
-			<recipe name="concreteMix" unlock_level="10" />
-		</action_skill>
-		<action_skill name="scrapIronBuilding" icon="ui_game_symbol_scrapIronBlock" description_key="Scrapiron Building is the skill to master if you want to build with scrapiron. Learn to make scrapiron sheets plus nuts and bolts at skill level 10" title_key="Scrap Iron Building" group="science" skill_point_cost_per_level="0">
-			<recipe name="scrapIronFrameBlock" unlock_level="2" />
-			<recipe name="scrapIronFrameRamp" unlock_level="2" />
-			<recipe name="scrapIronStairs25" unlock_level="2" />
-			<recipe name="scrapIronArrowSlitHalf" unlock_level="2" />
-			<recipe name="scrapIronFrameWedge" unlock_level="2" />
-			<recipe name="scrapIronFrameWedgeTip" unlock_level="2" />
-			<recipe name="scrapIronFramePlate" unlock_level="2" />
-			<recipe name="scrapIronFrameCNRFull" unlock_level="2" />
-			<recipe name="scrapIronFrameCNRInside" unlock_level="2" />
-			<recipe name="scrapIronFramePillar100" unlock_level="2" />
-			<recipe name="scrapIronFramePillar50" unlock_level="2" />
-			<recipe name="scrapIronFramePole" unlock_level="2" />
-			<recipe name="rScrapIronPlate" unlock_level="2" />
-			<!--upgrade material-->
-			<recipe name="nutAndBolt" unlock_level="10" />
-			
-		</action_skill>
-		<action_skill name="steelBuilding" icon="ui_game_symbol_steelWall" description_key="Steel Building is the skill to master if you want to build with forged steel. Learn to make forged steel sheets at skill level 10" title_key="Steel Building" group="science" skill_point_cost_per_level="0">
-			<recipe name="forgedFrame" unlock_level="2" />
-			<recipe name="forgedFrameRamp" unlock_level="2" />
-			<recipe name="forgedStairs25" unlock_level="2" />
-			<recipe name="forgedArrowSlitHalf" unlock_level="2" />
-			<recipe name="forgedFrameWedge" unlock_level="2" />
-			<recipe name="forgedFrameWedgeTip" unlock_level="2" />
-			<recipe name="forgedFramePlate" unlock_level="2" />
-			<recipe name="forgedFrameCNRFull" unlock_level="2" />
-			<recipe name="forgedFrameCNRInside" unlock_level="2" />
-			<recipe name="forgedFramePillar100" unlock_level="2" />
-			<recipe name="forgedFramePillar50" unlock_level="2" />
-			<recipe name="forgedFramePole" unlock_level="2" />
-			<recipe name="forgedIronPlate" unlock_level="2" />
-			<recipe name="forgedIronSheet" unlock_level="2" />
-			<!--upgrade material-->
-            <recipe name="metalRivetSheet" unlock_level="10" />
-		</action_skill>
 		<!-- JZMOD CRAFTING SKILLS-->
 		<crafting_skill name="cookingCraft" icon="ui_game_symbol_spatula" description_key="Learn to cook more filling and nutritious food." title_key="Cooking" group="scavenging">
 			<recipe name="flour" unlock_level="5" />
@@ -344,6 +223,7 @@
 			<recipe name="baconAndEggs" unlock_level="15" />
 			<recipe name="friedEggOmelet" unlock_level="15" />
 			<recipe name="fruitJuice" unlock_level="20" />
+            <recipe name="veggieJuice" unlock_level="20" />
 			<recipe name="vegetableStew" unlock_level="35" />
 			<recipe name="bearStew" unlock_level="35" />
 			<recipe name="heartyStew" unlock_level="35" />
@@ -363,7 +243,6 @@
 			<recipe name="goodMealSmall" unlock_level="65" />
 			<recipe name="goodMealMedium" unlock_level="65" />
 			<recipe name="goodMealLarge" unlock_level="65" />
-			<recipe name="fishNChips" unlock_level="70" />
 			<recipe name="brainShnitzel" unlock_level="75" />
 			<recipe name="wellnessJuice" unlock_level="80" />
 			<recipe name="healthyMealSmall" unlock_level="90" />
@@ -383,7 +262,11 @@
 			</effect>
 		</crafting_skill>
 		<crafting_skill name="huntingCraft" icon="ui_game_symbol_huntingKnife" description_key="Learn to craft better Hunting knifes and fishing lures." title_key="huntingCraft" skill_point_cost_per_level="0" group="scavenging">
-			<effect name="HarvestCount">
+			<recipe name="fieldKnife" unlock_level="5" />
+            <recipe name="animalContainer" unlock_level="5" />
+            <recipe name="spiderTrap" unlock_level="5" />
+            <recipe name="scorpionTrap" unlock_level="5" />
+            <effect name="HarvestCount">
                 <multiply skill_level="1,10" value="1" />
 				<multiply skill_level="10,20" value="1,2" />
 				<multiply skill_level="20,30" value="2,3" />
@@ -858,6 +741,130 @@
 			</effect>
 		</crafting_skill>
 		<crafting_skill name="miscellaneousCraft" icon="ui_game_symbol_misc_crafting" description_key="miscCraftingDesc" title_key="miscCrafting" group="crafting">
+			<effect name="CraftingTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="CraftingQuality">
+				<setvalue skill_level="1,10" value="1,239" />
+				<setvalue skill_level="10,20" value="239,316" />
+				<setvalue skill_level="20,30" value="316,371" />
+				<setvalue skill_level="30,40" value="371,416" />
+				<setvalue skill_level="40,50" value="416,455" />
+				<setvalue skill_level="50,60" value="455,489" />
+				<setvalue skill_level="60,70" value="489,520" />
+				<setvalue skill_level="70,80" value="520,549" />
+				<setvalue skill_level="80,90" value="549,575" />
+				<setvalue skill_level="90,100" value="575,600" />
+			</effect>
+			<effect name="RepairTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="RepairAmount">
+				<add skill_level="1,10" value="1,21" />
+				<add skill_level="10,20" value="21,27" />
+				<add skill_level="20,30" value="27,31" />
+				<add skill_level="30,40" value="31,35" />
+				<add skill_level="40,50" value="35,38" />
+				<add skill_level="50,60" value="38,41" />
+				<add skill_level="60,70" value="41,43" />
+				<add skill_level="70,80" value="43,46" />
+				<add skill_level="80,90" value="46,48" />
+				<add skill_level="90,100" value="48,50" />
+			</effect>
+			<effect name="RepairQualityLoss">
+				<multiply skill_level="0,10" value="0.0670,0.0533"/>
+                <multiply skill_level="10,20" value="0.0533,0.0425"/>
+                <multiply skill_level="20,30" value="0.0425,0.0338"/>
+                <multiply skill_level="30,40" value="0.0338,0.0269"/>
+                <multiply skill_level="40,50" value="0.0269,0.0214"/>
+                <multiply skill_level="50,60" value="0.0214,0.0170"/>
+                <multiply skill_level="60,70" value="0.0170,0.0136"/>
+                <multiply skill_level="70,80" value="0.0136,0.0108"/>
+                <multiply skill_level="80,90" value="0.0108,0.0086"/>
+                <multiply skill_level="90,100" value="0.0086,0.0068"/>
+			</effect>
+		</crafting_skill>
+        <crafting_skill name="fryingPanCraft" icon="ui_game_symbol_fryingPan" description_key="frying Pan" title_key="frying Pan" group="crafting">
+			<effect name="CraftingTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="CraftingQuality">
+				<setvalue skill_level="1,10" value="1,239" />
+				<setvalue skill_level="10,20" value="239,316" />
+				<setvalue skill_level="20,30" value="316,371" />
+				<setvalue skill_level="30,40" value="371,416" />
+				<setvalue skill_level="40,50" value="416,455" />
+				<setvalue skill_level="50,60" value="455,489" />
+				<setvalue skill_level="60,70" value="489,520" />
+				<setvalue skill_level="70,80" value="520,549" />
+				<setvalue skill_level="80,90" value="549,575" />
+				<setvalue skill_level="90,100" value="575,600" />
+			</effect>
+			<effect name="RepairTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="RepairAmount">
+				<add skill_level="1,10" value="1,21" />
+				<add skill_level="10,20" value="21,27" />
+				<add skill_level="20,30" value="27,31" />
+				<add skill_level="30,40" value="31,35" />
+				<add skill_level="40,50" value="35,38" />
+				<add skill_level="50,60" value="38,41" />
+				<add skill_level="60,70" value="41,43" />
+				<add skill_level="70,80" value="43,46" />
+				<add skill_level="80,90" value="46,48" />
+				<add skill_level="90,100" value="48,50" />
+			</effect>
+			<effect name="RepairQualityLoss">
+				<multiply skill_level="0,10" value="0.0670,0.0533"/>
+                <multiply skill_level="10,20" value="0.0533,0.0425"/>
+                <multiply skill_level="20,30" value="0.0425,0.0338"/>
+                <multiply skill_level="30,40" value="0.0338,0.0269"/>
+                <multiply skill_level="40,50" value="0.0269,0.0214"/>
+                <multiply skill_level="50,60" value="0.0214,0.0170"/>
+                <multiply skill_level="60,70" value="0.0170,0.0136"/>
+                <multiply skill_level="70,80" value="0.0136,0.0108"/>
+                <multiply skill_level="80,90" value="0.0108,0.0086"/>
+                <multiply skill_level="90,100" value="0.0086,0.0068"/>
+			</effect>
+		</crafting_skill>
+        <crafting_skill name="brassKnucklesCraft" icon="ui_game_symbol_brassKnuckles" description_key="brassKnuckles" title_key="brassKnuckles" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1557,7 +1564,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="shockCraft" icon="ui_game_symbol_shockStick" description_key="Shock Stick." title_key="Shock Stick" group="crafting">
+		<crafting_skill name="shockStickCraft" icon="ui_game_symbol_shockStick" description_key="Shock Stick." title_key="Shock Stick" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1725,7 +1732,131 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
+        <crafting_skill name="fieldKnifeCraft" icon="ui_game_symbol_fieldKnife" description_key="Hunting Knife." title_key="Hunting Knife" group="crafting">
+			<effect name="CraftingTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="CraftingQuality">
+				<setvalue skill_level="1,10" value="1,239" />
+				<setvalue skill_level="10,20" value="239,316" />
+				<setvalue skill_level="20,30" value="316,371" />
+				<setvalue skill_level="30,40" value="371,416" />
+				<setvalue skill_level="40,50" value="416,455" />
+				<setvalue skill_level="50,60" value="455,489" />
+				<setvalue skill_level="60,70" value="489,520" />
+				<setvalue skill_level="70,80" value="520,549" />
+				<setvalue skill_level="80,90" value="549,575" />
+				<setvalue skill_level="90,100" value="575,600" />
+			</effect>
+			<effect name="RepairTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="RepairAmount">
+				<add skill_level="1,10" value="1,21" />
+				<add skill_level="10,20" value="21,27" />
+				<add skill_level="20,30" value="27,31" />
+				<add skill_level="30,40" value="31,35" />
+				<add skill_level="40,50" value="35,38" />
+				<add skill_level="50,60" value="38,41" />
+				<add skill_level="60,70" value="41,43" />
+				<add skill_level="70,80" value="43,46" />
+				<add skill_level="80,90" value="46,48" />
+				<add skill_level="90,100" value="48,50" />
+			</effect>
+			<effect name="RepairQualityLoss">
+				<multiply skill_level="0,10" value="0.0670,0.0533"/>
+                <multiply skill_level="10,20" value="0.0533,0.0425"/>
+                <multiply skill_level="20,30" value="0.0425,0.0338"/>
+                <multiply skill_level="30,40" value="0.0338,0.0269"/>
+                <multiply skill_level="40,50" value="0.0269,0.0214"/>
+                <multiply skill_level="50,60" value="0.0214,0.0170"/>
+                <multiply skill_level="60,70" value="0.0170,0.0136"/>
+                <multiply skill_level="70,80" value="0.0136,0.0108"/>
+                <multiply skill_level="80,90" value="0.0108,0.0086"/>
+                <multiply skill_level="90,100" value="0.0086,0.0068"/>
+			</effect>
+		</crafting_skill>
 		<crafting_skill name="macheteCraft" icon="ui_game_symbol_machete" description_key="machete" title_key="machete" group="crafting">
+			<effect name="CraftingTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="CraftingQuality">
+				<setvalue skill_level="1,10" value="1,239" />
+				<setvalue skill_level="10,20" value="239,316" />
+				<setvalue skill_level="20,30" value="316,371" />
+				<setvalue skill_level="30,40" value="371,416" />
+				<setvalue skill_level="40,50" value="416,455" />
+				<setvalue skill_level="50,60" value="455,489" />
+				<setvalue skill_level="60,70" value="489,520" />
+				<setvalue skill_level="70,80" value="520,549" />
+				<setvalue skill_level="80,90" value="549,575" />
+				<setvalue skill_level="90,100" value="575,600" />
+			</effect>
+			<effect name="RepairTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="RepairAmount">
+				<add skill_level="1,10" value="1,21" />
+				<add skill_level="10,20" value="21,27" />
+				<add skill_level="20,30" value="27,31" />
+				<add skill_level="30,40" value="31,35" />
+				<add skill_level="40,50" value="35,38" />
+				<add skill_level="50,60" value="38,41" />
+				<add skill_level="60,70" value="41,43" />
+				<add skill_level="70,80" value="43,46" />
+				<add skill_level="80,90" value="46,48" />
+				<add skill_level="90,100" value="48,50" />
+			</effect>
+			<effect name="RepairQualityLoss">
+				<multiply skill_level="0,10" value="0.0670,0.0533"/>
+                <multiply skill_level="10,20" value="0.0533,0.0425"/>
+                <multiply skill_level="20,30" value="0.0425,0.0338"/>
+                <multiply skill_level="30,40" value="0.0338,0.0269"/>
+                <multiply skill_level="40,50" value="0.0269,0.0214"/>
+                <multiply skill_level="50,60" value="0.0214,0.0170"/>
+                <multiply skill_level="60,70" value="0.0170,0.0136"/>
+                <multiply skill_level="70,80" value="0.0136,0.0108"/>
+                <multiply skill_level="80,90" value="0.0108,0.0086"/>
+                <multiply skill_level="90,100" value="0.0086,0.0068"/>
+			</effect>
+		</crafting_skill>
+        <crafting_skill name="katanaCraft" icon="ui_game_symbol_katanamichonne" description_key="machete" title_key="machete" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2655,7 +2786,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="rConcreteSledgeCraft" icon="ui_game_symbol_sledge" description_key="Wrench." title_key="Wrench" group="crafting">
+		<crafting_skill name="rConcreteBarCraft" icon="ui_game_symbol_sledge" description_key="Wrench." title_key="Wrench" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -3080,13 +3211,13 @@
 		</perk>
         <perk name="huntingRifleScopeAttachmentPerk" icon="ui_game_symbol_huntingRifleScope" description_key="Learn to attach sniper scopes to Huntingrifeles on the metal working bench using a wrench." title_key="Hunting Rifle Scope Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="20" />
-			<recipe name="huntingRifleStockScopePerk" unlock_level="1" />
+			<recipe name="huntingRifleStockScope" unlock_level="1" />
 			<recipe name="huntingRifleScope" unlock_level="1" />
 		</perk>
 		<perk name="huntingRifleSilencerAttachmentPerk" icon="ui_game_symbol_silencedhuntingRifle" description_key="Learn to attach Silencers to Hunting Rifles on the metal working bench using a wrench." title_key="Hunting Rifle Silencer Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="40" />
 			<recipe name="silencedHuntingBarrel" unlock_level="1" />
-			<recipe name="silencedhuntingRifle" unlock_level="1" />
+			<recipe name="silencedHuntingRifle" unlock_level="1" />
 		</perk>
         <perk name="magnumScopeAttachmentPerk" icon="ui_game_symbol_44MagnumScope" description_key="Learn to attach sniper scopes to Magnums on the metal working bench using a wrench" title_key="Magnum Scope Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="20" />
@@ -3095,7 +3226,7 @@
 		</perk>
 		<perk name="ak47ScopeAttachmentPerk" icon="ui_game_symbol_sniperRifleScopeFrame" description_key="Learn to attach sniper scopes to AK47s on the metal working bench using a wrench." title_key="AK47 Scope Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="20" />
-			<recipe name="aK47StockScope" unlock_level="1" />
+			<recipe name="ak47StockScope" unlock_level="1" />
 			<recipe name="scopedAK47" unlock_level="1" />
 		</perk>
 		<perk name="ak47SilencerAttachmentPerk" icon="ui_game_symbol_silencer" description_key="Learn to attach Silencers to AK47s on the metal working bench using a wrench." title_key="AK47 Silencer Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
@@ -3125,7 +3256,8 @@
         <perk name="crossbowPerk" icon="ui_game_symbol_crossbow" description_key="Level 1 - Learn to build and disassemble a simple Crossbow, crafting its parts on the wood working bench using a wrench. Level 2 - Learn to add a scope to the crossbow. Level 3 - Learn to upgrade to a automatic 6 shot crossbow." title_key="crossbow" max_level="3" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="firearms">
 			<requirement perk_level="1" required_skill_name="archeryAction" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="10" />
-			<recipe name="crossbow_Limb" unlock_level="1" />
+			<recipe name="crossbow_Parts" unlock_level="1" />
+            <recipe name="crossbow_Limb" unlock_level="1" />
 			<recipe name="crossbow_Stock" unlock_level="1" />
 			<recipe name="crossbow_Barrel" unlock_level="1" />
 			<recipe name="crossbow" unlock_level="1" />
@@ -3146,7 +3278,8 @@
 		<perk name="ironSpearPerk" icon="ui_game_symbol_ironSpears" description_key="Learn how to craft an Iron Spear head in the forge and craft a spear and throwable Javelin with it" title_key="Iron Spear and Javelin" max_level="1" skill_point_cost_per_level="5" group="firearms">
 			<requirement perk_level="1" required_skill_name="archeryAction" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="15" />
-			<recipe name="spearHead" unlock_level="1" />
+			<recipe name="spearHeadMold" unlock_level="1" />
+            <recipe name="spearHead" unlock_level="1" />
 			<recipe name="ironSpear" unlock_level="1" />
 			<recipe name="ironJavelin" unlock_level="1" />
 		</perk>
@@ -3190,22 +3323,37 @@
 			<recipe name="clubSpiked" unlock_level="1" />
 			<recipe name="nailedBat" unlock_level="1" />
 		</perk>
-		<perk name="steelSpikedClubPerk" icon="ui_game_symbol_clubSteelSpiked" description_key="Learn to upgrade your spiked club using steel spikes on the metal working bench" title_key="Steel Spiked Club" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="6" group="firearms">
+        <perk name="steelSpikedClubPerk" icon="ui_game_symbol_clubSteelSpiked" description_key="Learn to upgrade your spiked club using steel spikes on the metal working bench" title_key="Steel Spiked Club" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="6" group="firearms">
 			<requirement perk_level="1" required_skill_name="bluntWeaponsAction" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="clubSteelSpiked" unlock_level="1" />
 		</perk>
+        <perk name="sledgeHammerPerk" icon="sledgehammer" description_key="Learn to forge a sledge hammer head in the Forge with a mold and use it to craft a sledge hammer" title_key="Sledge Hammer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="firearms">
+			<requirement perk_level="1" required_player_level="25" />
+			<recipe name="sledgeHeadMold" unlock_level="1" />
+			<recipe name="sledgeHead" unlock_level="1" />
+			<recipe name="sledgehammer" unlock_level="1" />
+		</perk>
         <perk name="machetePerk" icon="ui_game_symbol_machete" description_key="Learn to craft a Machete on the anvil using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a long strong knife thats good for fighting." title_key="Machete" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="firearms">
 			<requirement perk_level="1" required_skill_name="bladeCraft" required_skill_level="25" />
             <requirement perk_level="1" required_skill_name="bladeWeaponsAction" required_skill_level="1" />
-			<recipe name="largeKnifeBlade" unlock_level="1" />
+			<recipe name="largeKnifeBladeMold" unlock_level="1" />
+            <recipe name="largeKnifeBlade" unlock_level="1" />
 			<recipe name="machete" unlock_level="1" />
 		</perk>
          <perk name="huntersKnifePerk" icon="ui_game_symbol_huntingKnife" description_key="Learn to craft a hunting Knife on the anvil using a claw hammer and learn how to craft the Small Knife Blade that you need to craft it in the forge using the anvil. This is a sharp knife that will harvest more and better animal parts. Harvesting animals with this knife will increase your hunting skill" title_key="Hunters Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
 			<requirement perk_level="1" required_skill_name="bladeWeaponsAction" required_skill_level="1" />
 			<requirement perk_level="1" required_skill_name="bladeCraft" required_skill_level="10" />
-			<recipe name="smallKnifeBlade" unlock_level="1" />
+			<recipe name="smallKnifeBladeMold" unlock_level="1" />
+            <recipe name="smallKnifeBlade" unlock_level="1" />
 			<recipe name="huntingKnife" unlock_level="1" />
+		</perk>
+        <perk name="katanaPerk" icon="ui_game_symbol_katanamichonne" description_key="Learn to craft a katana on the anvil using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a long strong knife thats good for fighting." title_key="Machete" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="firearms">
+			<requirement perk_level="1" required_skill_name="bladeCraft" required_skill_level="50" />
+            <requirement perk_level="1" required_skill_name="bladeWeaponsAction" required_skill_level="1" />
+			<recipe name="swordBladeMold" unlock_level="1" />
+            <recipe name="swordBlade" unlock_level="1" />
+			<recipe name="katana" unlock_level="1" />
 		</perk>
         <!--TRAPS-->
         <perk name="barbedWirePerk" icon="ui_game_symbol_barbedFence" description_key="Learn to craft Barbed Wire in the forge using a anvil" title_key="Barbed Wire" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="weapons">
@@ -3258,12 +3406,15 @@
 		</perk>
 		<perk name="steelToolsPerk" icon="ui_game_symbol_steelTools" description_key="Learn to forge Steel tool heads in the Blast furnace and craft steel tools on the the metal working bench." title_key="Steel Tools" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="tools">
 			<requirement perk_level="1" required_player_level="55" />
-			<recipe name="steelPickaxeHead" unlock_level="1" />
+			<recipe name="pickaxeHeadMold" unlock_level="1" />
+            <recipe name="steelPickaxeHead" unlock_level="1" />
 			<recipe name="pickaxeSteel" unlock_level="1" />
 			<recipe name="fireaxeSteel" unlock_level="1" />
 			<recipe name="steelFireaxeHead" unlock_level="1" />
+            <recipe name="fireaxeHeadMold" unlock_level="1" />
 			<recipe name="shovelSteel" unlock_level="1" />
 			<recipe name="steelShovelHead" unlock_level="1" />
+            <recipe name="shovelHeadMold" unlock_level="1" />
 		</perk>
 		<perk name="complexWorkbenchPerk" icon="ui_game_symbol_complexWorkbench" description_key="Learn to craft a Metal Working Bench to craft more metal items and faster" title_key="Metal Working bench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
 			<requirement perk_level="1" required_player_level="20" />
@@ -3295,7 +3446,8 @@
 		</perk>
 		<perk name="screwdriverPerk" icon="ui_game_symbol_screwdriver" description_key="Learn to repair a screwdriver and craft it on the Metal Working Bench" title_key="Screwdriver" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
 			<requirement perk_level="1" required_player_level="10" />
-			<recipe name="screwdriver" unlock_level="1" />
+			<recipe name="screwdriverHeadMold" unlock_level="1" />
+            <recipe name="screwdriver" unlock_level="1" />
 		</perk>
 		<perk name="chainsawPerk" icon="ui_game_symbol_chainsaw" description_key="Learn to build and maintain a Chainsaw" title_key="Chainsaw" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="tools">
 			<requirement perk_level="1" required_player_level="1" />
@@ -3383,7 +3535,6 @@
 			<recipe name="militaryHelmet+Light" unlock_level="1" />
 			<recipe name="footballHelmet+Light" unlock_level="1" />
 			<recipe name="ironHelmet+Light" unlock_level="1" />
-			<recipe name="steelHelmet+Light" unlock_level="1" />
 		</perk>
         <!--HEALTH-->
         <perk name="freeDiverPerk" icon="ui_game_symbol_freeDiver" description_key="sexualTyranosaurusDesc" title_key="Free Diver" max_level="5" skill_point_cost_multiplier="1" skill_point_cost_per_level="3" always_fire="true" group="health">
@@ -3522,6 +3673,127 @@
 			<recipe name="chickenCoop" unlock_level="1" />
 		</perk>
       <!--SCIENCE-->
+      <!-- JZMOD BUILDING SKILLS-->
+		<perk name="woodBuilding" icon="ui_game_symbol_plank" description_key="Wood Building is the skill to master if you want to build with wood. Learn to make nails and planks at skill level 10." title_key="Wood Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+			<recipe name="woodFrameBlock" unlock_level="1" />
+			<recipe name="woodFrameCNRFull" unlock_level="2" />
+			<recipe name="woodFrameCNRInside" unlock_level="2" />
+			<recipe name="woodFrameWedge" unlock_level="2" />
+			<recipe name="woodFrameRamp" unlock_level="2" />
+			<recipe name="woodStairs25" unlock_level="2" />
+			<recipe name="woodPillar100" unlock_level="2" />
+			<recipe name="powerPoleWoodPillar50" unlock_level="2" />
+			<recipe name="woodPlate" unlock_level="2" />
+			<recipe name="woodPole" unlock_level="2" />
+			<recipe name="woodArrowSlitHalf" unlock_level="2" />
+			<!--upgrade material-->
+			<recipe name="nail" unlock_level="3" />
+			<recipe name="plank" unlock_level="3" />
+		</perk>
+		<perk name="cobblestoneBuilding" icon="ui_game_symbol_cobblestone" description_key="Cobblestone Building is the skill to master if you want to build with cobblestone. Learn to make cobblestones at skill level 10" title_key="Cobblestone Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" > 
+			<recipe name="cobblestoneFrameBlock" unlock_level="1" />
+			<recipe name="cobblestoneFrameRamp" unlock_level="2" />
+			<recipe name="cobblestoneFrameStairs25" unlock_level="2" />
+			<recipe name="cobblestoneArrowSlitHalf" unlock_level="2" />
+			<recipe name="cobblestoneFrameWedge" unlock_level="2" />
+			<recipe name="cobblestoneFrameWedgeTip" unlock_level="2" />
+			<recipe name="cobblestoneFramePlate" unlock_level="2" />
+			<recipe name="cobblestoneFrameCNRFull" unlock_level="2" />
+			<recipe name="cobblestoneFrameCNRInside" unlock_level="2" />
+			<recipe name="cobblestoneFramePillar100" unlock_level="2" />
+			<recipe name="cobblestoneFramePillar50" unlock_level="2" />
+			<recipe name="cobblestoneFramePole" unlock_level="2" />
+			<!--upgrade material-->
+			<recipe name="cobblestones" unlock_level="3" />
+		</perk>
+		<perk name="brickBuilding" icon="ui_game_symbol_brick" description_key="Brick Building is the skill to master if you want to build with bricks. Learn to make bricks at skill level 10" title_key="Brick Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+			<recipe name="brickFrameBlock" unlock_level="1" />
+			<recipe name="brickFrameRamp" unlock_level="2" />
+			<recipe name="brickFrameStairs" unlock_level="2" />
+			<recipe name="brickModernArrowSlitHalf" unlock_level="2" />
+			<recipe name="brickFrameWedge" unlock_level="2" />
+			<recipe name="brickFrameWedgeTip" unlock_level="2" />
+			<recipe name="brickFramePlate" unlock_level="2" />
+			<recipe name="brickFrameCNRFull" unlock_level="2" />
+			<recipe name="brickFrameCNRInside" unlock_level="2" />
+			<recipe name="brickFramePillar100" unlock_level="2" />
+			<recipe name="brickFramePillar50" unlock_level="2" />
+			<recipe name="brickFramePole" unlock_level="2" />
+            <recipe name="playerBrickStairs25" unlock_level="2" />
+            <recipe name="playerBrickArrowSlitHalf" unlock_level="2" />
+          	<!--upgrade material-->
+			<recipe name="bricks" unlock_level="3" />
+		</perk>
+		<perk name="concreteBuilding" icon="ui_game_symbol_concreteMix" description_key="Concrete Building is the skill to master if you want to build with cement. Learn to make cement at skill level 10" title_key="Concrete Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+			<recipe name="concreteFormBlock" unlock_level="1" />
+			<recipe name="concreteFormRamp" unlock_level="2" />
+			<recipe name="concreteFormStairs" unlock_level="2" />
+			<recipe name="concreteArrowSlitHalf" unlock_level="2" />
+			<recipe name="concreteFormWedge" unlock_level="2" />
+			<recipe name="concreteFormWedgeTip" unlock_level="2" />
+			<recipe name="concreteFormPlate" unlock_level="2" />
+			<recipe name="concreteFormCNRFull" unlock_level="2" />
+			<recipe name="concreteFormCNRInside" unlock_level="2" />
+			<recipe name="concreteFormPillar100" unlock_level="2" />
+			<recipe name="concreteFormPillar50" unlock_level="2" />
+			<recipe name="concreteFormPole" unlock_level="2" />
+			<!--upgrade material-->
+			<recipe name="cement" unlock_level="3" />
+            <recipe name="cementMix" unlock_level="3" />
+		</perk>
+		<perk name="rConcreteBuilding" icon="ui_game_symbol_concreteReinforced" description_key="Reinforced Concrete Building is the skill to master if you want to build with concrete mix and rebar. Learn to make concrete mix at skill level 10" title_key="Reinforced Concrete Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+			<recipe name="rebarFrameBlock" unlock_level="1" />
+			<recipe name="rebarFrameRamp" unlock_level="2" />
+			<recipe name="rebarStairs25" unlock_level="2" />
+			<recipe name="rebarArrowSlitHalf" unlock_level="2" />
+			<recipe name="rebarFrameWedge" unlock_level="2" />
+			<recipe name="rebarFrameWedgeTip" unlock_level="2" />
+			<recipe name="rebarFramePlate" unlock_level="2" />
+			<recipe name="rebarFrameCNRFull" unlock_level="2" />
+			<recipe name="rebarFrameCNRInside" unlock_level="2" />
+			<recipe name="rebarFramePillar100" unlock_level="2" />
+			<recipe name="rebarFramePillar50" unlock_level="2" />
+			<recipe name="rebarFramePole" unlock_level="2" />
+			<!--upgrade material-->
+            <recipe name="cement" unlock_level="3" />
+			<recipe name="concreteMix" unlock_level="3" />
+		</perk>
+		<perk name="scrapIronBuilding" icon="ui_game_symbol_scrapIronBlock" description_key="Scrapiron Building is the skill to master if you want to build with scrapiron. Learn to make scrapiron sheets plus nuts and bolts at skill level 10" title_key="Scrap Iron Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+			<recipe name="scrapIronFrameBlock" unlock_level="1" />
+			<recipe name="scrapIronFrameRamp" unlock_level="2" />
+			<recipe name="scrapIronStairs25" unlock_level="2" />
+			<recipe name="scrapIronArrowSlitHalf" unlock_level="2" />
+			<recipe name="scrapIronFrameWedge" unlock_level="2" />
+			<recipe name="scrapIronFrameWedgeTip" unlock_level="2" />
+			<recipe name="scrapIronFramePlate" unlock_level="2" />
+			<recipe name="scrapIronFrameCNRFull" unlock_level="2" />
+			<recipe name="scrapIronFrameCNRInside" unlock_level="2" />
+			<recipe name="scrapIronFramePillar100" unlock_level="2" />
+			<recipe name="scrapIronFramePillar50" unlock_level="2" />
+			<recipe name="scrapIronFramePole" unlock_level="2" />
+			<recipe name="rScrapIronPlate" unlock_level="2" />
+			<!--upgrade material-->
+			<recipe name="nutAndBolt" unlock_level="3" />
+			<recipe name="corrugatedMetalSheet" unlock_level="3" />
+		</perk>
+		<perk name="steelBuilding" icon="ui_game_symbol_steelWall" description_key="Steel Building is the skill to master if you want to build with forged steel. Learn to make forged steel sheets at skill level 10" title_key="Steel Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+			<recipe name="forgedFrame" unlock_level="1" />
+			<recipe name="forgedFrameRamp" unlock_level="2" />
+			<recipe name="forgedStairs25" unlock_level="2" />
+			<recipe name="forgedArrowSlitHalf" unlock_level="2" />
+			<recipe name="forgedFrameWedge" unlock_level="2" />
+			<recipe name="forgedFrameWedgeTip" unlock_level="2" />
+			<recipe name="forgedFramePlate" unlock_level="2" />
+			<recipe name="forgedFrameCNRFull" unlock_level="2" />
+			<recipe name="forgedFrameCNRInside" unlock_level="2" />
+			<recipe name="forgedFramePillar100" unlock_level="2" />
+			<recipe name="forgedFramePillar50" unlock_level="2" />
+			<recipe name="forgedFramePole" unlock_level="2" />
+			<recipe name="forgedIronPlate" unlock_level="2" />
+			<recipe name="forgedIronSheet" unlock_level="2" />
+			<!--upgrade material-->
+            <recipe name="metalRivetSheet" unlock_level="3" />
+		</perk>
       <perk name="quickerCraftingPerk" icon="ui_game_symbol_quickercrafting" description_key="quickerCraftingDesc" title_key="quickerCrafting" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="2" group="science">
 			<requirement perk_level="1" required_player_level="20" />
 			<requirement perk_level="2" required_player_level="40" />
@@ -3823,9 +4095,10 @@
 			<recipe name="oil" unlock_level="1" />
 			<recipe name="bioFuel" unlock_level="1" />
 			<recipe name="purificationTablets" unlock_level="1" />
+            <recipe name="incendiaryPowder" unlock_level="1" />
+            <recipe name="incendiaryAmmoBook" unlock_level="1" />
 		</perk>
 		<perk name="chef" icon="ui_game_symbol_chef" description_key="These are the skills a Chef starts with. Collect 20 Profession pages to learn another profession" title_key="Chef" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
-			<recipe name="sharpeningStone" unlock_level="1" />
 			<recipe name="flour" unlock_level="1" />
 			<recipe name="bread" unlock_level="1" />
 			<recipe name="goldenRodTea" unlock_level="1" />
@@ -3852,7 +4125,6 @@
 			<recipe name="goodMealSmall" unlock_level="1" />
 			<recipe name="goodMealMedium" unlock_level="1" />
 			<recipe name="goodMealLarge" unlock_level="1" />
-			<recipe name="fishNChips" unlock_level="1" />
 			<recipe name="brainShnitzel" unlock_level="1" />
 			<recipe name="wellnessJuice" unlock_level="1" />
 			<recipe name="healthyMealSmall" unlock_level="1" />
@@ -3889,7 +4161,7 @@
 		<perk name="fireman" icon="ui_game_symbol_fireman" description_key="These are the skill a Fireman starts with. Collect 20 Profession pages to learn another profession" title_key="Fireman" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="aloeCream" unlock_level="1" />
 			<recipe name="firstAidBandage" unlock_level="1" />
-			<recipe name="oldFiremanAxe" unlock_level="1" />
+			<recipe name="firemanAxe" unlock_level="1" />
 			<recipe name="molotovCocktail" unlock_level="1" />
 			<effect name="MaxStamina">
 				<multiply perk_level="0" value="1" />
@@ -4027,6 +4299,7 @@
 		</perk>
 		<perk name="bouncer" icon="ui_game_symbol_bouncer" description_key="These are the skills a Bouncer starts with. Collect 20 Profession pages to learn another profession" title_key="Bouncer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="brassKnuckles" unlock_level="1" />
+            <recipe name="brassKnucklesMold" unlock_level="1" />
 			<recipe name="beer" unlock_level="1" />
 			<recipe name="mead" unlock_level="1" />
 			<recipe name="grainAlcohol" unlock_level="1" />

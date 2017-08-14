@@ -265,7 +265,18 @@
 		<objective type="FetchKeep" id="plank" value="1000" />
 		<reward type="Exp" value="400" />
         <reward type="Item" id="woodBuildingSkill" />
-		<reward type="ShowTip" value="BuildingTip" stage="aftercomplete" />
+        <reward type="Quest" id="woodBuilding3" />
+	</quest>
+    <quest id="woodBuilding3" group_name_key="Wood Building" name_key="Learning to build with wood" subtitle_key="Learning to build with wood" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="woodFrameBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="woodBuildingSkill" />
+        <reward type="Quest" id="woodBuilding4" />
+	</quest>
+    <quest id="woodBuilding4" group_name_key="Wood Building" name_key="Learning to build with wood" subtitle_key="Learning to build with wood" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="BlockUpgrade" id="woodFrameBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="woodBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 26 - Cobblestone Building /> -->
 	<quest id="quest_BasicSurvival26" group_name_key="quest_BasicSurvival" name_key="Learning to build with cobblestone" subtitle_key="Learning to build with cobblestone" description_key="If you want to learn to build cobblestone structures you're going to need the proper tools to do it. Craft or find a cobblestone Hammer to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
@@ -273,11 +284,22 @@
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="cobblestoneBuilding2" />
 	</quest>
-    <quest id="cobblestoneBuilding2" group_name_key="Becoming a Farmer" name_key="Learning to build with cobblestone" subtitle_key="Learning to build with cobblestone" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the cobblestone hammer to break down cobblestone blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="cobblestoneBuilding2" group_name_key="Cobblestone Building" name_key="Learning to build with cobblestone" subtitle_key="Learning to build with cobblestone" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the cobblestone hammer to break down cobblestone blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="cobblestones" value="1000" />
 		<reward type="Exp" value="400" />
 		<reward type="Item" id="cobblestoneBuildingSkill" />
-		<reward type="ShowTip" value="BuildingTip" stage="aftercomplete" />
+		<reward type="Quest" id="cobblestoneBuilding3" />
+	</quest>
+    <quest id="cobblestoneBuilding3" group_name_key="Cobblestone Building" name_key="Learning to build with cobblestone" subtitle_key="Learning to build with cobblestone" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="cobblestoneFrameBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="cobblestoneBuildingSkill" />
+        <reward type="Quest" id="cobblestoneBuilding4" />
+	</quest>
+    <quest id="cobblestoneBuilding4" group_name_key="Cobblestone Building" name_key="Learning to build with cobblestone" subtitle_key="Learning to build with cobblestone" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="BlockUpgrade" id="cobblestoneFrameBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="cobblestoneBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 27 - Brick Building /> -->
 	<quest id="quest_BasicSurvival27" group_name_key="quest_BasicSurvival" name_key="Learning to build with brick" subtitle_key="Learning to build with brick" description_key="If you want to learn to build brick structures you're going to need the proper tools to do it. Craft or find a brick Hammer to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
@@ -285,23 +307,45 @@
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="brickBuilding2" />
 	</quest>
-    <quest id="brickBuilding2" group_name_key="Becoming a Farmer" name_key="Learning to build with brick" subtitle_key="Learning to build with brick" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the brick hammer to break down brick blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="brickBuilding2" group_name_key="Brick Building" name_key="Learning to build with brick" subtitle_key="Learning to build with brick" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the brick hammer to break down brick blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="bricks" value="1000" />
 		<reward type="Exp" value="400" />
 		<reward type="Item" id="brickBuildingSkill" />
-        <reward type="ShowTip" value="BuildingTip" stage="aftercomplete" />
+        <reward type="Quest" id="brickBuilding3" />
 	</quest>
+    <quest id="brickBuilding3" group_name_key="Brick Building" name_key="Learning to build with brick" subtitle_key="Learning to build with brick" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="brickFrameBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="brickBuildingSkill" />
+        <reward type="Quest" id="brickBuilding4" />
+	</quest>
+    <quest id="brickBuilding4" group_name_key="Brick Building" name_key="Learning to build with brick" subtitle_key="Learning to build with brick" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="BlockUpgrade" id="brickFrameBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="brickBuildingSkill" />
+    </quest>
 	<!-- Basic Survival 28 - Concrete Building /> -->
 	<quest id="quest_BasicSurvival28" group_name_key="quest_BasicSurvival" name_key="Learning to build with Concrete" subtitle_key="Learning to build with Concrete" description_key="If you want to learn to build Concrete structures you're going to need the proper tools to do it. Craft or find a Concrete Sledge to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="concreteSledge" value="1" />
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="concreteBuilding2" />
 	</quest>
-    <quest id="concreteBuilding2" group_name_key="Becoming a Farmer" name_key="Learning to build with Concrete" subtitle_key="Learning to build with Concrete" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the Concrete sledge to break down Concrete blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="concreteBuilding2" group_name_key="Concrete Building" name_key="Learning to build with Concrete" subtitle_key="Learning to build with Concrete" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the Concrete sledge to break down Concrete blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="cementMix" value="1000" />
 		<reward type="Exp" value="400" />
 		<reward type="Item" id="concreteBuildingSkill" />
-        <reward type="ShowTip" value="BuildingTip" stage="aftercomplete" />
+        <reward type="Quest" id="concreteBuilding3" />
+    </quest>
+    <quest id="concreteBuilding3" group_name_key="Concrete Building" name_key="Learning to build with Concrete" subtitle_key="Learning to build with Concrete" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="concreteFormBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="concreteBuildingSkill" />
+        <reward type="Quest" id="concreteBuilding4" />
+	</quest>
+    <quest id="concreteBuilding4" group_name_key="Concrete Building" name_key="Learning to build with Concrete" subtitle_key="Learning to build with Concrete" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="BlockUpgrade" id="concreteFormBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="concreteBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 29 - rConcrete Building /> -->
 	<quest id="quest_BasicSurvival29" group_name_key="quest_BasicSurvival" name_key="Learning to build with Reinforced Concrete" subtitle_key="Learning to build with Reinforced Concrete" description_key="If you want to learn to build Reinforced Concrete structures you're going to need the proper tools to do it. Craft or find a Reinforced Concrete Bar to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
@@ -309,11 +353,22 @@
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="rConcreteBuilding2" />
 	</quest>
-    <quest id="rConcreteBuilding2" group_name_key="Becoming a Farmer" name_key="Learning to build with Reinforced Concrete" subtitle_key="Learning to build with Reinforced Concrete" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the Reinforced Concrete bar to break down Reinforced Concrete blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="rConcreteBuilding2" group_name_key="Reinforced Concrete Building" name_key="Learning to build with Reinforced Concrete" subtitle_key="Learning to build with Reinforced Concrete" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the Reinforced Concrete bar to break down Reinforced Concrete blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="concreteMix" value="1000" />
 		<reward type="Exp" value="400" />
 		<reward type="Item" id="rConcreteBuildingSkill" />
-        <reward type="ShowTip" value="BuildingTip" stage="aftercomplete" />
+        <reward type="Quest" id="rConcreteBuilding3" />
+	</quest>
+    <quest id="rConcreteBuilding3" group_name_key="Reinforced Concrete Building" name_key="Learning to build with Reinforced Concrete" subtitle_key="Learning to build with Reinforced Concrete" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="rConcreteBuilding3" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="rConcreteBuildingSkill" />
+        <reward type="Quest" id="rConcreteBuilding4" />
+	</quest>
+    <quest id="rConcreteBuilding4" group_name_key="Reinforced Concrete Building" name_key="Learning to build with Reinforced Concrete" subtitle_key="Learning to build with Reinforced Concrete" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="BlockUpgrade" id="rConcreteBuilding3" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="rConcreteBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 30 - Iron Building /> -->
 	<quest id="quest_BasicSurvival30" group_name_key="quest_BasicSurvival" name_key="Learning to build with iron" subtitle_key="Learning to build with iron" description_key="If you want to learn to build iron structures you're going to need the proper tools to do it. Craft or find a wrench to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
@@ -321,11 +376,22 @@
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="scrapIronBuilding2" />
 	</quest>
-    <quest id="scrapIronBuilding2" group_name_key="Becoming a Farmer" name_key="Learning to build with iron" subtitle_key="Learning to build with iron" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the wrench to break down iron blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="scrapIronBuilding2" group_name_key="Iron Building" name_key="Learning to build with iron" subtitle_key="Learning to build with iron" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the wrench to break down iron blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="scrapIronSheet" value="1000" />
 		<reward type="Exp" value="400" />
 		<reward type="Item" id="scrapIronBuildingSkill" />
-        <reward type="ShowTip" value="BuildingTip" stage="aftercomplete" />
+        <reward type="Quest" id="scrapIronBuilding3" />
+	</quest>
+    <quest id="scrapIronBuilding3" group_name_key="Iron Building" name_key="Learning to build with iron" subtitle_key="Learning to build with iron" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="scrapIronFrameBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="scrapIronBuildingSkill" />
+        <reward type="Quest" id="scrapIronBuilding4" />
+	</quest>
+    <quest id="scrapIronBuilding4" group_name_key="Iron Building" name_key="Learning to build with iron" subtitle_key="Learning to build with iron" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="BlockUpgrade" id="scrapIronFrameBlock" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="scrapIronBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 31 - Steel Building /> -->
 	<quest id="quest_BasicSurvival31" group_name_key="quest_BasicSurvival" name_key="Learning to build with steel" subtitle_key="Learning to build with steel" description_key="If you want to learn to build steel structures you're going to need the proper tools to do it. Craft or find a welder tool to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
@@ -333,11 +399,22 @@
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="steelBuilding2" />
 	</quest>
-    <quest id="steelBuilding2" group_name_key="Becoming a Farmer" name_key="Learning to build with steel" subtitle_key="Learning to build with steel" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the welder tool to break down steel blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="steelBuilding2" group_name_key="Steel Building" name_key="Learning to build with steel" subtitle_key="Learning to build with steel" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the welder tool to break down steel blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="metalRivetSheet" value="1000" />
 		<reward type="Exp" value="400" />
 		<reward type="Item" id="steelBuildingSkill" />
-        <reward type="ShowTip" value="BuildingTip" stage="aftercomplete" />
+        <reward type="Quest" id="steelBuilding3" />
+	</quest>
+    <quest id="steelBuilding3" group_name_key="Steel Building" name_key="Learning to build with steel" subtitle_key="Learning to build with steel" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="Craft" id="forgedFrame" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="steelBuildingSkill" />
+        <reward type="Quest" id="steelBuilding4" />
+	</quest>
+    <quest id="steelBuilding4" group_name_key="Steel Building" name_key="Learning to build with steel" subtitle_key="Learning to build with steel" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+		<objective type="BlockUpgrade" id="forgedFrame" value="100" />
+		<reward type="Exp" value="400" />
+        <reward type="Item" id="steelBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 31 - Farming Chain Starter /> -->
 	<quest id="quest_BasicSurvival32" group_name_key="Becoming a Farmer" name_key="Please add text here to finish me" subtitle_key="Please add text here to finish me" description_key="Please add text here to finish me" icon="ui_game_symbol_armor_leather" category_key="quest">
@@ -620,6 +697,25 @@
 		<objective type="ZombieKill" value="250" />
 		<reward type="SkillPoints" value="5" />
 	</quest>
+    <quest id="challenge_Hen" name_key="challenge_Hen" subtitle_key="challenge_Hen_subtitle" description_key="challenge_Hen_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Hen_offer" difficulty="easy">
+		<objective type="Craft" id="chickenCoop" value="1" />
+        <objective type="BlockPlace" id="chickenCoop" value="1" />
+		<objective type="FetchKeep" id="babyChicken" value="1" />
+		<objective type="FetchKeep" id="hen" value="1" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_InfectedAnimals" name_key="challenge_Vorpal" subtitle_key="challenge_Vorpal_subtitle" description_key="challenge_Vorpal_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Vorpal_offer" difficulty="easy">
+		<objective type="AnimalKill" id="animalRabbitHostile" value="1" />
+		<objective type="AnimalKill" id="animalChickenHostile" value="1" />
+		<objective type="ZombieKill" id="zombiedog" value="1" />
+		<objective type="AnimalKill" id="zombieBear" value="1" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_AntiVenom" name_key="challenge_AntiVenom" subtitle_key="challenge_AntiVenom_subtitle" description_key="challenge_AntiVenom_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_AntiVenom_offer" difficulty="easy">
+		<objective type="Craft" id="antiVenom" value="1" />
+		<objective type="Buff" id="antiVenom" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
 	<!--JZMOD PROFESSION QUEST CHAINS-->
 	<!--Doctor-->
 	<quest id="StartDoctor" name_key="challenge_Profession" subtitle_key="Doctors Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Doctor" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
@@ -811,7 +907,6 @@
 	</quest>
 	<quest id="challenge_Chef4" name_key="challenge_Profession" subtitle_key="challenge_Chef4_subtitle" description_key="challenge_Chef4_offer" icon="ui_game_symbol_Chef" repeatable="false" category_key="challenge" offer_key="challenge_Chef4_offer" difficulty="easy">
 		<objective type="Craft" id="brainShnitzel" value="1" />
-		<objective type="Craft" id="fishNChips" value="1" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
