@@ -1341,7 +1341,7 @@ group desc for stuff like metal siding
 	<block id="136" name="pouredConcreteMaster">
 		<property name="Group" value="Building" />
 		<property name="Material" value="wood" />
-      	<property name="Texture" value="289,289,65,65,65,65" />
+      	<property name="Texture" value="176" /><!--289,289,65,65,65,65-->
       	<property name="CreativeMode" value="None" />
 		<property class="RepairItems">
 			<property name="plank" value="10" />
@@ -4080,7 +4080,7 @@ group desc for stuff like metal siding
 		<property name="ImposterDontBlock" value="true" />
 		<property name="UpgradeRated.ToBlock" value="concreteSupport" />
 	</block>
-	<block id="404" name="pouredConcreteWedge">
+    <block id="404" name="pouredConcreteWedge">
 		<property name="CreativeMode" value="Player" />
 		<property name="Extends" value="pouredConcreteMaster" />
 		<property name="Shape" value="New" />
@@ -16997,16 +16997,16 @@ kind of free
 		<property name="Model" value="#PropaneTank?PropaneTankPrefab" />
 		<property name="Place" value="TowardsPlacer" />
 		<property name="CanPickup" value="true" />
-		<property name="ModelOffset" value="0,0.3,0" />
-        <property name="MultiBlockDim" value="0,1,0" />
+		<property name="ModelOffset" value="0,0.65,0" />
         <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="DescriptionKey" value="gasTankEmptyDesc" />
 	</block>
 	<block id="868" name="gasTank">
 		<property name="Extends" value="gasTankEmpty" />
-         <property name="MultiBlockDim" value="0,2,0" />
-		<property name="Class" value="TNT" />
+        <property name="Class" value="TNT" />
 		<property name="CanPickup" value="true" />
+        <property name="MaxDamage" value="20" />
+        <property name="ModelOffset" value="0,0.65,0" />
 		<property class="Explosion">
 			<property name="ParticleIndex" value="4" />
 			<property name="RadiusBlocks" value="1" />
@@ -18344,7 +18344,7 @@ kind of free
 		<property name="Shape" value="ModelEntity" />
 		<property name="Mesh" value="models" />
 		<property name="Model" value="#fireTrap?fireTrap" />
-        <property name="ModelOffset" value="0,-0.1,0" />
+        <property name="ModelOffset" value="0,0,0" />
 		<property name="CustomIcon" value="ui_game_symbol_gasTankTrap" />
 		<property name="Weight" value="64" />
 		<property name="IsTerrainDecoration" value="true" />
@@ -19506,8 +19506,48 @@ kind of free
 		<property name="Extends" value="lootWastelandHelper" />
 		<property name="CreativeMode" value="Dev" />
     </block>
-  
-   
+    <!--<block id="1746" name="fryingpan">
+		<property name="Material" value="MmetalNoGlue" />
+		<property name="MaxDamage" value="100" />
+		<property name="StabilitySupport" value="false" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#Pan2?Pan2Prefab" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="CanPickup" value="true" param1="fryingPan" />
+		<drop event="Destroy" name="scrapIron" count="1,15" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="Group" value="Food/Cooking" />
+	</block>-->
+   <block id="1747" name="fernSmall">
+		<property name="Material" value="leaves" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#FernSmall?FernSmallPrefab" />
+        <property name="ModelOffset" value="0,0,0" />
+        <property name="MultiBlockDim" value="1,1,1" />
+        <property name="Collide" value="melee,bullet,arrow,rocket" />
+		<drop event="Destroy" name="plantFibers" count="1" />
+	</block>
+    <block id="1748" name="caladium">
+		<property name="Material" value="leaves" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#Caladium?CaladiumPrefab" />
+        <property name="ModelOffset" value="0,0,0" />
+        <property name="MultiBlockDim" value="1,1,1" />
+        <property name="Collide" value="melee,bullet,arrow,rocket" />
+		<drop event="Destroy" name="plantFibers" count="1" />
+	</block>
+     <!--<block id="1749" name="roadBlock">
+		<property name="Material" value="wood" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#RoadBlocks?RoadBlocksPrefab" />
+        <property name="ModelOffset" value="0,0,0" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="IsTerrainDecoration" value="true" />
+		<drop event="Destroy" count="0" />
+		<drop event="Destroy" name="stick" count="1,3" prob="1" />
+	</block>-->
 </blocks>
 <!-- Block limit: No block can have an ID greater 2047.
 BLOCK MODELS

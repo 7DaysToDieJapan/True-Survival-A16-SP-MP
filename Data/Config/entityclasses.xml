@@ -2492,7 +2492,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="1" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.8" />
+		<property name="ApproachSpeed" value="0.77" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.9" />
 		<property name="PanicSpeed" value="0.6" />
@@ -2757,7 +2757,7 @@
 		<property name="CanClimbVertical" value="false" />
 		<property name="WalkType" value="2" />
 		<property name="WanderSpeed" value="0.57" />
-		<property name="ApproachSpeed" value="0.79" />
+		<property name="ApproachSpeed" value="0.70" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.73" />
 		<property name="PanicSpeed" value="0.8" />
