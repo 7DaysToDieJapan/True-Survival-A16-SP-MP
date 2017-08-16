@@ -3621,8 +3621,58 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="unit_iron" count="50" />
 		<ingredient name="unit_clay" count="5" />
 	</recipe>
-     
-	
+     <!--JZMOD BARTER SYSTEM
+	<recipe name="goldenRodTea" count="15" craft_area="cntVendingMachine" craft_time="1" craft_exp_gain="0">
+		<ingredient name="stick" count="5000" />
+	</recipe>
+    <recipe name="craftedRevolver" count="1" craft_area="cntVendingMachine" craft_time="1" craft_exp_gain="0">
+		<ingredient name="rockSmall" count="5" />
+	</recipe>
+    <recipe name="firstAidBandage" count="5" craft_area="cntVendingMachine" craft_time="1" craft_exp_gain="0">
+		<ingredient name="fruitServing" count="25" />
+	</recipe>
+    <recipe name="firstAidBandage" count="5" craft_area="cntVendingMachine" craft_time="1" craft_exp_gain="0">
+		<ingredient name="grainServing" count="25" />
+	</recipe>
+    <recipe name="firstAidBandage" count="5" craft_area="cntVendingMachine" craft_time="1" craft_exp_gain="0">
+		<ingredient name="veggieServing" count="25" />
+	</recipe>
+    <recipe name="firstAidBandage" count="5" craft_area="cntVendingMachine" craft_time="1" craft_exp_gain="0">
+		<ingredient name="proteinServing" count="25" />
+	</recipe>
+    <recipe name="grainAlcohol" count="2" craft_area="cntVendingMachine" craft_time="1" craft_exp_gain="0">
+		<ingredient name="bread" count="12" />
+	</recipe>
+    <recipe name="feather" count="50" craft_area="cntVendingMachine" craft_time="1" craft_exp_gain="0">
+		<ingredient name="egg" count="24" />
+	</recipe>
+    <recipe name="forgedIron" count="20" craft_area="cntVendingMachine" craft_time="1" craft_exp_gain="0">
+		<ingredient name="coal" count="500" />
+	</recipe>
+    <recipe name="woodJavelin" count="1" craft_area="cntVendingMachine" craft_time="1" craft_exp_gain="0">
+		<ingredient name="rockSmall" count="5" />
+	</recipe>
+    <recipe name="woodJavelin" count="1" craft_area="cntVendingMachine" craft_time="1" craft_exp_gain="0">
+		<ingredient name="rockSmall" count="5" />
+	</recipe>
+    <recipe name="woodJavelin" count="1" craft_area="cntVendingMachine" craft_time="1" craft_exp_gain="0">
+		<ingredient name="rockSmall" count="5" />
+	</recipe>
+    <recipe name="woodJavelin" count="1" craft_area="cntVendingMachine" craft_time="1" craft_exp_gain="0">
+		<ingredient name="rockSmall" count="5" />
+	</recipe>
+    <recipe name="woodJavelin" count="1" craft_area="cntVendingMachine" craft_time="1" craft_exp_gain="0">
+		<ingredient name="rockSmall" count="5" />
+	</recipe>
+    <recipe name="woodJavelin" count="1" craft_area="cntVendingMachine" craft_time="1" craft_exp_gain="0">
+		<ingredient name="rockSmall" count="5" />
+	</recipe>
+    <recipe name="woodJavelin" count="1" craft_area="cntVendingMachine" craft_time="1" craft_exp_gain="0">
+		<ingredient name="rockSmall" count="5" />
+	</recipe>
+    <recipe name="woodJavelin" count="1" craft_area="cntVendingMachine" craft_time="1" craft_exp_gain="0">
+		<ingredient name="rockSmall" count="5" />
+	</recipe>-->
 	<!-- 	
 	<recipe name="jailDoor" count="1" craft_area="workbench">
 		<ingredient name="forgedSteel" count="12"/>

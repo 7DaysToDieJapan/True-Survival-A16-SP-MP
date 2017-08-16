@@ -6627,8 +6627,7 @@ kind of free
 		<property name="EconomicValue" value="20" />
 	</block>
 	<block id="657" name="cntVendingMachine">
-		<property name="Group" value="Science" />
-		<property name="DescriptionKey" value="cntVendingMachineGroupDesc" />
+        <property name="DescriptionKey" value="cntVendingMachineGroupDesc" />
 		<property name="Material" value="Mmetal_medium" />
 		<property name="LightOpacity" value="0" />
 		<property name="StabilitySupport" value="false" />
@@ -6639,25 +6638,12 @@ kind of free
 		<property name="ImposterExchange" value="imposterBlock" param1="143" />
 		<property name="OnlySimpleRotations" value="true" />
 		<property name="Place" value="TowardsPlacerInverted" />
-		<property class="RepairItems">
-			<property name="forgedIron" value="5" />
+		<property class="RepairItems"> <property name="forgedIron" value="5" /> </property>
+		<property name="Class" value="Campfire" />
+		<property name="Stacknumber" value="1" />
+		<property class="Workstation">
+			<property name="Modules" value="output" />
 		</property>
-		<drop event="Harvest" name="RedBull" count="1" prob="0.4" />
-		<drop event="Harvest" name="redTea" count="1" prob="0.4" />
-		<drop event="Harvest" name="snowberryJuice" count="1" prob="0.4" />
-		<drop event="Harvest" name="goldenRodTea" count="1" prob="0.4" />
-		<drop event="Harvest" name="electricParts" count="2" prob="0.4" />
-		<drop event="Harvest" name="electronicParts" count="2" prob="0.4" />
-		<drop event="Harvest" name="mechanicalParts" count="1" prob="0.4" />
-		<drop event="Harvest" name="beer" count="1" prob="0.3" />
-		<drop event="Harvest" name="RedBull" count="1" prob="0.2" tool_category="Disassemble" />
-		<drop event="Harvest" name="redTea" count="1" prob="0.2" tool_category="Disassemble" />
-		<drop event="Harvest" name="snowberryJuice" count="1" prob="0.2" tool_category="Disassemble" />
-		<drop event="Harvest" name="goldenRodTea" count="1" prob="0.5" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="3" prob="0.5" tool_category="Disassemble" />
-		<drop event="Harvest" name="electronicParts" count="3" prob="0.5" tool_category="Disassemble" />
-		<drop event="Harvest" name="mechanicalParts" count="2" prob="0.5" tool_category="Disassemble" />
-		<drop event="Harvest" name="beer" count="1" prob="0.1" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="2" />
 	</block>
 	<block id="658" name="cntVendingMachine2">
