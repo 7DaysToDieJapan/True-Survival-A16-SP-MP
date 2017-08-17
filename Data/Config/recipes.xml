@@ -1567,7 +1567,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="plank" count="5" />
 	</recipe>
 	<recipe name="window03Wood" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
-		<ingredient name="stick" count="8" />
+		<ingredient name="stick" count="15" />
+        <ingredient name="glassBusinessCTRSheet" count="4" />
 	</recipe>
 	<recipe name="woodFenceFarmSheet" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
 		<ingredient name="plank" count="5" />
@@ -1625,10 +1626,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="fiberRope" count="3" />
 	</recipe>
 	<recipe name="woodArrowSlitHalf" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
-		<ingredient name="plank" count="10" />
-		<ingredient name="nail" count="5" />
-	</recipe>
-	<recipe name="woodHalf" count="1" craft_area="workbench" craft_tool="clawHammer" craft_time="4" craft_exp_gain="5">
 		<ingredient name="plank" count="10" />
 		<ingredient name="nail" count="5" />
 	</recipe>
@@ -2789,7 +2786,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="lucille" count="1" craft_area="workbench" craft_tool="clawHammer" craft_exp_gain="30" craft_time="30">
 		<ingredient name="barbedWireSheet" count="5" />
 		<ingredient name="forgedSteel" count="1" />
-		<ingredient name="bat" count="1" />
+		<ingredient name="nailedBat" count="1" />
 	</recipe>
     <recipe name="m4A1" count="1" craft_area="assembly">
 		<ingredient name="flashlight02" count="0" />

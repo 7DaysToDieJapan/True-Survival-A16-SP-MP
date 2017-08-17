@@ -578,28 +578,28 @@ This requires a 50+ food bar:
 	<modify id="0" stat="coretemp" modifyValue="-15" />
 </buff>
 <!--JZMOD SCUBA GEAR-->
-<buff id="scuba" duration="300" name_key="Scuba Gear" actions="buff(freshAir)" description_key="You have Scube Gear equiped and can breath under water for a short time" icon="ScubaTankFull" stack="extend"/>
+<buff id="scuba" duration="300" name_key="Scuba Gear" actions="buff(freshAir)" description_key="You have Scube Gear equiped and can breath under water for a short time" icon="ui_game_symbol_ScubaTankFull" stack="extend"/>
 <!--JZMOD COZY BED BUFF-->
 <buff id="cozybed1" mutex="cozybed1" duration="1" actions="increment(cozybed1, 1, 1, 0, 0)" /> <!-- sleepingBag -->
-<buff id="cozybed1Effect" buffif="cozybed1 greater 1" debuffif="cozybed1 less 1" duration="0" name_key="Bundled Up" description_key="Sleeping in a Sleepingbag warms you up." tooltip_key="You're resting in your warm bed." icon="cozyBed"	actions="increment(cozybed1, -1, 1, 0, 0);min(cozybed1, 0)" >
+<buff id="cozybed1Effect" buffif="cozybed1 greater 1" debuffif="cozybed1 less 1" duration="0" name_key="Bundled Up" description_key="Sleeping in a Sleepingbag warms you up." tooltip_key="You're resting in your warm bed." icon="ui_game_symbol_cozyBed"	actions="increment(cozybed1, -1, 1, 0, 0);min(cozybed1, 0)" >
     <modify id="0" stat="coretemp" modifyValue="20" />
 </buff>
 <buff id="cozybed2" mutex="cozybed2" duration="1" actions="increment(cozybed2, 1, 1, 0, 0)" /> <!-- smallBed -->
-<buff id="cozybed2Effect" buffif="cozybed2 greater 1" debuffif="cozybed2 less 1" duration="0" actions="increment(cozybed2, -1, 1, 0, 0);min(cozybed2, 0)" name_key="Bundled Up" description_key="Sleeping in a bed moderately regenerates health and warms you up." tooltip_key="You're resting in your warm bed." icon="cozyBed" >
+<buff id="cozybed2Effect" buffif="cozybed2 greater 1" debuffif="cozybed2 less 1" duration="0" actions="increment(cozybed2, -1, 1, 0, 0);min(cozybed2, 0)" name_key="Bundled Up" description_key="Sleeping in a bed moderately regenerates health and warms you up." tooltip_key="You're resting in your warm bed." icon="ui_game_symbol_cozyBed" >
     <modify id="0" stat="health" amount="1" rate="4" />
 	<modify id="1" stat="coretemp" modifyValue="25" />
 </buff>
 <buff id="cozybed3" mutex="cozybed3" duration="1" actions="increment(cozybed3, 1, 1, 0, 0)" /> <!-- largeBed -->
-<buff id="cozybed3Effect" buffif="cozybed3 greater 1" debuffif="cozybed3 less 1" duration="0" actions="increment(cozybed3, -1, 1, 0, 0);min(cozybed3, 0)" name_key="Bundled Up" description_key="Sleeping in a bed moderately regenerates health and warms you up." tooltip_key="You're resting in your warm bed." icon="cozyBed" >
+<buff id="cozybed3Effect" buffif="cozybed3 greater 1" debuffif="cozybed3 less 1" duration="0" actions="increment(cozybed3, -1, 1, 0, 0);min(cozybed3, 0)" name_key="Bundled Up" description_key="Sleeping in a bed moderately regenerates health and warms you up." tooltip_key="You're resting in your warm bed." icon="ui_game_symbol_cozyBed" >
     <modify id="0" stat="health" amount="2" rate="4" />
 	<modify id="1" stat="coretemp" modifyValue="30" />
 </buff>	
 <!--JZMOD Red Bull-->
-<buff id="redBull" duration="360" name_key="Red Bull" type="staminaup" tooltip_key="A nice rush of energy" description_key="A nice rush of energy" icon="RedBull" stack="extend">
+<buff id="redBull" duration="360" name_key="Red Bull" type="staminaup" tooltip_key="A nice rush of energy" description_key="A nice rush of energy" icon="ui_game_symbol_RedBull" stack="extend">
 	<modify id="0" stat="stamina" amount="2" rate="1" />
 </buff>
 <!--JZMOD Smoking-->
-<buff id="smoking" duration="180" name_key="Smoking" type="sickness" stack="extend" actions="attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh! Nothing better than a smoke" description_key="You are enjoying a smoke.(Wellness loss 0.1 every 3 min)" icon="Pot">
+<buff id="smoking" duration="180" name_key="Smoking" type="sickness" stack="extend" actions="attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh! Nothing better than a smoke" description_key="You are enjoying a smoke.(Wellness loss 0.1 every 3 min)" icon="ui_game_symbol_Pot">
 	<modify id="0" stat="stamina" amount="-1" rate="5" />
 	<modify id="1" stat="food" amount="1" rate="18" />
 </buff>
@@ -645,57 +645,57 @@ This requires a 50+ food bar:
 	<modify id="2" stat="coretemp" modifyValue="10" />
 </buff>
 <buff id="cauterize" castsound="Player_Female/player2death" requires="bite" duration="1" actions="buff(biteWound);debuff(bite)" />
-<buff id="biteWound" duration="900" onexpired="infection" ondebuff="tendingbite" name_key="Bite Wound" tooltip_key="Care for your bite wound or catch the Z virus" description_key="You've held off the Z virus for now but if you don’t care for this bite wound you still could catch it. Treat it with a bandage and be sure to change it when it gets dirty" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit,large1stAidKit" icon="bite" />
+<buff id="biteWound" duration="900" onexpired="infection" ondebuff="tendingbite" name_key="Bite Wound" tooltip_key="Care for your bite wound or catch the Z virus" description_key="You've held off the Z virus for now but if you don’t care for this bite wound you still could catch it. Treat it with a bandage and be sure to change it when it gets dirty" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit,large1stAidKit" icon="ui_game_symbol_bite" />
 <buff id="tendingbite" duration="900" onexpired="dirtyBiteBandage1" name_key="Bandaged Bite" tooltip_key="Your bite is bandaged up" description_key="You’ve held off the Z virus for now but if you don't care for this bite wound you still could catch it. Treat it with a bandage and be sure to change it when it gets dirty" icon="bandaged" />
-<buff id="dirtyBiteBandage1" smell="smallSmell" duration="900" onexpired="dirtyBite" ondebuff="tendingbite2" name_key="Dirty Bite" tooltip_key="Your bite wound is getting dirty" description_key="Your bite wound is dirty and starting to smell. Change it with another Bandage soon or your wound could get worst and you could catch the z virus" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit,large1stAidKit" icon="bite" />
+<buff id="dirtyBiteBandage1" smell="smallSmell" duration="900" onexpired="dirtyBite" ondebuff="tendingbite2" name_key="Dirty Bite" tooltip_key="Your bite wound is getting dirty" description_key="Your bite wound is dirty and starting to smell. Change it with another Bandage soon or your wound could get worst and you could catch the z virus" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit,large1stAidKit" icon="ui_game_symbol_bite" />
 <buff id="dirtyBite" duration="1" actions="buff(infection);increment(scratch, 10, 0, 0, 1)" />
-<buff id="tendingbite2" duration="900" onexpired="healBiteWound" name_key="Bandaged Bite" tooltip_key="Your bite is bandaged up" description_key="You’ve done it your bite wound is healing nicely and you are clear of the z virus. You may still have a wound or some bruises left that may need tending to." icon="bandaged" />
+<buff id="tendingbite2" duration="900" onexpired="healBiteWound" name_key="Bandaged Bite" tooltip_key="Your bite is bandaged up" description_key="You’ve done it your bite wound is healing nicely and you are clear of the z virus. You may still have a wound or some bruises left that may need tending to." icon="ui_game_symbol_bandaged" />
 <buff id="healBiteWound" duration="1" actions="increment(scratch, 6, 0, 0, 1)" />
 <!--JZMOD WOUND 1-->
-<buff id="bruised" buffif="scratch gequal 2" debuffif="scratch less 2" mutex="smallWound,wound,severeWound,infectedWound" name_key="Bruised" type="bleeding" tooltip_key="Thats going to leave a bruies" description_key="You're getting bruised up. The bruises will heal by themselves over time but you might want to be more careful." icon="bruised">
+<buff id="bruised" buffif="scratch gequal 2" debuffif="scratch less 2" mutex="smallWound,wound,severeWound,infectedWound" name_key="Bruised" type="bleeding" tooltip_key="Thats going to leave a bruies" description_key="You're getting bruised up. The bruises will heal by themselves over time but you might want to be more careful." icon="ui_game_symbol_bruised">
 	<modify id="0" stat="stamina" amount="-1" rate="4" />
 </buff>
 <!--JZMOD WOUND 2-->
-<buff id="smallWound" buffif="scratch gequal 6" mutex="dirtyBandage1,dirtyBandage2,dirtyBandage,3dirtyBandage4,tending1,tending2,tending3,tending4,tending5,tending6,tending7,tending8,wound,severeWound,infectedWound" ondebuff="tending1" actions="buff(pain);debuff(bruised)" name_key="Small Wound" type="bleeding" tooltip_key="Ouch! You've been wounded" description_key="You’ve gotten a small wound. Treat it with a bandage and be sure to change it when it gets dirty." icon="smallWound" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit,large1stAidKit">
+<buff id="smallWound" buffif="scratch gequal 6" mutex="dirtyBandage1,dirtyBandage2,dirtyBandage,3dirtyBandage4,tending1,tending2,tending3,tending4,tending5,tending6,tending7,tending8,wound,severeWound,infectedWound" ondebuff="tending1" actions="buff(pain);debuff(bruised)" name_key="Small Wound" type="bleeding" tooltip_key="Ouch! You've been wounded" description_key="You’ve gotten a small wound. Treat it with a bandage and be sure to change it when it gets dirty." icon="ui_game_symbol_smallWound" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit,large1stAidKit">
 	<modify id="0" stat="stamina" amount="-4" rate="5" />
 	<modify id="1" stat="speedmodifier" setValue="0.91" />
 	<modify id="2" stat="health" amount="-1" rate="30" />
 </buff>
-<buff id="pain" mutex="healWound" castsound="Buffs/critical_blunt" name_key="Pain" type="bleeding" description_key="The wound hurts take some Painkillers for the pain" tooltip_key="OOwww! It Hurts!" icon="pain" cures="painkillers">
+<buff id="pain" mutex="healWound" castsound="Buffs/critical_blunt" name_key="Pain" type="bleeding" description_key="The wound hurts take some Painkillers for the pain" tooltip_key="OOwww! It Hurts!" icon="ui_game_symbol_pain" cures="painkillers">
 	<modify id="0" stat="stamina" amount="-1" rate="5" />
 	<modify id="1" stat="coretemp" modifyValue="10" />
 </buff>
-<buff id="tending1" mutex="wound" duration="1800" onexpired="dirtyBandage1" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="bandaged" />
+<buff id="tending1" mutex="wound" duration="1800" onexpired="dirtyBandage1" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="ui_game_symbol_bandaged" />
 <buff id="dirtyBandage1" smell="smallSmell" duration="900" onexpired="dirtySmallWound" ondebuff="tending2" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit,large1stAidKit" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another Bandage soon or your wound could get worst" icon="dirtyBandage" />
 <buff id="dirtySmallWound" duration="1" actions="setvar(scratch, 11)" />
-<buff id="tending2" duration="1800" onexpired="healSmallWound" actions="debuff(dirtyBandage1)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="bandaged" />
+<buff id="tending2" duration="1800" onexpired="healSmallWound" actions="debuff(dirtyBandage1)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="ui_game_symbol_bandaged" />
 <buff id="healSmallWound" duration="1" actions="setvar(scratch, 2)" />
 <!-- JZMOD WOUND 3-->
-<buff id="wound" buffif="scratch gequal 11" mutex="dirtyBandage2,dirtyBandage3,dirtyBandage4,tending3,tending4,tending5,tending6,tending7,tending8,severeWound,infectedWound" ondebuff="tending3" actions="buff(sprainedLeg);debuff(smallWound);debuff(tending2);debuff(tending1);debuff(dirtyBandage1)" name_key="Wound" type="bleeding" tooltip_key="Ouch! You've been wounded" description_key="You've gotten a wound. Treat it with a First Aid Bandage and be sure to change it when it gets dirty." icon="wound" cures="firstAidBandage,sanitizingBandage,firstAidKit,large1stAidKit">
+<buff id="wound" buffif="scratch gequal 11" mutex="dirtyBandage2,dirtyBandage3,dirtyBandage4,tending3,tending4,tending5,tending6,tending7,tending8,severeWound,infectedWound" ondebuff="tending3" actions="buff(sprainedLeg);debuff(smallWound);debuff(tending2);debuff(tending1);debuff(dirtyBandage1)" name_key="Wound" type="bleeding" tooltip_key="Ouch! You've been wounded" description_key="You've gotten a wound. Treat it with a First Aid Bandage and be sure to change it when it gets dirty." icon="ui_game_symbol_wound" cures="firstAidBandage,sanitizingBandage,firstAidKit,large1stAidKit">
 	<modify id="0" stat="stamina" amount="-1" rate="1" />
 	<modify id="1" stat="speedmodifier" setValue="0.9" />
 	<modify id="2" stat="health" amount="-1" rate="25" />
 </buff>
-<buff id="tending3" mutex="severeWound" duration="1800" onexpired="dirtyBandage2" actions="debuff(wound)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="bandaged" />
-<buff id="dirtyBandage2" smell="mediumSmell" duration="900" onexpired="dirtyWound" ondebuff="tending4" cures="firstAidBandage,sanitizingBandage,firstAidKit,large1stAidKit" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another First Aid Bandage soon or your wound could get worst" icon="dirtyBandage" />
+<buff id="tending3" mutex="severeWound" duration="1800" onexpired="dirtyBandage2" actions="debuff(wound)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="ui_game_symbol_bandaged" />
+<buff id="dirtyBandage2" smell="mediumSmell" duration="900" onexpired="dirtyWound" ondebuff="tending4" cures="firstAidBandage,sanitizingBandage,firstAidKit,large1stAidKit" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another First Aid Bandage soon or your wound could get worst" icon="ui_game_symbol_dirtyBandage" />
 <buff id="dirtyWound" duration="1" actions="setvar(scratch, 16)" />
-<buff id="tending4" duration="1800" onexpired="healWound" actions="debuff(dirtyBandage2)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="bandaged" />
+<buff id="tending4" duration="1800" onexpired="healWound" actions="debuff(dirtyBandage2)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="ui_game_symbol_bandaged" />
 <buff id="healWound" duration="10" actions="setvar(scratch, 6)" />
 <!-- JZMOD WOUND 4-->
-<buff id="severeWound" buffif="scratch gequal 16" mutex="dirtyBandage3,dirtyBandage4,tending5,tending6,tending7,tending8,InfectedWound" ondebuff="tending5" actions="buff(gash);debuff(tending4);debuff(tending3);debuff(dirtyBandage2);debuff(wound)" name_key="Severe Wound" type="bleeding" tooltip_key="You have gotten a severe wound" description_key="You've gotten a sever wound. Treat it with Sanitized Bandage and be sure to change it when it gets dirty." icon="severeWound" cures="sanitizingBandage,firstAidKit,large1stAidKit">
+<buff id="severeWound" buffif="scratch gequal 16" mutex="dirtyBandage3,dirtyBandage4,tending5,tending6,tending7,tending8,InfectedWound" ondebuff="tending5" actions="buff(gash);debuff(tending4);debuff(tending3);debuff(dirtyBandage2);debuff(wound)" name_key="Severe Wound" type="bleeding" tooltip_key="You have gotten a severe wound" description_key="You've gotten a sever wound. Treat it with Sanitized Bandage and be sure to change it when it gets dirty." icon="ui_game_symbol_severeWound" cures="sanitizingBandage,firstAidKit,large1stAidKit">
 	<modify id="0" stat="stamina" amount="-6" rate="5" />
 	<modify id="1" stat="speedmodifier" setValue="0.89" />
 	<modify id="2" stat="health" amount="-1" rate="20" />
 </buff>
-<buff id="gash" mutex="healInfectedWound" castsound="Buffs/critical_blunt" name_key="Gash" type="bleeding" actions="buff(bleeding)" description_key="You have a large gash in your skin. You will need to use a suture kit to stitch it closed" tooltip_key="Thats going to need Stitches" icon="gash" cures="SuterKit">
+<buff id="gash" mutex="healInfectedWound" castsound="Buffs/critical_blunt" name_key="Gash" type="bleeding" actions="buff(bleeding)" description_key="You have a large gash in your skin. You will need to use a suture kit to stitch it closed" tooltip_key="Thats going to need Stitches" icon="ui_game_symbol_gash" cures="SuterKit">
 	<modify id="0" stat="stamina" amount="-1" rate="3" />
 	<modify id="1" stat="health" amount="-1" rate="15" />
 	<modify id="2" stat="coretemp" modifyValue="-25" />
 </buff>
-<buff id="tending5" mutex="infectedWound" duration="1800" onexpired="dirtyBandage3" actions="debuff(severeWound)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="bandaged" />
-<buff id="dirtyBandage3" smell="largeSmell" duration="900" onexpired="dirtySevereWound" ondebuff="tending6" cures="sanitizingBandage,firstAidKit,large1stAidKit" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another Sanitizing Bandage soon or your wound could get worst" icon="dirtyBandage" />
+<buff id="tending5" mutex="infectedWound" duration="1800" onexpired="dirtyBandage3" actions="debuff(severeWound)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="ui_game_symbol_bandaged" />
+<buff id="dirtyBandage3" smell="largeSmell" duration="900" onexpired="dirtySevereWound" ondebuff="tending6" cures="sanitizingBandage,firstAidKit,large1stAidKit" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another Sanitizing Bandage soon or your wound could get worst" icon="ui_game_symbol_dirtyBandage" />
 <buff id="dirtySevereWound" duration="1" actions="setvar(scratch, 21)" />
-<buff id="tending6" duration="1800" onexpired="healSevereWound" actions="debuff(dirtyBandage3)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="bandaged" />
+<buff id="tending6" duration="1800" onexpired="healSevereWound" actions="debuff(dirtyBandage3)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="ui_game_symbol_bandaged" />
 <buff id="healSevereWound" duration="10" actions="setvar(scratch, 11)" />
 <!-- JZMOD WOUND 5-->
 <buff id="infectedWound" buffif="scratch gequal 21" mutex="tending7,dirtyBandage4,tending8" ondebuff="tending7" actions="buff(bioInfection);debuff(tending6);debuff(dirtyBandage3);debuff(tending5);debuff(severeWound)" name_key="Infected Wound" type="bleeding" tooltip_key="Your wound has gotten infected" description_key="Your wound has gotten infected. Treat it with Sanitized Bandage and be sure to change it when it gets dirty or you could die." icon="InfectedWound" cures="sanitizingBandage,firstAidKit,large1stAidKit">
@@ -703,19 +703,19 @@ This requires a 50+ food bar:
 	<modify id="1" stat="speedmodifier" setValue="0.88" />
 	<modify id="2" stat="health" amount="-1" rate="15" />
 </buff>
-<buff id="tending7" duration="1800" onexpired="dirtyBandage4" actions="debuff(infectedWound)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="bandaged" />
-<buff id="dirtyBandage4" smell="largeSmell" duration="480" onexpired="dirtyInfectedWound" ondebuff="tending8" cures="sanitizingBandage,firstAidKit,large1stAidKit" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another Sanitizing Bandage soon or you could die" icon="dirtyBandage" />
+<buff id="tending7" duration="1800" onexpired="dirtyBandage4" actions="debuff(infectedWound)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="ui_game_symbol_bandaged" />
+<buff id="dirtyBandage4" smell="largeSmell" duration="480" onexpired="dirtyInfectedWound" ondebuff="tending8" cures="sanitizingBandage,firstAidKit,large1stAidKit" name_key="Dirty Bandaged" tooltip_key="Your Wound Smells" description_key="Your bandage is dirty and starting to smell. Change it with another Sanitizing Bandage soon or you could die" icon="ui_game_symbol_dirtyBandage" />
 <buff id="dirtyInfectedWound" duration="6" type="bleeding" >
     <modify id="0" stat="health" amount="-55" rate="1" />
 </buff>
-<buff id="tending8" duration="1800" onexpired="healInfectedWound" actions="debuff(dirtyBandage4)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="bandaged" />
+<buff id="tending8" duration="1800" onexpired="healInfectedWound" actions="debuff(dirtyBandage4)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="ui_game_symbol_bandaged" />
 <buff id="healInfectedWound" duration="10" actions="setvar(scratch, 16)" />
 <!--JZMOD Stimulan Addiction-->
 <buff id="stimulant" duration="180" name_key="Stimulant" type="staminaup" stack="extend" tooltip_key="You have taken a Stimulant and feel good" description_key="A nice rush of energy." icon="ui_game_symbol_Stimulant" >
 	<modify id="0" stat="stamina" amount="4" rate="1" />
 	<modify id="1" stat="food" amount="1" rate="35" />
 </buff>
-<buff id="useStim" duration="1.5" actions="increment(stim, 1, 0, 0, 1);debuff(withdrawalLv1);debuff(withdrawalLv2);debuff(withdrawalLv3)" />
+<buff id="useStim" duration="1.5" actions="increment(stim, 1, 0, 0, 1);increment(@wellness, 1, 0, 0, 1);debuff(withdrawalLv1);debuff(withdrawalLv2);debuff(withdrawalLv3)" />
 <buff id="zz" buffif="stim greater 0" debuffif="stim less 1" duration="0" actions="increment(stim, -1, 10, 0, 0);min(stim, 0)" /><!--1200-->
 <buff id="turnoff" buffif="stim less 2" debuffif="stim greater 1" actions="debuff(withdrawalLv1);debuff(withdrawalLv2);debuff(withdrawalLv3)" />
 <buff id="addictionLv1" mutex="addictionLv2,addictionLv3,withdrawalLv2,withdrawalLv3" buffif="stim gequal 3" debuffif="stim less 3" name_key="Addiction Stage 1" type="staminaup" ondebuff="withdrawalLv1" actions="debuff(limp);debuff(limp1);debuff(limp2);debuff(snakelimp);debuff(SL1);debuff(SL2);debuff(sprainedLegHealthy);debuff(sprainedLegNormal);debuff(sprainedLegMalnourished);debuff(brokenLegHealthy);debuff(brokenLegNormal);debuff(brokenLegMalnourished);increment(@wellness, -0.1, 1200, 0, 0)" tooltip_key="You have become addicted to Stimulants" description_key="These pills really work! Would be nice to have another.(Wellness loss 0.1 every 20 min)" icon="ui_game_symbol_run">
@@ -750,7 +750,7 @@ This requires a 50+ food bar:
 	<modify id="1" stat="speedmodifier" setValue="0.85" />
 </buff>
 <!--JZMOD Vitamins-->
-<buff id="vitamins" duration="1800" name_key="Vitamins" tooltip_key="mmmmm Vitamins!" description_key="Vitamins make You feel a little stronger.(Wellness increase 0.2 every game hour)" actions="increment(@wellness, 0.2, 150, 0, 0)" icon="vitamins" />
+<buff id="vitamins" duration="1800" name_key="Vitamins" tooltip_key="mmmmm Vitamins!" description_key="Vitamins make You feel a little stronger.(Wellness increase 0.2 every game hour)" actions="increment(@wellness, 0.2, 150, 0, 0)" icon="ui_game_symbol_vitamins" />
 <!--JZMOD Radiation-->
 <buff id="radiationTrigger" mutex="radiationTrigger" duration="1" actions="increment(rad, 1, 1, 0, 0)" /> 
 <buff id="radiationEffect" buffif="rad greater 1" debuffif="rad less 1" duration="0" actions="increment(@wellness, -0.01, 30, 0, 0);increment(rad, -1, 1, 0, 0);min(rad, 0)" type="bleeding" name_key="Radiation" tooltip_key="Your feet feel warm" description_key="You are on radiated soil.(Wellness loss 0.01)" icon="ui_game_symbol_radiation">
@@ -763,10 +763,10 @@ This requires a 50+ food bar:
 	<modify id="1" stat="health" amount="-1" rate="1" />
 </buff>	
 <!--JZMOD High-->
-<buff id="high" stack="extend" duration="300" name_key="Stoned" type="speedmodifier" actions="attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh Dude...huh...Im getting hungry" description_key="You're high. You just smoked... uh, what? Hey, is that pie?" icon="Pot">
+<buff id="high" stack="extend" duration="300" name_key="Stoned" type="speedmodifier" actions="attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh Dude...huh...Im getting hungry" description_key="You're high. You just smoked... uh, what? Hey, is that pie?" icon="ui_game_symbol_Pot">
 	<modify id="0" stat="stamina" amount="-1" rate="1" />
 	<modify id="1" stat="speedmodifier" mulValue="0.5" />
-	<modify id="2" stat="food" amount="-1" rate="15" />
+	<modify id="2" stat="food" amount="-1" rate="8" />
 	<modify id="3" stat="water" amount="-1" rate="15" />
 </buff>
 <!-- JZMOD MYSTERY CAN FOOD -->
@@ -788,9 +788,9 @@ This requires a 50+ food bar:
 <!--JZMOD Leg Break-->
 <buff id="breakLeg" mutex="brokenLegHealthy,brokenLegNormal,brokenLegMalnourished" hitmask="leftleg;rightleg" duration="1" actions="buff(brokenLeg)" />
 <!--JZMOD Poisonous Bites and Stings-->
-<buff id="antiVenom" duration="300" actions="debuff(snakePoisoning);debuff(snakePoisoning2);debuff(snakePoisoning3)" name_key="AntiVenom" tooltip_key="I'm Cured!" description_key="You are cured of venom poisoning and immune for a short time." icon="AntiVenom" />
+<buff id="antiVenom" duration="300" actions="debuff(snakePoisoning);debuff(snakePoisoning2);debuff(snakePoisoning3)" name_key="AntiVenom" tooltip_key="I'm Cured!" description_key="You are cured of venom poisoning and immune for a short time." icon="ui_game_symbol_AntiVenom" />
 <!--JZMOD Snake-->
-<buff id="snakePoisoning" name_key="Snake Bite Stage 1" type="speedmodifier" mutex="antiVenom,snakePoisoning,snakePoisoning2,snakePoisoning3" actions="buff(snakeStun);buff(snakelimp);increment(@wellness, -0.1, 300, 0, 0)" onexpired="snakePoisoning2" duration="1800" tooltip_key="You've been bitten by a snake" description_key="A snake bit and poisoned you. You will need to find or make some Anti-Venom or you will get very ill. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="SnakeBuff" cures="antiVenom">
+<buff id="snakePoisoning" name_key="Snake Bite Stage 1" type="speedmodifier" mutex="antiVenom,snakePoisoning,snakePoisoning2,snakePoisoning3" actions="buff(snakeStun);buff(snakelimp);increment(@wellness, -0.1, 300, 0, 0)" onexpired="snakePoisoning2" duration="1800" tooltip_key="You've been bitten by a snake" description_key="A snake bit and poisoned you. You will need to find or make some Anti-Venom or you will get very ill. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ui_game_symbol_SnakeBuff" cures="antiVenom">
 	<modify id="0" stat="stamina" amount="-2" rate="1" />
 	<modify id="1" stat="speedmodifier" mulValue="0.95" />
 	<modify id="2" stat="coretemp" modifyValue="5" />
@@ -804,12 +804,12 @@ This requires a 50+ food bar:
 	<modify id="0" stat="speedmodifier" mulValue="0.4" />
 </buff>
 <buff id="SL2" duration="1" mutex="stimulant,addictionLv1,addictionLv2,addictionLv3drunk,limp,limp1,limp2" onexpired="SL1" />
-<buff id="snakePoisoning2" name_key="Snake Bite Stage 2" type="speedmodifier" mutex="antiVenom" actions="buff(pain);increment(@wellness, -0.2, 300, 0, 0)" onexpired="snakePoisoning3" duration="3600" tooltip_key="That Bite does not look good!" description_key="Your snake bite is getting worse and the venom is spreading. You need to get some Anti–Venom soon. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="SnakeBuff" cures="antiVenom">
+<buff id="snakePoisoning2" name_key="Snake Bite Stage 2" type="speedmodifier" mutex="antiVenom" actions="buff(pain);increment(@wellness, -0.2, 300, 0, 0)" onexpired="snakePoisoning3" duration="3600" tooltip_key="That Bite does not look good!" description_key="Your snake bite is getting worse and the venom is spreading. You need to get some Anti–Venom soon. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ui_game_symbol_SnakeBuff" cures="antiVenom">
 	<modify id="0" stat="stamina" amount="-3" rate="1" />
 	<modify id="1" stat="speedmodifier" mulValue="0.85" />
 	<modify id="2" stat="coretemp" modifyValue="15" />
 </buff>
-<buff id="snakePoisoning3" name_key="Snake Bite Stage 3" type="speedmodifier" mutex="antiVenom" actions="buff(gash);increment(@wellness, -0.5, 300, 0, 0)" duration="3600" tooltip_key="You dont look so good!" description_key="The snake venom is coursing through your veins. If you can last the day you might just live. Or you can find or make some Anti-Venom .Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="SnakeBuff" cures="antiVenom">
+<buff id="snakePoisoning3" name_key="Snake Bite Stage 3" type="speedmodifier" mutex="antiVenom" actions="buff(gash);increment(@wellness, -0.5, 300, 0, 0)" duration="3600" tooltip_key="You dont look so good!" description_key="The snake venom is coursing through your veins. If you can last the day you might just live. Or you can find or make some Anti-Venom .Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ui_game_symbol_SnakeBuff" cures="antiVenom">
 	<modify id="0" stat="stamina" amount="-5" rate="1" />
 	<modify id="1" stat="speedmodifier" mulValue="0.5" />
 	<modify id="2" stat="coretemp" modifyValue="25" />

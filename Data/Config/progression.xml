@@ -1918,7 +1918,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="stoneAxeCraft" icon="ui_game_symbol_stoneAxe" description_key="StoneAxe." title_key="fillMeInPlease" group="crafting">
+		<crafting_skill name="stoneAxeCraft" icon="ui_game_symbol_stoneAxe" description_key="StoneAxe." title_key="StoneAxe" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1980,7 +1980,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="stoneShovelCraft" icon="ui_game_symbol_stoneShovel" description_key="StoneShovel." title_key="fillMeInPlease" group="crafting">
+		<crafting_skill name="stoneShovelCraft" icon="ui_game_symbol_stoneShovel" description_key="StoneShovel." title_key="StoneShovel" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -3174,6 +3174,11 @@
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="4" />
 			<recipe name="mineCandyTin" unlock_level="1" />
 		</perk>
+        <perk name="pressurePlateMinePerk" icon="rScrapIronPlate" description_key="Learn to craft Pressure Plate Mine on the wood working bench using a wrench" title_key="Pressure Plate Mine" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+			<requirement perk_level="1" required_player_level="10" />
+			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="4" />
+			<recipe name="rScrapIronPlateMine" unlock_level="1" />
+		</perk>
 		<perk name="hubcapMinePerk" icon="ui_game_symbol_mineHubcap" description_key="Learn to craft Hubcap Mine on the wood working bench using a wrench" title_key="Hubcap Mine" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
 			<requirement perk_level="1" required_player_level="15" />
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="6" />
@@ -3323,6 +3328,11 @@
 			<recipe name="clubSpiked" unlock_level="1" />
 			<recipe name="nailedBat" unlock_level="1" />
 		</perk>
+        <perk name="lucillePerk" icon="ui_game_symbol_lucille" description_key="Learn to upgrade your Lucille" title_key="lucille" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="6" group="firearms">
+			<requirement perk_level="1" required_skill_name="bluntWeaponsAction" required_skill_level="1" />
+			<requirement perk_level="1" required_player_level="75" />
+			<recipe name="lucille" unlock_level="1" />
+		</perk>
         <perk name="steelSpikedClubPerk" icon="ui_game_symbol_clubSteelSpiked" description_key="Learn to upgrade your spiked club using steel spikes on the metal working bench" title_key="Steel Spiked Club" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="6" group="firearms">
 			<requirement perk_level="1" required_skill_name="bluntWeaponsAction" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="75" />
@@ -3369,6 +3379,11 @@
 		<perk name="barbedFencePerk" icon="ui_game_symbol_barbedFence" description_key="Learn to craft Barbed Fence" title_key="Barbed Fence" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
 			<requirement perk_level="1" required_player_level="10" />
 			<recipe name="barbedFence" unlock_level="1" />
+		</perk>
+        <perk name="methaneProducerPerk" icon="ui_game_symbol_methaneProducer" description_key="Learn to craft a Methane gas producer on the metal working bench and use it to craft methane gas bombs." title_key="Methane Gas Bombs" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
+			<requirement perk_level="1" required_player_level="25" />
+			<recipe name="methaneProducer" unlock_level="1" />
+			<recipe name="gasTankEmpty" unlock_level="1" />
 		</perk>
         <!--TOOLS-->
         <perk name="simpleWorkBenchPerk" icon="ui_game_symbol_workbench" description_key="Learn to craft a Wood Working Bench. Use it to craft more complex items and faster. The wood working bench has 3 tools - CircularSaw, claw Hammer and wrench." title_key="Wood Working Bench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
@@ -3686,7 +3701,17 @@
 			<recipe name="woodPlate" unlock_level="2" />
 			<recipe name="woodPole" unlock_level="2" />
 			<recipe name="woodArrowSlitHalf" unlock_level="2" />
-			<!--upgrade material-->
+            <recipe name="woodCatwalk" unlock_level="2" />
+            <recipe name="woodCatwalkRailing" unlock_level="2" />
+            <recipe name="woodCatwalkRailingCNR" unlock_level="2" />
+            <recipe name="woodRailing" unlock_level="2" />
+            <recipe name="woodCatwalkWedgeRailing" unlock_level="2" />
+            <recipe name="woodStairsBoard" unlock_level="2" />
+            <recipe name="woodStairsBoardRailing" unlock_level="2" />
+            <recipe name="woodSupport" unlock_level="2" />
+            <recipe name="woodWedgeTip" unlock_level="2" />
+            <recipe name="window03Wood" unlock_level="2" />
+            <!--upgrade material-->
 			<recipe name="nail" unlock_level="3" />
 			<recipe name="plank" unlock_level="3" />
 		</perk>
@@ -3848,25 +3873,25 @@
             <recipe name="cntSecureStorageChest" unlock_level="1" />
 		</perk>
 		<perk name="woodenDoorPerk" icon="ui_game_symbol_woodenDoor" description_key="Learn to craft a secure Wooden Door" title_key="Wooden Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="science">
-			<requirement perk_level="1" required_skill_name="woodBuilding" required_skill_level="5" />
+			<requirement perk_level="1" required_skill_name="woodBuilding" required_skill_level="2" />
 			<recipe name="secureDoorWooden" unlock_level="1" />
 		</perk>
 		<perk name="woodHatchPerk" icon="ui_game_symbol_woodHatch1_v1" description_key="Learn to craft a secure Wooden Hatche" title_key="Wood Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="science">
-			<requirement perk_level="1" required_skill_name="woodBuilding" required_skill_level="15" />
+			<requirement perk_level="1" required_skill_name="woodBuilding" required_skill_level="2" />
 			<recipe name="woodHatch1_v1" unlock_level="1" />
 		</perk>
 	    <perk name="steelLadderPerk" icon="ui_game_symbol_ladderMetal" description_key="Learn to craft a steel Ladder on the Metal Working Bench" title_key="steel Ladder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="science">
-			<requirement perk_level="1" required_skill_name="steelBuilding" required_skill_level="5" />
+			<requirement perk_level="1" required_skill_name="steelBuilding" required_skill_level="2" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="ladderSteel" unlock_level="1" />
 		</perk>
 		<perk name="metalLadderPerk" icon="ui_game_symbol_ladderMetal" description_key="Learn to craft a Metal Ladder on the Metal Working Bench" title_key="Metal Ladder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="science">
-			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="5" />
+			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="2" />
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="ladderMetal" unlock_level="1" />
 		</perk>
 		<perk name="ironHatchPerk" icon="ui_game_symbol_scrapHatch" description_key="Learn to craft Iron Hatches on the metal working bench using a wrench" title_key="Iron Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="science">
-			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="15" />
+			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="2" />
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="scrapHatch_v1" unlock_level="1" />
 		</perk>
@@ -3875,43 +3900,38 @@
 			<recipe name="doorKnob" unlock_level="1" />
 		</perk>
 		<perk name="ironDoorPerk" icon="ui_game_symbol_ironDoor" description_key="Learn to craft Iron Doors on the metal working bench using a wrench" title_key="Iron Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="science">
-			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="5" />
+			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="2" />
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="ironDoor1_v1" unlock_level="1" />
 		</perk>
 		<perk name="ironGunSafePerk" icon="ui_game_symbol_gunSafe" description_key="Learn to craft Iron Gun Safe on the metal working bench using a wrench" title_key="Iron Gun Safes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
-			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="20" />
+			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="cntGunSafe" unlock_level="1" />
 			<recipe name="cntDeskSafe" unlock_level="1" />
 			<recipe name="cntWallSafe" unlock_level="1" />
 		</perk>
 		<perk name="ironTrussingPerk" icon="ui_game_symbol_metalTrussing" description_key="Learn to craft Iron Trussing in the forge using a anvil" title_key="Iron Trussing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
-			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="55" />
+			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="3" />
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="metalTrussingBlock" unlock_level="1" />
 			<recipe name="metalTrussingRamp" unlock_level="1" />
 		</perk>
 		<perk name="concreteDrawBridgePerk" icon="ui_game_symbol_concreteDrawBridge" description_key="Learn to craft a concrete draw bridge on the metal working bench using the Wielder" title_key="Concrete Draw Bridge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
-			<requirement perk_level="1" required_skill_name="concreteBuilding" required_skill_level="25" />
+			<requirement perk_level="1" required_skill_name="concreteBuilding" required_skill_level="2" />
 			<recipe name="drawBridge" unlock_level="1" />
 		</perk>
-		<perk name="methaneProducerPerk" icon="ui_game_symbol_methaneProducer" description_key="Learn to craft a Methane gas producer on the metal working bench and use it to craft methane gas bombs." title_key="Methane Gas Bombs" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
-			<requirement perk_level="1" required_player_level="25" />
-			<recipe name="methaneProducer" unlock_level="1" />
-			<recipe name="gasTankEmpty" unlock_level="1" />
-		</perk>
+		
 		<perk name="steelVaultHatchPerk" icon="ui_game_symbol_vaultHatch" description_key="Learn to craft steel Vault Hatches on the metal working bench using the wielder" title_key="Steel Vault Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
-			<requirement perk_level="1" required_skill_name="steelBuilding" required_skill_level="15" />
+			<requirement perk_level="1" required_skill_name="steelBuilding" required_skill_level="2" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="vaultHatch_v1" unlock_level="1" />
 		</perk>
 		<perk name="steelVaultDoorPerk" icon="ui_game_symbol_vaultDoor01" description_key="Learn to craft Steel Vault Doors on the metal working bench using the Wielder" title_key="Steel Vault Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
-			<requirement perk_level="1" required_skill_name="steelBuilding" required_skill_level="5" />
+			<requirement perk_level="1" required_skill_name="steelBuilding" required_skill_level="2" />
 			<requirement perk_level="1" required_player_level="55" />
 			<recipe name="vaultDoor01" unlock_level="1" />
 		</perk>
 		<perk name="steelGunSafePerk" icon="ui_game_symbol_gunSafe" description_key="Learn to craft The Steel Gun Safe on the metal work bench using the Wielder. these are the strongest secure storage container you can make" title_key="Steel Gun Safe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
-			<requirement perk_level="1" required_skill_name="steelBuilding" required_skill_level="20" />
 			<requirement perk_level="1" required_player_level="55" />
 			<recipe name="cntSteelGunSafe" unlock_level="1" />
 			<recipe name="cntSteelGunSafeB" unlock_level="1" />
@@ -3937,9 +3957,14 @@
 			<recipe name="garageDoorMetal_v1" unlock_level="1" />
 		</perk>
 		<perk name="metalDrawBridgePerk" icon="ui_game_symbol_metalReinforcedWoodDrawBridge" description_key="Learn to craft a Draw Bridge on the metal working bench using a wrench" title_key="DrawBridge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="science">
-			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="25" />
+			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="2" />
 			<recipe name="metalReinforcedWoodDrawBridge" unlock_level="1" />
-		</perk><perk name="badMechanic" icon="ui_game_symbol_resource" description_key="badMechanicDesc" title_key="badMechanic" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" group="science">
+		</perk>
+        <perk name="garageDoorPerk" icon="ui_game_symbol_garageDoorMetal_v1" description_key="Learn to craft a Garage Door on the metal work bench" title_key="Garage Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="science">
+			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="35" />
+			<recipe name="garageDoorMetal_v1" unlock_level="1" />
+		</perk>
+        <perk name="badMechanic" icon="ui_game_symbol_resource" description_key="badMechanicDesc" title_key="badMechanic" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" group="science">
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="1" />
 			<requirement perk_level="2" required_skill_name="engineeringCraft" required_skill_level="10" />
 			<requirement perk_level="3" required_skill_name="engineeringCraft" required_skill_level="20" />
@@ -4027,18 +4052,28 @@
 		</perk>
         <!--PROFESSION-->
         <perk name="carpenter" icon="ui_game_symbol_carpenter" description_key="These are the skills a Carpenter starts with. Collect 20 Profession pages to learn another profession" title_key="Carpenter" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
-			<recipe name="woodFrameBlock" unlock_level="2" />
-			<recipe name="woodFrameCNRFull" unlock_level="2" />
-			<recipe name="woodFrameCNRInside" unlock_level="2" />
-			<recipe name="woodFrameWedge" unlock_level="2" />
-			<recipe name="woodFrameRamp" unlock_level="2" />
-			<recipe name="woodStairs25" unlock_level="2" />
-			<recipe name="woodPillar100" unlock_level="2" />
-			<recipe name="powerPoleWoodPillar50" unlock_level="2" />
-			<recipe name="woodPlate" unlock_level="2" />
-			<recipe name="woodPole" unlock_level="2" />
-			<recipe name="woodArrowSlitHalf" unlock_level="2" />
-			<!--upgrade material-->
+			<recipe name="woodFrameBlock" unlock_level="1" />
+			<recipe name="woodFrameCNRFull" unlock_level="1" />
+			<recipe name="woodFrameCNRInside" unlock_level="1" />
+			<recipe name="woodFrameWedge" unlock_level="1" />
+			<recipe name="woodFrameRamp" unlock_level="1" />
+			<recipe name="woodStairs25" unlock_level="1" />
+			<recipe name="woodPillar100" unlock_level="1" />
+			<recipe name="powerPoleWoodPillar50" unlock_level="1" />
+			<recipe name="woodPlate" unlock_level="1" />
+			<recipe name="woodPole" unlock_level="1" />
+			<recipe name="woodArrowSlitHalf" unlock_level="1" />
+			<recipe name="woodCatwalk" unlock_level="1" />
+            <recipe name="woodCatwalkRailing" unlock_level="1" />
+            <recipe name="woodCatwalkRailingCNR" unlock_level="1" />
+            <recipe name="woodRailing" unlock_level="1" />
+            <recipe name="woodCatwalkWedgeRailing" unlock_level="1" />
+            <recipe name="woodStairsBoard" unlock_level="1" />
+            <recipe name="woodStairsBoardRailing" unlock_level="1" />
+            <recipe name="woodSupport" unlock_level="1" />
+            <recipe name="woodWedgeTip" unlock_level="1" />
+            <recipe name="window03Wood" unlock_level="1" />
+           
 			<effect name="CraftingTime">
 				<multiply perk_level="0" value="1" />
 				<multiply perk_level="1" value="0.9" />

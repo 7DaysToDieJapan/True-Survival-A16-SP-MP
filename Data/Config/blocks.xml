@@ -16194,7 +16194,7 @@ kind of free
 		<property name="Model" value="#metalBench?metalBench" />
         <property name="ModelOffset" value="0,-0.02,0" />
 		<property name="CustomIcon" value="ui_game_symbol_metalWorkBench" />
-		<property name="MultiBlockDim" value="2,2,1" />
+		<property name="MultiBlockDim" value="2,1,1" />
 		<property name="HeatMapStrength" value="2" />
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="25" />

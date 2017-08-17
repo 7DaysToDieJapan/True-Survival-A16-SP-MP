@@ -13788,7 +13788,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="ui_game_symbol_blockbook" />
 		<property name="Group" value="Books" />
 	</item>
-    <item id="2029" name="carbonCrossbowSchematic">
+    <item id="2030" name="carbonCrossbowSchematic">
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
 			<property name="Recipes_to_learn" value="carbonCrossbow" />
@@ -15666,7 +15666,7 @@ Mesh files no longer used:
 			<property name="Sound_start" value="player_eating" />
 		</property>
 	</item>
-    <item id="1865" name="skillPaper">
+    <item id="2031" name="skillPaper">
 		<property name="Extends" value="itemMaster" />
 		<property name="DescriptionKey" value="scrapRubberDesc" />
 		<property name="CustomIcon" value="ui_game_symbol_scrapRubber" />
@@ -16677,7 +16677,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1998" name="plasticCondom">
 		<property name="Extends" value="itemMaster" />
-		<property name="Material" value="Mplastics" />
+		<property name="Material" value="Mrubber" />
 		<property name="CustomIcon" value="ui_game_symbol_plasticCondom" />
 		<property name="Weight" value="1" />
 	</item>
