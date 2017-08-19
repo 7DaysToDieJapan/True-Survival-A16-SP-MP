@@ -647,6 +647,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="rock02" prob=".005" />
 				<decoration type="block" blockname="rock04" prob=".005" />
 				<decoration type="block" blockname="treeDeadShrub" prob="0.0005" />
+                <decoration type="block" blockname="fernSmall" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="rockResource02" prob=".0005" rotatemax="3" />
 				<decoration type="block" blockname="cntBirdnest" prob="0.002" />
 				<decoration type="block" blockname="plantedChrysanthemum3Harvest" prob="0.002" />
@@ -673,9 +674,6 @@ If you do not declare them, the decorations of the main biome are used.
 			<Temperature min="-45" max="-45" prob="1"/>
 			<Fog min="0" max="5" prob="0.15"/>
 			<Fog min="0" max="0" prob="0.25"/>
-
-
-
 			<!-- Cloud Density *Must be above 60 to Rain* -->
 			<CloudThickness min="70" max="100" prob="0.25"/>
 			<CloudThickness min="50" max="70" prob="0.25"/>
@@ -684,22 +682,15 @@ If you do not declare them, the decorations of the main biome are used.
 			<!-- Rain Density -->
 			<Precipitation min="100" max="100" prob="0.2"/>
 			<Precipitation min="50" max="75" prob="0.2"/>
-
-
-
 			<Precipitation min="25" max="50" prob="0.2"/>
 			<Precipitation min="0" max="25" prob="0.2"/>
-
 			<Precipitation min="0" max="0" prob="0.2"/>
-
-
 			<!-- Wind spd -->
 			<Wind min="75" max="100" prob="0.25"/>
 			<Wind min="50" max="75" prob="0.25"/>
 			<Wind min="0" max="25" prob="0.25"/>
 			<Wind min="25" max="50" prob="0.25"/>
 		</weather>
-
 			<subbiome prob="0.11">
 				<!-- Pine Forest Sub Biome Clustered Flowers and Boulders -->
 				<layers>
@@ -920,6 +911,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="rockResource" prob=".0001" rotatemax="3" />
 				<decoration type="block" blockname="rockResource02" prob=".0001" rotatemax="3" />
 				<decoration type="block" blockname="cntBirdnest" prob="0.002" />
+                <decoration type="block" blockname="fernSmall" prob="0.001" rotatemax="7" />
 				<decoration type="block" blockname="treeDeadShrub" prob="0.01" rotatemax="7" />
 				<decoration type="block" blockname="treeJuniper6m" prob="0.0025" rotatemax="7" />
 				<decoration type="block" blockname="treeMountainPine8m" prob="0.01" rotatemax="7" />
@@ -942,9 +934,6 @@ If you do not declare them, the decorations of the main biome are used.
 				<Temperature min="-32" max="-32" prob="1"/>
                 <Fog min="0" max="5" prob="0.15"/>
                 <Fog min="0" max="0" prob="0.25"/>
-
-
-
                 <!-- Cloud Density *Must be above 60 to Rain* -->
                 <CloudThickness min="70" max="100" prob="0.25"/>
                 <CloudThickness min="50" max="70" prob="0.25"/>

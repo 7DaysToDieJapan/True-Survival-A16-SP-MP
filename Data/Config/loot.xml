@@ -971,10 +971,10 @@
 		<item name="plasticShoppingBag" prob="10" />
 	</lootgroup>
 	<lootgroup name="electricJunk" >
-		<item name="electricShaver" prob="20" />
-		<item name="electricToyMotor" prob="20" />
+		<item name="electricShaver" prob="25" />
+		<item name="electricToyMotor" prob="25" />
 		<item name="electricToaster" prob="20" />
-		<item name="electricBlackVibrator" prob="20" />
+		<item name="electricBlackVibrator" prob="10" />
 		<item name="electricBlender" prob="20" />
 	</lootgroup>
 	<lootgroup name="mechanicalJunk" >
@@ -2282,7 +2282,7 @@
 	</lootcontainer>
 	<!-- medicine cabinets -->
 	<lootcontainer id="7" count="1,2" size="5,3" sound_open="UseActions/open_medicine_cabinet" sound_close="UseActions/close_medicine_cabinet" loot_quality_template="baseTemplate">
-		<item group="medicine" prob="10.0"/>
+		<item group="medicine" prob="11.0"/>
 		<item name="glassCompact" prob="6.81" />
 		<item name="ironHairSpray" prob="6.81" />
 		<item name="ironScissors" prob="6.81" />
@@ -2292,9 +2292,9 @@
 		<item name="plasticToothBrush" prob="6.81" />
 		<item name="plasticLighter" prob="6.81" />
 		<item name="electricShaver" prob="6.81" />
-		<item name="electricBlackVibrator" prob="6.81" />
+		<item name="electricBlackVibrator" prob="4.81" />
 		<item name="steelBracelet" prob="6.81" />
-        <item group="empty" prob="15" />
+        <item group="empty" prob="16" />
 	</lootcontainer>
 	<!-- kitchen sink, cupboards (lower), cleaning chemicals, plates, silverware, pots and pans -->
 	<lootcontainer id="8" count="1,2" size="4,3" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" loot_quality_template="baseTemplate">

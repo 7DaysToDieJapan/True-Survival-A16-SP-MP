@@ -170,8 +170,8 @@
 	
 	<wilderness_rules>
 		<wilderness_rule name="wildernessDefault" spawn_min_max="15,20">
-			<path_material value="gravel" /> 
-			<path_radius value="2" />
+			<path_material value="asphalt" /> 
+			<path_radius value="4" />
 			<path_adjust_terrain value="false"/>
 			<prefab_rule name="wildernessGroup" prob="1"/>
 		</wilderness_rule>
@@ -1394,7 +1394,7 @@
 	</biome_intensity_generators>
     <!-- JZMOD BIOME LAYOUT -->
     <biome_spawn_rules>
-        <!-- BIOMES PERCENTAGE-->
+       <!-- BIOMES PERCENTAGE-->
 		<biome_spawn_rule name="forest">
 			<biome_generator range="0.11,0.23" />
 		</biome_spawn_rule>
@@ -1471,8 +1471,7 @@
 			<distance_from_center range="10000,11000" />
 		</biome_spawn_rule>
    	</biome_spawn_rules>
-    
-    
+       
     <!--JZMOD RINGS FOR TESTING BIOMES
     <biome_spawn_rules>
     

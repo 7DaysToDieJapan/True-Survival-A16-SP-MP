@@ -100,8 +100,8 @@ Mesh files no longer used:
 		<!-- 54 = about 250 points of crafting skill XP. This does not base off the crafting XP auto-calculation. It has a base value of 5 or so. This only affects REPAIRING an item, not workbench combines. -->
 	</item>
 	<item id="6" name="clubWood">
+        <property name="Extends" value="clubMaster" />
 		<property name="RepairTools" value="stick" />
-		<property name="Extends" value="clubMaster" />
 		<property name="Group" value="Ammo/Weapons,Basics" />
 	</item>
 	<item id="7" name="clubIron">
@@ -2417,7 +2417,6 @@ Mesh files no longer used:
 		<property name="RepairTools" value="shortMetalPipe" />
 		<property name="HoldType" value="29" />
 		<property name="DegradationBreaksAfter" value="true" />
-		<property name="SoundJammed" value="ItemNeedsRepair" />
 		<property name="SoundDestroy" value="metaldestroy1" />
 		<property name="SellableToTrader" value="false" />
 		<property name="EconomicValue" value="240" />
@@ -2440,8 +2439,8 @@ Mesh files no longer used:
 			<property name="DamageBonus.wood" value="1" />
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
-			<property name="ActionExp" value="0" />
-			<property name="ActionExpBonusMultiplier" value="0" />
+			<property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 			<property name="ToolCategory.ScrapIronBuilding" value="1" param1="8" />
 			<property name="Sound_harvesting" value="wrench_harvest" param1="metal" />
 			<property name="Particle_harvesting" value="true" param1="metal" />
@@ -12176,7 +12175,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1610" name="oldAxe">
 		<property name="Extends" value="fireaxeIron" />
-		<property name="Meshfile" value="#axe1?AXE5" /> 
+		<property name="Meshfile" value="#Hatchet?HatchetPrefab" /> 
 		<property name="HoldType" value="2" />
 		<property name="RepairTools" value="NoRepair" />
 		<property name="CustomIcon" value="ui_game_symbol_axe02" />
@@ -13818,7 +13817,7 @@ Mesh files no longer used:
 			<property name="Gain_wellness" value="0" />
 			<property name="Sound_start" value="Misc/recipe_unlocked" />
 		</property>
-		<property name="ActionExp" value="100" />
+		<property name="ActionExp" value="350" />
 		<property name="ActionSkillGroup" value="Scavenging" />
 	</item>
 	<item id="1689" name="bluntWeaponsForDummies">
@@ -15285,13 +15284,13 @@ Mesh files no longer used:
     <item id="1836" name="fruitCake">
 		<property name="Extends" value="foodMaster" />
 		<property name="DescriptionKey" value="fruitCakeDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_fruitCake" />
 		<property class="Action1">
 			<property name="Gain_food" value="10" />
 			<property name="Gain_water" value="-6" />
 			<property name="Gain_stamina" value="-20" />
 			<property name="Buff" value="nutrition_1_Trigger,wellness_3_Trigger,eatFood_5_Trigger" />
 			<property name="Create_item" value="emptyJar" />
-			<property name="CustomIcon" value="ui_game_symbol_fruitCake" />
 		</property>
 	</item>
     <item id="1837" name="dates">
@@ -15640,6 +15639,7 @@ Mesh files no longer used:
 		<property name="Material" value="Msteel" />
 		<property name="Weight" value="1" />
 		<property name="MeltTimePerUnit" value="0.5" />
+        <property name="RepairAmount" value="10" />
 	</item>
     <item id="1865" name="scrapRubber">
 		<property name="Extends" value="itemMaster" />
@@ -16915,6 +16915,12 @@ Mesh files no longer used:
 		<property name="DescriptionKey" value="compactDriverDesc" />
 		<property name="RepairExpMultiplier" value="2" />
 	</item>
+    <item id="2033" name="hammer">
+        <property name="Extends" value="clubMaster" />
+        <property name="Meshfile" value="#Hammer?HammerPrefab" />
+    </item>
+       
+   
     <!-- JZMOD UN USED MESHES
         <property name="Meshfile" value="#crudeweapons?nailwood" /><property name="HoldType" value="2" />works nial shiv not using
         <property name="Meshfile" value="#crudeweapons?Fork" /><property name="HoldType" value="36" />works brass knocklew fork not using

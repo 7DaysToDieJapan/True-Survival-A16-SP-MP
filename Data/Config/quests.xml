@@ -421,7 +421,6 @@
 		<objective type="BlockPlace" id="treePlantedMountainPine1m" value="10" />
 		<objective type="BlockPlace" id="treePlantedMaple1m" value="10" />
 		<objective type="BlockPlace" id="treePlantedWinterPine1m" value="10" />
-		<reward type="ShowTip" value="FarmingTip" stage="aftercomplete" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming1" />

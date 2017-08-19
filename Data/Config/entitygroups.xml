@@ -1985,7 +1985,7 @@ animalStagHostile
         <entity name="zombieBiker5" prob="0.46" />
         <entity name="zombieBiker6" prob="0.46" />
 	</entitygroup>
-    <entitygroup name="sleeperHorde5"><!--SLOW, FAST AND ALL SPECIAL-->
+    <entitygroup name="sleeperHorde5"><!--SLOW, FAST AND ALL SPECIAL--> 
         <!--50%-->
 		<entity name="zombieJoe" prob="0.41" />
         <entity name="zombieBoe" prob="0.41" />

@@ -2724,7 +2724,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="concreteSledgeCraft" icon="ui_game_symbol_sledge" description_key="Wrench." title_key="Wrench" group="crafting">
+		<crafting_skill name="concreteSledgeCraft" icon="ui_game_symbol_sledge" description_key="concreteSledge." title_key="concreteSledge" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2786,7 +2786,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="rConcreteBarCraft" icon="ui_game_symbol_sledge" description_key="Wrench." title_key="Wrench" group="crafting">
+		<crafting_skill name="rConcreteBarCraft" icon="ui_game_symbol_sledge" description_key="rConcreteBar." title_key="rConcreteBar" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2848,7 +2848,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="steelWelderCraft" icon="ui_game_symbol_welder" description_key="Wrench." title_key="Wrench" group="crafting">
+		<crafting_skill name="steelWelderCraft" icon="ui_game_symbol_welder" description_key="Welder." title_key="Welder" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -3034,7 +3034,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="wireToolCraft" icon="ui_game_symbol_wireTool" description_key="Wrench." title_key="Wrench" group="crafting">
+		<crafting_skill name="wireToolCraft" icon="ui_game_symbol_wireTool" description_key="wireTool." title_key="wireTool" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -3096,7 +3096,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="paintToolCraft" icon="ui_game_symbol_paintTool" description_key="Wrench." title_key="Wrench" group="crafting">
+		<crafting_skill name="paintToolCraft" icon="ui_game_symbol_paintTool" description_key="paintTool." title_key="paintTool" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />

@@ -3670,7 +3670,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <recipe name="woodJavelin" count="1" craft_area="cntVendingMachine" craft_time="1" craft_exp_gain="0">
 		<ingredient name="rockSmall" count="5" />
 	</recipe>-->
-	<!-- 	
+
 	<recipe name="jailDoor" count="1" craft_area="workbench">
 		<ingredient name="forgedSteel" count="12"/>
 		<ingredient name="spring" count="2"/>
@@ -3923,5 +3923,5 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="partsMP5_parts" count="1"/>
 		<ingredient name="mechanicalParts" count="6"/>
 	</recipe> 
-  -->
+
 </recipes>

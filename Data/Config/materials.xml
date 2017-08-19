@@ -550,7 +550,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="Experience" value="4" />
 	</material>
 	<material id="Msteel">
-		<property name="damage_category" value="metal" />
+		<property name="damage_category" value="steel" />
 		<property name="surface_category" value="metal" />
 		<property name="forge_category" value="steel" />
 		<property name="Hardness" type="float" value="1" />
