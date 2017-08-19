@@ -1,0 +1,36 @@
+<!-- Thing listed using "Mesh" have been adjusted to be held in hand.  Hand position provided  To use as a block, use offset in game as needed  -->
+
+<property name="Model" value="#FernSmall?FernSmallPrefab" />
+<property name="Model" value="#Caladium?CaladiumPrefab" />
+<property name="Model" value="#JackoSmall?JackoSmallPrefab" />
+<property name="Model" value="#Jacko?JackoPrefab" />
+<property name="Model" value="#WheelBarrow?WheelBarrowPrefab"/>
+<property name="Model" value="#PhoneBooths?PhoneBooth01Prefab"/>
+<property name="Model" value="#PhoneBooths?PhoneBooth02Prefab"/>
+<property name="Model" value="#PhoneBooths?PhoneBooth03Prefab"/>
+<property name="Model" value="#Rails?RailsPrefab"/>
+<property name="Model" value="#FireExtinguisher?FireExtinguisherPrefab"/>
+<property name="Model" value="#Potato?PotatoPrefab" />
+<property name="Model" value="#Boxcar?BoxcarPrefab" />
+<property name="Model" value="#Anvil?AnvilPrefab" />
+<property name="Model" value="#PropaneTank?PropaneTankPrefab" />
+<property name="Model" value="#ShippingContainer?ShippingContainerPrefab" />
+<property name="Model" value="#RoadBlocks?RoadBlock1Prefab" />
+<property name="Model" value="#RoadBlocks?RoadBlock2Prefab" />
+<property name="Model" value="#Skull?SkullPrefab" />
+<property name="Model" value="#RadioTower?RadioTowerPrefab" />
+<property name="Model" value="#Boxcar?BoxcarPrefab" />
+<property name="Model" value="#AirConditioner?AirConditionerPrefab" />
+<property name="Model" value="#Crow?CrowPrefab" />
+<property name="Model" value="#CarOnRails?CarOnRailsPrefab" />
+
+<!-- Hold type 2 -->
+<property name="Meshfile" value="#Pan01?Pan02Prefab" />
+<property name="Meshfile" value="#Pan02?Pan02Prefab" />
+<property name="Meshfile" value="#Pan03?Pan02Prefab" />
+<property name="Meshfile" value="#IronRod?IronRodPrefab" />
+<property name="Meshfile" value="#Shovel?ShovelPrefab" />
+<property name="Meshfile" value="#Hatchet?HatchetPrefab" />
+<property name="Meshfile" value="#Hammer?HammerPrefab" />
+<property name="Meshfile" value="#Broom?BroomPrefab" />
+
