@@ -1135,6 +1135,35 @@
 	<quest id="StartMason" name_key="challenge_Profession" subtitle_key="Mason Quests" description_key="challenge_all_offer" icon="ui_game_symbol_Mechanic" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Item" id="brickHammer" value="300" />
 	</quest>
-    
-    
+    <!--JZMOD TRADER BARTAR SYSTEM-->
+    <quest id="q_barterForGoldenrodTea" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="goldenRodTea" value="15" />
+	</quest>
+    <quest id="q_barterForCraftedRevolver" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="craftedRevolver" value="500" />
+	</quest>
+    <quest id="q_barterForFirstAidBandage" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="firstAidBandage" value="5" />
+	</quest>
+    <quest id="q_barterForGrainAlcohol" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="grainAlcohol" value="2" />
+	</quest>
+    <quest id="q_barterForForgedIron" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="forgedIron" value="20" />
+	</quest>
+    <quest id="q_barterForForgedSteel" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="forgedSteel" value="20" />
+	</quest>
+    <quest id="q_barterForCorrugatedMetalSheet" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="corrugatedMetalSheet" value="100" />
+	</quest>
+    <quest id="q_barterForConcreteMix" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="ConcreteMix" value="100" />
+	</quest>
+    <quest id="q_barterForMetalRivetSheet" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="MetalRivetSheet" value="100" />
+	</quest>
+    <quest id="q_barterForFirstAidKit" name_key="Bartering" subtitle_key="Bartering" description_key="barter_all_offer" icon="ui_game_symbol_Mechanic" repeatable="true" category_key="challenge" offer_key="barter_all_offer" difficulty="easy">
+		<reward type="Item" id="FirstAidKit" value="2" />
+	</quest>
 </quests>

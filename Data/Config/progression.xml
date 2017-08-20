@@ -262,11 +262,7 @@
 			</effect>
 		</crafting_skill>
 		<crafting_skill name="huntingCraft" icon="ui_game_symbol_huntingKnife" description_key="Learn to craft better Hunting knifes and fishing lures." title_key="huntingCraft" skill_point_cost_per_level="0" group="scavenging">
-			<recipe name="fieldKnife" unlock_level="5" />
-            <recipe name="animalContainer" unlock_level="5" />
-            <recipe name="spiderTrap" unlock_level="5" />
-            <recipe name="scorpionTrap" unlock_level="5" />
-            <effect name="HarvestCount">
+			<effect name="HarvestCount">
                 <multiply skill_level="1,10" value="1" />
 				<multiply skill_level="10,20" value="1,2" />
 				<multiply skill_level="20,30" value="2,3" />
@@ -3370,20 +3366,29 @@
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="barbedWireSheet" unlock_level="1" />
 		</perk>
-         <perk name="spikesPerk" icon="ui_game_symbol_trapSpikes01" description_key="Learn to craft Wooden Spikes" title_key="Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="weapons">
+        <perk name="spikesPerk" icon="ui_game_symbol_trapSpikes01" description_key="Learn to craft Wooden Spikes" title_key="Wood Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
 			<recipe name="setUpASpikeTrap" unlock_level="1" />
 		</perk>
-		<perk name="logTipsPerk" icon="ui_game_symbol_woodLogSpike1" description_key="Learn to craft Log Tips" title_key="Log Tips" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+		<perk name="logTipsPerk" icon="ui_game_symbol_woodLogSpike1" description_key="Learn to craft Log Tips" title_key="Log Tips" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
 			<recipe name="woodLogSpike1" unlock_level="1" />
 		</perk>
 		<perk name="barbedFencePerk" icon="ui_game_symbol_barbedFence" description_key="Learn to craft Barbed Fence" title_key="Barbed Fence" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
 			<requirement perk_level="1" required_player_level="10" />
 			<recipe name="barbedFence" unlock_level="1" />
 		</perk>
-        <perk name="methaneProducerPerk" icon="ui_game_symbol_methaneProducer" description_key="Learn to craft a Methane gas producer on the metal working bench and use it to craft methane gas bombs." title_key="Methane Gas Bombs" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
+        <perk name="methaneProducerPerk" icon="ui_game_symbol_methaneProducer" description_key="Learn to craft a Methane gas producer on the metal working bench and use it to craft methane gas bombs." title_key="Methane Gas Bombs" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="methaneProducer" unlock_level="1" />
 			<recipe name="gasTankEmpty" unlock_level="1" />
+		</perk>
+        <perk name="ironSpikes" icon="ui_game_symbol_steelSpikes" description_key="Learn to craft iron Spikes that can be upgraded into steel spikes" title_key="Metal Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="weapons">
+			<recipe name="ironSpikes" unlock_level="1" />
+		</perk>
+        <perk name="animalTraps" icon="ui_game_symbol_spiderBuff" description_key="Learn to catch and tame poisonous spiders and scorpions. Keep them as pets or use them as traps for other players." title_key="Animal Traps/Pets" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+			<requirement perk_level="1" required_skill_name="chemistryCraft" required_skill_level="5" />
+            <recipe name="animalContainer" unlock_level="1" />
+            <recipe name="spiderTrap" unlock_level="1" />
+            <recipe name="scorpionTrap" unlock_level="1" />
 		</perk>
         <!--TOOLS-->
         <perk name="simpleWorkBenchPerk" icon="ui_game_symbol_workbench" description_key="Learn to craft a Wood Working Bench. Use it to craft more complex items and faster. The wood working bench has 3 tools - CircularSaw, claw Hammer and wrench." title_key="Wood Working Bench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
@@ -3481,6 +3486,10 @@
 			<recipe name="partsAuger_bladeDiamond" unlock_level="1" />
 			<recipe name="stoneDrill" unlock_level="1" />
 		</perk>
+        <perk name="fieldKnife" icon="ui_game_symbol_fieldKnife" description_key="Learn to craft a Field Knife that can harvest better and more animals resources." title_key="field Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
+			<requirement perk_level="1" required_skill_name="huntingCraft" required_skill_level="25" />
+			<recipe name="fieldKnife" unlock_level="1" />
+		</perk>
         <perk name="ironToolsPerk" icon="ui_game_symbol_pickaxeSteel" description_key="Learn to forge Iron tool heads in the Forge with a Anvil and use them to craft Iron tools" title_key="Iron Tools" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="fireaxeHeadMold" unlock_level="1" />
@@ -3505,6 +3514,11 @@
         <perk name="stillPerk" icon="ui_game_symbol_still" description_key="Learn to craft a still" title_key="Still" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
 			<requirement perk_level="1" required_skill_name="chemistryCraft" required_skill_level="3" />
 			<recipe name="still" unlock_level="1" />
+		</perk>
+         <perk name="chemistryStationPerk" icon="ui_game_symbol_chemistryStation" description_key="Learn to craft achemistry Station on the wood working bench using a claw hammer. Use it to craft complex chemical and medical items. The Chemistry Station has 2 tools - Mortar And Pestle and beaker." title_key="Chemistry Station" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+			<requirement perk_level="1" required_skill_name="medicineCraft" required_skill_level="1" />
+			<requirement perk_level="1" required_player_level="25" />
+			<recipe name="chemistryStation" unlock_level="1" />
 		</perk>
         <!--CLOTHING-->
         <perk name="animalHideArmorPerk" icon="ui_game_symbol_armor_leather" description_key="Learn to craft basic animal hide clothing on the armor table using a Leather Needle." title_key="Animal Hide Armor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="clothing">

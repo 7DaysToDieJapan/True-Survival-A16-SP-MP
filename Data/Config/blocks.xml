@@ -2640,7 +2640,7 @@ group desc for stuff like metal siding
 		<property name="CustomIcon" value="potatoSeed" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#Potato?PotatoPrefab" />
-        <property name="ModelOffset" value="0,-1,0" />
+        <property name="ModelOffset" value="0,-.4,0" />
         <property name="MultiBlockDim" value="1,1,1" />
 		<property name="Collide" value="melee" />
 		<property name="PlantGrowing.Next" value="plantedPotato3Harvest" />
@@ -12101,17 +12101,26 @@ kind of free
 		<property name="Stairs" />
 		<property name="UpgradeRated.ToBlock" value="concreteStairs50" />
 	</block>
+   
 	<block id="1351" name="wallTorchPlayer">
 		<property name="Extends" value="wallTorch" />
-		<property name="CreativeMode" value="Player" />
+        <property name="Class" value="TorchHeatMap" />
+        <property name="HeatMapStrength" value="1.0" />
+		<property name="HeatMapTime" value="1200" />
+        <property name="HeatMapFrequency" value="15" />
+        <property name="CreativeMode" value="Player" />
 		<property name="CustomIcon" value="wallTorch" />
 		<property name="Stacknumber" value="50" />
-		<property name="Class" value="TorchHeatMap" />
-		<property name="HeatMapStrength" value="4.05" />
-		<property name="HeatMapTime" value="1200" />
-		<!-- str1, t600, f5 = 2.5; str1, t900, f5 = 4; str4.05, t1200, f15 = 4.05-8.1; -->
-		<property name="HeatMapFrequency" value="15" />
-		<property name="DescriptionKey" value="torchPlayerGroupDesc" />
+        <property name="CanPickup" value="false"/>
+		<property name="ParticleName" value="torch_wall" />
+		<property name="ParticleOffset" value="0.5,0.8,0.1" />
+		<property name="ActiveRadiusEffects" value="+heatSource(2)" />
+		<property name="Class" value="Campfire" />
+		<property class="Workstation">
+			<property name="Modules" value="fuel" />
+		</property>
+		<drop event="Destroy" name="torch" count="1" />
+		<property name="Group" value="Building" />
 	</block>
 	<block id="1352" name="flagstoneStairs25">
 		<property name="Extends" value="flagstoneMaster" />
@@ -18228,7 +18237,7 @@ kind of free
 		<property name="Material" value="organic" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#scorpion?ScorpionPrefab" />
-		<property name="Collide" value="movement,bullet,rocket,melee" />
+		<property name="Collide" value="bullet,rocket,melee" />
 		<property name="CanPickup" value="true" />
 		<property name="ModelOffset" value="0,0.2,0" />
 		<drop event="Destroy" name="venomSack" count="2" prob="1" />
@@ -18239,7 +18248,7 @@ kind of free
         <property name="Material" value="organic" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#scorpion?SpiderPrefab" />
-		<property name="Collide" value="movement,bullet,rocket,melee" />
+		<property name="Collide" value="bullet,rocket,melee" />
 		<property name="CanPickup" value="false" />
 		<property name="Group" value="Tools/Traps" />
 		<property name="ModelOffset" value="0,0.3,0" />
@@ -18269,6 +18278,7 @@ kind of free
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#poweredtraps?TrapSpike1" />
         <property name="ModelOffset" value="0,-0.1,0" />
+        <property name="MultiBlockDim" value="1,2,1" />
 		<property name="CustomIcon" value="ui_game_symbol_trapSpike" />
 		<property name="Collide" value="movement,bullet,rocket,melee" />
 		<property name="FuelValue" value="36" />
@@ -19171,11 +19181,14 @@ kind of free
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#irSpike?irSpikeR" />
-        <property name="ModelOffset" value="0,-0.1,0" />
+        <property name="ModelOffset" value="0,0,0" />
+        <property name="MultiBlockDim" value="1,1,1" />
+        <property name="Collide" value="movement,bullet,rocket,melee" />
 		<property name="CustomIcon" value="ui_game_symbol_steelSpikes" />
 		<property class="RepairItems">
 			<property name="shortSteelPipe" value="15" />
 		</property>
+		<drop event="Destroy" name="scrapIron" count="1,3" prob="1" />
 		<drop event="Destroy" count="0" />
 	</block>
 	<block id="1703" name="waterPlant">
@@ -19355,11 +19368,22 @@ kind of free
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#irSpike?irSpikeN" />
-        <property name="ModelOffset" value="0,-0.1,0" />
+        <property name="ModelOffset" value="0,0,0" />
+        <property name="MultiBlockDim" value="1,2,1" />
+        <property name="Collide" value="movement,bullet,rocket,melee" />
 		<property name="CustomIcon" value="ui_game_symbol_steelSpikes" />
 		<property class="RepairItems">
 			<property name="shortIronPipe" value="15" />
 		</property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="steelSpikes" />
+			<property name="Item" value="shortSteelPipe" />
+			<property name="ItemCount" value="20" />
+			<property name="UpgradeHitCount" value="4" />
+		</property>
+        <property name="CraftingSkillGroup" value="cobblestoneBuilding" />
+        <property name="DescriptionKey" value="ironSpikesDesc" />
+        <drop event="Destroy" name="scrapIron" count="1,3" prob="1" />
 		<drop event="Destroy" count="0" />
 	</block>
     <block id="1725" name="solarCollector">

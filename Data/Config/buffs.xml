@@ -627,7 +627,10 @@ This requires a 50+ food bar:
     <modify id="1" stat="speedmodifier" mulValue="0.50"/>
 </buff>
 <!--JZMOD 1H MELEE ALT ACTION-->
-<buff id="fightOffEnemy" duration="1.3" icon="ui_game_symbol_fightOffEnemy"/>
+<buff id="fightOffEnemy" duration="1.3" type="speedmodifier" name_key="Fight Off the Enemy" icon="ui_game_symbol_fightOffEnemy" >
+    <modify id="1" stat="speedmodifier" modifyMaxValue="2" />
+	<modify id="2" stat="speedmodifier" mulValue="1.40" />
+</buff>    
 <!-- JZMOD WOUND SYSTEM -->
 <buff id="scratch" duration="1" actions="increment(scratch, 1, 0, 0, 1)" />
 <buff id="scratchesHealing" duration="0" buffif="scratch less 6" debuffif="scratch gequal 6" actions="increment(scratch, -1, 1200, 0, 0);min(scratch, 0)" />
@@ -815,7 +818,7 @@ This requires a 50+ food bar:
 	<modify id="2" stat="coretemp" modifyValue="25" />
 </buff>	
 <!--Spider-->
-<buff id="SpiderPoisoning" name_key="Spider Bite Stage 1" type="speedmodifier" mutex="AntiVenom,SpiderPoisoning2,SpiderPoisoning3" actions="increment(@wellness, -0.1, 600, 0, 0)" onexpired="SpiderPoisoning2" duration="1800" tooltip_key="You've been bitten by a spider" description_key="A spider bit and poisoned you. Now you will need to find or make some Anti-Venom or you will get very ill. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="SpiderBuff" cures="AntiVenom">
+<buff id="SpiderPoisoning" name_key="Spider Bite Stage 1" type="speedmodifier" mutex="AntiVenom,SpiderPoisoning2,SpiderPoisoning3" actions="increment(@wellness, -0.1, 600, 0, 0)" onexpired="SpiderPoisoning2" duration="1800" tooltip_key="You've been bitten by a spider" description_key="A spider bit and poisoned you. Now you will need to find or make some Anti-Venom or you will get very ill. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ui_game_symbol_spiderBuff" cures="AntiVenom">
     <modify id="0" stat="speedmodifier" mulValue="0.98" />
     <modify id="1" stat="water" amount="-1" rate="30" />
     <modify id="2" stat="coretemp" modifyValue="5" />
@@ -829,19 +832,19 @@ This requires a 50+ food bar:
 <buff id="SpiderRash" name_key="Bite Rash" type="healthdown" duration="7200" tooltip_key="Dont Scratch it!" description_key="A painful rash is spreading from the bite wound. Use a healing cream to soothe it." icon="Rash" cures="herbalCream,aloeCream" >
     <modify id="0" stat="health" amount="-1" rate="60" />
 </buff>
-<buff id="SpiderPoisoning3" name_key="Spider Poisoning Stage 3" type="speedmodifier" mutex="AntiVenom" actions="buff(pain);increment(@wellness, -0.5, 600, 0, 0)" duration="3600" tooltip_key="You feel very ill with a deathly chill" description_key="Your body convulses with shivers. You have going through the worst of it. If you can make it through the day you might just live or you can find or make some Anti-Venom. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="SpiderBuff" cures="AntiVenom">
+<buff id="SpiderPoisoning3" name_key="Spider Poisoning Stage 3" type="speedmodifier" mutex="AntiVenom" actions="buff(pain);increment(@wellness, -0.5, 600, 0, 0)" duration="3600" tooltip_key="You feel very ill with a deathly chill" description_key="Your body convulses with shivers. You have going through the worst of it. If you can make it through the day you might just live or you can find or make some Anti-Venom. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ui_game_symbol_spiderBuff" cures="AntiVenom">
 	<modify id="0" stat="speedmodifier" mulValue="0.75" />
     <modify id="1" stat="water" amount="-1" rate="30" />
     <modify id="2" stat="coretemp" modifyValue="-50" />
     <modify id="3" stat="stamina" amount="-5" rate="1" />
 </buff>
    <!--Scorpions-->
-<buff id="ScorpionPoisoning" name_key="Scorpion Sting Stage 1" type="speedmodifier" mutex="AntiVenom,ScorpionPoisoning2,ScorpionPoisoning3" actions="increment(@wellness, -0.1, 600, 0, 0)" onexpired="ScorpionPoisoning2" duration="1800" tooltip_key="You've been stung by a Scorpion" description_key="A Scorpion stung and poisoned you. Now you will need to find or make some Anti-Venom or you will get very ill. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ScorpionBuff" cures="AntiVenom">
+<buff id="ScorpionPoisoning" name_key="Scorpion Sting Stage 1" type="speedmodifier" mutex="AntiVenom,ScorpionPoisoning2,ScorpionPoisoning3" actions="increment(@wellness, -0.1, 600, 0, 0)" onexpired="ScorpionPoisoning2" duration="1800" tooltip_key="You've been stung by a Scorpion" description_key="A Scorpion stung and poisoned you. Now you will need to find or make some Anti-Venom or you will get very ill. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ui_game_symbol_scorpionBuff" cures="AntiVenom">
 	<modify id="0" stat="speedmodifier" mulValue="0.92" />
     <modify id="1" stat="stamina" amount="-2" rate="1" />
     <modify id="2" stat="coretemp" modifyValue="10" />
 </buff>
-<buff id="ScorpionPoisoning2" name_key="Scorpion Sting Stage 2" type="speedmodifier" mutex="AntiVenom" actions="buff(Fever);increment(@wellness, -0.2, 600, 0, 0)" onexpired="ScorpionPoisoning3" duration="3600" tooltip_key="The sting burns." description_key="The scorpion sting is gitting worse and you feel warmer. You need to find or make Anti-Venom or you will get much sicker. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ScorpionBuff" cures="AntiVenom">
+<buff id="ScorpionPoisoning2" name_key="Scorpion Sting Stage 2" type="speedmodifier" mutex="AntiVenom" actions="buff(Fever);increment(@wellness, -0.2, 600, 0, 0)" onexpired="ScorpionPoisoning3" duration="3600" tooltip_key="The sting burns." description_key="The scorpion sting is gitting worse and you feel warmer. You need to find or make Anti-Venom or you will get much sicker. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ui_game_symbol_scorpionBuff" cures="AntiVenom">
 	<modify id="0" stat="speedmodifier" mulValue="0.82" />
     <modify id="1" stat="coretemp" modifyValue="30" />
     <modify id="2" stat="stamina" amount="-4" rate="1" />
@@ -849,7 +852,7 @@ This requires a 50+ food bar:
 <buff id="Fever" name_key="Fever" type="coretemp" duration="7200" tooltip_key="Is it getting hot in here?" description_key="You feel very hot all the sudden. A fever has come on. Cool off by dumping a drink on your head and getting a Wet head." icon="Fever" cures="wetHead" >
 	<modify id="0" stat="coretemp" modifyValue="20" />
 </buff>
-<buff id="ScorpionPoisoning3" name_key="Scorpion Sting Stage 3" type="speedmodifier" mutex="AntiVenom" actions="buff(SeverFever);increment(@wellness, -0.5, 600, 0, 0)" duration="3600" tooltip_key="Soooo Hot!" description_key="The scorpion sting has gotten worse and so has your temperature but if you can last the day you might just make it or you can find or make some Anti-Venom. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ScorpionBuff" cures="AntiVenom">
+<buff id="ScorpionPoisoning3" name_key="Scorpion Sting Stage 3" type="speedmodifier" mutex="AntiVenom" actions="buff(SeverFever);increment(@wellness, -0.5, 600, 0, 0)" duration="3600" tooltip_key="Soooo Hot!" description_key="The scorpion sting has gotten worse and so has your temperature but if you can last the day you might just make it or you can find or make some Anti-Venom. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ui_game_symbol_scorpionBuff" cures="AntiVenom">
 	<modify id="0" stat="speedmodifier" mulValue="0.70" />
     <modify id="1" stat="coretemp" modifyValue="50" />
     <modify id="2" stat="stamina" amount="-6" rate="1" />
