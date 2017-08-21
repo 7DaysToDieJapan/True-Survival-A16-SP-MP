@@ -15,14 +15,18 @@
 <property name="Model" value="#Anvil?AnvilPrefab" />
 <property name="Model" value="#PropaneTank?PropaneTankPrefab" />
 <property name="Model" value="#ShippingContainer?ShippingContainerPrefab" />
-<property name="Model" value="#RoadBlocks?RoadBlock1Prefab" />
-<property name="Model" value="#RoadBlocks?RoadBlock2Prefab" />
+<property name="Model" value="#RoadBlocks?RoadBlock01Prefab" />
+<property name="Model" value="#RoadBlocks?RoadBlock02Prefab" />
 <property name="Model" value="#Skull?SkullPrefab" />
 <property name="Model" value="#RadioTower?RadioTowerPrefab" />
 <property name="Model" value="#Boxcar?BoxcarPrefab" />
 <property name="Model" value="#AirConditioner?AirConditionerPrefab" />
 <property name="Model" value="#Crow?CrowPrefab" />
 <property name="Model" value="#CarOnRails?CarOnRailsPrefab" />
+<property name="Model" value="#Motorbike?MotorbikePrefab" />
+<property name="Model" value="#Tricycle?TricyclePrefab" />
+
+
 
 <!-- Hold type 2 -->
 <property name="Meshfile" value="#Pan01?Pan02Prefab" />
