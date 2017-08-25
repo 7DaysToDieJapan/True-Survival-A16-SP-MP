@@ -27,12 +27,15 @@
 <property name="Model" value="#Motorbikes?MotorbikeDownPrefab" /> <!-- lays flat on handlebars and pegs -->
 <property name="Model" value="#Motorbikes?MotorbikeUpStandUpPrefab" /> <!-- Same model, standing up with kickstand up, good for laying against a block wall -->
 <property name="Model" value="#Motorbikes?MotorbikeUpStandDownPrefab" /> <!-- Same modle, standing Up on kickstand -->
-
+<property name="Model" value="#RazorWire?RazorWirePrefab" />
+<property name="Model" value="#Oldbench?OldBenchPrefab" /> <!-- multidim (2,1,1) -->
+<property name="Model" value="#CarrotPlants?CarrotPlantPrefab" />
+<property name="Model" value="#CarrotPlants?CarrotPlantSmallPrefab" />
 
 <!-- Hold type 2 -->
-<property name="Meshfile" value="#Pan01?Pan02Prefab" />
+<property name="Meshfile" value="#Pan01?Pan01Prefab" />
 <property name="Meshfile" value="#Pan02?Pan02Prefab" />
-<property name="Meshfile" value="#Pan03?Pan02Prefab" />
+<property name="Meshfile" value="#Pan03?Pan03Prefab" />
 <property name="Meshfile" value="#IronRod?IronRodPrefab" />
 <property name="Meshfile" value="#Shovel?ShovelPrefab" />
 <property name="Meshfile" value="#Hatchet?HatchetPrefab" />
