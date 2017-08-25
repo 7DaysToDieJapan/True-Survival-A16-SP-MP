@@ -791,7 +791,7 @@ This requires a 50+ food bar:
 <!--JZMOD Leg Break-->
 <buff id="breakLeg" mutex="brokenLegHealthy,brokenLegNormal,brokenLegMalnourished" hitmask="leftleg;rightleg" duration="1" actions="buff(brokenLeg)" />
 <!--JZMOD Poisonous Bites and Stings-->
-<buff id="antiVenom" duration="300" actions="debuff(snakePoisoning);debuff(snakePoisoning2);debuff(snakePoisoning3)" name_key="AntiVenom" tooltip_key="I'm Cured!" description_key="You are cured of venom poisoning and immune for a short time." icon="ui_game_symbol_AntiVenom" />
+<buff id="antiVenom" duration="300" actions="debuff(snakePoisoning);debuff(snakePoisoning2);debuff(snakePoisoning3);debuff(SpiderPoisoning);debuff(SpiderPoisoning2);debuff(SpiderPoisoning3);debuff(ScorpionPoisoning);debuff(ScorpionPoisoning2);debuff(ScorpionPoisoning3)" name_key="AntiVenom" tooltip_key="I'm Cured!" description_key="You are cured of venom poisoning and immune for a short time." icon="ui_game_symbol_AntiVenom" />
 <!--JZMOD Snake-->
 <buff id="snakePoisoning" name_key="Snake Bite Stage 1" type="speedmodifier" mutex="antiVenom,snakePoisoning,snakePoisoning2,snakePoisoning3" actions="buff(snakeStun);buff(snakelimp);increment(@wellness, -0.1, 300, 0, 0)" onexpired="snakePoisoning2" duration="1800" tooltip_key="You've been bitten by a snake" description_key="A snake bit and poisoned you. You will need to find or make some Anti-Venom or you will get very ill. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ui_game_symbol_SnakeBuff" cures="antiVenom">
 	<modify id="0" stat="stamina" amount="-2" rate="1" />

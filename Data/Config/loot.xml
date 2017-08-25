@@ -122,15 +122,15 @@
 		</placeholder>
 		<!-- Replace the lootStreet with one of the following -->
 		<placeholder name="lootStreetHelper">
-			<block name="cntTrashPile01" prob="10.6" />
-			<block name="cntTrashPile02" prob="10.6" />
-			<block name="cntTrashPile03" prob="10.6" />
-			<block name="cntTrashPile04" prob="10.6" />
-			<block name="cntTrashPile05" prob="10.6" />
-			<block name="cntTrashPile06" prob="10.6" />
-			<block name="cntTrashPile07" prob="10.6" />
-			<block name="cntTrashPile08" prob="10.6" />
-			<block name="cntTrashPile09" prob="10.6" />
+			<block name="cntTrashPile01" prob="10.5" />
+			<block name="cntTrashPile02" prob="10.5" />
+			<block name="cntTrashPile03" prob="10.5" />
+			<block name="cntTrashPile04" prob="10.5" />
+			<block name="cntTrashPile05" prob="10.5" />
+			<block name="cntTrashPile06" prob="10.5" />
+			<block name="cntTrashPile07" prob="10.5" />
+			<block name="cntTrashPile08" prob="10.5" />
+			<block name="cntTrashPile09" prob="10.5" />
 			<block name="cntShoppingCart" prob="0.5" />
 			<block name="shoppingCartEmpty" prob="0.5" />
 			<block name="cntBackpack01" prob="0.5" />
@@ -140,6 +140,8 @@
 			<block name="cntSportsBag01" prob="0.5" />
 			<block name="cntSportsBag02" prob="0.5" />
 			<block name="cntPurse01" prob="0.5" />
+            <block name="RoadBlock02" prob="0.5" />
+			<block name="RoadBlock01" prob="0.5" />
 		</placeholder>
 		<!-- Replace the lootYard with one of the following -->
 		<placeholder name="lootYardHelper">
@@ -158,6 +160,17 @@
 			<block name="burningBarrel" prob="1.82" />		
 			<block name="gasTank" prob="0.99" />		
 			<block name="gasTankEmpty" prob="1.82" />		
+		</placeholder>
+        <!-- Replace the lootYard with one of the following -->
+		<placeholder name="commercialMachineHelper">
+			<block name="cntVendingMachine2" prob="50.00" />		
+			<block name="PhoneBooth02" prob="25.00" />		
+			<block name="PhoneBooth03" prob="25.00" />		
+		</placeholder>
+        <!-- Replace the lootYard with one of the following -->
+		<placeholder name="cookingUtensilsHelper">
+			<block name="cookingPot" prob="50.00" />		
+			<block name="fryingPanBlock" prob="50.00" />		
 		</placeholder>
 		<!-- Replace the lootYard with one of the following -->
 		<placeholder name="randomMilitaryCarsHelper">
@@ -180,37 +193,40 @@
 			<block name="cntCar03SedanDamage0" prob="30.0" />
 			<block name="cntCar03SedanDamage1" prob="30.0" />
 			<block name="containerSecure" prob="1.0" />
-			<block name="skylark" prob="4.2" />
-			<block name="lanos" prob="4.2" />
-			<block name="charger" prob="4.2" />
-			<block name="eclipse" prob="4.2" />
-			<block name="bakkie" prob="4.2" />
-			<block name="l200" prob="4.2" />
-			<block name="corolla" prob="4.2" />
-			<block name="hirer" prob="4.2" />
-			<block name="fireTruck" prob="3.1" />
-			<block name="tractorG" prob="5.2" />
-			<block name="tractor" prob="5.2" />
-			<block name="ambulanceSecure" prob="5.2" />
-			<block name="schoolBus" prob="5.2" />	
+			<block name="skylark" prob="3" />
+			<block name="lanos" prob="3" />
+			<block name="charger" prob="2" />
+			<block name="eclipse" prob="3" />
+			<block name="bakkie" prob="3" />
+			<block name="l200" prob="3" />
+			<block name="corolla" prob="3" />
+			<block name="hirer" prob="3" />
+			<block name="fireTruck" prob="1" />
+			<block name="tractorG" prob="2" />
+			<block name="tractor" prob="2" />
+			<block name="ambulanceSecure" prob="2" />
+			<block name="schoolBus" prob="3" />	
+            <block name="schoolBus2" prob="3" />	
+            <block name="MotorbikeDown" prob="3" />	
 		</placeholder>
 		<!-- Replace the lootYard with one of the following -->
 		<placeholder name="randomOldCarsHelper">
 			<block name="cntCar03SedanDamage2" prob="50.0" />
-			<block name="oldArrmyTruckSide" prob="1.5" />
-			<block name="126" prob="7.7" />
-			<block name="fiat" prob="7.7" />
-			<block name="147" prob="7.7" />
-			<block name="oldArmyTruck" prob="1.5" />
-			<block name="ruinedTruck" prob="7.7" />
-			<block name="ambulanceDamaged" prob="3.1" />
-			<block name="schoolBusDamaged" prob="1.5" />
+			<block name="oldArrmyTruckSide" prob="5" />
+			<block name="126" prob="6" />
+			<block name="fiat" prob="6" />
+			<block name="147" prob="6" />
+			<block name="oldArmyTruck" prob="5" />
+			<block name="ruinedTruck" prob="6" />
+			<block name="ambulanceDamaged" prob="5" />
+			<block name="schoolBusDamaged" prob="6" />
+            <block name="MotorbikeDown" prob="5" />	
 		</placeholder> 
 		<!-- Replace the lootYard with one of the following -->
 		<placeholder name="lootGarageHelper">
-			<block name="cntGarageStorage" prob="18.0" />
-			<block name="cntTrashPile02" prob="40.0" />
-			<block name="cntCardboardBox" prob="18.0" />
+			<block name="cntGarageStorage" prob="15.9" />
+			<block name="cntTrashPile02" prob="33.9" />
+			<block name="cntCardboardBox" prob="15.9" />
 			<block name="cntBackpack01" prob="2.7" />
 			<block name="cntBackpack02" prob="2.7" />
 			<block name="cntBackpack03" prob="2.7" />
@@ -221,6 +237,8 @@
 			<block name="generatorbank" prob="0.1" />
 			<block name="gasTank" prob="0.2" />
 			<block name="gasTankEmpty" prob="5.2" /> 
+            <block name="MotorbikeUpStandDown" prob="5.2" /> 
+            <block name="FireExtinguisher" prob="5.0" /> 
 		</placeholder>
 		<!-- Replaces the lootMP with one of the following -->
 		<placeholder name="lootMPHelper">
@@ -2438,11 +2456,11 @@
 	<!-- 24 free FREEJZ-->
 	<!-- birds nest-->
 	<lootcontainer id="25" count="1,2" size="4,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate">
-		<item name="egg"  count="1,2" prob="25" />
-		<item name="feather" count="3,10" prob="35" />
+		<item name="egg"  count="1,2" prob="22" />
+		<item name="feather" count="3,10" prob="39" />
 		<item name="turd" prob="15" />
         <item name="babyChicken" prob="1" />
-        <item name="grubs" count="1,2" prob="4" />
+        <item name="grubs" count="1,2" prob="3" />
         <item group="empty" prob="20" />
 	</lootcontainer>
 	<!-- lootcontainer 23 Supply Crate Melee weapons FREEJZ-->
@@ -2663,12 +2681,12 @@
 	</lootcontainer>
 	<!-- pop n pills -->
 	<lootcontainer id="51" count="1,3" size="5,4" sound_open="UseActions/open_pill_case" sound_close="UseActions/close_pill_case" loot_quality_template="baseTemplate">
-		<item group="medicine" prob="30" />
+		<item group="medicine" prob="38" />
         <item group="t1Magazines" count="1,2" prob="12" />
         <item group="t2Magazines" count="1,2" prob="10" />
         <item group="t3Magazines" count="1,2" prob="7" />
         <item group="skillBookChance" prob="1" />
-		<item group="empty" prob="30" />
+		<item group="empty" prob="32" />
 	</lootcontainer>
 	<!-- beer cooler -->
 	<lootcontainer id="52" count="1,3" size="5,4" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="baseTemplate">

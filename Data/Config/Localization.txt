@@ -825,7 +825,7 @@ plantedAloe3Harvest,blocks,Farming,KgNone,Aloe Vera Plant (Harvestable),Aloe ver
 plantedAloe3HarvestDesc,blocks,Farming,KgNone,The Aloe plant can be used to craft aloe cream.,L'aloe vera permet de fabriquer de la pommade d'aloe vera.,Aus der Aloe-Pflanze kann Aloe-Creme gefertigt werden.,,Se puede usar la planta de aloe vera para producir crema de aloe.
 plantedChrysanthemum3Harvest,blocks,Farming,KgNone,Chrysanthemum (Harvestable),Chrysanthème,Chrysantheme,,Crisantemo
 plantedChrysanthemum3HarvestDesc,blocks,Farming,KgNone,Chrysanthemum can be used to brew a cool and refreshing red tea.,Les chrysanthèmes servent à préparer du thé rouge rafraîchissant.,"Chrysantheme kann benutzt werden, um einen kühlenden und erfrischenden roten Tee zu brauen.",,Se pueden usar los crisantemos para hacer refrescante té rojo fresco.
-plantedCoffee3Harvest,blocks,Farming,KgNone,Coffee Plant (Harvestable),Récolte de café 3,Gepflanzte Kaffee-Ernte 3,,Sembrado Café 3 Cosecha
+plantedCoffee3Harvest,blocks,Farming,KgNone,Wild Bean Plant (Harvestable),Récolte de café 3,Gepflanzte Kaffee-Ernte 3,,Sembrado Café 3 Cosecha
 plantedCorn2,blocks,Farming,KgNone,Planted Corn 2 (Growing),Tige de maïs planté 2,Gepflanzte Maisstaude 2,,Sembrado Tallo de maíz 2 Cosecha
 plantedCornDead,blocks,Farming,KgNone,Planted Corn Dead,,,,
 plantedCotton3Harvest,blocks,Farming,KgNone,Cotton (Harvestable),Coton,Baumwolle,,Algodón
@@ -3674,7 +3674,7 @@ tripwirepostDesc,blocks,Electricity,New,Wire up 2 or more of these to trigger el
 wallLight01_player,blocks,Electricity,New,Warehouse Outdoor Light,,,,
 plantedAloe1,blocks,Farming,New,Aloe Vera Seed,,Aloe Vera Samen,,
 plantedBlueberry1,blocks,Farming,New,Blueberry Seed,,,,
-plantedCoffee1,blocks,Farming,New,Coffee Seed,,Kaffeesamen,,
+plantedCoffee1,blocks,Farming,New,Bean Seed,,Kaffeesamen,,
 plantedCotton1,blocks,Farming,New,Cotton Seed,,,,
 plantedCotton3HarvestDesc,blocks,Farming,New,Cotton is used for weaving cloth and crafting other items. If you craft seeds from it you can re-plant it.,,,,
 plantedGoldenrod1,blocks,Farming,New,Goldenrod Seed,,,,
@@ -5391,3 +5391,4 @@ screwdriverDesc,,,,"Use this to disassemble blocks and retrieve more useful craf
 welderToolDesc,,,,"Use this welder to take apart steel blocks and retrieve building materials. It can also be used to upgrade steel Blocks and repair any block.",,,,
 zombieKill,,,,"This shot will kill most zombies in 6 seconds. To bad it doesnt work on the living.",,,,
 ironSpikesDesc,,,,"Can be placed on the ground and used as a trap or defense. Upgrades with 20 Short Steel Pipes.",,,,
+fryingPanBlock,,,,"Frying Pan",,,,

@@ -339,7 +339,7 @@
 		<property name="HandItem" value="bruteBash" />
 		<property name="PhysicsBody" value="zombieStandardFemale" />
 		<property name="WanderSpeed" value="0.65" />
-		<property name="ApproachSpeed" value=".78" />
+		<property name="ApproachSpeed" value=".74" />
 		<property name="NightWanderSpeed" value="0.75" />
 		<property name="NightApproachSpeed" value="1.35" />
 		<property name="RootMotion" value="true" />
@@ -465,7 +465,7 @@
 		<property name="ModelType" value="Standard" />
 		<property name="Class" value="EntityZombieCop" />
 		<property name="WalkType" value="1" />
-		<property name="ApproachSpeed" value="0.82" />
+		<property name="ApproachSpeed" value="0.78" />
 		<property name="NightApproachSpeed" value="1.55" />
 		<property name="HandItem" value="handBoomer" />
 		<property name="MaxHealth" value="4000" />
@@ -557,7 +557,7 @@
 		<property name="RootMotion" value="true" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="TintMaterial2" value="79,40,26" />
-		<property name="ApproachSpeed" value="0.86" />
+		<property name="ApproachSpeed" value="0.82" />
 		<property name="NightApproachSpeed" value="1.63" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
 	</entity_class>
@@ -658,7 +658,7 @@
 		<property name="AvatarController" value="AvatarZombie01Controller" />
 		<property name="ModelType" value="Standard" />
 		<property name="WalkType" value="5" />
-		<property name="ApproachSpeed" value="0.8" />
+		<property name="ApproachSpeed" value="0.76" />
 		<property name="NightApproachSpeed" value="1.75" />
 		<property name="HandItem" value="handZombie" />
 		<property name="MaxHealth" value="1250" />
@@ -826,22 +826,20 @@
 		<property name="HasDeathAnim" value="true" />
 		<property name="ModelType" value="Standard" />
 		<property name="CanClimbVertical" value="true" />
+        <property name="MaxHealth" value="3000" />
+		<property name="ExperienceGain" value="300" />
 		<property name="WalkType" value="8" />
-		<property name="ApproachSpeed" value="0.9" />
-		<property name="NightApproachSpeed" value="1.78" />
+		<property name="ApproachSpeed" value="0.86" />
+		<property name="WanderSpeed" value="0.08" />
+		<property name="NightWanderSpeed" value="0.08" />
+        <property name="NightApproachSpeed" value="1.78" />
+		<property name="PanicSpeed" value="1.2" />
 		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam" />
 		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert" />
 		<property name="SoundAttack" value="Enemies/Spider_Zombie/spiderattack" />
 		<property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath" />
 		<property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain" />
 		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense" />
-		<property name="MaxHealth" value="3000" />
-		<property name="WanderSpeed" value="0.08" />
-		<property name="ApproachSpeed" value="0.2" />
-		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.1" />
-		<property name="PanicSpeed" value="1.2" />
-		<property name="ExperienceGain" value="300" />
 		<property name="HeadDismemberThreshold" value="0" />
 		<property name="LowerLegDismemberThreshold" value="0" />
 		<property name="UpperLegDismemberThreshold" value="0" />
@@ -878,8 +876,6 @@
 		<!-- JZMOD WALK -->
 		<property name="Mesh" value="Zombies/ZombieStandardBurntRagdoll" />
 		<property name="WalkType" value="7" />
-		<property name="ApproachSpeed" value="0.21" />
-		<property name="NightApproachSpeed" value="1.02" />
 		<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam" />
 		<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert" />
 		<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack" />
@@ -1013,7 +1009,7 @@
 		<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
 		<property name="Mesh" value="Zombies/zombieStandardMoeRagdoll" />
 		<property name="WalkType" value="1" />
-		<property name="ApproachSpeed" value="0.81" />
+		<property name="ApproachSpeed" value="0.77" />
 		<property name="NightApproachSpeed" value="1.72" />
 		<property name="HandItem" value="handFattyZombie" />
 		<property name="MaxHealth" value="3000" />
@@ -1032,7 +1028,7 @@
 		<property name="HandItem" value="handZombieStrongFeral" />
 		<property name="MaxHealth" value="6000" />
 		<property name="ExperienceGain" value="600" />
-		<property name="ApproachSpeed" value="0.83" />
+		<property name="ApproachSpeed" value="0.79" />
 		<property name="NightApproachSpeed" value="1.75" />
 		<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
@@ -1098,7 +1094,7 @@
 		<property name="AvatarController" value="AvatarZombie01Controller" />
 		<property name="ModelType" value="Standard" />
 		<property name="WalkType" value="2" />
-		<property name="ApproachSpeed" value="0.88" />
+		<property name="ApproachSpeed" value="0.84" />
 		<property name="NightApproachSpeed" value="1.84" />
 		<property name="MaxHealth" value="4000" />
 		<property name="ExperienceGain" value="400" />
@@ -1187,7 +1183,7 @@
 		<property name="WalkType" value="3" />
         <property name="MaxHealth" value="1000" />
 		<property name="ExperienceGain" value="100" />
-		<property name="ApproachSpeed" value="0.82" />
+		<property name="ApproachSpeed" value="0.78" />
 		<property name="NightApproachSpeed" value="1.31" />
 		<property name="LootListOnDeath" value="81" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0" />
@@ -2267,18 +2263,17 @@
 		<!-- used to determine container X/Y size -->
 		<property name="Faction" value="none" />
 	</entity_class>
-    <!--
-	<entity_class name="DroppedLootContainer">
+    <entity_class name="DroppedLootContainer">
 		<property name="Mesh" value="LootContainers/backpack_droppedPrefab" />
 		<property name="ModelType" value="Custom" />
 		<property name="Prefab" value="Backpack" />
 		<property name="Class" value="EntityLootContainer" />
 		<property name="Parent" value="Backpack" />
-		<property name="TimeStayAfterDeath" value="60" />
+		<property name="TimeStayAfterDeath" value="1" />
 		<property name="IsEnemyEntity" value="false" />
 		<property name="LootListOnDeath" value="47" />
 		<property name="Faction" value="none" />
-	</entity_class>-->
+	</entity_class>
 	<entity_class name="EvisceratedRemains">
 		<property name="Mesh" value="Gore/gore_block1_bonesPrefab" />
 		<property name="ModelType" value="Custom" />
@@ -2492,7 +2487,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="1" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.77" />
+		<property name="ApproachSpeed" value="0.73" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.9" />
 		<property name="PanicSpeed" value="0.6" />
@@ -2537,7 +2532,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="1" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.79" />
+		<property name="ApproachSpeed" value="0.75" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.52" />
 		<property name="PanicSpeed" value="0.56" />
@@ -2547,7 +2542,7 @@
 		<property name="CanClimbVertical" value="false" />
 		<property name="WalkType" value="1" />
 		<property name="WanderSpeed" value="0.07" />
-		<property name="ApproachSpeed" value="0.88" />
+		<property name="ApproachSpeed" value="0.84" />
 		<property name="NightWanderSpeed" value="0.07" />
 		<property name="NightApproachSpeed" value="1.65" />
 		<property name="PanicSpeed" value="0.54" />
@@ -2556,7 +2551,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="1" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.82" />
+		<property name="ApproachSpeed" value="0.78" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.55" />
 		<property name="PanicSpeed" value="0.9" />
@@ -2565,7 +2560,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="1" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.92" />
+		<property name="ApproachSpeed" value="0.88" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.45" />
 		<property name="PanicSpeed" value="0.6" />
@@ -2574,7 +2569,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="1" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.84" />
+		<property name="ApproachSpeed" value="0.80" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.39" />
 		<property name="PanicSpeed" value="0.6" />
@@ -2592,7 +2587,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="1" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.81" />
+		<property name="ApproachSpeed" value="0.77" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.8" />
 		<property name="PanicSpeed" value="0.6" />
@@ -2601,7 +2596,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="1" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.85" />
+		<property name="ApproachSpeed" value="0.81" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.7" />
 		<property name="PanicSpeed" value="0.6" />
@@ -2638,7 +2633,7 @@
 		<property name="CanClimbVertical" value="false" />
 		<property name="WalkType" value="1" />
 		<property name="WanderSpeed" value="0.07" />
-		<property name="ApproachSpeed" value="0.77" />
+		<property name="ApproachSpeed" value="0.73" />
 		<property name="NightWanderSpeed" value="0.07" />
 		<property name="NightApproachSpeed" value="1.65" />
 		<property name="PanicSpeed" value="0.54" />
@@ -2647,7 +2642,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="1" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.88" />
+		<property name="ApproachSpeed" value="0.84" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.55" />
 		<property name="PanicSpeed" value="0.9" />
@@ -2656,7 +2651,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="1" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.91" />
+		<property name="ApproachSpeed" value="0.87" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.45" />
 		<property name="PanicSpeed" value="0.6" />
@@ -2766,7 +2761,7 @@
 		<!-- JZMOD FERAL -->
 		<property name="WalkType" value="2" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.75" />
+		<property name="ApproachSpeed" value="0.71" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.85" />
 		<property name="PanicSpeed" value="0.9" />
@@ -2784,7 +2779,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="2" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.78" />
+		<property name="ApproachSpeed" value="0.74" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.9" />
 		<property name="PanicSpeed" value="0.6" />
@@ -2821,7 +2816,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="2" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.75" />
+		<property name="ApproachSpeed" value="0.71" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.5" />
 		<property name="PanicSpeed" value="0.6" />
@@ -2919,7 +2914,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="3" />
 		<property name="WanderSpeed" value="0.08" />
-		<property name="ApproachSpeed" value="0.75" />
+		<property name="ApproachSpeed" value="0.71" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.68" />
 		<property name="PanicSpeed" value="0.65" />
@@ -2982,7 +2977,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="3" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.85" />
+		<property name="ApproachSpeed" value="0.81" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.9" />
 		<property name="PanicSpeed" value="0.6" />
@@ -2991,7 +2986,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="3" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.81" />
+		<property name="ApproachSpeed" value="0.77" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.8" />
 		<property name="PanicSpeed" value="0.6" />
@@ -3000,7 +2995,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="3" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.83" />
+		<property name="ApproachSpeed" value="0.79" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.7" />
 		<property name="PanicSpeed" value="0.6" />
@@ -3292,7 +3287,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="5" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.78" />
+		<property name="ApproachSpeed" value="0.74" />
 		<property name="NightWanderSpeed" value="0.2" />
 		<property name="NightApproachSpeed" value="1.8" />
 		<property name="PanicSpeed" value="0.7" />
@@ -3383,7 +3378,7 @@
 		<!-- JZMOD FERAL -->
 		<property name="WalkType" value="5" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.79" />
+		<property name="ApproachSpeed" value="0.75" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.9" />
 		<property name="PanicSpeed" value="0.6" />
@@ -3420,7 +3415,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="5" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.8" />
+		<property name="ApproachSpeed" value="0.76" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.5" />
 		<property name="PanicSpeed" value="0.6" />
@@ -3448,7 +3443,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="5" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.72" />
+		<property name="ApproachSpeed" value="0.78" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.55" />
 		<property name="PanicSpeed" value="0.9" />
@@ -3466,7 +3461,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="5" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.74" />
+		<property name="ApproachSpeed" value="0.70" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.39" />
 		<property name="PanicSpeed" value="0.6" />
@@ -3475,7 +3470,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="5" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.72" />
+		<property name="ApproachSpeed" value="0.68" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.39" />
 		<property name="PanicSpeed" value="0.6" />
@@ -3484,7 +3479,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="5" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.84" />
+		<property name="ApproachSpeed" value="0.80" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.39" />
 		<property name="PanicSpeed" value="0.6" />
@@ -3530,7 +3525,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="6" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.81" />
+		<property name="ApproachSpeed" value="0.77" />
 		<property name="NightWanderSpeed" value="0.1" />
 		<property name="NightApproachSpeed" value="1.52" />
 		<property name="PanicSpeed" value="0.59" />
@@ -3613,7 +3608,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="6" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.75" />
+		<property name="ApproachSpeed" value="0.71" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.6" />
 		<property name="PanicSpeed" value="0.6" />
@@ -3659,7 +3654,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="6" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.8" />
+		<property name="ApproachSpeed" value="0.76" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.45" />
 		<property name="PanicSpeed" value="0.6" />
@@ -3674,7 +3669,7 @@
 		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense" />
 		<property name="WalkType" value="6" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.86" />
+		<property name="ApproachSpeed" value="0.82" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.39" />
 		<property name="PanicSpeed" value="0.6" />
@@ -3884,7 +3879,7 @@
 		<property name="WalkType" value="8" />
 		<property name="CanClimbVertical" value="true" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="ApproachSpeed" value="0.84" />
+		<property name="ApproachSpeed" value="0.80" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.4" />
 		<property name="PanicSpeed" value="1.2" />
@@ -3894,7 +3889,7 @@
 		<property name="WalkType" value="8" />
 		<property name="CanClimbVertical" value="true" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="ApproachSpeed" value="0.9" />
+		<property name="ApproachSpeed" value="0.86" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.7" />
 		<property name="PanicSpeed" value="1.2" />
@@ -3904,7 +3899,7 @@
 		<property name="WalkType" value="8" />
 		<property name="CanClimbVertical" value="true" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="ApproachSpeed" value="0.89" />
+		<property name="ApproachSpeed" value="0.85" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.51" />
 		<property name="PanicSpeed" value="1.2" />
@@ -3914,7 +3909,7 @@
 		<property name="WalkType" value="8" />
 		<property name="CanClimbVertical" value="true" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="ApproachSpeed" value="0.88" />
+		<property name="ApproachSpeed" value="0.84" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.49" />
 		<property name="PanicSpeed" value="1.2" />
@@ -3924,7 +3919,7 @@
 		<property name="WalkType" value="8" />
 		<property name="CanClimbVertical" value="true" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="ApproachSpeed" value="0.86" />
+		<property name="ApproachSpeed" value="0.82" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.68" />
 		<property name="PanicSpeed" value="1.2" />
@@ -3934,7 +3929,7 @@
 		<property name="WalkType" value="8" />
 		<property name="CanClimbVertical" value="true" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="ApproachSpeed" value="0.88" />
+		<property name="ApproachSpeed" value="0.84" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.88" />
 		<property name="PanicSpeed" value="1.2" />
@@ -3944,7 +3939,7 @@
 		<property name="WalkType" value="8" />
 		<property name="CanClimbVertical" value="true" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="ApproachSpeed" value="0.86" />
+		<property name="ApproachSpeed" value="0.85" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.73" />
 		<property name="PanicSpeed" value="1.2" />
@@ -4001,7 +3996,7 @@
 		<!-- JZMOD FERAL CLIMBER -->
 		<property name="WalkType" value="8" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.82" />
+		<property name="ApproachSpeed" value="0.81" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.9" />
 		<property name="PanicSpeed" value="0.6" />
@@ -4037,7 +4032,7 @@
 		<!-- JZMOD FERAL CLIMBER -->
 		<property name="WalkType" value="8" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.86" />
+		<property name="ApproachSpeed" value="0.87" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.5" />
 		<property name="PanicSpeed" value="0.6" />
@@ -4177,7 +4172,7 @@
 	<entity_class name="zombieSnow4" extends="zombieSnow">
 		<!-- JZMOD CRAWLER -->
 		<property name="WalkType" value="4" />
-		<property name="ApproachSpeed" value="0.79" />
+		<property name="ApproachSpeed" value="0.75" />
 		<property name="NightApproachSpeed" value="1.68" />
 	</entity_class>
 	<entity_class name="zombieSnow5" extends="zombieSnow">
@@ -4209,7 +4204,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="2" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="ApproachSpeed" value="0.81" />
+		<property name="ApproachSpeed" value="0.78" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.8" />
 		<property name="PanicSpeed" value="0.6" />
@@ -4245,7 +4240,7 @@
 		<!-- JZMOD RUN -->
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="ApproachSpeed" value="0.81" />
+		<property name="ApproachSpeed" value="0.77" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.55" />
 		<property name="PanicSpeed" value="0.6" />
@@ -4255,7 +4250,7 @@
 		<property name="CanClimbVertical" value="true" />
 		<property name="WalkType" value="8" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="ApproachSpeed" value="0.86" />
+		<property name="ApproachSpeed" value="0.82" />
 		<property name="NightWanderSpeed" value="0.09" />
 		<property name="NightApproachSpeed" value="1.55" />
 		<property name="PanicSpeed" value="0.6" />

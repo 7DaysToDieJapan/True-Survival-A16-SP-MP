@@ -320,7 +320,7 @@
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<window_group name="workstation_torch" controller="XUiC_WorkstationWindowGroup">
+		<window_group name="workstation_wallTorchPlayer" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
 			<window name="windowFuel" />
