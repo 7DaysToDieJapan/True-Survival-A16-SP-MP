@@ -33,6 +33,9 @@
 <property name="Model" value="#CarrotPlants?CarrotPlantSmallPrefab" />
 <property name="Model" value="#Snowman?SnowmanPrefab" />
 <property name="Model" value="#PickupScrapped?PickupScrappedPrefab" />
+<property name="Model" value="#MortarandPestle?MortarandPestlePrefab" />
+<property name="Model" value="#MillStone?MillStonePrefab" />
+<property name="Model" value="#GrindWheel?GringWheelPrefab" />
 
 <!-- Hold type 2 -->
 <property name="Meshfile" value="#Pan01?Pan01Prefab" />
