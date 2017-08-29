@@ -326,7 +326,7 @@
 			<window name="windowFuel" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<window_group name="workstation_burnBarrel" controller="XUiC_WorkstationWindowGroup">
+		<window_group name="workstation_burningBarrelPlayer" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
 			<window name="windowCraftingQueue" />
@@ -433,6 +433,13 @@
 			<window name="windowNonPagingHeader" />
 		</window_group>
         <window_group name="workstation_cntVendingMachine" controller="XUiC_WorkstationWindowGroup">
+            <window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+            <window name="windowOutput" />
+           	<window name="windowNonPagingHeader" />
+		</window_group>
+        <window_group name="workstation_cntVendingMachineTrader" controller="XUiC_WorkstationWindowGroup">
             <window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
 			<window name="windowCraftingQueue" />

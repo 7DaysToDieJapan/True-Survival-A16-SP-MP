@@ -54,6 +54,7 @@ tbnsew:
 		<!-- default=false -->
 		<drop event="Harvest" name="rockSmall" count="25" />
 		<drop event="Harvest" name="ironFragment" count="2" />
+        <drop event="Harvest" name="zincPowder" count="1,3" prob="1" />
 		<drop event="Destroy" count="0" />
 		<drop event="Fall" name="rockSmall" count="50" prob=".23" stick_chance="0" />
 		<drop event="Fall" name="ironFragment" count="4" prob=".23" stick_chance="0" />
@@ -6276,7 +6277,7 @@ kind of free
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="PassThroughDamage" value="true" />
 		<drop event="Harvest" name="rockSmall" count="20" />
-		<drop event="Harvest" name="ZincPowder" count="3" prob="1" />
+		<drop event="Harvest" name="zincPowder" count="1,5" prob="1" />
 		<drop event="Destroy" name="coal" count="1,3" prob=".1" />
 		<drop event="Destroy" name="potassiumNitratePowder" count="1,4" prob=".1" />
 		<drop event="Destroy" name="scrapLead" count="1,3" prob=".1" />
@@ -6313,7 +6314,7 @@ kind of free
 		</property>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="secureReinforcedDoorWooden" />
-			<property name="Item" value="wood" />
+			<property name="Item" value="plank" />
 			<property name="ItemCount" value="10" />
 			<property name="UpgradeHitCount" value="4" />
 		</property>
@@ -13151,7 +13152,7 @@ kind of free
 		<property name="ImposterDontBlock" value="true" />
 		<property name="ShowModelOnFall" value="false" />
 		<property name="PassThroughDamage" value="true" />
-		<drop event="Harvest" name="EngineBlock" count="1" prob="0.2" tool_category="Disassemble" />
+		<drop event="Harvest" name="engineBlock" count="1" prob="0.2" tool_category="Disassemble" />
 		<drop event="Harvest" name="airFilter" count="1" prob="0.2" tool_category="Disassemble" />
 		<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
 		<drop event="Harvest" name="gasCan" count="1" prob="0.5" />
@@ -13222,7 +13223,7 @@ kind of free
 		<drop event="Harvest" name="oil" count="2" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="cloth" count="5" />
 		<drop event="Harvest" name="spring" count="5" tool_category="Disassemble" />
-		<drop event="Harvest" name="FanBelt" count="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="fanBelt" count="1" tool_category="Disassemble" />
 		<drop event="Destroy" name="hubcap" count="1,4" prob=".5" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapIron" count="15" tool_category="Disassemble" />
 		<drop event="Harvest" name="mechanicalParts" count="2" prob=".4" tool_category="Disassemble" />
@@ -13281,9 +13282,9 @@ kind of free
 		<drop event="Destroy" name="scrapIron" count="5,15" prob="1" />
 		<drop event="Harvest" name="mechanicalParts" count="2" prob=".4" tool_category="Disassemble" />
 		<drop event="Harvest" name="mechanicalParts" count="1" prob=".5" tool_category="Disassemble" />
-		<drop event="Harvest" name="Alternator" count="1" prob="0.3" tool_category="Disassemble" />
+		<drop event="Harvest" name="alternator" count="1" prob="0.3" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="1" prob=".15" tool_category="Disassemble" />
-		<drop event="Harvest" name="Exhaust" count="1" prob="0.3" tool_category="Disassemble" />
+		<drop event="Harvest" name="exhaust" count="1" prob="0.3" tool_category="Disassemble" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="1" stick_chance="1" />
 		<drop event="Destroy" count="0" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="1" stick_chance="1" />
@@ -14920,6 +14921,9 @@ kind of free
 	<block id="1926" name="cntVendingMachineTrader">
 		<property name="Extends" value="cntVendingMachine" />
 		<property name="Model" value="Entities/LootContainers/vending_machine_traderPrefab" />
+        <property class="Workstation">
+            <property name="CraftingAreaRecipes" value="cntVendingMachine" />
+        </property>
 		<property name="TraderID" value="5" />
 	</block>
 	<block id="1927" name="signShopOpen">
@@ -16110,8 +16114,10 @@ kind of free
 		<property name="Class" value="Campfire" />
 		<property name="Material" value="stone" />
 		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#millStone?millStone" />
-         <property name="ModelOffset" value="0,-0.05,0" />
+        <property name="Model" value="#MortarandPestle?MortarandPestlePrefab" />
+        <!--<property name="Model" value="#MillStone?MillStonePrefab" />-->
+	    <property name="ModelOffset" value="0,.5,0" />
+        <property name="MultiBlockDim" value="1,1,1" />
 		<property name="CustomIcon" value="ui_game_symbol_stoneMill" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
@@ -16328,8 +16334,8 @@ kind of free
 		<property name="DescriptionKey" value="MortarAndPestle1Desc" />
 		<property name="Material" value="stone" />
 		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#MortarAndPestle1?MortarAndPestle1Prefab" />
-         <property name="ModelOffset" value="0,-0.05,0" />
+        <property name="Model" value="#MortarandPestle?MortarandPestlePrefab" />
+		<property name="ModelOffset" value="0,.5,0" />
 		<property name="CustomIcon" value="ui_game_symbol_mortarAndPestle" />
 		<property name="Class" value="Campfire" />
 		<property name="Stacknumber" value="1" />
@@ -16433,6 +16439,7 @@ kind of free
 		<property name="Material" value="wood" />
 		<property name="Model" value="#ChickenCoop3?ChickenCoop3" />
         <property name="ModelOffset" value="0,-0.05,0" />
+        <property name="MultiBlockDim" value="1,2,1" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="CustomIcon" value="ui_game_symbol_chickenCoop" />
 		<property name="IsTerrainDecoration" value="true" />
@@ -16814,63 +16821,68 @@ kind of free
 		<property name="DowngradeBlock" value="bikeLoot" />
 	</block>
 	<!-- JZMOD NPC CORPSES -->
-	<block id="459" name="banditLeaderCorpse">
-		<property name="Class" value="Loot" />
+	<block id="459" name="npcCorpse">
+        <property name="Class" value="Gore" />
+      	<property name="CreativeMode" value="Dev" />
 		<property name="Material" value="organic" />
 		<property name="Shape" value="ModelEntity" />
-		<property name="Mesh" value="models" />
 		<property name="Model" value="Entities/Gore/gore_block1_Prefab" />
-		<property name="CustomIcon" value="ui_game_symbol_unused" />
-		<property name="Texture" value="22" />
+        <property name="ImposterDontBlock" value="true" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-		<property name="Tag" value="Gore" />
+		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="IsTerrainDecoration" value="true" />
-		<property name="LootList" value="200" />
+        <property name="Tag" value="Gore" />
+        <property name="FallDamage" value="true" />
+        <property name="LootList" value="211" />
 		<property name="DowngradeBlock" value="goreBlock1BonesPrefab" />
+		<drop event="Harvest" name="femur" count="3,5" tool_category="Butcher" />
+		<drop event="Harvest" name="rottingFlesh" count="2" tool_category="Butcher" />
+		<drop event="Harvest" name="rottingFlesh" count="1" />
+		<drop event="Harvest" name="femur" count="1" />
 		<drop event="Destroy" count="0" />
 	</block>
 	<block id="460" name="banditPistolCorpse">
-		<property name="Extends" value="banditLeaderCorpse" />
+		<property name="Extends" value="npcCorpse" />
 		<property name="LootList" value="201" />
 	</block>
 	<block id="461" name="bandit44MagnumCorpse">
-		<property name="Extends" value="banditLeaderCorpse" />
+		<property name="Extends" value="npcCorpse" />
 		<property name="LootList" value="202" />
 	</block>
 	<block id="462" name="banditSawedOffPumpShotgunCorpse">
-		<property name="Extends" value="banditLeaderCorpse" />
+		<property name="Extends" value="npcCorpse" />
 		<property name="LootList" value="203" />
 	</block>
 	<block id="484" name="banditPumpShotgunCorpse">
-		<property name="Extends" value="banditLeaderCorpse" />
+		<property name="Extends" value="npcCorpse" />
 		<property name="LootList" value="204" />
 	</block>
 	<block id="583" name="banditMP5Corpse">
-		<property name="Extends" value="banditLeaderCorpse" />
+		<property name="Extends" value="npcCorpse" />
 		<property name="LootList" value="205" />
 	</block>
 	<block id="584" name="banditAK47Corpse">
-		<property name="Extends" value="banditLeaderCorpse" />
+		<property name="Extends" value="npcCorpse" />
 		<property name="LootList" value="206" />
 	</block>
 	<block id="585" name="banditHuntingRifleCorpse">
-		<property name="Extends" value="banditLeaderCorpse" />
+		<property name="Extends" value="npcCorpse" />
 		<property name="LootList" value="207" />
 	</block>
 	<block id="609" name="banditSniperRifleCorpse">
-		<property name="Extends" value="banditLeaderCorpse" />
+		<property name="Extends" value="npcCorpse" />
 		<property name="LootList" value="208" />
 	</block>
 	<block id="610" name="banditRocketLauncherCorpse">
-		<property name="Extends" value="banditLeaderCorpse" />
+		<property name="Extends" value="npcCorpse" />
 		<property name="LootList" value="209" />
 	</block>
 	<block id="611" name="banditSledgeCorpse">
-		<property name="Extends" value="banditLeaderCorpse" />
+		<property name="Extends" value="npcCorpse" />
 		<property name="LootList" value="210" />
 	</block>
 	<block id="659" name="followerCorpse">
-		<property name="Extends" value="banditLeaderCorpse" />
+		<property name="Extends" value="npcCorpse" />
 		<property name="LootList" value="211" />
 	</block>
 	<!--JZMOD PLANTS-->
@@ -18285,25 +18297,7 @@ kind of free
 		<property name="DescriptionKey" value="RazorWireDesc" />
 		<property name="MaxDamage" value="1000" />
 	</block>
-    
-	<block id="1502" name="razorWireOffSet"><!--jzmod delete me-->
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#RazorWire?RazorWirePrefab" />
-        <property name="ModelOffset" value="0,-0.1,0" />
-		<property name="CustomIcon" value="ui_game_symbol_razorWire" />
-		<property name="Class" value="Damage" />
-		<property name="Damage" value="4" />
-		<property name="Damage_received" value="1" />
-		<property name="Material" value="MbarbedWire" />
-		<property name="Group" value="Tools/Traps" />
-		<property class="RepairItems">
-			<property name="forgedSteel" value="2" />
-		</property>
-		<drop event="Destroy" name="scrapSteel" count="1,2" prob="1" />
-		<drop event="Fall" name="scrapSteelPile" count="1" prob=".75" stick_chance="1" />
-		<property name="DescriptionKey" value="RazorWireOffSetDesc" />
-		<property name="MaxDamage" value="1000" />
-	</block>
+    	
 	<block id="1506" name="gasTankTrap">
 		<property name="CustomIcon" value="fireTrap" />
 		<property name="Class" value="Campfire" />
@@ -18569,31 +18563,31 @@ kind of free
 		<property name="ShowModelOnFall" value="false" />
 		<property name="MaxDamage" value="800" />
 		<property name="CustomIcon" value="cntCar03SedanDamage2" />
-		<!--<drop event="Harvest" name="gasCan" count="50" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
-	<drop event="Harvest" name="electronicParts" count="1" prob=".1" tool_category="Disassemble" />
-	<drop event="Harvest" name="EngineBlock" count="1" prob="0.2" tool_category="Disassemble" />
-	<drop event="Harvest" name="airFilter" count="1" prob="0.2" tool_category="Disassemble" />
-	<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
-	<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="cloth" count="5" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
-	<drop event="Harvest" name="electronicParts" count="1" prob=".1" tool_category="Disassemble" />
-	<drop event="Harvest" name="oil" count="2" prob="0.5" tool_category="Disassemble" />
-    <drop event="Harvest" name="mechanicalParts" count="2" prob=".4" tool_category="Disassemble" />
-    <drop event="Harvest" name="mechanicalParts" count="1" prob=".5" tool_category="Disassemble" />
-	<drop event="Harvest" name="Alternator" count="1" prob="0.3" tool_category="Disassemble" />
-	<drop event="Harvest" name="Exhaust" count="1" prob="0.3" tool_category="Disassemble" />
-	<drop event="Harvest" name="scrapIron" count="20" prob="1" tool_category="Disassemble" />
-	<drop event="Harvest" name="shortMetalPipe" count="5" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="cloth" count="5" prob="0.5" />
-	<drop event="Harvest" name="leather" count="2" prob=".5" />
-	<drop event="Harvest" name="leather" count="2" prob=".5" />
-	<drop event="Harvest" name="gasCan" count="50" prob="0.5" />
-	<drop event="Harvest" name="scrapSteel" count="4" prob="0.5" />
-	<drop event="Destroy" name="scrapSteel" count="1,2" prob="1" />
-	<drop event="Fall" name="scrapSteelPile" count="1" prob="1" stick_chance=".75" />-->
+        <drop event="Harvest" name="gasCan" count="50" prob="0.5" tool_category="Disassemble" />
+        <drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
+        <drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
+        <drop event="Harvest" name="electronicParts" count="1" prob=".1" tool_category="Disassemble" />
+        <drop event="Harvest" name="engineBlock" count="1" prob="0.2" tool_category="Disassemble" />
+        <drop event="Harvest" name="airFilter" count="1" prob="0.2" tool_category="Disassemble" />
+        <drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
+        <drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
+        <drop event="Harvest" name="cloth" count="5" prob="0.5" tool_category="Disassemble" />
+        <drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
+        <drop event="Harvest" name="electronicParts" count="1" prob=".1" tool_category="Disassemble" />
+        <drop event="Harvest" name="oil" count="2" prob="0.5" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="2" prob=".4" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="1" prob=".5" tool_category="Disassemble" />
+        <drop event="Harvest" name="alternator" count="1" prob="0.3" tool_category="Disassemble" />
+        <drop event="Harvest" name="exhaust" count="1" prob="0.3" tool_category="Disassemble" />
+        <drop event="Harvest" name="scrapIron" count="20" prob="1" tool_category="Disassemble" />
+        <drop event="Harvest" name="shortMetalPipe" count="5" prob="0.5" tool_category="Disassemble" />
+        <drop event="Harvest" name="cloth" count="5" prob="0.5" />
+        <drop event="Harvest" name="leather" count="2" prob=".5" />
+        <drop event="Harvest" name="leather" count="2" prob=".5" />
+        <drop event="Harvest" name="gasCan" count="50" prob="0.5" />
+        <drop event="Harvest" name="scrapSteel" count="4" prob="0.5" />
+        <drop event="Destroy" name="scrapSteel" count="1,2" prob="1" />
+        <drop event="Fall" name="scrapSteelPile" count="1" prob="1" stick_chance=".75" />
 		<property name="BigDecorationRadius" value="5" />
 		<property name="CanDecorateOnSlopes" value="false" />
 		<property class="Explosion">
@@ -18763,30 +18757,30 @@ kind of free
 		<property name="ShowModelOnFall" value="false" />
 		<property name="MaxDamage" value="1000" />
 		<property name="CustomIcon" value="cntCar03SedanDamage2" />
-		<!--<drop event="Harvest" name="gasCan" count="50" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
-	<drop event="Harvest" name="electronicParts" count="1" prob=".1" tool_category="Disassemble" />
-	<drop event="Harvest" name="EngineBlock" count="1" prob="0.2" tool_category="Disassemble" />
-	<drop event="Harvest" name="airFilter" count="1" prob="0.2" tool_category="Disassemble" />
-	<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
-	<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="cloth" count="5" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
-    <drop event="Harvest" name="mechanicalParts" count="2" prob=".4" tool_category="Disassemble" />
-    <drop event="Harvest" name="mechanicalParts" count="1" prob=".5" tool_category="Disassemble" />
-	<drop event="Harvest" name="electronicParts" count="1" prob=".1" tool_category="Disassemble" />
-	<drop event="Harvest" name="oil" count="2" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="Alternator" count="1" prob="0.3" tool_category="Disassemble" />
-	<drop event="Harvest" name="Exhaust" count="1" prob="0.3" tool_category="Disassemble" />
-	<drop event="Harvest" name="scrapIron" count="15" prob="1" tool_category="Disassemble" />
-	<drop event="Harvest" name="shortMetalPipe" count="5" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="cloth" count="5" prob="0.5" />
-	<drop event="Harvest" name="leather" count="2" prob=".5" />
-	<drop event="Harvest" name="leather" count="2" prob=".5" />
-	<drop event="Harvest" name="gasCan" count="50" prob="0.5" />
-	<drop event="Harvest" name="scrapIron" count="15" prob="0.5" />
-	<drop event="Destroy" name="scrapIron" count="5,15" prob="1" />-->
+		<drop event="Harvest" name="gasCan" count="50" prob="0.5" tool_category="Disassemble" />
+        <drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
+        <drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
+        <drop event="Harvest" name="electronicParts" count="1" prob=".1" tool_category="Disassemble" />
+        <drop event="Harvest" name="engineBlock" count="1" prob="0.2" tool_category="Disassemble" />
+        <drop event="Harvest" name="airFilter" count="1" prob="0.2" tool_category="Disassemble" />
+        <drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
+        <drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
+        <drop event="Harvest" name="cloth" count="5" prob="0.5" tool_category="Disassemble" />
+        <drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="2" prob=".4" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="1" prob=".5" tool_category="Disassemble" />
+        <drop event="Harvest" name="electronicParts" count="1" prob=".1" tool_category="Disassemble" />
+        <drop event="Harvest" name="oil" count="2" prob="0.5" tool_category="Disassemble" />
+        <drop event="Harvest" name="alternator" count="1" prob="0.3" tool_category="Disassemble" />
+        <drop event="Harvest" name="exhaust" count="1" prob="0.3" tool_category="Disassemble" />
+        <drop event="Harvest" name="scrapIron" count="15" prob="1" tool_category="Disassemble" />
+        <drop event="Harvest" name="shortMetalPipe" count="5" prob="0.5" tool_category="Disassemble" />
+        <drop event="Harvest" name="cloth" count="5" prob="0.5" />
+        <drop event="Harvest" name="leather" count="2" prob=".5" />
+        <drop event="Harvest" name="leather" count="2" prob=".5" />
+        <drop event="Harvest" name="gasCan" count="50" prob="0.5" />
+        <drop event="Harvest" name="scrapIron" count="15" prob="0.5" />
+        <drop event="Destroy" name="scrapIron" count="5,15" prob="1" />
 		<property name="BigDecorationRadius" value="5" />
 		<property name="CanDecorateOnSlopes" value="false" />
 		<property class="Explosion">
@@ -18811,30 +18805,6 @@ kind of free
 		<property name="LootList" value="19" />
 		<property name="MaxDamage" value="800" />
 		<property name="CustomIcon" value="cntCar03SedanDamage2" />
-		<!--<drop event="Harvest" name="gasCan" count="50" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
-	<drop event="Harvest" name="electronicParts" count="1" prob=".1" tool_category="Disassemble" />
-	<drop event="Harvest" name="EngineBlock" count="1" prob="0.2" tool_category="Disassemble" />
-	<drop event="Harvest" name="airFilter" count="1" prob="0.2" tool_category="Disassemble" />
-	<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
-    <drop event="Harvest" name="mechanicalParts" count="2" prob=".4" tool_category="Disassemble" />
-    <drop event="Harvest" name="mechanicalParts" count="1" prob=".5" tool_category="Disassemble" />
-	<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="cloth" count="5" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
-	<drop event="Harvest" name="electronicParts" count="1" prob=".1" tool_category="Disassemble" />
-	<drop event="Harvest" name="oil" count="2" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="Alternator" count="1" prob="0.3" tool_category="Disassemble" />
-	<drop event="Harvest" name="Exhaust" count="1" prob="0.3" tool_category="Disassemble" />
-	<drop event="Harvest" name="scrapIron" count="15" prob="1" tool_category="Disassemble" />
-	<drop event="Harvest" name="shortMetalPipe" count="5" prob="0.5" tool_category="Disassemble" />
-	<drop event="Harvest" name="cloth" count="5" prob="0.5" />
-	<drop event="Harvest" name="leather" count="2" prob=".5" />
-	<drop event="Harvest" name="leather" count="2" prob=".5" />
-	<drop event="Harvest" name="gasCan" count="50" prob="0.5" />
-	<drop event="Harvest" name="scrapIron" count="15" prob="0.5" />
-	<drop event="Destroy" name="scrapIron" count="5,15" prob="1" />-->
 		<property name="BigDecorationRadius" value="5" />
 		<property name="CanDecorateOnSlopes" value="false" />
 	</block>
@@ -18992,9 +18962,7 @@ kind of free
 	</block>
 	<!-- JZMOD DOORS/GATES/SHUTTERS/ELEVATORS -->
     <!--1656/1660/1661/1664/1665/1667/1670/1671/1676/1677/1680/1681/1682/1688/1689/1690/1691/1692/1693-->
-    
-	
-	<block id="1683" name="woodBarricade2x3">
+    <block id="1683" name="woodBarricade2x3">
 		<property name="Material" value="wood" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#WoodGate2x3?WoodGate2x3" />
@@ -19005,7 +18973,6 @@ kind of free
 		</property>
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Building" />
-		<!--<property name="CraftingSkillGroup" value="Master Craftsman" />-->
 	</block>
 	<block id="1684" name="scrapIronBarricade2x3">
 		<property name="Extends" value="woodBarricade2x3" />
@@ -19049,28 +19016,6 @@ kind of free
 		<property class="RepairItems">
 			<property name="scrapIron" value="20" />
 		</property>
-	</block>
-	
-	<block id="1694" name="elevator_1x1x3">
-		<property name="Class" value="DoorSecure" />
-		<property name="Stacknumber" value="1" />
-		<property name="Material" value="metal" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Texture" value="241" />
-		<property name="Tag" value="Door" />
-		<property name="PlaceEverywhere" value="true" />
-		<property name="Model" value="#Elevator1x1x3?Elevator1x1x3" />
-		<property name="CustomIcon" value="ui_game_symbol_elevator1x1x3" />
-		<property name="OpenSound" value="UseActions/open_door_metal" />
-		<property name="CloseSound" value="UseActions/close_door_metal" />
-		<property name="MultiBlockDim" value="1,1,1" />
-		<drop event="Destroy" count="0" />
-		<property name="Group" value="Building" />
-	</block>
-	<block id="1695" name="largeLift">
-		<property name="Extends" value="elevator_1x1x3" />
-		<property name="Model" value="#Elevator22?Elevator22" />
-		<property name="CustomIcon" value="ui_game_symbol_largeLift" />
 	</block>
 	<!--JZMOD RADIATION-->
 	<block id="1696" name="decalSphere">
@@ -19257,32 +19202,6 @@ kind of free
 		<drop event="Destroy" count="0" />
 		<drop event="Destroy" name="scrapIron" count="5,20" prob="1" />
 	</block>
-    <block id="1716" name="toolbox">
-		<property name="Class" value="Loot" />
-		<property name="Material" value="wood" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#workbenches?ToolboxPrefab" />
-        <property name="ModelOffset" value="0,0,0" />
-        <property name="MultiBlockDim" value="1,1,1" />
-		<property name="Collide" value="melee,bullet,arrow,rocket" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="LootList" value="2" />
-		<drop event="Destroy" count="0" />
-		<drop event="Destroy" name="stick" count="1,3" prob="1" />
-	</block>
-    <block id="1718" name="wireSpool">
-		<property name="Class" value="Loot" />
-		<property name="Material" value="Mmetal_weak" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#workbenches?cableExtension" /> 
-        <property name="ModelOffset" value="0,0,0" />
-        <property name="MultiBlockDim" value="1,1,1" />
-		<property name="Collide" value="melee,bullet,arrow,rocket" />
-		<property name="IsTerrainDecoration" value="true" />
-		<property name="LootList" value="2" />
-		<drop event="Destroy" count="0" />
-		<drop event="Destroy" name="scrapIron" count="1,3" prob="1" />
-	</block>
     <block id="1719" name="schoolBus2">
 		<property name="Extends" value="cntCar03SedanDamage1" />
 		<property name="Model" value="#vehiclesdeco?Schoolbus" />
@@ -19293,14 +19212,14 @@ kind of free
     <block id="1720" name="plane">
 		<property name="Extends" value="cntCar03SedanDamage1" />
 		<property name="Model" value="#truck?Plane" />
-        <property name="ModelOffset" value="0,-0.1,0" />
+        <property name="ModelOffset" value="0,-0.4,0" />
 		<property name="LootList" value="47" />
 		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
     <block id="1721" name="helicoptor">
 		<property name="Extends" value="cntCar03SedanDamage1" />
 		<property name="Model" value="#truck?Heli" />
-        <property name="ModelOffset" value="0,-0.1,0" />
+        <property name="ModelOffset" value="0,-0.4,0" />
 		<property name="LootList" value="47" />
 		<property name="CustomIcon" value="cntCar03SedanDamage2" />
 	</block>
@@ -19354,35 +19273,6 @@ kind of free
 		<drop event="Destroy" count="0" />
 		<drop event="Destroy" name="scrapIron" count="1,3" prob="1" />
 	</block> 
-    <block id="1726" name="zGrinderOn">
-		<property name="Material" value="Mmetal_weak" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#poweredtraps?PoweredZdGrinder" />
-        <property name="ModelOffset" value="0,0.2,0" />
-		<property name="Collide" value="melee,bullet,arrow,rocket" />
-		<property name="IsTerrainDecoration" value="true" />
-		<drop event="Destroy" count="0" />
-		<drop event="Destroy" name="scrapIron" count="1,3" prob="1" />
-	</block>
-    <block id="1728" name="zGrinderOff">
-        <property name="Material" value="Mmetal_weak" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#traps?ZdGrinder" />
-        <property name="ModelOffset" value="0,-0.1,0" />
-		<property name="Collide" value="melee,bullet,arrow,rocket" />
-		<property name="IsTerrainDecoration" value="true" />
-		<drop event="Destroy" count="0" />
-		<drop event="Destroy" name="scrapIron" count="1,3" prob="1" />
-	</block>
-    <block id="1729" name="piranha">
-		<property name="Material" value="Mmetal_weak" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#scorpion?PiranhaPrefab" />
-		<property name="Collide" value="melee,bullet,arrow,rocket" />
-		<property name="IsTerrainDecoration" value="true" />
-		<drop event="Destroy" count="0" />
-		<drop event="Destroy" name="scrapIron" count="1,3" prob="1" />
-	</block>
     <block id="1730" name="Glass_Door_Secure">
 		<property name="Class" value="ElectricDoor, Mods" />
 		<property name="Secure" value="true" />
@@ -19504,68 +19394,95 @@ kind of free
 		<drop event="Destroy" name="plantFibers" count="1" />
 	</block>
     <block id="1750" name="PhoneBooth02">
-		<property name="Material" value="leaves" />
+		<property name="Material" value="Mmetal_medium" />
+		<property name="StabilitySupport" value="false" />
+		<property name="MaxDamage" value="150" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#PhoneBooths?PhoneBooth02Prefab"/>
         <property name="ModelOffset" value="0,0,0" />
         <property name="MultiBlockDim" value="1,2,1" />
         <property name="Collide" value="melee,bullet,arrow,rocket" />
-		<drop event="Destroy" name="plantFibers" count="1" />
+        <drop event="Harvest" name="electricParts" count="1,4" tool_category="Disassemble" />
+		<drop event="Harvest" name="electronicParts" count="1,2" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapPlastics" count="1,2" tool_category="Disassemble" />
+        <drop event="Harvest" name="scrapCable" count="1" tool_category="Disassemble" />
+		<drop event="Destroy" name="scrapPlastics" count="3,5" />
+        <drop event="Destroy" name="scrapIron" count="3,6" />
+        <drop event="Destroy" count="0" />
 	</block>
     <block id="1751" name="PhoneBooth03">
-		<property name="Material" value="leaves" />
-		<property name="Shape" value="ModelEntity" />
+        <property name="Extends" value="PhoneBooth02" />
 		<property name="Model" value="#PhoneBooths?PhoneBooth03Prefab"/>
-        <property name="ModelOffset" value="0,0,0" />
-        <property name="MultiBlockDim" value="1,2,1" />
-        <property name="Collide" value="melee,bullet,arrow,rocket" />
-		<drop event="Destroy" name="plantFibers" count="1" />
-	</block>
+    </block>
     <block id="1752" name="FireExtinguisher">
-		<property name="Material" value="leaves" />
+		<property name="Material" value="Mmetal_medium" />
+		<property name="StabilitySupport" value="false" />
+		<property name="MaxDamage" value="150" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#FireExtinguisher?FireExtinguisherPrefab"/>
         <property name="ModelOffset" value="0,.5,0" />
         <property name="MultiBlockDim" value="1,1,1" />
         <property name="Collide" value="melee,bullet,arrow,rocket" />
-		<drop event="Destroy" name="plantFibers" count="1" />
+        <property name="CanPickup" value="true" />
+        <drop event="Destroy" name="scrapSteel" count="1,3" />
+		<drop event="Destroy" name="scrapIron" count="1,3" />
+        <drop event="Destroy" count="0" />
 	</block>
     <block id="1753" name="RoadBlock01">
-		<property name="Material" value="leaves" />
+        <property name="Extends" value="concreteNoUpgradeMaster" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#RoadBlocks?RoadBlock01Prefab" />
         <property name="ModelOffset" value="0,.5,0" />
         <property name="MultiBlockDim" value="3,1,1" />
         <property name="Collide" value="melee,bullet,arrow,rocket" />
-		<drop event="Destroy" name="plantFibers" count="1" />
 	</block>
     <block id="1754" name="RoadBlock02">
-		<property name="Material" value="leaves" />
+		<property name="Extends" value="concreteNoUpgradeMaster" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#RoadBlocks?RoadBlock02Prefab" />
         <property name="ModelOffset" value="0,.5,0" />
         <property name="MultiBlockDim" value="3,1,1" />
         <property name="Collide" value="melee,bullet,arrow,rocket" />
-		<drop event="Destroy" name="plantFibers" count="1" />
 	</block>
     <block id="1755" name="MotorbikeDown">
-		<property name="Material" value="leaves" />
+		<property name="Material" value="Mmetal_medium" />
+		<property name="StabilitySupport" value="false" />
+		<property name="MaxDamage" value="300" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#Motorbikes?MotorbikeDownPrefab" />
         <property name="ModelOffset" value="0,.3,0" />
         <property name="MultiBlockDim" value="3,1,1" />
         <property name="Collide" value="melee,bullet,arrow,rocket" />
-		<drop event="Destroy" name="plantFibers" count="1" />
+        <drop event="Harvest" name="gasCan" count="1,50" prob="0.8" />
+		<drop event="Harvest" name="cloth" count="1,5" prob="0.5" />
+		<drop event="Harvest" name="leather" count="1,2" prob="0.2" />
+	    <drop event="Destroy" name="scrapIron" count="5,15" prob="1" />
+        <drop event="Harvest" name="shortMetalPipe" count="1,3" prob="0.3" />
+		<drop event="Harvest" name="engineBlock" count="1" prob="0.2" tool_category="Disassemble" />
+		<drop event="Harvest" name="airFilter" count="1" prob="0.2" tool_category="Disassemble" />
+		<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
+        <drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble" />
+		<drop event="Harvest" name="oil" count="1,3" prob="0.5" tool_category="Disassemble" />
+        <drop event="Harvest" name="spring" count="1,5" tool_category="Disassemble" />
+		<drop event="Harvest" name="fanBelt" count="1" prob=".2" tool_category="Disassemble" />
+		<drop event="Harvest" name="electronicParts" count="2" prob=".2" tool_category="Disassemble" />
+        <drop event="Harvest" name="shortMetalPipe" count="5" prob="1" tool_category="Disassemble" />
+        <drop event="Harvest" name="headlight" count="1" prob="0.6" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapIron" count="15" prob="1" tool_category="Disassemble" />
+      	<drop event="Harvest" name="mechanicalParts" count="1" prob="0.6" tool_category="Disassemble" />
+		<drop event="Harvest" name="alternator" count="1" prob="0.3" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob="0.4" tool_category="Disassemble" />
+		<drop event="Harvest" name="exhaust" count="1" prob="0.3" tool_category="Disassemble" />
+        <drop event="Harvest" name="minibikeWheels" count="1" prob="0.3" tool_category="Disassemble" />
+        <drop event="Fall" name="scrapMetalPile" count="1" prob="1" stick_chance="1" />
+        <drop event="Destroy" count="0" />
 	</block>
     <block id="1756" name="MotorbikeUpStandDown">
-		<property name="Material" value="leaves" />
-		<property name="Shape" value="ModelEntity" />
+		<property name="Extends" value="MotorbikeDown" />
 		<property name="Model" value="#Motorbikes?MotorbikeUpStandDownPrefab" />
         <property name="ModelOffset" value="0,.5,0" />
         <property name="MultiBlockDim" value="3,2,1" />
-        <property name="Collide" value="melee,bullet,arrow,rocket" />
-		<drop event="Destroy" name="plantFibers" count="1" />
-	</block>
+    </block>
     <block id="1759" name="cntVendingMachine2">
 		<property name="Material" value="Mmetal_medium" />
 		<property name="LightOpacity" value="0" />
@@ -19577,7 +19494,7 @@ kind of free
 		<property name="ImposterExchange" value="imposterBlock" param1="143" />
 		<property name="OnlySimpleRotations" value="true" />
 		<property name="Place" value="TowardsPlacerInverted" />
-        <drop event="Harvest" name="RedBull" count="1" prob="0.4" />
+        <drop event="Harvest" name="redBull" count="1" prob="0.4" />
 		<drop event="Harvest" name="redTea" count="1" prob="0.4" />
 		<drop event="Harvest" name="snowberryJuice" count="1" prob="0.4" />
 		<drop event="Harvest" name="goldenRodTea" count="1" prob="0.4" />
@@ -19585,7 +19502,8 @@ kind of free
 		<drop event="Harvest" name="electronicParts" count="2" prob="0.4" />
 		<drop event="Harvest" name="mechanicalParts" count="1" prob="0.4" />
 		<drop event="Harvest" name="beer" count="1" prob="0.3" />
-		<drop event="Harvest" name="RedBull" count="1" prob="0.2" tool_category="Disassemble" />
+        <drop event="Harvest" name="mead" count="1" prob="0.3" />
+		<drop event="Harvest" name="redBull" count="1" prob="0.2" tool_category="Disassemble" />
 		<drop event="Harvest" name="redTea" count="1" prob="0.2" tool_category="Disassemble" />
 		<drop event="Harvest" name="snowberryJuice" count="1" prob="0.2" tool_category="Disassemble" />
 		<drop event="Harvest" name="goldenRodTea" count="1" prob="0.5" tool_category="Disassemble" />
@@ -19594,12 +19512,12 @@ kind of free
 		<drop event="Harvest" name="mechanicalParts" count="2" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="beer" count="1" prob="0.1" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="2" />
+        <drop event="Destroy" count="0" />
 	</block>
     <block id="1760" name="cookingPot">
 		<property name="Material" value="MmetalNoGlue" />
 		<property name="MaxDamage" value="100" />
 		<property name="StabilitySupport" value="false" />
-		<!-- build restriction -->
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Texture" value="293" />
 		<property name="Mesh" value="models" />
@@ -19622,15 +19540,38 @@ kind of free
         <property name="CanPickup" value="true" param1="fryingPan"/>
 	</block>
     <block id="1762" name="oldbench">
-		<property name="Material" value="leaves" />
+		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#OldBench?OldBenchPrefab" />
-        <property name="ModelOffset" value="0,0,0" />
+        <property name="ModelOffset" value="0,.5,0" />
         <property name="MultiBlockDim" value="2,1,1" />
-        <property name="Collide" value="melee,bullet,arrow,rocket" />
-		<drop event="Destroy" name="plantFibers" count="1" />
+        <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<drop event="Destroy" name="plank" count="1,10" />
+        <drop event="Destroy" name="scrapIron" count="1,10" />
+        <drop event="Destroy" name="nutAndBolt" count="1,6" prob=".75"/>
+        <drop event="Fall" name="scrapMetalPile" count="1" prob="1" stick_chance="1" />
+        <drop event="Destroy" count="0" />
 	</block>
-   
+   <block id="1763" name="pickupScrapped">
+		<property name="Extends" value="oldArmyTruck" />
+		<property name="Model" value="#PickupScrapped?PickupScrappedPrefab" />
+        <property name="ModelOffset" value="0,.4,0" />
+		<property name="DowngradeBlock" value="scrapMetalPile" />
+		<property name="CustomIcon" value="cntCar03SedanDamage2" />
+	</block>
+    <block id="1764" name="GrindWheel">
+		<property name="Material" value="wood_weak" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#GrindWheel?GrindWheelPrefab" />
+        <property name="ModelOffset" value="0,.5,0" />
+        <property name="MultiBlockDim" value="2,1,1" />
+        <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<drop event="Destroy" name="plank" count="1,10" />
+        <drop event="Destroy" name="scrapIron" count="1,10" />
+        <drop event="Destroy" name="nutAndBolt" count="1,6" prob=".75"/>
+        <drop event="Fall" name="scrapMetalPile" count="1" prob="1" stick_chance="1" />
+        <drop event="Destroy" count="0" />
+	</block>
 </blocks>
 <!-- Block limit: No block can have an ID greater 2047.
 BLOCK MODELS

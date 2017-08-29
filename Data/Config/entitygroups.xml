@@ -977,7 +977,25 @@ animalStagHostile
 		<entity name="animalDireWolf" prob="0.15" />
 		<entity name="animalBear" prob="0.15" />
 	</entitygroup>
-	<entitygroup name="EnemyAnimalsWasteland">
+    <entitygroup name="Peoples">
+        <entity name="invisibleAnimal" prob="65.0" />
+        <entity name="npcTraderSuitMelee" prob="1.0" />
+		<entity name="npcBanditRanged" prob="1" />
+		<entity name="npcBandit01" prob="1.71" />
+		<entity name="npcBandit02" prob="1.71" />
+        <entity name="npcBandit03" prob="1.71" />
+		<entity name="npcBandit04" prob="1.71" />
+		<entity name="npcBandit05" prob="1.71" />
+		<entity name="npcBandit06" prob="1.71" />
+		<entity name="npcBandit07" prob="1.71" />
+        <entity name="npcSurvivorRanged" prob="1" />
+        <entity name="npcSurvivorMelee" prob="4" />
+		<entity name="npcSurvivorMelee02" prob="4" />
+		<entity name="npcSurvivorMelee03" prob="4" />
+		<entity name="npcSurvivorMelee04" prob="4" />
+		<entity name="npcSurvivorMelee05" prob="4" />
+    </entitygroup>
+    <entitygroup name="EnemyAnimalsWasteland">
 		<entity name="animalRabbit" prob="5.0" />
 		<entity name="animalChicken" prob="5.0" />
 		<entity name="animalRabbitHostile" prob="10.0" />
@@ -1356,8 +1374,6 @@ animalStagHostile
 	</entitygroup>
 	<entitygroup name="BanditGroup">
 		<entity name="npcBanditMelee" />
-		<entity name="npcBanditRanged" />
-		<entity name="npcBanditLeader" prob="0.2" />
 	</entitygroup>
 	<entitygroup name="SupplyCrates_General">
 		<entity name="sc_General" />

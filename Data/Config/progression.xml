@@ -1,6 +1,6 @@
 <!-- Groups: firearms, weapons, tools, clothing, scavenging, health, crafting !-->
 <progression>
-	<player max_level="200" exp_to_level="8300" experience_multiplier="1.01536" skill_points_per_level="5" skill_point_multiplier="0" />
+	<player max_level="200" exp_to_level="4150" experience_multiplier="1.01536" skill_points_per_level="5" skill_point_multiplier="0" /><!--JZMOD FOR END GAME TEST exp_to_level="8300" -->
 	<!-- A15: 8000 XP for level 1 and 134k for level 199, total cumulative of 9MXP; XPRequired = exp_to_level * experience_multiplier ^ level -->
 	<!-- A16: 8300 XP for level 1, total cumulative of 11MXP -->
 	<skills max_level="100" exp_to_level="250" experience_multiplier="1.03" skill_point_cost_multiplier="1.25" skill_point_cost_per_level="1">
@@ -3382,7 +3382,12 @@
 			<recipe name="gasTankEmpty" unlock_level="1" />
 		</perk>
         <perk name="ironSpikes" icon="ui_game_symbol_steelSpikes" description_key="Learn to craft iron Spikes that can be upgraded into steel spikes" title_key="Metal Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="weapons">
-			<recipe name="ironSpikes" unlock_level="1" />
+			<requirement perk_level="1" required_player_level="25" />
+            <recipe name="ironSpikes" unlock_level="1" />
+		</perk>
+        <perk name="razorWire" icon="ui_game_symbol_razorWire" description_key="Learn to craft razor wire that can entangle trespasser" title_key="Razor Wire" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="weapons">
+			<requirement perk_level="1" required_player_level="25" />
+            <recipe name="razorWire" unlock_level="1" />
 		</perk>
         <perk name="animalTraps" icon="ui_game_symbol_spiderBuff" description_key="Learn to catch and tame poisonous spiders and scorpions. Keep them as pets or use them as traps for other players." title_key="Animal Traps/Pets" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
 			<requirement perk_level="1" required_skill_name="chemistryCraft" required_skill_level="5" />

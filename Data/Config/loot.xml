@@ -143,36 +143,39 @@
             <block name="RoadBlock02" prob="0.5" />
 			<block name="RoadBlock01" prob="0.5" />
 		</placeholder>
-		<!-- Replace the lootYard with one of the following -->
+		
 		<placeholder name="lootYardHelper">
-			<block name="cntTrashPile07" prob="53.59" />		
-			<block name="cntCardboardBox" prob="18.17" />		
-			<block name="cntBackpack01" prob="2.73" />		
-			<block name="cntBackpack02" prob="2.73" />		
-			<block name="cntBackpack03" prob="2.73" />		
-			<block name="cntDuffle01" prob="2.73" />		
-			<block name="cntSportsBag01" prob="2.73" />		
-			<block name="cntSportsBag02" prob="2.73" />		
-			<block name="cntPurse01" prob="2.73" />		
-			<block name="appleTree" prob="0.99" />		
-			<block name="tomatoPlant" prob="1.82" />		
-			<block name="strawberryPlant" prob="1.73" />		
-			<block name="burningBarrel" prob="1.82" />		
-			<block name="gasTank" prob="0.99" />		
-			<block name="gasTankEmpty" prob="1.82" />		
+			<block name="cntTrashPile07" prob="10" />		
+			<block name="cntCardboardBox" prob="8" />		
+			<block name="cntBackpack01" prob="6" />		
+			<block name="cntBackpack02" prob="6" />		
+			<block name="cntBackpack03" prob="6" />		
+			<block name="cntDuffle01" prob="6" />		
+			<block name="cntSportsBag01" prob="6" />		
+			<block name="cntSportsBag02" prob="6" />		
+			<block name="cntPurse01" prob="6" />		
+			<block name="appleTree" prob="2" />		
+			<block name="tomatoPlant" prob="2" />		
+			<block name="strawberryPlant" prob="2" />		
+			<block name="burningBarrel" prob="5" />		
+			<block name="gasTank" prob="6" />		
+			<block name="gasTankEmpty" prob="6" />	
+            <block name="oldbench" prob="2" />	     
+            <block name="bonesPrefab" prob="6" />	 
+            <block name="mattress" prob="6" />            
 		</placeholder>
-        <!-- Replace the lootYard with one of the following -->
+        
 		<placeholder name="commercialMachineHelper">
 			<block name="cntVendingMachine2" prob="50.00" />		
 			<block name="PhoneBooth02" prob="25.00" />		
 			<block name="PhoneBooth03" prob="25.00" />		
 		</placeholder>
-        <!-- Replace the lootYard with one of the following -->
+        
 		<placeholder name="cookingUtensilsHelper">
 			<block name="cookingPot" prob="50.00" />		
 			<block name="fryingPanBlock" prob="50.00" />		
 		</placeholder>
-		<!-- Replace the lootYard with one of the following -->
+		
 		<placeholder name="randomMilitaryCarsHelper">
 			<block name="tankSecure" prob="14.3" />
 			<block name="militaryTruckSecure" prob="14.3" />
@@ -182,34 +185,35 @@
 			<block name="policeSecure" prob="14.3" />
 			<block name="gAZ33Secure" prob="14.3" />
 		</placeholder> 
-        <!-- Replace the lootYard with one of the following -->
+        
 		<placeholder name="randomCrashHelper">
 			<block name="helicoptor" prob="33.33" />
 			<block name="plane" prob="33.33" />
 			<block name="oldArrmyTruckSide" prob="33.33" />
 		</placeholder> 
-		<!-- Replace the lootYard with one of the following -->
+		
 		<placeholder name="randomCarsHelper">
 			<block name="cntCar03SedanDamage0" prob="30.0" />
 			<block name="cntCar03SedanDamage1" prob="30.0" />
 			<block name="containerSecure" prob="1.0" />
 			<block name="skylark" prob="3" />
 			<block name="lanos" prob="3" />
-			<block name="charger" prob="2" />
+			<block name="charger" prob="3" />
 			<block name="eclipse" prob="3" />
 			<block name="bakkie" prob="3" />
 			<block name="l200" prob="3" />
 			<block name="corolla" prob="3" />
 			<block name="hirer" prob="3" />
-			<block name="fireTruck" prob="1" />
-			<block name="tractorG" prob="2" />
-			<block name="tractor" prob="2" />
-			<block name="ambulanceSecure" prob="2" />
 			<block name="schoolBus" prob="3" />	
             <block name="schoolBus2" prob="3" />	
             <block name="MotorbikeDown" prob="3" />	
+            <block name="pickupScrapped" prob="3" />	
+            <block name="fireTruck" prob="1" />
+			<block name="tractorG" prob="2" />
+			<block name="tractor" prob="2" />
+			<block name="ambulanceSecure" prob="1" />
 		</placeholder>
-		<!-- Replace the lootYard with one of the following -->
+		
 		<placeholder name="randomOldCarsHelper">
 			<block name="cntCar03SedanDamage2" prob="50.0" />
 			<block name="oldArrmyTruckSide" prob="5" />
@@ -222,7 +226,7 @@
 			<block name="schoolBusDamaged" prob="6" />
             <block name="MotorbikeDown" prob="5" />	
 		</placeholder> 
-		<!-- Replace the lootYard with one of the following -->
+		
 		<placeholder name="lootGarageHelper">
 			<block name="cntGarageStorage" prob="15.9" />
 			<block name="cntTrashPile02" prob="33.9" />
@@ -2547,7 +2551,7 @@
 		<item group="empty" prob="100" />
 	</lootcontainer>
 	<!-- military munitions ammo box -->
-	<lootcontainer id="40" count="1,2" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="15" loot_quality_template="baseTemplate">
+	<lootcontainer id="40" count="1,2" size="8,4" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="15" loot_quality_template="baseTemplate">
 		<item group="weaponsMilitaryParts" count="1,2" prob="20" />
 		<item group="gunBooks" prob="10" />
 		<item group="militaryAmmo" prob="10" />
@@ -2876,12 +2880,12 @@
 		<item group="skillBookChance" prob="1" />
         <item group="empty" prob="10" />
 	</lootcontainer>
-	<!-- bandit melee -->
+	<!-- bandit melee NOT USING-->
 	<lootcontainer id="71" count="0,3" size="7,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="banditsGeneral" />
 		<item name="clubSpiked"  prob="0.7" />
 	</lootcontainer>
-	<!-- bandit ranged -->
+	<!-- bandit ranged NOT USING-->
 	<lootcontainer id="72" count="0,3" size="7,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="banditsGeneral" />
 	</lootcontainer>
@@ -3466,7 +3470,7 @@
 		<item group="banditsThug+SledgeHammer" prob="1" />
 	</lootcontainer>
 	<!-- JZMOD FollowerCorpse -->
-	<lootcontainer id="211"  size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
+	<lootcontainer id="211"  size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
 		<item group="junkPersonal" prob="1" />
 		<item group="backpacks" prob="1" />
 	</lootcontainer>

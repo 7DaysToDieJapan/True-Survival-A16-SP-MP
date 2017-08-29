@@ -691,7 +691,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<Wind min="0" max="25" prob="0.25"/>
 			<Wind min="25" max="50" prob="0.25"/>
 		</weather>
-			<subbiome prob="0.11">
+			<subbiome prob="0.08">
 				<!-- Pine Forest Sub Biome Clustered Flowers and Boulders -->
 				<layers>
 					<layer depth="1" blockname="dirt">
@@ -731,16 +731,24 @@ If you do not declare them, the decorations of the main biome are used.
 					<layer depth="3" blockname="bedrock" />
 				</layers>
 				<decorations>
-					<decoration type="block" blockname="plantedGoldenrod3Harvest" prob="0.008" />
-					<decoration type="block" blockname="plantedPotato3Harvest" prob="0.006" />
-					<decoration type="block" blockname="plantedCotton3Harvest" prob="0.07" />
+					<decoration type="block" blockname="plantedChrysanthemum3Harvest" prob="0.07" rotatemax="7"/>
+                    <decoration type="block" blockname="treeJuniper6m" prob="0.005" rotatemax="7" />
+					<decoration type="block" blockname="fernSmall" prob="0.2" rotatemax="7" />
+                    <decoration type="block" blockname="plantedPotato3Harvest" prob="0.006" rotatemax="7" />
+                    <decoration type="block" blockname="treeMountainPine8m" prob="0.08" rotatemax="7" />
+                    <decoration type="block" blockname="radTree" prob="0.006" rotatemax="7" />
+                    <decoration type="block" blockname="treeAzalea" prob="0.009" rotatemax="3" />
+					<decoration type="block" blockname="plantedCotton3Harvest" prob="0.05" rotatemax="7" />
 					<decoration type="block" blockname="rock01" prob=".01" />
 					<decoration type="block" blockname="rock02" prob=".01" />
 					<decoration type="block" blockname="rock04" prob=".01" />
-					<decoration type="block" blockname="rockResource" prob=".025" rotatemax="3" />
-					<decoration type="block" blockname="rockResource02" prob=".025" rotatemax="3" />
-					<decoration type="block" blockname="treeTallGrassDiagonal" prob=".5" />
-					<decoration type="block" blockname="cntTreeStump" prob="0.0001" rotatemax="7" />
+                    <decoration type="block" blockname="mushroom01" prob="0.001" rotatemax="7" />
+                    <decoration type="block" blockname="mushroom02" prob="0.001" rotatemax="7" />
+					<decoration type="block" blockname="rockResource" prob=".015" rotatemax="3" />
+					<decoration type="block" blockname="rockResource02" prob=".015" rotatemax="3" />
+					<decoration type="block" blockname="treeTallGrassDiagonal" prob=".05" />
+                    <decoration type="block" blockname="treeTallGrassDiagonal" prob=".2" />
+					<decoration type="block" blockname="cntTreeStump" prob="0.001" rotatemax="3" />
 				</decorations>
 			</subbiome>
 			<subbiome prob="0.11">
@@ -1250,9 +1258,6 @@ If you do not declare them, the decorations of the main biome are used.
 				<Temperature min="0" max="0" prob="1"/>
                 <Fog min="0" max="5" prob="0.15"/>
                 <Fog min="0" max="0" prob="0.25"/>
-
-
-
                 <!-- Cloud Density *Must be above 60 to Rain* -->
                 <CloudThickness min="70" max="100" prob="0.25"/>
                 <CloudThickness min="50" max="70" prob="0.25"/>
@@ -1261,15 +1266,7 @@ If you do not declare them, the decorations of the main biome are used.
                 <!-- Rain Density -->
                 <Precipitation min="25" max="50" prob="0.2"/>
                 <Precipitation min="0" max="25" prob="0.2"/>
-
                 <Precipitation min="0" max="0" prob="0.2"/>
-
-
-
-
-
-
-
                 <!-- Wind spd -->
                 <Wind min="75" max="100" prob="0.25"/>
                 <Wind min="50" max="75" prob="0.25"/>
@@ -1283,9 +1280,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<layers>
 					<layer depth="1" blockname="desertGround" />
 					<layer depth="10" blockname="sandStone" />
-					<layer depth="5" blockname="hardStone" />
-					<layer depth="10" blockname="sandStone" />
-					<layer depth="*" blockname="sandStone">
+					<layer depth="*" blockname="hardStone">
 						<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 						<resource blockname="oilDeposit" cluster="1" prob="0.1130" rwgGenerationType="all" />
 						<resource blockname="silverOre" cluster="1" prob="0.00030" rwgGenerationType="all" />
@@ -1314,9 +1309,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<layers>
 					<layer depth="5" blockname="clayInSandstone" />
 					<layer depth="10" blockname="sandStone" />
-					<layer depth="5" blockname="hardStone" />
-					<layer depth="10" blockname="sandStone" />
-					<layer depth="*" blockname="sandStone">
+					<layer depth="*" blockname="hardStone">
 						<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 						<resource blockname="oilDeposit" cluster="1" prob="0.1130" rwgGenerationType="all" />
 						<resource blockname="silverOre" cluster="1" prob="0.00030" rwgGenerationType="all" />
@@ -1347,10 +1340,8 @@ If you do not declare them, the decorations of the main biome are used.
 					<layer depth="1" blockname="desertGround">
 						<resource blockname="plainsGround" cluster="0" prob="0.30" rwgGenerationType="all" />
 					</layer>
-					<layer depth="22" blockname="sandStone" />
-					<layer depth="8" blockname="sandStone" />
-					<layer depth="5" blockname="hardStone" />
-					<layer depth="*" blockname="sandStone">
+					<layer depth="15" blockname="sandStone" />
+					<layer depth="*" blockname="hardStone">
 						<resource blockname="leadOre" cluster="1" prob="0.1030" rwgGenerationType="all" />
 						<resource blockname="oilDeposit" cluster="1" prob="0.1130" rwgGenerationType="all" />
 					</layer>
@@ -1380,10 +1371,8 @@ If you do not declare them, the decorations of the main biome are used.
 				<!-- Ore Sub Biome: potassiumNitrate -->
 				<layers>
 					<layer depth="1" blockname="desertGround" />
-					<layer depth="22" blockname="sandStone" />
-					<layer depth="8" blockname="sandStone" />
-					<layer depth="5" blockname="hardStone" />
-					<layer depth="*" blockname="sandStone">
+					<layer depth="12" blockname="sandStone" />
+					<layer depth="*" blockname="hardStone">
 						<resource blockname="potassiumNitrate" cluster="1" prob="0.1030" rwgGenerationType="all" />
 						<resource blockname="oilDeposit" cluster="1" prob="0.1130" rwgGenerationType="all" />
 					</layer>
@@ -1395,9 +1384,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<layer filluptorg="60" blockname="water" />
 				<layer depth="1" blockname="desertGround" />
 				<layer depth="10" blockname="sandStone" />
-				<layer depth="5" blockname="hardStone" />
-				<layer depth="10" blockname="sandStone" />
-				<layer depth="*" blockname="sandStone">
+				<layer depth="*" blockname="hardStone">
 					<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
 					<resource blockname="oilDeposit" cluster="1" prob="0.1130" rwgGenerationType="all" />
 					<resource blockname="silverOre" cluster="1" prob="0.00030" rwgGenerationType="all" />

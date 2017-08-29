@@ -324,7 +324,7 @@ corrugatedMetalGable,blocks,Block,KgNone,Corrugated Metal Gable,Pignon en tôle,
 corrugatedMetalPillar100,blocks,Block,KgNone,Corrugated Metal Pillar100,Pilier 100 en tôle,Wellblech – Säule 100,,Pilar de metal corrugado 100
 corrugatedMetalPillar50,blocks,Block,KgNone,Corrugated Metal Pillar50,Pilier 50 en tôle,Wellblech – Säule 50,,Pilar de metal corrugado 50
 corrugatedMetalRamp,blocks,Block,KgNone,Corrugated Metal Ramp,Rampe en tôle,Wellblechrampe,,Rampa de metal corrugado
-corrugatedMetalSheet,blocks,Block,KgNone,Corrugated Metal Sheet,Plaque de tôle,Wellblech – Platte,,Lámina de metal corrugado
+corrugatedMetalSheet,blocks,Block,KgNone,Scrap Iron Sheet,Plaque de tôle,Wellblech – Platte,,Lámina de metal corrugado
 curtain_bottom1Sheet3,blocks,Block,KgNone,Curtain bottom1 Sheet3,Pan 3 et bas de rideaux 1,Vorhangunterteil 1 Platte 3,,Lámina3 de base1 de cortina
 curtain_top1Sheet3,blocks,Block,KgNone,Curtain top1 Sheet3,Pan 3 de haut de rideaux 1,Vorhangoberteil 1 Tuch 3,,Lámina3 superior1 de cortina
 doorFrameMetal1,blocks,Block,KgNone,Door Frame Metal1,Encadrement de porte en métal 1,Metall-Türrahmen 1,,Estructura de puerta de metal 1
@@ -414,7 +414,7 @@ metalPipeJoint,blocks,Block,KgNone,Metal Pipe Joint,Joint de tuyau en métal,Met
 metalPipeStraight,blocks,Block,KgNone,Metal Pipe Straight,Tuyau en métal droit,Gerades Metallrohr,,Barra de tubería de metal
 metalPipeValve,blocks,Block,KgNone,Metal Pipe Valve,Valve de tuyau en métal,Metallrohr – Ventil,,Válvula de tubería de metal
 metalReinforcedDoorWooden,blocks,Block,KgNone,Metal Reinforced Door,Porte renforcée en métal et en bois renforcé,Metallverstärkte Holz-Sicherheitstür,,Puerta de madera reforzada con metal
-metalRivetSheet,blocks,Block,KgNone,Metal Rivet Sheet,Panneau de métal riveté,Genietetes Metall – Platte,,Lámina con remaches de metal
+metalRivetSheet,blocks,Block,KgNone,Scrap Steel Sheet,Panneau de métal riveté,Genietetes Metall – Platte,,Lámina con remaches de metal
 metalSignLetter_a,blocks,Block,KgNone,Metal Sign A,A en métal,Metallschild A,,Letra de metal A
 metalSignLetter_b,blocks,Block,KgNone,Metal Sign B,B en métal,Metallschild B,,Letra de metal B
 metalSignLetter_c,blocks,Block,KgNone,Metal Sign C,C en métal,Metallschild C,,Letra de metal C
