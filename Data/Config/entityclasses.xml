@@ -2160,6 +2160,10 @@
 		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
 		<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityNPC" />
 		<drop event="Harvest" name="rottingFlesh" count="1" />
+        <drop event="Harvest" name="femur" count="1" />
+        <drop event="Harvest" name="femur" count="0" prob="1" tool_category="Butcher"/>
+        <drop event="Destroy" name="rottingFlesh" tool_category="Butcher" count="1" />
+        <drop event="Destroy" name="femur" tool_category="Butcher" count="1" />
 	</entity_class>
 	<entity_class name="animalChickenHostile" extends="animalTemplateHostile">
 		<property name="Mesh" value="Animals/CHICKEN/chickenPrefab" />
@@ -2352,12 +2356,12 @@
 	<entity_class name="npcSurvivorMelee" extends="npcSurvivorTemplate">
         <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npcClubWood"/>
         <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcClubWood"/>
-        <property name="Archetype" value="Wesker"/>
+        <property name="Archetype" value="Chris"/>
     </entity_class>
     <entity_class name="npcSurvivorMelee02" extends="npcSurvivorTemplate">
         <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npcClubWood"/>
         <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcClubWood"/>
-        <property name="Archetype" value="Hunk"/>
+        <property name="Archetype" value="Rick"/>
     </entity_class>
     <entity_class name="npcSurvivorMelee03" extends="npcSurvivorTemplate">
         <property name="Mesh" value="Player/Female/player_femaleRagdoll"/>
@@ -2369,12 +2373,12 @@
         <property name="SoundHurt" value="Player_Female/player2painlg"/>
         <property name="SoundDeath" value="Player_Female/player2death"/>
         <property name="SoundAttack" value="Player_Female/player2painsm"/>
-        <property name="Archetype" value="Ada"/>
+        <property name="Archetype" value="Maggi"/>
     </entity_class>
     <entity_class name="npcSurvivorMelee04" extends="npcSurvivorTemplate">
         <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npcSledgeHammer"/>
         <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcSledgeHammer"/>
-        <property name="Archetype" value="Chris"/>
+        <property name="Archetype" value="DarrylDixon"/>
     </entity_class>
     <entity_class name="npcSurvivorMelee05" extends="npcSurvivorTemplate">
         <property name="Mesh" value="Player/Female/player_femaleRagdoll"/>
@@ -2442,17 +2446,17 @@
 	</entity_class>
     <!--JZMOD ADDED-->
 	<entity_class name="npcBandit01" extends="npcBanditMelee">
-        <property name="Archetype" value="Maggi" />
+        <property name="Archetype" value="Wesker" />
         <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npcClubWood"/>
         <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcClubWood"/>
     </entity_class>
     <entity_class name="npcBandit02" extends="npcBanditMelee">
-        <property name="Archetype" value="DarrylDixon"/>
+        <property name="Archetype" value="Hunk"/>
         <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npcClubSpiked"/>
         <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcClubSpiked"/>
     </entity_class>
     <entity_class name="npcBandit03" extends="npcBanditMelee">
-        <property name="Archetype" value="Rick"/>
+        <property name="Archetype" value="Ada"/>
         <property name="ItemsOnEnterGame.GameModeSurvivalSP" value="npcClubWood"/>
         <property name="ItemsOnEnterGame.GameModeSurvivalMP" value="npcClubWood"/>
     </entity_class>

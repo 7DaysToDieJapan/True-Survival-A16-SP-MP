@@ -980,6 +980,23 @@ animalStagHostile
     <entitygroup name="Peoples">
         <entity name="invisibleAnimal" prob="65.0" />
         <entity name="npcTraderSuitMelee" prob="1.0" />
+		<entity name="npcBandit01" prob="1.71" />
+		<entity name="npcBandit02" prob="1.71" />
+        <entity name="npcBandit03" prob="1.71" />
+		<entity name="npcBandit04" prob="1.71" />
+		<entity name="npcBandit05" prob="1.71" />
+		<entity name="npcBandit06" prob="1.71" />
+		<entity name="npcBandit07" prob="1.71" />
+        <entity name="npcSurvivorRanged" prob="1" />
+        <entity name="npcSurvivorMelee" prob="4.2" />
+		<entity name="npcSurvivorMelee02" prob="4.2" />
+		<entity name="npcSurvivorMelee03" prob="4.2" />
+		<entity name="npcSurvivorMelee04" prob="4.2" />
+		<entity name="npcSurvivorMelee05" prob="4.2" />
+    </entitygroup>
+    <entitygroup name="BadPeoples">
+        <entity name="invisibleAnimal" prob="65.0" />
+        <entity name="npcTraderSuitMelee" prob="1.0" />
 		<entity name="npcBanditRanged" prob="1" />
 		<entity name="npcBandit01" prob="1.71" />
 		<entity name="npcBandit02" prob="1.71" />

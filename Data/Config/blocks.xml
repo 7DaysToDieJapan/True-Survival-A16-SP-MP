@@ -1104,6 +1104,7 @@ group desc for stuff like metal siding
 		<drop event="Destroy" name="stick" count="1,15" prob="1" />
 		<drop event="Fall" name="woodDebris" count="1" prob=".3" stick_chance="1" />
 		<property name="DescriptionKey" value="cobblestoneFrameGroupDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_cobblestoneFrame" />
     </block>
 	<block id="124" name="cobblestoneMaster">
 		<property name="Group" value="Building" />
@@ -1475,7 +1476,7 @@ group desc for stuff like metal siding
 		<!-- -rocket -->
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="pouredConcreteMaster" />
-			<property name="Item" value="plank" />
+			<property name="Item" value="concreteMix" />
 			<property name="ItemCount" value="10" />
 			<property name="UpgradeHitCount" value="3" />
 		</property>
@@ -11280,19 +11281,37 @@ kind of free
 		<property name="DowngradeBlock" value="woodHatch1_v1" />
 	</block>
 	<block id="1253" name="woodHatch1_v3">
-		<property name="Extends" value="woodHatch1_v1" />
-		<property name="DescriptionKey" value="doorGroupDesc" />
+        <property name="Class" value="DoorSecure" />
 		<property name="Material" value="wood+metal" />
+		<property name="PassThroughDamage" value="true" />
+		<property name="LightOpacity" value="1" />
+		<property name="StabilitySupport" value="false" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Tag" value="Door" />
+		<property name="PlaceEverywhere" value="true" />
 		<property name="Model" value="Entities/Doors/woodenHatch1_v3Prefab" />
 		<property name="ModelOffset" value="0,0,0" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="ImposterExchange" value="imposterPlate" param1="35" />
+		<property name="Mesh-Damage-1" value="Door/Hatch_DMG0" />
+		<property name="Mesh-Damage-2" value="Door/Hatch_DMG1" />
+		<property name="Mesh-Damage-3" value="Door/Hatch_DMG2" />
+		<property name="Mesh-Damage-4" value="Door/Hatch_DMG3" />
+		<property name="Mesh-Damage-5" value="Door/Hatch_DMG4" />
+		<property name="OpenSound" value="open_hatch_wood" />
+		<property name="CloseSound" value="close_hatch_wood" />
+		<property name="FuelValue" value="300" />
 		<property class="RepairItems">
 			<property name="scrapIron" value="20" />
 		</property>
-		<property name="CustomUpgradeSound" value="place_block_metal" />
-		<drop event="Harvest" name="plank" count="0" />
-		<drop event="Harvest" name="scrapIron" count="8" prob="1" />
 		<property name="DowngradeBlock" value="woodHatch1_v2" />
-	</block>
+		<drop event="Harvest" name="scrapIron" count="8" prob="1" />
+		<drop event="Destroy" count="0" />
+		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+        <drop event="Harvest" name="woodDebris" count="0" prob="1" tool_category="Door" />
+        <property name="EconomicValue" value="5" />
+		<property name="EconomicBundleSize" value="10" />
+   	</block>
 	<!-- 1 Free -->
 	<block id="1254" name="concreteWedgeTipStairs">
 		<property name="Extends" value="concreteMaster" />
@@ -15995,6 +16014,7 @@ kind of free
 	<!--JZMOD BLOCKS-->
 	<block id="76" name="brickMasterPlayer">
 		<property name="Extends" value="brickNoUpgradeMaster" />
+        <property name="CustomIcon" value="ui_game_symbol_brickFrame" />
 		<property name="Texture" value="332" />
 	</block>
 	<block id="77" name="bonesPrefab">
@@ -16039,7 +16059,7 @@ kind of free
 	<block id="80" name="keystoneStone">
 		<property name="Extends" value="keystoneBlock" />
 		<property name="Material" value="stone" />
-		<property name="CustomIcon" value="keystoneBlock" />
+		<property name="CustomIcon" value="ui_game_symbol_keystoneRock" />
 		<property name="CreativeMode" value="Dev"/>
 		<property class="RepairItems">
 			<property name="rockSmall" value="100" />
@@ -16051,6 +16071,7 @@ kind of free
 	</block>
 	<block id="81" name="keystoneIron">
 		<property name="Extends" value="keystoneBlock" />
+        <property name="CustomIcon" value="ui_game_symbol_keystoneIron" />
 		<property name="Material" value="Mmetal_hard" />
 		<property class="RepairItems">
 			<property name="forgedIron" value="10" />
@@ -16085,7 +16106,7 @@ kind of free
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Tools/Traps" />
 		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
-		<property name="DescriptionKey" value="SetUpASpikeTrapDesc" />
+		<property name="DescriptionKey" value="setUpASpikeTrapDesc" />
 		<property name="CraftingSkillGroup" value="engineeringCraft" />
 	</block>
 	<block id="85" name="riggedChest">
@@ -16146,11 +16167,12 @@ kind of free
         <property name="Shape" value="ModelEntity" />
         <property name="Model" value="#workbenches?SteelCookerPrefab" />
         <property name="ModelOffset" value="0,-0.03,0" />
-		<property name="CustomIcon" value="ui_game_symbol_stove" />
+		<property name="CustomIcon" value="ui_game_symbol_prepTable" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="ParticleName" value="burning_barrel" />
 		<property name="ParticleOffset" value="0.5,0,0.5" />
+        <property name="MultiBlockDim" value="2,1,1" />
 		<property name="Stacknumber" value="1" />
 		<property name="HeatMapStrength" value="2" />
 		<property name="HeatMapTime" value="1200" />
@@ -16174,31 +16196,7 @@ kind of free
 		<property name="EconomicBundleSize" value="1" />
 		<property name="SellableToTrader" value="false" />
 	</block>
-	<block id="88" name="metalWorkBench">
-		<property name="Class" value="Campfire" />
-		<property name="Material" value="Mmetal_thin" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#metalBench?metalBench" />
-        <property name="ModelOffset" value="0,-0.02,0" />
-		<property name="CustomIcon" value="ui_game_symbol_metalWorkBench" />
-		<property name="MultiBlockDim" value="2,1,1" />
-		<property name="HeatMapStrength" value="2" />
-		<property name="HeatMapTime" value="1200" />
-		<property name="HeatMapFrequency" value="25" />
-		<property name="Stacknumber" value="1" />
-		<property class="RepairItems">
-			<property name="forgedIron" value="50" />
-		</property>
-		<property name="Group" value="Building" />
-		<property class="Workstation">
-			<property name="Modules" value="tools,output,fuel" />
-		</property>
-		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" count="0" />
-		<property name="DescriptionKey" value="MetalWorkBenchDesc" />
-		<property name="CraftingSkillGroup" value="engineeringCraft" />
-	</block>
+    <!--JZMOD Free 88 -->
 	<block id="89" name="researchDesk">
 		<property name="Material" value="wood" />
 		<property name="Stacknumber" value="1" />
@@ -16300,7 +16298,7 @@ kind of free
 		<property class="RepairItems">
 			<property name="scrapIron" value="50" />
 		</property>
-		<property name="DescriptionKey" value="BulletPressDesc" />
+		<property name="DescriptionKey" value="bulletPressDesc" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
@@ -16382,7 +16380,8 @@ kind of free
 		<!--empty-->
 		<property name="Material" value="wood" />
 		<property name="Model" value="#ChickenCoop0?ChickenCoop0" />
-        <property name="ModelOffset" value="0,-0.05,0" />
+        <property name="ModelOffset" value="0,.1,0" />
+        <property name="MultiBlockDim" value="1,2,1" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="CustomIcon" value="ui_game_symbol_chickenCoop" />
 		<property name="IsTerrainDecoration" value="true" />
@@ -16404,7 +16403,8 @@ kind of free
 		<property name="Material" value="wood" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#ChickenCoop1?ChickenCoop1" />
-        <property name="ModelOffset" value="0,-0.05,0" />
+        <property name="ModelOffset" value="0,.1,0" />
+        <property name="MultiBlockDim" value="1,1,1" />
 		<property name="CustomIcon" value="ui_game_symbol_chickenCoop" />
 		<property name="Class" value="Campfire" />
 		<property name="CanPickup" value="false" />
@@ -16426,7 +16426,8 @@ kind of free
 		<!--Chick-->
 		<property name="Extends" value="chickenCoop1" />
 		<property name="Model" value="#ChickenCoop2?ChickenCoop2" />
-        <property name="ModelOffset" value="0,-0.05,0" />
+        <property name="ModelOffset" value="0,.1,0" />
+        <property name="MultiBlockDim" value="1,2,1" />
 		<property name="CustomIcon" value="ui_game_symbol_chickenCoop" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="chickenCoop3" />
@@ -16438,7 +16439,7 @@ kind of free
 		<!--Hen-->
 		<property name="Material" value="wood" />
 		<property name="Model" value="#ChickenCoop3?ChickenCoop3" />
-        <property name="ModelOffset" value="0,-0.05,0" />
+        <property name="ModelOffset" value="0,.1,0" />
         <property name="MultiBlockDim" value="1,2,1" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="CustomIcon" value="ui_game_symbol_chickenCoop" />
@@ -16805,6 +16806,7 @@ kind of free
 	<block id="457" name="bikeLoot">
 		<property name="Class" value="Loot" />
 		<property name="Material" value="MdroppedBackpack" />
+        <property name="CustomIcon" value="ui_game_symbol_bikeNABox" />
 		<property name="Texture" value="423" />
 		<property name="LootList" value="111" />
 		<property name="CanPickup" value="false" />
@@ -16894,6 +16896,7 @@ kind of free
 		<property name="Collide" value="melee" />
 		<property name="BigDecorationRadius" value="4" />
 		<property name="UpwardsCount" value="0" />
+        <property name="CustomIcon" value="ui_game_symbol_appleSeed" />
 		<property name="PlantGrowing.Next" value="smallAppleTree" />
 		<property name="PlantGrowing.GrowthRate" value="63" />
 		<property name="FallOver" value="false" />
@@ -16971,7 +16974,7 @@ kind of free
 		<drop event="Harvest" name="wheat" count="1" />
 	</block>
 	<block id="867" name="gasTankEmpty">
-		<property name="CustomIcon" value="gasTank" />
+		<property name="CustomIcon" value="ui_game_symbol_gasTank" />
 		<property name="Material" value="Mmetal_thin" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#PropaneTank?PropaneTankPrefab" />
@@ -17124,7 +17127,7 @@ kind of free
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>
 	<block id="954" name="cntUSRMedicineCabinet">
-		<property name="CustomIcon" value="cntUSRMedicineCabinet" />
+		<property name="CustomIcon" value="cntMedicineCabinet" />
         <property name="Material" value="Mmetal_weak" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="MultiBlockDim" value="1,1,1" />
@@ -17232,13 +17235,13 @@ kind of free
 		<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>
-	<block id="961" name="cntEPSMedicineCabinetInsecure">
+	<block id="961" name="cntEPSMedicineCabinetInsecure"><!--JZMOD DELETE ME-->
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="MultiBlockDim" value="1,1,1" />
 		<property name="Model" value="#lootcontainers?MedicalBoxPrefab" />
         <property name="ModelOffset" value="0,-0.1,0" />
-		<property name="CustomIcon" value="cntUSRMedicineCabinet" />
+		<property name="CustomIcon" value="cntMedicineCabinet" />
 		<property name="SellableToTrader" value="false" />
 		<property name="Class" value="Loot" />
 		<property name="LootList" value="116" />
@@ -17512,6 +17515,7 @@ kind of free
 			<property name="ItemCount" value="10" />
 		</property>
 		<property name="Group" value="Building" />
+        <property name="CustomIcon" value="ui_game_symbol_brickFrame" />
 		<property name="DescriptionKey" value="brickFrameGroupDesc" />
 	</block>
 	<block id="1012" name="brickFrameRamp">
@@ -17791,6 +17795,7 @@ kind of free
 			<property name="UpgradeHitCount" value="1" />
 		</property>
 		<drop event="Destroy" count="0" />
+        <property name="CustomIcon" value="ui_game_symbol_CementForm" />
 		<property name="Group" value="Building" />
 	</block>
 	<block id="1088" name="cementFormBlock">
@@ -18181,13 +18186,14 @@ kind of free
 		<property name="DescriptionKey" value="trapbearDesc" />
 		<property name="Model" value="#traps?BearTrap" />
 		<property name="CustomIcon" value="ui_game_symbol_bearTrap" />
-		<property name="DescriptionKey" value="BearTrapDesc" />
+		<property name="DescriptionKey" value="trapbearDesc" />
 		<drop event="Destroy" name="bearTrap" count="1" prob="1" tool_category="Disassemble" />
 	</block>
 	<block id="1495" name="scorpionTrap">
 		<property name="DescriptionKey" value="scorpionTrapDesc" />
 		<property name="Material" value="organic" />
 		<property name="Shape" value="ModelEntity" />
+        <property name="CustomIcon" value="ui_game_symbol_scorpionTrap" />
 		<property name="Model" value="#scorpion?ScorpionPrefab" />
 		<property name="Collide" value="movement,bullet,rocket,melee" />
 		<property name="CanPickup" value="false" />
@@ -18208,6 +18214,7 @@ kind of free
 		<property name="Material" value="organic" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#scorpion?ScorpionPrefab" />
+        <property name="CustomIcon" value="ui_game_symbol_scorpionTrap" />
 		<property name="Collide" value="bullet,rocket,melee" />
 		<property name="CanPickup" value="true" />
 		<property name="ModelOffset" value="0,0.2,0" />
@@ -18220,6 +18227,7 @@ kind of free
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#scorpion?SpiderPrefab" />
 		<property name="Collide" value="bullet,rocket,melee" />
+        <property name="CustomIcon" value="ui_game_symbol_spiderTrap" />
 		<property name="CanPickup" value="false" />
 		<property name="Group" value="Tools/Traps" />
 		<property name="ModelOffset" value="0,0.3,0" />
@@ -18237,6 +18245,7 @@ kind of free
         <property name="Material" value="organic" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#scorpion?SpiderPrefab" />
+        <property name="CustomIcon" value="ui_game_symbol_spiderTrap" />
 		<property name="Collide" value="bullet,rocket,melee" />
 		<property name="CanPickup" value="true" />
 		<drop event="Destroy" name="venomSack" count="2" prob="1" />
@@ -19035,6 +19044,7 @@ kind of free
 		<property name="CanPickup" value="true" />
 		<property name="Group" value="Food/Cooking" />
 		<property name="DescriptionKey" value="radMushroomDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_radMushroom" />
 		<drop event="Destroy" name="radMushroom" count="1" prob="1.0" />
 	</block>
 	<block id="1698" name="radTree">

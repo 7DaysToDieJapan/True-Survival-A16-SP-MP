@@ -311,7 +311,6 @@
 			<block name="cementMixer" prob="7.67" />
 			<block name="prepTable" prob="7.67" />
 			<block name="stove"  prob="5.68" />
-			<block name="metalWorkBench"  prob="3.76" />
 			<block name="researchDesk"  prob="5.68" />
 			<block name="armorTable"  prob="5.68" />
 			<block name="seedNursery"  prob="5.68" />
@@ -785,7 +784,8 @@
 		<item group="pistolWeaponParts" prob="30" />
 		<item group="pumpShotgunWeaponParts" prob="30" />
 		<item group="weaponsHuntingRifleParts" prob="30" />
-		<item name="revolver_parts" quality="50,350" prob="10" />
+		<item name="revolver_parts" quality="50,350" prob="5" />
+        <item name="revolver_cylinder" quality="50,350" prob="5" />
 	</lootgroup>
 	<lootgroup name="weaponsMagnumParts">
 		<item name="parts44Magnum_cylinder" quality="50,350" prob="25" />

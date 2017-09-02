@@ -1,6 +1,6 @@
 <!-- Groups: firearms, weapons, tools, clothing, scavenging, health, crafting !-->
 <progression>
-	<player max_level="200" exp_to_level="4150" experience_multiplier="1.01536" skill_points_per_level="5" skill_point_multiplier="0" /><!--JZMOD FOR END GAME TEST exp_to_level="8300" -->
+	<player max_level="200" exp_to_level="8300" experience_multiplier="1.01536" skill_points_per_level="5" skill_point_multiplier="0" />
 	<!-- A15: 8000 XP for level 1 and 134k for level 199, total cumulative of 9MXP; XPRequired = exp_to_level * experience_multiplier ^ level -->
 	<!-- A16: 8300 XP for level 1, total cumulative of 11MXP -->
 	<skills max_level="100" exp_to_level="250" experience_multiplier="1.03" skill_point_cost_multiplier="1.25" skill_point_cost_per_level="1">
@@ -3201,7 +3201,7 @@
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="10" />
 			<recipe name="weaponRepairKit" unlock_level="1" />
 		</perk>
-        <perk name="silencerPerk" icon="ui_game_symbol_silencer" description_key="Learn to build a Silencer on the metal work bench" title_key="Silencer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
+        <perk name="silencerPerk" icon="ui_game_symbol_silencer" description_key="Learn to build a Silencer on the work bench" title_key="Silencer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="40" />
 			<recipe name="silencer" unlock_level="1" />
 		</perk>
@@ -3235,7 +3235,7 @@
 			<recipe name="silencedAK47Barrel" unlock_level="1" />
 			<recipe name="silencedAK47" unlock_level="1" />
 		</perk>
-        <perk name="bulletPressPerk" icon="ui_game_symbol_bulletPress" description_key="Learn how to craft your very own bullet press on the metal work bench" title_key="Bullet Press" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="20" group="firearms">
+        <perk name="bulletPressPerk" icon="ui_game_symbol_bulletPress" description_key="Learn how to craft your very own bullet press on the work bench" title_key="Bullet Press" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="20" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="10" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="bulletPress" unlock_level="1" />
@@ -3291,14 +3291,14 @@
 			<recipe name="ironArrow" unlock_level="1" />
 			<recipe name="ironCrossbowBolt" unlock_level="1" />
 		</perk>
-		<perk name="steelArrowsPerk" icon="ui_game_symbol_steelArrow" description_key="Learn to craft Steel Arrows and crossbow bolts on the metal work bench" title_key="Steel Arrows" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
+		<perk name="steelArrowsPerk" icon="ui_game_symbol_steelArrow" description_key="Learn to craft Steel Arrows and crossbow bolts on the work bench" title_key="Steel Arrows" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
 			<requirement perk_level="1" required_skill_name="fletchingCraft" required_skill_level="55" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="steelArrowHead" unlock_level="1" />
 			<recipe name="steelArrow" unlock_level="1" />
 			<recipe name="steelCrossbowBolt" unlock_level="1" />
 		</perk>
-		<perk name="carbonArrowPerk" icon="ui_game_symbol_carbonArrow" description_key="Learn to craft strong powerful Carbon Arrow on the metal work bench" title_key="Carbon Arrow" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="8" group="firearms">
+		<perk name="carbonArrowPerk" icon="ui_game_symbol_carbonArrow" description_key="Learn to craft strong powerful Carbon Arrow on the work bench" title_key="Carbon Arrow" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="8" group="firearms">
 			<requirement perk_level="1" required_skill_name="fletchingCraft" required_skill_level="55" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="carbonArrow" unlock_level="1" />
@@ -3441,11 +3441,7 @@
 			<recipe name="steelShovelHead" unlock_level="1" />
             <recipe name="shovelHeadMold" unlock_level="1" />
 		</perk>
-		<perk name="complexWorkbenchPerk" icon="ui_game_symbol_complexWorkbench" description_key="Learn to craft a Metal Working Bench to craft more metal items and faster" title_key="Metal Working bench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
-			<requirement perk_level="1" required_player_level="20" />
-			<recipe name="metalWorkBench" unlock_level="1" />
-		</perk>
-        <perk name="spotlightPerk" icon="ui_game_symbol_spotlight" description_key="Learn to craft a working spotlight on the metal work bench using the Compact Driver." title_key="Spotlight" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
+		<perk name="spotlightPerk" icon="ui_game_symbol_spotlight" description_key="Learn to craft a working spotlight on the work bench using the Compact Driver." title_key="Spotlight" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
 			<requirement perk_level="1" required_player_level="1" />
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="50" />
 			<recipe name="spotlightPlayer" unlock_level="1" />
@@ -3663,7 +3659,7 @@
 				<multiply perk_level="3" value="0.75" />
 			</effect>
 		</perk>
-        <perk name="smallBedPerk" icon="ui_game_symbol_bed01" description_key="Learn to craft a Small Bed on the Metal Work Bench using a wrench. When rested on it will heal and warm you" title_key="Small Bed" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="scavenging">
+        <perk name="smallBedPerk" icon="ui_game_symbol_bed01" description_key="Learn to craft a Small Bed on the work bench using a wrench. When rested on it will heal and warm you" title_key="Small Bed" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="scavenging">
 			<requirement perk_level="1" required_player_level="1" />
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="5" />
 			<recipe name="bed01" unlock_level="1" />
@@ -3716,7 +3712,6 @@
 			<recipe name="woodFrameRamp" unlock_level="2" />
 			<recipe name="woodStairs25" unlock_level="2" />
 			<recipe name="woodPillar100" unlock_level="2" />
-			<recipe name="powerPoleWoodPillar50" unlock_level="2" />
 			<recipe name="woodPlate" unlock_level="2" />
 			<recipe name="woodPole" unlock_level="2" />
 			<recipe name="woodArrowSlitHalf" unlock_level="2" />
@@ -3754,7 +3749,7 @@
 			<recipe name="brickFrameBlock" unlock_level="1" />
 			<recipe name="brickFrameRamp" unlock_level="2" />
 			<recipe name="brickFrameStairs" unlock_level="2" />
-			<recipe name="brickModernArrowSlitHalf" unlock_level="2" />
+			<recipe name="brickFrameStairs25" unlock_level="2" />
 			<recipe name="brickFrameWedge" unlock_level="2" />
 			<recipe name="brickFrameWedgeTip" unlock_level="2" />
 			<recipe name="brickFramePlate" unlock_level="2" />
@@ -3763,24 +3758,26 @@
 			<recipe name="brickFramePillar100" unlock_level="2" />
 			<recipe name="brickFramePillar50" unlock_level="2" />
 			<recipe name="brickFramePole" unlock_level="2" />
-            <recipe name="playerBrickStairs25" unlock_level="2" />
             <recipe name="playerBrickArrowSlitHalf" unlock_level="2" />
           	<!--upgrade material-->
 			<recipe name="bricks" unlock_level="3" />
 		</perk>
 		<perk name="concreteBuilding" icon="ui_game_symbol_concreteMix" description_key="Concrete Building is the skill to master if you want to build with cement. Learn to make cement at skill level 10" title_key="Concrete Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
-			<recipe name="concreteFormBlock" unlock_level="1" />
-			<recipe name="concreteFormRamp" unlock_level="2" />
-			<recipe name="concreteFormStairs" unlock_level="2" />
+			<recipe name="cementFormBlock" unlock_level="1" />
+			<recipe name="cementFormRamp" unlock_level="2" />
+            <recipe name="cementFormStairs25CornerCNR" unlock_level="2" />
+			<recipe name="cementFormStairs25" unlock_level="2" />
 			<recipe name="concreteArrowSlitHalf" unlock_level="2" />
-			<recipe name="concreteFormWedge" unlock_level="2" />
-			<recipe name="concreteFormWedgeTip" unlock_level="2" />
-			<recipe name="concreteFormPlate" unlock_level="2" />
-			<recipe name="concreteFormCNRFull" unlock_level="2" />
-			<recipe name="concreteFormCNRInside" unlock_level="2" />
-			<recipe name="concreteFormPillar100" unlock_level="2" />
-			<recipe name="concreteFormPillar50" unlock_level="2" />
-			<recipe name="concreteFormPole" unlock_level="2" />
+			<recipe name="cementFormWedge" unlock_level="2" />
+			<recipe name="cementFormWedgeTip" unlock_level="2" />
+			<recipe name="cementFormPlate" unlock_level="2" />
+			<recipe name="cementFormCNRFull" unlock_level="2" />
+			<recipe name="cementFormCNRInside" unlock_level="2" />
+			<recipe name="cementFormPillar100" unlock_level="2" />
+			<recipe name="cementFormPillar50" unlock_level="2" />
+			<recipe name="cementFormPole" unlock_level="2" />
+            <recipe name="cementFormWedgeCNRInsideBottom" unlock_level="2" />
+			<recipe name="cementFormWedgeTipCNRFullTop" unlock_level="2" />
 			<!--upgrade material-->
 			<recipe name="cement" unlock_level="3" />
             <recipe name="cementMix" unlock_level="3" />
@@ -3950,7 +3947,7 @@
 			<requirement perk_level="1" required_player_level="55" />
 			<recipe name="vaultDoor01" unlock_level="1" />
 		</perk>
-		<perk name="steelGunSafePerk" icon="ui_game_symbol_gunSafe" description_key="Learn to craft The Steel Gun Safe on the metal work bench using the Wielder. these are the strongest secure storage container you can make" title_key="Steel Gun Safe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
+		<perk name="steelGunSafePerk" icon="ui_game_symbol_gunSafe" description_key="Learn to craft The Steel Gun Safe on the work bench using the Wielder. these are the strongest secure storage container you can make" title_key="Steel Gun Safe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
 			<requirement perk_level="1" required_player_level="55" />
 			<recipe name="cntSteelGunSafe" unlock_level="1" />
 			<recipe name="cntSteelGunSafeB" unlock_level="1" />
@@ -3971,7 +3968,7 @@
 			<requirement perk_level="1" required_skill_name="chemistryCraft" required_skill_level="25" />
 			<recipe name="glue" unlock_level="1" />
 		</perk>
-		<perk name="garageDoorPerk" icon="ui_game_symbol_garageDoorMetal_v1" description_key="Learn to craft a Garage Door on the metal work bench" title_key="Garage Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="science">
+		<perk name="garageDoorPerk" icon="ui_game_symbol_garageDoorMetal_v1" description_key="Learn to craft a Garage Door on the work bench" title_key="Garage Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="science">
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="35" />
 			<recipe name="garageDoorMetal_v1" unlock_level="1" />
 		</perk>
@@ -3979,7 +3976,7 @@
 			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="2" />
 			<recipe name="metalReinforcedWoodDrawBridge" unlock_level="1" />
 		</perk>
-        <perk name="garageDoorPerk" icon="ui_game_symbol_garageDoorMetal_v1" description_key="Learn to craft a Garage Door on the metal work bench" title_key="Garage Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="science">
+        <perk name="garageDoorPerk" icon="ui_game_symbol_garageDoorMetal_v1" description_key="Learn to craft a Garage Door on the work bench" title_key="Garage Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="science">
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="35" />
 			<recipe name="garageDoorMetal_v1" unlock_level="1" />
 		</perk>
