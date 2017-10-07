@@ -233,19 +233,19 @@
 		<reward type="SkillPoints" value="1" />
 	</quest>
     <!-- Basic Survival 34 - Craft Storage Containers /> -->
-	<quest id="quest_BasicSurvival34" group_name_key="quest_BasicSurvival" name_key="Looted Storage" subtitle_key="Looted Storage" description_key="Having a place to stash your supplies is a must but if you don't have the materials or smarts to craft one you can always pick one up. Destroying Backpacks, Sports Bags, Purses and Trash bags will let you pick them up and replace them for easy storage. Grab a few to use for latter." icon="ui_game_symbol_map_house" category_key="quest">
+	<quest id="quest_BasicSurvival34" group_name_key="quest_BasicSurvival" name_key="収納箱の略奪" subtitle_key="収納箱の略奪(Looted Storage)" description_key="君の大事な物を隠しておける場所が必要だが、建材を持っていない、あるいは箱が作れない時は、常に持ち続けなければならないだろう。バックパックやスポーツバック、財布やゴミ箱を拾って、自分の場所に置きなおせば簡易荷物入れとなる。後で使うことも考えて、幾つか取っておくといいだろう。" icon="ui_game_symbol_map_house" category_key="quest">
 		<objective type="FetchKeep" id="cntDuffle01" value="1" />
         <objective type="FetchKeep" id="cntPurse01" value="1" />
         <objective type="FetchKeep" id="cntTrashPile02" value="2" />
 		<reward type="Exp" value="400" />
 	</quest>
     <!-- Basic Survival 35 - Storage Sacks /> -->
-	<quest id="quest_BasicSurvival35" group_name_key="quest_BasicSurvival" name_key="Crafted Storage" subtitle_key="Crafted Storage" description_key="You will need a lot of things to survive in True Survival and you will need somewhere to keep them. Before you can learn more complex secure storage containers Storage Sacks will be all you can craft. Craft one to stash your supplies in." icon="ui_game_symbol_map_house" category_key="quest">
+	<quest id="quest_BasicSurvival35" group_name_key="quest_BasicSurvival" name_key="収納箱のクラフト" subtitle_key="収納箱のクラフト(Crafted Storage)" description_key="君はこの世界で生き残るために、多くの物が必要だろう。そして、それをどこかに保管する必要もあるだろう。より複雑で安全な保管箱を学ぶ前に収納袋を作ってみよう。1つ作って君の大事な物を隠しておこう。" icon="ui_game_symbol_map_house" category_key="quest">
 		<objective type="Craft" id="storageSack" value="1" />
 		<reward type="Exp" value="400" />
 	</quest>
     <!-- Basic Survival 21 - Craft and use craftedRevolver /> -->
-    <quest id="quest_BasicSurvival21" group_name_key="quest_BasicSurvival" name_key="手作りのリボルバーで生き残れ" subtitle_key="リボルバーを作る(Crafted Revolver)" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Revolver and killing some zombies." icon="ui_game_symbol_CraftedRevolver" category_key="quest">
+    <quest id="quest_BasicSurvival21" group_name_key="quest_BasicSurvival" name_key="手作りのリボルバーで生き残れ" subtitle_key="リボルバーを作る(Crafted Revolver)" description_key="この世界では、特に早い段階で銃器を手に入れることは難しい。君が生き残る手助けに、手作りの銃器を初めに渡すことができる。手作りのリボルバーを作り、ゾンビ殺しを始めようじゃないか。" icon="ui_game_symbol_CraftedRevolver" category_key="quest">
         <objective type="Craft" id="craftedRevolverStock" value="1" />
         <objective type="Craft" id="craftedRevolverBarrel" value="1" />
         <objective type="Craft" id="revolver_cylinder" value="1" />
@@ -253,26 +253,26 @@
         <objective type="FetchKeep" id="craftedRevolver" value="1" />
         <reward type="Quest" id="quest_BasicSurvival21b" stage="aftercomplete" />
     </quest>    
-    <quest id="quest_BasicSurvival21b" group_name_key="quest_BasicSurvival" name_key="Surviving with a crafted Revolver" subtitle_key="Crafted Revolver" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Revolver and killing some zombies." icon="ui_game_symbol_CraftedRevolver" category_key="quest">        
+    <quest id="quest_BasicSurvival21b" group_name_key="quest_BasicSurvival" name_key="手作りのリボルバーで生き残れ" subtitle_key="リボルバーを作る(Crafted Revolver)" description_key="この世界では、特に早い段階で銃器を手に入れることは難しい。君が生き残る手助けに、手作りの銃器を初めに渡すことができる。手作りのリボルバーを作り、ゾンビ殺しを始めようじゃないか。" icon="ui_game_symbol_CraftedRevolver" category_key="quest">        
         <objective type="ZombieKill" value="3" />
         <requirement type="Holding" id="craftedRevolver" />
         <reward type="Exp" value="400" />
         <reward type="SkillPoints" value="1" />
     </quest>
     <!-- Basic Survival 22 - Craft and use Blunderbuss /> -->
-    <quest id="quest_BasicSurvival22" group_name_key="quest_BasicSurvival" name_key="Surviving with a blunderbuss" subtitle_key="blunderbuss" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a blunderbuss and killing some zombies." icon="ui_game_symbol_blunderbuss" category_key="quest">
+    <quest id="quest_BasicSurvival22" group_name_key="quest_BasicSurvival" name_key="ラッパ銃で生き残れ" subtitle_key="ラッパ銃(blunderbuss)" description_key="この世界では、特に早い段階で銃器を手に入れることは難しい。君が生き残る手助けに、手作りの銃器を初めに渡すことができる。手作りのリボルバーを作り、ゾンビ殺しを始めようじゃないか。" icon="ui_game_symbol_blunderbuss" category_key="quest">
         <objective type="Craft" id="blunderbuss" value="1" />
         <objective type="Craft" id="blunderbussAmmo" value="5" />
         <reward type="Quest" id="quest_BasicSurvival22b" stage="aftercomplete" />
     </quest>
-    <quest id="quest_BasicSurvival22b" group_name_key="quest_BasicSurvival" name_key="Surviving with a blunderbuss" subtitle_key="blunderbuss" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a blunderbuss and killing some zombies." icon="ui_game_symbol_blunderbuss" category_key="quest">
+    <quest id="quest_BasicSurvival22b" group_name_key="quest_BasicSurvival" name_key="ラッパ銃で生き残れ" subtitle_key="ラッパ銃(blunderbuss)" description_key="この世界では、特に早い段階で銃器を手に入れることは難しい。君が生き残る手助けに、手作りの銃器を初めに渡すことができる。手作りのリボルバーを作り、ゾンビ殺しを始めようじゃないか。" icon="ui_game_symbol_blunderbuss" category_key="quest">
         <objective type="ZombieKill" value="3" />
         <requirement type="Holding" id="blunderbuss" />
         <reward type="Exp" value="400" />
         <reward type="SkillPoints" value="1" />
     </quest>    
     <!-- Basic Survival 23 - Craft and use craftedRifle /> -->
-    <quest id="quest_BasicSurvival23" group_name_key="quest_BasicSurvival" name_key="Surviving with a craftedRifle" subtitle_key="Surviving with a crafted Rifle" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Rifle and killing some zombies." icon="ui_game_symbol_craftedRifle" category_key="quest">
+    <quest id="quest_BasicSurvival23" group_name_key="quest_BasicSurvival" name_key="手作りのライフルで生き残れ" subtitle_key="手作りのライフルで生き残れ(Surviving with a crafted Rifle)" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Rifle and killing some zombies." icon="ui_game_symbol_craftedRifle" category_key="quest">
         <objective type="Craft" id="craftedRifle_stock" value="1" />
         <objective type="Craft" id="craftedRifle_receiver" value="1" />
         <objective type="Craft" id="craftedRifleBarrel" value="1" />
@@ -280,14 +280,14 @@
         <objective type="FetchKeep" id="craftedRifle" value="1" />
         <reward type="Quest" id="quest_BasicSurvival23b" stage="aftercomplete" />
     </quest>
-    <quest id="quest_BasicSurvival23b" group_name_key="quest_BasicSurvival" name_key="Surviving with a craftedRifle" subtitle_key="Surviving with a crafted Rifle" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Rifle and killing some zombies." icon="ui_game_symbol_craftedRifle" category_key="quest">
+    <quest id="quest_BasicSurvival23b" group_name_key="quest_BasicSurvival" name_key="手作りのライフルで生き残れ" subtitle_key="手作りのライフルで生き残れ(Surviving with a crafted Rifle)" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Rifle and killing some zombies." icon="ui_game_symbol_craftedRifle" category_key="quest">
         <objective type="ZombieKill" value="3" />
         <requirement type="Holding" id="craftedRifle" />
         <reward type="Exp" value="400" />
         <reward type="SkillPoints" value="1" />
     </quest>
     <!-- Basic Survival 24 - Build Planks /> -->
-	<quest id="quest_BasicSurvival24" group_name_key="quest_BasicSurvival" name_key="Early Barricades" subtitle_key="Please add text here to finish me" description_key="Before you learn to build frames it can be hard to barricade doors and windows. Craft these Planks and use them for early building and securing buildings." icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_BasicSurvival24" group_name_key="quest_BasicSurvival" name_key="初めのバリケード" subtitle_key="初めのバリケード(Early Barricades)" description_key="フレームの作り方を学ぶ前に、ドアや窓をバリケードするのは難しいといえる。いいことを教えよう。平らな板を作って、早期の簡易拠点や建物の強化に使ってみるといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="1x3Planks" value="1" />
 		<objective type="Craft" id="2x5Planks" value="1" />
 		<objective type="BlockPlace" id="1x3Planks" value="1" />
@@ -295,12 +295,12 @@
 		<reward type="Exp" value="400" />
 	</quest>
 	<!-- Basic Survival 25 - Wood Building /> --> 
-	<quest id="quest_BasicSurvival25" group_name_key="quest_BasicSurvival" name_key="木工を学ぶ" subtitle_key="木工を学ぶ(Learning to build with wood)" description_key="木造建築を学びたいなら、そのための適切なツールが必要だ。くぎ抜き金づち(Claw Hammer)を作るか見つけて、技術を学んでいこう。" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_BasicSurvival25" group_name_key="quest_BasicSurvival" name_key="木工を学ぶ" subtitle_key="木工を学ぶ(Learning to build with wood)" description_key="木造建築を学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、くぎ抜き金づち(Claw Hammer)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="clawHammer" value="1" />
         <reward type="Exp" value="400" />
         <reward type="Quest" id="woodBuilding2" />
 	</quest>
-    <quest id="woodBuilding2" group_name_key="Wood Building" name_key="木工を学ぶ" subtitle_key="木工を学ぶ(Learning to build with wood)" description_key="仕事するための適切なツールを手に入れたようなので、さっそく資源採取の仕事に入ろう。くぎ抜き金づち(claw hammer)を使い、木製のブロックを解体して建材を回収せよ。十分な量を確保できれば、建築の基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="woodBuilding2" group_name_key="Wood Building" name_key="木工を学ぶ" subtitle_key="木工を学ぶ(Learning to build with wood)" description_key="仕事するための適切なツールを手に入れたようなので、さっそく資源採取の仕事に入ろう。くぎ抜き金づち(claw hammer)を使い、木製ブロックを解体して建材を回収せよ。十分な量を確保できれば、木造建築の基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="plank" value="1000" />
 		<reward type="Exp" value="400" />
         <reward type="Recipe" id="woodFrameBlock" />
@@ -349,19 +349,19 @@
         <reward type="Item" id="woodBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 26 - Cobblestone Building /> -->
-	<quest id="quest_BasicSurvival26" group_name_key="quest_BasicSurvival" name_key="Learning to build with cobblestone" subtitle_key="Learning to build with cobblestone" description_key="If you want to learn to build cobblestone structures you're going to need the proper tools to do it. Craft or find a cobblestone Hammer to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_BasicSurvival26" group_name_key="quest_BasicSurvival" name_key="玉石作りを学ぶ" subtitle_key="玉石作りを学ぶ(Learning to build with cobblestone)" description_key="玉石の建築構造を学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、玉石用ハンマー(cobblestone Hammer)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="cobblestoneHammer" value="1" />
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="cobblestoneBuilding2" />
 	</quest>
-    <quest id="cobblestoneBuilding2" group_name_key="Cobblestone Building" name_key="Learning to build with cobblestone" subtitle_key="Learning to build with cobblestone" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the cobblestone hammer to break down cobblestone blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="cobblestoneBuilding2" group_name_key="Cobblestone Building" name_key="玉石作りを学ぶ" subtitle_key="玉石作りを学ぶ(Learning to build with cobblestone)" description_key="仕事するための適切なツールを手に入れたようなので、さっそく資源採取の仕事に入ろう。玉石用ハンマー(claw hammer)を使い、玉石ブロックを解体して建材を回収せよ。十分な量を確保できれば、玉石建築構造の基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="cobblestones" value="1000" />
 		<reward type="Exp" value="400" />
 		<reward type="Recipe" id="cobblestoneFrameBlock" />
         <reward type="Item" id="cobblestoneBuildingSkill" />
 		<reward type="Quest" id="cobblestoneBuilding3" />
 	</quest>
-    <quest id="cobblestoneBuilding3" group_name_key="Cobblestone Building" name_key="Learning to build with cobblestone" subtitle_key="Learning to build with cobblestone" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="cobblestoneBuilding3" group_name_key="Cobblestone Building" name_key="玉石作りを学ぶ" subtitle_key="玉石作りを学ぶ(Learning to build with cobblestone)" description_key="解体作業に慣れた今、次は手に入れた建材で木枠を作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="cobblestoneFrameBlock" value="100" />
 		<reward type="Recipe" id="cobblestoneFrameRamp" />
         <reward type="Recipe" id="cobblestoneFrameStairs25" />
@@ -378,26 +378,26 @@
         <reward type="Item" id="cobblestoneBuildingSkill" />
         <reward type="Quest" id="cobblestoneBuilding4" />
 	</quest>
-    <quest id="cobblestoneBuilding4" group_name_key="Cobblestone Building" name_key="Learning to build with cobblestone" subtitle_key="Learning to build with cobblestone" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="cobblestoneBuilding4" group_name_key="Cobblestone Building" name_key="玉石作りを学ぶ" subtitle_key="玉石作りを学ぶ(Learning to build with cobblestone)" description_key="木枠作りを練習して玉石ブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="BlockUpgrade" id="cobblestoneFrameBlock" value="100" />
 		<reward type="Recipe" id="cobblestones" />
         <reward type="Exp" value="400" />
         <reward type="Item" id="cobblestoneBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 27 - Brick Building /> -->
-	<quest id="quest_BasicSurvival27" group_name_key="quest_BasicSurvival" name_key="Learning to build with brick" subtitle_key="Learning to build with brick" description_key="If you want to learn to build brick structures you're going to need the proper tools to do it. Craft or find a brick Hammer to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_BasicSurvival27" group_name_key="quest_BasicSurvival" name_key="レンガ造りを学ぶ" subtitle_key="レンガ造りを学ぶ(Learning to build with brick)" description_key="レンガ造りを学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、レンガ用ハンマー(brick Hammer)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="brickHammer" value="1" />
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="brickBuilding2" />
 	</quest>
-    <quest id="brickBuilding2" group_name_key="Brick Building" name_key="Learning to build with brick" subtitle_key="Learning to build with brick" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the brick hammer to break down brick blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="brickBuilding2" group_name_key="Brick Building" name_key="レンガ造りを学ぶ" subtitle_key="レンガ造りを学ぶ(Learning to build with brick)" description_key="仕事するための適切なツールを手に入れたようなので、さっそく資源採取の仕事に入ろう。レンガ用ハンマー(brick Hammer)を使い、レンガブロックを解体して建材を回収せよ。十分な量を確保できれば、レンガ造りの基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="bricks" value="1000" />
 		<reward type="Exp" value="400" />
 		<reward type="Recipe" id="brickFrameBlock" />
         <reward type="Item" id="brickBuildingSkill" />
         <reward type="Quest" id="brickBuilding3" />
 	</quest>
-    <quest id="brickBuilding3" group_name_key="Brick Building" name_key="Learning to build with brick" subtitle_key="Learning to build with brick" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="brickBuilding3" group_name_key="Brick Building" name_key="レンガ造りを学ぶ" subtitle_key="レンガ造りを学ぶ(Learning to build with brick)" description_key="解体作業に慣れた今、次は手に入れた建材で木枠を作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="brickFrameBlock" value="100" />
         <reward type="Recipe" id="brickFrameRamp"  />
 		<reward type="Recipe" id="brickFrameStairs" />
@@ -415,26 +415,26 @@
         <reward type="Item" id="brickBuildingSkill" />
         <reward type="Quest" id="brickBuilding4" />
 	</quest>
-    <quest id="brickBuilding4" group_name_key="Brick Building" name_key="Learning to build with brick" subtitle_key="Learning to build with brick" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="brickBuilding4" group_name_key="Brick Building" name_key="レンガ造りを学ぶ" subtitle_key="レンガ造りを学ぶ(Learning to build with brick)" description_key="木枠作りを練習してレンガブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="BlockUpgrade" id="brickFrameBlock" value="100" />
 		<reward type="Recipe" id="bricks" />
         <reward type="Exp" value="400" />
         <reward type="Item" id="brickBuildingSkill" />
     </quest>
 	<!-- Basic Survival 28 - Concrete Building /> -->
-	<quest id="quest_BasicSurvival28" group_name_key="quest_BasicSurvival" name_key="Learning to build with Concrete" subtitle_key="Learning to build with Concrete" description_key="If you want to learn to build Concrete structures you're going to need the proper tools to do it. Craft or find a Concrete Sledge to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_BasicSurvival28" group_name_key="quest_BasicSurvival" name_key="コンクリート建築を学ぶ" subtitle_key="コンクリート建築を学ぶ(Learning to build with Concrete)" description_key="コンクリート建築を学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、コンクリートスレッジハンマー(Concrete Sledge)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="concreteSledge" value="1" />
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="concreteBuilding2" />
 	</quest>
-    <quest id="concreteBuilding2" group_name_key="Concrete Building" name_key="Learning to build with Concrete" subtitle_key="Learning to build with Concrete" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the Concrete sledge to break down Concrete blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="concreteBuilding2" group_name_key="Concrete Building" name_key="コンクリート建築を学ぶ" subtitle_key="コンクリート建築を学ぶ(Learning to build with Concrete)" description_key="仕事するための適切なツールを手に入れたようなので、さっそく資源採取の仕事に入ろう。コンクリートスレッジハンマー(Concrete Sledge)を使い、コンクリートブロックを解体して建材を回収せよ。十分な量を確保できれば、コンクリート建築の基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="cementMix" value="1000" />
         <reward type="Recipe" id="cementFormBlock" />
 		<reward type="Exp" value="400" />
 		<reward type="Item" id="concreteBuildingSkill" />
         <reward type="Quest" id="concreteBuilding3" />
     </quest>
-    <quest id="concreteBuilding3" group_name_key="Concrete Building" name_key="Learning to build with Concrete" subtitle_key="Learning to build with Concrete" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="concreteBuilding3" group_name_key="Concrete Building" name_key="コンクリート建築を学ぶ" subtitle_key="コンクリート建築を学ぶ(Learning to build with Concrete)" description_key="解体作業に慣れた今、次は手に入れた建材で木枠を作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="cementFormBlock" value="100" />
         <reward type="Recipe" id="cementFormRamp"  />
         <reward type="Recipe" id="cementFormStairs25CornerCNR" />
@@ -456,7 +456,7 @@
         <reward type="Item" id="concreteBuildingSkill" />
         <reward type="Quest" id="concreteBuilding4" />
 	</quest>
-    <quest id="concreteBuilding4" group_name_key="Concrete Building" name_key="Learning to build with Concrete" subtitle_key="Learning to build with Concrete" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="concreteBuilding4" group_name_key="Concrete Building" name_key="コンクリート建築を学ぶ" subtitle_key="コンクリート建築を学ぶ(Learning to build with Concrete)" description_key="木枠作りを練習してコンクリートブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="BlockUpgrade" id="cementFormBlock" value="100" />
 		<reward type="Recipe" id="cement" />
         <reward type="Recipe" id="cementMix" />
@@ -464,19 +464,19 @@
         <reward type="Item" id="concreteBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 29 - rConcrete Building /> -->
-	<quest id="quest_BasicSurvival29" group_name_key="quest_BasicSurvival" name_key="Learning to build with Reinforced Concrete" subtitle_key="Learning to build with Reinforced Concrete" description_key="If you want to learn to build Reinforced Concrete structures you're going to need the proper tools to do it. Craft or find a Reinforced Concrete Bar to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_BasicSurvival29" group_name_key="quest_BasicSurvival" name_key="鉄筋コンクリート構造を学ぶ" subtitle_key="鉄筋コンクリート構造を学ぶ(Learning to build with Reinforced Concrete)" description_key="鉄筋コンクリート構造を学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、鉄筋コンクリート用バール(Reinforced Concrete Bar)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="rConcreteBar" value="1" />
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="rConcreteBuilding2" />
 	</quest>
-    <quest id="rConcreteBuilding2" group_name_key="Reinforced Concrete Building" name_key="Learning to build with Reinforced Concrete" subtitle_key="Learning to build with Reinforced Concrete" description_key="Now that you have the right tool for the job all that's left to do is gather some supplies. Use the Reinforced Concrete bar to break down Reinforced Concrete blocks and retrieve the upgrade materials from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="rConcreteBuilding2" group_name_key="Reinforced Concrete Building" name_key="鉄筋コンクリート構造を学ぶ" subtitle_key="鉄筋コンクリート構造を学ぶ(Learning to build with Reinforced Concrete)" description_key="仕事するための適切なツールを手に入れたようなので、さっそく資源採取の仕事に入ろう。鉄筋コンクリート用バール(Reinforced Concrete Bar)を使い、鉄筋コンクリートブロックを解体して建材を回収せよ。十分な量を確保できれば、鉄筋コンクリート構造の基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="concreteMix" value="1000" />
         <reward type="Recipe" id="rebarFrameBlock" />
 		<reward type="Exp" value="400" />
 		<reward type="Item" id="rConcreteBuildingSkill" />
         <reward type="Quest" id="rConcreteBuilding3" />
 	</quest>
-    <quest id="rConcreteBuilding3" group_name_key="Reinforced Concrete Building" name_key="Learning to build with Reinforced Concrete" subtitle_key="Learning to build with Reinforced Concrete" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="rConcreteBuilding3" group_name_key="Reinforced Concrete Building" name_key="鉄筋コンクリート構造を学ぶ" subtitle_key="鉄筋コンクリート構造を学ぶ(Learning to build with Reinforced Concrete)" description_key="解体作業に慣れた今、次は手に入れた建材で鉄筋フレームを作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="rebarFrameBlock" value="100" />
 		<reward type="Recipe" id="rebarFrameRamp"  />
 		<reward type="Recipe" id="rebarStairs25"  />
@@ -499,7 +499,7 @@
         <reward type="Item" id="rConcreteBuildingSkill" />
         <reward type="Quest" id="rConcreteBuilding4" />
 	</quest>
-    <quest id="rConcreteBuilding4" group_name_key="Reinforced Concrete Building" name_key="Learning to build with Reinforced Concrete" subtitle_key="Learning to build with Reinforced Concrete" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="rConcreteBuilding4" group_name_key="Reinforced Concrete Building" name_key="鉄筋コンクリート構造を学ぶ" subtitle_key="鉄筋コンクリート構造を学ぶ(Learning to build with Reinforced Concrete)" description_key="鉄筋フレーム作りを練習して鉄筋コンクリートブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="BlockUpgrade" id="rebarFrameBlock" value="100" />
 		<reward type="Recipe" id="cement"  />
         <reward type="Recipe" id="concreteMix"  />
@@ -507,19 +507,19 @@
         <reward type="Item" id="rConcreteBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 30 - Iron Building /> -->
-	<quest id="quest_BasicSurvival30" group_name_key="quest_BasicSurvival" name_key="Learning to build with iron" subtitle_key="Learning to build with iron" description_key="If you want to learn to build iron structures you're going to need the proper tools to do it. Craft or find a wrench to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_BasicSurvival30" group_name_key="quest_BasicSurvival" name_key="鉄工を学ぶ" subtitle_key="鉄工を学ぶ(Learning to build with iron)" description_key="鉄の構造を学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、レンチ(wrench)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="wrench" value="1" />
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="scrapIronBuilding2" />
 	</quest>
-    <quest id="scrapIronBuilding2" group_name_key="Iron Building" name_key="Learning to build with iron" subtitle_key="Learning to build with iron" description_key="Now that you have the right tool for the job all that's left to do is gather some Scrap Iron Sheets. Use the wrench to break down iron blocks and retrieve the Scrap Iron Sheet from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="scrapIronBuilding2" group_name_key="Iron Building" name_key="鉄工を学ぶ" subtitle_key="鉄工を学ぶ(Learning to build with iron)" description_key="仕事するための適切なツールを手に入れたようなので、さっそくクズ鉄の板を集めよう。レンチ(wrench)を使い、鉄ブロックを解体して建材を回収せよ。十分な量を確保できれば、鉄の構造の基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="corrugatedMetalSheet" value="1000" />
 		<reward type="Recipe" id="scrapIronFrameBlock"  />
         <reward type="Exp" value="400" />
 		<reward type="Item" id="scrapIronBuildingSkill" />
         <reward type="Quest" id="scrapIronBuilding3" />
 	</quest>
-    <quest id="scrapIronBuilding3" group_name_key="Iron Building" name_key="Learning to build with iron" subtitle_key="Learning to build with iron" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="scrapIronBuilding3" group_name_key="Iron Building" name_key="鉄工を学ぶ" subtitle_key="鉄工を学ぶ(Learning to build with iron)" description_key="解体作業に慣れた今、次は手に入れた建材でクズ鉄のフレームを作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="scrapIronFrameBlock" value="100" />
 		<reward type="Recipe" id="scrapIronFrameRamp" />
 		<reward type="Recipe" id="scrapIronStairs25" />
@@ -546,7 +546,7 @@
         <reward type="Item" id="scrapIronBuildingSkill" />
         <reward type="Quest" id="scrapIronBuilding4" />
 	</quest>
-    <quest id="scrapIronBuilding4" group_name_key="Iron Building" name_key="Learning to build with iron" subtitle_key="Learning to build with iron" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="scrapIronBuilding4" group_name_key="Iron Building" name_key="鉄工を学ぶ" subtitle_key="鉄工を学ぶ(Learning to build with iron)" description_key="クズ鉄のフレーム作りを練習してクズ鉄ブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="BlockUpgrade" id="scrapIronFrameBlock" value="100" />
 		<reward type="Recipe" id="nutAndBolt" />
         <reward type="Recipe" id="corrugatedMetalSheet" />
@@ -554,19 +554,19 @@
         <reward type="Item" id="scrapIronBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 31 - Steel Building /> -->
-	<quest id="quest_BasicSurvival31" group_name_key="quest_BasicSurvival" name_key="Learning to build with steel" subtitle_key="Learning to build with steel" description_key="If you want to learn to build steel structures you're going to need the proper tools to do it. Craft or find a welder tool to begin to learn this skill." icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_BasicSurvival31" group_name_key="quest_BasicSurvival" name_key="鋼の構造計算を学ぶ" subtitle_key="鋼の構造計算を学ぶ(Learning to build with steel)" description_key="鋼の構造計算を学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、溶接トーチ(welder tool)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="welderTool" value="1" />
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="steelBuilding2" />
 	</quest>
-    <quest id="steelBuilding2" group_name_key="Steel Building" name_key="Learning to build with steel" subtitle_key="Learning to build with steel" description_key="Now that you have the right tool for the job all that's left to do is gather some Scrap Steel Sheet. Use the welder tool to break down steel blocks and retrieve the Scrap Steel Sheet from them. Collect enough and you will learn the frames for rebuilding the blocks." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="steelBuilding2" group_name_key="Steel Building" name_key="鋼の構造計算を学ぶ" subtitle_key="鋼の構造計算を学ぶ(Learning to build with steel)" description_key="仕事するための適切なツールを手に入れたようなので、さっそく鋼板を集めよう。溶接トーチ(welder tool)を使い、鋼ブロックを解体して建材を回収せよ。十分な量を確保できれば、鋼の構造計算の基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="metalRivetSheet" value="1000" />
 		<reward type="Recipe" id="forgedFrame" />
         <reward type="Exp" value="400" />
 		<reward type="Item" id="steelBuildingSkill" />
         <reward type="Quest" id="steelBuilding3" />
 	</quest>
-    <quest id="steelBuilding3" group_name_key="Steel Building" name_key="Learning to build with steel" subtitle_key="Learning to build with steel" description_key="Now that you have gotten used to taking the material apart try and build some frames yourself." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="steelBuilding3" group_name_key="Steel Building" name_key="鋼の構造計算を学ぶ" subtitle_key="鋼の構造計算を学ぶ(Learning to build with steel)" description_key="解体作業に慣れた今、次は手に入れた建材で鋼のフレームを作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="forgedFrame" value="100" />
 		<reward type="Recipe" id="forgedFrameRamp" />
 		<reward type="Recipe" id="forgedStairs25" />
@@ -585,14 +585,14 @@
         <reward type="Item" id="steelBuildingSkill" />
         <reward type="Quest" id="steelBuilding4" />
 	</quest>
-    <quest id="steelBuilding4" group_name_key="Steel Building" name_key="Learning to build with steel" subtitle_key="Learning to build with steel" description_key="Now that you figured out how to build frames practice upgrading them to master the craft.." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="steelBuilding4" group_name_key="Steel Building" name_key="鋼の構造計算を学ぶ" subtitle_key="鋼の構造計算を学ぶ(Learning to build with steel)" description_key="鋼のフレーム作りを練習して鋼ブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="BlockUpgrade" id="forgedFrame" value="100" />
 		<reward type="Recipe" id="metalRivetSheet" />
         <reward type="Exp" value="400" />
         <reward type="Item" id="steelBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 32 - Farming Chain Starter /> -->
-	<quest id="quest_BasicSurvival32" group_name_key="Becoming a Farmer" name_key="Learning To Farm" subtitle_key="Growing trees" description_key="You can't live off moldy Twinkies forever and sooner or later all the food in the world will spoil so you better know how to grow your own by then. Let's start off with something easy. Collect these tree seeds and plant them to begin your Farming quest chain.When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
+	<quest id="quest_BasicSurvival32" group_name_key="Becoming a Farmer" name_key="農業を学ぶ" subtitle_key="木を育てる(Growing trees)" description_key="この世界の食料生産が崩壊した今、カビの生えたおやつを食べ続けて生きていくことは到底できません。遅かれ早かれ、世界中の食べ物が全て腐る前に、植物の栽培方法を知る必要があるでしょう。簡単ことから始めましょう。木の種を集めて、農業の食物連鎖を理解しましょう。仕事をこなせば、農業年鑑が手に入るでしょう。" icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="BlockPlace" id="treePlantedMountainPine1m" value="10" />
 		<objective type="BlockPlace" id="treePlantedMaple1m" value="10" />
 		<objective type="BlockPlace" id="treePlantedWinterPine1m" value="10" />
@@ -602,7 +602,7 @@
 		<reward type="Quest" id="quest_Farming1" />
 	</quest>
 	<!-- Farming Quest Chain -->
-	<quest id="quest_Farming1" group_name_key="Becoming a Farmer" name_key="Becoming a Farmer" subtitle_key="Learning To Farm" description_key="You can't be a farmer without a hoe so get one made. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
+	<quest id="quest_Farming1" group_name_key="Becoming a Farmer" name_key="農民になる" subtitle_key="農業を学ぶ(Learning To Farm)" description_key="You can't be a farmer without a hoe so get one made. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="hoeIron" value="1" />
         <reward type="Recipe" id="plantedCotton1" />
 		<reward type="Item" id="farmersAlmanac" />
