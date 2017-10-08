@@ -233,7 +233,7 @@
 		<reward type="SkillPoints" value="1" />
 	</quest>
     <!-- Basic Survival 34 - Craft Storage Containers /> -->
-	<quest id="quest_BasicSurvival34" group_name_key="quest_BasicSurvival" name_key="収納箱の略奪" subtitle_key="収納箱の略奪(Looted Storage)" description_key="君の大事な物を隠しておける場所が必要だが、建材を持っていない、あるいは箱が作れない時は、常に持ち続けなければならないだろう。バックパックやスポーツバック、財布やゴミ箱を拾って、自分の場所に置きなおせば簡易荷物入れとなる。後で使うことも考えて、幾つか取っておくといいだろう。" icon="ui_game_symbol_map_house" category_key="quest">
+	<quest id="quest_BasicSurvival34" group_name_key="quest_BasicSurvival" name_key="戦利品の収納" subtitle_key="戦利品の収納(Looted Storage)" description_key="君の大事な物を隠しておける場所が必要だが、建材を持っていない、あるいは箱が作れない時は、常に持ち続けなければならないだろう。バックパックやスポーツバック、財布やゴミ箱を拾って、自分の場所に置きなおせば簡易荷物入れとなる。後で使うことも考えて、幾つか取っておくといいだろう。" icon="ui_game_symbol_map_house" category_key="quest">
 		<objective type="FetchKeep" id="cntDuffle01" value="1" />
         <objective type="FetchKeep" id="cntPurse01" value="1" />
         <objective type="FetchKeep" id="cntTrashPile02" value="2" />
@@ -245,7 +245,7 @@
 		<reward type="Exp" value="400" />
 	</quest>
     <!-- Basic Survival 21 - Craft and use craftedRevolver /> -->
-    <quest id="quest_BasicSurvival21" group_name_key="quest_BasicSurvival" name_key="手作りのリボルバーで生き残れ" subtitle_key="リボルバーを作る(Crafted Revolver)" description_key="この世界では、特に早い段階で銃器を手に入れることは難しい。君が生き残る手助けに、手作りの銃器を初めに渡すことができる。手作りのリボルバーを作り、ゾンビ殺しを始めようじゃないか。" icon="ui_game_symbol_CraftedRevolver" category_key="quest">
+    <quest id="quest_BasicSurvival21" group_name_key="quest_BasicSurvival" name_key="手作りのリボルバーで生き残れ-組立て" subtitle_key="リボルバーを作る(Crafted Revolver)" description_key="この世界では、特に早い段階で銃器を手に入れることは難しい。君が生き残る手助けに、手作りの銃器を初めに渡すことができる。手作りのリボルバーを作り、ゾンビ殺しを始めようじゃないか。" icon="ui_game_symbol_CraftedRevolver" category_key="quest">
         <objective type="Craft" id="craftedRevolverStock" value="1" />
         <objective type="Craft" id="craftedRevolverBarrel" value="1" />
         <objective type="Craft" id="revolver_cylinder" value="1" />
@@ -253,26 +253,26 @@
         <objective type="FetchKeep" id="craftedRevolver" value="1" />
         <reward type="Quest" id="quest_BasicSurvival21b" stage="aftercomplete" />
     </quest>    
-    <quest id="quest_BasicSurvival21b" group_name_key="quest_BasicSurvival" name_key="手作りのリボルバーで生き残れ" subtitle_key="リボルバーを作る(Crafted Revolver)" description_key="この世界では、特に早い段階で銃器を手に入れることは難しい。君が生き残る手助けに、手作りの銃器を初めに渡すことができる。手作りのリボルバーを作り、ゾンビ殺しを始めようじゃないか。" icon="ui_game_symbol_CraftedRevolver" category_key="quest">        
+    <quest id="quest_BasicSurvival21b" group_name_key="quest_BasicSurvival" name_key="手作りのリボルバーで生き残れ-実践" subtitle_key="リボルバーを作る(Crafted Revolver)" description_key="この世界では、特に早い段階で銃器を手に入れることは難しい。君が生き残る手助けに、手作りの銃器を初めに渡すことができる。手作りのリボルバーを作り、ゾンビ殺しを始めようじゃないか。" icon="ui_game_symbol_CraftedRevolver" category_key="quest">        
         <objective type="ZombieKill" value="3" />
         <requirement type="Holding" id="craftedRevolver" />
         <reward type="Exp" value="400" />
         <reward type="SkillPoints" value="1" />
     </quest>
     <!-- Basic Survival 22 - Craft and use Blunderbuss /> -->
-    <quest id="quest_BasicSurvival22" group_name_key="quest_BasicSurvival" name_key="ラッパ銃で生き残れ" subtitle_key="ラッパ銃(blunderbuss)" description_key="この世界では、特に早い段階で銃器を手に入れることは難しい。君が生き残る手助けに、手作りの銃器を初めに渡すことができる。手作りのリボルバーを作り、ゾンビ殺しを始めようじゃないか。" icon="ui_game_symbol_blunderbuss" category_key="quest">
+    <quest id="quest_BasicSurvival22" group_name_key="quest_BasicSurvival" name_key="ラッパ銃で生き残れ-準備" subtitle_key="ラッパ銃(blunderbuss)" description_key="この世界では、特に早い段階で銃器を手に入れることは難しい。君が生き残る手助けに、手作りの銃器を初めに渡すことができる。手作りのリボルバーを作り、ゾンビ殺しを始めようじゃないか。" icon="ui_game_symbol_blunderbuss" category_key="quest">
         <objective type="Craft" id="blunderbuss" value="1" />
         <objective type="Craft" id="blunderbussAmmo" value="5" />
         <reward type="Quest" id="quest_BasicSurvival22b" stage="aftercomplete" />
     </quest>
-    <quest id="quest_BasicSurvival22b" group_name_key="quest_BasicSurvival" name_key="ラッパ銃で生き残れ" subtitle_key="ラッパ銃(blunderbuss)" description_key="この世界では、特に早い段階で銃器を手に入れることは難しい。君が生き残る手助けに、手作りの銃器を初めに渡すことができる。手作りのリボルバーを作り、ゾンビ殺しを始めようじゃないか。" icon="ui_game_symbol_blunderbuss" category_key="quest">
+    <quest id="quest_BasicSurvival22b" group_name_key="quest_BasicSurvival" name_key="ラッパ銃で生き残れ-実践" subtitle_key="ラッパ銃(blunderbuss)" description_key="この世界では、特に早い段階で銃器を手に入れることは難しい。君が生き残る手助けに、手作りの銃器を初めに渡すことができる。手作りのリボルバーを作り、ゾンビ殺しを始めようじゃないか。" icon="ui_game_symbol_blunderbuss" category_key="quest">
         <objective type="ZombieKill" value="3" />
         <requirement type="Holding" id="blunderbuss" />
         <reward type="Exp" value="400" />
         <reward type="SkillPoints" value="1" />
     </quest>    
     <!-- Basic Survival 23 - Craft and use craftedRifle /> -->
-    <quest id="quest_BasicSurvival23" group_name_key="quest_BasicSurvival" name_key="手作りのライフルで生き残れ" subtitle_key="手作りのライフルで生き残れ(Surviving with a crafted Rifle)" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Rifle and killing some zombies." icon="ui_game_symbol_craftedRifle" category_key="quest">
+    <quest id="quest_BasicSurvival23" group_name_key="quest_BasicSurvival" name_key="手作りのライフルで生き残れ-組立て" subtitle_key="手作りのライフルで生き残れ(Surviving with a crafted Rifle)" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Rifle and killing some zombies." icon="ui_game_symbol_craftedRifle" category_key="quest">
         <objective type="Craft" id="craftedRifle_stock" value="1" />
         <objective type="Craft" id="craftedRifle_receiver" value="1" />
         <objective type="Craft" id="craftedRifleBarrel" value="1" />
@@ -280,7 +280,7 @@
         <objective type="FetchKeep" id="craftedRifle" value="1" />
         <reward type="Quest" id="quest_BasicSurvival23b" stage="aftercomplete" />
     </quest>
-    <quest id="quest_BasicSurvival23b" group_name_key="quest_BasicSurvival" name_key="手作りのライフルで生き残れ" subtitle_key="手作りのライフルで生き残れ(Surviving with a crafted Rifle)" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Rifle and killing some zombies." icon="ui_game_symbol_craftedRifle" category_key="quest">
+    <quest id="quest_BasicSurvival23b" group_name_key="quest_BasicSurvival" name_key="手作りのライフルで生き残れ―実践" subtitle_key="手作りのライフルで生き残れ(Surviving with a crafted Rifle)" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Rifle and killing some zombies." icon="ui_game_symbol_craftedRifle" category_key="quest">
         <objective type="ZombieKill" value="3" />
         <requirement type="Holding" id="craftedRifle" />
         <reward type="Exp" value="400" />
@@ -295,19 +295,19 @@
 		<reward type="Exp" value="400" />
 	</quest>
 	<!-- Basic Survival 25 - Wood Building /> --> 
-	<quest id="quest_BasicSurvival25" group_name_key="quest_BasicSurvival" name_key="木工を学ぶ" subtitle_key="木工を学ぶ(Learning to build with wood)" description_key="木造建築を学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、くぎ抜き金づち(Claw Hammer)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_BasicSurvival25" group_name_key="quest_BasicSurvival" name_key="木工を学ぶ-基礎" subtitle_key="木工を学ぶ(Learning to build with wood)" description_key="木造建築を学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、くぎ抜き金づち(Claw Hammer)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="clawHammer" value="1" />
         <reward type="Exp" value="400" />
         <reward type="Quest" id="woodBuilding2" />
 	</quest>
-    <quest id="woodBuilding2" group_name_key="Wood Building" name_key="木工を学ぶ" subtitle_key="木工を学ぶ(Learning to build with wood)" description_key="仕事するための適切なツールを手に入れたようなので、さっそく資源採取の仕事に入ろう。くぎ抜き金づち(claw hammer)を使い、木製ブロックを解体して建材を回収せよ。十分な量を確保できれば、木造建築の基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="woodBuilding2" group_name_key="Wood Building" name_key="木工を学ぶ-初級" subtitle_key="木工を学ぶ(Learning to build with wood)" description_key="仕事するための適切なツールを手に入れたようなので、さっそく資源採取の仕事に入ろう。くぎ抜き金づち(claw hammer)を使い、木製ブロックを解体して建材を回収せよ。十分な量を確保できれば、木造建築の基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="plank" value="1000" />
 		<reward type="Exp" value="400" />
         <reward type="Recipe" id="woodFrameBlock" />
         <reward type="Item" id="woodBuildingSkill" />
         <reward type="Quest" id="woodBuilding3" />
 	</quest>
-    <quest id="woodBuilding3" group_name_key="Wood Building" name_key="木工を学ぶ" subtitle_key="木工を学ぶ(Learning to build with wood)" description_key="解体作業に慣れた今、次は手に入れた建材で木枠を作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="woodBuilding3" group_name_key="Wood Building" name_key="木工を学ぶ-上級" subtitle_key="木工を学ぶ(Learning to build with wood)" description_key="解体作業に慣れた今、次は手に入れた建材で木枠を作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="woodFrameBlock" value="100" />
 		<reward type="Exp" value="400" />
         <reward type="Recipe" id="woodFrameCNRFull" />
@@ -341,7 +341,7 @@
         <reward type="Item" id="woodBuildingSkill" />
         <reward type="Quest" id="woodBuilding4" />
 	</quest>
-    <quest id="woodBuilding4" group_name_key="Wood Building" name_key="木工を学ぶ" subtitle_key="木工を学ぶ(Learning to build with wood)" description_key="木枠作りを練習して木製ブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="woodBuilding4" group_name_key="Wood Building" name_key="木工を学ぶ-応用" subtitle_key="木工を学ぶ(Learning to build with wood)" description_key="木枠作りを練習して木製ブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="BlockUpgrade" id="woodFrameBlock" value="100" />
 		<reward type="Recipe" id="nail" />
         <reward type="Recipe" id="plank" />
@@ -349,19 +349,19 @@
         <reward type="Item" id="woodBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 26 - Cobblestone Building /> -->
-	<quest id="quest_BasicSurvival26" group_name_key="quest_BasicSurvival" name_key="玉石作りを学ぶ" subtitle_key="玉石作りを学ぶ(Learning to build with cobblestone)" description_key="玉石の建築構造を学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、玉石用ハンマー(cobblestone Hammer)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_BasicSurvival26" group_name_key="quest_BasicSurvival" name_key="玉石作りを学ぶ-基礎" subtitle_key="玉石作りを学ぶ(Learning to build with cobblestone)" description_key="玉石の建築構造を学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、玉石用ハンマー(cobblestone Hammer)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="cobblestoneHammer" value="1" />
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="cobblestoneBuilding2" />
 	</quest>
-    <quest id="cobblestoneBuilding2" group_name_key="Cobblestone Building" name_key="玉石作りを学ぶ" subtitle_key="玉石作りを学ぶ(Learning to build with cobblestone)" description_key="仕事するための適切なツールを手に入れたようなので、さっそく資源採取の仕事に入ろう。玉石用ハンマー(claw hammer)を使い、玉石ブロックを解体して建材を回収せよ。十分な量を確保できれば、玉石建築構造の基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="cobblestoneBuilding2" group_name_key="Cobblestone Building" name_key="玉石作りを学ぶ-初級" subtitle_key="玉石作りを学ぶ(Learning to build with cobblestone)" description_key="仕事するための適切なツールを手に入れたようなので、さっそく資源採取の仕事に入ろう。玉石用ハンマー(claw hammer)を使い、玉石ブロックを解体して建材を回収せよ。十分な量を確保できれば、玉石建築構造の基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="cobblestones" value="1000" />
 		<reward type="Exp" value="400" />
 		<reward type="Recipe" id="cobblestoneFrameBlock" />
         <reward type="Item" id="cobblestoneBuildingSkill" />
 		<reward type="Quest" id="cobblestoneBuilding3" />
 	</quest>
-    <quest id="cobblestoneBuilding3" group_name_key="Cobblestone Building" name_key="玉石作りを学ぶ" subtitle_key="玉石作りを学ぶ(Learning to build with cobblestone)" description_key="解体作業に慣れた今、次は手に入れた建材で木枠を作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="cobblestoneBuilding3" group_name_key="Cobblestone Building" name_key="玉石作りを学ぶ-上級" subtitle_key="玉石作りを学ぶ(Learning to build with cobblestone)" description_key="解体作業に慣れた今、次は手に入れた建材で木枠を作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="cobblestoneFrameBlock" value="100" />
 		<reward type="Recipe" id="cobblestoneFrameRamp" />
         <reward type="Recipe" id="cobblestoneFrameStairs25" />
@@ -378,26 +378,26 @@
         <reward type="Item" id="cobblestoneBuildingSkill" />
         <reward type="Quest" id="cobblestoneBuilding4" />
 	</quest>
-    <quest id="cobblestoneBuilding4" group_name_key="Cobblestone Building" name_key="玉石作りを学ぶ" subtitle_key="玉石作りを学ぶ(Learning to build with cobblestone)" description_key="木枠作りを練習して玉石ブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="cobblestoneBuilding4" group_name_key="Cobblestone Building" name_key="玉石作りを学ぶ-応用" subtitle_key="玉石作りを学ぶ(Learning to build with cobblestone)" description_key="木枠作りを練習して玉石ブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="BlockUpgrade" id="cobblestoneFrameBlock" value="100" />
 		<reward type="Recipe" id="cobblestones" />
         <reward type="Exp" value="400" />
         <reward type="Item" id="cobblestoneBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 27 - Brick Building /> -->
-	<quest id="quest_BasicSurvival27" group_name_key="quest_BasicSurvival" name_key="レンガ造りを学ぶ" subtitle_key="レンガ造りを学ぶ(Learning to build with brick)" description_key="レンガ造りを学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、レンガ用ハンマー(brick Hammer)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_BasicSurvival27" group_name_key="quest_BasicSurvival" name_key="レンガ造りを学ぶ-基礎" subtitle_key="レンガ造りを学ぶ(Learning to build with brick)" description_key="レンガ造りを学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、レンガ用ハンマー(brick Hammer)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="brickHammer" value="1" />
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="brickBuilding2" />
 	</quest>
-    <quest id="brickBuilding2" group_name_key="Brick Building" name_key="レンガ造りを学ぶ" subtitle_key="レンガ造りを学ぶ(Learning to build with brick)" description_key="仕事するための適切なツールを手に入れたようなので、さっそく資源採取の仕事に入ろう。レンガ用ハンマー(brick Hammer)を使い、レンガブロックを解体して建材を回収せよ。十分な量を確保できれば、レンガ造りの基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="brickBuilding2" group_name_key="Brick Building" name_key="レンガ造りを学ぶ-初級" subtitle_key="レンガ造りを学ぶ(Learning to build with brick)" description_key="仕事するための適切なツールを手に入れたようなので、さっそく資源採取の仕事に入ろう。レンガ用ハンマー(brick Hammer)を使い、レンガブロックを解体して建材を回収せよ。十分な量を確保できれば、レンガ造りの基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="bricks" value="1000" />
 		<reward type="Exp" value="400" />
 		<reward type="Recipe" id="brickFrameBlock" />
         <reward type="Item" id="brickBuildingSkill" />
         <reward type="Quest" id="brickBuilding3" />
 	</quest>
-    <quest id="brickBuilding3" group_name_key="Brick Building" name_key="レンガ造りを学ぶ" subtitle_key="レンガ造りを学ぶ(Learning to build with brick)" description_key="解体作業に慣れた今、次は手に入れた建材で木枠を作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="brickBuilding3" group_name_key="Brick Building" name_key="レンガ造りを学ぶ-上級" subtitle_key="レンガ造りを学ぶ(Learning to build with brick)" description_key="解体作業に慣れた今、次は手に入れた建材で木枠を作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="brickFrameBlock" value="100" />
         <reward type="Recipe" id="brickFrameRamp"  />
 		<reward type="Recipe" id="brickFrameStairs" />
@@ -415,26 +415,26 @@
         <reward type="Item" id="brickBuildingSkill" />
         <reward type="Quest" id="brickBuilding4" />
 	</quest>
-    <quest id="brickBuilding4" group_name_key="Brick Building" name_key="レンガ造りを学ぶ" subtitle_key="レンガ造りを学ぶ(Learning to build with brick)" description_key="木枠作りを練習してレンガブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="brickBuilding4" group_name_key="Brick Building" name_key="レンガ造りを学ぶ-応用" subtitle_key="レンガ造りを学ぶ(Learning to build with brick)" description_key="木枠作りを練習してレンガブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="BlockUpgrade" id="brickFrameBlock" value="100" />
 		<reward type="Recipe" id="bricks" />
         <reward type="Exp" value="400" />
         <reward type="Item" id="brickBuildingSkill" />
     </quest>
 	<!-- Basic Survival 28 - Concrete Building /> -->
-	<quest id="quest_BasicSurvival28" group_name_key="quest_BasicSurvival" name_key="コンクリート建築を学ぶ" subtitle_key="コンクリート建築を学ぶ(Learning to build with Concrete)" description_key="コンクリート建築を学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、コンクリートスレッジハンマー(Concrete Sledge)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_BasicSurvival28" group_name_key="quest_BasicSurvival" name_key="コンクリート建築を学ぶ-基礎" subtitle_key="コンクリート建築を学ぶ(Learning to build with Concrete)" description_key="コンクリート建築を学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、コンクリートスレッジハンマー(Concrete Sledge)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="concreteSledge" value="1" />
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="concreteBuilding2" />
 	</quest>
-    <quest id="concreteBuilding2" group_name_key="Concrete Building" name_key="コンクリート建築を学ぶ" subtitle_key="コンクリート建築を学ぶ(Learning to build with Concrete)" description_key="仕事するための適切なツールを手に入れたようなので、さっそく資源採取の仕事に入ろう。コンクリートスレッジハンマー(Concrete Sledge)を使い、コンクリートブロックを解体して建材を回収せよ。十分な量を確保できれば、コンクリート建築の基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="concreteBuilding2" group_name_key="Concrete Building" name_key="コンクリート建築を学ぶ-初級" subtitle_key="コンクリート建築を学ぶ(Learning to build with Concrete)" description_key="仕事するための適切なツールを手に入れたようなので、さっそく資源採取の仕事に入ろう。コンクリートスレッジハンマー(Concrete Sledge)を使い、コンクリートブロックを解体して建材を回収せよ。十分な量を確保できれば、コンクリート建築の基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="cementMix" value="1000" />
         <reward type="Recipe" id="cementFormBlock" />
 		<reward type="Exp" value="400" />
 		<reward type="Item" id="concreteBuildingSkill" />
         <reward type="Quest" id="concreteBuilding3" />
     </quest>
-    <quest id="concreteBuilding3" group_name_key="Concrete Building" name_key="コンクリート建築を学ぶ" subtitle_key="コンクリート建築を学ぶ(Learning to build with Concrete)" description_key="解体作業に慣れた今、次は手に入れた建材で木枠を作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="concreteBuilding3" group_name_key="Concrete Building" name_key="コンクリート建築を学ぶ-上級" subtitle_key="コンクリート建築を学ぶ(Learning to build with Concrete)" description_key="解体作業に慣れた今、次は手に入れた建材で木枠を作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="cementFormBlock" value="100" />
         <reward type="Recipe" id="cementFormRamp"  />
         <reward type="Recipe" id="cementFormStairs25CornerCNR" />
@@ -456,7 +456,7 @@
         <reward type="Item" id="concreteBuildingSkill" />
         <reward type="Quest" id="concreteBuilding4" />
 	</quest>
-    <quest id="concreteBuilding4" group_name_key="Concrete Building" name_key="コンクリート建築を学ぶ" subtitle_key="コンクリート建築を学ぶ(Learning to build with Concrete)" description_key="木枠作りを練習してコンクリートブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="concreteBuilding4" group_name_key="Concrete Building" name_key="コンクリート建築を学ぶ-応用" subtitle_key="コンクリート建築を学ぶ(Learning to build with Concrete)" description_key="木枠作りを練習してコンクリートブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="BlockUpgrade" id="cementFormBlock" value="100" />
 		<reward type="Recipe" id="cement" />
         <reward type="Recipe" id="cementMix" />
@@ -464,19 +464,19 @@
         <reward type="Item" id="concreteBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 29 - rConcrete Building /> -->
-	<quest id="quest_BasicSurvival29" group_name_key="quest_BasicSurvival" name_key="鉄筋コンクリート構造を学ぶ" subtitle_key="鉄筋コンクリート構造を学ぶ(Learning to build with Reinforced Concrete)" description_key="鉄筋コンクリート構造を学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、鉄筋コンクリート用バール(Reinforced Concrete Bar)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_BasicSurvival29" group_name_key="quest_BasicSurvival" name_key="鉄筋コンクリート構造を学ぶ-基礎" subtitle_key="鉄筋コンクリート構造を学ぶ(Learning to build with Reinforced Concrete)" description_key="鉄筋コンクリート構造を学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、鉄筋コンクリート用バール(Reinforced Concrete Bar)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="rConcreteBar" value="1" />
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="rConcreteBuilding2" />
 	</quest>
-    <quest id="rConcreteBuilding2" group_name_key="Reinforced Concrete Building" name_key="鉄筋コンクリート構造を学ぶ" subtitle_key="鉄筋コンクリート構造を学ぶ(Learning to build with Reinforced Concrete)" description_key="仕事するための適切なツールを手に入れたようなので、さっそく資源採取の仕事に入ろう。鉄筋コンクリート用バール(Reinforced Concrete Bar)を使い、鉄筋コンクリートブロックを解体して建材を回収せよ。十分な量を確保できれば、鉄筋コンクリート構造の基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="rConcreteBuilding2" group_name_key="Reinforced Concrete Building" name_key="鉄筋コンクリート構造を学ぶ-初級" subtitle_key="鉄筋コンクリート構造を学ぶ(Learning to build with Reinforced Concrete)" description_key="仕事するための適切なツールを手に入れたようなので、さっそく資源採取の仕事に入ろう。鉄筋コンクリート用バール(Reinforced Concrete Bar)を使い、鉄筋コンクリートブロックを解体して建材を回収せよ。十分な量を確保できれば、鉄筋コンクリート構造の基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="concreteMix" value="1000" />
         <reward type="Recipe" id="rebarFrameBlock" />
 		<reward type="Exp" value="400" />
 		<reward type="Item" id="rConcreteBuildingSkill" />
         <reward type="Quest" id="rConcreteBuilding3" />
 	</quest>
-    <quest id="rConcreteBuilding3" group_name_key="Reinforced Concrete Building" name_key="鉄筋コンクリート構造を学ぶ" subtitle_key="鉄筋コンクリート構造を学ぶ(Learning to build with Reinforced Concrete)" description_key="解体作業に慣れた今、次は手に入れた建材で鉄筋フレームを作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="rConcreteBuilding3" group_name_key="Reinforced Concrete Building" name_key="鉄筋コンクリート構造を学ぶ-上級" subtitle_key="鉄筋コンクリート構造を学ぶ(Learning to build with Reinforced Concrete)" description_key="解体作業に慣れた今、次は手に入れた建材で鉄筋フレームを作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="rebarFrameBlock" value="100" />
 		<reward type="Recipe" id="rebarFrameRamp"  />
 		<reward type="Recipe" id="rebarStairs25"  />
@@ -499,7 +499,7 @@
         <reward type="Item" id="rConcreteBuildingSkill" />
         <reward type="Quest" id="rConcreteBuilding4" />
 	</quest>
-    <quest id="rConcreteBuilding4" group_name_key="Reinforced Concrete Building" name_key="鉄筋コンクリート構造を学ぶ" subtitle_key="鉄筋コンクリート構造を学ぶ(Learning to build with Reinforced Concrete)" description_key="鉄筋フレーム作りを練習して鉄筋コンクリートブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="rConcreteBuilding4" group_name_key="Reinforced Concrete Building" name_key="鉄筋コンクリート構造を学ぶ-応用" subtitle_key="鉄筋コンクリート構造を学ぶ(Learning to build with Reinforced Concrete)" description_key="鉄筋フレーム作りを練習して鉄筋コンクリートブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="BlockUpgrade" id="rebarFrameBlock" value="100" />
 		<reward type="Recipe" id="cement"  />
         <reward type="Recipe" id="concreteMix"  />
@@ -507,19 +507,19 @@
         <reward type="Item" id="rConcreteBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 30 - Iron Building /> -->
-	<quest id="quest_BasicSurvival30" group_name_key="quest_BasicSurvival" name_key="鉄工を学ぶ" subtitle_key="鉄工を学ぶ(Learning to build with iron)" description_key="鉄の構造を学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、レンチ(wrench)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_BasicSurvival30" group_name_key="quest_BasicSurvival" name_key="鉄工を学ぶ-基礎" subtitle_key="鉄工を学ぶ(Learning to build with iron)" description_key="鉄の構造を学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、レンチ(wrench)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="wrench" value="1" />
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="scrapIronBuilding2" />
 	</quest>
-    <quest id="scrapIronBuilding2" group_name_key="Iron Building" name_key="鉄工を学ぶ" subtitle_key="鉄工を学ぶ(Learning to build with iron)" description_key="仕事するための適切なツールを手に入れたようなので、さっそくクズ鉄の板を集めよう。レンチ(wrench)を使い、鉄ブロックを解体して建材を回収せよ。十分な量を確保できれば、鉄の構造の基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="scrapIronBuilding2" group_name_key="Iron Building" name_key="鉄工を学ぶ-初級" subtitle_key="鉄工を学ぶ(Learning to build with iron)" description_key="仕事するための適切なツールを手に入れたようなので、さっそくクズ鉄の板を集めよう。レンチ(wrench)を使い、鉄ブロックを解体して建材を回収せよ。十分な量を確保できれば、鉄の構造の基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="corrugatedMetalSheet" value="1000" />
 		<reward type="Recipe" id="scrapIronFrameBlock"  />
         <reward type="Exp" value="400" />
 		<reward type="Item" id="scrapIronBuildingSkill" />
         <reward type="Quest" id="scrapIronBuilding3" />
 	</quest>
-    <quest id="scrapIronBuilding3" group_name_key="Iron Building" name_key="鉄工を学ぶ" subtitle_key="鉄工を学ぶ(Learning to build with iron)" description_key="解体作業に慣れた今、次は手に入れた建材でクズ鉄のフレームを作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="scrapIronBuilding3" group_name_key="Iron Building" name_key="鉄工を学ぶ-上級" subtitle_key="鉄工を学ぶ(Learning to build with iron)" description_key="解体作業に慣れた今、次は手に入れた建材でクズ鉄のフレームを作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="scrapIronFrameBlock" value="100" />
 		<reward type="Recipe" id="scrapIronFrameRamp" />
 		<reward type="Recipe" id="scrapIronStairs25" />
@@ -546,7 +546,7 @@
         <reward type="Item" id="scrapIronBuildingSkill" />
         <reward type="Quest" id="scrapIronBuilding4" />
 	</quest>
-    <quest id="scrapIronBuilding4" group_name_key="Iron Building" name_key="鉄工を学ぶ" subtitle_key="鉄工を学ぶ(Learning to build with iron)" description_key="クズ鉄のフレーム作りを練習してクズ鉄ブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="scrapIronBuilding4" group_name_key="Iron Building" name_key="鉄工を学ぶ-応用" subtitle_key="鉄工を学ぶ(Learning to build with iron)" description_key="クズ鉄のフレーム作りを練習してクズ鉄ブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="BlockUpgrade" id="scrapIronFrameBlock" value="100" />
 		<reward type="Recipe" id="nutAndBolt" />
         <reward type="Recipe" id="corrugatedMetalSheet" />
@@ -554,19 +554,19 @@
         <reward type="Item" id="scrapIronBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 31 - Steel Building /> -->
-	<quest id="quest_BasicSurvival31" group_name_key="quest_BasicSurvival" name_key="鋼の構造計算を学ぶ" subtitle_key="鋼の構造計算を学ぶ(Learning to build with steel)" description_key="鋼の構造計算を学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、溶接トーチ(welder tool)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
+	<quest id="quest_BasicSurvival31" group_name_key="quest_BasicSurvival" name_key="鋼の構造計算を学ぶ-基礎" subtitle_key="鋼の構造計算を学ぶ(Learning to build with steel)" description_key="鋼の構造計算を学びたいなら、そのための適切なツールが必要だ。技術を学びたいなら、溶接トーチ(welder tool)を作るか見つけてこい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="welderTool" value="1" />
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="steelBuilding2" />
 	</quest>
-    <quest id="steelBuilding2" group_name_key="Steel Building" name_key="鋼の構造計算を学ぶ" subtitle_key="鋼の構造計算を学ぶ(Learning to build with steel)" description_key="仕事するための適切なツールを手に入れたようなので、さっそく鋼板を集めよう。溶接トーチ(welder tool)を使い、鋼ブロックを解体して建材を回収せよ。十分な量を確保できれば、鋼の構造計算の基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="steelBuilding2" group_name_key="Steel Building" name_key="鋼の構造計算を学ぶ-初級" subtitle_key="鋼の構造計算を学ぶ(Learning to build with steel)" description_key="仕事するための適切なツールを手に入れたようなので、さっそく鋼板を集めよう。溶接トーチ(welder tool)を使い、鋼ブロックを解体して建材を回収せよ。十分な量を確保できれば、鋼の構造計算の基礎を覚えることができるだろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="FetchKeep" id="metalRivetSheet" value="1000" />
 		<reward type="Recipe" id="forgedFrame" />
         <reward type="Exp" value="400" />
 		<reward type="Item" id="steelBuildingSkill" />
         <reward type="Quest" id="steelBuilding3" />
 	</quest>
-    <quest id="steelBuilding3" group_name_key="Steel Building" name_key="鋼の構造計算を学ぶ" subtitle_key="鋼の構造計算を学ぶ(Learning to build with steel)" description_key="解体作業に慣れた今、次は手に入れた建材で鋼のフレームを作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="steelBuilding3" group_name_key="Steel Building" name_key="鋼の構造計算を学ぶ-上級" subtitle_key="鋼の構造計算を学ぶ(Learning to build with steel)" description_key="解体作業に慣れた今、次は手に入れた建材で鋼のフレームを作るといい。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="forgedFrame" value="100" />
 		<reward type="Recipe" id="forgedFrameRamp" />
 		<reward type="Recipe" id="forgedStairs25" />
@@ -585,14 +585,14 @@
         <reward type="Item" id="steelBuildingSkill" />
         <reward type="Quest" id="steelBuilding4" />
 	</quest>
-    <quest id="steelBuilding4" group_name_key="Steel Building" name_key="鋼の構造計算を学ぶ" subtitle_key="鋼の構造計算を学ぶ(Learning to build with steel)" description_key="鋼のフレーム作りを練習して鋼ブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="steelBuilding4" group_name_key="Steel Building" name_key="鋼の構造計算を学ぶ-応用" subtitle_key="鋼の構造計算を学ぶ(Learning to build with steel)" description_key="鋼のフレーム作りを練習して鋼ブロックの作り方が分かった今、最後にブロックをアップグレードで仕上げて熟練の職人になろう。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="BlockUpgrade" id="forgedFrame" value="100" />
 		<reward type="Recipe" id="metalRivetSheet" />
         <reward type="Exp" value="400" />
         <reward type="Item" id="steelBuildingSkill" />
 	</quest>
 	<!-- Basic Survival 32 - Farming Chain Starter /> -->
-	<quest id="quest_BasicSurvival32" group_name_key="Becoming a Farmer" name_key="農業を学ぶ" subtitle_key="木を育てる(Growing trees)" description_key="この世界の食料生産が崩壊した今、カビの生えたおやつを食べ続けて生きていくことは到底できません。遅かれ早かれ、世界中の食べ物が全て腐る前に、植物の栽培方法を知る必要があるでしょう。簡単ことから始めましょう。木の種を集めて、農業の食物連鎖を理解しましょう。仕事をこなせば、農業年鑑が手に入るでしょう。" icon="ui_game_symbol_farming" category_key="quest">
+	<quest id="quest_BasicSurvival32" group_name_key="Becoming a Farmer" name_key="農業を学ぶ" subtitle_key="木を育てる(Growing trees)" description_key="この世界の食料生産が崩壊した今、カビの生えたおやつを食べ続けて生きていくことは到底できません。遅かれ早かれ、世界中の食べ物が全て腐る前に、植物の栽培方法を知る必要があるでしょう。簡単なことから始めましょう。木の種を集めて、農業の法則を理解しましょう。仕事をこなせば、農業年鑑が手に入るでしょう。" icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="BlockPlace" id="treePlantedMountainPine1m" value="10" />
 		<objective type="BlockPlace" id="treePlantedMaple1m" value="10" />
 		<objective type="BlockPlace" id="treePlantedWinterPine1m" value="10" />
@@ -602,14 +602,14 @@
 		<reward type="Quest" id="quest_Farming1" />
 	</quest>
 	<!-- Farming Quest Chain -->
-	<quest id="quest_Farming1" group_name_key="Becoming a Farmer" name_key="農民になる" subtitle_key="農業を学ぶ(Learning To Farm)" description_key="You can't be a farmer without a hoe so get one made. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
+	<quest id="quest_Farming1" group_name_key="Becoming a Farmer" name_key="農民になる" subtitle_key="農業を学ぶ(Learning To Farm)" description_key="クワが無ければ農民とは言えません。1つ作ってみましょう。仕事をこなせば、農業年鑑に新たな1ページが書き加えられることでしょう。" icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="hoeIron" value="1" />
         <reward type="Recipe" id="plantedCotton1" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Quest" id="quest_Farming2" />
 		<reward type="Exp" value="400" />
 	</quest>
-	<quest id="quest_Farming2" group_name_key="Becoming a Farmer" name_key="Growing Cotton" subtitle_key="Growing Cotton" description_key="Now craft and plant some Cotton Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
+	<quest id="quest_Farming2" group_name_key="Becoming a Farmer" name_key="綿花を育てる" subtitle_key="綿花を育てる(Growing Cotton)" description_key="綿花の種(Cotton Seeds)を用意して育ててみましょう。仕事をこなせば、農業年鑑に新たな1ページが書き加えられることでしょう。" icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedCotton1" value="50" />
 		<objective type="BlockPlace" id="plantedCotton1" value="50" />
 		<reward type="Recipe" id="plantedPotato1" />
@@ -617,7 +617,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming3" />
 	</quest>
-	<quest id="quest_Farming3" group_name_key="Becoming a Farmer" name_key="Growing Potatos" subtitle_key="Growing Potatos" description_key="Now craft and plant some Potato Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
+	<quest id="quest_Farming3" group_name_key="Becoming a Farmer" name_key="ジャガイモを栽培する" subtitle_key="ジャガイモを栽培する(Growing Potatos)" description_key="ジャガイモの種(Potato Seeds)を用意して栽培してみましょう。仕事をこなせば、農業年鑑に新たな1ページが書き加えられることでしょう。" icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedPotato1" value="50" />
 		<objective type="BlockPlace" id="plantedPotato1" value="50" />
 		<reward type="Recipe" id="plantedGoldenrod1" />
@@ -625,7 +625,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming4" />
 	</quest>
-	<quest id="quest_Farming4" group_name_key="Becoming a Farmer" name_key="Growing Goldenrod" subtitle_key="Growing Goldenrod" description_key="Now craft and plant some Goldenrod Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
+	<quest id="quest_Farming4" group_name_key="Becoming a Farmer" name_key="黄色い花を育てる" subtitle_key="アキノキリンソウを育てる(Growing Goldenrod)" description_key="アキノキリンソウの種(Goldenrod Seeds)を用意して育ててみましょう。仕事をこなせば、農業年鑑に新たな1ページが書き加えられることでしょう。" icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedGoldenrod1" value="100" />
 		<objective type="BlockPlace" id="plantedGoldenrod1" value="100" />
 		<reward type="Recipe" id="plantedCorn1" />
@@ -633,7 +633,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming5" />
 	</quest>
-	<quest id="quest_Farming5" group_name_key="Becoming a Farmer" name_key="Growing Corn" subtitle_key="Growing Corn" description_key="Now craft and plant some Corn Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
+	<quest id="quest_Farming5" group_name_key="Becoming a Farmer" name_key="トウモロコシを栽培する" subtitle_key="トウモロコシを栽培する(Growing Corn)" description_key="トウモロコシの種(Corn Seeds)を用意して栽培してみましょう。仕事をこなせば、農業年鑑に新たな1ページが書き加えられることでしょう。" icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedCorn1" value="100" />
 		<objective type="BlockPlace" id="plantedCorn1" value="100" />
 		<reward type="Recipe" id="plantedChrysanthemum1" />
@@ -641,7 +641,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming6" />
 	</quest>
-	<quest id="quest_Farming6" group_name_key="Becoming a Farmer" name_key="Growing Chrysanthemum" subtitle_key="Growing Chrysanthemum" description_key="Now craft and plant some Chrysanthemum Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
+	<quest id="quest_Farming6" group_name_key="Becoming a Farmer" name_key="赤い花を育てる" subtitle_key="シュギクを育てる(Growing Chrysanthemum)" description_key="シュギクの種(Chrysanthemum Seeds)を用意して育ててみましょう。仕事をこなせば、農業年鑑に新たな1ページが書き加えられることでしょう。" icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedChrysanthemum1" value="100" />
 		<objective type="BlockPlace" id="plantedChrysanthemum1" value="100" />
 		<reward type="Recipe" id="carrotSeed" />
@@ -649,7 +649,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming7" />
 	</quest>
-	<quest id="quest_Farming7" group_name_key="Becoming a Farmer" name_key="Growing carrot" subtitle_key="Growing carrot" description_key="Now craft and plant some carrot Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
+	<quest id="quest_Farming7" group_name_key="Becoming a Farmer" name_key="ニンジンを栽培する" subtitle_key="ニンジンを栽培する(Growing carrot)" description_key="ニンジンの種(carrot Seeds)を用意して栽培してみましょう。仕事をこなせば、農業年鑑に新たな1ページが書き加えられることでしょう。" icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="carrotSeed" value="100" />
 		<objective type="BlockPlace" id="carrotSeed" value="100" />
 		<reward type="Recipe" id="wheatSeed" />
@@ -657,7 +657,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming8" />
 	</quest>
-	<quest id="quest_Farming8" group_name_key="Becoming a Farmer" name_key="Growing wheat" subtitle_key="Growing wheat" description_key="Now craft and plant some wheat Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
+	<quest id="quest_Farming8" group_name_key="Becoming a Farmer" name_key="小麦を栽培する" subtitle_key="小麦を栽培する(Growing wheat)" description_key="小麦の種(wheat Seeds)を用意して栽培してみましょう。仕事をこなせば、農業年鑑に新たな1ページが書き加えられることでしょう。" icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="wheatSeed" value="100" />
 		<objective type="BlockPlace" id="wheatSeed" value="100" />
 		<reward type="Recipe" id="appleSeed" />
@@ -665,7 +665,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming9" />
 	</quest>
-	<quest id="quest_Farming9" group_name_key="Becoming a Farmer" name_key="Growing apples" subtitle_key="Growing apples" description_key="Now craft and plant some apple Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
+	<quest id="quest_Farming9" group_name_key="Becoming a Farmer" name_key="リンゴの木を育てる" subtitle_key="リンゴの木を育てる(Growing apples)" description_key="リンゴの種(apple Seeds)を用意してリンゴの木を育ててみましょう。仕事をこなせば、農業年鑑に新たな1ページが書き加えられることでしょう。" icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="appleSeed" value="100" />
 		<objective type="BlockPlace" id="appleSeed" value="100" />
 		<reward type="Recipe" id="plantedMushroom1" />
@@ -673,7 +673,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming10" />
 	</quest>
-	<quest id="quest_Farming10" group_name_key="Becoming a Farmer" name_key="Growing Mushroom" subtitle_key="Growing Mushroom" description_key="Now craft and plant some Mushroom Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
+	<quest id="quest_Farming10" group_name_key="Becoming a Farmer" name_key="キノコを栽培する" subtitle_key="キノコを栽培する(Growing Mushroom)" description_key="キノコの種菌(Mushroom Seeds)を用意して栽培してみましょう。仕事をこなせば、農業年鑑に新たな1ページが書き加えられることでしょう。" icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedMushroom1" value="100" />
 		<objective type="BlockPlace" id="plantedMushroom1" value="100" />
 		<reward type="Recipe" id="plantedBlueberry1" />
@@ -681,7 +681,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming11" />
 	</quest>
-	<quest id="quest_Farming11" group_name_key="Becoming a Farmer" name_key="Growing Blueberry" subtitle_key="Growing Blueberry" description_key="Now craft and plant some Blueberry Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
+	<quest id="quest_Farming11" group_name_key="Becoming a Farmer" name_key="ブルーベリーを栽培する" subtitle_key="ブルーベリーを栽培する(Growing Blueberry)" description_key="ブルーベリーの種(Blueberry Seeds)を用意して栽培してみましょう。仕事をこなせば、農業年鑑に新たな1ページが書き加えられることでしょう。" icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedBlueberry1" value="100" />
 		<objective type="BlockPlace" id="plantedBlueberry1" value="100" />
 		<reward type="Recipe" id="plantedYucca1" />
@@ -689,7 +689,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming12" />
 	</quest>
-	<quest id="quest_Farming12" group_name_key="Becoming a Farmer" name_key="Growing Yucca" subtitle_key="Growing Yucca" description_key="Now craft and plant some Yucca Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
+	<quest id="quest_Farming12" group_name_key="Becoming a Farmer" name_key="ユッカを育てる" subtitle_key="ユッカを育てる(Growing Yucca)" description_key="ユッカの種(Yucca Seeds)を用意して育ててみましょう。仕事をこなせば、農業年鑑に新たな1ページが書き加えられることでしょう。" icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedYucca1" value="100" />
 		<objective type="BlockPlace" id="plantedYucca1" value="100" />
 		<reward type="Recipe" id="plantedAloe1" />
@@ -697,7 +697,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming13" />
 	</quest>
-	<quest id="quest_Farming13" group_name_key="Becoming a Farmer" name_key="Growing Aloe" subtitle_key="Growing Aloe" description_key="Now craft and plant some Aloe Seeds. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
+	<quest id="quest_Farming13" group_name_key="Becoming a Farmer" name_key="アロエを育てる" subtitle_key="アロエを育てる(Growing Aloe)" description_key="アロエの種(Aloe Seeds)を用意して育ててみましょう。仕事をこなせば、農業年鑑に新たな1ページが書き加えられることでしょう。" icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="plantedAloe1" value="100" />
 		<objective type="BlockPlace" id="plantedAloe1" value="100" />
 		<reward type="Recipe" id="fertilizer" />
@@ -705,7 +705,7 @@
 		<reward type="Exp" value="400" />
 		<reward type="Quest" id="quest_Farming14" />
 	</quest>
-	<quest id="quest_Farming14" group_name_key="Becoming a Farmer" name_key="Making fertilizer" subtitle_key="Making fertilizer" description_key="Any squirrel can plant a nut and grow a tree but it takes Farmer that can make fertilizer to increase crop yields. To finish off your farming quest chain create some fertilizer. When you complete these quest you will receive a Farmer's Almanac that when read will unlock the next Farming perk. Be sure to have inventory room when completing and read the book immediately." icon="ui_game_symbol_farming" category_key="quest">
+	<quest id="quest_Farming14" group_name_key="Becoming a Farmer" name_key="肥料を作る" subtitle_key="肥料を作る(Making fertilizer)" description_key="リスたちは、木の実を植えて木を育てることができますが、収穫量を増やすには肥料を作る農民が必要です。農業の法則を最後まで理解するために、肥料を作ってみましょう。仕事をこなせば、農業年鑑に新たな1ページが書き加えられることでしょう。" icon="ui_game_symbol_farming" category_key="quest">
 		<objective type="Craft" id="fertilizer" value="250" />
 		<reward type="Item" id="farmersAlmanac" />
 		<reward type="Exp" value="400" />

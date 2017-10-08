@@ -834,7 +834,7 @@ plantedGoldenrod3HarvestDesc,blocks,Farming,KgNone,黄金色のアキノキリ�
 plantedPotato1,blocks,Farming,KgNone,Potato Seed,Potato Seed,Saatkartoffel,,Semillas de papa
 plantedPotato3Harvest,blocks,Farming,KgNone,Potato Plant (Harvestable),Potato Plant (Harvestable),Gepflanzte Kartoffel – Ernte,,Sembrado Patata - Cosecha
 plantedYucca3Harvest,blocks,Farming,KgNone,Yucca Plant (Harvestable),Yucca Plant (Harvestable),Yucca-Pflanze,,Planta de yuca
-plantedYucca3HarvestDesc,blocks,Farming,KgNone,ﾕｯｶｼﾞｭｰｽ(yucca juice)の材料になります。種にして栽培する道もあります。,A yucca plant can be used to make yucca juice.,Aus der Yucca-Pflanze kann Yucca-Saft hergestellt werden.,,Se puede usar una planta de yuca para hacer zumo de yuca.
+plantedYucca3HarvestDesc,blocks,Farming,KgNone,ユッカジュース(yucca juice)の材料になります。種にして栽培する道もあります。,A yucca plant can be used to make yucca juice.,Aus der Yucca-Pflanze kann Yucca-Saft hergestellt werden.,,Se puede usar una planta de yuca para hacer zumo de yuca.
 signCampFish,blocks,Sign,KgNone,Camping & Fishing,Camping & Fishing,Camping & Angeln,,Acampada y pesca
 signCamping,blocks,Sign,KgNone,Camping,Camping,Camping,,Acampada
 signInfoCenter,blocks,Sign,KgNone,Information Center,Information Center,Informationszentrum,,Centro de información
