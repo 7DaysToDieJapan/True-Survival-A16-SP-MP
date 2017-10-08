@@ -16549,7 +16549,7 @@ kind of free
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="CanPickup" value="true" />
 		<property name="CustomIcon" value="ui_game_symbol_soldier" />
-		<property name="DescriptionKey" value="professionChoiceDesc" />
+		<property name="DescriptionKey" value="professionKitDesc" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="soldierSupplies" />
 			<property name="Item" value="professionKey" />

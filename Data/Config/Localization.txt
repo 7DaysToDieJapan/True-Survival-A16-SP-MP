@@ -5064,7 +5064,7 @@ setUpASpikeTrapDesc,,,,地面に設置して使用します。木の棒で修理
 bikeNABoxDesc,,,,ミニバイクのパーツが入った木箱を設置できます。地上に置いて開いてみてください。,"A crate with a mini bike in it. Place it on the ground and break it open to loot it",,,
 bearTrap,,,,"Bear Trap",,,,
 trapbearDesc,,,,強力な金属製の熊捕獲用のトラップです。対ゾンビトラップか、餌を取り付けて動物の捕獲に使います。作業台(workbench)にレンチ(wrench)をセットして作ります。,"A Strong metal Bear Trap. Use it as a trap for zombies or bait it to try and catch some animals. Crafted on the wood working bench using a wrench.",,,
-qc_ZombieDesc,,,,まさにあなたは、真の生存者です。あなたなら、これくらい容易いものです。,"So you think you’re a True Survivor. Let’s see you do this",,,
+qc_ZombieDesc,,,,まさにあなたは、真のサバイバーです。あなたなら、これくらい容易いものです。,"So you think you’re a True Survivor. Let’s see you do this",,,
 SkillMagazineReadDesc,,,,この雑誌でスキル経験値(350XP)を取得したり、スキルページ(skill paper)にスクラップして10ページ集め、リサーチデスク(Research Desk)で職業専門書(profession page)を作成することができます。,"Use this Magazine to gain knowledge(350XP) in the category of the magazine or scrap it into a skill page and collect 10 to craft a profession page on the research desk.",,,
 bladderFlaskFull,,,,Bladder Flask,,,
 bladderFlask5,,,,Bladder Flask,,,,
