@@ -30,7 +30,7 @@
 				<add skill_level="70,100" value="41,50" />
 			</effect>
 		</player_skill>
-		<player_skill name="Athletics" icon="ui_game_symbol_run" description_key="Running faster and longer than the next guy is probably the best skill you can develop in an apocalypse. Improve you run and walk speed by doing your cardio." title_key="Lower Body" exp_to_level="500" group="health" skill_point_cost_per_level="0">
+		<player_skill name="Athletics" icon="ui_game_symbol_run" description_key="誰にも劣らない速く長時間走れるのは、おそらくこの世の中において習得できる最高のスキルでしょう。有酸素運動することで、走りと歩きの速度を上げることができます。" title_key="Lower Body" exp_to_level="500" group="health" skill_point_cost_per_level="0">
 			<effect name="WalkSpeed">
 				<multiply skill_level="1,10" value="1,1.025" />
 				<multiply skill_level="10,20" value="1.025,1.05" />
@@ -56,7 +56,7 @@
 				<multiply skill_level="90,100" value="1.225,1.25" />
 			</effect>
 		</player_skill>
-		<player_skill name="upperBodyAction" icon="ui_game_symbol_weight" description_key="80 pound weaklings don't last long in an apocalypse. Swinging tools and punching stuff will help you break blocks faster and will pump you up!" title_key="Upper Body" exp_to_level="500" group="health" skill_point_cost_per_level="0">
+		<player_skill name="upperBodyAction" icon="ui_game_symbol_weight" description_key="80ポンド(およそ36キログラム)の虚弱な体では、この世の中を最後まで生き続けることは無理でしょう。このスキルは、あなたの底力をほとばしらせ、ツールのブロック解体を速くするのに役立ちます。" title_key="Upper Body" exp_to_level="500" group="health" skill_point_cost_per_level="0">
 			<effect name="BlockDamage">
 				<multiply skill_level="1,10" value="1,1.02" />
 				<multiply skill_level="10,20" value="1.02,1.04" />
@@ -70,7 +70,7 @@
 				<multiply skill_level="90,100" value="1.18,1.2" />
 			</effect>
 		</player_skill>
-		<action_skill name="bluntWeaponsAction" icon="ui_game_symbol_club" description_key="Blunt weapons like clubs and bats are great for bashing in zombie skulls. The more skill you have in blunt weapons, the more damage you will do to zombies and living things." title_key="bluntWeapons" group="firearms" skill_point_cost_per_level="0">
+		<action_skill name="bluntWeaponsAction" icon="ui_game_symbol_club" description_key="棍棒やバットのような鈍器は、ゾンビの頭蓋骨を叩くのに最適です。あなたが手にしている鈍器のスキルが高いほど、ゾンビや動物に多くのダメージを与えます。" title_key="bluntWeapons" group="firearms" skill_point_cost_per_level="0">
 			<effect name="EntityDamage">
 				<multiply skill_level="1,10" value="1,1.02" />
 				<multiply skill_level="10,20" value="1.02,1.04" />
@@ -87,7 +87,7 @@
 				<multiply skill_level="1,100" value="0,0" />
 			</effect>
 		</action_skill>
-		<action_skill name="bladeWeaponsAction" icon="ui_game_symbol_knife" description_key="Higher skill with blade weapons like knives, axes and swords make you more effective at shortening zombies to shoulder height.  You will also do more damage to zombies and living things." title_key="bladeWeaponsAction" group="firearms" skill_point_cost_per_level="0">
+		<action_skill name="bladeWeaponsAction" icon="ui_game_symbol_knife" description_key="ナイフや斧、剣のような刃物武器を使った高度なスキルは、ゾンビを肩の高さまで小さくするのに効果的です。動物にも多くのダメージを与えます。" title_key="bladeWeaponsAction" group="firearms" skill_point_cost_per_level="0">
 			<effect name="EntityDamage">
 				<multiply skill_level="1,10" value="1,1.02" />
 				<multiply skill_level="10,20" value="1.02,1.04" />
@@ -107,7 +107,7 @@
 				<add skill_level="3" value="0.3" />
 			</effect>
 		</action_skill>
-		<action_skill name="archeryAction" icon="ui_game_symbol_archery" description_key="Keeping your distance from danger is a smart strategy in the apocalypse.  The bow and crossbow are a good way stay safe while getting your zombie killing job done.  The more skill you have in archery, the more damage and dismemberment chance you have, plus you reload faster and shoot with less arch." title_key="archeryAction" group="firearms" skill_point_cost_per_level="0">
+		<action_skill name="archeryAction" icon="ui_game_symbol_archery" description_key="この世の中において、危険から距離を保つことは賢明な戦略です。弓やクロスボウは、ゾンビを倒しながら安全を保つ良い方法と言えるでしょう。弓のスキルが高くなればなるほど、ダメージと部位破壊の確率が上がり、更には装填時間が速くなり弓を引く時間も短くなります。" title_key="archeryAction" group="firearms" skill_point_cost_per_level="0">
 			<effect name="EntityDamage">
 				<multiply skill_level="1,10" value="1,1.02" />
 				<multiply skill_level="10,20" value="1.02,1.04" />
