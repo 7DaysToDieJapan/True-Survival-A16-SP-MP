@@ -151,7 +151,7 @@
 				<add skill_level="3" value="0.3" />
 			</effect>
 		</action_skill>
-		<action_skill name="pistolsAction" icon="ui_game_symbol_pistol" description_key="Pistols may not be the best guns available, but there sure are lots of them laying around.  More skill gives you a better chance at dismemberment." title_key="pistols" group="firearms" skill_point_cost_per_level="0">
+		<action_skill name="pistolsAction" icon="ui_game_symbol_pistol" description_key="ピストルは入手可能な銃の中で最高とは言い難いが、大抵のどこかしこに隠してあったりします。スキルを高めれば、部位破壊の確率を上げることができます。" title_key="pistols" group="firearms" skill_point_cost_per_level="0">
 			<effect name="DismembermentChance">
 				<add perk_level="0" value="0" />
 				<add skill_level="1" value="0.1" />
@@ -159,7 +159,7 @@
 				<add skill_level="3" value="0.3" />
 			</effect>
 		</action_skill>
-		<action_skill name="shotgunsAction" icon="ui_game_symbol_shotgun" description_key="Shotguns were always the goto gun choice of the veteran apocalypse fan.  Now its your chance to wield one. More skill gives you a better chance at dismemberment." title_key="shotguns" group="firearms" skill_point_cost_per_level="0">
+		<action_skill name="shotgunsAction" icon="ui_game_symbol_shotgun" description_key="ショットガンは、この世の中において常に退役軍人たちに愛用されてきました。あなたも今すぐ使うべきでしょう。スキルを高めれば、部位破壊の確率を上げることができます。" title_key="shotguns" group="firearms" skill_point_cost_per_level="0">
 			<effect name="DismembermentChance">
 				<add perk_level="0" value="0" />
 				<add skill_level="1" value="0.1" />
@@ -167,7 +167,7 @@
 				<add skill_level="3" value="0.3" />
 			</effect>
 		</action_skill>
-		<action_skill name="submachineGunsAction" icon="ui_game_symbol_rifle" description_key="Sunmachineguns throw a lot of lead at your problems, which is often the best solution. More skill gives you a better chance at dismemberment." title_key="Submachine Guns" group="firearms" skill_point_cost_per_level="0">
+		<action_skill name="submachineGunsAction" icon="ui_game_symbol_rifle" description_key="サブマシンガンは、窮地に陥った時に敵に多くの鉛玉をぶち込める最高の銃器でしょう。スキルを高めれば、部位破壊の確率を上げることができます。" title_key="Submachine Guns" group="firearms" skill_point_cost_per_level="0">
 			<effect name="DismembermentChance">
 				<add perk_level="0" value="0" />
 				<add skill_level="1" value="0.1" />
@@ -175,7 +175,7 @@
 				<add skill_level="3" value="0.3" />
 			</effect>
 		</action_skill>
-		<action_skill name="assaultRiflesAction" icon="ui_game_symbol_ak47" description_key="Assault rifles were used by soldies for one good reason, they are one of the finest personal killing machine ever invented. More skill gives you a better chance at dismemberment." title_key="Assault Rifles" group="firearms" skill_point_cost_per_level="0">
+		<action_skill name="assaultRiflesAction" icon="ui_game_symbol_ak47" description_key="アサルトライフルは、正規兵によって使用されてきました。これまでに発明された銃器の中で最も優れた殺人兵器と言えるでしょう。スキルを高めれば、部位破壊の確率を上げることができます。" title_key="Assault Rifles" group="firearms" skill_point_cost_per_level="0">
 			<effect name="DismembermentChance">
 				<add perk_level="0" value="0" />
 				<add skill_level="1" value="0.1" />
@@ -183,7 +183,7 @@
 				<add skill_level="3" value="0.3" />
 			</effect>
 		</action_skill>
-		<action_skill name="snipersAction" icon="ui_game_symbol_rifle" description_key="Sniper rifles are great for long distance headshots.  More skill gives you a better chance at dismemberment." title_key="Snipers" group="firearms" skill_point_cost_per_level="0">
+		<action_skill name="snipersAction" icon="ui_game_symbol_rifle" description_key="スナイパーライフルは、遠距離のヘッドショットに最適です。スキルを高めれば、部位破壊の確率を上げることができます。" title_key="Snipers" group="firearms" skill_point_cost_per_level="0">
 			<effect name="DismembermentChance">
 				<add perk_level="0" value="0" />
 				<add skill_level="1" value="0.1" />
@@ -191,7 +191,7 @@
 				<add skill_level="3" value="0.3" />
 			</effect>
 		</action_skill>
-		<action_skill name="heavyGunsAction" icon="ui_game_symbol_rocketLauncher" description_key="Do more damage with Heavy Guns. Gain skill by using items from this group" title_key="Heavy Guns" group="firearms" skill_point_cost_per_level="0">
+		<action_skill name="heavyGunsAction" icon="ui_game_symbol_rocketLauncher" description_key="重火器でさらにダメージを与えようというのかね。ロケットランチャーなどの重火器を使用することで、スキルを高めることができます。" title_key="Heavy Guns" group="firearms" skill_point_cost_per_level="0">
 			<effect name="DismembermentChance">
 				<add perk_level="0" value="0" />
 				<add skill_level="1" value="0.1" />
@@ -200,7 +200,7 @@
 			</effect>
 		</action_skill>
 		<!-- JZMOD ACTION & CRAFTING SKILLS-->
-		<action_skill name="medicineCraft" icon="ui_game_symbol_medical" description_key="Medicine is your healing skill. The more skill you have, the more health you recover when you use healing supplies." title_key="medicineCraft" group="health">
+		<action_skill name="medicineCraft" icon="ui_game_symbol_medical" description_key="医学は、あなたの治癒効果を高めてくれます。スキルを高めれば、医薬品を使った時に回復する体力が増加します。" title_key="medicineCraft" group="health">
 			<effect name="HealthGain">
 				<multiply skill_level="1,10" value="1.00,1.32" />
 				<multiply skill_level="10,20" value="1.32,1.45" />
@@ -215,7 +215,7 @@
 			</effect>
 		</action_skill>
 		<!-- JZMOD CRAFTING SKILLS-->
-		<crafting_skill name="cookingCraft" icon="ui_game_symbol_spatula" description_key="Learn to cook more filling and nutritious food." title_key="Cooking" group="scavenging">
+		<crafting_skill name="cookingCraft" icon="ui_game_symbol_spatula" description_key="お腹を満たす料理や栄養価の高い調理が作れるようになります。" title_key="Cooking" group="scavenging">
 			<recipe name="flour" unlock_level="5" />
 			<recipe name="bread" unlock_level="5" />
 			<recipe name="goldenRodTea" unlock_level="10" />
@@ -261,7 +261,7 @@
 				<multiply skill_level="90,100" value="0.775,0.75" />
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="huntingCraft" icon="ui_game_symbol_huntingKnife" description_key="Learn to craft better Hunting knifes and fishing lures." title_key="huntingCraft" skill_point_cost_per_level="0" group="scavenging">
+		<crafting_skill name="huntingCraft" icon="ui_game_symbol_huntingKnife" description_key="切れ味の良いハンティングナイフやフィッシングルアーが作れるようになります。" title_key="huntingCraft" skill_point_cost_per_level="0" group="scavenging">
 			<effect name="HarvestCount">
                 <multiply skill_level="1,10" value="1" />
 				<multiply skill_level="10,20" value="1,2" />
@@ -275,7 +275,7 @@
 				<multiply skill_level="90,100" value="9,10" />
             </effect>
 		</crafting_skill>
-		<crafting_skill name="craftedGunsCraft" icon="ui_game_symbol_craftedRifle" description_key="Craft guns of better quality, make them faster, and repair them better with this skill." title_key="Crafted Guns" group="crafting">
+		<crafting_skill name="craftedGunsCraft" icon="ui_game_symbol_craftedRifle" description_key="品質の高い手作りの銃を速く作り、修復時間を短縮する。" title_key="Crafted Guns" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -337,7 +337,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="gunSmithingCraft" icon="ui_game_symbol_gunsmithing" description_key="gunSmithingDesc" title_key="gunSmithing" group="crafting">
+		<crafting_skill name="gunSmithingCraft" icon="ui_game_symbol_gunsmithing" description_key="銃のクラフトスピードと品質を向上させる他に、修理時の品質低下を抑えて修理素材の効率を向上させる。" title_key="gunSmithing" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -399,7 +399,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="engineeringCraft" icon="ui_game_symbol_engineBlock" description_key="Learn to be an engineer! Make lots of stuff better and faster! Woo Woo!" title_key="engineeringCraft" group="crafting">
+		<crafting_skill name="engineeringCraft" icon="ui_game_symbol_engineBlock" description_key="エンジニアを学ぶべきだよ！良いものをたくさん作り、そしてより速く作る！な、お前をそう思うよな！" title_key="engineeringCraft" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -461,7 +461,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="chemistryCraft" icon="ui_game_symbol_science" description_key="Better living through chemistry! Learn to make lots of chemical stuff....." title_key="chemistryCraft" group="crafting">
+		<crafting_skill name="chemistryCraft" icon="ui_game_symbol_science" description_key="「ベター・リヴィング・スルー・ケミストリー！」\n薬剤師になったら、主婦の客と恋に落ちてセックス・ドラッグ・殺人のめくるめく冒険に巻き込まれる、なんてことを想像してないかい？このスキルは、多くの化学薬品の作り方を学ぶだけですよ。" title_key="chemistryCraft" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -665,7 +665,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="armorSmithingCraft" icon="ui_game_symbol_armor_iron" description_key="armorerDesc" title_key="Armor Smithing" group="clothing">
+		<crafting_skill name="armorSmithingCraft" icon="ui_game_symbol_armor_iron" description_key="鎧のクラフトスピードと品質を向上させる他に、修理時の品質低下を抑えて修理素材の効率を向上させる。" title_key="Armor Smithing" group="clothing">
 			<effect name="ArmorDefense">
 				<add skill_level="1,5" value="0,.03" />
 				<add skill_level="5,11" value=".03,.05" />
@@ -736,7 +736,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="miscellaneousCraft" icon="ui_game_symbol_misc_crafting" description_key="miscCraftingDesc" title_key="miscCrafting" group="crafting">
+		<crafting_skill name="miscellaneousCraft" icon="ui_game_symbol_misc_crafting" description_key="その他の種々雑多な物のクラフトスピードと品質を向上させる他に、修理時の品質低下を抑えて修理素材の効率を向上させる。" title_key="miscCrafting" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -798,7 +798,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-        <crafting_skill name="fryingPanCraft" icon="ui_game_symbol_fryingPan" description_key="frying Pan" title_key="frying Pan" group="crafting">
+        <crafting_skill name="fryingPanCraft" icon="ui_game_symbol_fryingPan" description_key="調理器具のフライパン。" title_key="frying Pan" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -860,7 +860,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-        <crafting_skill name="brassKnucklesCraft" icon="ui_game_symbol_brassKnuckles" description_key="brassKnuckles" title_key="brassKnuckles" group="crafting">
+        <crafting_skill name="brassKnucklesCraft" icon="ui_game_symbol_brassKnuckles" description_key="真鍮製のナックルは痛いぞ。" title_key="brassKnuckles" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -922,7 +922,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="woodenBowCraft" icon="ui_game_symbol_woodenBow" description_key="Wooden Bow." title_key="Wooden Bow" group="crafting">
+		<crafting_skill name="woodenBowCraft" icon="ui_game_symbol_woodenBow" description_key="まずは木の弓から始めよう。" title_key="Wooden Bow" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -984,7 +984,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="compoundBowCraft" icon="ui_game_symbol_compoundBow" description_key="Compound Bow." title_key="Compound Bow" group="crafting">
+		<crafting_skill name="compoundBowCraft" icon="ui_game_symbol_compoundBow" description_key="近代的な弓のコンパウンドボウ。" title_key="Compound Bow" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1046,7 +1046,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="crossbowCraft" icon="ui_game_symbol_crossbow" description_key="Crossbow." title_key="Crossbow Crafting" group="crafting">
+		<crafting_skill name="crossbowCraft" icon="ui_game_symbol_crossbow" description_key="狙いが定めやすいクロスボウ。" title_key="Crossbow Crafting" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1108,7 +1108,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="fletchingCraft" icon="ui_game_symbol_fletching" description_key="Fletching." title_key="fletchingCraft" group="crafting">
+		<crafting_skill name="fletchingCraft" icon="ui_game_symbol_fletching" description_key="矢羽根のクラフト。" title_key="fletchingCraft" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1126,7 +1126,7 @@
 				<setvalue skill_level="99,100" value="2,3" />
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="woodSpearCraft" icon="ui_game_symbol_woodSpear" description_key="WoodSpear." title_key="Wood Spear" group="crafting">
+		<crafting_skill name="woodSpearCraft" icon="ui_game_symbol_woodSpear" description_key="突きにはコレ、木の槍。" title_key="Wood Spear" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1188,7 +1188,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="ironSpearCraft" icon="ui_game_symbol_ironSpears" description_key="Iron Spear." title_key="Iron Spear" group="crafting">
+		<crafting_skill name="ironSpearCraft" icon="ui_game_symbol_ironSpears" description_key="手応えズッシリ、鉄の槍。" title_key="Iron Spear" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1250,7 +1250,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="woodenClubCraft" icon="ui_game_symbol_woodenClub" description_key="WoodenClub." title_key="Wooden Club" group="crafting">
+		<crafting_skill name="woodenClubCraft" icon="ui_game_symbol_woodenClub" description_key="木の棍棒で叩きまくれ。" title_key="Wooden Club" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1312,7 +1312,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="ironClubCraft" icon="ui_game_symbol_ironClub" description_key="Iron Club." title_key="Iron Club" group="crafting">
+		<crafting_skill name="ironClubCraft" icon="ui_game_symbol_ironClub" description_key="鉄の棍棒で頭蓋骨粉砕！" title_key="Iron Club" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1374,7 +1374,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="spikedClubsCraft" icon="ui_game_symbol_spikedClub" description_key="Spiked Clubs." title_key="Spiked Clubs" group="crafting">
+		<crafting_skill name="spikedClubsCraft" icon="ui_game_symbol_spikedClub" description_key="棘付き棍棒、グシャってなるのは気持ちいいよね。" title_key="Spiked Clubs" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1436,7 +1436,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="lucilleCraft" icon="ui_game_symbol_lucille" description_key="Lucille." title_key="Lucille" group="crafting">
+		<crafting_skill name="lucilleCraft" icon="ui_game_symbol_lucille" description_key="有刺鉄線を巻き付けたバット、敵を殴るなら有刺棍棒よりこっちだね。" title_key="Lucille" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1498,7 +1498,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="nightStickCraft" icon="ui_game_symbol_nightStick" description_key="NightStick." title_key="NightStick" group="crafting">
+		<crafting_skill name="nightStickCraft" icon="ui_game_symbol_nightStick" description_key="警棒でキツいお仕置きを。" title_key="NightStick" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1560,7 +1560,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="shockStickCraft" icon="ui_game_symbol_shockStick" description_key="Shock Stick." title_key="Shock Stick" group="crafting">
+		<crafting_skill name="shockStickCraft" icon="ui_game_symbol_shockStick" description_key="電撃棒で逃げるのもアリ。" title_key="Shock Stick" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1622,7 +1622,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="boneShivCraft" icon="ui_game_symbol_boneShiv" description_key="BoneShiv." title_key="Bone Shiv" group="crafting">
+		<crafting_skill name="boneShivCraft" icon="ui_game_symbol_boneShiv" description_key="原始的な骨ナイフ。" title_key="Bone Shiv" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1648,7 +1648,7 @@
 				<setvalue skill_level="90,100" value="575,600" />
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="bladeCraft" icon="ui_game_symbol_largeKnifeBlade" description_key="Blade Smithing." title_key="bladeCraft" group="crafting">
+		<crafting_skill name="bladeCraft" icon="ui_game_symbol_largeKnifeBlade" description_key="刃物武器の刀身が作れるようになります。" title_key="bladeCraft" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1666,7 +1666,7 @@
 				<setvalue skill_level="99,100" value="1,2" />
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="huntingKnifeCraft" icon="ui_game_symbol_huntingKnife" description_key="Hunting Knife." title_key="Hunting Knife" group="crafting">
+		<crafting_skill name="huntingKnifeCraft" icon="ui_game_symbol_huntingKnife" description_key="剥ぎ取りに愛用されるハンティングナイフ。" title_key="Hunting Knife" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1728,7 +1728,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-        <crafting_skill name="fieldKnifeCraft" icon="ui_game_symbol_fieldKnife" description_key="Field Knife." title_key="Field Knife Crafting" group="crafting">
+        <crafting_skill name="fieldKnifeCraft" icon="ui_game_symbol_fieldKnife" description_key="野外用簡易ナイフ。" title_key="Field Knife Crafting" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1790,7 +1790,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="macheteCraft" icon="ui_game_symbol_machete" description_key="machete" title_key="machete" group="crafting">
+		<crafting_skill name="macheteCraft" icon="ui_game_symbol_machete" description_key="至高の一振り、マチェット。" title_key="machete" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1852,7 +1852,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-        <crafting_skill name="katanaCraft" icon="ui_game_symbol_katanamichonne" description_key="katana" title_key="katana" group="crafting">
+        <crafting_skill name="katanaCraft" icon="ui_game_symbol_katanamichonne" description_key="侍の魂、刀！" title_key="katana" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1914,7 +1914,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="stoneAxeCraft" icon="ui_game_symbol_stoneAxe" description_key="StoneAxe." title_key="StoneAxe" group="crafting">
+		<crafting_skill name="stoneAxeCraft" icon="ui_game_symbol_stoneAxe" description_key="原始的な石の斧。" title_key="StoneAxe" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1976,7 +1976,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="stoneShovelCraft" icon="ui_game_symbol_stoneShovel" description_key="StoneShovel." title_key="StoneShovel" group="crafting">
+		<crafting_skill name="stoneShovelCraft" icon="ui_game_symbol_stoneShovel" description_key="原始的な石のシャベル。" title_key="StoneShovel" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2038,7 +2038,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="ironFireaxeCraft" icon="ui_game_symbol_ironFireaxeHead" description_key="Iron Fireaxe." title_key="Iron Fireaxe" group="crafting">
+		<crafting_skill name="ironFireaxeCraft" icon="ui_game_symbol_ironFireaxeHead" description_key="火災時に役立つ鉄の消防斧。" title_key="Iron Fireaxe" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2100,7 +2100,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-        <crafting_skill name="firemanAxeCraft" icon="ui_game_symbol_ironFireaxeHead" description_key="Fireman Axe" title_key="Fireman Axe" group="crafting">
+        <crafting_skill name="firemanAxeCraft" icon="ui_game_symbol_ironFireaxeHead" description_key="消防士愛用の消防斧。" title_key="Fireman Axe" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2162,7 +2162,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="ironPickaxeCraft" icon="ui_game_symbol_ironPickaxeHead" description_key="Iron Pickaxe." title_key="Iron Pickaxe" group="crafting">
+		<crafting_skill name="ironPickaxeCraft" icon="ui_game_symbol_ironPickaxeHead" description_key="石の採掘向き、鉄のツルハシ。" title_key="Iron Pickaxe" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2224,7 +2224,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="ironShovelCraft" icon="ui_game_symbol_ironShovelHead" description_key="Iron Shovel." title_key="Iron Shovel" group="crafting">
+		<crafting_skill name="ironShovelCraft" icon="ui_game_symbol_ironShovelHead" description_key="何の変哲もない鉄のシャベル。" title_key="Iron Shovel" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2286,7 +2286,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="steelFireaxeCraft" icon="ui_game_symbol_ironFireaxeHead" description_key="Steel Fireaxe." title_key="Steel Fireaxe" group="crafting">
+		<crafting_skill name="steelFireaxeCraft" icon="ui_game_symbol_ironFireaxeHead" description_key="火災時にはオススメ、鋼の消防斧。" title_key="Steel Fireaxe" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2348,7 +2348,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="steelPickaxeCraft" icon="ui_game_symbol_ironPickaxeHead" description_key="Steel Pickaxe." title_key="Steel Pickaxe" group="crafting">
+		<crafting_skill name="steelPickaxeCraft" icon="ui_game_symbol_ironPickaxeHead" description_key="鉱石の採掘向き、鋼のツルハシ。" title_key="Steel Pickaxe" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2410,7 +2410,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="steelShovelCraft" icon="ui_game_symbol_ironShovelHead" description_key="Steel Shovel." title_key="Steel Shovel" group="crafting">
+		<crafting_skill name="steelShovelCraft" icon="ui_game_symbol_ironShovelHead" description_key="頑丈に作られた鋼のシャベル。" title_key="Steel Shovel" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2472,7 +2472,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="sledgeHammerCraft" icon="ui_game_symbol_sledge" description_key="SledgeHammer." title_key="Sledge Hammer" group="crafting">
+		<crafting_skill name="sledgeHammerCraft" icon="ui_game_symbol_sledge" description_key="ゾンビの頭を粉砕、スレッジハンマー。" title_key="Sledge Hammer" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2534,7 +2534,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="cobblestoneHammerCraft" icon="ui_game_symbol_stoneHammer" description_key="cobblestone Hammer." title_key="cobblestone Hammer" group="crafting">
+		<crafting_skill name="cobblestoneHammerCraft" icon="ui_game_symbol_stoneHammer" description_key="玉石用ハンマー。" title_key="cobblestone Hammer" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2596,7 +2596,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="brickHammerCraft" icon="ui_game_symbol_brickHammer" description_key="brick Hammer." title_key="brick Hammer" group="crafting">
+		<crafting_skill name="brickHammerCraft" icon="ui_game_symbol_brickHammer" description_key="レンガ用ハンマー。" title_key="brick Hammer" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2658,7 +2658,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="plankHammerCraft" icon="ui_game_symbol_hammer" description_key="ClawHammer." title_key="Claw Hammer" group="crafting">
+		<crafting_skill name="plankHammerCraft" icon="ui_game_symbol_hammer" description_key="木工作業には、くぎ抜き金づち。" title_key="Claw Hammer" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2720,7 +2720,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="concreteSledgeCraft" icon="ui_game_symbol_sledge" description_key="concreteSledge." title_key="concreteSledge" group="crafting">
+		<crafting_skill name="concreteSledgeCraft" icon="ui_game_symbol_sledge" description_key="コンクリート破壊にはコレ、コンクリート用スレッジハンマー。" title_key="concreteSledge" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2782,7 +2782,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="rConcreteBarCraft" icon="ui_game_symbol_sledge" description_key="rConcreteBar." title_key="rConcreteBar" group="crafting">
+		<crafting_skill name="rConcreteBarCraft" icon="ui_game_symbol_sledge" description_key="鉄筋コンクリート用バール。" title_key="rConcreteBar" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2844,7 +2844,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="steelWelderCraft" icon="ui_game_symbol_welder" description_key="Welder." title_key="Welder" group="crafting">
+		<crafting_skill name="steelWelderCraft" icon="ui_game_symbol_welder" description_key="溶接工の必需品、溶接トーチ。" title_key="Welder" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2906,7 +2906,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="scrapWrenchCraft" icon="ui_game_symbol_wrench" description_key="Wrench." title_key="Wrench" group="crafting">
+		<crafting_skill name="scrapWrenchCraft" icon="ui_game_symbol_wrench" description_key="鉄工労働者愛用のレンチ。" title_key="Wrench" group="crafting">
         <effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -2968,7 +2968,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="screwdriverCraft" icon="ui_game_symbol_screwdriver" description_key="ScrewDriver" title_key="Screw Driver" group="crafting">
+		<crafting_skill name="screwdriverCraft" icon="ui_game_symbol_screwdriver" description_key="整備士は必ず持っている、スクリュードライバー。" title_key="Screw Driver" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -3030,7 +3030,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="wireToolCraft" icon="ui_game_symbol_wireTool" description_key="wireTool." title_key="wireTool" group="crafting">
+		<crafting_skill name="wireToolCraft" icon="ui_game_symbol_wireTool" description_key="電気技師のポケットには必ず入っている、ワイヤーツール。" title_key="wireTool" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -3092,7 +3092,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="paintToolCraft" icon="ui_game_symbol_paintTool" description_key="paintTool." title_key="paintTool" group="crafting">
+		<crafting_skill name="paintToolCraft" icon="ui_game_symbol_paintTool" description_key="刷毛で色とりどりに仕上げましょう。" title_key="paintTool" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -3156,105 +3156,105 @@
 		</crafting_skill>
 		<!-- JZMOD PERKS-->
          <!--FIREARMS-->
-		<perk name="gunPowderPerk" icon="ui_game_symbol_gunPowder" description_key="Learn to craft Gun Powder on the chemistry station using the Mortar And Pestle" title_key="Gun Powder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+		<perk name="gunPowderPerk" icon="ui_game_symbol_gunPowder" description_key="すり鉢とすりこ木(Mortar And Pestle)を使って、化学薬品調合台で火薬(Gun Powder)が作れるようになります。" title_key="Gun Powder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
 			<requirement perk_level="1" required_player_level="10" />
 			<recipe name="gunPowder" unlock_level="1" />
 		</perk>
-		<perk name="pipeBombPerk" icon="ui_game_symbol_pipeBomb" description_key="Learn to craft Pipe Bombs on the wood working bench" title_key="Pipe Bomb" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+		<perk name="pipeBombPerk" icon="ui_game_symbol_pipeBomb" description_key="作業台でパイプ爆弾(Pipe Bombs)が作れるようになります。" title_key="Pipe Bomb" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
 			<requirement perk_level="1" required_player_level="10" />
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="2" />
 			<recipe name="pipeBomb" unlock_level="1" />
 		</perk>
-		<perk name="candyTinMinePerk" icon="ui_game_symbol_mineCandyTin" description_key="Learn to craft Candy Tin Mine on the wood working bench using a wrench" title_key="Candy Tin Mine" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
+		<perk name="candyTinMinePerk" icon="ui_game_symbol_mineCandyTin" description_key="レンチ(wrench)を使って、作業台でキャンディ缶地雷(Candy Tin Mine)が作れるようになります。" title_key="Candy Tin Mine" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
 			<requirement perk_level="1" required_player_level="10" />
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="4" />
 			<recipe name="mineCandyTin" unlock_level="1" />
 		</perk>
-        <perk name="pressurePlateMinePerk" icon="rScrapIronPlate" description_key="Learn to craft Pressure Plate Mine on the wood working bench using a wrench" title_key="Pressure Plate Mine" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+        <perk name="pressurePlateMinePerk" icon="rScrapIronPlate" description_key="レンチ(wrench)を使って、作業台で圧力板地雷(Pressure Plate Mine)が作れるようになります。" title_key="Pressure Plate Mine" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
 			<requirement perk_level="1" required_player_level="10" />
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="4" />
 			<recipe name="rScrapIronPlateMine" unlock_level="1" />
 		</perk>
-		<perk name="hubcapMinePerk" icon="ui_game_symbol_mineHubcap" description_key="Learn to craft Hubcap Mine on the wood working bench using a wrench" title_key="Hubcap Mine" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+		<perk name="hubcapMinePerk" icon="ui_game_symbol_mineHubcap" description_key="レンチ(wrench)を使って、作業台でハブキャップ地雷(Hubcap Mine)が作れるようになります。" title_key="Hubcap Mine" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
 			<requirement perk_level="1" required_player_level="15" />
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="6" />
 			<recipe name="mineHubcap" unlock_level="1" />
 		</perk>
-		<perk name="airFilterMinePerk" icon="ui_game_symbol_mineAirFilter" description_key="Learn to craft a Air Filter Mine on the metal working bench using a wrench" title_key="Air Filter Mine" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
+		<perk name="airFilterMinePerk" icon="ui_game_symbol_mineAirFilter" description_key="レンチ(wrench)を使って、金属加工台でエアフィルター地雷(Air Filter Mine)が作れるようになります。" title_key="Air Filter Mine" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
 			<requirement perk_level="1" required_player_level="25" />
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="10" />
 			<recipe name="mineAirFilter" unlock_level="1" />
 		</perk>
-		<perk name="nitroglycerinPerk" icon="ui_game_symbol_tnt" description_key="Learn to craft Nitroglycerin chemistry station woth a beaker. Explosives made with this will destroy hardstone " title_key="Nitroglycerin" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
+		<perk name="nitroglycerinPerk" icon="ui_game_symbol_tnt" description_key="ビーカー(beaker)を使って、化学薬品調合台でニトログリセリン(Nitroglycerin)が作れるようになります。これで作られた爆薬は、岩盤のような硬い岩を破壊できます。" title_key="Nitroglycerin" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
 			<requirement perk_level="1" required_player_level="75" />
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="45" />
 			<recipe name="nitroglycerin" unlock_level="1" />
 		</perk>
-		<perk name="dynamitePerk" icon="ui_game_symbol_tnt" description_key="Learn to craft Dynamite and TNT on the chemistry station. These explosives will destroy hardstone " title_key="Dynamite" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
+		<perk name="dynamitePerk" icon="ui_game_symbol_tnt" description_key="化学薬品調合台でダイナマイトとTNTが作れるようになります。これらの爆弾は、岩盤のような硬い岩を破壊できます。" title_key="Dynamite" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
 			<requirement perk_level="1" required_player_level="75" />
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="45" />
 			<recipe name="dynamite" unlock_level="1" />
 			<recipe name="tnt" unlock_level="1" />
 		</perk>
-         <perk name="weaponRepairPerk" icon="ui_game_symbol_repairKit" description_key="Learn to craft weapon repair kits" title_key="Weapon Repair" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+         <perk name="weaponRepairPerk" icon="ui_game_symbol_repairKit" description_key="兵器用修理キットが作れるようになります。" title_key="Weapon Repair" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="1" />
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="10" />
 			<recipe name="weaponRepairKit" unlock_level="1" />
 		</perk>
-        <perk name="silencerPerk" icon="ui_game_symbol_silencer" description_key="Learn to build a Silencer on the work bench" title_key="Silencer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
+        <perk name="silencerPerk" icon="ui_game_symbol_silencer" description_key="作業台でサイレンサーが作れるようになります。" title_key="Silencer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="40" />
 			<recipe name="silencer" unlock_level="1" />
 		</perk>
-        <perk name="pistolSilencerAttachmentPerk" icon="ui_game_symbol_silencedPistol" description_key="Learn to attach Silencers to Pistols on the metal working bench using a wrench." title_key="Pistol Silencer Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+        <perk name="pistolSilencerAttachmentPerk" icon="ui_game_symbol_silencedPistol" description_key="レンチ(wrench)を使って、金属加工台でピストルにサイレンサーを取り付ける方法が学べます。" title_key="Pistol Silencer Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="40" />
 			<recipe name="silencedPistolBarrel" unlock_level="1" />
 			<recipe name="silencedPistol" unlock_level="1" />
 		</perk>
-        <perk name="huntingRifleScopeAttachmentPerk" icon="ui_game_symbol_huntingRifleScope" description_key="Learn to attach sniper scopes to Huntingrifeles on the metal working bench using a wrench." title_key="Hunting Rifle Scope Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
+        <perk name="huntingRifleScopeAttachmentPerk" icon="ui_game_symbol_huntingRifleScope" description_key="レンチ(wrench)を使って、金属加工台でハンティングライフルにスナイパースコープを取り付ける方法が学べます。" title_key="Hunting Rifle Scope Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="20" />
 			<recipe name="huntingRifleStockScope" unlock_level="1" />
 			<recipe name="huntingRifleScope" unlock_level="1" />
 		</perk>
-		<perk name="huntingRifleSilencerAttachmentPerk" icon="ui_game_symbol_silencedhuntingRifle" description_key="Learn to attach Silencers to Hunting Rifles on the metal working bench using a wrench." title_key="Hunting Rifle Silencer Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+		<perk name="huntingRifleSilencerAttachmentPerk" icon="ui_game_symbol_silencedhuntingRifle" description_key="レンチ(wrench)を使って、金属加工台でハンティングライフルにサイレンサーを取り付ける方法が学べます。" title_key="Hunting Rifle Silencer Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="40" />
 			<recipe name="silencedHuntingBarrel" unlock_level="1" />
 			<recipe name="silencedHuntingRifle" unlock_level="1" />
 		</perk>
-        <perk name="magnumScopeAttachmentPerk" icon="ui_game_symbol_44MagnumScope" description_key="Learn to attach sniper scopes to Magnums on the metal working bench using a wrench" title_key="Magnum Scope Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
+        <perk name="magnumScopeAttachmentPerk" icon="ui_game_symbol_44MagnumScope" description_key="レンチ(wrench)を使って、金属加工台でマグナムにスナイパースコープを取り付ける方法が学べます。" title_key="Magnum Scope Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="20" />
 			<recipe name="magnumFrameScope" unlock_level="1" />
             <recipe name="44MagnumScope" unlock_level="1" />
 		</perk>
-		<perk name="ak47ScopeAttachmentPerk" icon="ui_game_symbol_sniperRifleScopeFrame" description_key="Learn to attach sniper scopes to AK47s on the metal working bench using a wrench." title_key="AK47 Scope Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
+		<perk name="ak47ScopeAttachmentPerk" icon="ui_game_symbol_sniperRifleScopeFrame" description_key="レンチ(wrench)を使って、金属加工台でAK-47にスナイパースコープを取り付ける方法が学べます。" title_key="AK47 Scope Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="20" />
 			<recipe name="ak47StockScope" unlock_level="1" />
 			<recipe name="scopedAK47" unlock_level="1" />
 		</perk>
-		<perk name="ak47SilencerAttachmentPerk" icon="ui_game_symbol_silencer" description_key="Learn to attach Silencers to AK47s on the metal working bench using a wrench." title_key="AK47 Silencer Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+		<perk name="ak47SilencerAttachmentPerk" icon="ui_game_symbol_silencer" description_key="レンチ(wrench)を使って、金属加工台でAK-47にサイレンサーを取り付ける方法が学べます。" title_key="AK47 Silencer Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="40" />
 			<recipe name="silencedAK47Barrel" unlock_level="1" />
 			<recipe name="silencedAK47" unlock_level="1" />
 		</perk>
-        <perk name="bulletPressPerk" icon="ui_game_symbol_bulletPress" description_key="Learn how to craft your very own bullet press on the work bench" title_key="Bullet Press" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="20" group="firearms">
+        <perk name="bulletPressPerk" icon="ui_game_symbol_bulletPress" description_key="作業台で弾丸製造するための銃弾加工機(bullet press)が作れるようになります。" title_key="Bullet Press" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="20" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="10" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="bulletPress" unlock_level="1" />
 		</perk>
-		<perk name="bulletCasingPerk" icon="ui_game_symbol_bulletCasing" description_key="Learn to craft brass into bullet Casing with the chemistry set" title_key="Bullet Casing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
+		<perk name="bulletCasingPerk" icon="ui_game_symbol_bulletCasing" description_key="鍛冶炉で真鍮を薬莢に加工できるようになります。" title_key="Bullet Casing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="50" />
 			<recipe name="bulletCasing" unlock_level="1" />
 		</perk>
-		<perk name="hotLeadPerk" icon="ui_game_symbol_bulletTip" description_key="Learn to smelt lead into bullet tips and buck shot in the forge" title_key="Bullet Parts" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
+		<perk name="hotLeadPerk" icon="ui_game_symbol_bulletTip" description_key="鍛冶炉で鉛を銃の弾頭(bullet tip)やショットガンの弾(buck shot)に加工できるようになります。" title_key="Bullet Parts" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="50" />
 			<recipe name="bulletTip" unlock_level="1" />
 			<recipe name="buckshot" unlock_level="1" />
 		</perk>
-		<perk name="slugPerk" icon="ui_game_symbol_shotgunSlug" description_key="Learn to craft Shotgun Slugs with a bullet press" title_key="Slug" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+		<perk name="slugPerk" icon="ui_game_symbol_shotgunSlug" description_key="銃弾加工機でショットガンの弾丸が作れるようになります。" title_key="Slug" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
 			<requirement perk_level="1" required_skill_name="gunSmithingCraft" required_skill_level="50" />
             <recipe name="shotgunSlug" unlock_level="1" />
 		</perk>	
         <!--WEAPONS-->
-        <perk name="crossbowPerk" icon="ui_game_symbol_crossbow" description_key="Level 1 - Learn to build and disassemble a simple Crossbow, crafting its parts on the wood working bench using a wrench. Level 2 - Learn to add a scope to the crossbow. Level 3 - Learn to upgrade to a automatic 6 shot crossbow." title_key="crossbow" max_level="3" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="firearms">
+        <perk name="crossbowPerk" icon="ui_game_symbol_crossbow" description_key="レベル1:レンチを使って、作業台でクロスボウの部品を作ったり、クロスボウの組立てと分解ができる。レベル2:クロスボウにスコ―プの取り付け。レベル3:6連射可能なオートクロスボウの作成。" title_key="crossbow" max_level="3" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="firearms">
 			<requirement perk_level="1" required_skill_name="archeryAction" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="10" />
 			<recipe name="crossbow_Parts" unlock_level="1" />
@@ -3270,13 +3270,13 @@
 			<recipe name="boltCylinder" unlock_level="3" />
 			<recipe name="autoCrossbow" unlock_level="3" />
 		</perk>
-        <perk name="woodenSpearPerk" icon="ui_game_symbol_woodenSpear" description_key="Learn to harden a basic Wood Spear in the campfire and throwable Javelin" title_key="Wooden Spear and Javelin" max_level="1" skill_point_cost_per_level="5" group="firearms">
+        <perk name="woodenSpearPerk" icon="ui_game_symbol_woodenSpear" description_key="キャンプファイアで木を強化した槍と投げ槍が作れるようになります。" title_key="Wooden Spear and Javelin" max_level="1" skill_point_cost_per_level="5" group="firearms">
 			<requirement perk_level="1" required_skill_name="archeryAction" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="5" />
 			<recipe name="woodSpear" unlock_level="1" />
 			<recipe name="woodJavelin" unlock_level="1" />
 		</perk>
-		<perk name="ironSpearPerk" icon="ui_game_symbol_ironSpears" description_key="Learn how to craft an Iron Spear head in the forge and craft a spear and throwable Javelin with it" title_key="Iron Spear and Javelin" max_level="1" skill_point_cost_per_level="5" group="firearms">
+		<perk name="ironSpearPerk" icon="ui_game_symbol_ironSpears" description_key="鍛冶炉で鉄の槍の刀身を作ったり、鉄の槍や鉄の投げ槍が作れるようになります。" title_key="Iron Spear and Javelin" max_level="1" skill_point_cost_per_level="5" group="firearms">
 			<requirement perk_level="1" required_skill_name="archeryAction" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="15" />
 			<recipe name="spearHeadMold" unlock_level="1" />
@@ -3284,77 +3284,77 @@
 			<recipe name="ironSpear" unlock_level="1" />
 			<recipe name="ironJavelin" unlock_level="1" />
 		</perk>
-        <perk name="ironArrowsPerk" icon="ui_game_symbol_ironArrow" description_key="Learn to craft Iron Arrow heads in the forge using an anvil and crossbow bolts" title_key="Iron Arrows" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+        <perk name="ironArrowsPerk" icon="ui_game_symbol_ironArrow" description_key="金床(anvil)を使って、鍛冶炉で矢じり(Iron Arrow heads)を作ったり、鉄の矢(Iron Arrow)や鉄のボルト(iron crossbow bolts)が作れるようになります。" title_key="Iron Arrows" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
 			<requirement perk_level="1" required_skill_name="fletchingCraft" required_skill_level="25" />
 			<requirement perk_level="1" required_player_level="10" />
 			<recipe name="ironArrowHead" unlock_level="1" />
 			<recipe name="ironArrow" unlock_level="1" />
 			<recipe name="ironCrossbowBolt" unlock_level="1" />
 		</perk>
-		<perk name="steelArrowsPerk" icon="ui_game_symbol_steelArrow" description_key="Learn to craft Steel Arrows and crossbow bolts on the work bench" title_key="Steel Arrows" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
+		<perk name="steelArrowsPerk" icon="ui_game_symbol_steelArrow" description_key="作業台で鋼の矢(Steel Arrows)と鋼のボルト(Steel crossbow bolts)が作れるようになります。" title_key="Steel Arrows" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
 			<requirement perk_level="1" required_skill_name="fletchingCraft" required_skill_level="55" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="steelArrowHead" unlock_level="1" />
 			<recipe name="steelArrow" unlock_level="1" />
 			<recipe name="steelCrossbowBolt" unlock_level="1" />
 		</perk>
-		<perk name="carbonArrowPerk" icon="ui_game_symbol_carbonArrow" description_key="Learn to craft strong powerful Carbon Arrow on the work bench" title_key="Carbon Arrow" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="8" group="firearms">
+		<perk name="carbonArrowPerk" icon="ui_game_symbol_carbonArrow" description_key="作業台で非常に強力なカーボンクロスボウが作れるようになります。" title_key="Carbon Arrow" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="8" group="firearms">
 			<requirement perk_level="1" required_skill_name="fletchingCraft" required_skill_level="55" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="carbonArrow" unlock_level="1" />
 			<recipe name="carbonCrossbowBolt" unlock_level="1" />
 		</perk>
-		<perk name="flamingArrowsPerk" icon="ui_game_symbol_flamingArrow" description_key="Learn to craft Flaming Arrows at the wood work bench" title_key="Flaming Arrows" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
+		<perk name="flamingArrowsPerk" icon="ui_game_symbol_flamingArrow" description_key="作業台で炎の矢(Flaming Arrows)が作れるようになります。" title_key="Flaming Arrows" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
 			<requirement perk_level="1" required_skill_name="fletchingCraft" required_skill_level="5" />
 			<recipe name="flamingArrow" unlock_level="1" />
 		</perk>
-        <perk name="explodingCrossbowBoltsPerk" icon="ui_game_symbol_explodingCrossbowBolt" description_key="Learn to craft powerful Exploding Crossbow Bolts at the wood work bench" title_key="Exploding Crossbow Bolts" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
+        <perk name="explodingCrossbowBoltsPerk" icon="ui_game_symbol_explodingCrossbowBolt" description_key="作業台で強力な爆発ボルト(Exploding Crossbow Bolts)が作れるようになります。" title_key="Exploding Crossbow Bolts" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
 			<requirement perk_level="1" required_skill_name="fletchingCraft" required_skill_level="50" />
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="50" />
 			<recipe name="explodingCrossbowBolt" unlock_level="1" />
 		</perk>
-		<perk name="ironClubPerk" icon="ui_game_symbol_ironClub" description_key="Learn to upgrade your wooden Club to a iron melee club. Crafted on the Anvil using the Claw Hammer." title_key="Iron Club" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
+		<perk name="ironClubPerk" icon="ui_game_symbol_ironClub" description_key="木の棍棒を鉄で強化した棍棒にアップグレードできます。くぎ抜き金づち(Claw Hammer)を使って、金床(Anvil)で作ります。" title_key="Iron Club" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
 			<requirement perk_level="1" required_skill_name="bluntWeaponsAction" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="3" />
 			<recipe name="clubIron" unlock_level="1" />
 		</perk>
-		<perk name="spikedClubPerk" icon="ui_game_symbol_clubSpiked" description_key="Learn to apply spikes to your bats on the Wood Working Bench with a Claw Hammer" title_key="Spiked Clubs" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="firearms">
+		<perk name="spikedClubPerk" icon="ui_game_symbol_clubSpiked" description_key="釘バットや釘の棍棒が作れるようになります。くぎ抜き金づち(Claw Hammer)を使って、作業台で作ります。" title_key="Spiked Clubs" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="firearms">
 			<requirement perk_level="1" required_skill_name="bluntWeaponsAction" required_skill_level="5" />
 			<requirement perk_level="1" required_player_level="10" />
 			<recipe name="clubSpiked" unlock_level="1" />
 			<recipe name="nailedBat" unlock_level="1" />
 		</perk>
-        <perk name="lucillePerk" icon="ui_game_symbol_lucille" description_key="Learn to upgrade your Lucille" title_key="lucille" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="6" group="firearms">
+        <perk name="lucillePerk" icon="ui_game_symbol_lucille" description_key="有刺鉄線を巻き付けたバットにアップグレードできます。" title_key="lucille" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="6" group="firearms">
 			<requirement perk_level="1" required_skill_name="bluntWeaponsAction" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="lucille" unlock_level="1" />
 		</perk>
-        <perk name="steelSpikedClubPerk" icon="ui_game_symbol_clubSteelSpiked" description_key="Learn to upgrade your spiked club using steel spikes on the metal working bench" title_key="Steel Spiked Club" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="6" group="firearms">
+        <perk name="steelSpikedClubPerk" icon="ui_game_symbol_clubSteelSpiked" description_key="金属加工台で釘の棍棒を鋼の釘の棍棒にアップグレードできます。" title_key="Steel Spiked Club" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="6" group="firearms">
 			<requirement perk_level="1" required_skill_name="bluntWeaponsAction" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="clubSteelSpiked" unlock_level="1" />
 		</perk>
-        <perk name="sledgeHammerPerk" icon="sledgehammer" description_key="Learn to forge a sledge hammer head in the Forge with a mold and use it to craft a sledge hammer" title_key="Sledge Hammer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="firearms">
+        <perk name="sledgeHammerPerk" icon="sledgehammer" description_key="スレッジハンマーの鋳型が作れるようになり、スレッジハンマーヘッドからスレッジハンマーが作れるようになります。" title_key="Sledge Hammer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="firearms">
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="sledgeHeadMold" unlock_level="1" />
 			<recipe name="sledgeHead" unlock_level="1" />
 			<recipe name="sledgehammer" unlock_level="1" />
 		</perk>
-        <perk name="machetePerk" icon="ui_game_symbol_machete" description_key="Learn to craft a Machete on the anvil using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a long strong knife thats good for fighting." title_key="Machete" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="firearms">
+        <perk name="machetePerk" icon="ui_game_symbol_machete" description_key="くぎ抜き金づち(claw hammer)を使って金床(anvil)でマチェット(machete)と、それを作るために必要な大きな刃の刀身(largeKnifeBlade)が金床(anvil)を使って溶鉱炉で作れるようになります。このナイフは戦闘に向いています。" title_key="Machete" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="firearms">
 			<requirement perk_level="1" required_skill_name="bladeCraft" required_skill_level="25" />
             <requirement perk_level="1" required_skill_name="bladeWeaponsAction" required_skill_level="1" />
 			<recipe name="largeKnifeBladeMold" unlock_level="1" />
             <recipe name="largeKnifeBlade" unlock_level="1" />
 			<recipe name="machete" unlock_level="1" />
 		</perk>
-         <perk name="huntersKnifePerk" icon="ui_game_symbol_huntingKnife" description_key="Learn to craft a hunting Knife on the anvil using a claw hammer and learn how to craft the Small Knife Blade that you need to craft it in the forge using the anvil. This is a sharp knife that will harvest more and better animal parts. Harvesting animals with this knife will increase your hunting skill" title_key="Hunters Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+         <perk name="huntersKnifePerk" icon="ui_game_symbol_huntingKnife" description_key="くぎ抜き金づち(claw hammer)を使って金床(anvil)でハンティングナイフ(huntingKnife)と、それを作るために必要な小さな刃の刀身が金床(anvil)を使って溶鉱炉で作れるようになります。この鋭いナイフは、動物の剥ぎ取りにとても向いており、動物を狩ることでhunting skillが上がります。" title_key="Hunters Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
 			<requirement perk_level="1" required_skill_name="bladeWeaponsAction" required_skill_level="1" />
 			<requirement perk_level="1" required_skill_name="bladeCraft" required_skill_level="10" />
 			<recipe name="smallKnifeBladeMold" unlock_level="1" />
             <recipe name="smallKnifeBlade" unlock_level="1" />
 			<recipe name="huntingKnife" unlock_level="1" />
 		</perk>
-        <perk name="katanaPerk" icon="ui_game_symbol_katanamichonne" description_key="Learn to craft a katana on the anvil using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a long strong knife thats good for fighting." title_key="Machete" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="firearms">
+        <perk name="katanaPerk" icon="ui_game_symbol_katanamichonne" description_key="くぎ抜き金づち(claw hammer)を使って金床(anvil)で刀(katana)と、それを作るために必要な刀身(swordBlade)が金床(anvil)を使って溶鉱炉で作れるようになります。この刀は戦闘に向いています。" title_key="Machete" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="firearms">
 			<requirement perk_level="1" required_skill_name="bladeCraft" required_skill_level="50" />
             <requirement perk_level="1" required_skill_name="bladeWeaponsAction" required_skill_level="1" />
 			<recipe name="swordBladeMold" unlock_level="1" />
@@ -3362,74 +3362,74 @@
 			<recipe name="katana" unlock_level="1" />
 		</perk>
         <!--TRAPS-->
-        <perk name="barbedWirePerk" icon="ui_game_symbol_barbedFence" description_key="Learn to craft Barbed Wire in the forge using a anvil" title_key="Barbed Wire" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="weapons">
+        <perk name="barbedWirePerk" icon="ui_game_symbol_barbedFence" description_key="金床(anvil)を使って、鍛冶炉で有刺鉄線が作れるようになります。" title_key="Barbed Wire" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="weapons">
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="barbedWireSheet" unlock_level="1" />
 		</perk>
-        <perk name="spikesPerk" icon="ui_game_symbol_trapSpikes01" description_key="Learn to craft Wooden Spikes" title_key="Wood Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+        <perk name="spikesPerk" icon="ui_game_symbol_trapSpikes01" description_key="木製スパイク(Wooden Spikes)が作れるようになります。" title_key="Wood Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
 			<recipe name="setUpASpikeTrap" unlock_level="1" />
 		</perk>
-		<perk name="logTipsPerk" icon="ui_game_symbol_woodLogSpike1" description_key="Learn to craft Log Tips" title_key="Log Tips" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+		<perk name="logTipsPerk" icon="ui_game_symbol_woodLogSpike1" description_key="木の丸太のスパイク(Wood Log Spike)が作れるようになります。" title_key="Log Tips" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
 			<recipe name="woodLogSpike1" unlock_level="1" />
 		</perk>
-		<perk name="barbedFencePerk" icon="ui_game_symbol_barbedFence" description_key="Learn to craft Barbed Fence" title_key="Barbed Fence" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+		<perk name="barbedFencePerk" icon="ui_game_symbol_barbedFence" description_key="有刺鉄線柵(Barbed Fence)が作れるようになります。" title_key="Barbed Fence" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
 			<requirement perk_level="1" required_player_level="10" />
 			<recipe name="barbedFence" unlock_level="1" />
 		</perk>
-        <perk name="methaneProducerPerk" icon="ui_game_symbol_methaneProducer" description_key="Learn to craft a Methane gas producer on the metal working bench and use it to craft methane gas bombs." title_key="Methane Gas Bombs" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+        <perk name="methaneProducerPerk" icon="ui_game_symbol_methaneProducer" description_key="金属加工台で自家製メタンガス生成器(Methane Producer)とメタンガス爆弾(methane gas bombs)が作れるようになります。" title_key="Methane Gas Bombs" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="methaneProducer" unlock_level="1" />
 			<recipe name="gasTankEmpty" unlock_level="1" />
 		</perk>
-        <perk name="ironSpikes" icon="ui_game_symbol_steelSpikes" description_key="Learn to craft iron Spikes that can be upgraded into steel spikes" title_key="Metal Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="weapons">
+        <perk name="ironSpikes" icon="ui_game_symbol_steelSpikes" description_key="鋼のスパイク(steel spikes)にアップグレードできる鉄のスパイク(iron Spikes)が作れるようになります。" title_key="Metal Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="weapons">
 			<requirement perk_level="1" required_player_level="25" />
             <recipe name="ironSpikes" unlock_level="1" />
 		</perk>
-        <perk name="razorWire" icon="ui_game_symbol_razorWire" description_key="Learn to craft razor wire that can entangle trespasser" title_key="Razor Wire" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="weapons">
+        <perk name="razorWire" icon="ui_game_symbol_razorWire" description_key="侵入者をワイヤーに絡ませて行く手を阻むレーザーワイヤーが作れるようになります。" title_key="Razor Wire" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="weapons">
 			<requirement perk_level="1" required_player_level="25" />
             <recipe name="razorWire" unlock_level="1" />
 		</perk>
-        <perk name="animalTraps" icon="ui_game_symbol_spiderBuff" description_key="Learn to catch and tame poisonous spiders and scorpions. Keep them as pets or use them as traps for other players." title_key="Animal Traps/Pets" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+        <perk name="animalTraps" icon="ui_game_symbol_spiderBuff" description_key="毒を持つ蜘蛛やサソリを捕まえる方法が学べます。またペットとして飼育したり、他のプレイヤーに対してトラップとして使用できます。" title_key="Animal Traps/Pets" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
 			<requirement perk_level="1" required_skill_name="chemistryCraft" required_skill_level="5" />
             <recipe name="animalContainer" unlock_level="1" />
             <recipe name="spiderTrap" unlock_level="1" />
             <recipe name="scorpionTrap" unlock_level="1" />
 		</perk>
         <!--TOOLS-->
-        <perk name="simpleWorkBenchPerk" icon="ui_game_symbol_workbench" description_key="Learn to craft a Wood Working Bench. Use it to craft more complex items and faster. The wood working bench has 3 tools - CircularSaw, claw Hammer and wrench." title_key="Wood Working Bench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
+        <perk name="simpleWorkBenchPerk" icon="ui_game_symbol_workbench" description_key="作業台が作れるようになります。より複雑なアイテムを速く作るために使用します。作業台には3つのツール、丸ノコ(CircularSaw)とくぎ抜き金づち(claw Hammer)、レンチ(wrench)が使えます。" title_key="Wood Working Bench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
 			<requirement perk_level="1" required_player_level="5" />
 			<recipe name="workbench" unlock_level="1" />
 		</perk>
-		<perk name="forgePerk" icon="ui_game_symbol_forge1" description_key="Learn to craft and use a forge" title_key="Forge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+		<perk name="forgePerk" icon="ui_game_symbol_forge1" description_key="鍛冶炉(forge)を作って使えるようになります。鍛冶炉には3つのツール、金床(anvil)とるつぼ(crucible)、ツール＆型セット(tool And Die Set)が使えます。" title_key="Forge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 			<requirement perk_level="1" required_player_level="10" />
 			<recipe name="forge" unlock_level="1" />
 			<recipe name="bellows" unlock_level="1" />
 		</perk>
-		<perk name="anvilPerk" icon="ui_game_symbol_anvil" description_key="Learn to craft an anvil in a forge. The Anvil can be used as a workstation or as a tool in a workstation. Use a Hand Dolly to pick it back up and re install it." title_key="Anvil" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
+		<perk name="anvilPerk" icon="ui_game_symbol_anvil" description_key="鍛冶炉で金床(anvil)が作れるようになります。金床はワークステーションとして、またワークステーション内のツールとして使用されます。" title_key="Anvil" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
 			<requirement perk_level="1" required_player_level="5" />
 			<recipe name="anvil" unlock_level="1" />
 		</perk>
-        <perk name="forgedIronPerk" icon="ui_game_symbol_forgedIron" description_key="Learn to craft a small stone Forge. Use it to smelt iron, brass, lead, glass, stone and clay. The Forge has 3 tools - anvil, calipers and tool And Die Set." title_key="Forged Iron" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
+        <perk name="forgedIronPerk" icon="ui_game_symbol_forgedIron" description_key="精錬鉄(Forged Iron)が作れるようになります。" title_key="Forged Iron" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="forgedIron" unlock_level="1" />
 		</perk>
-		<perk name="shortMetalPipePerk" icon="ui_game_symbol_shortMetalPipe" description_key="Learn to craft Short Metal Pipes like a man with your bare hands" title_key="Short Metal Pipe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
+		<perk name="shortMetalPipePerk" icon="ui_game_symbol_shortMetalPipe" description_key="素手で鉄のパイプ(short Metal Pipe)が作れるようになります。" title_key="Short Metal Pipe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="shortMetalPipe" unlock_level="1" />
 		</perk>
-		<perk name="blastFurnacePerk" icon="ui_game_symbol_blastFurnace" description_key="Learn to craft a large brick Blast Furnace. Use it to smelt steel, iron, coal and clay. Use this to forge steel." title_key="Blast Furnace" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+		<perk name="blastFurnacePerk" icon="ui_game_symbol_blastFurnace" description_key="大きなレンガ製の溶鉱炉(Blast Furnace)が作れるようになります。鋼や鉄、石炭や粘土を溶かすのに使用します。溶鉱炉を使って鋼が精錬できます。" title_key="Blast Furnace" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 			<requirement perk_level="1" required_player_level="55" />
 			<recipe name="blastFurnace" unlock_level="1" />
 		</perk>
-		<perk name="forgedSteelPerk" icon="ui_game_symbol_forgedSteel" description_key="Learn to craft Forged Steel in the blast Furnace" title_key="Forged Steel" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
+		<perk name="forgedSteelPerk" icon="ui_game_symbol_forgedSteel" description_key="溶鉱炉を使って精錬鋼(Forged Steel)が作れるようになります。" title_key="Forged Steel" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
 			<requirement perk_level="1" required_player_level="55" />
 			<recipe name="forgedSteel" unlock_level="1" />
 		</perk>
-		<perk name="shortSteelPipePerk" icon="ui_game_symbol_shortSteelPipe" description_key="Learn to craft Short Steel Pipe like a man with your bare hands" title_key="Short Steel Pipe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
+		<perk name="shortSteelPipePerk" icon="ui_game_symbol_shortSteelPipe" description_key="素手で鋼のパイプ(Short Steel Pipe)が作れるようになります。" title_key="Short Steel Pipe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
 			<requirement perk_level="1" required_player_level="55" />
 			<recipe name="shortSteelPipe" unlock_level="1" />
 		</perk>
-		<perk name="steelToolsPerk" icon="ui_game_symbol_steelTools" description_key="Learn to forge Steel tool heads in the Blast furnace and craft steel tools on the the metal working bench." title_key="Steel Tools" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="tools">
+		<perk name="steelToolsPerk" icon="ui_game_symbol_steelTools" description_key="溶鉱炉で鋼のツールヘッドを作ったり、金属加工台で鋼のツールが作れるようになります。" title_key="Steel Tools" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="tools">
 			<requirement perk_level="1" required_player_level="55" />
 			<recipe name="pickaxeHeadMold" unlock_level="1" />
             <recipe name="steelPickaxeHead" unlock_level="1" />
@@ -3441,57 +3441,57 @@
 			<recipe name="steelShovelHead" unlock_level="1" />
             <recipe name="shovelHeadMold" unlock_level="1" />
 		</perk>
-		<perk name="spotlightPerk" icon="ui_game_symbol_spotlight" description_key="Learn to craft a working spotlight on the work bench using the Compact Driver." title_key="Spotlight" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
+		<perk name="spotlightPerk" icon="ui_game_symbol_spotlight" description_key="作業台でスポットライト(spotlight)が作れるようになります。" title_key="Spotlight" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
 			<requirement perk_level="1" required_player_level="1" />
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="50" />
 			<recipe name="spotlightPlayer" unlock_level="1" />
 		</perk>
-        <perk name="cementMixerPerk" icon="ui_game_symbol_cementMixer" description_key="Lean to craft a cement mixer on the wood working bench using a wrench. use it to make cement, concrete mix and other terrain blocks" title_key="Cement Mixer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+        <perk name="cementMixerPerk" icon="ui_game_symbol_cementMixer" description_key="レンチ(wrench)を使って、作業台でセメントミキサー(cement mixer)が作れるようになります。セメントミキサーを使ってセメント(cement)や生コン(concrete mix)、その他のブロックが作れるようになります。" title_key="Cement Mixer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 			<requirement perk_level="1" required_player_level="10" />
 			<recipe name="cementMixer" unlock_level="1" />
 		</perk>
-		<perk name="refineryPerk" icon="ui_game_symbol_oilRefinery" description_key="Learn to craft a refinery on the wood working bench using a wrench. Use it to creat gas, oil and other chemicals" title_key="Refinery" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+		<perk name="refineryPerk" icon="ui_game_symbol_oilRefinery" description_key="レンチ(wrench)を使って、作業台で精油機(oil refinery)が作れるようになります。精油機を使ってガソリン(gas can)やオイル(oil)、その他の化学薬品が作れるようになります。" title_key="Refinery" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 			<requirement perk_level="1" required_player_level="1" />
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="40" />
 			<recipe name="oilRefinery" unlock_level="1" />
 		</perk>
-		<perk name="oilPerk" icon="ui_game_symbol_oil" description_key="Learn to process oil in a refinery" title_key="Oil" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
+		<perk name="oilPerk" icon="ui_game_symbol_oil" description_key="精油機でオイル(oil)が作れるようになります。" title_key="Oil" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
 			<requirement perk_level="1" required_player_level="1" />
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="40" />
 			<recipe name="oil" unlock_level="1" />
 		</perk>
-        <perk name="oilPerk" icon="ui_game_symbol_oil" description_key="Learn to process GAS in a refinery" title_key="GAS" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
+        <perk name="oilPerk" icon="ui_game_symbol_oil" description_key="精油機でガソリン(gas can)が作れるようになります。" title_key="GAS" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
 			<requirement perk_level="1" required_player_level="1" />
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="40" />
 			<recipe name="gasCan" unlock_level="1" />
 		</perk>
-		<perk name="screwdriverPerk" icon="ui_game_symbol_screwdriver" description_key="Learn to repair a screwdriver and craft it on the Metal Working Bench" title_key="Screwdriver" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
+		<perk name="screwdriverPerk" icon="ui_game_symbol_screwdriver" description_key="スクリュードライバー(screwdriver)の修理と金属加工台で作れるようになります。" title_key="Screwdriver" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
 			<requirement perk_level="1" required_player_level="10" />
 			<recipe name="screwdriverHeadMold" unlock_level="1" />
             <recipe name="screwdriver" unlock_level="1" />
 		</perk>
-		<perk name="chainsawPerk" icon="ui_game_symbol_chainsaw" description_key="Learn to build and maintain a Chainsaw" title_key="Chainsaw" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="tools">
+		<perk name="chainsawPerk" icon="ui_game_symbol_chainsaw" description_key="チェーンソー(Chainsaw)の組立てとメンテナンスが学べます。" title_key="Chainsaw" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="tools">
 			<requirement perk_level="1" required_player_level="1" />
 			<recipe name="chainsaw" unlock_level="1" />
 		</perk>
-		<perk name="augerPerk" icon="ui_game_symbol_auger" description_key="Learn to build and maintain an Auger that is cappable of digging soil and gravel quickly" title_key="Auger" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="30" group="tools">
+		<perk name="augerPerk" icon="ui_game_symbol_auger" description_key="ドリル(Auger)の組立てとメンテナンスが学べます。土と砂利を速く掘削できるようになります。" title_key="Auger" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="30" group="tools">
 			<requirement perk_level="1" required_player_level="1" />
 			<recipe name="auger" unlock_level="1" />
 		</perk>
-		<perk name="nailgunPerk" icon="ui_game_symbol_nailgun" description_key="Learn to build and maintain a nailgun" title_key="Nailgun" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="35" group="tools">
+		<perk name="nailgunPerk" icon="ui_game_symbol_nailgun" description_key="ネイルガン(nailgun)の組立てとメンテナンスが学べます。" title_key="Nailgun" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="35" group="tools">
 			<requirement perk_level="1" required_player_level="1" />
 			<recipe name="nailgun" unlock_level="1" />
 		</perk>
-		<perk name="stoneDrillPerk" icon="ui_game_symbol_auger" description_key="Learn to build and maintain a Stone drill that is cappable of digging hardstone and metals" title_key="Stone Drill" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="50" group="tools">
+		<perk name="stoneDrillPerk" icon="ui_game_symbol_auger" description_key="ストーンドリル(Stone drill)の組立てとメンテナンスが学べます。岩盤のような硬い岩と鉱石が掘削できます。" title_key="Stone Drill" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="50" group="tools">
 			<requirement perk_level="1" required_player_level="55" />
 			<recipe name="partsAuger_bladeDiamond" unlock_level="1" />
 			<recipe name="stoneDrill" unlock_level="1" />
 		</perk>
-        <perk name="fieldKnife" icon="ui_game_symbol_fieldKnife" description_key="Learn to craft a Field Knife on the Anvil using a Claw Hammer. Using the Field Knife to butcher animals will gather more and rarer resources" title_key="Field Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
+        <perk name="fieldKnife" icon="ui_game_symbol_fieldKnife" description_key="くぎ抜き金づち(Claw Hammer)を使って、金床(Anvil)で野外用簡易ナイフ(Field Knife)が作れるようになります。このナイフを使って動物を虐殺すると、より多くの素材を集めることができます。" title_key="Field Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
 			<requirement perk_level="1" required_skill_name="huntingCraft" required_skill_level="25" />
 			<recipe name="fieldKnife" unlock_level="1" />
 		</perk>
-        <perk name="ironToolsPerk" icon="ui_game_symbol_pickaxeSteel" description_key="Learn to forge Iron tool heads in the Forge with a Anvil and use them to craft Iron tools" title_key="Iron Tools" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
+        <perk name="ironToolsPerk" icon="ui_game_symbol_pickaxeSteel" description_key="金床(Anvil)を使って鍛冶炉で鉄のツールヘッドを作ったり、鉄のツールが作れるようになります。" title_key="Iron Tools" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="fireaxeHeadMold" unlock_level="1" />
 			<recipe name="ironFireaxeHead" unlock_level="1" />
@@ -3503,26 +3503,26 @@
 			<recipe name="ironShovelHead" unlock_level="1" />
 			<recipe name="shovelIron" unlock_level="1" />
 		</perk>
-        <perk name="nailPerk" icon="ui_game_symbol_nail" description_key="Learn to craft basic Nail in the forge" title_key="Nails" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="tools">
+        <perk name="nailPerk" icon="ui_game_symbol_nail" description_key="鍛冶炉で釘(Nail)が作れるようになります。" title_key="Nails" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="tools">
 			<requirement perk_level="1" required_player_level="15" />
 			<recipe name="nail" unlock_level="1" />
 		</perk>
-        <perk name="chemistryStationPerk" icon="ui_game_symbol_chemistryStation" description_key="Learn to craft achemistry Station on the wood working bench using a claw hammer. Use it to craft complex chemical and medical items. The Chemistry Station has 2 tools - Mortar And Pestle and beaker." title_key="Chemistry Station" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+        <perk name="chemistryStationPerk" icon="ui_game_symbol_chemistryStation" description_key="くぎ抜き金づち(claw hammer)を使って、作業台で化学薬品調合台が作れるようになります。化学薬品調合台を使って複雑な化学薬品や医薬品が作れます。化学薬品調合台(Chemistry Station)には2つのツール、すり鉢とすりこ木(Mortar And Pestle)とビーカー(beaker)が使えます。" title_key="Chemistry Station" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 			<requirement perk_level="1" required_skill_name="medicineCraft" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="chemistryStation" unlock_level="1" />
 		</perk>
-        <perk name="stillPerk" icon="ui_game_symbol_still" description_key="Learn to craft a still" title_key="Still" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
+        <perk name="stillPerk" icon="ui_game_symbol_still" description_key="原油蒸留器が作れるようになります。" title_key="Still" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
 			<requirement perk_level="1" required_skill_name="chemistryCraft" required_skill_level="3" />
 			<recipe name="still" unlock_level="1" />
 		</perk>
-         <perk name="chemistryStationPerk" icon="ui_game_symbol_chemistryStation" description_key="Learn to craft achemistry Station on the wood working bench using a claw hammer. Use it to craft complex chemical and medical items. The Chemistry Station has 2 tools - Mortar And Pestle and beaker." title_key="Chemistry Station" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+         <perk name="chemistryStationPerk" icon="ui_game_symbol_chemistryStation" description_key="くぎ抜き金づち(claw hammer)を使って、作業台で化学薬品調合台が作れるようになります。化学薬品調合台を使って複雑な化学薬品や医薬品が作れます。化学薬品調合台(Chemistry Station)には2つのツール、すり鉢とすりこ木(Mortar And Pestle)とビーカー(beaker)が使えます。" title_key="Chemistry Station" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 			<requirement perk_level="1" required_skill_name="medicineCraft" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="chemistryStation" unlock_level="1" />
 		</perk>
         <!--CLOTHING-->
-        <perk name="animalHideArmorPerk" icon="ui_game_symbol_armor_leather" description_key="Learn to craft basic animal hide clothing on the armor table using a Leather Needle." title_key="Animal Hide Armor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="clothing">
+        <perk name="animalHideArmorPerk" icon="ui_game_symbol_armor_leather" description_key="革針(Leather Needle)を使って、縫製作業台(armor table)で動物の皮の衣服が作れるようになります。" title_key="Animal Hide Armor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="clothing">
 			<requirement perk_level="1" required_skill_name="leatherworkingCraft" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="5" />
 			<recipe name="animalHideBoots" unlock_level="1" />
@@ -3532,7 +3532,7 @@
 			<recipe name="animalHideLegArmor" unlock_level="1" />
 			<recipe name="animalHidePoncho" unlock_level="1" />
 		</perk>
-		<perk name="scrapIronArmorPerk" icon="ui_game_symbol_scrapChestArmor" description_key="Learn to craft Scrap Iron Armor on the armor table using a claw hammer." title_key="Scrap Iron Armor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="clothing">
+		<perk name="scrapIronArmorPerk" icon="ui_game_symbol_scrapChestArmor" description_key="くぎ抜き金づち(claw hammer)を使って、縫製作業台でクズ鉄の鎧が作れるようになります。" title_key="Scrap Iron Armor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="clothing">
 			<requirement perk_level="1" required_skill_name="armorSmithingCraft" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="15" />
 			<recipe name="scrapBoots" unlock_level="1" />
@@ -3541,7 +3541,7 @@
 			<recipe name="scrapHelmet" unlock_level="1" />
 			<recipe name="scrapLegArmor" unlock_level="1" />
 		</perk>
-		<perk name="ironArmorPerk" icon="ui_game_symbol_ironChestArmor" description_key="Learn to craft Iron Armor on the armor table using a anvil." title_key="Iron Armor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="clothing">
+		<perk name="ironArmorPerk" icon="ui_game_symbol_ironChestArmor" description_key="金床(anvil)を使って、縫製作業台で鉄の鎧が作れるようになります。" title_key="Iron Armor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="clothing">
 			<requirement perk_level="1" required_skill_name="armorSmithingCraft" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="ironBoots" unlock_level="1" />
@@ -3550,7 +3550,7 @@
 			<recipe name="ironHelmet" unlock_level="1" />
 			<recipe name="ironLegArmor" unlock_level="1" />
 		</perk>
-		<perk name="lightAttachmentPerk" icon="ui_game_symbol_flashlight02" description_key="Learn to attach flashlights to helmets on the armor table" title_key="Light Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="clothing">
+		<perk name="lightAttachmentPerk" icon="ui_game_symbol_flashlight02" description_key="縫製作業台で懐中電灯(flashlights)をヘルメットに取り付ける方法が学べます。" title_key="Light Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="clothing">
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="25" />
 			<recipe name="scrapHelmet+Light" unlock_level="1" />
 			<recipe name="militaryHelmet+Light" unlock_level="1" />
@@ -3619,21 +3619,21 @@
 				<multiply perk_level="5" value="0.5" />
 			</effect>
 		</perk>
-        <perk name="aloeCreamPerk" icon="ui_game_symbol_aloeCream" description_key="Learn to craft healing creams" title_key="Healing Creams" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="health">
+        <perk name="aloeCreamPerk" icon="ui_game_symbol_aloeCream" description_key="植物性クリームが作れるようになります。" title_key="Healing Creams" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="health">
 			<requirement perk_level="1" required_skill_name="medicineCraft" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="3" />
 			<recipe name="aloeCream" unlock_level="1" />
 			<recipe name="herbalCream" unlock_level="1" />
 		</perk>
-		<perk name="firstAidBandagePerk" icon="ui_game_symbol_firstAidBandage" description_key="Learn to craft a First Aid Bandage" title_key="First Aid Bandage" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="health">
+		<perk name="firstAidBandagePerk" icon="ui_game_symbol_firstAidBandage" description_key="救急包帯(First Aid Bandage)が作れるようになります。" title_key="First Aid Bandage" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="health">
 			<requirement perk_level="1" required_skill_name="medicineCraft" required_skill_level="3" />
 			<recipe name="firstAidBandage" unlock_level="1" />
 		</perk>
-        <perk name="bloodDrawKitPerk" icon="ui_game_symbol_bloodDrawKit" description_key="Learn how to craft a Blood Draw Kit with the Chemistry set" title_key="Blood Draw Kit" max_level="1" skill_point_cost_multiplier="1" skill_point_cost_per_level="2" group="health">
+        <perk name="bloodDrawKitPerk" icon="ui_game_symbol_bloodDrawKit" description_key="化学薬品調合台で血液採取キット(Blood Draw Kit)が作れるようになります。" title_key="Blood Draw Kit" max_level="1" skill_point_cost_multiplier="1" skill_point_cost_per_level="2" group="health">
 			<requirement perk_level="1" required_skill_name="medicineCraft" required_skill_level="5" />
 			<recipe name="bloodDrawKit" unlock_level="1" />
 		</perk>
-		<perk name="firstAidPerk" icon="ui_game_symbol_firstAidKit" description_key="Learn advanced a first aid kit" title_key="First Aid" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
+		<perk name="firstAidPerk" icon="ui_game_symbol_firstAidKit" description_key="救急箱(first aid kit)が作れるようになります。" title_key="First Aid" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
 			<requirement perk_level="1" required_skill_name="medicineCraft" required_skill_level="10" />
 			<recipe name="firstAidKit" unlock_level="1" />
 			<recipe name="large1stAidKit" unlock_level="1" />
@@ -3650,12 +3650,12 @@
 				<multiply perk_level="3" value="0.75" />
 			</effect>
 		</perk>
-        <perk name="smallBedPerk" icon="ui_game_symbol_bed01" description_key="Learn to craft a Small Bed on the work bench using a wrench. When rested on it will heal and warm you" title_key="Small Bed" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="scavenging">
+        <perk name="smallBedPerk" icon="ui_game_symbol_bed01" description_key="レンチ(wrench)を使って、作業台で小さなベッド(Small Bed)が作れます。ベッドので休むと健康値の回復と体を温めることができるでしょう。" title_key="Small Bed" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="scavenging">
 			<requirement perk_level="1" required_player_level="1" />
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="5" />
 			<recipe name="bed01" unlock_level="1" />
         </perk>
-        <perk name="farmingPerk" icon="ui_game_symbol_run" description_key="farming" title_key="Farming" max_level="15" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
+        <perk name="farmingPerk" icon="ui_game_symbol_run" description_key="種が作れるようになります。" title_key="Farming" max_level="15" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="scavenging">
 			<recipe name="hoeIron" unlock_level="1" />
 			<recipe name="plantedCotton1" unlock_level="2" />
 			<recipe name="plantedPotato1" unlock_level="3" />
@@ -3680,22 +3680,22 @@
 				<setvalue perk_level="3" value="3" />
 			</effect>
 		</perk>
-        <perk name="cookingGearPerk" icon="ui_game_symbol_fryingPan" description_key="Learn to craft cooking equipment in the forge" title_key="Cooking Gear" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="scavenging">
+        <perk name="cookingGearPerk" icon="ui_game_symbol_fryingPan" description_key="鍛冶炉で調理器具が作れるようになります。" title_key="Cooking Gear" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="scavenging">
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="cookingPot" unlock_level="1" />
 			<recipe name="cookingGrill" unlock_level="1" />
 			<recipe name="fryingPan" unlock_level="1" />
 		</perk>
-		<perk name="purificationTabletsPerk" icon="ui_game_symbol_purificationTablets" description_key="Learn to craft Purification Tablets to clean water on the go" title_key="Purification Tablets" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="scavenging">
+		<perk name="purificationTabletsPerk" icon="ui_game_symbol_purificationTablets" description_key="水を浄化する錠剤を作ることができます。" title_key="Purification Tablets" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="scavenging">
 			<recipe name="purificationTablets" unlock_level="1" />
 		</perk>
-        <perk name="chickenCoopPerk" icon="ui_game_symbol_chickenCoop" description_key="Learn to craft a chicken coop and use it to hatch and raise a chicken. Once fully grown it will produce feathers or eggs and can be slaughtered for meat." title_key="Chicken Coop" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="scavenging">
+        <perk name="chickenCoopPerk" icon="ui_game_symbol_chickenCoop" description_key="鶏舎を作り、卵からニワトリを育てる方法が学べます。雌鶏になると、卵と羽を採集できます。屠畜して肉を得ることもできます。" title_key="Chicken Coop" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="scavenging">
 			<requirement perk_level="1" required_skill_name="huntingCraft" required_skill_level="50" />
 			<recipe name="chickenCoop" unlock_level="1" />
 		</perk>
       <!--SCIENCE-->
       <!-- JZMOD BUILDING SKILLS-->
-		<perk name="woodBuilding" icon="ui_game_symbol_plank" description_key="Wood Building is the skill to master if you want to build with wood. Learn these skill by completing your building quest chain and then you will Learn to make nails and planks at skill level 3." title_key="Wood Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+		<perk name="woodBuilding" icon="ui_game_symbol_plank" description_key="木造建築を学ぶスキルです。このスキルは「木工を学ぶ」の仕事をこなすと、レベル3で釘(nail)と製材された厚板(plank)が作れるようになります。" title_key="Wood Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
 			<recipe name="woodFrameBlock" unlock_level="1" />
 			<recipe name="woodFrameCNRFull" unlock_level="2" />
 			<recipe name="woodFrameCNRInside" unlock_level="2" />
@@ -3729,7 +3729,7 @@
 			<recipe name="nail" unlock_level="3" />
 			<recipe name="plank" unlock_level="3" />
 		</perk>
-		<perk name="cobblestoneBuilding" icon="ui_game_symbol_cobblestone" description_key="Cobblestone Building is the skill to master if you want to build with cobblestone. Learn these skill by completing your building quest chain and then you will Learn to make cobblestones at skill level 3" title_key="Cobblestone Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" > 
+		<perk name="cobblestoneBuilding" icon="ui_game_symbol_cobblestone" description_key="玉石造りを学ぶスキルです。このスキルは「玉石作りを学ぶ」の仕事をこなすと、レベル3で玉石(Cobblestone)が作れるようになります。" title_key="Cobblestone Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" > 
 			<recipe name="cobblestoneFrameBlock" unlock_level="1" />
 			<recipe name="cobblestoneFrameRamp" unlock_level="2" />
 			<recipe name="cobblestoneFrameStairs25" unlock_level="2" />
@@ -3745,7 +3745,7 @@
 			<!--upgrade material-->
 			<recipe name="cobblestones" unlock_level="3" />
 		</perk>
-		<perk name="brickBuilding" icon="ui_game_symbol_brick" description_key="Brick Building is the skill to master if you want to build with bricks. Learn these skill by completing your building quest chain and then you will Learn to make bricks at skill level 3" title_key="Brick Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+		<perk name="brickBuilding" icon="ui_game_symbol_brick" description_key="レンガ造りを学ぶスキルです。このスキルは「レンガ造りを学ぶ」の仕事をこなすと、レベル3でレンガ(Brick)が作れるようになります。" title_key="Brick Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
 			<recipe name="brickFrameBlock" unlock_level="1" />
 			<recipe name="brickFrameRamp" unlock_level="2" />
 			<recipe name="brickFrameStairs" unlock_level="2" />
@@ -3762,7 +3762,7 @@
           	<!--upgrade material-->
 			<recipe name="bricks" unlock_level="3" />
 		</perk>
-		<perk name="concreteBuilding" icon="ui_game_symbol_concreteMix" description_key="Concrete Building is the skill to master if you want to build with cement. Learn these skill by completing your building quest chain and then you will Learn to make cement at skill level 3" title_key="Concrete Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+		<perk name="concreteBuilding" icon="ui_game_symbol_concreteMix" description_key="コンクリート建築を学ぶスキルです。このスキルは「コンクリート建築を学ぶ」の仕事をこなすと、レベル3でセメント(cement)が作れるようになります。" title_key="Concrete Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
 			<recipe name="cementFormBlock" unlock_level="1" />
 			<recipe name="cementFormRamp" unlock_level="2" />
             <recipe name="cementFormStairs25CornerCNR" unlock_level="2" />
@@ -3785,7 +3785,7 @@
 			<recipe name="cement" unlock_level="3" />
             <recipe name="cementMix" unlock_level="3" />
 		</perk>
-		<perk name="rConcreteBuilding" icon="ui_game_symbol_concreteReinforced" description_key="Reinforced Concrete Building is the skill to master if you want to build with concrete mix and rebar. Learn these skill by completing your building quest chain and then you will Learn to make concrete mix at skill level 3" title_key="Reinforced Concrete Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+		<perk name="rConcreteBuilding" icon="ui_game_symbol_concreteReinforced" description_key="鉄筋コンクリート構造を学ぶスキルです。このスキルは「鉄筋コンクリート構造を学ぶ」の仕事をこなすと、レベル3で生コン(concrete mix)が作れるようになります。" title_key="Reinforced Concrete Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
 			<recipe name="rebarFrameBlock" unlock_level="1" />
 			<recipe name="rebarFrameRamp" unlock_level="2" />
 			<recipe name="rebarStairs25" unlock_level="2" />
@@ -3808,7 +3808,7 @@
             <recipe name="cement" unlock_level="3" />
 			<recipe name="concreteMix" unlock_level="3" />
 		</perk>
-		<perk name="scrapIronBuilding" icon="ui_game_symbol_scrapIronBlock" description_key="Scrapiron Building is the skill to master if you want to build with scrapiron. Learn these skill by completing your building quest chain and then you will Learn to make scrapiron sheets plus nuts and bolts at skill level 3" title_key="Scrap Iron Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+		<perk name="scrapIronBuilding" icon="ui_game_symbol_scrapIronBlock" description_key="クズ鉄の建築を学ぶスキルです。このスキルは「鉄工を学ぶ」の仕事をこなすと、レベル3でクズ鉄の板(scrapiron sheets)、ネジとボルト(nuts And bolts)が作れるようになります。" title_key="Scrap Iron Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
 			<recipe name="scrapIronFrameBlock" unlock_level="1" />
 			<recipe name="scrapIronFrameRamp" unlock_level="2" />
 			<recipe name="scrapIronStairs25" unlock_level="2" />
@@ -3835,7 +3835,7 @@
 			<recipe name="nutAndBolt" unlock_level="3" />
 			<recipe name="corrugatedMetalSheet" unlock_level="3" />
 		</perk>
-		<perk name="steelBuilding" icon="ui_game_symbol_steelWall" description_key="Steel Building is the skill to master if you want to build with forged steel. Learn these skill by completing your building quest chain and then you will Learn to make forged steel sheets at skill level 3" title_key="Steel Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
+		<perk name="steelBuilding" icon="ui_game_symbol_steelWall" description_key="鋼の建築を学ぶスキルです。このスキルは「鋼の構造計算」の仕事をこなすと、レベル3でクズ鋼の板(Scrap Steel Sheets)が作れるようになります。" title_key="Steel Building" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science" >
 			<recipe name="forgedFrame" unlock_level="1" />
 			<recipe name="forgedFrameRamp" unlock_level="2" />
 			<recipe name="forgedStairs25" unlock_level="2" />
@@ -3898,98 +3898,98 @@
 				<multiply skill_level="5" value="0.75" />
 			</effect>
 		</perk>
-      	<perk name="woodenLadderPerk" icon="ui_game_symbol_ladder" description_key="Learn to craft a wooden ladder" title_key="Wooden Ladder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="science">
+      	<perk name="woodenLadderPerk" icon="ui_game_symbol_ladder" description_key="木のはしご(wooden ladder)が作れるようになります。" title_key="Wooden Ladder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="science">
 			<recipe name="ladderWood" unlock_level="1" />
 		</perk>
-        <perk name="chestPerk" icon="ui_game_symbol_secureStorageChest" description_key="Learn to craft a secure storage container" title_key="Secure Storage" max_level="1" skill_point_cost_multiplier="1" skill_point_cost_per_level="2" group="science">
+        <perk name="chestPerk" icon="ui_game_symbol_secureStorageChest" description_key="安全な保管箱(Secure Storage Chest)が作れるようになります。" title_key="Secure Storage" max_level="1" skill_point_cost_multiplier="1" skill_point_cost_per_level="2" group="science">
 			<requirement perk_level="1" required_player_level="10" />
 			<recipe name="cntStorageGeneric" unlock_level="1" />
             <recipe name="cntSecureStorageChest" unlock_level="1" />
 		</perk>
-		<perk name="woodenDoorPerk" icon="ui_game_symbol_woodenDoor" description_key="Learn to craft a secure Wooden Door" title_key="Wooden Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="science">
+		<perk name="woodenDoorPerk" icon="ui_game_symbol_woodenDoor" description_key="安全な木のドア(secure Wooden Door)が作れるようになります。" title_key="Wooden Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="science">
 			<requirement perk_level="1" required_skill_name="woodBuilding" required_skill_level="2" />
 			<recipe name="secureDoorWooden" unlock_level="1" />
 		</perk>
-		<perk name="woodHatchPerk" icon="ui_game_symbol_woodHatch1_v1" description_key="Learn to craft a secure Wooden Hatche" title_key="Wood Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="science">
+		<perk name="woodHatchPerk" icon="ui_game_symbol_woodHatch1_v1" description_key="安全な木のハッチ(secure Wooden Hatche)が作れるようになります。" title_key="Wood Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="science">
 			<requirement perk_level="1" required_skill_name="woodBuilding" required_skill_level="2" />
 			<recipe name="woodHatch1_v1" unlock_level="1" />
 		</perk>
-	    <perk name="steelLadderPerk" icon="ui_game_symbol_ladderMetal" description_key="Learn to craft a steel Ladder on the Metal Working Bench" title_key="Steel Ladder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="science">
+	    <perk name="steelLadderPerk" icon="ui_game_symbol_ladderMetal" description_key="金属加工台で鋼のはしご(steel Ladder)が作れるようになります。" title_key="Steel Ladder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="science">
 			<requirement perk_level="1" required_skill_name="steelBuilding" required_skill_level="2" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="ladderSteel" unlock_level="1" />
 		</perk>
-		<perk name="metalLadderPerk" icon="ui_game_symbol_ladderMetal" description_key="Learn to craft a Metal Ladder on the Metal Working Bench" title_key="Metal Ladder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="science">
+		<perk name="metalLadderPerk" icon="ui_game_symbol_ladderMetal" description_key="金属加工台で金属のはしご(Metal Ladder)が作れるようになります。" title_key="Metal Ladder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="science">
 			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="2" />
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="ladderMetal" unlock_level="1" />
 		</perk>
-		<perk name="ironHatchPerk" icon="ui_game_symbol_scrapHatch" description_key="Learn to craft Iron Hatches on the metal working bench using a wrench" title_key="Iron Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="science">
+		<perk name="ironHatchPerk" icon="ui_game_symbol_scrapHatch" description_key="レンチ(wrench)を使って、金属加工台で鉄のハッチ(Iron Hatches)が作れるようになります。" title_key="Iron Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="science">
 			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="2" />
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="scrapHatch_v1" unlock_level="1" />
 		</perk>
-        <perk name="doorKnobPerk" icon="ui_game_symbol_doorKnob" description_key="Learn to craft Door Locks in the forge using calipers" title_key="Door Locks" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="science">
+        <perk name="doorKnobPerk" icon="ui_game_symbol_doorKnob" description_key="ノギス(calipers)を使って、鍛冶炉でドアノブ(Brass Door Lock)が作れるようになります。 using calipers" title_key="Door Locks" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="science">
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="3" />
 			<recipe name="doorKnob" unlock_level="1" />
 		</perk>
-		<perk name="ironDoorPerk" icon="ui_game_symbol_ironDoor" description_key="Learn to craft Iron Doors on the metal working bench using a wrench" title_key="Iron Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="science">
+		<perk name="ironDoorPerk" icon="ui_game_symbol_ironDoor" description_key="レンチ(wrench)を使って、金属加工台で固い金属のドア(Hard Metal Door)が作れるようになります。" title_key="Iron Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="science">
 			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="2" />
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="ironDoor1_v1" unlock_level="1" />
 		</perk>
-		<perk name="ironGunSafePerk" icon="ui_game_symbol_gunSafe" description_key="Learn to craft Iron Gun Safe on the metal working bench using a wrench" title_key="Iron Gun Safes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
+		<perk name="ironGunSafePerk" icon="ui_game_symbol_gunSafe" description_key="レンチ(wrench)を使って、金属加工台で金庫が作れるようになります。" title_key="Iron Gun Safes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="cntGunSafe" unlock_level="1" />
 			<recipe name="cntDeskSafe" unlock_level="1" />
 			<recipe name="cntWallSafe" unlock_level="1" />
 		</perk>
-		<perk name="ironTrussingPerk" icon="ui_game_symbol_metalTrussing" description_key="Learn to craft Iron Trussing in the forge using a anvil" title_key="Iron Trussing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
+		<perk name="ironTrussingPerk" icon="ui_game_symbol_metalTrussing" description_key="金床(anvil)を使って、鍛冶炉でメタルトラッシングが作れるようになります。" title_key="Iron Trussing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
 			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="3" />
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="metalTrussingBlock" unlock_level="1" />
 			<recipe name="metalTrussingRamp" unlock_level="1" />
 		</perk>
-        <perk name="steelVaultHatchPerk" icon="ui_game_symbol_vaultHatch" description_key="Learn to craft steel Vault Hatches on the metal working bench using the wielder" title_key="Steel Vault Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
+        <perk name="steelVaultHatchPerk" icon="ui_game_symbol_vaultHatch" description_key="溶接トーチ(welder)を使って、金属加工台で金庫のハッチ(steel Vault Hatches)が作れるようになります。" title_key="Steel Vault Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
 			<requirement perk_level="1" required_skill_name="steelBuilding" required_skill_level="2" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="vaultHatch_v1" unlock_level="1" />
 		</perk>
-		<perk name="steelVaultDoorPerk" icon="ui_game_symbol_vaultDoor01" description_key="Learn to craft Steel Vault Doors on the metal working bench using the Wielder" title_key="Steel Vault Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
+		<perk name="steelVaultDoorPerk" icon="ui_game_symbol_vaultDoor01" description_key="溶接トーチ(welder)を使って、金属加工台で金庫のハッチ(Steel Vault Doors)が作れるようになります。" title_key="Steel Vault Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
 			<requirement perk_level="1" required_skill_name="steelBuilding" required_skill_level="2" />
 			<requirement perk_level="1" required_player_level="55" />
 			<recipe name="vaultDoor01" unlock_level="1" />
 		</perk>
-		<perk name="steelGunSafePerk" icon="ui_game_symbol_gunSafe" description_key="Learn to craft The Steel Gun Safe on the work bench using the Wielder. these are the strongest secure storage container you can make" title_key="Steel Gun Safe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
+		<perk name="steelGunSafePerk" icon="ui_game_symbol_gunSafe" description_key="溶接トーチ(welder)を使って、金属加工台で銃金庫が作れるようになります。あなたが作ることができる最も安全な金庫です。" title_key="Steel Gun Safe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="science">
 			<requirement perk_level="1" required_player_level="55" />
 			<recipe name="cntSteelGunSafe" unlock_level="1" />
 			<recipe name="cntSteelGunSafeB" unlock_level="1" />
 		</perk>
-        <perk name="asphaltPerk" icon="ui_game_symbol_asphalt" description_key="Learn to make asphalt in a mixer. use it to make traveling easier" title_key="Asphalt" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="science">
+        <perk name="asphaltPerk" icon="ui_game_symbol_asphalt" description_key="セメントミキサーでアスファルトが作れるようになります。道の舗装に使えば、足取りも軽くなるでしょう。" title_key="Asphalt" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="science">
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="asphalt" unlock_level="1" />
 		</perk>
-        <perk name="tallowPerk" icon="ui_game_symbol_tallow" description_key="Learn to craft Tallow on the Campfire in a Pot" title_key="Tallow" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="science">
+        <perk name="tallowPerk" icon="ui_game_symbol_tallow" description_key="鍋(Pot)を使って、キャンプファイアで獣脂(tallow)が作れるようになります。" title_key="Tallow" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="science">
 			<requirement perk_level="1" required_skill_name="chemistryCraft" required_skill_level="2" />
 			<recipe name="tallow" unlock_level="1" />
 		</perk>
-		<perk name="candlesPerk" icon="ui_game_symbol_candle" description_key="Learn to craft Candles" title_key="Candles" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="science">
+		<perk name="candlesPerk" icon="ui_game_symbol_candle" description_key="ロウソク(Candles)が作れるようになります。" title_key="Candles" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="science">
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="2" />
 			<recipe name="candle" unlock_level="1" />
 		</perk>
-		<perk name="gluePerk" icon="ui_game_symbol_glue" description_key="Learn to craft Glue with the chemistry station" title_key="Glue" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="science">
+		<perk name="gluePerk" icon="ui_game_symbol_glue" description_key="化学薬品調合台で糊(Glue)が作れるようになります。" title_key="Glue" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="science">
 			<requirement perk_level="1" required_skill_name="chemistryCraft" required_skill_level="25" />
 			<recipe name="glue" unlock_level="1" />
 		</perk>
-		<perk name="garageDoorPerk" icon="ui_game_symbol_garageDoorMetal_v1" description_key="Learn to craft a Garage Door on the work bench" title_key="Garage Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="science">
+		<perk name="garageDoorPerk" icon="ui_game_symbol_garageDoorMetal_v1" description_key="作業台で車庫のドア(Garage Door)が作れるようになります。" title_key="Garage Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="science">
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="35" />
 			<recipe name="garageDoorMetal_v1" unlock_level="1" />
 		</perk>
-		<perk name="metalDrawBridgePerk" icon="ui_game_symbol_metalReinforcedWoodDrawBridge" description_key="Learn to craft a Draw Bridge on the metal working bench using a wrench" title_key="DrawBridge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="science">
+		<perk name="metalDrawBridgePerk" icon="ui_game_symbol_metalReinforcedWoodDrawBridge" description_key="レンチ(wrench)を使って、金属加工台で跳ね橋(Draw Bridge)が作れるようになります。" title_key="DrawBridge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="science">
 			<requirement perk_level="1" required_skill_name="scrapIronBuilding" required_skill_level="2" />
 			<recipe name="metalReinforcedWoodDrawBridge" unlock_level="1" />
 		</perk>
-        <perk name="garageDoorPerk" icon="ui_game_symbol_garageDoorMetal_v1" description_key="Learn to craft a Garage Door on the work bench" title_key="Garage Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="science">
+        <perk name="garageDoorPerk" icon="ui_game_symbol_garageDoorMetal_v1" description_key="作業台で車庫のドア(Garage Door)が作れるようになります。" title_key="Garage Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="science">
 			<requirement perk_level="1" required_skill_name="engineeringCraft" required_skill_level="35" />
 			<recipe name="garageDoorMetal_v1" unlock_level="1" />
 		</perk>
@@ -4080,7 +4080,7 @@
 			<material_group name="txGroupWood" unlock_level="1" />
 		</perk>
         <!--PROFESSION-->
-        <perk name="carpenter" icon="ui_game_symbol_carpenter" description_key="These are the skills a Carpenter starts with. Collect 20 Profession pages to learn another profession" title_key="Carpenter" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+        <perk name="carpenter" icon="ui_game_symbol_carpenter" description_key="大工が覚えるスキルです。他の職業を学ぶためには、専門書を20ページ集めなくてはいけません。" title_key="Carpenter" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="woodFrameBlock" unlock_level="1" />
 			<recipe name="woodFrameCNRFull" unlock_level="1" />
 			<recipe name="woodFrameCNRInside" unlock_level="1" />
@@ -4108,7 +4108,7 @@
 				<multiply perk_level="1" value="0.9" />
 			</effect>
 		</perk>
-		<perk name="doctor" icon="ui_game_symbol_doctor" description_key="These are the skills a Doctor starts with. Collect 20 Profession pages to learn another profession" title_key="Doctor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+		<perk name="doctor" icon="ui_game_symbol_doctor" description_key="医者が覚えるスキルです。他の職業を学ぶためには、専門書を20ページ集めなくてはいけません。" title_key="Doctor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="doctorBook" unlock_level="1" />
 			<recipe name="painkillers" unlock_level="1" />
 			<recipe name="superPill" unlock_level="1" />
@@ -4121,7 +4121,7 @@
 			<recipe name="aloeCream" unlock_level="1" />
 			<recipe name="antibiotics" unlock_level="1" />
 		</perk>
-		<perk name="cop" icon="ui_game_symbol_cop" description_key="These are the skills a cop starts with. Collect 20 Profession pages to learn another profession" title_key="Cop" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+		<perk name="cop" icon="ui_game_symbol_cop" description_key="警察官が覚えるスキルです。他の職業を学ぶためには、専門書を20ページ集めなくてはいけません。" title_key="Cop" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="nightStick" unlock_level="1" />
 			<recipe name="gunOil" unlock_level="1" />
 			<recipe name="weaponRepairKit" unlock_level="1" />
@@ -4134,7 +4134,7 @@
 				<multiply perk_level="1" value="0.9" />
 			</effect>
 		</perk>
-		<perk name="soldier" icon="ui_game_symbol_soldier" description_key="These are the skills a soldier starts with. Collect 20 Profession pages to learn another profession" title_key="Soldier" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+		<perk name="soldier" icon="ui_game_symbol_soldier" description_key="兵士が覚えるスキルです。他の職業を学ぶためには、専門書を20ページ集めなくてはいけません。" title_key="Soldier" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="grubs" unlock_level="1" />
 			<recipe name="weaponRepairKit" unlock_level="1" />
 			<recipe name="pipeBomb" unlock_level="1" />
@@ -4150,7 +4150,7 @@
 				<multiply perk_level="1" value="0.9" />
 			</effect>
 		</perk>
-		<perk name="chemist" icon="ui_game_symbol_chemist" description_key="These are the skills a Chemist starts with. Collect 20 Profession pages to learn another profession" title_key="Chemist" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+		<perk name="chemist" icon="ui_game_symbol_chemist" description_key="薬剤師が覚えるスキルです。他の職業を学ぶためには、専門書を20ページ集めなくてはいけません。" title_key="Chemist" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="redBull" unlock_level="1" />
 			<recipe name="stimulant" unlock_level="1" />
 			<recipe name="mixedChemicals" unlock_level="1" />
@@ -4162,7 +4162,7 @@
             <recipe name="incendiaryPowder" unlock_level="1" />
             <recipe name="incendiaryAmmoBook" unlock_level="1" />
 		</perk>
-		<perk name="chef" icon="ui_game_symbol_chef" description_key="These are the skills a Chef starts with. Collect 20 Profession pages to learn another profession" title_key="Chef" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+		<perk name="chef" icon="ui_game_symbol_chef" description_key="料理人が覚えるスキルです。他の職業を学ぶためには、専門書を20ページ集めなくてはいけません。" title_key="Chef" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="flour" unlock_level="1" />
 			<recipe name="bread" unlock_level="1" />
 			<recipe name="goldenRodTea" unlock_level="1" />
@@ -4195,7 +4195,7 @@
 			<recipe name="healthyMealMedium" unlock_level="1" />
 			<recipe name="healthyMealLarge" unlock_level="1" />
 		</perk>
-		<perk name="fitnessInstructor" icon="ui_game_symbol_fitness" description_key="These are the skills a Fitness Instructor starts with. Collect 20 Profession pages to learn another profession" title_key="Fitness Instructor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+		<perk name="fitnessInstructor" icon="ui_game_symbol_fitness" description_key="フィットネスインストラクターが覚えるスキルです。他の職業を学ぶためには、専門書を20ページ集めなくてはいけません。" title_key="Fitness Instructor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="redBull" unlock_level="1" />
 			<recipe name="wellnessJuice" unlock_level="1" />
 			<recipe name="goldenRodTea" unlock_level="1" />
@@ -4222,7 +4222,7 @@
 				<multiply perk_level="1" value="2" />
 			</effect>
 		</perk>
-		<perk name="fireman" icon="ui_game_symbol_fireman" description_key="These are the skill a Fireman starts with. Collect 20 Profession pages to learn another profession" title_key="Fireman" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+		<perk name="fireman" icon="ui_game_symbol_fireman" description_key="消防士が覚えるスキルです。他の職業を学ぶためには、専門書を20ページ集めなくてはいけません。" title_key="Fireman" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="aloeCream" unlock_level="1" />
 			<recipe name="firstAidBandage" unlock_level="1" />
 			<recipe name="firemanAxe" unlock_level="1" />
@@ -4236,7 +4236,7 @@
 				<multiply perk_level="1" value="1.1" />
 			</effect>
 		</perk>
-		<perk name="ironWorker" icon="ui_game_symbol_construction" description_key="These are the skills a Construction Worker starts with. Collect 20 Profession pages to learn another profession" title_key="Iron Worker" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+		<perk name="ironWorker" icon="ui_game_symbol_construction" description_key="鉄工労働者が覚えるスキルです。他の職業を学ぶためには、専門書を20ページ集めなくてはいけません。" title_key="Iron Worker" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="scrapIronFrameBlock" unlock_level="1" />
 			<recipe name="scrapIronFrameRamp" unlock_level="1" />
 			<recipe name="scrapIronStairs25" unlock_level="1" />
@@ -4255,7 +4255,7 @@
 				<multiply perk_level="1" value="1.05" />
 			</effect>
 		</perk>
-		<perk name="electrician" icon="ui_game_symbol_electrician" description_key="These are the skills a Electrician starts with. Collect 20 Profession pages to learn another profession" title_key="Electrician" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+		<perk name="electrician" icon="ui_game_symbol_electrician" description_key="電気技師が覚えるスキルです。他の職業を学ぶためには、専門書を20ページ集めなくてはいけません。" title_key="Electrician" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="wireTool" unlock_level="1" />
 			<recipe name="shockStick" unlock_level="1" />
 			<recipe name="electricwirerelay" unlock_level="1" />
@@ -4285,7 +4285,7 @@
 				<multiply perk_level="1" value="0.95" />
 			</effect>
 		</perk>
-		<perk name="steelWelder" icon="ui_game_symbol_metal" description_key="These are the skills a Metal Worker starts with. Collect 20 Profession pages to learn another profession" title_key="Steel Welder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+		<perk name="steelWelder" icon="ui_game_symbol_metal" description_key="溶接工職人が覚えるスキルです。他の職業を学ぶためには、専門書を20ページ集めなくてはいけません。" title_key="Steel Welder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="forgedFrameBlock" unlock_level="1" />
 			<recipe name="forgedFrameRamp" unlock_level="1" />
 			<recipe name="forgedStairs25" unlock_level="1" />
@@ -4305,7 +4305,7 @@
 				<multiply skill_level="1" value="0.95" />
 			</effect>
 		</perk>
-		<perk name="thief" icon="ui_game_symbol_burglar" description_key="These are the skills a thief starts with. Collect 20 Profession pages to learn another profession" title_key="Thief" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+		<perk name="thief" icon="ui_game_symbol_burglar" description_key="泥棒が覚えるスキルです。他の職業を学ぶためには、専門書を20ページ集めなくてはいけません。" title_key="Thief" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="huntingknife" unlock_level="1" />
 			<recipe name="lockPick" unlock_level="1" />
 			<effect name="TreasureRadius">
@@ -4325,7 +4325,7 @@
 				<multiply perk_level="1" value="0.75" />
 			</effect>
 		</perk>
-		<perk name="parkRanger" icon="ui_game_symbol_ranger" description_key="These are the skills a Park Ranger starts with. Collect 20 Profession pages to learn another profession" title_key="Park Ranger" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+		<perk name="parkRanger" icon="ui_game_symbol_ranger" description_key="パークレンジャーが覚えるスキルです。他の職業を学ぶためには、専門書を20ページ集めなくてはいけません。" title_key="Park Ranger" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="woodSpear" unlock_level="1" />
 			<recipe name="woodJavelin" unlock_level="1" />
 			<recipe name="setUpASpikeTrap" unlock_level="1" />
@@ -4336,7 +4336,7 @@
 				<multiply perk_level="1" value="0.9" />
 			</effect>
 		</perk>
-		<perk name="mechanic" icon="ui_game_symbol_mechanic" description_key="These are the skills a Mechanic starts with. Collect 20 Profession pages to learn another profession" title_key="Mechanic" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+		<perk name="mechanic" icon="ui_game_symbol_mechanic" description_key="整備士が覚えるスキルです。他の職業を学ぶためには、専門書を20ページ集めなくてはいけません。" title_key="Mechanic" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="auger" unlock_level="1" />
 			<recipe name="chainsaw" unlock_level="1" />
 			<recipe name="generatorbank" unlock_level="1" />
@@ -4345,7 +4345,7 @@
 				<multiply perk_level="1" value="0.9" />
 			</effect>
 		</perk>
-		<perk name="mason" icon="ui_game_symbol_mason" description_key="These are the skills a mason starts with. Collect 20 Profession pages to learn another profession" title_key="Mason" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+		<perk name="mason" icon="ui_game_symbol_mason" description_key="石工職人が覚えるスキルです。他の職業を学ぶためには、専門書を20ページ集めなくてはいけません。" title_key="Mason" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="brickFrameBlock" unlock_level="1" />
 			<recipe name="brickFrameRamp" unlock_level="1" />
 			<recipe name="brickFrameStairs" unlock_level="1" />
@@ -4365,7 +4365,7 @@
 				<multiply skill_level="1" value="0.95" />
 			</effect>
 		</perk>
-		<perk name="bouncer" icon="ui_game_symbol_bouncer" description_key="These are the skills a Bouncer starts with. Collect 20 Profession pages to learn another profession" title_key="Bouncer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+		<perk name="bouncer" icon="ui_game_symbol_bouncer" description_key="用心棒が覚えるスキルです。他の職業を学ぶためには、専門書を20ページ集めなくてはいけません。" title_key="Bouncer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 			<recipe name="brassKnuckles" unlock_level="1" />
             <recipe name="brassKnucklesMold" unlock_level="1" />
 			<recipe name="beer" unlock_level="1" />
