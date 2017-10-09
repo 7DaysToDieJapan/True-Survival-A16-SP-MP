@@ -1041,10 +1041,10 @@ internalBleedingTooltip,buffs,Buff,KgNone,You are bleeding internally. Better ho
 overheated,buffs,Buff,KgNone,夏バテ,Overheated,Überhitzt,,Sobrecalentado
 overheatedDesc,buffs,Buff,KgNone,暑さにバテてしまっています。影に入って休みましょう。喉が早く乾いてしまいます。,"You're overheating. Rest, find water or shelter. When hot you will dehydrate faster.","Du bist überhitzt. Ruhe dich aus, finde Wasser oder einen Unterschlupf. Wenn dir heiß ist, dehydrierst du schneller.",Te estás sobrecalentando. Descansa y busca agua o un refugio. Te deshidratas más rápido cuando estás caliente.,
 overheatedTooltip,buffs,Buff,KgNone,"You're overheating. Rest, find water or shelter.","You're overheating. Rest, find water or shelter.","Du bist überhitzt. Ruhe dich aus, finde Wasser oder einen Unterschlupf.",Te estás sobrecalentando. Descansa y busca agua o un refugio.,
-radiation,buffs,Buff,KgNone,被ばく,Deadly Radiation,Tödliche Strahlung,,Radiación letal
+radiation,buffs,Buff,KgNone,被曝,Deadly Radiation,Tödliche Strahlung,,Radiación letal
 radiationDesc,buffs,Buff,KgNone,放射能汚染地域に足を踏み入れてしまいました。ただちに離れてください。,You have entered a Deadly Radiation zone!,Du hast eine Zone mit tödlicher Strahlung betreten!,,¡Has entrado en una zona de Radiación letal!
 radiationTooltip,buffs,Buff,KgNone,You have entered a Deadly Radiation zone!,You have entered a Deadly Radiation zone!,Du hast eine Zone mit tödlicher Strahlung betreten!,,¡Has entrado en una zona de Radiación letal!
-redTeaCooling,buffs,Buff,KgNone,Cool Drink,Cool Drink,Kühles Getränk,,Bebida fría
+redTeaCooling,buffs,Buff,KgNone,清涼,Cool Drink,Kühles Getränk,,Bebida fría
 redTeaCoolingDesc,buffs,Buff,KgNone,キンキンに冷えてやがるっ・・・！あ・・・・ありがてえっ・・・・・・・！,You feel cooler.,Du fühlst dich kühler.,,Te sientes más fresco.
 redTeaCoolingTooltip,buffs,Buff,KgNone,You feel cooler.,You feel cooler.,Du fühlst dich kühler.,,Te sientes más fresco.
 shotgunWound,buffs,Buff,KgNone,Winded,Winded,Harter Treffer,,Agitado
@@ -1096,7 +1096,7 @@ wellnessTooltip,buffs,Buff,KgNone,You are gaining health.,You are gaining health
 wet,buffs,Buff,KgNone,Wetness,Wetness,Nässe,,Mojado
 wetDesc,buffs,Buff,KgNone,衣服が濡れています。風が吹くとより寒さを感じます。,You are wet which will make you colder. This may or may not be a good thing.,"Du bist nass, wodurch dir kälter wird. Das kann eine gute Sache sein. Oder auch nicht.","Estás mojado, lo que te hace estar frío. Esto puede ser algo bueno, o todo lo contrario",
 wetTooltip,buffs,Buff,KgNone,You are wet.,You are wet.,Du bist nass.,,Estás mojado.
-yuccaJuiceCooling,buffs,Buff,KgNone,Cool Drink,Cool Drink,Kühles Getränk,,Bebida fría
+yuccaJuiceCooling,buffs,Buff,KgNone,清涼,Cool Drink,Kühles Getränk,,Bebida fría
 yuccaJuiceCoolingDesc,buffs,Buff,KgNone,涼しさが染みこんできやがる・・・身体に・・・・,You feel cooler.,Du fühlst dich kühler.,,Te sientes más fresco.
 yuccaJuiceCoolingTooltip,buffs,Buff,KgNone,You feel cooler.,You feel cooler.,Du fühlst dich kühler.,,Te sientes más fresco.
 wellnessDecreased,buffs,Tooltip,KgNone,Wellness ({0}): Maximum health and stamina cap decreased to {1},Wellness ({0}): Maximum health and stamina cap decreased to {1},Wohlbefinden ({0}): Obergrenze für maximale Gesundheit und Ausdauer ist auf {1} gesunken,,Bienestar ({0}): La salud máxima y el límite de resistencia se han reducido a {1}.
@@ -4941,7 +4941,7 @@ silencedPistolBarrelDesc,,,,サイレンサー付きピストルの組立て部�
 silencedHuntingBarrel,,,,"Silenced Hunting Barrel",,,,
 silencedHuntingBarrelDesc,,,,サイレンサー付きハンティングライフルの組立てと作成には、金属加工台(metal working bench)にレンチ(wrench)をセットします。,"Used to assemble a Silenced Hunting Rifle and crafted on the metal working bench with a wrench.",,,
 9mmFireBulletDesc,,,,標的に当たると炎に包まれるだろう。科学者は君にこの弾丸の作り方を教えることができる。,"Catches the target on fire. A Scientist can teach you how to craft these.",,,
-shotgunFireShellDesc,,,,"Catches the target on fire. A Scientist can teach you how to craft these.",,,,
+shotgunFireShellDesc,,,,標的に当たると炎に包まれるだろう。科学者は君にこの弾丸の作り方を教えることができる。,"Catches the target on fire. A Scientist can teach you how to craft these.",,,
 DemoRocketDesc,,,,ロケットは広い範囲に対物ダメージと、小さな範囲に対生物ダメージを与えます。,"Rocket that does a large area of damage to   blocks and small area of damage to people.",,,
 308mmBulletDesc,,,,ハンティングライフルで使用します。銃弾加工機で作ることができます。,"Used in the Hunting Rifle. You can craft these at a Bullet Press.",,,
 5.45mmBulletDesc,,,,AK-47で使用します。銃弾加工機で作ることができます。,"Used in the AK47. You can craft these at a Bullet Press.",,,
@@ -5022,7 +5022,7 @@ gunOilDesc,,,,古い兵器を修理するための特殊油。,"Specialized oil 
 meltedRubber,,,,"Melted Rubber",,,,
 meltedRubberDesc,,,,多くのレシピで使用される溶解ゴム。キャンプファイア(campfire)に木の棒(stick)をセットして作ります。,"A basic resource used in many crafting recipes. Crafted on the campfire with a stick",,,
 mixedChemicals,,,,"Mixed Chemicals",,,,
-mixedChemicalsDesc,,,用途が多い秘密の混合薬品。,"A secretive mix with many uses",,,,
+mixedChemicalsDesc,,,,用途が多い秘密の混合薬品。,"A secretive mix with many uses",,,
 chooseAProfession,,,,"Choose Your Profession",,,,
 incendiaryPowder,,,,"Incendiary Powder",,,,
 incendiaryPowderDesc,,,,火炎弾を作るための重要な成分です。,"The key ingredient for crafting fire ammo",,,
