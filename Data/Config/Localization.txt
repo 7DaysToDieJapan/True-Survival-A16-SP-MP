@@ -84,7 +84,7 @@ plantedBlueberry3Harvest,blocks,Farming,EnChanged KgNone,Blueberry Plant (Harves
 signShopColdBeer,blocks,Sign,EnChanged KgNone,Sign (C)old Beer,Sign (C)old Beer,Bierladenschild,,Letrero de tienda Cerveza fría
 woodLogSpike1Desc,blocks,Trap,EnChanged KgNone,ウッドログスパイク(wood log spike)は、ウッドスパイク(Wood Spikes)ほどではないですがダメージを与えます。ウッドスパイクより頑丈です。素材があれば、さらに頑丈にアップグレード出来ます。右クリックで設置します。,"Log spike traps can damage, cripple, even kill enemies and last longer than spike traps. Place them using the secondary action. (Upgradable)","Fallen mit spitzen Stämmen können Gegnern schaden, sie lähmen und sogar töten. Sie halten länger als Stachelfallen. Platziere sie mit der sekundären Aktion. (Aufwertbar)","Las trampas de pinchos de troncos de madera pueden dañar, lisiar e incluso matar a enemigos, y duran más que las trampas de pinchos. Usa la acción secundaria para colocarlas. (Se pueden mejorar).",
 alcoholPoisoningDesc,buffs,Buff,EnChanged KgNone,アルコール中毒になりました。あなたが中毒から抜け出すには長い期間が必要です。,You have alcohol poisoning. There may be a duration but you're too sick to figure it out.,"Du hast eine Alkoholvergiftung. Dies hält vielleicht eine gewisse Zeit an, aber du kannst nicht rauskriegen, wie lange.","Tienes una congestión alcohólica. Puede que solo sea durante un rato, pero no sabes cuánto durará.",
-beerBuzz,buffs,Buff,EnChanged KgNone,Buzzed,Buzzed,Bierrausch,,Cerveza Buzz
+beerBuzz,buffs,Buff,EnChanged KgNone,ほろ酔い,Buzzed,Bierrausch,,Cerveza Buzz
 ballCap,items,Clothes,EnChanged KgNone,White Baseball Cap,White Baseball Cap,Baseballmütze,,Gorra de béisbol
 blueberrySeed,items,Farming,EnChanged KgNone,Blueberry Seed,Blueberry Seed,Heidelbeersamen,,Semillas de mora
 potatoSeed,items,Farming,EnChanged KgNone,Potato Seed,Potato Seed,Saatkartoffel,,Semillas de papa
@@ -937,9 +937,9 @@ forge,blocks,Workstation,KgNone,Forge,Forge,Schmiede,,Fragua
 forgeDesc,blocks,Workstation,EnChanged,鍛冶炉(Forge)で文明をゾンビから取り戻そう。金属や石等を溶解して強力なツールや武器を作るのに必要な素材を作れます。金床、るつぼ、ツールキット用意すれば、さらに多くのレシピを解放できます。,"Used to smelt metals into tools and weapons. Unlock more recipes by adding an anvil, crucible or tool and die set.","Dient zum Einschmelzen von Metallen für Werkzeuge und Waffen. Schalte mehr Rezepte frei, indem du einen Amboss, einen Messschieber oder eine Werkzeugkiste hinzufügst.","Se usa para fundir metales y convertirlos en herramientas y armas. Añade un yunque, calibradores o herramientas y un juego de ajuste para desbloquear más recetas.",
 workbench,blocks,Workstation,KgNone,Workbench,Workbench,Werkbank,,Mesa de trabajo
 workbenchDesc,blocks,Workstation,EnChanged,作業台(workbench)はもう一人のあなたです。バックパック上で行うクラフト作業が同じように出来ます。ニコイチ修繕は便利だぞ。,A workbench lets you craft items just like you do in your backpack and improve items for up to 100 quality points above your crafting skill.,Mit einer Werkbank kannst du genauso wie in deinem Rucksack Gegenstände fertigen.,,"Una mesa de trabajo te permite fabricar objetos, igual que en la mochila."
-alcoholPoisoning,buffs,Buff,KgNone,Inebriated,Inebriated,Berauscht,,Embriaguez
+alcoholPoisoning,buffs,Buff,KgNone,アル中,Inebriated,Berauscht,,Embriaguez
 alcoholPoisoningTooltip,buffs,Buff,KgNone,You have alcohol poisoning.,You have alcohol poisoning.,Du hast eine Alkoholvergiftung.,,Estás borracho.
-arrowCriticalBleedout,buffs,Buff,KgNone,Bleeding,Bleeding,Bluten,,Sangrando
+arrowCriticalBleedout,buffs,Buff,KgNone,出血,Bleeding,Bluten,,Sangrando
 arrowCriticalBleedoutDesc,buffs,Buff,KgNone,矢のクリティカルヒット。膝に矢を受けてしまってな。,You are bleeding profusely. Use a bandage to stop the bleeding.,"Du blutest stark. Benutze einen Verband, um die Blutung zu stoppen.",Estás sangrando bastante. Usa un vendaje para detener la hemorragia.,
 arrowCriticalBleedoutTooltip,buffs,Buff,KgNone,You are bleeding profusely. Use a bandage to stop the bleeding.,You are bleeding profusely. Use a bandage to stop the bleeding.,"Du blutest stark. Benutze einen Verband, um die Blutung zu stoppen.",Estás sangrando bastante. Usa un vendaje para detener la hemorragia.,
 beerBuzzDesc,buffs,Buff,KgNone,キンキンに冷えてやがる！\n犯罪的だ・・・・うますぎる・・・・！\n本当にやりかねない・・・ビール一本のために・・強盗だって・・・,A nice buzz. There may be a duration but you don't care.,"Ein kleiner Rausch. Dies hält vielleicht eine gewisse Zeit an, aber das ist dir egal.","Una deliciosa Buzz. Puede que solo sea durante un rato, pero te da igual.",
@@ -956,7 +956,7 @@ burningSmall,buffs,Buff,KgNone,炎上,Burning,Brennen,,En llamas
 burningSmallDesc,buffs,Buff,KgNone,あなたに火が燃え移りました。水に入って消してください。もしくは手元に飲み物があれば使ってください。,You are on fire. Get into the water to douse it.,"Du stehst in Flammen. Geh schnell ins Wasser, um sie zu löschen.",Estás ardiendo. Métete en el agua para apagarlo.,
 burningSmallTooltip,buffs,Buff,KgNone,You are on fire. Get into the water to douse it.,You are on fire. Get into the water to douse it.,"Du stehst in Flammen. Geh schnell ins Wasser, um sie zu löschen.",Estás ardiendo. Métete en el agua para apagarlo.,
 burningTooltip,buffs,Buff,KgNone,You are on fire. Get into the water to douse it.,You are on fire. Get into the water to douse it.,"Du stehst in Flammen. Geh schnell ins Wasser, um sie zu löschen.",Estás ardiendo. Métete en el agua para apagarlo.,
-caffeineBuzz,buffs,Buff,KgNone,カフェイン,Caffeine Buzz,Koffeinschub,,Cafeína Buzz
+caffeineBuzz,buffs,Buff,KgNone,カフェイン増強,Caffeine Buzz,Koffeinschub,,Cafeína Buzz
 caffeineBuzzDesc,buffs,Buff,KgNone,カフェインは君に翼をさずける。体温上昇力も高めます。効果時間は飲めば飲むほど延びていきます。,"Caffeine gives you energy, keeping your stamina higher and core body temperature warmer for a limited time.","Koffein verleiht dir Energie, hält deine Ausdauer auf einem hohen Niveau und wärmt dich für begrenzte Zeit.","La cafeína te da energía, aumenta tu resistencia y te ayuda a conservar el calor por un rato.",
 caffeineBuzzTooltip,buffs,Buff,KgNone,A nice rush of energy and you feel warmer.,A nice rush of energy and you feel warmer.,Ein schöner Energieschub und du fühlst dich gleich wärmer.,,Una buena dosis de energía y te entrarás en calor.
 cannotBreathe,buffs,Buff,KgNone,窒息,Cannot Breathe,Atemnot,,No puedes respirar
@@ -973,7 +973,7 @@ curedTooltip,buffs,Buff,KgNone,You are immune to further infection.,You are immu
 drowning,buffs,Buff,KgNone,溺水,Drowning,Ertrinken,,Ahogándote
 drowningDesc,buffs,Buff,KgNone,あなたは溺死しかけています。\n早く空気のある場所に出てください。,You are drowning.,Du ertrinkst.,,Te estás ahogando.
 drowningTooltip,buffs,Buff,KgNone,You are drowning.,You are drowning.,Du ertrinkst.,,Te estás ahogando.
-drunk,buffs,Buff,KgNone,酔い,Drunk,Betrunken,,Borracho
+drunk,buffs,Buff,KgNone,酔いすぎ,Drunk,Betrunken,,Borracho
 drunkDesc,buffs,Buff,KgNone,酔っ払っています。酔いが冷めるまでずっと酔っ払い続けます。,You are drunk.,Du bist betrunken.,,Estás borracho.
 drunkTooltip,buffs,Buff,KgNone,You are drunk. There may be a duration but you can't figure it out.,You are drunk. There may be a duration but you can't figure it out.,"Du bist betrunken. Dies hält vielleicht eine gewisse Zeit an, aber du kannst nicht rauskriegen, wie lange.","Estás borracho. Puede que solo sea durante un rato, pero no sabes cuánto durará.",
 dysentery,buffs,Buff,KgNone,赤痢ステージ1,Dysentery 1,Dysenterie 1,,Disentería 1
@@ -1044,7 +1044,7 @@ overheatedTooltip,buffs,Buff,KgNone,"You're overheating. Rest, find water or she
 radiation,buffs,Buff,KgNone,被曝,Deadly Radiation,Tödliche Strahlung,,Radiación letal
 radiationDesc,buffs,Buff,KgNone,放射能汚染地域に足を踏み入れてしまいました。ただちに離れてください。,You have entered a Deadly Radiation zone!,Du hast eine Zone mit tödlicher Strahlung betreten!,,¡Has entrado en una zona de Radiación letal!
 radiationTooltip,buffs,Buff,KgNone,You have entered a Deadly Radiation zone!,You have entered a Deadly Radiation zone!,Du hast eine Zone mit tödlicher Strahlung betreten!,,¡Has entrado en una zona de Radiación letal!
-redTeaCooling,buffs,Buff,KgNone,清涼,Cool Drink,Kühles Getränk,,Bebida fría
+redTeaCooling,buffs,Buff,KgNone,涼しい,Cool Drink,Kühles Getränk,,Bebida fría
 redTeaCoolingDesc,buffs,Buff,KgNone,キンキンに冷えてやがるっ・・・！あ・・・・ありがてえっ・・・・・・・！,You feel cooler.,Du fühlst dich kühler.,,Te sientes más fresco.
 redTeaCoolingTooltip,buffs,Buff,KgNone,You feel cooler.,You feel cooler.,Du fühlst dich kühler.,,Te sientes más fresco.
 shotgunWound,buffs,Buff,KgNone,Winded,Winded,Harter Treffer,,Agitado
@@ -1074,7 +1074,7 @@ sprainedLegTooltip,buffs,Buff,KgNone,Your leg is sprained. You need a splint to 
 steroids,buffs,Buff,KgNone,Steroids,Steroids,Steroide,,Esteroides
 steroidsDesc,buffs,Buff,KgNone,感染の免疫を持っています。ゾンビに噛まれても感染しません。,Reduces swelling and suppresses the symptoms of infection.,Verringert Schwellungen und unterdrückt die Symptome von Infektionen.,,Reducen la hinchazón y eliminan los síntomas de la infección.
 steroidsTooltip,buffs,Buff,KgNone,Reduces swelling and suppresses the symptoms of infection.,Reduces swelling and suppresses the symptoms of infection.,Verringert Schwellungen und unterdrückt die Symptome von Infektionen.,,Reducen la hinchazón y eliminan los síntomas de la infección.
-stewWarming,buffs,Buff,KgNone,A nice hot stew,A nice hot stew,"Ein guter, warmer Eintopf",Un rico estofado.,
+stewWarming,buffs,Buff,KgNone,暖かい,A nice hot stew,"Ein guter, warmer Eintopf",Un rico estofado.,
 stewWarmingDesc,buffs,Buff,KgNone,冷や飯からの解放。寒い夜に暖かいものを食べる幸せ。ポカポカします。,Just the thing to warm you up on a cold winter's nights.,"Genau das Richtige, um dich in einer kalten Winternacht aufzuwärmen.",Perfecto para calentarte en las frías noches invernales.,
 stewWarmingTooltip,buffs,Buff,KgNone,"Your heart, soul, and the rest of you already feel warmer.","Your heart, soul, and the rest of you already feel warmer.","Dein Herz, deine Seele und der Rest von dir fühlen sich bereits wärmer.","Sientes más calidez en el corazón, alma y cuerpo.",
 stunned,buffs,Buff,KgNone,脳震盪,Stunned,Gelähmt,,Aturdido
@@ -1096,7 +1096,7 @@ wellnessTooltip,buffs,Buff,KgNone,You are gaining health.,You are gaining health
 wet,buffs,Buff,KgNone,Wetness,Wetness,Nässe,,Mojado
 wetDesc,buffs,Buff,KgNone,衣服が濡れています。風が吹くとより寒さを感じます。,You are wet which will make you colder. This may or may not be a good thing.,"Du bist nass, wodurch dir kälter wird. Das kann eine gute Sache sein. Oder auch nicht.","Estás mojado, lo que te hace estar frío. Esto puede ser algo bueno, o todo lo contrario",
 wetTooltip,buffs,Buff,KgNone,You are wet.,You are wet.,Du bist nass.,,Estás mojado.
-yuccaJuiceCooling,buffs,Buff,KgNone,清涼,Cool Drink,Kühles Getränk,,Bebida fría
+yuccaJuiceCooling,buffs,Buff,KgNone,涼しい,Cool Drink,Kühles Getränk,,Bebida fría
 yuccaJuiceCoolingDesc,buffs,Buff,KgNone,涼しさが染みこんできやがる・・・身体に・・・・,You feel cooler.,Du fühlst dich kühler.,,Te sientes más fresco.
 yuccaJuiceCoolingTooltip,buffs,Buff,KgNone,You feel cooler.,You feel cooler.,Du fühlst dich kühler.,,Te sientes más fresco.
 wellnessDecreased,buffs,Tooltip,KgNone,Wellness ({0}): Maximum health and stamina cap decreased to {1},Wellness ({0}): Maximum health and stamina cap decreased to {1},Wohlbefinden ({0}): Obergrenze für maximale Gesundheit und Ausdauer ist auf {1} gesunken,,Bienestar ({0}): La salud máxima y el límite de resistencia se han reducido a {1}.
@@ -3721,7 +3721,7 @@ bluePillBuffDesc,buffs,Buff,New,You chose the blue pill. Inconveniences like hun
 bluePillBuffName,buffs,Buff,New,Blue Pill,Blue Pill,,,
 bluePillBuffTooltip,buffs,Buff,New,Use the Red Pill to debuff.,Use the Red Pill to debuff.,,,
 megaCrushBuffDesc,buffs,Buff,New,今なら何でもヤれそうな気分です。,Crush your enemies with Mega Crush! It's got electrolytes!,,,
-megaCrushBuffName,buffs,Buff,New,Mega Crush!,Mega Crush!,,,
+megaCrushBuffName,buffs,Buff,New,底力,Mega Crush!,,,
 megaCrushBuffTooltip,buffs,Buff,New,You feel like crushing your enemies!,You feel like crushing your enemies!,,,
 painkillersBuffName,buffs,Buff,New,Pain Killers,Pain Killers,,,
 painkillersBuffTooltip,buffs,Buff,New,You took painkillers.,You took painkillers.,Du hast Schmerzmittel genommen.,,Tomaste analgésicos.

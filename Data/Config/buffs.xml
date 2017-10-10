@@ -173,12 +173,12 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 
 <!-- base stamina regen = 0.4 /s -->
 <buff id="Buzzed" mutex="Hangover,Drunk,SickDrunk,AlcoholPoisoning" duration="0" buffif="beers greater 0" debuffif="beers less 1" causes="beer,grainAlcohol"
-	type="staminaup" icon="ui_game_symbol_beer" name_key="beerBuzz" description_key="beerBuzzDesc" tooltip_key="beerBuzzTooltip">
+	type="staminaup" icon="ui_game_symbol_beer" name_key="ほろ酔い" description_key="beerBuzzDesc" tooltip_key="beerBuzzTooltip">
 	<modify id="0" stat="stamina" amount="2" rate="1"/>
 </buff>
 
 <buff id="Drunk" mutex="Hangover,SickDrunk,AlcoholPoisoning,stunned" buffif="beers greater 5" debuffif="beers less 2" actions="debuff(Buzzed)" causes="beer,grainAlcohol"
-	type="staminadown" icon="ui_game_symbol_drunk" name_key="drunk" description_key="drunkDesc" tooltip_key="drunkTooltip">
+	type="staminadown" icon="ui_game_symbol_drunk" name_key="酔いすぎ" description_key="drunkDesc" tooltip_key="drunkTooltip">
 	<modify id="0" stat="stamina" amount="5" rate="1"/>
 	<modify id="0" stat="speedmodifier" setValue="0.90"/>
 </buff>
@@ -187,7 +187,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	type="staminadown" name_key="InstantSickDrunk"/>
 
 <buff id="SickDrunk" mutex="AlcoholPoisoning" buffif="beers greater 8" debuffif="beers less 1" ondebuff="Hangover" actions="increment(@wellness, -0.5, 100t, 0, 0);debuff(Drunk);debuff(Hangover)"
-	type="staminadown" icon="ui_game_symbol_dysentery" name_key="sickDrunk" description_key="sickDrunkDesc" tooltip_key="sickDrunkTooltip">
+	type="staminadown" icon="ui_game_symbol_dysentery" name_key="泥酔" description_key="sickDrunkDesc" tooltip_key="sickDrunkTooltip">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
 	<modify id="0" stat="speedmodifier" setValue="0.70"/>
 </buff>
@@ -198,42 +198,42 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 </buff>
 
 <buff id="AlcoholPoisoning" buffif="beers greater 14" debuffif="beers less 9" ondebuff="SickDrunk" actions="increment(@wellness, -1, 100t, 0, 0);debuff(SickDrunk);debuff(Hangover)"
-	type="bleeding" icon="ui_game_symbol_food_poisoning" name_key="alcoholPoisoning" description_key="alcoholPoisoningDesc" tooltip_key="alcoholPoisoningTooltip">
+	type="bleeding" icon="ui_game_symbol_food_poisoning" name_key="アル中" description_key="alcoholPoisoningDesc" tooltip_key="alcoholPoisoningTooltip">
 	<modify id="0" stat="stamina" amount="-5" rate="1"/>
 	<modify id="0" stat="speedmodifier" setValue="0.40"/>
 </buff>
 
 <!-- todo ideally this buff is only applied on a critical hit to the heart region and not applied to zombies. Armor would limit this too -->
 <buff id="arrowCriticalBleedout" duration="50" causes="arrow,ironArrow,steelArrow,ironCrossbowBolt,steelCrossbowBolt,explodingCrossbowBolt" type="bleeding"
-	icon="ui_game_symbol_critical" name_key="arrowCriticalBleedout" description_key="arrowCriticalBleedoutDesc" tooltip_key="arrowCriticalBleedoutTooltip">
+	icon="ui_game_symbol_critical" name_key="刺し傷" description_key="arrowCriticalBleedoutDesc" tooltip_key="arrowCriticalBleedoutTooltip">
 	<modify id="0" stat="stamina" amount="-1" rate="1" type="bleeding"/>
 	<modify id="1" stat="health" amount="-1" rate="1" type="bleeding"/>
 </buff>
 
 <!-- base stamina regen = 0.4 /s -->
 <buff id="CoffeeStaminaBoost" duration="180" stack="extend" type="staminaup" icon="ui_game_symbol_coffee"
-	name_key="caffeineBuzz" description_key="caffeineBuzzDesc" tooltip_key="caffeineBuzzTooltip" causes="coffee">
+	name_key="カフェイン増強" description_key="caffeineBuzzDesc" tooltip_key="caffeineBuzzTooltip" causes="coffee">
 	<modify id="0" stat="stamina" amount="2" rate="1"/>
 	<modify id="1" stat="coretemp" modifyValue="10"/>
 </buff>
 
 <buff id="megaCrushBuff" duration="60" stack="extend" type="staminaup" icon="ui_game_symbol_run"
-	name_key="megaCrushBuffName" description_key="megaCrushBuffDesc" tooltip_key="megaCrushBuffTooltip" causes="megaCrush">
+	name_key="底力" description_key="megaCrushBuffDesc" tooltip_key="megaCrushBuffTooltip" causes="megaCrush">
 	<modify id="0" stat="stamina" amount="10" rate="1"/>
 </buff>
 
 <buff id="yuccaJuiceCooling" duration="180" stack="extend" type="staminaup" icon="ui_game_symbol_tea"
-	name_key="yuccaJuiceCooling" description_key="yuccaJuiceCoolingDesc" tooltip_key="yuccaJuiceCoolingTooltip" causes="foodYuccaJuice">
+	name_key="涼しい" description_key="yuccaJuiceCoolingDesc" tooltip_key="yuccaJuiceCoolingTooltip" causes="foodYuccaJuice">
 	<modify id="1" stat="coretemp" modifyValue="-10"/>
 </buff>
 
 <buff id="stewWarming" duration="540" stack="extend" type="staminaup" icon="ui_game_symbol_coffee"
-	name_key="stewWarming" description_key="stewWarmingDesc" tooltip_key="stewWarmingTooltip" causes="meatStew,vegetableStew">
+	name_key="暖かい" description_key="stewWarmingDesc" tooltip_key="stewWarmingTooltip" causes="meatStew,vegetableStew">
 	<modify id="1" stat="coretemp" modifyValue="10"/>
 </buff>
 
 <buff id="redTeaCooling" duration="180" stack="extend" type="staminaup" icon="ui_game_symbol_tea"
-	name_key="redTeaCooling" description_key="redTeaCoolingDesc" tooltip_key="redTeaCoolingTooltip" causes="redTea">
+	name_key="涼しい" description_key="redTeaCoolingDesc" tooltip_key="redTeaCoolingTooltip" causes="redTea">
 	<modify id="1" stat="coretemp" modifyValue="-10"/>
 </buff>
 
@@ -265,7 +265,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="1" stat="health" amount="-15" rate="1"/>
 </buff>
 
-<buff id="splint" overrides="brokenLegHealthy,brokenLegNormal,brokenLegMalnourished,sprainedLegHealthy,sprainedLegNormal,sprainedLegMalnourished" type="speedmodifier" overrideicon="true" icon="ui_game_symbol_splint" name_key="splintedLeg" description_key="splintedLegDesc" tooltip_key="splintedLegTooltip">
+<buff id="splint" overrides="brokenLegHealthy,brokenLegNormal,brokenLegMalnourished,sprainedLegHealthy,sprainedLegNormal,sprainedLegMalnourished" type="speedmodifier" overrideicon="true" icon="ui_game_symbol_splint" name_key="ギプス" description_key="splintedLegDesc" tooltip_key="splintedLegTooltip">
 	<modify id="0" stat="speedmodifier" mulValue="1.2"/>
 	<modify id="1" buff="brokenLegHealthy" tickrate="2"/>
     <modify id="2" buff="brokenLegNormal" tickrate="2"/>
@@ -581,16 +581,16 @@ This requires a 50+ food bar:
 <buff id="scuba" duration="300" name_key="Scuba Gear" actions="buff(freshAir)" description_key="You have Scube Gear equiped and can breath under water for a short time" icon="ui_game_symbol_scubaTankEmpty" stack="extend"/>
 <!--JZMOD COZY BED BUFF-->
 <buff id="cozybed1" mutex="cozybed1" duration="1" actions="increment(cozybed1, 1, 1, 0, 0)" /> <!-- sleepingBag -->
-<buff id="cozybed1Effect" buffif="cozybed1 greater 1" debuffif="cozybed1 less 1" duration="0" name_key="Bundled Up" description_key="Sleeping in a Sleepingbag warms you up." tooltip_key="You're resting in your warm bed." icon="ui_game_symbol_cozyBed"	actions="increment(cozybed1, -1, 1, 0, 0);min(cozybed1, 0)" >
+<buff id="cozybed1Effect" buffif="cozybed1 greater 1" debuffif="cozybed1 less 1" duration="0" name_key="休息" description_key="Sleeping in a Sleepingbag warms you up." tooltip_key="You're resting in your warm bed." icon="ui_game_symbol_cozyBed"	actions="increment(cozybed1, -1, 1, 0, 0);min(cozybed1, 0)" >
     <modify id="0" stat="coretemp" modifyValue="20" />
 </buff>
 <buff id="cozybed2" mutex="cozybed2" duration="1" actions="increment(cozybed2, 1, 1, 0, 0)" /> <!-- smallBed -->
-<buff id="cozybed2Effect" buffif="cozybed2 greater 1" debuffif="cozybed2 less 1" duration="0" actions="increment(cozybed2, -1, 1, 0, 0);min(cozybed2, 0)" name_key="Bundled Up" description_key="Sleeping in a bed moderately regenerates health and warms you up." tooltip_key="You're resting in your warm bed." icon="ui_game_symbol_cozyBed" >
+<buff id="cozybed2Effect" buffif="cozybed2 greater 1" debuffif="cozybed2 less 1" duration="0" actions="increment(cozybed2, -1, 1, 0, 0);min(cozybed2, 0)" name_key="休息" description_key="Sleeping in a bed moderately regenerates health and warms you up." tooltip_key="You're resting in your warm bed." icon="ui_game_symbol_cozyBed" >
     <modify id="0" stat="health" amount="1" rate="4" />
 	<modify id="1" stat="coretemp" modifyValue="25" />
 </buff>
 <buff id="cozybed3" mutex="cozybed3" duration="1" actions="increment(cozybed3, 1, 1, 0, 0)" /> <!-- largeBed -->
-<buff id="cozybed3Effect" buffif="cozybed3 greater 1" debuffif="cozybed3 less 1" duration="0" actions="increment(cozybed3, -1, 1, 0, 0);min(cozybed3, 0)" name_key="Bundled Up" description_key="Sleeping in a bed moderately regenerates health and warms you up." tooltip_key="You're resting in your warm bed." icon="ui_game_symbol_cozyBed" >
+<buff id="cozybed3Effect" buffif="cozybed3 greater 1" debuffif="cozybed3 less 1" duration="0" actions="increment(cozybed3, -1, 1, 0, 0);min(cozybed3, 0)" name_key="休息" description_key="Sleeping in a bed moderately regenerates health and warms you up." tooltip_key="You're resting in your warm bed." icon="ui_game_symbol_cozyBed" >
     <modify id="0" stat="health" amount="2" rate="4" />
 	<modify id="1" stat="coretemp" modifyValue="30" />
 </buff>	
