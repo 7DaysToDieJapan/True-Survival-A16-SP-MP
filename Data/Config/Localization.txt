@@ -1074,8 +1074,8 @@ sprainedLegTooltip,buffs,Buff,KgNone,Your leg is sprained. You need a splint to 
 steroids,buffs,Buff,KgNone,Steroids,Steroids,Steroide,,Esteroides
 steroidsDesc,buffs,Buff,KgNone,感染の免疫を持っています。ゾンビに噛まれても感染しません。,Reduces swelling and suppresses the symptoms of infection.,Verringert Schwellungen und unterdrückt die Symptome von Infektionen.,,Reducen la hinchazón y eliminan los síntomas de la infección.
 steroidsTooltip,buffs,Buff,KgNone,Reduces swelling and suppresses the symptoms of infection.,Reduces swelling and suppresses the symptoms of infection.,Verringert Schwellungen und unterdrückt die Symptome von Infektionen.,,Reducen la hinchazón y eliminan los síntomas de la infección.
-stewWarming,buffs,Buff,KgNone,暖かい,A nice hot stew,"Ein guter, warmer Eintopf",Un rico estofado.,
-stewWarmingDesc,buffs,Buff,KgNone,冷や飯からの解放。寒い夜に暖かいものを食べる幸せ。ポカポカします。,Just the thing to warm you up on a cold winter's nights.,"Genau das Richtige, um dich in einer kalten Winternacht aufzuwärmen.",Perfecto para calentarte en las frías noches invernales.,
+stewWarming,buffs,Buff,KgNone,温かい,A nice hot stew,"Ein guter, warmer Eintopf",Un rico estofado.,
+stewWarmingDesc,buffs,Buff,KgNone,冷や飯からの解放。寒い夜に温かいものを食べる幸せ。ポカポカします。,Just the thing to warm you up on a cold winter's nights.,"Genau das Richtige, um dich in einer kalten Winternacht aufzuwärmen.",Perfecto para calentarte en las frías noches invernales.,
 stewWarmingTooltip,buffs,Buff,KgNone,"Your heart, soul, and the rest of you already feel warmer.","Your heart, soul, and the rest of you already feel warmer.","Dein Herz, deine Seele und der Rest von dir fühlen sich bereits wärmer.","Sientes más calidez en el corazón, alma y cuerpo.",
 stunned,buffs,Buff,KgNone,脳震盪,Stunned,Gelähmt,,Aturdido
 stunnedDesc,buffs,Buff,KgNone,身体の自由が効きません。次の一撃に備えてください。,You are stunned,Du bist gelähmt.,,Estás aturdido.

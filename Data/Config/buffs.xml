@@ -228,7 +228,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 </buff>
 
 <buff id="stewWarming" duration="540" stack="extend" type="staminaup" icon="ui_game_symbol_coffee"
-	name_key="暖かい" description_key="stewWarmingDesc" tooltip_key="stewWarmingTooltip" causes="meatStew,vegetableStew">
+	name_key="温かい" description_key="stewWarmingDesc" tooltip_key="stewWarmingTooltip" causes="meatStew,vegetableStew">
 	<modify id="1" stat="coretemp" modifyValue="10"/>
 </buff>
 
@@ -319,8 +319,8 @@ actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0
 	<modify id="1" stat="health" amount="-1" rate="30"/>
 </buff>
 
-<buff id="thirsty" mutex="thirsty2" buffif="+thirst > 1" debuffif="+hydrated > 5" actions="increment(@wellness, -0.1, 30, 0, 0)" notificationClass="WaterBuffNotification" icon="ui_game_symbol_thirst" name_key="thirsty" description_key="thirstyDesc" tooltip_key="thirstyTooltip" cures="canMurkyWater,canBoiledWater,bottledWater,goldenRodTea,redTea"/>
-<buff id="thirsty2" notificationClass="WaterBuffNotification" buffif="+thirst > 600" debuffif="+hydrated > 5" actions="increment(@wellness, -1, 30, 0, 0);debuff(thirsty);damage(0,30,0,0)" icon="ui_game_symbol_thirst" name_key="thirsty2" description_key="thirsty2Desc" tooltip_key="thirsty2Tooltip" cures="canMurkyWater,canBoiledWater,bottledWater,goldenRodTea,redTea">
+<buff id="thirsty" mutex="thirsty2" buffif="+thirst > 1" debuffif="+hydrated > 5" actions="increment(@wellness, -0.1, 30, 0, 0)" notificationClass="WaterBuffNotification" icon="ui_game_symbol_thirst" name_key="渇き" description_key="thirstyDesc" tooltip_key="thirstyTooltip" cures="canMurkyWater,canBoiledWater,bottledWater,goldenRodTea,redTea"/>
+<buff id="thirsty2" notificationClass="WaterBuffNotification" buffif="+thirst > 600" debuffif="+hydrated > 5" actions="increment(@wellness, -1, 30, 0, 0);debuff(thirsty);damage(0,30,0,0)" icon="ui_game_symbol_thirst" name_key="脱水症" description_key="thirsty2Desc" tooltip_key="thirsty2Tooltip" cures="canMurkyWater,canBoiledWater,bottledWater,goldenRodTea,redTea">
 	<modify id="0" stat="stamina" amount="-3" rate="1"/>
 	<modify id="1" stat="health" amount="-1" rate="30"/>
 </buff>
@@ -642,17 +642,17 @@ This requires a 50+ food bar:
     <modify id="0" stat="health" amount="-40" rate="1" />
 </buff>
 <!--JZMOD ZOMEBIE BITES-->
-<buff id="bite" mutex="fightOffEnemy,bite" castsound="Buffs/critical_blunt" duration="3600" name_key="咬傷" type="bleeding" requires="stunned" actions="increment(@wellness, -0.4, 300, 0, 0);buff(bleeding)" onexpired="infection" description_key="You were biten. You must cauterize the bite soon or you will catch the Z virus." tooltip_key="You have been bitten" icon="ui_game_symbol_zombie" cures="redHotPipe,redHotSteelPipe">
+<buff id="bite" mutex="fightOffEnemy,bite" castsound="Buffs/critical_blunt" duration="3600" name_key="咬み傷" type="bleeding" requires="stunned" actions="increment(@wellness, -0.4, 300, 0, 0);buff(bleeding)" onexpired="infection" description_key="You were biten. You must cauterize the bite soon or you will catch the Z virus." tooltip_key="You have been bitten" icon="ui_game_symbol_zombie" cures="redHotPipe,redHotSteelPipe">
 	<modify id="0" stat="stamina" amount="-1" rate="5" />
 	<modify id="1" stat="health" amount="-1" rate="30" />
 	<modify id="2" stat="coretemp" modifyValue="10" />
 </buff>
 <buff id="cauterize" castsound="Player_Female/player2death" requires="bite" duration="1" actions="buff(biteWound);debuff(bite)" />
-<buff id="biteWound" duration="900" onexpired="infection" ondebuff="tendingbite" name_key="Bite Wound" tooltip_key="Care for your bite wound or catch the Z virus" description_key="You've held off the Z virus for now but if you don’t care for this bite wound you still could catch it. Treat it with a bandage and be sure to change it when it gets dirty" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit" icon="ui_game_symbol_bite" />
-<buff id="tendingbite" duration="900" onexpired="dirtyBiteBandage1" name_key="Bandaged Bite" tooltip_key="Your bite is bandaged up" description_key="You’ve held off the Z virus for now but if you don't care for this bite wound you still could catch it. Treat it with a bandage and be sure to change it when it gets dirty" icon="ui_game_symbol_bandaged" />
-<buff id="dirtyBiteBandage1" smell="smallSmell" duration="900" onexpired="dirtyBite" ondebuff="tendingbite2" name_key="Dirty Bite" tooltip_key="Your bite wound is getting dirty" description_key="Your bite wound is dirty and starting to smell. Change it with another Bandage soon or your wound could get worst and you could catch the z virus" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit" icon="ui_game_symbol_bite" />
+<buff id="biteWound" duration="900" onexpired="infection" ondebuff="tendingbite" name_key="咬み傷" tooltip_key="Care for your bite wound or catch the Z virus" description_key="今のところ、Zウィルスの進行を止めていますが、咬み傷の処置を続けなければ、Zウィルスに侵されるでしょう。包帯で治療し、汚れたら必ず交換してください。" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit" icon="ui_game_symbol_bite" />
+<buff id="tendingbite" duration="900" onexpired="dirtyBiteBandage1" name_key="応急処置" tooltip_key="Your bite is bandaged up" description_key="今のところ、Zウィルスの進行を止めていますが、咬み傷の処置を続けなければ、Zウィルスに侵されるでしょう。包帯で治療し、汚れたら必ず交換してください。" icon="ui_game_symbol_bandaged" />
+<buff id="dirtyBiteBandage1" smell="smallSmell" duration="900" onexpired="dirtyBite" ondebuff="tendingbite2" name_key="化膿" tooltip_key="Your bite wound is getting dirty" description_key="咬み傷が汚れて臭いがし始めています。そろそろ包帯を交換するか、傷が悪化しZウィルスに侵されることでしょう。" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit" icon="ui_game_symbol_bite" />
 <buff id="dirtyBite" duration="1" actions="buff(infection);increment(scratch, 10, 0, 0, 1)" />
-<buff id="tendingbite2" duration="900" onexpired="healBiteWound" name_key="Bandaged Bite" tooltip_key="Your bite is bandaged up" description_key="You’ve done it your bite wound is healing nicely and you are clear of the z virus. You may still have a wound or some bruises left that may need tending to." icon="ui_game_symbol_bandaged" />
+<buff id="tendingbite2" duration="900" onexpired="healBiteWound" name_key="応急処置" tooltip_key="Your bite is bandaged up" description_key="咬み傷は治り、Zウィルスに感染する心配も無くなりました。まだ傷や痣が残っているかもしれませんが、傷跡も消えかかっていることでしょう。" icon="ui_game_symbol_bandaged" />
 <buff id="healBiteWound" duration="1" actions="increment(scratch, 6, 0, 0, 1)" />
 <!--JZMOD WOUND 1-->
 <buff id="bruised" buffif="scratch gequal 2" debuffif="scratch less 2" mutex="smallWound,wound,severeWound,infectedWound" name_key="Bruised" type="bleeding" tooltip_key="Thats going to leave a bruies" description_key="You're getting bruised up. The bruises will heal by themselves over time but you might want to be more careful." icon="ui_game_symbol_bruised">
@@ -664,7 +664,7 @@ This requires a 50+ food bar:
 	<modify id="1" stat="speedmodifier" setValue="0.91" />
 	<modify id="2" stat="health" amount="-1" rate="30" />
 </buff>
-<buff id="pain" mutex="healWound" castsound="Buffs/critical_blunt" name_key="疼痛" type="bleeding" description_key="The wound hurts take some Painkillers for the pain" tooltip_key="OOwww! It Hurts!" icon="ui_game_symbol_pain" cures="painkillers,joint">
+<buff id="pain" mutex="healWound" castsound="Buffs/critical_blunt" name_key="疼痛" type="bleeding" description_key="傷口は痛みを抑えるために幾つかの鎮痛剤(Painkillers)を使います。" tooltip_key="OOwww! It Hurts!" icon="ui_game_symbol_pain" cures="painkillers,joint">
 	<modify id="0" stat="stamina" amount="-1" rate="5" />
 	<modify id="1" stat="coretemp" modifyValue="10" />
 </buff>
