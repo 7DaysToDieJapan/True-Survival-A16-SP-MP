@@ -1,50 +1,50 @@
 Key,Source,Context,Changes,English,French,German,Klingon,Spanish
-quest,,Category,KgNone,Quest,Quête,Quest,,Misión
-challenge,,Category,KgNone,Challenge,Défi,Herausforderung,,Desafío
-treasure,,Category,KgNone,Treasure,Trésor,Schatz,,Tesoros
-bonus,,Category,KgNone,Bonus,Bonus,Bonus,,Bonos
-questChain,,Category,KgNone,Quest Chain,Série de quêtes,Questserie,,Cadena de misiones
-difficulty_veryeasy,,Difficulty,KgNone,Very Easy,Très facile,Sehr einfach,,Muy fácil
-difficulty_easy,,Difficulty,KgNone,Easy,Facile,Einfach,,Fácil
-difficulty_medium,,Difficulty,KgNone,Medium,Moyenne,Mittel,,Medio
-difficulty_hard,,Difficulty,KgNone,Hard,Difficile,Schwierig,,Difícil
-difficulty_insane,,Difficulty,KgNone,Insane,Extrême,Irre,,Demente
-started,,Keywords,KgNone,Started,En cours,Begonnen,,Empezada
-completed,,Keywords,KgNone,Completed,Terminée,Abgeschlossen,,Completada
-failed,,Keywords,KgNone,Failed,Échec,Fehlgeschlagen,,Fallida
-optional,,Keywords,KgNone,Optional,Facultative,Optional,,Opcional
-RewardTypeQuest,,Keywords,KgNone,Reward,Récompense,Belohnung,,Recompensa
-RewardTypeChainQuest,,Keywords,KgNone,Chain Reward,Récompense de série,Serienbelohnung,,Cadena de recompensas
-ObjectiveAnimalKill_keyword,,Keywords,KgNone,Kill,Tuer,Töten,,Mata
-ObjectiveAssemble_keyword,,Keywords,KgNone,Assemble,Assembler,Zusammensetzen,,Ensambla
-ObjectiveBlockPickup_keyword,,Keywords,KgNone,Pickup,Ramasser,Aufheben,,Recoge
-ObjectiveBlockPlace_keyword,,Keywords,KgNone,Place,Placer,platziert,,Coloca
-ObjectiveBlockUpgrade_keyword,,Keywords,KgNone,Upgrade,Améliorer,aufgewertet,,Mejora
-ObjectiveBuff_keyword,,Keywords,KgNone,Get,Obtenir,Erhalten,,Consigue
-ObjectiveCraft_keyword,,Keywords,KgNone,Craft,Fabriquez,gefertigt,,Fabrica
-ObjectiveFetch_keyword,,Keywords,KgNone,Gather,Collectez,gesammelt,,Reúne
-ObjectiveGoto_keyword,,Keywords,KgNone,Locate {0},Trouver {0},Finde {0},,Ubicar {0}
-ObjectiveExchangeItemFrom_keyword,,Keywords,KgNone,Fill,Remplir,Füllen,,Llena
-ObjectiveOpenWindow_keyword,,Keywords,KgNone,Open {0} Window,Ouvrir la fenêtre {0},Öffne {0}-Fenster,,Abre {0} ventana(s)
-ObjectiveRepair_keyword,,Keywords,KgNone,Repair,Réparer,Reparieren,,Repara
-ObjectiveScrap_keyword,,Keywords,KgNone,Scrap,Recycler,Zerlegen,,Desguaza
-ObjectiveSpendSkillPoints_keyword,,Keywords,KgNone,Purchase {0} Skill Level(s),Acheter {0} niveau(x) de compétence,Kaufe {0} Fertigkeitslevel(s),,Compra {0} nivel(es) de habilidad
-ObjectiveTime_keyword,,Keywords,KgNone,Time,Durée,Zeit,,Tiempo
-ObjectiveTreasureChest_keyword,,Keywords,KgNone,Treasure Found,Trésor trouvé,Schatz gefunden,,Tesoro encontrado
-ObjectiveWear_keyword,,Keywords,KgNone,Wear,Porter,getragen,,Vestir
-ObjectiveZombieKill_keyword,,Keywords,KgNone,Kill,Tuer,Töten,,Mata
-RequirementBuff_keyword,,Keywords,KgNone,Effect,Effet,Effekt,,Efecto
-RequirementHolding_keyword,,Keywords,KgNone,Using,Avec,Unter Verwendung von,,En uso
-RequirementLevel_keyword,,Keywords,KgNone,Level,Niveau,Level,,Nivel
-RequirementWearing_keyword,,Keywords,KgNone,Wear,Porter,Tragen,,Vestir
-RewardExp_keyword,,Keywords,KgNone,EXP,EXP,ERF,,EXP
-RewardLevel_keyword,,Keywords,KgNone,Level,Niveau,Level,,Nivel
-RewardQuest_keyword,,Keywords,KgNone,New Quest,Nouvelle quête,Neue Quest,,Nueva misión
-RewardRecipe_keyword,,Keywords,KgNone,Recipe Unlocked,Composition déverrouillée,Rezept freigeschaltet,,Receta desbloqueada
-RewardSkill_keyword,,Keywords,KgNone,Skill,Compétence,Fertigkeit,,Habilidad
-RewardSkillPoint_keyword,,Keywords,KgNone,Skill Point,Point de compétence,Fertigkeitspunkt,,Punto de habilidad
-requirementGroupFireaxe,,Requirement Group,KgNone,Holding Fire Axe,Tenir une hache de pompier,Feueraxt halten,,Sostener un hacha de incendio
-requirementGroupShotgun,,Requirement Group,KgNone,Holding Shotgun,Tenir un fusil à pompe,Schrotflinte halten,,Sostener una escopeta
+quest,,Category,KgNone,【ｸｴｽﾄ】,Quest,Quest,,Misión
+challenge,,Category,KgNone,【ﾁｬﾚﾝｼﾞ】,Challenge,Herausforderung,,Desafío
+treasure,,Category,KgNone,【宝探し】,Treasure,Schatz,,Tesoros
+bonus,,Category,KgNone,【ﾎﾞｰﾅｽ】,Bonus,Bonus,,Bonos
+questChain,,Category,KgNone,【派生ｸｴｽﾄ】,Quest Chain,Questserie,,Cadena de misiones
+difficulty_veryeasy,,Difficulty,KgNone,超簡単,Very Easy,Sehr einfach,,Muy fácil
+difficulty_easy,,Difficulty,KgNone,簡単,Easy,Einfach,,Fácil
+difficulty_medium,,Difficulty,KgNone,普通,Medium,Mittel,,Medio
+difficulty_hard,,Difficulty,KgNone,難しい,Hard,Schwierig,,Difícil
+difficulty_insane,,Difficulty,KgNone,常識超え,Insane,Irre,,Demente
+started,,Keywords,KgNone,開始します,Started,Begonnen,,Empezada
+completed,,Keywords,KgNone,達成,Completed,Abgeschlossen,,Completada
+failed,,Keywords,KgNone,失敗,Failed,Fehlgeschlagen,,Fallida
+optional,,Keywords,KgNone,ｵﾌﾟｼｮﾝ,Optional,Optional,,Opcional
+RewardTypeQuest,,Keywords,KgNone,報酬,Reward,Belohnung,,Recompensa
+RewardTypeChainQuest,,Keywords,KgNone,派生報酬,Chain Reward,Serienbelohnung,,Cadena de recompensas
+ObjectiveAnimalKill_keyword,,Keywords,KgNone,屠殺する,Kill,Töten,,Mata
+ObjectiveAssemble_keyword,,Keywords,KgNone,組み立る,Assemble,Zusammensetzen,,Ensambla
+ObjectiveBlockPickup_keyword,,Keywords,KgNone,取得する,Pickup,Aufheben,,Recoge
+ObjectiveBlockPlace_keyword,,Keywords,KgNone,設置する,Place,platziert,,Coloca
+ObjectiveBlockUpgrade_keyword,,Keywords,KgNone,強化する,Upgrade,aufgewertet,,Mejora
+ObjectiveBuff_keyword,,Keywords,KgNone,入手する,Get,Erhalten,,Consigue
+ObjectiveCraft_keyword,,Keywords,KgNone,ｸﾗﾌﾄ,Craft,gefertigt,,Fabrica
+ObjectiveFetch_keyword,,Keywords,KgNone,採集する,Gather,gesammelt,,Reúne
+ObjectiveGoto_keyword,,Keywords,KgNone,探索 {0},Locate {0},Finde {0},,Ubicar {0}
+ObjectiveExchangeItemFrom_keyword,,Keywords,KgNone,充填する,Fill,Füllen,,Llena
+ObjectiveOpenWindow_keyword,,Keywords,KgNone,Open {0} Window,Open {0} Window,Öffne {0}-Fenster,,Abre {0} ventana(s)
+ObjectiveRepair_keyword,,Keywords,KgNone,修理する,Repair,Reparieren,,Repara
+ObjectiveScrap_keyword,,Keywords,KgNone,解体する,Scrap,Zerlegen,,Desguaza
+ObjectiveSpendSkillPoints_keyword,,Keywords,KgNone,{0} Skill ﾚﾍﾞﾙ購入する,Purchase {0} Skill Level(s),Kaufe {0} Fertigkeitslevel(s),,Compra {0} nivel(es) de habilidad
+ObjectiveTime_keyword,,Keywords,KgNone,残り時間,Time,Zeit,,Tiempo
+ObjectiveTreasureChest_keyword,,Keywords,KgNone,宝箱発見,Treasure Found,Schatz gefunden,,Tesoro encontrado
+ObjectiveWear_keyword,,Keywords,KgNone,着用する,Wear,getragen,,Vestir
+ObjectiveZombieKill_keyword,,Keywords,KgNone,殺害する,Kill,Töten,,Mata
+RequirementBuff_keyword,,Keywords,KgNone,必須効果,Effect,Effekt,,Efecto
+RequirementHolding_keyword,,Keywords,KgNone,必須ｱｲﾃﾑ,Using,Unter Verwendung von,,En uso
+RequirementLevel_keyword,,Keywords,KgNone,必須ﾚﾍﾞﾙ,Level,Level,,Nivel
+RequirementWearing_keyword,,Keywords,KgNone,必須防具,Wear,Tragen,,Vestir
+RewardExp_keyword,,Keywords,KgNone,獲得経験値,EXP,ERF,,EXP
+RewardLevel_keyword,,Keywords,KgNone,上昇ﾚﾍﾞﾙ,Level,Level,,Nivel
+RewardQuest_keyword,,Keywords,KgNone,ｸｴｽﾄ解放,New Quest,Neue Quest,,Nueva misión
+RewardRecipe_keyword,,Keywords,KgNone,ﾚｼﾋﾟ解放,Recipe Unlocked,Rezept freigeschaltet,,Receta desbloqueada
+RewardSkill_keyword,,Keywords,KgNone,獲得ｽｷﾙ,Skill,Fertigkeit,,Habilidad
+RewardSkillPoint_keyword,,Keywords,KgNone,獲得ｽｷﾙﾎﾟｲﾝﾄ,Skill Point,Fertigkeitspunkt,,Punto de habilidad
+requirementGroupFireaxe,,Requirement Group,KgNone,Fire Axe,Holding Fire Axe,Feueraxt halten,,Sostener un hacha de incendio
+requirementGroupShotgun,,Requirement Group,KgNone,Sawed off Shotgun,Holding Shotgun,Schrotflinte halten,,Sostener una escopeta
 tutorialTipQuest01,,Popup Tip,,今までの、そしてこれからの死の7日間の本当の恐ろしさを忘れてはならない。警戒を怠れば、ゾンビの大群や他の生物に襲われ食べられることだろう。君は、僅かに生き残ることができたうちの一人だ。人類の存亡は君にかかっている。死ねば人類は滅亡する。真のサバイバルを生き抜く準備をしろ。\nSpiderより。,"Welcome Survivor,\n\nForget what you know about 7 Days to Die it will not help you here. Approach this Mod from a fresh perspective or you will surely be eaten by the horde or surcome to the elements. You will now step into the life of one of the few humans left alive after the outbreak. Humanity will live or die upon your struggle. Prepare to experience the meaning of TRUE SURVIVAL.\n\nDie well my friend.\n\nSpider",,,
 tutorialTipQuest02,,Popup Tip,KgNone,[真]サバイバーノート！\n\n1)ゾンビの急所は頭だ。頭以外を狙っても無駄だ。\n2)ゾンビは予測できない速さで移動する。\n3)鉄は固い。木や石では役に立たないだろう。鋼はもっと固い。鉄では歯が立たない。\n4)今すぐジャーナルを読め。全てわかるだろう。,"True Survival Notes!\n\n1)Zombies take much more damage in their heads and very little everywhere else.\n\n2)Zombies move at different and un predictable speeds.\n\n3)Wood and Stone materials do little damage to Iron and Iron materials will do little damage to Steel materials.\n\n4)To read all the True Survival Mod Notes check your journal now.",,,
 skillPointTip,,Popup Tip,KgNone,[真]サバイバーノート！\n\n1)死は本当の死を呼ぶ。君が死ねば、健康値を10失う。下限はない。健康値が10未満で死ねば、息を吹き返すことはないだろう。\n2)特殊な職業は、専門書を20ページ集めることで、職業専用キットを作ることができる。\n3)土壌の下には岩盤に見える固い層がある。鋼やドリル、爆薬だけが傷をつけることができる。,"True Survival Notes!\n\n1)Dead is Dead! Every time you die you will lose 10 wellness and there is no bottom to wellness. So when the player dies with less than 10 wellness they cannot respawn alive.\n\n2)Extra professions can be learned by collecting 20 profession pages and crafting a profession kit.\n\n3)Hard Stone-After about 6 layers of normal stone rock under the soil of the biome you will find HardStone. It has the color of bedrock but does not chime when hit. This stone is very hard and can only be hurt by Steel Tools, Stone Drills and Explosives that contains Nitroglycerin.",,,
