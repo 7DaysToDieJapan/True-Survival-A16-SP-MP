@@ -818,41 +818,41 @@ This requires a 50+ food bar:
 	<modify id="2" stat="coretemp" modifyValue="25" />
 </buff>	
 <!--Spider-->
-<buff id="SpiderPoisoning" name_key="Spider Bite Stage 1" type="speedmodifier" mutex="antiVenom,SpiderPoisoning2,SpiderPoisoning3" actions="increment(@wellness, -0.1, 600, 0, 0);buff(snakeStun)" onexpired="SpiderPoisoning2" duration="1800" tooltip_key="You've been bitten by a spider" description_key="A spider bit and poisoned you. Now you will need to find or make some Anti-Venom or you will get very ill. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ui_game_symbol_spiderBuff" cures="antiVenom">
+<buff id="SpiderPoisoning" name_key="ヘビ毒ステージ1" type="speedmodifier" mutex="antiVenom,SpiderPoisoning2,SpiderPoisoning3" actions="increment(@wellness, -0.1, 600, 0, 0);buff(snakeStun)" onexpired="SpiderPoisoning2" duration="1800" tooltip_key="You've been bitten by a spider" description_key="クモに噛まれ、毒に侵されました。血清を見つけるか作る必要があります。そうしないと更に具合が悪くなります。毒を持つ動物から毒袋を採取し、キャンプファイアで血清を作ることができます。" icon="ui_game_symbol_spiderBuff" cures="antiVenom">
     <modify id="0" stat="speedmodifier" mulValue="0.98" />
     <modify id="1" stat="water" amount="-1" rate="30" />
     <modify id="2" stat="coretemp" modifyValue="5" />
 </buff>
-<buff id="SpiderPoisoning2" name_key="Spider Bite Stage 2" type="speedmodifier" mutex="antiVenom" actions="buff(SpiderRash);increment(@wellness, -0.2, 600, 0, 0)" onexpired="SpiderPoisoning3" duration="3600" tooltip_key="Burrrr! Your getting the chills" description_key="The spider bite is blistering and swelling. You need to find or make some Anti-Venom soon or you will get even more sick. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="rashes" cures="antiVenom">
+<buff id="SpiderPoisoning2" name_key="ヘビ毒ステージ2" type="speedmodifier" mutex="antiVenom" actions="buff(SpiderRash);increment(@wellness, -0.2, 600, 0, 0)" onexpired="SpiderPoisoning3" duration="3600" tooltip_key="Burrrr! Your getting the chills" description_key="クモの噛まれた傷から水膨れと腫れの症状が見られます。すぐに血清を見つけるか作る必要があります。そうしないと病気が悪化します。毒を持つ動物から毒袋を採取し、キャンプファイアで血清を作ることができます。" icon="rashes" cures="antiVenom">
 	<modify id="0" stat="speedmodifier" mulValue="0.95" />
     <modify id="1" stat="water" amount="-1" rate="30" />
     <modify id="2" stat="coretemp" modifyValue="-25" />
     <modify id="3" stat="stamina" amount="-3" rate="5" />
 </buff>
-<buff id="SpiderRash" name_key="Bite Rash" type="healthdown" duration="7200" tooltip_key="Dont Scratch it!" description_key="A painful rash is spreading from the bite wound. Use a healing cream to soothe it." icon="Rash" cures="herbalCream,aloeCream" >
+<buff id="SpiderRash" name_key="発疹" type="healthdown" duration="7200" tooltip_key="Dont Scratch it!" description_key="痛みを伴う発疹が咬み傷から広がっています。鎮静には植物性クリームを塗ります。" icon="Rash" cures="herbalCream,aloeCream" >
     <modify id="0" stat="health" amount="-1" rate="60" />
 </buff>
-<buff id="SpiderPoisoning3" name_key="Spider Poisoning Stage 3" type="speedmodifier" mutex="antiVenom" actions="buff(pain);increment(@wellness, -0.5, 600, 0, 0)" duration="3600" tooltip_key="You feel very ill with a deathly chill" description_key="Your body convulses with shivers. You have going through the worst of it. If you can make it through the day you might just live or you can find or make some Anti-Venom. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ui_game_symbol_spiderBuff" cures="antiVenom">
+<buff id="SpiderPoisoning3" name_key="ヘビ毒ステージ3" type="speedmodifier" mutex="antiVenom" actions="buff(pain);increment(@wellness, -0.5, 600, 0, 0)" duration="3600" tooltip_key="You feel very ill with a deathly chill" description_key="体は震えで痙攣しています。このまま終わりを迎えるまで最悪でしょう。もしかしたら、あなたがこの一日を過ごすことができれば、血清を見つけるか作ることで生き残れるかもしれません。毒を持つ動物から毒袋を採取し、キャンプファイアで血清を作ることができます。" icon="ui_game_symbol_spiderBuff" cures="antiVenom">
 	<modify id="0" stat="speedmodifier" mulValue="0.75" />
     <modify id="1" stat="water" amount="-1" rate="30" />
     <modify id="2" stat="coretemp" modifyValue="-50" />
     <modify id="3" stat="stamina" amount="-5" rate="1" />
 </buff>
    <!--Scorpions-->
-<buff id="ScorpionPoisoning" name_key="Scorpion Sting Stage 1" type="speedmodifier" mutex="antiVenom,ScorpionPoisoning2,ScorpionPoisoning3" actions="increment(@wellness, -0.1, 600, 0, 0)" onexpired="ScorpionPoisoning2" duration="1800" tooltip_key="You've been stung by a Scorpion" description_key="A Scorpion stung and poisoned you. Now you will need to find or make some Anti-Venom or you will get very ill. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ui_game_symbol_scorpionBuff" cures="antiVenom">
+<buff id="ScorpionPoisoning" name_key="サソリ毒ステージ1" type="speedmodifier" mutex="antiVenom,ScorpionPoisoning2,ScorpionPoisoning3" actions="increment(@wellness, -0.1, 600, 0, 0)" onexpired="ScorpionPoisoning2" duration="1800" tooltip_key="You've been stung by a Scorpion" description_key="サソリに刺され、毒に侵されました。血清を見つけるか作る必要があります。そうしないと更に具合が悪くなります。毒を持つ動物から毒袋を採取し、キャンプファイアで血清を作ることができます。" icon="ui_game_symbol_scorpionBuff" cures="antiVenom">
 	<modify id="0" stat="speedmodifier" mulValue="0.92" />
     <modify id="1" stat="stamina" amount="-2" rate="1" />
     <modify id="2" stat="coretemp" modifyValue="10" />
 </buff>
-<buff id="ScorpionPoisoning2" name_key="Scorpion Sting Stage 2" type="speedmodifier" mutex="antiVenom" actions="buff(Fever);increment(@wellness, -0.2, 600, 0, 0)" onexpired="ScorpionPoisoning3" duration="3600" tooltip_key="The sting burns." description_key="The scorpion sting is gitting worse and you feel warmer. You need to find or make Anti-Venom or you will get much sicker. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ui_game_symbol_scorpionBuff" cures="antiVenom">
+<buff id="ScorpionPoisoning2" name_key="サソリ毒ステージ2" type="speedmodifier" mutex="antiVenom" actions="buff(Fever);increment(@wellness, -0.2, 600, 0, 0)" onexpired="ScorpionPoisoning3" duration="3600" tooltip_key="The sting burns." description_key="サソリの刺し傷は悪化し火照りだしています。すぐに血清を見つけるか作る必要があります。そうしないと病気が悪化します。毒を持つ動物から毒袋を採取し、キャンプファイアで血清を作ることができます。" icon="ui_game_symbol_scorpionBuff" cures="antiVenom">
 	<modify id="0" stat="speedmodifier" mulValue="0.82" />
     <modify id="1" stat="coretemp" modifyValue="30" />
     <modify id="2" stat="stamina" amount="-4" rate="1" />
 </buff>
-<buff id="Fever" name_key="Fever" type="coretemp" duration="7200" tooltip_key="Is it getting hot in here?" description_key="You feel very hot all the sudden. A fever has come on. Cool off by dumping a drink on your head and getting a Wet head." icon="Fever" cures="wetHead" >
+<buff id="Fever" name_key="熱病" type="coretemp" duration="7200" tooltip_key="Is it getting hot in here?" description_key="思いがけない発熱があります。飲み物を頭からかけて冷やしましょう。" icon="Fever" cures="wetHead" >
 	<modify id="0" stat="coretemp" modifyValue="20" />
 </buff>
-<buff id="ScorpionPoisoning3" name_key="Scorpion Sting Stage 3" type="speedmodifier" mutex="antiVenom" actions="buff(SeverFever);increment(@wellness, -0.5, 600, 0, 0)" duration="3600" tooltip_key="Soooo Hot!" description_key="The scorpion sting has gotten worse and so has your temperature but if you can last the day you might just make it or you can find or make some Anti-Venom. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ui_game_symbol_scorpionBuff" cures="antiVenom">
+<buff id="ScorpionPoisoning3" name_key="サソリ毒ステージ3" type="speedmodifier" mutex="antiVenom" actions="buff(SeverFever);increment(@wellness, -0.5, 600, 0, 0)" duration="3600" tooltip_key="Soooo Hot!" description_key="サソリの刺し傷が更に悪化し、高熱にうなされています。もしかしたら、あなたの最後の一日であっても血清を見つけるか作ることができるかもしれません。毒を持つ動物から毒袋を採取し、キャンプファイアで血清を作ることができます。" icon="ui_game_symbol_scorpionBuff" cures="antiVenom">
 	<modify id="0" stat="speedmodifier" mulValue="0.70" />
     <modify id="1" stat="coretemp" modifyValue="50" />
     <modify id="2" stat="stamina" amount="-6" rate="1" />
@@ -1031,15 +1031,15 @@ This requires a 50+ food bar:
 <buff id="dysentery" duration="1" actions="buff(dysenteryHealthy);buff(dysenteryNormal);buff(dysenteryMalnourished)" />
 
 <buff id="dysenteryHealthy" requires="goodNutrition2Tag" mutex="cured,dysentery2,malnourished1Tag" type="sickness" actions="increment(@wellness, -0.02, 30t, 0, 0)" duration="3600" onexpired="dysentery2"
-	icon="ui_game_symbol_dysentery" castsound="playersick" name_key="赤痢" description_key="dysenteryDesc" tooltip_key="dysenteryTooltip" cures="goldenRodTea,redTea,vitamins,herbalAntibiotics,antibiotics" causes="bottledRiverWater,canMurkyWater">
+	icon="ui_game_symbol_dysentery" castsound="playersick" name_key="赤痢ステージ1" description_key="dysenteryDesc" tooltip_key="dysenteryTooltip" cures="goldenRodTea,redTea,vitamins,herbalAntibiotics,antibiotics" causes="bottledRiverWater,canMurkyWater">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
 </buff>
 <buff id="dysenteryNormal" mutex="cured,dysentery2,malnourished1Tag,goodNutrition2Tag" type="sickness" actions="increment(@wellness, -0.02, 30t, 0, 0)" duration="2400" onexpired="dysentery2"
-	icon="ui_game_symbol_dysentery" castsound="playersick" name_key="赤痢" description_key="dysenteryDesc" tooltip_key="dysenteryTooltip" cures="goldenRodTea,redTea,vitamins,herbalAntibiotics,antibiotics" causes="bottledRiverWater,canMurkyWater">
+	icon="ui_game_symbol_dysentery" castsound="playersick" name_key="赤痢ステージ1" description_key="dysenteryDesc" tooltip_key="dysenteryTooltip" cures="goldenRodTea,redTea,vitamins,herbalAntibiotics,antibiotics" causes="bottledRiverWater,canMurkyWater">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
 </buff>
 <buff id="dysenteryMalnourished" requires="malnourished1Tag" mutex="cured,dysentery2,goodNutrition2Tag" type="sickness" actions="increment(@wellness, -0.02, 30t, 0, 0)" duration="1200" onexpired="dysentery2"
-	icon="ui_game_symbol_dysentery" castsound="playersick" name_key="赤痢" description_key="dysenteryDesc" tooltip_key="dysenteryTooltip" cures="goldenRodTea,redTea,vitamins,herbalAntibiotics,antibiotics" causes="bottledRiverWater,canMurkyWater">
+	icon="ui_game_symbol_dysentery" castsound="playersick" name_key="赤痢ステージ1" description_key="dysenteryDesc" tooltip_key="dysenteryTooltip" cures="goldenRodTea,redTea,vitamins,herbalAntibiotics,antibiotics" causes="bottledRiverWater,canMurkyWater">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
 </buff>
 
