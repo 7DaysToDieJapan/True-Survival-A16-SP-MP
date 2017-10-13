@@ -555,7 +555,7 @@ This requires a 50+ food bar:
 </buff>
 <!--JZMOD ADDED-->
 <!--JZMOD BURN WOUND-->
-<buff id="burnWound" mutex="burnWound" duration="7200" onexpired="didntHealBurnWound" ondebuff="healBurnWound" name_key="火傷" type="bleeding" description_key="Your skin is badly burned and blistering. Treat it with some Aloe Cream befor it gets infected." tooltip_key="Hot!  Hot!   Hot!" icon="ui_game_symbol_burnWound" cures="aloeCream" >
+<buff id="burnWound" mutex="burnWound" duration="7200" onexpired="didntHealBurnWound" ondebuff="healBurnWound" name_key="火傷" type="bleeding" description_key="皮膚に酷いやけどを負っています。感染する前にアロエクリームを塗りましょう。" tooltip_key="Hot!  Hot!   Hot!" icon="ui_game_symbol_burnWound" cures="aloeCream" >
 	<modify id="0" stat="stamina" amount="2" rate="5" />
     <modify id="1" stat="health" amount="-1" rate="60" />
 </buff>
@@ -570,32 +570,32 @@ This requires a 50+ food bar:
 	<modify id="0" stat="speedmodifier" mulValue="0.4" />
 </buff>
 <!--JZMOD SIMPLE STAM BUFF-->
-<buff id="staminaBoost" duration="180" name_key="活力" type="staminaup" description_key="あなたは、活力を感じています。" tooltip_key="You feel full of energy" icon="ui_game_symbol_run" stack="extend">
+<buff id="staminaBoost" duration="180" name_key="活力" type="staminaup" description_key="活力を湧き上がるのを感じます。" tooltip_key="You feel full of energy" icon="ui_game_symbol_run" stack="extend">
 	<modify id="0" stat="stamina" amount="2" rate="1" />
 </buff>
 <!--JZMOD Dumped Drink On Head-->
-<buff id="wetHead" duration="180" name_key="Wet Head" type="staminaup" actions="debuff(acid)" description_key="You dumped a drink on your head" tooltip_key="Ahh that feels good" icon="ui_game_symbol_water" stack="extend">
+<buff id="wetHead" duration="180" name_key="ずぶ濡れ" type="staminaup" actions="debuff(acid)" description_key="頭から飲み水をかぶって冷やしています。" tooltip_key="Ahh that feels good" icon="ui_game_symbol_water" stack="extend">
 	<modify id="0" stat="coretemp" modifyValue="-15" />
 </buff>
 <!--JZMOD SCUBA GEAR-->
-<buff id="scuba" duration="300" name_key="Scuba Gear" actions="buff(freshAir)" description_key="You have Scube Gear equiped and can breath under water for a short time" icon="ui_game_symbol_scubaTankEmpty" stack="extend"/>
+<buff id="scuba" duration="300" name_key="スキューバ" actions="buff(freshAir)" description_key="スキューバ用品を装備してるため、短時間の間、水中で呼吸ができます。" icon="ui_game_symbol_scubaTankEmpty" stack="extend"/>
 <!--JZMOD COZY BED BUFF-->
 <buff id="cozybed1" mutex="cozybed1" duration="1" actions="increment(cozybed1, 1, 1, 0, 0)" /> <!-- sleepingBag -->
-<buff id="cozybed1Effect" buffif="cozybed1 greater 1" debuffif="cozybed1 less 1" duration="0" name_key="休息" description_key="Sleeping in a Sleepingbag warms you up." tooltip_key="You're resting in your warm bed." icon="ui_game_symbol_cozyBed"	actions="increment(cozybed1, -1, 1, 0, 0);min(cozybed1, 0)" >
+<buff id="cozybed1Effect" buffif="cozybed1 greater 1" debuffif="cozybed1 less 1" duration="0" name_key="休息" description_key="寝袋で寝ているので体が温まってきています。" tooltip_key="You're resting in your warm bed." icon="ui_game_symbol_cozyBed"	actions="increment(cozybed1, -1, 1, 0, 0);min(cozybed1, 0)" >
     <modify id="0" stat="coretemp" modifyValue="20" />
 </buff>
 <buff id="cozybed2" mutex="cozybed2" duration="1" actions="increment(cozybed2, 1, 1, 0, 0)" /> <!-- smallBed -->
-<buff id="cozybed2Effect" buffif="cozybed2 greater 1" debuffif="cozybed2 less 1" duration="0" actions="increment(cozybed2, -1, 1, 0, 0);min(cozybed2, 0)" name_key="休息" description_key="Sleeping in a bed moderately regenerates health and warms you up." tooltip_key="You're resting in your warm bed." icon="ui_game_symbol_cozyBed" >
+<buff id="cozybed2Effect" buffif="cozybed2 greater 1" debuffif="cozybed2 less 1" duration="0" actions="increment(cozybed2, -1, 1, 0, 0);min(cozybed2, 0)" name_key="休息" description_key="ベッドで寝ているので、健康値が回復し体を温めてくれています。" tooltip_key="You're resting in your warm bed." icon="ui_game_symbol_cozyBed" >
     <modify id="0" stat="health" amount="1" rate="4" />
 	<modify id="1" stat="coretemp" modifyValue="25" />
 </buff>
 <buff id="cozybed3" mutex="cozybed3" duration="1" actions="increment(cozybed3, 1, 1, 0, 0)" /> <!-- largeBed -->
-<buff id="cozybed3Effect" buffif="cozybed3 greater 1" debuffif="cozybed3 less 1" duration="0" actions="increment(cozybed3, -1, 1, 0, 0);min(cozybed3, 0)" name_key="休息" description_key="Sleeping in a bed moderately regenerates health and warms you up." tooltip_key="You're resting in your warm bed." icon="ui_game_symbol_cozyBed" >
+<buff id="cozybed3Effect" buffif="cozybed3 greater 1" debuffif="cozybed3 less 1" duration="0" actions="increment(cozybed3, -1, 1, 0, 0);min(cozybed3, 0)" name_key="休息" description_key="ベッドで寝ているので、健康値が回復し体を温めてくれています。" tooltip_key="You're resting in your warm bed." icon="ui_game_symbol_cozyBed" >
     <modify id="0" stat="health" amount="2" rate="4" />
 	<modify id="1" stat="coretemp" modifyValue="30" />
 </buff>	
 <!--JZMOD Red Bull-->
-<buff id="redBull" duration="360" name_key="Red Bull" type="staminaup" tooltip_key="A nice rush of energy" description_key="A nice rush of energy" icon="ui_game_symbol_redBull" stack="extend">
+<buff id="redBull" duration="360" name_key="レッドブル" type="staminaup" tooltip_key="A nice rush of energy" description_key="うおぉぉぉ、力がみなぎってくるぜ！" icon="ui_game_symbol_redBull" stack="extend">
 	<modify id="0" stat="stamina" amount="2" rate="1" />
 </buff>
 <!--JZMOD Smoking-->
@@ -1091,7 +1091,7 @@ This requires a 50+ food bar:
 </buff>
 <!--Fast Travel Icon-->
 <buff id="fastTravel" mutex="fastTravel" duration="1" actions="increment(fastRaod, 1, 1, 0, 0)" /> <!-- smallBed -->
-<buff id="fastTravelIcon" buffif="fastRaod greater 1" debuffif="fastRaod less 1" duration="0" actions="increment(fastRaod, -1, 1, 0, 0);min(fastRaod, 0)" name_key="Fast Travel" description_key="You make much better time traveling on a road than through the wilds. Speed Increased by 20%." tooltip_key="Now your moving" icon="ui_game_symbol_fastTravel" />
+<buff id="fastTravelIcon" buffif="fastRaod greater 1" debuffif="fastRaod less 1" duration="0" actions="increment(fastRaod, -1, 1, 0, 0);min(fastRaod, 0)" name_key="俊足" description_key="地面よりも舗装された道を行くほうが時間を節約した旅となるでしょう。速度が20％増加します。" tooltip_key="Now your moving" icon="ui_game_symbol_fastTravel" />
     
 
 </buffs>
