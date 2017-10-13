@@ -570,7 +570,7 @@ This requires a 50+ food bar:
 	<modify id="0" stat="speedmodifier" mulValue="0.4" />
 </buff>
 <!--JZMOD SIMPLE STAM BUFF-->
-<buff id="staminaBoost" duration="180" name_key="活力" type="staminaup" description_key="活力を湧き上がるのを感じます。" tooltip_key="You feel full of energy" icon="ui_game_symbol_run" stack="extend">
+<buff id="staminaBoost" duration="180" name_key="活力" type="staminaup" description_key="活力が湧き上がるのを感じます。" tooltip_key="You feel full of energy" icon="ui_game_symbol_run" stack="extend">
 	<modify id="0" stat="stamina" amount="2" rate="1" />
 </buff>
 <!--JZMOD Dumped Drink On Head-->
