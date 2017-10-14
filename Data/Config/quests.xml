@@ -245,7 +245,7 @@
 		<reward type="Exp" value="400" />
 	</quest>
     <!-- Basic Survival 21 - Craft and use craftedRevolver /> -->
-    <quest id="quest_BasicSurvival21" group_name_key="quest_BasicSurvival" name_key="手作りのリボルバーで生き残れ-組立て" subtitle_key="リボルバーを作る(Crafted Revolver)" description_key="この世界では、特に早い段階で銃器を手に入れることは難しい。君が生き残る手助けに、手作りの銃器を初めに渡すことができる。手作りのリボルバーを作り、ゾンビ殺しを始めようじゃないか。" icon="ui_game_symbol_CraftedRevolver" category_key="quest">
+    <quest id="quest_BasicSurvival21" group_name_key="quest_BasicSurvival" name_key="手作りのリボルバーで生き残れ-組立て" subtitle_key="リボルバーを作る(Crafted Revolver)" description_key="この世界では、特に早い段階で銃器を手に入れることは難しい。君が生き残る手助けに、手作りの銃器を初めに手にするといいだろう。手作りのリボルバーを作り、ゾンビ殺しを始めようじゃないか。" icon="ui_game_symbol_CraftedRevolver" category_key="quest">
         <objective type="Craft" id="craftedRevolverStock" value="1" />
         <objective type="Craft" id="craftedRevolverBarrel" value="1" />
         <objective type="Craft" id="revolver_cylinder" value="1" />
@@ -253,7 +253,7 @@
         <objective type="FetchKeep" id="craftedRevolver" value="1" />
         <reward type="Quest" id="quest_BasicSurvival21b" stage="aftercomplete" />
     </quest>    
-    <quest id="quest_BasicSurvival21b" group_name_key="quest_BasicSurvival" name_key="手作りのリボルバーで生き残れ-実践" subtitle_key="リボルバーを作る(Crafted Revolver)" description_key="この世界では、特に早い段階で銃器を手に入れることは難しい。君が生き残る手助けに、手作りの銃器を初めに渡すことができる。手作りのリボルバーを作り、ゾンビ殺しを始めようじゃないか。" icon="ui_game_symbol_CraftedRevolver" category_key="quest">        
+    <quest id="quest_BasicSurvival21b" group_name_key="quest_BasicSurvival" name_key="手作りのリボルバーで生き残れ-実践" subtitle_key="リボルバーを作る(Crafted Revolver)" description_key="この世界では、特に早い段階で銃器を手に入れることは難しい。君が生き残る手助けに、手作りの銃器を初めに手にするといいだろう。手作りのリボルバーを作り、ゾンビ殺しを始めようじゃないか。" icon="ui_game_symbol_CraftedRevolver" category_key="quest">        
         <objective type="ZombieKill" value="3" />
         <requirement type="Holding" id="craftedRevolver" />
         <reward type="Exp" value="400" />
@@ -272,7 +272,7 @@
         <reward type="SkillPoints" value="1" />
     </quest>    
     <!-- Basic Survival 23 - Craft and use craftedRifle /> -->
-    <quest id="quest_BasicSurvival23" group_name_key="quest_BasicSurvival" name_key="手作りのライフルで生き残れ-組立て" subtitle_key="手作りのライフルで生き残れ(Surviving with a crafted Rifle)" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Rifle and killing some zombies." icon="ui_game_symbol_craftedRifle" category_key="quest">
+    <quest id="quest_BasicSurvival23" group_name_key="quest_BasicSurvival" name_key="手作りのライフルで生き残れ-組立て" subtitle_key="手作りのライフルで生き残れ(Surviving with a crafted Rifle)" description_key="この世界では、特に早い段階で銃器を手に入れることは難しい。君が生き残る手助けに、手作りの銃器を初めに手にするといいだろう。手作りのライフルを作り、ゾンビ殺しを始めようじゃないか。" icon="ui_game_symbol_craftedRifle" category_key="quest">
         <objective type="Craft" id="craftedRifle_stock" value="1" />
         <objective type="Craft" id="craftedRifle_receiver" value="1" />
         <objective type="Craft" id="craftedRifleBarrel" value="1" />
@@ -280,7 +280,7 @@
         <objective type="FetchKeep" id="craftedRifle" value="1" />
         <reward type="Quest" id="quest_BasicSurvival23b" stage="aftercomplete" />
     </quest>
-    <quest id="quest_BasicSurvival23b" group_name_key="quest_BasicSurvival" name_key="手作りのライフルで生き残れ―実践" subtitle_key="手作りのライフルで生き残れ(Surviving with a crafted Rifle)" description_key="In True Survival Firearms are hard to come by, especially in early game. To help you survive you can hand craft your first set of firearms. Get started by crafting a crafted Rifle and killing some zombies." icon="ui_game_symbol_craftedRifle" category_key="quest">
+    <quest id="quest_BasicSurvival23b" group_name_key="quest_BasicSurvival" name_key="手作りのライフルで生き残れ―実践" subtitle_key="手作りのライフルで生き残れ(Surviving with a crafted Rifle)" description_key="この世界では、特に早い段階で銃器を手に入れることは難しい。君が生き残る手助けに、手作りの銃器を初めに手にするといいだろう。手作りのライフルを作り、ゾンビ殺しを始めようじゃないか。" icon="ui_game_symbol_craftedRifle" category_key="quest">
         <objective type="ZombieKill" value="3" />
         <requirement type="Holding" id="craftedRifle" />
         <reward type="Exp" value="400" />
