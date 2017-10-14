@@ -307,7 +307,7 @@ actions="debuff(burningSmall);attach(ParticleEffects/p_onFire, @impact);damage(0
 </buff>
 
 <buff id="extinguishFireBuff" duration="10" stack="reset" actions="debuff(burningSmall);debuff(burning);debuff(burningMolotov);debuff(burningSmall);setvar(CTRblockBurn2,0);setvar(CTRblockBurn3,0);debuff(acid);debuff(smelly)"
-	icon="ui_game_symbol_water" name_key="extinguishFireBuffName" description_key="extinguishFireBuffDesc"/>
+	icon="ui_game_symbol_water" name_key="鎮火" description_key="extinguishFireBuffDesc"/>
 
 <buff id="wellnessExample" duration="10" type="wellness" icon="ui_game_symbol_stunned" name_key="健康増進" description_key="wellnessDesc" tooltip_key="wellnessTooltip">
 	<modify id="0" stat="wellness" amount="5" rate="1"/>
@@ -622,7 +622,7 @@ This requires a 50+ food bar:
     <modify id="0" stat="health" amount="-55" rate="1" />
 </buff>
 <!--JZMOD Sedative Shot-->
-<buff id="sedative" name_key="Sedative Shot" type="bleeding" duration="15" stack="extend" tooltip_key="Hit with a Sedative Shot" description_key="You have been shot with a sedative and are losing stamina." icon="ui_game_symbol_death">
+<buff id="sedative" name_key="鎮静弾" type="bleeding" duration="15" stack="extend" tooltip_key="Hit with a Sedative Shot" description_key="鎮静弾に打たれたため、スタミナを失っています。" icon="ui_game_symbol_death">
 	<modify id="0" stat="stamina" amount="-4" rate="1" />
     <modify id="1" stat="speedmodifier" mulValue="0.50"/>
 </buff>
@@ -642,24 +642,24 @@ This requires a 50+ food bar:
     <modify id="0" stat="health" amount="-40" rate="1" />
 </buff>
 <!--JZMOD ZOMEBIE BITES-->
-<buff id="bite" mutex="fightOffEnemy,bite" castsound="Buffs/critical_blunt" duration="3600" name_key="咬み傷" type="bleeding" requires="stunned" actions="increment(@wellness, -0.4, 300, 0, 0);buff(bleeding)" onexpired="infection" description_key="You were biten. You must cauterize the bite soon or you will catch the Z virus." tooltip_key="You have been bitten" icon="ui_game_symbol_zombie" cures="redHotPipe,redHotSteelPipe">
+<buff id="bite" mutex="fightOffEnemy,bite" castsound="Buffs/critical_blunt" duration="3600" name_key="噛み傷" type="bleeding" requires="stunned" actions="increment(@wellness, -0.4, 300, 0, 0);buff(bleeding)" onexpired="infection" description_key="噛まれてしまいました。すぐに噛み傷を焼かなければなりません。このままでは、Zウィルスに感染してしまいます。" tooltip_key="You have been bitten" icon="ui_game_symbol_zombie" cures="redHotPipe,redHotSteelPipe">
 	<modify id="0" stat="stamina" amount="-1" rate="5" />
 	<modify id="1" stat="health" amount="-1" rate="30" />
 	<modify id="2" stat="coretemp" modifyValue="10" />
 </buff>
 <buff id="cauterize" castsound="Player_Female/player2death" requires="bite" duration="1" actions="buff(biteWound);debuff(bite)" />
-<buff id="biteWound" duration="900" onexpired="infection" ondebuff="tendingbite" name_key="咬み傷" tooltip_key="Care for your bite wound or catch the Z virus" description_key="今のところ、Zウィルスの進行を止めていますが、咬み傷の処置を続けなければ、Zウィルスに侵されるでしょう。包帯で治療し、汚れたら必ず交換してください。" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit" icon="ui_game_symbol_bite" />
-<buff id="tendingbite" duration="900" onexpired="dirtyBiteBandage1" name_key="応急処置" tooltip_key="Your bite is bandaged up" description_key="今のところ、Zウィルスの進行を止めていますが、咬み傷の処置を続けなければ、Zウィルスに侵されるでしょう。包帯で治療し、汚れたら必ず交換してください。" icon="ui_game_symbol_bandaged" />
-<buff id="dirtyBiteBandage1" smell="smallSmell" duration="900" onexpired="dirtyBite" ondebuff="tendingbite2" name_key="化膿" tooltip_key="Your bite wound is getting dirty" description_key="咬み傷が汚れて臭いがし始めています。そろそろ包帯を交換するか、このままでは傷が悪化しZウィルスに侵されることでしょう。" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit" icon="ui_game_symbol_bite" />
+<buff id="biteWound" duration="900" onexpired="infection" ondebuff="tendingbite" name_key="噛み傷" tooltip_key="Care for your bite wound or catch the Z virus" description_key="今のところ、Zウィルスの進行を止めていますが、噛み傷の処置を続けなければ、Zウィルスに侵されるでしょう。包帯で治療し、汚れたら必ず交換してください。" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit" icon="ui_game_symbol_bite" />
+<buff id="tendingbite" duration="900" onexpired="dirtyBiteBandage1" name_key="応急処置" tooltip_key="Your bite is bandaged up" description_key="今のところ、Zウィルスの進行を止めていますが、噛み傷の処置を続けなければ、Zウィルスに侵されるでしょう。包帯で治療し、汚れたら必ず交換してください。" icon="ui_game_symbol_bandaged" />
+<buff id="dirtyBiteBandage1" smell="smallSmell" duration="900" onexpired="dirtyBite" ondebuff="tendingbite2" name_key="化膿" tooltip_key="Your bite wound is getting dirty" description_key="噛み傷が汚れて臭いがし始めています。そろそろ包帯を交換するか、このままでは傷が悪化しZウィルスに侵されることでしょう。" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit" icon="ui_game_symbol_bite" />
 <buff id="dirtyBite" duration="1" actions="buff(infection);increment(scratch, 10, 0, 0, 1)" />
-<buff id="tendingbite2" duration="900" onexpired="healBiteWound" name_key="応急処置" tooltip_key="Your bite is bandaged up" description_key="咬み傷は治り、Zウィルスに感染する心配も無くなりました。まだ傷や痣が残っているかもしれませんが、傷跡も消えかかっていることでしょう。" icon="ui_game_symbol_bandaged" />
+<buff id="tendingbite2" duration="900" onexpired="healBiteWound" name_key="応急処置" tooltip_key="Your bite is bandaged up" description_key="噛み傷は治り、Zウィルスに感染する心配も無くなりました。まだ傷や痣が残っているかもしれませんが、傷跡も消えかかっていることでしょう。" icon="ui_game_symbol_bandaged" />
 <buff id="healBiteWound" duration="1" actions="increment(scratch, 6, 0, 0, 1)" />
 <!--JZMOD WOUND 1-->
 <buff id="bruised" buffif="scratch gequal 2" debuffif="scratch less 2" mutex="smallWound,wound,severeWound,infectedWound" name_key="打撲" type="bleeding" tooltip_key="Thats going to leave a bruies" description_key="打撲を負いました。時間経過で自然治癒しますが、あなたはもっと注意を払うといいかもしれません。" icon="ui_game_symbol_bruised">
 	<modify id="0" stat="stamina" amount="-1" rate="4" />
 </buff>
 <!--JZMOD WOUND 2-->
-<buff id="smallWound" buffif="scratch gequal 6" mutex="dirtyBandage1,dirtyBandage2,dirtyBandage,3dirtyBandage4,tending1,tending2,tending3,tending4,tending5,tending6,tending7,tending8,wound,severeWound,infectedWound" ondebuff="tending1" actions="buff(pain);debuff(bruised)" name_key="怪我" type="bleeding" tooltip_key="Ouch! You've been wounded" description_key="You’ve gotten a small wound. Treat it with a bandage and be sure to change it when it gets dirty." icon="ui_game_symbol_smallWound" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit">
+<buff id="smallWound" buffif="scratch gequal 6" mutex="dirtyBandage1,dirtyBandage2,dirtyBandage,3dirtyBandage4,tending1,tending2,tending3,tending4,tending5,tending6,tending7,tending8,wound,severeWound,infectedWound" ondebuff="tending1" actions="buff(pain);debuff(bruised)" name_key="怪我" type="bleeding" tooltip_key="Ouch! You've been wounded" description_key="怪我をしました。包帯で手当てし、汚れたら必ず交換しましょう。" icon="ui_game_symbol_smallWound" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit">
 	<modify id="0" stat="stamina" amount="-4" rate="5" />
 	<modify id="1" stat="speedmodifier" setValue="0.91" />
 	<modify id="2" stat="health" amount="-1" rate="30" />
@@ -668,35 +668,35 @@ This requires a 50+ food bar:
 	<modify id="0" stat="stamina" amount="-1" rate="5" />
 	<modify id="1" stat="coretemp" modifyValue="10" />
 </buff>
-<buff id="tending1" mutex="wound" duration="1800" onexpired="dirtyBandage1" name_key="応急処置" tooltip_key="Thats better for now" description_key="傷口に包帯を巻いて治療中です。包帯が汚れていないか確認して、汚れていれば感染しないように交換しましょう。" icon="ui_game_symbol_bandaged" />
+<buff id="tending1" mutex="wound" duration="1800" onexpired="dirtyBandage1" name_key="包帯" tooltip_key="Thats better for now" description_key="傷口に包帯を巻いて治療中です。包帯が汚れていないか確認して、汚れていれば感染しないように交換しましょう。" icon="ui_game_symbol_bandaged" />
 <buff id="dirtyBandage1" smell="smallSmell" duration="900" onexpired="dirtySmallWound" ondebuff="tending2" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit" name_key="汚れた包帯" tooltip_key="Your Wound Smells" description_key="包帯が汚れて臭いがし始めています。すぐに包帯を交換すべきです。このままでは傷口が最悪な状態になるでしょう。" icon="ui_game_symbol_dirtyBandage" />
 <buff id="dirtySmallWound" duration="1" actions="setvar(scratch, 11)" />
 <buff id="tending2" duration="1800" onexpired="healSmallWound" actions="debuff(dirtyBandage1)" name_key="包帯" tooltip_key="Thats better for now" description_key="傷口に包帯を巻いて治療中です。その傷をまた傷つけないようにして、治るのを待ちましょう。" icon="ui_game_symbol_bandaged" />
 <buff id="healSmallWound" duration="1" actions="setvar(scratch, 2)" />
 <!-- JZMOD WOUND 3-->
-<buff id="wound" buffif="scratch gequal 11" mutex="dirtyBandage2,dirtyBandage3,dirtyBandage4,tending3,tending4,tending5,tending6,tending7,tending8,severeWound,infectedWound" ondebuff="tending3" actions="buff(sprainedLeg);debuff(smallWound);debuff(tending2);debuff(tending1);debuff(dirtyBandage1)" name_key="負傷" type="bleeding" tooltip_key="Ouch! You've been wounded" description_key="You've gotten a wound. Treat it with a First Aid Bandage and be sure to change it when it gets dirty." icon="ui_game_symbol_wound" cures="firstAidBandage,sanitizingBandage,firstAidKit">
+<buff id="wound" buffif="scratch gequal 11" mutex="dirtyBandage2,dirtyBandage3,dirtyBandage4,tending3,tending4,tending5,tending6,tending7,tending8,severeWound,infectedWound" ondebuff="tending3" actions="buff(sprainedLeg);debuff(smallWound);debuff(tending2);debuff(tending1);debuff(dirtyBandage1)" name_key="負傷" type="bleeding" tooltip_key="Ouch! You've been wounded" description_key="負傷しました。救急包帯で手当てし、汚れたら必ず交換しましょう。" icon="ui_game_symbol_wound" cures="firstAidBandage,sanitizingBandage,firstAidKit">
 	<modify id="0" stat="stamina" amount="-1" rate="1" />
 	<modify id="1" stat="speedmodifier" setValue="0.9" />
 	<modify id="2" stat="health" amount="-1" rate="25" />
 </buff>
-<buff id="tending3" mutex="severeWound" duration="1800" onexpired="dirtyBandage2" actions="debuff(wound)" name_key="応急処置" tooltip_key="Thats better for now" description_key="包帯が汚れていないか確認して、汚れていれば感染しないように交換しましょう。" icon="ui_game_symbol_bandaged" />
+<buff id="tending3" mutex="severeWound" duration="1800" onexpired="dirtyBandage2" actions="debuff(wound)" name_key="包帯" tooltip_key="Thats better for now" description_key="包帯が汚れていないか確認して、汚れていれば感染しないように交換しましょう。" icon="ui_game_symbol_bandaged" />
 <buff id="dirtyBandage2" smell="mediumSmell" duration="900" onexpired="dirtyWound" ondebuff="tending4" cures="firstAidBandage,sanitizingBandage,firstAidKit" name_key="汚れた包帯" tooltip_key="Your Wound Smells" description_key="包帯が汚れて臭いがし始めています。すぐに救急包帯と交換すべきです。このままでは傷口が最悪な状態になるでしょう。" icon="ui_game_symbol_dirtyBandage" />
 <buff id="dirtyWound" duration="1" actions="setvar(scratch, 16)" />
 <buff id="tending4" duration="1800" onexpired="healWound" actions="debuff(dirtyBandage2)" name_key="包帯" tooltip_key="Thats better for now" description_key="傷口に包帯を巻いて治療中です。その傷をまた傷つけないようにして、治るのを待ちましょう。" icon="ui_game_symbol_bandaged" />
 <buff id="healWound" duration="10" actions="setvar(scratch, 6)" />
 <!-- JZMOD WOUND 4-->
-<buff id="severeWound" buffif="scratch gequal 16" mutex="dirtyBandage3,dirtyBandage4,tending5,tending6,tending7,tending8,infectedWound" ondebuff="tending5" actions="buff(gash);debuff(tending4);debuff(tending3);debuff(dirtyBandage2);debuff(wound)" name_key="重傷" type="bleeding" tooltip_key="You have gotten a severe wound" description_key="You've gotten a sever wound. Treat it with Sanitized Bandage and be sure to change it when it gets dirty." icon="ui_game_symbol_severeWound" cures="sanitizingBandage,firstAidKit">
+<buff id="severeWound" buffif="scratch gequal 16" mutex="dirtyBandage3,dirtyBandage4,tending5,tending6,tending7,tending8,infectedWound" ondebuff="tending5" actions="buff(gash);debuff(tending4);debuff(tending3);debuff(dirtyBandage2);debuff(wound)" name_key="重傷" type="bleeding" tooltip_key="You have gotten a severe wound" description_key="重傷を負いました。消毒した包帯で手当てし、汚れたら必ず交換しましょう。" icon="ui_game_symbol_severeWound" cures="sanitizingBandage,firstAidKit">
 	<modify id="0" stat="stamina" amount="-6" rate="5" />
 	<modify id="1" stat="speedmodifier" setValue="0.89" />
 	<modify id="2" stat="health" amount="-1" rate="20" />
 </buff>
-<buff id="gash" mutex="healInfectedWound" castsound="Buffs/critical_blunt" name_key="切り傷" type="bleeding" actions="buff(bleeding)" description_key="You have a large gash in your skin. You will need to use a suture kit to stitch it closed" tooltip_key="Thats going to need Stitches" icon="ui_game_symbol_gash" cures="SuterKit">
+<buff id="gash" mutex="healInfectedWound" castsound="Buffs/critical_blunt" name_key="切り傷" type="bleeding" actions="buff(bleeding)" description_key="深い切り傷を負いました。傷を縫うために縫合キット(Suture Kit)を使う必要があります。" tooltip_key="Thats going to need Stitches" icon="ui_game_symbol_gash" cures="SuterKit">
 	<modify id="0" stat="stamina" amount="-1" rate="3" />
 	<modify id="1" stat="health" amount="-1" rate="15" />
 	<modify id="2" stat="coretemp" modifyValue="-25" />
 </buff>
-<buff id="tending5" mutex="infectedWound" duration="1800" onexpired="dirtyBandage3" actions="debuff(severeWound)" name_key="応急処置" tooltip_key="Thats better for now" description_key="包帯が汚れていないか確認して、汚れていれば感染しないように交換しましょう。" icon="ui_game_symbol_bandaged" />
-<buff id="dirtyBandage3" smell="largeSmell" duration="900" onexpired="dirtySevereWound" ondebuff="tending6" cures="sanitizingBandage,firstAidKit" name_key="汚れた包帯" tooltip_key="Your Wound Smells" description_key="包帯が汚れて臭いがし始めています。すぐに消毒された包帯と交換すべきです。このままでは傷口が最悪な状態になるでしょう。" icon="ui_game_symbol_dirtyBandage" />
+<buff id="tending5" mutex="infectedWound" duration="1800" onexpired="dirtyBandage3" actions="debuff(severeWound)" name_key="包帯" tooltip_key="Thats better for now" description_key="包帯が汚れていないか確認して、汚れていれば感染しないように交換しましょう。" icon="ui_game_symbol_bandaged" />
+<buff id="dirtyBandage3" smell="largeSmell" duration="900" onexpired="dirtySevereWound" ondebuff="tending6" cures="sanitizingBandage,firstAidKit" name_key="汚れた包帯" tooltip_key="Your Wound Smells" description_key="包帯が汚れて臭いがし始めています。すぐに消毒した包帯と交換すべきです。このままでは傷口が最悪な状態になるでしょう。" icon="ui_game_symbol_dirtyBandage" />
 <buff id="dirtySevereWound" duration="1" actions="setvar(scratch, 21)" />
 <buff id="tending6" duration="1800" onexpired="healSevereWound" actions="debuff(dirtyBandage3)" name_key="包帯" tooltip_key="Thats better for now" description_key="傷口に包帯を巻いて治療中です。その傷をまた傷つけないようにして、治るのを待ちましょう。" icon="ui_game_symbol_bandaged" />
 <buff id="healSevereWound" duration="10" actions="setvar(scratch, 11)" />
@@ -706,67 +706,67 @@ This requires a 50+ food bar:
 	<modify id="1" stat="speedmodifier" setValue="0.88" />
 	<modify id="2" stat="health" amount="-1" rate="15" />
 </buff>
-<buff id="tending7" duration="1800" onexpired="dirtyBandage4" actions="debuff(infectedWound)" name_key="応急処置" tooltip_key="Thats better for now" description_key="包帯が汚れていないか確認して、汚れていれば感染しないように交換しましょう。" icon="ui_game_symbol_bandaged" />
-<buff id="dirtyBandage4" smell="largeSmell" duration="480" onexpired="dirtyInfectedWound" ondebuff="tending8" cures="sanitizingBandage,firstAidKit" name_key="汚れた包帯" tooltip_key="Your Wound Smells" description_key="包帯が汚れ、臭いを放っています。すぐに消毒された包帯と交換すべきです。このままでは死あるのみです。" icon="ui_game_symbol_dirtyBandage" />
+<buff id="tending7" duration="1800" onexpired="dirtyBandage4" actions="debuff(infectedWound)" name_key="包帯" tooltip_key="Thats better for now" description_key="包帯が汚れていないか確認して、汚れていれば感染しないように交換しましょう。" icon="ui_game_symbol_bandaged" />
+<buff id="dirtyBandage4" smell="largeSmell" duration="480" onexpired="dirtyInfectedWound" ondebuff="tending8" cures="sanitizingBandage,firstAidKit" name_key="汚れた包帯" tooltip_key="Your Wound Smells" description_key="包帯が汚れ、臭いを放っています。すぐに消毒した包帯と交換すべきです。このままでは死あるのみです。" icon="ui_game_symbol_dirtyBandage" />
 <buff id="dirtyInfectedWound" duration="6" type="bleeding" >
     <modify id="0" stat="health" amount="-55" rate="1" />
 </buff>
-<buff id="tending8" duration="1800" onexpired="healInfectedWound" actions="debuff(dirtyBandage4)" name_key="応急処置" tooltip_key="Thats better for now" description_key="傷口に包帯を巻いて治療中です。その傷をまた傷つけないようにして、治るのを待ちましょう。" icon="ui_game_symbol_bandaged" />
+<buff id="tending8" duration="1800" onexpired="healInfectedWound" actions="debuff(dirtyBandage4)" name_key="包帯" tooltip_key="Thats better for now" description_key="傷口に包帯を巻いて治療中です。その傷をまた傷つけないようにして、治るのを待ちましょう。" icon="ui_game_symbol_bandaged" />
 <buff id="healInfectedWound" duration="10" actions="setvar(scratch, 16)" />
 <!--JZMOD Stimulan Addiction-->
-<buff id="stimulant" duration="180" name_key="興奮" type="staminaup" stack="extend" tooltip_key="You have taken a Stimulant and feel good" description_key="A nice rush of energy." icon="ui_game_symbol_stimulant" >
+<buff id="stimulant" duration="180" name_key="興奮" type="staminaup" stack="extend" tooltip_key="You have taken a Stimulant and feel good" description_key="うおぉぉぉ、力がみなぎってくるぜ！" icon="ui_game_symbol_stimulant" >
 	<modify id="0" stat="stamina" amount="4" rate="1" />
 	<modify id="1" stat="food" amount="1" rate="35" />
 </buff>
 <buff id="useStim" duration="1.5" actions="increment(stim, 1, 0, 0, 1);increment(@wellness, 1, 0, 0, 1);debuff(withdrawalLv1);debuff(withdrawalLv2);debuff(withdrawalLv3)" />
 <buff id="zz" buffif="stim greater 0" debuffif="stim less 1" duration="0" actions="increment(stim, -1, 10, 0, 0);min(stim, 0)" /><!--1200-->
 <buff id="turnoff" buffif="stim less 2" debuffif="stim greater 1" actions="debuff(withdrawalLv1);debuff(withdrawalLv2);debuff(withdrawalLv3)" />
-<buff id="addictionLv1" mutex="addictionLv2,addictionLv3,withdrawalLv2,withdrawalLv3" buffif="stim gequal 3" debuffif="stim less 3" name_key="中毒ステージ1" type="staminaup" ondebuff="withdrawalLv1" actions="debuff(limp);debuff(limp1);debuff(limp2);debuff(snakelimp);debuff(SL1);debuff(SL2);debuff(sprainedLegHealthy);debuff(sprainedLegNormal);debuff(sprainedLegMalnourished);debuff(brokenLegHealthy);debuff(brokenLegNormal);debuff(brokenLegMalnourished);increment(@wellness, -0.1, 1200, 0, 0)" tooltip_key="You have become addicted to Stimulants" description_key="These pills really work! Would be nice to have another.(Wellness loss 0.1 every 20 min)" icon="ui_game_symbol_run">
+<buff id="addictionLv1" mutex="addictionLv2,addictionLv3,withdrawalLv2,withdrawalLv3" buffif="stim gequal 3" debuffif="stim less 3" name_key="中毒ステージ1" type="staminaup" ondebuff="withdrawalLv1" actions="debuff(limp);debuff(limp1);debuff(limp2);debuff(snakelimp);debuff(SL1);debuff(SL2);debuff(sprainedLegHealthy);debuff(sprainedLegNormal);debuff(sprainedLegMalnourished);debuff(brokenLegHealthy);debuff(brokenLegNormal);debuff(brokenLegMalnourished);increment(@wellness, -0.1, 1200, 0, 0)" tooltip_key="You have become addicted to Stimulants" description_key="ヤクがキクゥー！ハイがやめれねぇ、他にもっとないか。(20分毎に健康値が0.1低下)" icon="ui_game_symbol_run">
 	<modify id="0" stat="stamina" amount="1" rate="1" />
 	<modify id="1" stat="speedmodifier" modifyMaxValue="2" />
 	<modify id="2" stat="speedmodifier" mulValue="1.1" />
 	<modify id="3" stat="food" amount="1" rate="25" />
 </buff>
-<buff id="addictionLv2" mutex="addictionLv3,withdrawalLv3" buffif="stim gequal 6" debuffif="stim less 6" name_key="中毒ステージ2" type="staminaup" ondebuff="withdrawalLv2" actions="debuff(brokenLeg);increment(@wellness, -0.1, 1200, 0, 0);debuff(addictionLv1)" tooltip_key="You have become more addicted to Stimulants" description_key="O Ya! I feel great!(Wellness loss 0.1 every 20 min)" icon="ui_game_symbol_run">
+<buff id="addictionLv2" mutex="addictionLv3,withdrawalLv3" buffif="stim gequal 6" debuffif="stim less 6" name_key="中毒ステージ2" type="staminaup" ondebuff="withdrawalLv2" actions="debuff(brokenLeg);increment(@wellness, -0.1, 1200, 0, 0);debuff(addictionLv1)" tooltip_key="You have become more addicted to Stimulants" description_key="オゥイェ！気分はサイコー！(20毎に健康値が0.1低下)" icon="ui_game_symbol_run">
 	<modify id="0" stat="stamina" amount="2" rate="1" />
 	<modify id="1" stat="speedmodifier" modifyMaxValue="2" />
 	<modify id="2" stat="speedmodifier" mulValue="1.15" />
 	<modify id="3" stat="food" amount="1" rate="20" />
 </buff>
-<buff id="addictionLv3" buffif="stim gequal 9" debuffif="stim less 9" name_key="中毒ステージ3" type="staminaup" ondebuff="withdrawalLv3" actions="increment(@wellness, -0.2, 1200, 0, 0);debuff(addictionLv2);debuff(brokenLeg)" tooltip_key="You have become very addicted to Stimulants" description_key="Wooo! Man I feel pumped. I need to find more of these.(Wellness loss 0.2 every 20 min)" icon="ui_game_symbol_run">
+<buff id="addictionLv3" buffif="stim gequal 9" debuffif="stim less 9" name_key="中毒ステージ3" type="staminaup" ondebuff="withdrawalLv3" actions="increment(@wellness, -0.2, 1200, 0, 0);debuff(addictionLv2);debuff(brokenLeg)" tooltip_key="You have become very addicted to Stimulants" description_key="ウォォォ！気分は絶好調！心臓が高鳴って止まらねぇ！もっと、もっとヤクが見つけなくては。(20分毎に健康値が0.2低下)" icon="ui_game_symbol_run">
 	<modify id="0" stat="stamina" amount="4" rate="1" />
 	<modify id="1" stat="speedmodifier" modifyMaxValue="2" />
 	<modify id="2" stat="speedmodifier" mulValue="1.25" />
 	<modify id="3" stat="food" amount="1" rate="20" />
 </buff>
 <!--JZMOD Stimulan Withdrawl-->
-<buff id="withdrawalLv1" mutex="addictionLv2" debuffif="stim gequal 3" name_key="禁断ステージ1" type="staminadown" actions="increment(@wellness, -0.2, 1200, 0, 0)" tooltip_key="You have entered Stimulant Withdrawl Stage 1" description_key="I know if I could just find another Stim I would feel better.(Wellness loss 0.2 every 20 min)" icon="ui_game_symbol_withdrawal">
+<buff id="withdrawalLv1" mutex="addictionLv2" debuffif="stim gequal 3" name_key="禁断症状ステージ1" type="staminadown" actions="increment(@wellness, -0.2, 1200, 0, 0)" tooltip_key="You have entered Stimulant Withdrawl Stage 1" description_key="ヤクさえあれば、俺の気分は良くなるんだ。(20分毎に健康値が0.2低下)" icon="ui_game_symbol_withdrawal">
 	<modify id="0" stat="stamina" amount="1" rate="1" />
 	<modify id="1" stat="speedmodifier" setValue="0.95" />
 </buff>
-<buff id="withdrawalLv2" mutex="addictionLv3" debuffif="stim gequal 6" name_key="禁断ステージ2" type="staminadown" actions="increment(@wellness, -0.4, 1200, 0, 0)" tooltip_key="You have entered Stimulant Withdrawl Stage 2" description_key="I've gotta find me somemore Stims.(Wellness loss 0.4 every 20 min)" icon="ui_game_symbol_withdrawal">
+<buff id="withdrawalLv2" mutex="addictionLv3" debuffif="stim gequal 6" name_key="禁断症状ステージ2" type="staminadown" actions="increment(@wellness, -0.4, 1200, 0, 0)" tooltip_key="You have entered Stimulant Withdrawl Stage 2" description_key="ヤクをもっと見つけなくては。(20分毎に健康値が0.4低下)" icon="ui_game_symbol_withdrawal">
 	<modify id="0" stat="stamina" amount="2" rate="1" />
 	<modify id="1" stat="speedmodifier" setValue="0.90" />
 </buff>
-<buff id="withdrawalLv3" debuffif="stim gequal 9" name_key="禁断ステージ3" type="staminadown" actions="increment(@wellness, -0.5, 1200, 0, 0)" tooltip_key="You have entered Stimulant Withdrawl Stage 3" description_key="I'd do anything for a Stim right now!(Wellness loss 0.5 every 20 min)" icon="ui_game_symbol_withdrawal">
+<buff id="withdrawalLv3" debuffif="stim gequal 9" name_key="禁断症状ステージ3" type="staminadown" actions="increment(@wellness, -0.5, 1200, 0, 0)" tooltip_key="You have entered Stimulant Withdrawl Stage 3" description_key="どんな手を使ってでも、今すぐにヤクだ！(20分毎に健康値が0.5低下)" icon="ui_game_symbol_withdrawal">
 	<modify id="0" stat="stamina" amount="2" rate="1" />
 	<modify id="1" stat="speedmodifier" setValue="0.85" />
 </buff>
 <!--JZMOD Vitamins-->
-<buff id="vitamins" duration="1800" name_key="Vitamins" tooltip_key="mmmmm Vitamins!" description_key="Vitamins make You feel a little stronger.(Wellness increase 0.2 every game hour)" actions="increment(@wellness, 0.2, 150, 0, 0)" icon="vitamins" />
+<buff id="vitamins" duration="1800" name_key="ビタミン" tooltip_key="mmmmm Vitamins!" description_key="ビタミンで少し元気になれた気がする。(1時間毎に健康値が0.2増加)" actions="increment(@wellness, 0.2, 150, 0, 0)" icon="vitamins" />
 <!--JZMOD Radiation-->
 <buff id="radiationTrigger" mutex="radiationTrigger" duration="1" actions="increment(rad, 1, 1, 0, 0)" /> 
-<buff id="radiationEffect" buffif="rad greater 1" debuffif="rad less 1" duration="0" actions="increment(@wellness, -0.01, 30, 0, 0);increment(rad, -1, 1, 0, 0);min(rad, 0)" type="bleeding" name_key="Radiation" tooltip_key="Your feet feel warm" description_key="You are on radiated soil.(Wellness loss 0.01)" icon="ui_game_symbol_radiation">
+<buff id="radiationEffect" buffif="rad greater 1" debuffif="rad less 1" duration="0" actions="increment(@wellness, -0.01, 30, 0, 0);increment(rad, -1, 1, 0, 0);min(rad, 0)" type="bleeding" name_key="放射能" tooltip_key="Your feet feel warm" description_key="放射能に汚染された土壌です。(健康値が0.01低下)" icon="ui_game_symbol_radiation">
 	<modify id="0" stat="stamina" amount="-5" rate="1" />
 	<modify id="1" stat="health" amount="-2" rate="1" />
 </buff>
 <!--JZMOD Zombie Spit-->
-<buff id="acid" mutex="acid" debuffif="+water > 1" duration="30" type="bleeding" name_key="Acid Spit" tooltip_key="He spit on you and it burns!" description_key="Acid is melting your skin. Wash it off!" icon="ui_game_symbol_infection" cures="bottledWater,bottledRiverWater">
+<buff id="acid" mutex="acid" debuffif="+water > 1" duration="30" type="bleeding" name_key="ゲロ" tooltip_key="He spit on you and it burns!" description_key="酸が皮膚を溶かそうとしています。洗い流してください！" icon="ui_game_symbol_infection" cures="bottledWater,bottledRiverWater">
 	<modify id="0" stat="stamina" amount="-1" rate="1" />
 	<modify id="1" stat="health" amount="-1" rate="1" />
 </buff>	
 <!--JZMOD High-->
-<buff id="high" stack="extend" duration="300" name_key="Stoned" type="speedmodifier" actions="attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh Dude...huh...Im getting hungry" description_key="You're high. You just smoked... uh, what? Hey, is that pie?" icon="ui_game_symbol_pot">
+<buff id="high" stack="extend" duration="300" name_key="Stoned" type="speedmodifier" actions="attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh Dude...huh...Im getting hungry" description_key="あなたは、ハイに達しました。\nスゥー、んん、何だ？\nおい、それはパイか、パイなのか？" icon="ui_game_symbol_pot">
 	<modify id="0" stat="stamina" amount="-1" rate="1" />
 	<modify id="1" stat="speedmodifier" mulValue="0.5" />
 	<modify id="2" stat="food" amount="-1" rate="8" />
@@ -791,9 +791,9 @@ This requires a 50+ food bar:
 <!--JZMOD Leg Break-->
 <buff id="breakLeg" mutex="brokenLegHealthy,brokenLegNormal,brokenLegMalnourished" hitmask="leftleg;rightleg" duration="1" actions="buff(brokenLeg)" />
 <!--JZMOD Poisonous Bites and Stings-->
-<buff id="antiVenom" duration="300" actions="debuff(snakePoisoning);debuff(snakePoisoning2);debuff(snakePoisoning3);debuff(SpiderPoisoning);debuff(SpiderPoisoning2);debuff(SpiderPoisoning3);debuff(ScorpionPoisoning);debuff(ScorpionPoisoning2);debuff(ScorpionPoisoning3)" name_key="antiVenom" tooltip_key="I'm Cured!" description_key="You are cured of venom poisoning and immune for a short time." icon="ui_game_symbol_AntiVenom" />
+<buff id="antiVenom" duration="300" actions="debuff(snakePoisoning);debuff(snakePoisoning2);debuff(snakePoisoning3);debuff(SpiderPoisoning);debuff(SpiderPoisoning2);debuff(SpiderPoisoning3);debuff(ScorpionPoisoning);debuff(ScorpionPoisoning2);debuff(ScorpionPoisoning3)" name_key="毒消し" tooltip_key="I'm Cured!" description_key="毒を中和しました。短時間は免疫がついています。" icon="ui_game_symbol_AntiVenom" />
 <!--JZMOD Snake-->
-<buff id="snakePoisoning" name_key="Snake Bite Stage 1" type="speedmodifier" mutex="antiVenom,snakePoisoning,snakePoisoning2,snakePoisoning3" actions="buff(snakeStun);buff(snakelimp);increment(@wellness, -0.1, 300, 0, 0)" onexpired="snakePoisoning2" duration="1800" tooltip_key="You've been bitten by a snake" description_key="A snake bit and poisoned you. You will need to find or make some Anti-Venom or you will get very ill. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ui_game_symbol_SnakeBuff" cures="antiVenom">
+<buff id="snakePoisoning" name_key="ヘビ毒ステージ1" type="speedmodifier" mutex="antiVenom,snakePoisoning,snakePoisoning2,snakePoisoning3" actions="buff(snakeStun);buff(snakelimp);increment(@wellness, -0.1, 300, 0, 0)" onexpired="snakePoisoning2" duration="1800" tooltip_key="You've been bitten by a snake" description_key="ヘビに噛まれ、毒に侵されました。血清を見つけるか作る必要があります。そうしないと更に具合が悪くなります。毒を持つ動物から毒袋を採取し、キャンプファイアで血清を作ることができます。" icon="ui_game_symbol_SnakeBuff" cures="antiVenom">
 	<modify id="0" stat="stamina" amount="-2" rate="1" />
 	<modify id="1" stat="speedmodifier" mulValue="0.95" />
 	<modify id="2" stat="coretemp" modifyValue="5" />
@@ -801,38 +801,38 @@ This requires a 50+ food bar:
 <buff id="snakeStun" type="staminadown" duration="1.8" castsound="Player_Female/player2death">
 	<modify id="0" stat="stamina" amount="-20" rate="1" />
 </buff>
-<buff id="snakelimp" name_key="Injured Leg" actions="buff(SL1)" mutex="limp,stimulant,addictionLv1,addictionLv2,addictionLv3drunk,limp1,limp2" duration="300" onexpired="xSnakeLimp" tooltip_key="Ow! That Hurts!" description_key="Your leg is injured and throbbing with pain making you limp." icon="ui_game_symbol_limp" />
+<buff id="snakelimp" name_key="足の怪我" actions="buff(SL1)" mutex="limp,stimulant,addictionLv1,addictionLv2,addictionLv3drunk,limp1,limp2" duration="300" onexpired="xSnakeLimp" tooltip_key="Ow! That Hurts!" description_key="足を怪我したため、痛みで足を引きずっています。" icon="ui_game_symbol_limp" />
 <buff id="xSnakeLimp" actions="debuff(SL1);debuff(SL2)" duration="3" />
 <buff id="SL1" duration="1" mutex="stimulant,addictionLv1,addictionLv2,addictionLv3drunk,limp,limp1,limp2" onexpired="SL2" type="speedmodifier">
 	<modify id="0" stat="speedmodifier" mulValue="0.4" />
 </buff>
 <buff id="SL2" duration="1" mutex="stimulant,addictionLv1,addictionLv2,addictionLv3drunk,limp,limp1,limp2" onexpired="SL1" />
-<buff id="snakePoisoning2" name_key="Snake Bite Stage 2" type="speedmodifier" mutex="antiVenom" actions="buff(pain);increment(@wellness, -0.2, 300, 0, 0)" onexpired="snakePoisoning3" duration="3600" tooltip_key="That Bite does not look good!" description_key="Your snake bite is getting worse and the venom is spreading. You need to get some Anti–Venom soon. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ui_game_symbol_SnakeBuff" cures="antiVenom">
+<buff id="snakePoisoning2" name_key="ヘビ毒ステージ2" type="speedmodifier" mutex="antiVenom" actions="buff(pain);increment(@wellness, -0.2, 300, 0, 0)" onexpired="snakePoisoning3" duration="3600" tooltip_key="That Bite does not look good!" description_key="ヘビの噛まれた傷が悪化し毒が広がっています。すぐに血清を見つけるか作る必要があります。そうしないと病気が悪化します。毒を持つ動物から毒袋を採取し、キャンプファイアで血清を作ることができます。" icon="ui_game_symbol_SnakeBuff" cures="antiVenom">
 	<modify id="0" stat="stamina" amount="-3" rate="1" />
 	<modify id="1" stat="speedmodifier" mulValue="0.85" />
 	<modify id="2" stat="coretemp" modifyValue="15" />
 </buff>
-<buff id="snakePoisoning3" name_key="Snake Bite Stage 3" type="speedmodifier" mutex="antiVenom" actions="buff(gash);increment(@wellness, -0.5, 300, 0, 0)" duration="3600" tooltip_key="You dont look so good!" description_key="The snake venom is coursing through your veins. If you can last the day you might just live. Or you can find or make some Anti-Venom .Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="ui_game_symbol_SnakeBuff" cures="antiVenom">
+<buff id="snakePoisoning3" name_key="ヘビ毒ステージ3" type="speedmodifier" mutex="antiVenom" actions="buff(gash);increment(@wellness, -0.5, 300, 0, 0)" duration="3600" tooltip_key="You dont look so good!" description_key="ヘビの毒が静脈に達しました。もしあなたがこの一日を乗り切れば、生き残れるかもしれません。血清を見つけるか作ることができます。毒を持つ動物から毒袋を採取し、キャンプファイアで血清を作ることができます。" icon="ui_game_symbol_SnakeBuff" cures="antiVenom">
 	<modify id="0" stat="stamina" amount="-5" rate="1" />
 	<modify id="1" stat="speedmodifier" mulValue="0.5" />
 	<modify id="2" stat="coretemp" modifyValue="25" />
 </buff>	
 <!--Spider-->
-<buff id="SpiderPoisoning" name_key="ヘビ毒ステージ1" type="speedmodifier" mutex="antiVenom,SpiderPoisoning2,SpiderPoisoning3" actions="increment(@wellness, -0.1, 600, 0, 0);buff(snakeStun)" onexpired="SpiderPoisoning2" duration="1800" tooltip_key="You've been bitten by a spider" description_key="クモに噛まれ、毒に侵されました。血清を見つけるか作る必要があります。そうしないと更に具合が悪くなります。毒を持つ動物から毒袋を採取し、キャンプファイアで血清を作ることができます。" icon="ui_game_symbol_spiderBuff" cures="antiVenom">
+<buff id="SpiderPoisoning" name_key="クモ毒ステージ1" type="speedmodifier" mutex="antiVenom,SpiderPoisoning2,SpiderPoisoning3" actions="increment(@wellness, -0.1, 600, 0, 0);buff(snakeStun)" onexpired="SpiderPoisoning2" duration="1800" tooltip_key="You've been bitten by a spider" description_key="クモに噛まれ、毒に侵されました。血清を見つけるか作る必要があります。そうしないと更に具合が悪くなります。毒を持つ動物から毒袋を採取し、キャンプファイアで血清を作ることができます。" icon="ui_game_symbol_spiderBuff" cures="antiVenom">
     <modify id="0" stat="speedmodifier" mulValue="0.98" />
     <modify id="1" stat="water" amount="-1" rate="30" />
     <modify id="2" stat="coretemp" modifyValue="5" />
 </buff>
-<buff id="SpiderPoisoning2" name_key="ヘビ毒ステージ2" type="speedmodifier" mutex="antiVenom" actions="buff(SpiderRash);increment(@wellness, -0.2, 600, 0, 0)" onexpired="SpiderPoisoning3" duration="3600" tooltip_key="Burrrr! Your getting the chills" description_key="クモの噛まれた傷から水膨れと腫れの症状が見られます。すぐに血清を見つけるか作る必要があります。そうしないと病気が悪化します。毒を持つ動物から毒袋を採取し、キャンプファイアで血清を作ることができます。" icon="rashes" cures="antiVenom">
+<buff id="SpiderPoisoning2" name_key="クモ毒ステージ2" type="speedmodifier" mutex="antiVenom" actions="buff(SpiderRash);increment(@wellness, -0.2, 600, 0, 0)" onexpired="SpiderPoisoning3" duration="3600" tooltip_key="Burrrr! Your getting the chills" description_key="クモの噛まれた傷から水膨れと腫れの症状が見られます。すぐに血清を見つけるか作る必要があります。そうしないと病気が悪化します。毒を持つ動物から毒袋を採取し、キャンプファイアで血清を作ることができます。" icon="rashes" cures="antiVenom">
 	<modify id="0" stat="speedmodifier" mulValue="0.95" />
     <modify id="1" stat="water" amount="-1" rate="30" />
     <modify id="2" stat="coretemp" modifyValue="-25" />
     <modify id="3" stat="stamina" amount="-3" rate="5" />
 </buff>
-<buff id="SpiderRash" name_key="発疹" type="healthdown" duration="7200" tooltip_key="Dont Scratch it!" description_key="痛みを伴う発疹が咬み傷から広がっています。鎮静には植物性クリームを塗ります。" icon="Rash" cures="herbalCream,aloeCream" >
+<buff id="SpiderRash" name_key="発疹" type="healthdown" duration="7200" tooltip_key="Dont Scratch it!" description_key="痛みを伴う発疹が噛み傷から広がっています。鎮静には植物性クリームを塗ります。" icon="Rash" cures="herbalCream,aloeCream" >
     <modify id="0" stat="health" amount="-1" rate="60" />
 </buff>
-<buff id="SpiderPoisoning3" name_key="ヘビ毒ステージ3" type="speedmodifier" mutex="antiVenom" actions="buff(pain);increment(@wellness, -0.5, 600, 0, 0)" duration="3600" tooltip_key="You feel very ill with a deathly chill" description_key="体は震えで痙攣しています。このまま終わりを迎えるまで最悪でしょう。もしかしたら、あなたがこの一日を過ごすことができれば、血清を見つけるか作ることで生き残れるかもしれません。毒を持つ動物から毒袋を採取し、キャンプファイアで血清を作ることができます。" icon="ui_game_symbol_spiderBuff" cures="antiVenom">
+<buff id="SpiderPoisoning3" name_key="クモ毒ステージ3" type="speedmodifier" mutex="antiVenom" actions="buff(pain);increment(@wellness, -0.5, 600, 0, 0)" duration="3600" tooltip_key="You feel very ill with a deathly chill" description_key="体は震えで痙攣しています。このまま終わりを迎えるまで最悪でしょう。もしあなたがこの一日を乗り切れば、生き残れるかもしれません。血清を見つけるか作ることができます。毒を持つ動物から毒袋を採取し、キャンプファイアで血清を作ることができます。" icon="ui_game_symbol_spiderBuff" cures="antiVenom">
 	<modify id="0" stat="speedmodifier" mulValue="0.75" />
     <modify id="1" stat="water" amount="-1" rate="30" />
     <modify id="2" stat="coretemp" modifyValue="-50" />
@@ -852,7 +852,7 @@ This requires a 50+ food bar:
 <buff id="Fever" name_key="熱病" type="coretemp" duration="7200" tooltip_key="Is it getting hot in here?" description_key="思いがけない発熱があります。飲み物を頭からかけて冷やしましょう。" icon="Fever" cures="wetHead" >
 	<modify id="0" stat="coretemp" modifyValue="20" />
 </buff>
-<buff id="ScorpionPoisoning3" name_key="サソリ毒ステージ3" type="speedmodifier" mutex="antiVenom" actions="buff(SeverFever);increment(@wellness, -0.5, 600, 0, 0)" duration="3600" tooltip_key="Soooo Hot!" description_key="サソリの刺し傷が更に悪化し、高熱にうなされています。もしかしたら、あなたの最後の一日であっても血清を見つけるか作ることができるかもしれません。毒を持つ動物から毒袋を採取し、キャンプファイアで血清を作ることができます。" icon="ui_game_symbol_scorpionBuff" cures="antiVenom">
+<buff id="ScorpionPoisoning3" name_key="サソリ毒ステージ3" type="speedmodifier" mutex="antiVenom" actions="buff(SeverFever);increment(@wellness, -0.5, 600, 0, 0)" duration="3600" tooltip_key="Soooo Hot!" description_key="サソリの刺し傷が更に悪化し、高熱にうなされています。もしあなたがこの一日を乗り切れば、生き残れるかもしれません。毒を持つ動物から毒袋を採取し、キャンプファイアで血清を作ることができます。" icon="ui_game_symbol_scorpionBuff" cures="antiVenom">
 	<modify id="0" stat="speedmodifier" mulValue="0.70" />
     <modify id="1" stat="coretemp" modifyValue="50" />
     <modify id="2" stat="stamina" amount="-6" rate="1" />
@@ -951,20 +951,20 @@ This requires a 50+ food bar:
 <buff id="nutritionFade" buffif="nutrition greater 0" debuffif="nutrition less 1" duration="0" actions="increment(nutrition, -1, 900, 0, 0);min(nutrition, 0)" /><!--900-->
 <!--JZMOD GOOD NUTRITION STAGE 1-->
 <buff id="goodNutrition1Tag" buffif="nutrition greater 14" debuffif="nutrition lequal 14" />
-<buff id="goodNutrition1" mutex="goodNutrition2,goodNutrition3" buffif="nutrition greater 14" debuffif="nutrition lequal 14" actions="buff(malnourishedReset)" name_key="良い食事" tooltip_key="Feeling Good!" description_key="Your eating a more balanced diet now and can benifit from wellness and health gains from foods." icon="ui_game_symbol_goodNutrition1" />
+<buff id="goodNutrition1" mutex="goodNutrition2,goodNutrition3" buffif="nutrition greater 14" debuffif="nutrition lequal 14" actions="buff(malnourishedReset)" name_key="良い食事" tooltip_key="Feeling Good!" description_key="よりバランスのとれた食事をこれから食べることで、健康と体力の恩恵が受けられます。" icon="ui_game_symbol_goodNutrition1" />
 <!--JZMOD GOOD NUTRITION STAGE 1-->
 <buff id="goodNutrition2Tag" buffif="nutrition greater 24" debuffif="nutrition lequal 24" />
-<buff id="goodNutrition2" mutex="goodNutrition3" buffif="nutrition greater 24" debuffif="nutrition lequal 24" actions="debuff(goodNutrition1);buff(malnourishedReset)" name_key="バランスのとれた食事" type="staminaup" tooltip_key="Feeling Great!" description_key="Your eating a very balanced diet now because of this you can regain stamina quicker and heal from injurys faster now." icon="ui_game_symbol_goodNutrition2">
+<buff id="goodNutrition2" mutex="goodNutrition3" buffif="nutrition greater 24" debuffif="nutrition lequal 24" actions="debuff(goodNutrition1);buff(malnourishedReset)" name_key="バランスのとれた食事" type="staminaup" tooltip_key="Feeling Great!" description_key="非常にバランスのとれた食事を続けているおかげで、スタミナは速く回復し、怪我で失った体力もより速く治ります。" icon="ui_game_symbol_goodNutrition2">
 	<modify id="0" stat="stamina" amount="1" rate="3" />
 </buff> 
 <!--JZMOD GOOD NUTRITION STAGE 1-->
-<buff id="goodNutrition3" buffif="nutrition greater 34" debuffif="nutrition lequal 34" actions="debuff(goodNutrition2);debuff(goodNutrition1);buff(malnourishedReset)" type="speedmodifier" name_key="Healthy Diet" tooltip_key="Feeling Great!" description_key="Your healthy balanced diet fills you with energy through out the day increasing your speed. When full you will naturaly heal also." icon="ui_game_symbol_goodNutrition3">
+<buff id="goodNutrition3" buffif="nutrition greater 34" debuffif="nutrition lequal 34" actions="debuff(goodNutrition2);debuff(goodNutrition1);buff(malnourishedReset)" type="speedmodifier" name_key="健康的な食事" tooltip_key="Feeling Great!" description_key="健康的な食事は、一日中、力が湧き足を軽やかにしてくれます。お腹を満たしている時は、自然治癒の恩恵も受けられます。" icon="ui_game_symbol_goodNutrition3">
 	<modify id="0" stat="stamina" amount="1" rate="3" />
 	<modify id="1" stat="speedmodifier" modifyMaxValue="2.0" />
 	<modify id="2" stat="speedmodifier" mulValue="1.5" />
 </buff>
 <buff id="notFullBlockerBuff" buffif="food lequal 0.99" debuffif="food > 0.99" actions="debuff(goodNutritionFullBuff)"/>
-<buff id="goodNutritionFullBuff" mutex="bleedingHealthy,bleedingNormal,bleedingMalnourished,notFullBlockerBuff" requires="goodNutrition3" buffif="+full > 1" debuffif="+full lequal 99" icon="ui_game_symbol_natural_healing" name_key="Healthy Healing" description_key="Becasuse of your healthy diet when you are full you recive a small heal over time" tooltip_key="Life is good!">
+<buff id="goodNutritionFullBuff" mutex="bleedingHealthy,bleedingNormal,bleedingMalnourished,notFullBlockerBuff" requires="goodNutrition3" buffif="+full > 1" debuffif="+full lequal 99" icon="ui_game_symbol_natural_healing" name_key="ヒーリング" description_key="あなたが健康的な食事で満ち足りている時は、時間の経過とともに少しの癒しの恩恵が受けられます。" tooltip_key="Life is good!">
 	<modify id="0" stat="health" amount="1" rate="10" />
 </buff>
 <!--JZMOD NUTRITION RESTART AFTER RESPAWN -->
@@ -973,17 +973,17 @@ This requires a 50+ food bar:
 <!--JZMOD Malnourished Timer-->
 <buff id="malnourishTimer" mutex="goodNutrition1Tag" buffif="nutrition less 15" debuffif="nutrition gequal 15" actions="increment(malnourished, 1, 90, 0, 0)" /><!--1,90-->
 <!--JZMOD BAD NUTRITION-->
-<buff id="malnourished1" mutex="malnourished2,malnourished3" buffif="malnourished greater 179" debuffif="malnourished lequal 179" name_key="粗悪な食事" tooltip_key="Feeling Tired" description_key="あなたの食事は、あまり健康的とは言えず不健康な状態になりかけています。より多くの食品群(野菜や果物など)を含む食事を心がけてください。" icon="ui_game_symbol_malnourished1">
+<buff id="malnourished1" mutex="malnourished2,malnourished3" buffif="malnourished greater 179" debuffif="malnourished lequal 179" name_key="貧しい食事" tooltip_key="Feeling Tired" description_key="あなたの食事は、あまり健康的とは言えず不健康な状態になりかけています。より多くの食品群(野菜や果物など)を含む食事を心がけてください。" icon="ui_game_symbol_malnourished1">
 	<modify id="0" stat="food" amount="-1" rate="60" />
 	<modify id="1" stat="stamina" amount="-1" rate="3" /> 
 </buff>
 <buff id="malnourished1Tag" buffif="malnourished greater 359" debuffif="malnourished lequal 359" />
-<buff id="malnourished2" mutex="malnourished3" buffif="malnourished greater 359" debuffif="malnourished lequal 359" name_key="Vitamin Deficiency" actions="debuff(malnourished1)" type="staminadown" tooltip_key="Could use a rest" description_key="Your poor diet means your not getting all the vitamins you need and its slowing you down. Cook and eat fresh meals with many food groups to improve your health." icon="ui_game_symbol_malnourished2"><!--359 -->
+<buff id="malnourished2" mutex="malnourished3" buffif="malnourished greater 359" debuffif="malnourished lequal 359" name_key="ビタミン欠乏症" actions="debuff(malnourished1)" type="staminadown" tooltip_key="Could use a rest" description_key="貧しい食事は、必要なビタミンを摂取してないことと、力が入らずあなたが倒れることを意味します。多くの食品を調理し、新鮮な料理を食べて健康を回復させましょう。" icon="ui_game_symbol_malnourished2"><!--359 -->
 	<modify id="0" stat="food" amount="-2" rate="60" />
 	<modify id="1" stat="stamina" amount="-1" rate="2" />
 	<modify id="2" stat="speedmodifier" setValue="0.95" />
 </buff>
-<buff id="malnourished3" buffif="malnourished greater 539" debuffif="malnourished lequal 539" name_key="Malnourished" actions="debuff(malnourished2);debuff(malnourished1)" type="speedmodifier" tooltip_key="You feel weak" description_key="Your health is failing. You must eat a more balanced diet that combines all the food groups in order to have a healthy diet. Try making and eating meals from a food prep table." icon="ui_game_symbol_malnourished3"><!--539-->
+<buff id="malnourished3" buffif="malnourished greater 539" debuffif="malnourished lequal 539" name_key="栄養失調" actions="debuff(malnourished2);debuff(malnourished1)" type="speedmodifier" tooltip_key="You feel weak" description_key="健康を害しています。健康的な食事は、全ての食品を組み合わせてバランスのとれた食事をしなくてはなりません。調理台で食事を作り食べてみましょう。" icon="ui_game_symbol_malnourished3"><!--539-->
 	<modify id="0" stat="food" amount="-3" rate="60" />
 	<modify id="1" stat="stamina" amount="-1" rate="1" />
 	<modify id="2" stat="speedmodifier" setValue="0.85" />
