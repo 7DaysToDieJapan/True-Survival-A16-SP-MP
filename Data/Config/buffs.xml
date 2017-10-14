@@ -604,7 +604,7 @@ This requires a 50+ food bar:
 	<modify id="1" stat="food" amount="1" rate="18" />
 </buff>
 <!--JZMOD BIO INFECTION-->
-<buff id="bioInfection" name_key="バイオ感染ステージ1" type="sickness" onexpired="bioInfection2" duration="3600" description_key="傷が悪化し、感染症に罹りました。すぐに抗生物質を見つけるか、無ければ感染症はこのまま悪化するしかないだろう。" tooltip_key="Your wound has become infected" icon="ui_game_symbol_temperature" cures="foodHoney,antibiotics,herbalAntibiotics">
+<buff id="bioInfection" name_key="バイオ感染ステージ1" type="sickness" onexpired="bioInfection2" duration="3600" description_key="傷が悪化し、感染症に罹りました。すぐに抗生物質を見つけるか、無ければ感染症はこのまま悪化するしかないでしょう。" tooltip_key="Your wound has become infected" icon="ui_game_symbol_temperature" cures="foodHoney,antibiotics,herbalAntibiotics">
 	<modify id="0" stat="stamina" amount="-1" rate="2" />
 </buff>
 <buff id="bioInfection2" name_key="バイオ感染ステージ2" type="sickness" duration="3600" actions="damage(25,900,0,3);increment(@wellness, -0.25, 150, 0, 0)" onexpired="bioInfection3" description_key="感染症が悪化しています。すぐに治療する必要があります。" tooltip_key="Your infected wound is getting worse" icon="ui_game_symbol_temperature" cures="antibiotics,herbalAntibiotics">
@@ -664,12 +664,12 @@ This requires a 50+ food bar:
 	<modify id="1" stat="speedmodifier" setValue="0.91" />
 	<modify id="2" stat="health" amount="-1" rate="30" />
 </buff>
-<buff id="pain" mutex="healWound" castsound="Buffs/critical_blunt" name_key="疼痛" type="bleeding" description_key="傷口は痛みを抑えるために幾つかの鎮痛剤(Painkillers)を使います。" tooltip_key="OOwww! It Hurts!" icon="ui_game_symbol_pain" cures="painkillers,joint">
+<buff id="pain" mutex="healWound" castsound="Buffs/critical_blunt" name_key="疼痛" type="bleeding" description_key="傷口の痛みを抑えるために幾つかの鎮痛剤(Painkillers)を使いましょう。" tooltip_key="OOwww! It Hurts!" icon="ui_game_symbol_pain" cures="painkillers,joint">
 	<modify id="0" stat="stamina" amount="-1" rate="5" />
 	<modify id="1" stat="coretemp" modifyValue="10" />
 </buff>
-<buff id="tending1" mutex="wound" duration="1800" onexpired="dirtyBandage1" name_key="応急処置" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="ui_game_symbol_bandaged" />
-<buff id="dirtyBandage1" smell="smallSmell" duration="900" onexpired="dirtySmallWound" ondebuff="tending2" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit" name_key="汚れた包帯" tooltip_key="Your Wound Smells" description_key="包帯が汚れ、臭いを放っています。すぐに包帯を交換すべきです。このままでは傷口が最悪な状態になるでしょう。" icon="ui_game_symbol_dirtyBandage" />
+<buff id="tending1" mutex="wound" duration="1800" onexpired="dirtyBandage1" name_key="応急処置" tooltip_key="Thats better for now" description_key="傷口に包帯を巻いて治療中です。包帯が汚れていないか確認して、汚れていれば感染しないように交換しましょう。" icon="ui_game_symbol_bandaged" />
+<buff id="dirtyBandage1" smell="smallSmell" duration="900" onexpired="dirtySmallWound" ondebuff="tending2" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit" name_key="汚れた包帯" tooltip_key="Your Wound Smells" description_key="包帯が汚れて臭いがし始めています。すぐに包帯を交換すべきです。このままでは傷口が最悪な状態になるでしょう。" icon="ui_game_symbol_dirtyBandage" />
 <buff id="dirtySmallWound" duration="1" actions="setvar(scratch, 11)" />
 <buff id="tending2" duration="1800" onexpired="healSmallWound" actions="debuff(dirtyBandage1)" name_key="包帯" tooltip_key="Thats better for now" description_key="傷口に包帯を巻いて治療中です。その傷をまた傷つけないようにして、治るのを待ちましょう。" icon="ui_game_symbol_bandaged" />
 <buff id="healSmallWound" duration="1" actions="setvar(scratch, 2)" />
@@ -679,8 +679,8 @@ This requires a 50+ food bar:
 	<modify id="1" stat="speedmodifier" setValue="0.9" />
 	<modify id="2" stat="health" amount="-1" rate="25" />
 </buff>
-<buff id="tending3" mutex="severeWound" duration="1800" onexpired="dirtyBandage2" actions="debuff(wound)" name_key="応急処置" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="ui_game_symbol_bandaged" />
-<buff id="dirtyBandage2" smell="mediumSmell" duration="900" onexpired="dirtyWound" ondebuff="tending4" cures="firstAidBandage,sanitizingBandage,firstAidKit" name_key="汚れた包帯" tooltip_key="Your Wound Smells" description_key="包帯が汚れ、臭いを放っています。すぐに救急包帯と交換すべきです。このままでは傷口が最悪な状態になるでしょう。" icon="ui_game_symbol_dirtyBandage" />
+<buff id="tending3" mutex="severeWound" duration="1800" onexpired="dirtyBandage2" actions="debuff(wound)" name_key="応急処置" tooltip_key="Thats better for now" description_key="包帯が汚れていないか確認して、汚れていれば感染しないように交換しましょう。" icon="ui_game_symbol_bandaged" />
+<buff id="dirtyBandage2" smell="mediumSmell" duration="900" onexpired="dirtyWound" ondebuff="tending4" cures="firstAidBandage,sanitizingBandage,firstAidKit" name_key="汚れた包帯" tooltip_key="Your Wound Smells" description_key="包帯が汚れて臭いがし始めています。すぐに救急包帯と交換すべきです。このままでは傷口が最悪な状態になるでしょう。" icon="ui_game_symbol_dirtyBandage" />
 <buff id="dirtyWound" duration="1" actions="setvar(scratch, 16)" />
 <buff id="tending4" duration="1800" onexpired="healWound" actions="debuff(dirtyBandage2)" name_key="包帯" tooltip_key="Thats better for now" description_key="傷口に包帯を巻いて治療中です。その傷をまた傷つけないようにして、治るのを待ちましょう。" icon="ui_game_symbol_bandaged" />
 <buff id="healWound" duration="10" actions="setvar(scratch, 6)" />
@@ -695,8 +695,8 @@ This requires a 50+ food bar:
 	<modify id="1" stat="health" amount="-1" rate="15" />
 	<modify id="2" stat="coretemp" modifyValue="-25" />
 </buff>
-<buff id="tending5" mutex="infectedWound" duration="1800" onexpired="dirtyBandage3" actions="debuff(severeWound)" name_key="応急処置" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="ui_game_symbol_bandaged" />
-<buff id="dirtyBandage3" smell="largeSmell" duration="900" onexpired="dirtySevereWound" ondebuff="tending6" cures="sanitizingBandage,firstAidKit" name_key="汚れた包帯" tooltip_key="Your Wound Smells" description_key="包帯が汚れ、臭いを放っています。すぐに消毒された包帯と交換すべきです。このままでは傷口が最悪な状態になるでしょう。" icon="ui_game_symbol_dirtyBandage" />
+<buff id="tending5" mutex="infectedWound" duration="1800" onexpired="dirtyBandage3" actions="debuff(severeWound)" name_key="応急処置" tooltip_key="Thats better for now" description_key="包帯が汚れていないか確認して、汚れていれば感染しないように交換しましょう。" icon="ui_game_symbol_bandaged" />
+<buff id="dirtyBandage3" smell="largeSmell" duration="900" onexpired="dirtySevereWound" ondebuff="tending6" cures="sanitizingBandage,firstAidKit" name_key="汚れた包帯" tooltip_key="Your Wound Smells" description_key="包帯が汚れて臭いがし始めています。すぐに消毒された包帯と交換すべきです。このままでは傷口が最悪な状態になるでしょう。" icon="ui_game_symbol_dirtyBandage" />
 <buff id="dirtySevereWound" duration="1" actions="setvar(scratch, 21)" />
 <buff id="tending6" duration="1800" onexpired="healSevereWound" actions="debuff(dirtyBandage3)" name_key="包帯" tooltip_key="Thats better for now" description_key="傷口に包帯を巻いて治療中です。その傷をまた傷つけないようにして、治るのを待ちましょう。" icon="ui_game_symbol_bandaged" />
 <buff id="healSevereWound" duration="10" actions="setvar(scratch, 11)" />
@@ -706,12 +706,12 @@ This requires a 50+ food bar:
 	<modify id="1" stat="speedmodifier" setValue="0.88" />
 	<modify id="2" stat="health" amount="-1" rate="15" />
 </buff>
-<buff id="tending7" duration="1800" onexpired="dirtyBandage4" actions="debuff(infectedWound)" name_key="応急処置" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Make sure to change it when it gets dirty so it does not get infected." icon="ui_game_symbol_bandaged" />
+<buff id="tending7" duration="1800" onexpired="dirtyBandage4" actions="debuff(infectedWound)" name_key="応急処置" tooltip_key="Thats better for now" description_key="包帯が汚れていないか確認して、汚れていれば感染しないように交換しましょう。" icon="ui_game_symbol_bandaged" />
 <buff id="dirtyBandage4" smell="largeSmell" duration="480" onexpired="dirtyInfectedWound" ondebuff="tending8" cures="sanitizingBandage,firstAidKit" name_key="汚れた包帯" tooltip_key="Your Wound Smells" description_key="包帯が汚れ、臭いを放っています。すぐに消毒された包帯と交換すべきです。このままでは死あるのみです。" icon="ui_game_symbol_dirtyBandage" />
 <buff id="dirtyInfectedWound" duration="6" type="bleeding" >
     <modify id="0" stat="health" amount="-55" rate="1" />
 </buff>
-<buff id="tending8" duration="1800" onexpired="healInfectedWound" actions="debuff(dirtyBandage4)" name_key="応急処置" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="ui_game_symbol_bandaged" />
+<buff id="tending8" duration="1800" onexpired="healInfectedWound" actions="debuff(dirtyBandage4)" name_key="応急処置" tooltip_key="Thats better for now" description_key="傷口に包帯を巻いて治療中です。その傷をまた傷つけないようにして、治るのを待ちましょう。" icon="ui_game_symbol_bandaged" />
 <buff id="healInfectedWound" duration="10" actions="setvar(scratch, 16)" />
 <!--JZMOD Stimulan Addiction-->
 <buff id="stimulant" duration="180" name_key="興奮" type="staminaup" stack="extend" tooltip_key="You have taken a Stimulant and feel good" description_key="A nice rush of energy." icon="ui_game_symbol_stimulant" >
