@@ -5360,6 +5360,6 @@ ProteinScrapDesc,,,,この缶詰めで、タンパク質を補給しましょう
 bioMassDesc,,,,腐敗した有機物。このまま捨てるにはもったいないです。爆弾や肥料を作るのに使えます。,"Rotten organic material. Lets not end up in this stack. Can be used to make Bombs and Fertilizer.",,,
 ratOnAStickDesc,,,"Ummmm. Now doesn't that look delicious!,,,,
 sutureKit,,,,"Suture Kit",,,,
-sutureKitDesc,,,,"Used to stich up a Gash wound",,,,
+sutureKitDesc,,,,切り傷を縫合するときに使用します。,"Used to stich up a Gash wound",,,
 jointDesc,,,,手が震えています。戦いでは本領発揮とはいきませんが、痛みの緩和や食欲の維持に良いでしょう。,"A hand rolled Joint. Maybe not the best thing to use in a fight but great for treating pain and keeping your appetite up.",,,
 
