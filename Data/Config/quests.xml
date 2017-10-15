@@ -185,7 +185,7 @@
 		<reward type="Exp" value="400" />
         <reward type="Quest" id="Cooking2" />
 	</quest>
-    <quest id="Cooking2" group_name_key="Cooking" name_key="Learning to Cook" subtitle_key="Learning to cook" description_key="Staying alive means staying healthy and staying healthy starts with eating a healthy diet. Build a Food Prep Table to more efficiently break down food. You can also store your food serving and cook more nutritious meals on it." icon="ui_game_symbol_armor_leather" category_key="quest">
+    <quest id="Cooking2" group_name_key="Cooking" name_key="料理を学ぶ" subtitle_key="Learning to cook" description_key="生きながらえるということは、健康的な食事を食べて健康を維持し、健康的な生活を始めるということを意味します。効率的に食料を切り分けることができる調理台(Food Prep Table)を作りましょう。切り分けた食材を保存したり、もっと栄養価の高い料理を調理できます。" icon="ui_game_symbol_armor_leather" category_key="quest">
 		<objective type="Craft" id="prepTable" value="1" />
 		<reward type="Exp" value="400" />
         <reward type="SkillPoints" value="1" />
