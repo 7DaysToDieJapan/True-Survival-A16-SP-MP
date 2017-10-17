@@ -3735,7 +3735,7 @@ snowberryWarmingDesc,buffs,Buff,New,すごく寒い日でも体がポカポカ�
 snowberryWarmingName,buffs,Buff,New,温かい,Cold Resistence,,,
 snowberryWarmingTooltip,buffs,Buff,New,The cold has lost some sting.,The cold has lost some sting.,,,
 trapDamage1EffectDesc,buffs,Buff,New,罠だ！これは罠だ！,You are taking damage from a trap. Move away!,,,
-trapDamage1EffectName,buffs,Buff,New,Trap Damage,Trap Damage,,,
+trapDamage1EffectName,buffs,Buff,New,罠,Trap Damage,,,
 trapDamage1EffectTooltip,buffs,Buff,New,You are taking trap damage!,You are taking trap damage!,,,
 entitycommand_drive,entities,Radial,New,Drive,Drive,Fahren,,
 entitycommand_horn,entities,Radial,New,Honk horn,Honk horn,Hupe betätigen,,
