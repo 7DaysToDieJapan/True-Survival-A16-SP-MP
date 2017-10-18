@@ -648,7 +648,7 @@ This requires a 50+ food bar:
 	<modify id="2" stat="coretemp" modifyValue="10" />
 </buff>
 <buff id="cauterize" castsound="Player_Female/player2death" requires="bite" duration="1" actions="buff(biteWound);debuff(bite)" />
-<buff id="biteWound" duration="900" onexpired="infection" ondebuff="tendingbite" name_key="噛み傷" tooltip_key="Care for your bite wound or catch the Z virus" description_key="今のところ、Zウィルスの進行を止めていますが、噛み傷の処置を続けなければ、Zウィルスに侵されるでしょう。包帯で治療し、汚れたら必ず交換してください。" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit" icon="ui_game_symbol_bite" />
+<buff id="biteWound" duration="900" onexpired="infection" ondebuff="tendingbite" name_key="焼き" tooltip_key="Care for your bite wound or catch the Z virus" description_key="今のところ、Zウィルスの進行を止めていますが、噛み傷の処置を続けなければ、Zウィルスに侵されるでしょう。包帯で治療し、汚れたら必ず交換してください。" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit" icon="ui_game_symbol_bite" />
 <buff id="tendingbite" duration="900" onexpired="dirtyBiteBandage1" name_key="応急処置" tooltip_key="Your bite is bandaged up" description_key="今のところ、Zウィルスの進行を止めていますが、噛み傷の処置を続けなければ、Zウィルスに侵されるでしょう。包帯で治療し、汚れたら必ず交換してください。" icon="ui_game_symbol_bandaged" />
 <buff id="dirtyBiteBandage1" smell="smallSmell" duration="900" onexpired="dirtyBite" ondebuff="tendingbite2" name_key="化膿" tooltip_key="Your bite wound is getting dirty" description_key="噛み傷が汚れて臭いがし始めています。そろそろ包帯を交換するか、このままでは傷が悪化しZウィルスに侵されることでしょう。" cures="bandage,firstAidBandage,sanitizingBandage,firstAidKit" icon="ui_game_symbol_bite" />
 <buff id="dirtyBite" duration="1" actions="buff(infection);increment(scratch, 10, 0, 0, 1)" />
