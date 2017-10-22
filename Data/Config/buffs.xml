@@ -701,7 +701,7 @@ This requires a 50+ food bar:
 <buff id="tending6" duration="1800" onexpired="healSevereWound" actions="debuff(dirtyBandage3)" name_key="包帯" tooltip_key="Thats better for now" description_key="傷口に包帯を巻いて治療中です。その傷をまた傷つけないようにして、治るのを待ちましょう。" icon="ui_game_symbol_bandaged" />
 <buff id="healSevereWound" duration="10" actions="setvar(scratch, 11)" />
 <!-- JZMOD WOUND 5-->
-<buff id="infectedWound" buffif="scratch gequal 21" mutex="tending7,dirtyBandage4,tending8" ondebuff="tending7" actions="buff(bioInfection);debuff(tending6);debuff(dirtyBandage3);debuff(tending5);debuff(severeWound)" name_key="感染した傷" type="bleeding" tooltip_key="Your wound has gotten infected" description_key="Your wound has gotten infected. Treat it with Sanitized Bandage and be sure to change it when it gets dirty or you could die." icon="ui_game_symbol_infectedWound" cures="sanitizingBandage,firstAidKit">
+<buff id="infectedWound" buffif="scratch gequal 21" mutex="tending7,dirtyBandage4,tending8" ondebuff="tending7" actions="buff(bioInfection);debuff(tending6);debuff(dirtyBandage3);debuff(tending5);debuff(severeWound)" name_key="感染した傷" type="bleeding" tooltip_key="Your wound has gotten infected" description_key="傷が感染しました。消毒した包帯で手当てし、汚れたら必ず交換しましょう。でなければ死にます。" icon="ui_game_symbol_infectedWound" cures="sanitizingBandage,firstAidKit">
 	<modify id="0" stat="stamina" amount="-7" rate="5" />
 	<modify id="1" stat="speedmodifier" setValue="0.88" />
 	<modify id="2" stat="health" amount="-1" rate="15" />
@@ -766,7 +766,7 @@ This requires a 50+ food bar:
 	<modify id="1" stat="health" amount="-1" rate="1" />
 </buff>	
 <!--JZMOD High-->
-<buff id="high" stack="extend" duration="300" name_key="Stoned" type="speedmodifier" actions="attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh Dude...huh...Im getting hungry" description_key="あなたは、ハイに達しました。\nスゥー、んん、何だ？\nおい、それはパイか、パイなのか？" icon="ui_game_symbol_pot">
+<buff id="high" stack="extend" duration="300" name_key="ハイ" type="speedmodifier" actions="attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh Dude...huh...Im getting hungry" description_key="あなたは、ハイに達しました。スゥー、んん、何だ？おい、それはパイか、パイなのか？" icon="ui_game_symbol_pot">
 	<modify id="0" stat="stamina" amount="-1" rate="1" />
 	<modify id="1" stat="speedmodifier" mulValue="0.5" />
 	<modify id="2" stat="food" amount="-1" rate="8" />
