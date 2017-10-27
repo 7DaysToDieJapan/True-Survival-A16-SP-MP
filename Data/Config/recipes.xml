@@ -3138,7 +3138,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <recipe name="revolver_cylinder" count="1" craft_area="workbench" craft_tool="screwdriver" craft_time="4" craft_exp_gain="25">
 		<ingredient name="oldRevolver" count="1" />
 	</recipe>
-	<recipe name="rConcreteBar" count="1" craft_area="forge" craft_tool="crowbarMold" craft_time="4" craft_exp_gain="40">
+	<recipe name="rConcreteBar" count="1" craft_area="forge" craft_tool="crowbarMold" craft_time="4" craft_exp_gain="40" material_based="true">
 		<ingredient name="unit_iron" count="100" />
 	</recipe>
 	<recipe name="redBull" count="1" craft_time="20" craft_exp_gain="20">
@@ -3442,7 +3442,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="fiberRope" count="1" />
 		<ingredient name="coal" count="2" />
 	</recipe>
-    <recipe name="sledgeHead" count="1" craft_area="forge" craft_tool="sledgeHeadMold" craft_time="15" craft_exp_gain="10">
+    <recipe name="sledgeHead" count="1" craft_area="forge" craft_tool="sledgeHeadMold" craft_time="15" craft_exp_gain="10" material_based="true">
 		<ingredient name="unit_iron" count="100" />
 	</recipe>
     <recipe name="sledgeHeadMold" count="1" craft_area="campfire" craft_tool="cookingGrill" craft_time="4" craft_exp_gain="40">
@@ -3718,7 +3718,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="fiberRope" count="1" />
 		<ingredient name="woodBranch" count="5" />
 	</recipe>
-	<recipe name="wrench" count="1" craft_area="forge" craft_tool="scrapWrenchMold" craft_time="4" craft_exp_gain="50">
+	<recipe name="wrench" count="1" craft_area="forge" craft_tool="scrapWrenchMold" craft_time="4" craft_exp_gain="50" material_based="true">
 		<ingredient name="unit_iron" count="50" />
 		<ingredient name="unit_clay" count="5" />
 	</recipe>

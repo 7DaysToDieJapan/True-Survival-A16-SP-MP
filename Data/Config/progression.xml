@@ -461,7 +461,7 @@
                 <multiply skill_level="90,100" value="0.0086,0.0068"/>
 			</effect>
 		</crafting_skill>
-		<crafting_skill name="chemistryCraft" icon="ui_game_symbol_science" description_key="「ベター・リヴィング・スルー・ケミストリー！」\n薬剤師になったら、主婦の客と恋に落ちてセックス・ドラッグ・殺人のめくるめく冒険に巻き込まれる、なんてことを想像してないかい？このスキルは、多くの化学薬品の作り方を学ぶだけですよ。" title_key="chemistryCraft" group="crafting">
+		<crafting_skill name="chemistryCraft" icon="ui_game_symbol_science" description_key="「ベター・リヴィング・スルー・ケミストリー！」薬剤師になったら、主婦の客と恋に落ちてセックス・ドラッグ・殺人のめくるめく冒険に巻き込まれる、なんてことを想像してないかい？このスキルは、多くの化学薬品の作り方を学ぶだけですよ。" title_key="chemistryCraft" group="crafting">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
